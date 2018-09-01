@@ -3,7 +3,7 @@ PrimeFlex is a lightweight flex based responsive layout utility optimized for mo
 
 
 ### Getting Started
-FlexGrid is a CSS utility based on flexbox. For more information about Flex, visit A Complete Guide to Flexbox". A basic grid is defined by giving a container "p-grid" class and children the ".p-col" class. Children of the grid will have the same width and grow according to the width of the parent.
+FlexGrid is a CSS utility based on flexbox. For more information about Flex, visit [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/). A basic grid is defined by giving a container "p-grid" class and children the ".p-col" class. Children of the grid will have the same width and grow according to the width of the parent.
 
 ```html
 <div class="p-grid">
