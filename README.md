@@ -3,7 +3,7 @@ PrimeFlex is a lightweight flex based responsive layout utility optimized for mo
 
 
 ### Getting Started
-FlexGrid is a CSS utility based on flexbox. For more information about Flex, visit [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/). A basic grid is defined by giving a container "p-grid" class and children the ".p-col" class. Children of the grid will have the same width and grow according to the width of the parent.
+FlexGrid is a CSS utility based on flexbox. For more information about Flex, visit [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/). A basic grid is defined by giving a container **p-grid** class and children the **p-col** class. Children of the grid will have the same width and scale according to the width of the parent.
 
 ```html
 <div class="p-grid">
@@ -14,7 +14,7 @@ FlexGrid is a CSS utility based on flexbox. For more information about Flex, vis
 ```
 
 ### Direction
-Default direction is "row" and p-dir-* class at the container defines the other possible directions which can be row reverse, column and column reverse.
+Default direction is "row" and **p-dir-\*** class at the container defines the other possible directions which can be "row reverse", "column" and "column reverse".
 
 ```html
 <!-- Row Reverse -->
@@ -40,7 +40,7 @@ Default direction is "row" and p-dir-* class at the container defines the other 
 ```
 
 ### 12 Column Grid
-FlexGrid includes a 12 column based layout utility where width of a column is defined with the p-col-{number} style class. Columns with prefined widths can be used with columns with auto width (p-col) as well.
+FlexGrid includes a 12 column based layout utility where width of a column is defined with the **p-col-{number}** style class. Columns with prefined widths can be used with columns with auto width (p-col) as well.
 
 In the first example below, first column covers the 4 units out of 12 and the rest of the columns share the remaining space whereas in the second example, all three columns have explicit units.
 
@@ -77,7 +77,7 @@ When the number of columns exceed 12, columns wrap to a new line.
 ```
 
 ### Fixed Width Column
-A column can have a fixed width while siblings having auto width. Apply "p-col-fixed" class to fix a column width.
+A column can have a fixed width while siblings having auto width. Apply **p-col-fixed** class to fix a column width.
 
 ```html
 <div class="p-grid">
@@ -88,7 +88,7 @@ A column can have a fixed width while siblings having auto width. Apply "p-col-f
 
 ### Responsive
 
-Responsive layout is achieved by applying breakpoint specific classes to the columns whereas p-col-* define the default behavior for mobile devices with small screens. Four screen sizes are supported with different breakpoints.
+Responsive layout is achieved by applying breakpoint specific classes to the columns whereas **p-col-\*** define the default behavior for mobile devices with small screens. Four screen sizes are supported with different breakpoints.
 
 * p-sm-\* : min-width: 576px
 * p-md-\* : min-width: 768px
@@ -109,14 +109,14 @@ In example below, large screens display 4 columns, medium screens display 2 colu
 
 ### Horizontal Alignment
 
-p-justify-* classes are used on the container element to define the alignment along the main axis.
+**p-justify-\*** classes are used on the container element to define the alignment along the main axis.
 
-* p-justify-start:  (default)	Items are packed toward the start line
-* p-justify-end	Items:  are packed toward to end line
-* p-justify-center: 	Items are centered along the line
-* p-justify-between: 	Items are evenly distributed in the line; first item is on the start line, last item on the end line
-* p-justify-around: 	Items are evenly distributed in the line with equal space around them.
-* p-justify-even: 	Items are distributed so that the spacing between any two items (and the space to the edges) is equal.
+* p-justify-start: (default) Items are packed toward the start line
+* p-justify-end : Items are re packed toward to end line
+* p-justify-center : Items are centered along the line
+* p-justify-between: Items are evenly distributed in the line; first item is on the start line, last item on the end line
+* p-justify-around: Items are evenly distributed in the line with equal space around them.
+* p-justify-even: Items are distributed so that the spacing between any two items (and the space to the edges) is equal.
 
 ```html
 <div class="p-grid p-justify-between">
@@ -127,7 +127,7 @@ p-justify-* classes are used on the container element to define the alignment al
 ```
 
 ### Vertical Alignment
-p-align-* classes are used on the container element to define the alignment along the cross axis.
+***p-align-\*** classes are used on the container element to define the alignment along the cross axis.
 
 * p-align-stretch: (default) Stretch to fill the container.
 * p-align-start : Cross-start margin edge of the items is placed on the cross-start line
@@ -143,7 +143,7 @@ p-align-* classes are used on the container element to define the alignment alon
 </div>
 ```
 
-Vertical alignment can also be defined at column level with the p-col-align-* classes
+Vertical alignment can also be defined at column level with the **p-col-align-\*** classes
 
 * p-col-align-stretch : (default) Stretch to fill the container.
 * p-col-align-start : Cross-start margin edge of the items is placed on the cross-start line
@@ -212,7 +212,7 @@ Columns can be nested to create more complex layouts.
 ```
 
 ### Gutter
-A .5 em padding is applied to each column along with negative margins on the container element, in case you'd like to remove these gutters, apply .p-nogutter class to the container. Gutters can also be removed on an ndividual columns with the same class name.
+A .5 em padding is applied to each column along with negative margins on the container element, in case you'd like to remove these gutters, apply **.p-nogutter** class to the container. Gutters can also be removed on an ndividual columns with the same class name.
 
 ```html
 <div class="p-grid p-nogutter">
