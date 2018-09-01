@@ -206,7 +206,7 @@ Columns can be nested to create more complex layouts.
         </div>
     </div>
     <div class="p-col-4">
-        5
+        4
     </div>
 </div>
 ```
