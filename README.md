@@ -90,10 +90,10 @@ A column can have a fixed width while siblings having auto width. Apply "p-col-f
 
 Responsive layout is achieved by applying breakpoint specific classes to the columns whereas p-col-* define the default behavior for mobile devices with small screens. Four screen sizes are supported with different breakpoints.
 
-* ui-sm-\* : min-width: 576px
-* ui-md-\* : min-width: 768px
-* ui-lg-\* : min-width: 992px
-* ui-xl-\* : min-width: 1200px
+* p-sm-\* : min-width: 576px
+* p-md-\* : min-width: 768px
+* p-lg-\* : min-width: 992px
+* p-xl-\* : min-width: 1200px
 
 In example below, large screens display 4 columns, medium screens display 2 columns in 2 rows and finally on small devices, columns are stacked.
 
