@@ -129,17 +129,39 @@ p-justify-* classes are used on the container element to define the alignment al
 ### Vertical Alignment
 p-align-* classes are used on the container element to define the alignment along the cross axis.
 
-* p-align-stretch: (default)	stretch to fill the container.
-* p-align-start	Cross-start margin edge of the items is placed on the cross-start line
-* p-align-end	Cross-end margin edge of the items is placed on the cross-end line
-* p-align-center	Items are centered in the cross-axis
-* p-align-baseline	Items are aligned such as their baselines align
+* p-align-stretch: (default) Stretch to fill the container.
+* p-align-start : Cross-start margin edge of the items is placed on the cross-start line
+* p-align-end :	Cross-end margin edge of the items is placed on the cross-end line
+* p-align-center : Items are centered in the cross-axis
+* p-align-baseline : Items are aligned such as their baselines align
 
 ```html
 <div class="p-grid p-align-center">
     <div class="p-col">4</div>
     <div class="p-col">4</div>
     <div class="p-col">4</div>
+</div>
+```
+
+Vertical alignment can also be defined at column level with the p-col-align-* classes
+
+* p-col-align-stretch : (default) Stretch to fill the container.
+* p-col-align-start : Cross-start margin edge of the items is placed on the cross-start line
+* p-col-align-end :	Cross-end margin edge of the items is placed on the cross-end line
+* p-col-align-center : Items are centered in the cross-axis
+* p-col-align-baseline : Items are aligned such as their baselines align
+
+```html
+<div class="p-grid vertical-container">
+    <div class="p-col p-col-align-start">
+        <div class="box">4</div>
+    </div>
+    <div class="p-col p-col-align-center">
+        <div class="box">4</div>
+    </div>
+    <div class="p-col p-col-align-end">
+        <div class="box">4</div>
+    </div>
 </div>
 ```
 
