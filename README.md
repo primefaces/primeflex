@@ -100,18 +100,10 @@ In example below, large screens display 4 columns, medium screens display 2 colu
 
 ```html
 <div class="p-grid">
-    <div class="p-col-12 p-md-6 p-lg-3">
-        <div class="box">p-col-12 p-md-6 p-lg-3</div>
-    </div>
-    <div class="p-col-12 p-md-6 p-lg-3">
-        <div class="box">p-col-12 p-md-6 p-lg-3</div>
-    </div>
-    <div class="p-col-12 p-md-6 p-lg-3">
-        <div class="box">p-col-12 p-md-6 p-lg-3</div>
-    </div>
-    <div class="p-col-12 p-md-6 p-lg-3">
-        <div class="box">p-col-12 p-md-6 p-lg-3</div>
-    </div>
+    <div class="p-col-12 p-md-6 p-lg-3">A</div>
+    <div class="p-col-12 p-md-6 p-lg-3">B</div>
+    <div class="p-col-12 p-md-6 p-lg-3">C</div>
+    <div class="p-col-12 p-md-6 p-lg-3">D</div>
 </div>
 ```
 
@@ -128,15 +120,9 @@ p-justify-* classes are used on the container element to define the alignment al
 
 ```html
 <div class="p-grid p-justify-between">
-    <div class="p-col-2">
-        <div class="box">2</div>
-    </div>
-    <div class="p-col-1">
-        <div class="box">1</div>
-    </div>
-    <div class="p-col-4">
-        <div class="box">4</div>
-    </div>
+    <div class="p-col-2">2</div>
+    <div class="p-col-1">1</div>
+    <div class="p-col-4">4</div>
 </div>
 ```
 
@@ -151,15 +137,9 @@ p-align-* classes are used on the container element to define the alignment alon
 
 ```html
 <div class="p-grid p-align-center">
-    <div class="p-col">
-        <div class="box">4</div>
-    </div>
-    <div class="p-col">
-        <div class="box">4</div>
-    </div>
-    <div class="p-col">
-        <div class="box">4</div>
-    </div>
+    <div class="p-col">4</div>
+    <div class="p-col">4</div>
+    <div class="p-col">4</div>
 </div>
 ```
 
@@ -193,18 +173,18 @@ Columns can be nested to create more complex layouts.
     <div class="p-col-8">
         <div class="p-grid">
             <div class="p-col-6">
-                <div class="box">6</div>
+                6
             </div>
             <div class="p-col-6">
-                <div class="box">6</div>
+                6
             </div>
             <div class="p-col-12">
-                <div class="box">12</div>
+                12
             </div>
         </div>
     </div>
     <div class="p-col-4">
-        <div class="box">4</div>
+        5
     </div>
 </div>
 ```
