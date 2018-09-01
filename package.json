@@ -1,19 +1,19 @@
 {
-  "name": "primegrid",
+  "name": "primeflex",
   "version": "1.0.0-rc.1",
-  "description": "PrimeGrid is a lightweight flex based responsive layout utility optimized for mobile phones, tablets and desktops",
+  "description": "PrimeFlex is a lightweight flex based responsive layout utility optimized for mobile phones, tablets and desktops",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/primefaces/primegrid.git"
+    "url": "git+https://github.com/primefaces/primeflex.git"
   },
   "keywords": ["grid","responsive","flex"],
   "author": "PrimeTek",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/primefaces/primegrid/issues"
+    "url": "https://github.com/primefaces/primeflex/issues"
   },
-  "homepage": "https://github.com/primefaces/primegrid#readme"
+  "homepage": "https://github.com/primefaces/primeflex#readme"
 }
