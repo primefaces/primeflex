@@ -152,7 +152,7 @@ Vertical alignment can also be defined at column level with the p-col-align-* cl
 * p-col-align-baseline : Items are aligned such as their baselines align
 
 ```html
-<div class="p-grid vertical-container">
+<div class="p-grid">
     <div class="p-col p-col-align-start">
         <div class="box">4</div>
     </div>
