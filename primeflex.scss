@@ -807,3 +807,20 @@ $gutter:.5em;
         margin-left: 0%;
     }
 }
+
+$breakpoints: ('sm':576,'md':768,'lg':992,'xl':1200);
+@for $col from  1 to 12 {
+    .p-col-order-#{$col} {
+        order: $col;
+    }
+}
+@each $name,$width in $breakpoints {
+    @media screen and (min-width: #{$width}px) {
+        @for $col from  1 to 12 {
+            .p-#{$name}-order-#{$col} {
+                order: $col;
+            }
+        }
+    }
+}
+
