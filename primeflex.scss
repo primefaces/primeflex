@@ -15,6 +15,13 @@ $gutter:.5em;
     margin-top: -1 * $gutter;
 }
 
+.p-grid>.p-col,
+.p-grid>[class*="p-col"] {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 .p-nogutter {
     margin-right: 0;
     margin-left: 0;
