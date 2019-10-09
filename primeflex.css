@@ -137,6 +137,12 @@
   -ms-grid-row-align: stretch;
   align-self: stretch; }
 
+.p-dir-col > .p-col,
+.p-dir-col-rev > .p-col {
+  -ms-flex-preferred-size: auto;
+  flex-basis: auto;
+}
+
 .p-col-1,
 .p-col-2,
 .p-col-3,
