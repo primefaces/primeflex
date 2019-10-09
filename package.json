@@ -1,6 +1,6 @@
 {
   "name": "primeflex",
-  "version": "1.0.0",
+  "version": "1.0.0-SNAPSHOT",
   "description": "PrimeFlex is a lightweight flex based responsive layout utility optimized for mobile phones, tablets and desktops",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
