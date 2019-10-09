@@ -212,12 +212,21 @@ Columns can be nested to create more complex layouts.
 ```
 
 ### Gutter
-A .5 em padding is applied to each column along with negative margins on the container element, in case you'd like to remove these gutters, apply **.p-nogutter** class to the container. Gutters can also be removed on an ndividual columns with the same class name.
+A .5 em padding is applied to each column along with negative margins on the container element, in case you'd like to remove these gutters, apply **.p-nogutter** class to the container. Note that this will not only remove the negative margins of the container, but also the padding of the columns.
 
 ```html
 <div class="p-grid p-nogutter">
     <div class="p-col">1</div>
-    <div class="p-col p-nogutter">2</div>
+    <div class="p-col">2</div>
+    <div class="p-col">3</div>
+</div>
+```
+
+Gutters can also be removed from individual columns with the **.p-col-nogutter** class.
+```html
+<div class="p-grid">
+    <div class="p-col">1</div>
+    <div class="p-col p-col-nogutter">2</div>
     <div class="p-col">3</div>
 </div>
 ```
