@@ -1193,12 +1193,12 @@
   margin-bottom: 1em;
 }
 
-.p-field label {
+.p-field > label {
   display: inline-block;
   margin-bottom: 0.5em;
 }
 
-.p-field.p-grid label {
+.p-field.p-grid > label {
   margin-bottom: 0;
   display: flex;
   align-items: center;
@@ -1253,9 +1253,9 @@
   margin-bottom: 0;
 }
 
-.p-formgroup-inline .p-field label,
-.p-formgroup-inline .p-field-checkbox label,
-.p-formgroup-inline .p-field-radiobutton label {
+.p-formgroup-inline .p-field > label,
+.p-formgroup-inline .p-field-checkbox > label,
+.p-formgroup-inline .p-field-radiobutton > label {
   margin-right: 0.5em;
   margin-bottom: 0;
 }
@@ -1267,8 +1267,10 @@
   align-items: center;
 }
 
-.p-field-checkbox label,
-.p-field-radiobutton label {
+.p-field-checkbox > label,
+.p-field-radiobutton > label {
   margin-left: 0.5em;
   line-height: 1;
 }
+
+/*# sourceMappingURL=primeflex.css.map */
