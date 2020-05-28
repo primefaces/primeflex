@@ -1211,12 +1211,12 @@ $fieldLabelMargin: .5em !default;
     margin-bottom: $fieldMargin;
 }
 
-.p-field label {
+.p-field > label {
     display: inline-block;
     margin-bottom: $fieldLabelMargin;
 }
 
-.p-field.p-grid label {
+.p-field.p-grid > label {
     margin-bottom: 0;
     display: flex;
     align-items: center;
@@ -1271,9 +1271,9 @@ $fieldLabelMargin: .5em !default;
     margin-bottom: 0;
 }
 
-.p-formgroup-inline .p-field label,
-.p-formgroup-inline .p-field-checkbox label,
-.p-formgroup-inline .p-field-radiobutton label {
+.p-formgroup-inline .p-field > label,
+.p-formgroup-inline .p-field-checkbox > label,
+.p-formgroup-inline .p-field-radiobutton > label {
     margin-right: $fieldLabelMargin;
     margin-bottom: 0;
 }
@@ -1285,8 +1285,8 @@ $fieldLabelMargin: .5em !default;
     align-items: center;
 }
 
-.p-field-checkbox label,
-.p-field-radiobutton label {
+.p-field-checkbox > label,
+.p-field-radiobutton > label {
     margin-left: $fieldLabelMargin;
     line-height: 1;
 }
