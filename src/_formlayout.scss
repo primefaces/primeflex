@@ -1,5 +1,3 @@
-
-
 .p-field {
     margin-bottom: $fieldMargin;
 }
@@ -10,7 +8,6 @@
 }
 
 .p-field.p-grid > label {
-    margin-bottom: 0;
     display: flex;
     align-items: center;
 }
@@ -55,13 +52,13 @@
 .p-formgroup-inline {
     display: flex;
     flex-wrap: wrap;
+    align-items: flex-start;
 }
 
 .p-formgroup-inline .p-field,
 .p-formgroup-inline .p-field-checkbox,
 .p-formgroup-inline .p-field-radiobutton {
     margin-right: $fieldMargin;
-    margin-bottom: 0;
 }
 
 .p-formgroup-inline .p-field > label,
