@@ -1203,6 +1203,10 @@
   align-items: center;
 }
 
+.p-field > small {
+  margin-top: 0.25rem;
+}
+
 .p-field.p-grid,
 .p-formgrid.p-grid {
   margin-top: 0;

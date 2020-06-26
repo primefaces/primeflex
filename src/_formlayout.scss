@@ -12,6 +12,10 @@
     align-items: center;
 }
 
+.p-field > small {
+    margin-top: $helperTextMargin;
+}
+
 .p-field.p-grid,
 .p-formgrid.p-grid {
     margin-top: 0;
