@@ -1,4 +1,10 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor
 
 /.sass-cache
 .DS_STORE
+.idea
+_site
