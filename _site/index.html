@@ -1,0 +1,829 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrimeFlex</title>
+
+    <link rel="stylesheet" href="/assets/css/primeflex.css">
+    <link rel="stylesheet" href="/assets/css/primeicons-static.css">
+    <link rel="stylesheet" href="/assets/css/prism.css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>
+<header>
+    <div class="layout-topbar flex align-items-center justify-content-between">
+        <div class="mobile-menu-wrapper">
+            <a class="mobile-button" onclick="PrimeFlex.onToggleMobileMenu(event)"><i class="pi pi-bars"></i></a>
+        </div>
+
+        <div class="layout-topbar-left">
+
+            <a href="/">
+                <img src="/assets/images/logo-primeflex.svg" alt="prime">
+            </a>
+        </div>
+        <div class="layout-topbar-right">
+            <ul class="flex flex-row mr-5">
+                <li><a href="https://www.primetek.com.tr">PrimeTek</a></li>
+                <li><a href="https://forum.primefaces.org">Community</a></li>
+                <li><a href="https://forum.primefaces.org">v2.0.0</a></li>
+                <li><a href="https://www.github.com/primefaces/primeflex">GitHub <i class="pi pi-external-link ml-2"></i></a></li>
+            </ul>
+
+            <div class="mobile-topbar-menu-wrapper">
+                <a class="mobile-topbar-button" onclick="PrimeFlex.onToggleMobileTopbarMenu(event)"><i class="pi pi-ellipsis-v"></i></a>
+                <ul class="mobile-topbar-menu clearlist">
+                    <li><a href="https://www.github.com/primefaces/primeflex">GitHub</a></li>
+                    <li><a href="https://forum.primefaces.org">Community</a></li>
+                    <li><a href="https://www.primetek.com.tr">PrimeTek</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+<main>
+    <div class="layout-menu-wrapper" id="layout-menu-wrapper">
+        <ul class="layout-menu">
+            <nav>
+    
+
+    <li >
+        <div class="menuitem-root-text mt-3" >
+            Setup
+        </div>
+        <a href="/setup" style="display: block">
+            Setup
+        </a>
+    </li>
+    
+
+    <li >
+        <div class="menuitem-root-text mt-3" style="display: block">
+            Layout
+        </div>
+        <a href="" >
+            Layout
+        </a>
+    </li>
+    
+
+    <li >
+        <div class="menuitem-root-text mt-3" >
+            Display
+        </div>
+        <a href="/display" style="display: block">
+            Display
+        </a>
+    </li>
+    
+
+    <li >
+        <div class="menuitem-root-text mt-3" >
+            Overflow
+        </div>
+        <a href="/overflow" style="display: block">
+            Overflow
+        </a>
+    </li>
+    
+
+    <li >
+        <div class="menuitem-root-text mt-3" >
+            Position
+        </div>
+        <a href="/position" style="display: block">
+            Position
+        </a>
+    </li>
+    
+
+    <li >
+        <div class="menuitem-root-text mt-3" >
+            Top / Right / Bottom / Left
+        </div>
+        <a href="/toprightbottomleft" style="display: block">
+            Top / Right / Bottom / Left
+        </a>
+    </li>
+    
+
+    <li >
+        <div class="menuitem-root-text mt-3" >
+            Z-Index
+        </div>
+        <a href="/zindex" style="display: block">
+            Z-Index
+        </a>
+    </li>
+    
+
+    <li >
+        <div class="menuitem-root-text mt-3" style="display: block">
+            Flexbox and Grid
+        </div>
+        <a href="" >
+            Flexbox and Grid
+        </a>
+    </li>
+    
+
+    <li >
+        <div class="menuitem-root-text mt-3" >
+            Flex Direction
+        </div>
+        <a href="/flexdirection" style="display: block">
+            Flex Direction
+        </a>
+    </li>
+    
+
+    <li >
+        <div class="menuitem-root-text mt-3" >
+            Flex Wrap
+        </div>
+        <a href="/flexwrap" style="display: block">
+            Flex Wrap
+        </a>
+    </li>
+    
+
+    <li >
+        <div class="menuitem-root-text mt-3" >
+            Flex
+        </div>
+        <a href="/flex" style="display: block">
+            Flex
+        </a>
+    </li>
+    
+
+    <li >
+        <div class="menuitem-root-text mt-3" >
+            Flex Grow
+        </div>
+        <a href="/flexgrow" style="display: block">
+            Flex Grow
+        </a>
+    </li>
+    
+
+    <li >
+        <div class="menuitem-root-text mt-3" >
+            Flex Shrink
+        </div>
+        <a href="/flexshrink" style="display: block">
+            Flex Shrink
+        </a>
+    </li>
+    
+
+    <li >
+        <div class="menuitem-root-text mt-3" >
+            Order
+        </div>
+        <a href="/order" style="display: block">
+            Order
+        </a>
+    </li>
+    
+
+    <li >
+        <div class="menuitem-root-text mt-3" >
+            Justify Content
+        </div>
+        <a href="/justifycontent" style="display: block">
+            Justify Content
+        </a>
+    </li>
+    
+
+    <li >
+        <div class="menuitem-root-text mt-3" >
+            Align Content
+        </div>
+        <a href="/aligncontent" style="display: block">
+            Align Content
+        </a>
+    </li>
+    
+
+    <li >
+        <div class="menuitem-root-text mt-3" >
+            Align Items
+        </div>
+        <a href="/alignitems" style="display: block">
+            Align Items
+        </a>
+    </li>
+    
+
+    <li >
+        <div class="menuitem-root-text mt-3" >
+            Align Self
+        </div>
+        <a href="/alignself" style="display: block">
+            Align Self
+        </a>
+    </li>
+    
+
+    <li >
+        <div class="menuitem-root-text mt-3" style="display: block">
+            Backgrounds
+        </div>
+        <a href="" >
+            Backgrounds
+        </a>
+    </li>
+    
+
+    <li >
+        <div class="menuitem-root-text mt-3" >
+            Background Color
+        </div>
+        <a href="/backgroundcolor" style="display: block">
+            Background Color
+        </a>
+    </li>
+    
+
+    <li >
+        <div class="menuitem-root-text mt-3" >
+            Background Repeat
+        </div>
+        <a href="/backgroundrepeat" style="display: block">
+            Background Repeat
+        </a>
+    </li>
+    
+
+    <li >
+        <div class="menuitem-root-text mt-3" >
+            Background Size
+        </div>
+        <a href="/backgroundsize" style="display: block">
+            Background Size
+        </a>
+    </li>
+    
+
+    <li >
+        <div class="menuitem-root-text mt-3" >
+            Background Position
+        </div>
+        <a href="/backgroundposition" style="display: block">
+            Background Position
+        </a>
+    </li>
+    
+
+    <li >
+        <div class="menuitem-root-text mt-3" style="display: block">
+            Border
+        </div>
+        <a href="" >
+            Border
+        </a>
+    </li>
+    
+
+    <li >
+        <div class="menuitem-root-text mt-3" >
+            Border Radius
+        </div>
+        <a href="/borderradius" style="display: block">
+            Border Radius
+        </a>
+    </li>
+    
+
+    <li >
+        <div class="menuitem-root-text mt-3" >
+            Border Width
+        </div>
+        <a href="/borderwidth" style="display: block">
+            Border Width
+        </a>
+    </li>
+    
+
+    <li >
+        <div class="menuitem-root-text mt-3" >
+            Border Style
+        </div>
+        <a href="/borderstyle" style="display: block">
+            Border Style
+        </a>
+    </li>
+    
+
+    <li >
+        <div class="menuitem-root-text mt-3" >
+            Border Color
+        </div>
+        <a href="/bordercolor" style="display: block">
+            Border Color
+        </a>
+    </li>
+    
+
+    <li >
+        <div class="menuitem-root-text mt-3" style="display: block">
+            Spacing
+        </div>
+        <a href="" >
+            Spacing
+        </a>
+    </li>
+    
+
+    <li >
+        <div class="menuitem-root-text mt-3" >
+            Padding
+        </div>
+        <a href="/padding" style="display: block">
+            Padding
+        </a>
+    </li>
+    
+
+    <li >
+        <div class="menuitem-root-text mt-3" >
+            Margin
+        </div>
+        <a href="/margin" style="display: block">
+            Margin
+        </a>
+    </li>
+    
+
+    <li >
+        <div class="menuitem-root-text mt-3" style="display: block">
+            Sizing
+        </div>
+        <a href="" >
+            Sizing
+        </a>
+    </li>
+    
+
+    <li >
+        <div class="menuitem-root-text mt-3" >
+            Min Width
+        </div>
+        <a href="/minwidth" style="display: block">
+            Min Width
+        </a>
+    </li>
+    
+
+    <li >
+        <div class="menuitem-root-text mt-3" >
+            Width
+        </div>
+        <a href="/width" style="display: block">
+            Width
+        </a>
+    </li>
+    
+
+    <li >
+        <div class="menuitem-root-text mt-3" >
+            Max Width
+        </div>
+        <a href="/maxwidth" style="display: block">
+            Max Width
+        </a>
+    </li>
+    
+
+    <li >
+        <div class="menuitem-root-text mt-3" >
+            Min Height
+        </div>
+        <a href="/minheight" style="display: block">
+            Min Height
+        </a>
+    </li>
+    
+
+    <li >
+        <div class="menuitem-root-text mt-3" >
+            Height
+        </div>
+        <a href="/height" style="display: block">
+            Height
+        </a>
+    </li>
+    
+
+    <li >
+        <div class="menuitem-root-text mt-3" >
+            Max Height
+        </div>
+        <a href="/maxheight" style="display: block">
+            Max Height
+        </a>
+    </li>
+    
+
+    <li >
+        <div class="menuitem-root-text mt-3" style="display: block">
+            Typography
+        </div>
+        <a href="" >
+            Typography
+        </a>
+    </li>
+    
+
+    <li >
+        <div class="menuitem-root-text mt-3" >
+            Font Size
+        </div>
+        <a href="/fontsize" style="display: block">
+            Font Size
+        </a>
+    </li>
+    
+
+    <li >
+        <div class="menuitem-root-text mt-3" >
+            Font Weight
+        </div>
+        <a href="/fontweight" style="display: block">
+            Font Weight
+        </a>
+    </li>
+    
+
+    <li >
+        <div class="menuitem-root-text mt-3" >
+            Font Style
+        </div>
+        <a href="/fontstyle" style="display: block">
+            Font Style
+        </a>
+    </li>
+    
+
+    <li >
+        <div class="menuitem-root-text mt-3" >
+            Text Color
+        </div>
+        <a href="/textcolor" style="display: block">
+            Text Color
+        </a>
+    </li>
+    
+
+    <li >
+        <div class="menuitem-root-text mt-3" >
+            Text Align
+        </div>
+        <a href="/textalign" style="display: block">
+            Text Align
+        </a>
+    </li>
+    
+
+    <li >
+        <div class="menuitem-root-text mt-3" >
+            Text Decoration
+        </div>
+        <a href="/textdecoration" style="display: block">
+            Text Decoration
+        </a>
+    </li>
+    
+
+    <li >
+        <div class="menuitem-root-text mt-3" >
+            Text Transform
+        </div>
+        <a href="/texttransform" style="display: block">
+            Text Transform
+        </a>
+    </li>
+    
+
+    <li >
+        <div class="menuitem-root-text mt-3" >
+            Line Height
+        </div>
+        <a href="/lineheight" style="display: block">
+            Line Height
+        </a>
+    </li>
+    
+
+    <li >
+        <div class="menuitem-root-text mt-3" >
+            Whitespace
+        </div>
+        <a href="/whitespace" style="display: block">
+            Whitespace
+        </a>
+    </li>
+    
+
+    <li >
+        <div class="menuitem-root-text mt-3" >
+            List Style Type
+        </div>
+        <a href="/liststyletype" style="display: block">
+            List Style Type
+        </a>
+    </li>
+    
+
+    <li >
+        <div class="menuitem-root-text mt-3" style="display: block">
+            Effects
+        </div>
+        <a href="" >
+            Effects
+        </a>
+    </li>
+    
+
+    <li >
+        <div class="menuitem-root-text mt-3" >
+            Elevation
+        </div>
+        <a href="/elevation" style="display: block">
+            Elevation
+        </a>
+    </li>
+    
+
+    <li >
+        <div class="menuitem-root-text mt-3" style="display: block">
+            Interactivity
+        </div>
+        <a href="" >
+            Interactivity
+        </a>
+    </li>
+    
+
+    <li >
+        <div class="menuitem-root-text mt-3" >
+            User Select
+        </div>
+        <a href="/userselect" style="display: block">
+            User Select
+        </a>
+    </li>
+    
+
+    <li >
+        <div class="menuitem-root-text mt-3" >
+            FormLayout
+        </div>
+        <a href="/formlayout" style="display: block">
+            FormLayout
+        </a>
+    </li>
+    
+
+    <li >
+        <div class="menuitem-root-text mt-3" >
+            GridSystem
+        </div>
+        <a href="/gridsystem" style="display: block">
+            GridSystem
+        </a>
+    </li>
+    
+</nav>
+
+        </ul>
+    </div>
+
+    <div class="layout-main">
+        <div class="layout-content documentation" id="doc">
+            <div class="home-page">
+    <div class="hero">
+        <div class="grid grid-nogutter flex justify-content-between">
+            <div class="col-12 xl:col-6 flex justify-content-center align-items-center xl:align-items-start flex-column" style="max-width: 380px">
+                <div>
+                    <h1 class="font-bold line-height-4 text-3xl">Perfect CSS Utility Compainion
+                        For Your Projects</h1>
+
+                    <p class="m-0">PrimeFlex is a lightweight flex based responsive grid optimized for mobile phones, tablets and desktops.</p>
+                </div>
+
+                <div class="hero-npm flex align-items-center justify-content-between">
+                    <span class="copied-text">Copied!</span>
+                    <input readonly value="npm install primeflex"/>
+                    <button type="button" class="copy" onclick="PrimeFlex.copyText(event)">COPY</button>
+                </div>
+
+                <div class="hero-links pt-3 pb-5">
+                    <a href="https://www.npmjs.com/package/primeflex" class="mr-5">Download</a>
+                    <a href="https://www.github.com/primefaces/primeflex">GitHub</a>
+                </div>
+            </div>
+            <div class="col-12 xl:col-6 flex align-items-center">
+                <img src="/assets/images/home/hero.png" alt="PrimeFlex Hero">
+            </div>
+        </div>
+    </div>
+    <div class="content-wrapper">
+        <div class="content">
+            <div class="header-text text-center font-bold p-2 text-4xl mb-2">What is PrimeFlex</div>
+            <div class="sub-text text-center mb-3">PrimeFlex is a lightweight flex based responsive grid optimized for mobile phones, tablets and desktops</div>
+
+            <div class="feature-boxes grid-nogutter grid">
+                <div class="col-12 md:col-4 p-3">
+                    <div class="feature-box text-center">
+                        <div class=" image-box m-auto mb-3 flex align-items-center justify-content-center" style="background-color: #61D5E4">
+                            <img src="assets/images/home/features/illustration-utilityfirst.png">
+                        </div>
+                        <div class="header-text font-bold mb-3">Utility First</div>
+                        <div class="sub-text">Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore.</div>
+                    </div>
+                </div>
+                <div class="col-12 md:col-4 p-3">
+                    <div class="feature-box text-center">
+                        <div class=" image-box m-auto mb-3 flex align-items-center justify-content-center" style="background-color: #F9AE61">
+                            <img src="assets/images/home/features/illustration-gridsystem.png">
+                        </div>
+                        <div class="header-text font-bold mb-3">Grid System</div>
+                        <div class="sub-text">Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore.</div>
+                    </div>
+                </div>
+                <div class="col-12 md:col-4 p-3">
+                    <div class="feature-box text-center">
+                        <div class=" image-box m-auto mb-3 flex align-items-center justify-content-center" style="background-color: #9CAEB7">
+                            <img src="assets/images/home/features/illustration-flexboxutilities.png">
+                        </div>
+                        <div class="header-text font-bold mb-3">Flexbox Utilities</div>
+                        <div class="sub-text">Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore.</div>
+                    </div>
+                </div>
+                <div class="col-12 md:col-4 p-3">
+                    <div class="feature-box text-center">
+                        <div class=" image-box m-auto mb-3 flex align-items-center justify-content-center" style="background-color: #C279CE">
+                            <img src="assets/images/home/features/illustration-spacing.png">
+                        </div>
+                        <div class="header-text font-bold mb-3">Spacing</div>
+                        <div class="sub-text">Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore.</div>
+                    </div>
+                </div>
+                <div class="col-12 md:col-4 p-3">
+                    <div class="feature-box text-center">
+                        <div class=" image-box m-auto mb-3 flex align-items-center justify-content-center" style="background-color: #61BEB5">
+                            <img src="assets/images/home/features/illustration-elevation.png">
+                        </div>
+                        <div class="header-text font-bold mb-3">Elevation</div>
+                        <div class="sub-text">Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore.</div>
+                    </div>
+                </div>
+                <div class="col-12 md:col-4 p-3">
+                    <div class="feature-box text-center">
+                        <div class=" image-box m-auto mb-3 flex align-items-center justify-content-center" style="background-color: #75BEF8">
+                            <img src="assets/images/home/features/illustration-fontutilities.png">
+                        </div>
+                        <div class="header-text font-bold mb-3">Font Utilities</div>
+                        <div class="sub-text">Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore.</div>
+                    </div>
+                </div>
+                <div class="col-12 md:col-4 p-3">
+                    <div class="feature-box text-center">
+                        <div class=" image-box m-auto mb-3 flex align-items-center justify-content-center" style="background-color: #FDD87D">
+                            <img src="assets/images/home/features/illustration-sizing.png">
+                        </div>
+                        <div class="header-text font-bold mb-3">Sizing</div>
+                        <div class="sub-text">Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore.</div>
+                    </div>
+                </div>
+                <div class="col-12 md:col-4 p-3">
+                    <div class="feature-box text-center">
+                        <div class=" image-box m-auto mb-3 flex align-items-center justify-content-center" style="background-color: #DFE3E7">
+                            <img src="assets/images/home/features/illustration-colorsystem.png">
+                        </div>
+                        <div class="header-text font-bold mb-3">Color System</div>
+                        <div class="sub-text">Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore.</div>
+                    </div>
+                </div>
+                <div class="col-12 md:col-4 p-3">
+                    <div class="feature-box text-center">
+                        <div class=" image-box m-auto mb-3 flex align-items-center justify-content-center" style="background-color: #90CD93">
+                            <img src="assets/images/home/features/illustration-responsive.png">
+                        </div>
+                        <div class="header-text font-bold mb-3">Responsive</div>
+                        <div class="sub-text">Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore.</div>
+                    </div>
+                </div>
+                <div class="col-12 md:col-4 p-3">
+                    <div class="feature-box text-center">
+                        <div class=" image-box m-auto mb-3 flex align-items-center justify-content-center" style="background-color: #9CAEB7">
+                            <img src="assets/images/home/features/illustration-formlayout.png">
+                        </div>
+                        <div class="header-text font-bold mb-3">Form Layout</div>
+                        <div class="sub-text">Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore.</div>
+                    </div>
+                </div>
+                <div class="col-12 md:col-4 p-3">
+                    <div class="feature-box text-center">
+                        <div class=" image-box m-auto mb-3 flex align-items-center justify-content-center" style="background-color: #8893D1">
+                            <img src="assets/images/home/features/illustration-icons.png">
+                        </div>
+                        <div class="header-text font-bold mb-3">Icons</div>
+                        <div class="sub-text">Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="users mx-3 py-5 text-center">
+            <div class="header-text font-bold p-2 text-4xl">Key Users</div>
+            <div class="sub-text mb-3">The creator of PrimeNG is PrimeTek Informatics, the distinguished component library vendor who built popular open source projects such as PrimeFaces, PrimeNG and PrimeReact over the past years.</div>
+
+            <div class="user-boxes grid-nogutter grid">
+                <div class="col-6 md:col-4 lg:col-2 p-3">
+                    <div class="user-box text-center flex align-items-center justify-content-center">
+                        <img src="assets/images/home/users/fox.svg" alt="user">
+                    </div>
+                </div>
+                <div class="col-6 md:col-4 lg:col-2 p-3">
+                    <div class="user-box text-center flex align-items-center justify-content-center">
+                        <img src="assets/images/home/users/intel.svg" alt="user">
+                    </div>
+                </div>
+                <div class="col-6 md:col-4 lg:col-2 p-3">
+                    <div class="user-box text-center flex align-items-center justify-content-center">
+                        <img src="assets/images/home/users/ebay.svg" alt="user">
+                    </div>
+                </div>
+                <div class="col-6 md:col-4 lg:col-2 p-3">
+                    <div class="user-box text-center flex align-items-center justify-content-center">
+                        <img src="assets/images/home/users/ford.svg" alt="user">
+                    </div>
+                </div>
+                <div class="col-6 md:col-4 lg:col-2 p-3">
+                    <div class="user-box text-center flex align-items-center justify-content-center">
+                        <img src="assets/images/home/users/nvidia.svg" alt="user">
+                    </div>
+                </div>
+                <div class="col-6 md:col-4 lg:col-2 p-3">
+                    <div class="user-box text-center flex align-items-center justify-content-center">
+                        <img src="assets/images/home/users/sap.svg" alt="user">
+                    </div>
+                </div>
+                <div class="col-6 md:col-4 lg:col-2 p-3">
+                    <div class="user-box text-center flex align-items-center justify-content-center">
+                        <img src="assets/images/home/users/unicredit.svg" alt="user">
+                    </div>
+                </div>
+                <div class="col-6 md:col-4 lg:col-2 p-3">
+                    <div class="user-box text-center flex align-items-center justify-content-center">
+                        <img src="assets/images/home/users/airbus.svg" alt="user">
+                    </div>
+                </div>
+                <div class="col-6 md:col-4 lg:col-2 p-3">
+                    <div class="user-box text-center flex align-items-center justify-content-center">
+                        <img src="assets/images/home/users/verizon.svg" alt="user">
+                    </div>
+                </div>
+                <div class="col-6 md:col-4 lg:col-2 p-3">
+                    <div class="user-box text-center flex align-items-center justify-content-center">
+                        <img src="assets/images/home/users/lufthansa.svg" alt="user">
+                    </div>
+                </div>
+                <div class="col-6 md:col-4 lg:col-2 p-3">
+                    <div class="user-box text-center flex align-items-center justify-content-center">
+                        <img src="assets/images/home/users/amex.svg" alt="user">
+                    </div>
+                </div>
+                <div class="col-6 md:col-4 lg:col-2 p-3">
+                    <div class="user-box text-center flex align-items-center justify-content-center">
+                        <img src="assets/images/home/users/viacom.svg" alt="user">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        </div>
+
+        <div class="layout-footer flex align-items-center justify-content-between">
+            <div class="layout-footer-left">
+                <img src="/assets/images/prime-logo-white.png" alt="prime">
+            </div>
+            <div class="layout-footer-right">
+                <a href="https://discord.com/invite/gzKFYnpmCY" class="mr-3"><i class="pi pi-discord"></i></a>
+                <a href="https://github.com/primefaces/primeng" class="mr-3 ml-3"><i class="pi pi-github"></i></a>
+                <a href="https://github.com/primefaces/primeng" class="ml-3"><i class="pi pi-globe"></i></a>
+            </div>
+        </div>
+    </div>
+</main>
+
+<script type="text/javascript" src="/assets/js/prism.js"></script>
+<script type="text/javascript" src="/assets/js/site.js"></script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+---
+layout: layout
+permalink: /flexshrink
+---
+
+<div>
+    <h2>Flex Shrink</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+    <h5>Getting Started</h5>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <table class="doc-table">
+        <thead>
+        <tr>
+            <th>Class</th>
+            <th>Properties</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>flex-shrink-0</td>
+            <td>flex-shrink: 0;</td>
+        </tr>
+        <tr>
+            <td>flex-shrink-1</td>
+            <td>flex-shrink: 1;</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <h5>Shrink</h5>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <p class="font-bold">Resize to allow a flex item to shrink if needed</p>
+    <div class="card flex">
+        <div class="flex-grow-1 font-bold text-blue-500 shadow-1 m-2 flex align-items-center justify-content-center" style="width: 200px; min-height: 100px">1</div>
+        <div class="flex-shrink-1 font-bold text-blue-500 shadow-1 m-2 flex align-items-center justify-content-center" style="width: 200px; min-height: 100px">shrink item</div>
+        <div class="flex-grow-1 font-bold text-blue-500 shadow-1 m-2 flex align-items-center justify-content-center" style="width: 200px; min-height: 100px">3</div>
+    </div>
+
+    <pre><code class="language-html">
+&lt;div class=&quot;card flex...&quot;&gt;
+    &lt;div class=&quot;flex-grow-1 ...&quot; style=&quot;width:200px; ...&quot;&gt;1&lt;/div&gt;
+    &lt;div class=&quot;flex-shrink-1 ...&quot; style=&quot;width:200px; ...&quot;&gt;shrink item&lt;/div&gt;
+    &lt;div class=&quot;flex-grow-1 ...&quot; style=&quot;width:200px; ...&quot;&gt;3&lt;/div&gt;
+&lt;/div&gt;
+
+</code></pre>
+
+    <h5>Don't Shrink</h5>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <div class="card flex ">
+        <div class="flex-grow-1 font-bold text-blue-500 shadow-1 m-2 flex align-items-center justify-content-center" style="width: 200px; min-height: 100px">1</div>
+        <div class="flex-shrink-0 font-bold text-blue-500 shadow-1 m-2 flex align-items-center justify-content-center" style="width: 200px; min-height: 100px">don't shrink item</div>
+        <div class="flex-grow-1 font-bold text-blue-500 shadow-1 m-2 flex align-items-center justify-content-center" style="width: 200px; min-height: 100px">3</div>
+    </div>
+
+    <pre><code class="language-html">
+&lt;div class=&quot;card flex ...&quot;&gt;
+    &lt;div class=&quot;flex-grow-1 ...&quot; style=&quot;width:200px; ...&quot;&gt;1&lt;/div&gt;
+    &lt;div class=&quot;flex-shrink-0 ...&quot; style=&quot;width:200px; ...&quot;&gt;don't shrink item&lt;/div&gt;
+    &lt;div class=&quot;flex-grow-1 ...&quot; style=&quot;width:200px; ...&quot;&gt;3&lt;/div&gt;
+&lt;/div&gt;
+
+</code></pre>
+
+    <h5>Responsive</h5>
+    <p>Breakpoints define how the display property should be defined depending on the screen size. Design is mobile first so smaller values
+        can also apply to larger values e.g. md also applies to lg or xl if they are not explicitly defined.</p>
+    <ul>
+        <li><b>sm</b>: small screens e.g. phones</li>
+        <li><b>md</b>: medium screens e.g. tablets</li>
+        <li><b>lg</b>: large screens e.g. notebooks</li>
+        <li><b>xl</b>: larger screens .e.g monitors</li>
+    </ul>
+
+    <h5>Shrink on a Small Screen</h5>
+    <p>Resize to change a flex item to shrink.</p>
+    <div class="card flex ">
+        <div class="flex-grow-1 font-bold text-blue-500 shadow-1 m-2 flex align-items-center justify-content-center" style="width: 200px; min-height: 100px">1</div>
+        <div class="flex-shrink-1 md:flex-shrink-0 font-bold text-blue-500 shadow-1 m-2 flex align-items-center justify-content-center" style="width: 200px; min-height: 100px">responsive shrink</div>
+        <div class="flex-grow-1 font-bold text-blue-500 shadow-1 m-2 flex align-items-center justify-content-center" style="width: 200px; min-height: 100px">3</div>
+    </div>
+
+    <pre><code class="language-html">
+&lt;div class=&quot;card flex ...&quot;&gt;
+    &lt;div class=&quot;flex-grow-1 ...&quot; style=&quot;width:200px; ...&quot;&gt;1&lt;/div&gt;
+    &lt;div class=&quot;flex-shrink-1 md:flex-shrink-0 ...&quot; style=&quot;width:200px; ...&quot;&gt;responsive shrink&lt;/div&gt;
+    &lt;div class=&quot;flex-grow-1 ...&quot; style=&quot;width:200px; ...&quot;&gt;3&lt;/div&gt;
+&lt;/div&gt;
+
+</code></pre>
+
+</div>

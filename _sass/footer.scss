@@ -1,0 +1,21 @@
+.layout-footer {
+    height: 60px;
+    background-color: #181B21;
+    padding: 12px 30px;
+
+    .layout-footer-left {
+        img {
+            height: 40px;
+        }
+    }
+
+    .layout-footer-right {
+        a {
+            color: #ffffff;
+
+            i {
+                font-size: 18px;
+            }
+        }
+    }
+}

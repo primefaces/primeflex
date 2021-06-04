@@ -1,0 +1,92 @@
+---
+layout: layout
+permalink: /maxwidth
+---
+
+<div>
+    <h2>Max Width</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+    <h5>Getting Start</h5>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <div class="overflow-auto" style="max-height: 500px">
+        <table class="doc-table">
+            <thead>
+            <tr>
+                <th>Class</th>
+                <th>Properties</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>max-w-0</td>
+                <td>max-width: 0px;</td>
+            </tr>
+            <tr>
+                <td>max-w-full</td>
+                <td>max-width: 100%;</td>
+            </tr>
+            <tr>
+                <td>max-w-screen</td>
+                <td>max-width: 100vw;</td>
+            </tr>
+            <tr>
+                <td>max-w-min</td>
+                <td>max-width: min-content;</td>
+            </tr>
+            <tr>
+                <td>max-w-max</td>
+                <td>max-width: max-content;</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+
+    <h5>Usage</h5>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+    <div class="card flex flex-wrap align-items-center justify-content-center">
+        <div class="bg-blue-50 shadow-1 p-3 m-3" style="width: 200px;">
+            <div class="max-w-full bg-blue-100 text-blue-500 font-bold shadow-2 p-3 flex align-items-center justify-content-center">max-w-full</div>
+        </div>
+    </div>
+
+    <pre><code class="language-html">
+&lt;div class=&quot;card ...&quot;&gt;
+    &lt;div class=&quot;...&quot; style=&quot;width: 200px;&quot;&gt;
+        &lt;div class=&quot;max-w-full ...&quot;&gt;max-w-full&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+</code></pre>
+
+    <h5>Responsive</h5>
+    <p>Breakpoints define how the display property should be defined depending on the screen size. Design is mobile first so smaller values
+        can also apply to larger values e.g. md also applies to lg or xl if they are not explicitly defined.</p>
+    <ul>
+        <li><b>sm</b>: small screens e.g. phones</li>
+        <li><b>md</b>: medium screens e.g. tablets</li>
+        <li><b>lg</b>: large screens e.g. notebooks</li>
+        <li><b>xl</b>: larger screens .e.g monitors</li>
+    </ul>
+
+    <h5>Minimum Content on a Small Screen</h5>
+    <p>Resize to change width value.</p>
+
+    <div class="card flex flex-wrap align-items-center justify-content-center">
+        <div class="bg-blue-50 shadow-1 p-3 m-3" style="width: 250px;">
+            <div class="max-w-min md:max-w-max  bg-blue-100 text-blue-500 font-bold shadow-2 p-3 flex align-items-center justify-content-center">max-w-min on small screen</div>
+        </div>
+    </div>
+
+    <pre><code class="language-html">
+&lt;div class=&quot;card ...&quot;&gt;
+    &lt;div class=&quot;...&quot; style=&quot;width: 250px;&gt;
+        &lt;div class=&quot;max-w-min md:max-w-max ...&quot;&gt;max-w-min on small screen&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+</code></pre>
+</div>

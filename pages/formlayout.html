@@ -1,0 +1,98 @@
+---
+layout: layout
+permalink: /formlayout
+---
+
+<div>
+    <h2>FormLayout</h2>
+
+    <div class="card">
+        <h5>Vertical and Grid</h5>
+        <div class="formgrid grid">
+            <div class="field col">
+                <label for="firstname2">Firstname</label>
+                <input id="firstname2" type="text" class="inputfield">
+            </div>
+            <div class="field col">
+                <label for="lastname2">Lastname</label>
+                <input id="lastname2" type="text" class="inputfield">
+            </div>
+        </div>
+    </div>
+
+    <pre><code class="language-html">
+&lt;div class=&quot;formgrid grid&quot;&gt;
+    &lt;div class=&quot;field col&quot;&gt;
+        &lt;label for=&quot;firstname2&quot;&gt;Firstname&lt;/label&gt;
+        &lt;input id=&quot;firstname2&quot; type=&quot;text&quot; class=&quot;inputfield&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;field col&quot;&gt;
+        &lt;label for=&quot;lastname2&quot;&gt;Lastname&lt;/label&gt;
+        &lt;input id=&quot;lastname2&quot; type=&quot;text&quot; class=&quot;inputfield&quot;&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+</code></pre>
+
+    <div class="card">
+        <h5>Horizontal and Fixed Width</h5>
+        <div class="field grid">
+            <label for="firstname3" class="col-fixed" style="width:100px">Firstname</label>
+            <div class="col">
+                <input id="firstname3" type="text" class="inputfield">
+            </div>
+        </div>
+        <div class="field grid">
+            <label for="lastname3" class="col-fixed" style="width:100px">Lastname</label>
+            <div class="col">
+                <input id="lastname3" type="text" class="inputfield">
+            </div>
+        </div>
+    </div>
+
+    <pre><code class="language-html">
+&lt;div class=&quot;field grid&quot;&gt;
+    &lt;label for=&quot;firstname3&quot; class=&quot;col-fixed&quot; style=&quot;width:100px&quot;&gt;Firstname&lt;/label&gt;
+    &lt;div class=&quot;col&quot;&gt;
+        &lt;input id=&quot;firstname3&quot; type=&quot;text&quot; class=&quot;inputfield&quot;&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;field grid&quot;&gt;
+    &lt;label for=&quot;lastname3&quot; class=&quot;col-fixed&quot; style=&quot;width:100px&quot;&gt;Lastname&lt;/label&gt;
+    &lt;div class=&quot;col&quot;&gt;
+        &lt;input id=&quot;lastname3&quot; type=&quot;text&quot; class=&quot;inputfield&quot;&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+</code></pre>
+
+    <div class="card">
+        <h5>Inline</h5>
+        <div class="formgroup-inline">
+            <div class="field">
+                <label for="firstname5" class="p-sr-only">Firstname</label>
+                <input id="firstname5" type="text" class="inputfield" placeholder="Firstname">
+            </div>
+            <div class="field">
+                <label for="lastname5" class="p-sr-only">Lastname</label>
+                <input id="lastname5" type="text" class="inputfield" placeholder="Lastname">
+            </div>
+            <button class="button" type="button" value="Submit">Submit</button>
+        </div>
+    </div>
+
+    <pre><code class="language-html">
+&lt;div class=&quot;formgroup-inline&quot;&gt;
+    &lt;div class=&quot;field&quot;&gt;
+        &lt;label for=&quot;firstname5&quot; class=&quot;p-sr-only&quot;&gt;Firstname&lt;/label&gt;
+        &lt;input id=&quot;firstname5&quot; type=&quot;text&quot; class=&quot;inputfield&quot; placeholder=&quot;Firstname&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;field&quot;&gt;
+        &lt;label for=&quot;lastname5&quot; class=&quot;p-sr-only&quot;&gt;Lastname&lt;/label&gt;
+        &lt;input id=&quot;lastname5&quot; type=&quot;text&quot; class=&quot;inputfield&quot; placeholder=&quot;Lastname&quot;&gt;
+    &lt;/div&gt;
+    &lt;button class=&quot;button&quot; type=&quot;button&quot; value=&quot;Submit&quot;&gt;Submit&lt;/button&gt;
+&lt;/div&gt;
+
+</code></pre>
+</div>

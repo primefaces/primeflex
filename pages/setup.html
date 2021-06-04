@@ -1,0 +1,74 @@
+---
+layout: layout
+permalink: /setup
+---
+<div>
+    <h4>Setup</h4>
+    <p>PrimeFlex is a CSS utility library featuring various helpers such as a grid system, flexbox, spacing, elevation and more.</p>
+    <h5>Download</h5>
+    <p>PrimeFlex is available at <a href="https://www.npmjs.com/package/primeflex">NPM</a>, if you have an existing application begin with the installation first.</p>
+    <pre><code class="language-markup">
+npm install primeflex --save
+
+</code></pre>
+
+    <h5>Variables</h5>
+    <table class="doc-table">
+        <thead>
+        <tr>
+            <th>Variable</th>
+            <th>Description</th>
+            <th>Default</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>$sm</td>
+            <td>Breakpoint of screens such as phones.</td>
+            <td>576px</td>
+        </tr>
+        <tr>
+            <td>$md</td>
+            <td>Breakpoint of screens such as tablets.</td>
+            <td>768px</td>
+        </tr>
+        <tr>
+            <td>$lg</td>
+            <td>Breakpoint of screens such as notebook monitors.</td>
+            <td>992px</td>
+        </tr>
+        <tr>
+            <td>$xl</td>
+            <td>Breakpoint of smaller screens such as desktop monitors.</td>
+            <td>1200px</td>
+        </tr>
+        <tr>
+            <td>$gutter</td>
+            <td>Padding of a grid column.</td>
+            <td>.5rem</td>
+        </tr>
+        <tr>
+            <td>$fieldMargin</td>
+            <td>Spacing of a field. Can be vertical of horizontal depending on form layout.</td>
+            <td>1rem</td>
+        </tr>
+        <tr>
+            <td>$fieldLabelMargin</td>
+            <td>Spacing of a field label. Can be vertical of horizontal depending on form layout.</td>
+            <td>.5rem</td>
+        </tr>
+        <tr>
+            <td>$helperTextMargin</td>
+            <td>Top spacing of a helper text.</td>
+            <td>.25rem</td>
+        </tr>
+        <tr>
+            <td>$spacer</td>
+            <td>Base value to use in spacing utilities, view spacing documentation for details.</td>
+            <td>1rem</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <p>There are two ways to use these variables, one option is getting the source code of PrimeFlex from github, compile your own primeflex and importing the css file. Other alternative is importing your own variables to override the defaults if your application can import scss files.</p>
+</div>

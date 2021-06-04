@@ -1,0 +1,113 @@
+---
+layout: layout
+permalink: /backgroundposition
+---
+
+<div>
+    <h2>Background Position</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+    <h5>Getting Start</h5>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <div class="overflow-auto" style="max-height: 500px">
+        <table class="doc-table">
+            <thead>
+            <tr>
+                <th>Class</th>
+                <th>Properties</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>bg-bottom</td>
+                <td>background-position: bottom;</td>
+            </tr>
+            <tr>
+                <td>bg-center</td>
+                <td>background-position: center;</td>
+            </tr>
+            <tr>
+                <td>bg-left</td>
+                <td>background-position: left;</td>
+            </tr>
+            <tr>
+                <td>bg-left-bottom</td>
+                <td>background-position: left bottom;</td>
+            </tr>
+            <tr>
+                <td>bg-left-top</td>
+                <td>background-position: left top;</td>
+            </tr>
+            <tr>
+                <td>bg-right</td>
+                <td>background-position: right;</td>
+            </tr>
+            <tr>
+                <td>bg-right-top</td>
+                <td>background-position: right top;</td>
+            </tr>
+            <tr>
+                <td>bg-right-bottom</td>
+                <td>background-position: right bottom;</td>
+            </tr>
+            <tr>
+                <td>bg-top</td>
+                <td>background-position: top;</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h5>Usage</h5>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+    <div class="card overflow-hidden p-5 grid grid-nogutter">
+        <div class="bg-bottom bg-auto bg-no-repeat shadow-1 m-3 col-2" style="background-image: url('../../assets/images/walter.jpg'); min-width: 150px; min-height: 150px"></div>
+        <div class="bg-center bg-auto bg-no-repeat shadow-1 m-3 col-2" style="background-image: url('../../assets/images/walter.jpg'); min-width: 150px; min-height: 150px"></div>
+        <div class="bg-left bg-auto bg-no-repeat shadow-1 m-3 col-2" style="background-image: url('../../assets/images/walter.jpg'); min-width: 150px; min-height: 150px"></div>
+        <div class="bg-left-bottom bg-auto bg-no-repeat shadow-1 m-3 col-2" style="background-image: url('../../assets/images/walter.jpg'); min-width: 150px; min-height: 150px"></div>
+        <div class="bg-left-top bg-auto bg-no-repeat shadow-1 m-3 col-2" style="background-image: url('../../assets/images/walter.jpg'); min-width: 150px; min-height: 150px"></div>
+        <div class="bg-right bg-auto bg-no-repeat shadow-1 m-3 col-2" style="background-image: url('../../assets/images/walter.jpg'); min-width: 150px; min-height: 150px"></div>
+        <div class="bg-right-top bg-auto bg-no-repeat shadow-1 m-3 col-2" style="background-image: url('../../assets/images/walter.jpg'); min-width: 150px; min-height: 150px"></div>
+        <div class="bg-right-bottom bg-auto bg-no-repeat shadow-1 m-3 col-2" style="background-image: url('../../assets/images/walter.jpg'); min-width: 150px; min-height: 150px"></div>
+        <div class="bg-top bg-auto bg-no-repeat shadow-1 m-3 col-2" style="background-image: url('../../assets/images/walter.jpg'); min-width: 150px; min-height: 150px"></div>
+    </div>
+
+    <pre><code class="language-html">
+&lt;div class=&quot;card ...&quot;&gt;
+    &lt;div class=&quot;bg-bottom ...&quot; style=&quot;background-image: url(&#39;...&#39;); ...&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;bg-center ...&quot; style=&quot;background-image: url(&#39;...&#39;); ...&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;bg-left ...&quot; style=&quot;background-image: url(&#39;...&#39;); ...&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;bg-left-bottom ...&quot; style=&quot;background-image: url(&#39;...&#39;); ...&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;bg-left-top ...&quot; style=&quot;background-image: url(&#39;...&#39;); ...&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;bg-right ...&quot; style=&quot;background-image: url(&#39;...&#39;); ...&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;bg-right-top ...&quot; style=&quot;background-image: url(&#39;...&#39;); ...&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;bg-right-bottom ...&quot; style=&quot;background-image: url(&#39;...&#39;); ...&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;bg-top ...&quot; style=&quot;background-image: url(&#39;...&#39;); ...&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+</code></pre>
+
+    <h5>Responsive</h5>
+    <p>Breakpoints define how the display property should be defined depending on the screen size. Design is mobile first so smaller values
+        can also apply to larger values e.g. md also applies to lg or xl if they are not explicitly defined.</p>
+    <ul>
+        <li><b>sm</b>: small screens e.g. phones</li>
+        <li><b>md</b>: medium screens e.g. tablets</li>
+        <li><b>lg</b>: large screens e.g. notebooks</li>
+        <li><b>xl</b>: larger screens .e.g monitors</li>
+    </ul>
+
+    <h5>Top Position on a Small Screen</h5>
+    <p>Resize to change background position value.</p>
+    <div class="card overflow-hidden p-5 flex align-items-center justify-content-center">
+        <div class="bg-top md:bg-bottom bg-auto bg-no-repeat shadow-1" style="background-image: url('../../assets/images/walter.jpg'); min-width: 150px; min-height: 150px"></div>
+    </div>
+
+    <pre><code class="language-html">
+&lt;div class=&quot;card ...&quot;&gt;
+    &lt;div class=&quot;bg-top md:bg-bottom bg-auto bg-no-repeat ...&quot; style=&quot;background-image: url(&#39;...&#39;); ...&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+</code></pre>
+</div>

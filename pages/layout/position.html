@@ -1,0 +1,329 @@
+---
+layout: layout
+permalink: /position
+---
+
+<div>
+    <h2>Position</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+    <h5>Getting Start</h5>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <div class="overflow-auto" style="max-height: 500px">
+        <table class="doc-table">
+            <thead>
+            <tr>
+                <th>Class</th>
+                <th>Properties</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>static</td>
+                <td>position: static;</td>
+            </tr>
+            <tr>
+                <td>fixed</td>
+                <td>position: fixed;</td>
+            </tr>
+            <tr>
+                <td>relative</td>
+                <td>position: relative;</td>
+            </tr>
+            <tr>
+                <td>absolute</td>
+                <td>position: absolute;</td>
+            </tr>
+            <tr>
+                <td>sticky</td>
+                <td>position: sticky;</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h5>Static</h5>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+    <div class="card relative p-5">
+        <div class="static shadow-1 p-3" style="min-width: 300px; min-height: 200px;">
+            <p class="font-bold text-blue-500">Static</p>
+            <div class="absolute bottom-0 left-0 shadow-2 p-3" style="min-width: 100px; min-height: 100px">
+                <p class="font-bold text-blue-500">Absolute</p>
+            </div>
+        </div>
+    </div>
+
+    <pre><code class="language-html">
+&lt;div class=&quot;card ...&quot;&gt;
+    &lt;div class=&quot;static ...&quot; style=&quot;...&quot;&gt;
+        &lt;p class=&quot;...&quot;&gt;Static&lt;/p&gt;
+        &lt;div class=&quot;absolute bottom-0 left-0...&quot; style=&quot;...&quot;&gt;
+            &lt;p class=&quot;...&quot;&gt;Absolute&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+</code></pre>
+
+    <h5>Fixed</h5>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+    <div class="card overflow-hidden" style="height: 400px">
+        <p class="font-bold">Window Review</p>
+        <div class="relative border-round border-1 border-blue-500" style="height: 300px">
+            <div class="absolute top-0 left-0 shadow-1 p-3 w-full font-bold text-blue-500">
+                Fixed
+            </div>
+            <div class="absolute overflow-auto mt-7 p-3" style="height: 200px">
+                <p class="text-blue-500">Scroll Part</p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Vitae sapien pellentesque habitant morbi tristique senectus et netus. Vitae proin sagittis nisl rhoncus mattis.
+                    Maecenas pharetra convallis posuere morbi leo urna molestie. At in tellus integer feugiat scelerisque.
+                    Adipiscing elit duis tristique sollicitudin nibh sit amet commodo. Luctus accumsan tortor posuere ac ut.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Vitae sapien pellentesque habitant morbi tristique senectus et netus. Vitae proin sagittis nisl rhoncus mattis.
+                    Maecenas pharetra convallis posuere morbi leo urna molestie. At in tellus integer feugiat scelerisque.
+                    Adipiscing elit duis tristique sollicitudin nibh sit amet commodo. Luctus accumsan tortor posuere ac ut.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Vitae sapien pellentesque habitant morbi tristique senectus et netus. Vitae proin sagittis nisl rhoncus mattis.
+                    Maecenas pharetra convallis posuere morbi leo urna molestie. At in tellus integer feugiat scelerisque.
+                    Adipiscing elit duis tristique sollicitudin nibh sit amet commodo. Luctus accumsan tortor posuere ac ut.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Vitae sapien pellentesque habitant morbi tristique senectus et netus. Vitae proin sagittis nisl rhoncus mattis.
+                    Maecenas pharetra convallis posuere morbi leo urna molestie. At in tellus integer feugiat scelerisque.
+                    Adipiscing elit duis tristique sollicitudin nibh sit amet commodo. Luctus accumsan tortor posuere ac ut.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <pre><code class="language-html">
+&lt;div class=&quot;fixed top-0 left-0 ...&quot;&gt;
+    Fixed
+&lt;/div&gt;
+&lt;div class=&quot;absolute overflow-auto ...&quot; style=&quot;...&quot;&gt;
+    &lt;p class=&quot;...&quot;&gt;Scroll Part&lt;/p&gt;
+    ...
+&lt;/div&gt;
+
+</code></pre>
+
+    <h5>Relative</h5>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+    <div class="card relative p-5">
+        <div class="relative shadow-1 p-3" style="min-width: 300px; min-height: 200px;">
+            <p class="font-bold text-blue-500">Relative</p>
+            <div class="absolute bottom-0 left-0 shadow-2 p-3" style="min-width: 100px; min-height: 100px">
+                <p class="font-bold text-blue-500">Absolute</p>
+            </div>
+        </div>
+    </div>
+
+    <pre><code class="language-html">
+&lt;div class=&quot;card ...&quot;&gt;
+    &lt;div class=&quot;relative ...&quot; style=&quot;...&quot;&gt;
+        &lt;p class=&quot;...&quot;&gt;Relative&lt;/p&gt;
+        &lt;div class=&quot;absolute bottom-0 left-0...&quot; style=&quot;...&quot;&gt;
+            &lt;p class=&quot;...&quot;&gt;Absolute&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+</code></pre>
+
+    <h5>Absolute</h5>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+    <div class="card p-5">
+        <p class="font-bold">Static Position</p>
+        <div class="relative shadow-1 p-3">
+            <p class="font-bold text-blue-500">Relative</p>
+            <div class="static shadow-2 p-3" style="min-width: 300px; min-height: 200px;">
+                <p class="font-bold text-blue-500">Static</p>
+                <div class="static bottom-0 left-0 shadow-3 p-3" style="min-width: 100px; min-height: 100px">
+                    <p class="font-bold text-blue-500">Static</p>
+                </div>
+            </div>
+        </div>
+
+        <p class="font-bold">Absolute Position</p>
+        <div class="relative shadow-1 p-3 mt-3">
+            <p class="font-bold text-blue-500">Relative</p>
+            <div class="static shadow-2 p-3" style="min-width: 300px; min-height: 200px;">
+                <p class="font-bold text-blue-500">Static</p>
+                <div class="absolute bottom-0 left-0 shadow-3 p-3" style="min-width: 100px; min-height: 100px">
+                    <p class="font-bold text-blue-500">Absolute</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <pre><code class="language-html">
+&lt;div class=&quot;card ..&quot;&gt;
+    &lt;div class=&quot;relative ...&quot;&gt;
+        &lt;p class=&quot;....&quot;&gt;Relative&lt;/p&gt;
+        &lt;div class=&quot;static ...&quot; style=&quot;...&quot;&gt;
+            &lt;p class=&quot;....&quot;&gt;Static&lt;/p&gt;
+            &lt;div class=&quot;static bottom-0 left-0 ...&quot; style=&quot;...&quot;&gt;
+                &lt;p class=&quot;....&quot;&gt;Static&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;relative shadow-1 p-3&quot;&gt;
+        &lt;p class=&quot;....&quot;&gt;Relative&lt;/p&gt;
+        &lt;div class=&quot;static ...&quot; style=&quot;...&quot;&gt;
+            &lt;p class=&quot;....&quot;&gt;Static&lt;/p&gt;
+            &lt;div class=&quot;absolute bottom-0 left-0 ...&quot; style=&quot;...&quot;&gt;
+                &lt;p class=&quot;....&quot;&gt;Absolute&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+</code></pre>
+
+    <h5>Sticky</h5>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+    <div class="card overflow-hidden" style="height: 400px">
+        <div class="overflow-auto border-round border-1 border-blue-500" style="height: 300px">
+            <div>
+                <div class="sticky top-0 font-bold text-blue-500 bg-blue-100 p-3">
+                    Sticky Title 1
+                </div>
+                <p class="p-3">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Vitae sapien pellentesque habitant morbi tristique senectus et netus. Vitae proin sagittis nisl rhoncus mattis.
+                    Maecenas pharetra convallis posuere morbi leo urna molestie. At in tellus integer feugiat scelerisque.
+                    Adipiscing elit duis tristique sollicitudin nibh sit amet commodo. Luctus accumsan tortor posuere ac ut.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Vitae sapien pellentesque habitant morbi tristique senectus et netus. Vitae proin sagittis nisl rhoncus mattis.
+                    Maecenas pharetra convallis posuere morbi leo urna molestie. At in tellus integer feugiat scelerisque.
+                    Adipiscing elit duis tristique sollicitudin nibh sit amet commodo. Luctus accumsan tortor posuere ac ut.
+                </p>
+            </div>
+            <div>
+                <div class="sticky top-0 font-bold text-blue-500 bg-blue-100 p-3">
+                    Sticky Title 2
+                </div>
+                <p class="p-3">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Vitae sapien pellentesque habitant morbi tristique senectus et netus. Vitae proin sagittis nisl rhoncus mattis.
+                    Maecenas pharetra convallis posuere morbi leo urna molestie. At in tellus integer feugiat scelerisque.
+                    Adipiscing elit duis tristique sollicitudin nibh sit amet commodo. Luctus accumsan tortor posuere ac ut.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Vitae sapien pellentesque habitant morbi tristique senectus et netus. Vitae proin sagittis nisl rhoncus mattis.
+                    Maecenas pharetra convallis posuere morbi leo urna molestie. At in tellus integer feugiat scelerisque.
+                    Adipiscing elit duis tristique sollicitudin nibh sit amet commodo. Luctus accumsan tortor posuere ac ut.
+                </p>
+            </div>
+            <div>
+                <div class="sticky top-0 font-bold text-blue-500 bg-blue-100 p-3">
+                    Sticky Title 3
+                </div>
+                <p class="p-3">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Vitae sapien pellentesque habitant morbi tristique senectus et netus. Vitae proin sagittis nisl rhoncus mattis.
+                    Maecenas pharetra convallis posuere morbi leo urna molestie. At in tellus integer feugiat scelerisque.
+                    Adipiscing elit duis tristique sollicitudin nibh sit amet commodo. Luctus accumsan tortor posuere ac ut.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Vitae sapien pellentesque habitant morbi tristique senectus et netus. Vitae proin sagittis nisl rhoncus mattis.
+                    Maecenas pharetra convallis posuere morbi leo urna molestie. At in tellus integer feugiat scelerisque.
+                    Adipiscing elit duis tristique sollicitudin nibh sit amet commodo. Luctus accumsan tortor posuere ac ut.
+                </p>
+            </div>
+            <div>
+                <div class="sticky top-0 font-bold text-blue-500 bg-blue-100 p-3">
+                    Sticky Title 4
+                </div>
+                <p class="p-3">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Vitae sapien pellentesque habitant morbi tristique senectus et netus. Vitae proin sagittis nisl rhoncus mattis.
+                    Maecenas pharetra convallis posuere morbi leo urna molestie. At in tellus integer feugiat scelerisque.
+                    Adipiscing elit duis tristique sollicitudin nibh sit amet commodo. Luctus accumsan tortor posuere ac ut.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Vitae sapien pellentesque habitant morbi tristique senectus et netus. Vitae proin sagittis nisl rhoncus mattis.
+                    Maecenas pharetra convallis posuere morbi leo urna molestie. At in tellus integer feugiat scelerisque.
+                    Adipiscing elit duis tristique sollicitudin nibh sit amet commodo. Luctus accumsan tortor posuere ac ut.
+                </p>
+            </div>
+            <div>
+                <div class="sticky top-0 font-bold text-blue-500 bg-blue-100 p-3">
+                    Sticky Title 5
+                </div>
+                <p class="p-3">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Vitae sapien pellentesque habitant morbi tristique senectus et netus. Vitae proin sagittis nisl rhoncus mattis.
+                    Maecenas pharetra convallis posuere morbi leo urna molestie. At in tellus integer feugiat scelerisque.
+                    Adipiscing elit duis tristique sollicitudin nibh sit amet commodo. Luctus accumsan tortor posuere ac ut.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Vitae sapien pellentesque habitant morbi tristique senectus et netus. Vitae proin sagittis nisl rhoncus mattis.
+                    Maecenas pharetra convallis posuere morbi leo urna molestie. At in tellus integer feugiat scelerisque.
+                    Adipiscing elit duis tristique sollicitudin nibh sit amet commodo. Luctus accumsan tortor posuere ac ut.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <pre><code class="language-html">
+&lt;div class=&quot;overflow-auto ...&quot; style=&quot;height: 300px&quot;&gt;
+    &lt;div&gt;
+        &lt;div class=&quot;sticky top-0 ...&quot;&gt;
+            Sticky Title 1
+        &lt;/div&gt;
+        &lt;p class=&quot;p-3&quot;&gt;...&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+        &lt;div class=&quot;sticky top-0 ...&quot;&gt;
+            Sticky Title 2
+        &lt;/div&gt;
+        &lt;p class=&quot;p-3&quot;&gt;...&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+        &lt;div class=&quot;sticky top-0 ..&quot;&gt;
+            Sticky Title 3
+        &lt;/div&gt;
+        &lt;p class=&quot;p-3&quot;&gt;..&lt;/p&gt;
+    &lt;/div&gt;
+    ...
+&lt;/div&gt;
+
+</code></pre>
+
+    <h5>Responsive</h5>
+    <p>Breakpoints define how the display property should be defined depending on the screen size. Design is mobile first so smaller values
+        can also apply to larger values e.g. md also applies to lg or xl if they are not explicitly defined.</p>
+    <ul>
+        <li><b>sm</b>: small screens e.g. phones</li>
+        <li><b>md</b>: medium screens e.g. tablets</li>
+        <li><b>lg</b>: large screens e.g. notebooks</li>
+        <li><b>xl</b>: larger screens .e.g monitors</li>
+    </ul>
+
+    <div class="card relative p-3 md:p-5">
+        <h5>Static on a Small Screen</h5>
+        <p>Resize to change position value.</p>
+        <div class="static shadow-1 p-3" style="min-width: 300px; min-height: 200px;">
+            <p class="font-bold text-blue-500">Static</p>
+            <div class="static md:absolute bottom-0 left-0 shadow-2 p-3" style="min-width: 100px; min-height: 100px">
+                <p class="font-bold text-blue-500">Absolute on medium screens / Static on small screens</p>
+            </div>
+        </div>
+    </div>
+
+    <pre><code class="language-html">
+&lt;div class=&quot;card relative p-3 md:p-5&quot;&gt;
+    &lt;p&gt;Resize to chang position value.&lt;/p&gt;
+    &lt;div class=&quot;static ...&quot; style=&quot;...&quot;&gt;
+        &lt;p class=&quot;...&quot;&gt;Static&lt;/p&gt;
+        &lt;div class=&quot;static md:absolute bottom-0 left-0 ...&quot; style=&quot;...&quot;&gt;
+            &lt;p class=&quot;...&quot;&gt;Absolute in medium screens / Static in small screens&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+</code></pre>
+</div>

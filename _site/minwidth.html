@@ -1,0 +1,713 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrimeFlex</title>
+
+    <link rel="stylesheet" href="/assets/css/primeflex.css">
+    <link rel="stylesheet" href="/assets/css/primeicons-static.css">
+    <link rel="stylesheet" href="/assets/css/prism.css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>
+<header>
+    <div class="layout-topbar flex align-items-center justify-content-between">
+        <div class="mobile-menu-wrapper">
+            <a class="mobile-button" onclick="PrimeFlex.onToggleMobileMenu(event)"><i class="pi pi-bars"></i></a>
+        </div>
+
+        <div class="layout-topbar-left">
+
+            <a href="/">
+                <img src="/assets/images/logo-primeflex.svg" alt="prime">
+            </a>
+        </div>
+        <div class="layout-topbar-right">
+            <ul class="flex flex-row mr-5">
+                <li><a href="https://www.primetek.com.tr">PrimeTek</a></li>
+                <li><a href="https://forum.primefaces.org">Community</a></li>
+                <li><a href="https://forum.primefaces.org">v2.0.0</a></li>
+                <li><a href="https://www.github.com/primefaces/primeflex">GitHub <i class="pi pi-external-link ml-2"></i></a></li>
+            </ul>
+
+            <div class="mobile-topbar-menu-wrapper">
+                <a class="mobile-topbar-button" onclick="PrimeFlex.onToggleMobileTopbarMenu(event)"><i class="pi pi-ellipsis-v"></i></a>
+                <ul class="mobile-topbar-menu clearlist">
+                    <li><a href="https://www.github.com/primefaces/primeflex">GitHub</a></li>
+                    <li><a href="https://forum.primefaces.org">Community</a></li>
+                    <li><a href="https://www.primetek.com.tr">PrimeTek</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+<main>
+    <div class="layout-menu-wrapper" id="layout-menu-wrapper">
+        <ul class="layout-menu">
+            <nav>
+    
+
+    <li >
+        <div class="menuitem-root-text mt-3" >
+            Setup
+        </div>
+        <a href="/setup" style="display: block">
+            Setup
+        </a>
+    </li>
+    
+
+    <li >
+        <div class="menuitem-root-text mt-3" style="display: block">
+            Layout
+        </div>
+        <a href="" >
+            Layout
+        </a>
+    </li>
+    
+
+    <li >
+        <div class="menuitem-root-text mt-3" >
+            Display
+        </div>
+        <a href="/display" style="display: block">
+            Display
+        </a>
+    </li>
+    
+
+    <li >
+        <div class="menuitem-root-text mt-3" >
+            Overflow
+        </div>
+        <a href="/overflow" style="display: block">
+            Overflow
+        </a>
+    </li>
+    
+
+    <li >
+        <div class="menuitem-root-text mt-3" >
+            Position
+        </div>
+        <a href="/position" style="display: block">
+            Position
+        </a>
+    </li>
+    
+
+    <li >
+        <div class="menuitem-root-text mt-3" >
+            Top / Right / Bottom / Left
+        </div>
+        <a href="/toprightbottomleft" style="display: block">
+            Top / Right / Bottom / Left
+        </a>
+    </li>
+    
+
+    <li >
+        <div class="menuitem-root-text mt-3" >
+            Z-Index
+        </div>
+        <a href="/zindex" style="display: block">
+            Z-Index
+        </a>
+    </li>
+    
+
+    <li >
+        <div class="menuitem-root-text mt-3" style="display: block">
+            Flexbox and Grid
+        </div>
+        <a href="" >
+            Flexbox and Grid
+        </a>
+    </li>
+    
+
+    <li >
+        <div class="menuitem-root-text mt-3" >
+            Flex Direction
+        </div>
+        <a href="/flexdirection" style="display: block">
+            Flex Direction
+        </a>
+    </li>
+    
+
+    <li >
+        <div class="menuitem-root-text mt-3" >
+            Flex Wrap
+        </div>
+        <a href="/flexwrap" style="display: block">
+            Flex Wrap
+        </a>
+    </li>
+    
+
+    <li >
+        <div class="menuitem-root-text mt-3" >
+            Flex
+        </div>
+        <a href="/flex" style="display: block">
+            Flex
+        </a>
+    </li>
+    
+
+    <li >
+        <div class="menuitem-root-text mt-3" >
+            Flex Grow
+        </div>
+        <a href="/flexgrow" style="display: block">
+            Flex Grow
+        </a>
+    </li>
+    
+
+    <li >
+        <div class="menuitem-root-text mt-3" >
+            Flex Shrink
+        </div>
+        <a href="/flexshrink" style="display: block">
+            Flex Shrink
+        </a>
+    </li>
+    
+
+    <li >
+        <div class="menuitem-root-text mt-3" >
+            Order
+        </div>
+        <a href="/order" style="display: block">
+            Order
+        </a>
+    </li>
+    
+
+    <li >
+        <div class="menuitem-root-text mt-3" >
+            Justify Content
+        </div>
+        <a href="/justifycontent" style="display: block">
+            Justify Content
+        </a>
+    </li>
+    
+
+    <li >
+        <div class="menuitem-root-text mt-3" >
+            Align Content
+        </div>
+        <a href="/aligncontent" style="display: block">
+            Align Content
+        </a>
+    </li>
+    
+
+    <li >
+        <div class="menuitem-root-text mt-3" >
+            Align Items
+        </div>
+        <a href="/alignitems" style="display: block">
+            Align Items
+        </a>
+    </li>
+    
+
+    <li >
+        <div class="menuitem-root-text mt-3" >
+            Align Self
+        </div>
+        <a href="/alignself" style="display: block">
+            Align Self
+        </a>
+    </li>
+    
+
+    <li >
+        <div class="menuitem-root-text mt-3" style="display: block">
+            Backgrounds
+        </div>
+        <a href="" >
+            Backgrounds
+        </a>
+    </li>
+    
+
+    <li >
+        <div class="menuitem-root-text mt-3" >
+            Background Color
+        </div>
+        <a href="/backgroundcolor" style="display: block">
+            Background Color
+        </a>
+    </li>
+    
+
+    <li >
+        <div class="menuitem-root-text mt-3" >
+            Background Repeat
+        </div>
+        <a href="/backgroundrepeat" style="display: block">
+            Background Repeat
+        </a>
+    </li>
+    
+
+    <li >
+        <div class="menuitem-root-text mt-3" >
+            Background Size
+        </div>
+        <a href="/backgroundsize" style="display: block">
+            Background Size
+        </a>
+    </li>
+    
+
+    <li >
+        <div class="menuitem-root-text mt-3" >
+            Background Position
+        </div>
+        <a href="/backgroundposition" style="display: block">
+            Background Position
+        </a>
+    </li>
+    
+
+    <li >
+        <div class="menuitem-root-text mt-3" style="display: block">
+            Border
+        </div>
+        <a href="" >
+            Border
+        </a>
+    </li>
+    
+
+    <li >
+        <div class="menuitem-root-text mt-3" >
+            Border Radius
+        </div>
+        <a href="/borderradius" style="display: block">
+            Border Radius
+        </a>
+    </li>
+    
+
+    <li >
+        <div class="menuitem-root-text mt-3" >
+            Border Width
+        </div>
+        <a href="/borderwidth" style="display: block">
+            Border Width
+        </a>
+    </li>
+    
+
+    <li >
+        <div class="menuitem-root-text mt-3" >
+            Border Style
+        </div>
+        <a href="/borderstyle" style="display: block">
+            Border Style
+        </a>
+    </li>
+    
+
+    <li >
+        <div class="menuitem-root-text mt-3" >
+            Border Color
+        </div>
+        <a href="/bordercolor" style="display: block">
+            Border Color
+        </a>
+    </li>
+    
+
+    <li >
+        <div class="menuitem-root-text mt-3" style="display: block">
+            Spacing
+        </div>
+        <a href="" >
+            Spacing
+        </a>
+    </li>
+    
+
+    <li >
+        <div class="menuitem-root-text mt-3" >
+            Padding
+        </div>
+        <a href="/padding" style="display: block">
+            Padding
+        </a>
+    </li>
+    
+
+    <li >
+        <div class="menuitem-root-text mt-3" >
+            Margin
+        </div>
+        <a href="/margin" style="display: block">
+            Margin
+        </a>
+    </li>
+    
+
+    <li >
+        <div class="menuitem-root-text mt-3" style="display: block">
+            Sizing
+        </div>
+        <a href="" >
+            Sizing
+        </a>
+    </li>
+    
+
+    <li class="active-menuitem">
+        <div class="menuitem-root-text mt-3" >
+            Min Width
+        </div>
+        <a href="/minwidth" style="display: block">
+            Min Width
+        </a>
+    </li>
+    
+
+    <li >
+        <div class="menuitem-root-text mt-3" >
+            Width
+        </div>
+        <a href="/width" style="display: block">
+            Width
+        </a>
+    </li>
+    
+
+    <li >
+        <div class="menuitem-root-text mt-3" >
+            Max Width
+        </div>
+        <a href="/maxwidth" style="display: block">
+            Max Width
+        </a>
+    </li>
+    
+
+    <li >
+        <div class="menuitem-root-text mt-3" >
+            Min Height
+        </div>
+        <a href="/minheight" style="display: block">
+            Min Height
+        </a>
+    </li>
+    
+
+    <li >
+        <div class="menuitem-root-text mt-3" >
+            Height
+        </div>
+        <a href="/height" style="display: block">
+            Height
+        </a>
+    </li>
+    
+
+    <li >
+        <div class="menuitem-root-text mt-3" >
+            Max Height
+        </div>
+        <a href="/maxheight" style="display: block">
+            Max Height
+        </a>
+    </li>
+    
+
+    <li >
+        <div class="menuitem-root-text mt-3" style="display: block">
+            Typography
+        </div>
+        <a href="" >
+            Typography
+        </a>
+    </li>
+    
+
+    <li >
+        <div class="menuitem-root-text mt-3" >
+            Font Size
+        </div>
+        <a href="/fontsize" style="display: block">
+            Font Size
+        </a>
+    </li>
+    
+
+    <li >
+        <div class="menuitem-root-text mt-3" >
+            Font Weight
+        </div>
+        <a href="/fontweight" style="display: block">
+            Font Weight
+        </a>
+    </li>
+    
+
+    <li >
+        <div class="menuitem-root-text mt-3" >
+            Font Style
+        </div>
+        <a href="/fontstyle" style="display: block">
+            Font Style
+        </a>
+    </li>
+    
+
+    <li >
+        <div class="menuitem-root-text mt-3" >
+            Text Color
+        </div>
+        <a href="/textcolor" style="display: block">
+            Text Color
+        </a>
+    </li>
+    
+
+    <li >
+        <div class="menuitem-root-text mt-3" >
+            Text Align
+        </div>
+        <a href="/textalign" style="display: block">
+            Text Align
+        </a>
+    </li>
+    
+
+    <li >
+        <div class="menuitem-root-text mt-3" >
+            Text Decoration
+        </div>
+        <a href="/textdecoration" style="display: block">
+            Text Decoration
+        </a>
+    </li>
+    
+
+    <li >
+        <div class="menuitem-root-text mt-3" >
+            Text Transform
+        </div>
+        <a href="/texttransform" style="display: block">
+            Text Transform
+        </a>
+    </li>
+    
+
+    <li >
+        <div class="menuitem-root-text mt-3" >
+            Line Height
+        </div>
+        <a href="/lineheight" style="display: block">
+            Line Height
+        </a>
+    </li>
+    
+
+    <li >
+        <div class="menuitem-root-text mt-3" >
+            Whitespace
+        </div>
+        <a href="/whitespace" style="display: block">
+            Whitespace
+        </a>
+    </li>
+    
+
+    <li >
+        <div class="menuitem-root-text mt-3" >
+            List Style Type
+        </div>
+        <a href="/liststyletype" style="display: block">
+            List Style Type
+        </a>
+    </li>
+    
+
+    <li >
+        <div class="menuitem-root-text mt-3" style="display: block">
+            Effects
+        </div>
+        <a href="" >
+            Effects
+        </a>
+    </li>
+    
+
+    <li >
+        <div class="menuitem-root-text mt-3" >
+            Elevation
+        </div>
+        <a href="/elevation" style="display: block">
+            Elevation
+        </a>
+    </li>
+    
+
+    <li >
+        <div class="menuitem-root-text mt-3" style="display: block">
+            Interactivity
+        </div>
+        <a href="" >
+            Interactivity
+        </a>
+    </li>
+    
+
+    <li >
+        <div class="menuitem-root-text mt-3" >
+            User Select
+        </div>
+        <a href="/userselect" style="display: block">
+            User Select
+        </a>
+    </li>
+    
+
+    <li >
+        <div class="menuitem-root-text mt-3" >
+            FormLayout
+        </div>
+        <a href="/formlayout" style="display: block">
+            FormLayout
+        </a>
+    </li>
+    
+
+    <li >
+        <div class="menuitem-root-text mt-3" >
+            GridSystem
+        </div>
+        <a href="/gridsystem" style="display: block">
+            GridSystem
+        </a>
+    </li>
+    
+</nav>
+
+        </ul>
+    </div>
+
+    <div class="layout-main">
+        <div class="layout-content documentation" id="doc">
+            <div>
+    <h2>Min Width</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+    <h5>Getting Start</h5>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <div class="overflow-auto" style="max-height: 500px">
+        <table class="doc-table">
+            <thead>
+            <tr>
+                <th>Class</th>
+                <th>Properties</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>min-w-0</td>
+                <td>min-width: 0px;</td>
+            </tr>
+            <tr>
+                <td>min-w-full</td>
+                <td>min-width: 100%;</td>
+            </tr>
+            <tr>
+                <td>min-w-screen</td>
+                <td>min-width: 100vw;</td>
+            </tr>
+            <tr>
+                <td>min-w-min</td>
+                <td>min-width: min-content;</td>
+            </tr>
+            <tr>
+                <td>min-w-max</td>
+                <td>min-width: max-content;</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+
+    <h5>Usage</h5>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+    <div class="card flex flex-wrap align-items-center justify-content-center">
+        <div class="bg-blue-50 shadow-1 p-3 m-3" style="width: 200px;">
+            <div class="min-w-full bg-blue-100 text-blue-500 font-bold shadow-2 p-3 flex align-items-center justify-content-center">min-w-full</div>
+        </div>
+    </div>
+
+    <pre><code class="language-html">
+&lt;div class=&quot;card ...&quot;&gt;
+    &lt;div class=&quot;...&quot; style=&quot;width: 200px;&quot;&gt;
+        &lt;div class=&quot;min-w-full ...&quot;&gt;min-w-full&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+</code></pre>
+
+    <h5>Responsive</h5>
+    <p>Breakpoints define how the display property should be defined depending on the screen size. Design is mobile first so smaller values
+        can also apply to larger values e.g. md also applies to lg or xl if they are not explicitly defined.</p>
+    <ul>
+        <li><b>sm</b>: small screens e.g. phones</li>
+        <li><b>md</b>: medium screens e.g. tablets</li>
+        <li><b>lg</b>: large screens e.g. notebooks</li>
+        <li><b>xl</b>: larger screens .e.g monitors</li>
+    </ul>
+
+    <h5>Minimum Content on a Small Screen</h5>
+    <p>Resize to change width value.</p>
+
+    <div class="card flex flex-wrap align-items-center justify-content-center">
+        <div class="bg-blue-50 shadow-1 p-3 m-3" style="width: 250px;">
+            <div class="min-w-min md:min-w-max  bg-blue-100 text-blue-500 font-bold shadow-2 p-3 flex align-items-center justify-content-center">min-w-min on small screen</div>
+        </div>
+    </div>
+
+    <pre><code class="language-html">
+&lt;div class=&quot;card ...&quot;&gt;
+    &lt;div class=&quot;...&quot; style=&quot;width: 250px;&quot;&gt;
+        &lt;div class=&quot;min-w-min md:min-w-max ...&quot;&gt;min-w-min on small screen&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+</code></pre>
+</div>
+
+        </div>
+
+        <div class="layout-footer flex align-items-center justify-content-between">
+            <div class="layout-footer-left">
+                <img src="/assets/images/prime-logo-white.png" alt="prime">
+            </div>
+            <div class="layout-footer-right">
+                <a href="https://discord.com/invite/gzKFYnpmCY" class="mr-3"><i class="pi pi-discord"></i></a>
+                <a href="https://github.com/primefaces/primeng" class="mr-3 ml-3"><i class="pi pi-github"></i></a>
+                <a href="https://github.com/primefaces/primeng" class="ml-3"><i class="pi pi-globe"></i></a>
+            </div>
+        </div>
+    </div>
+</main>
+
+<script type="text/javascript" src="/assets/js/prism.js"></script>
+<script type="text/javascript" src="/assets/js/site.js"></script>
+</body>
+</html>

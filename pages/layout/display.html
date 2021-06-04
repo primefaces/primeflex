@@ -1,0 +1,164 @@
+---
+layout: layout
+permalink: /display
+---
+
+<div>
+    <h2>Display</h2>
+    <p>Efficiently configure the display of the component with <a href="https://github.com/primefaces/primeflex">PrimeFlex</a> display utilities.</p>
+
+    <h5>Getting Started</h5>
+    <p>The display classes use the <i>value</i> format and <i>&#123;breakpoint&#125;:&#123;value&#125;</i> format for responsive design.</p>
+    <table class="doc-table">
+        <thead>
+        <tr>
+            <th>Class</th>
+            <th>Properties</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>hidden</td>
+            <td>display: none;</td>
+        </tr>
+        <tr>
+            <td>block</td>
+            <td>display: block;</td>
+        </tr>
+        <tr>
+            <td>inline</td>
+            <td>display: inline;</td>
+        </tr>
+        <tr>
+            <td>inline-block</td>
+            <td>display: inline-block;</td>
+        </tr>
+        <tr>
+            <td>flex</td>
+            <td>display: flex;</td>
+        </tr>
+        <tr>
+            <td>inline-flex</td>
+            <td>display: inline-flex;</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <h5>Hidden</h5>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <div class="card">
+        <input type="text" class="inputfield mb-2 hidden" />
+        <input type="text" class="inputfield block" />
+    </div>
+
+<pre><code class="language-html">
+&lt;div class=&quot;card&quot;&gt;
+    &lt;input type=&quot;text&quot; class=&quot;inputfield mb-2 hidden&quot; /&gt;
+    &lt;input type=&quot;text&quot; class=&quot;inputfield block&quot; /&gt;
+&lt;/div&gt;
+
+</code></pre>
+
+    <h5>Block</h5>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <div class="card">
+        <input type="text" class="inputfield mb-2 block" />
+        <input type="text" class="inputfield block" />
+    </div>
+
+<pre><code class="language-html">
+&lt;div class=&quot;card&quot;&gt;
+    &lt;input type=&quot;text&quot; class=&quot;inputfield mb-2 block&quot; /&gt;
+    &lt;input type=&quot;text&quot; class=&quot;inputfield block&quot; /&gt;
+&lt;/div&gt;
+
+</code></pre>
+
+    <h5>Inline</h5>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <div class="card">
+        <input type="text" class="inputfield inline" />
+        <input type="text" class="inputfield inline" />
+    </div>
+
+<pre><code class="language-html">
+&lt;div class=&quot;card&quot;&gt;
+    &lt;input type=&quot;text&quot; class=&quot;inputfield inline&quot; /&gt;
+    &lt;input type=&quot;text&quot; class=&quot;inputfield inline&quot; /&gt;
+&lt;/div&gt;
+
+</code></pre>
+
+    <h5>Inline Block</h5>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <div class="card">
+        <input type="text" class="inputfield inline-block" />
+        <input type="text" class="inputfield inline-block" />
+    </div>
+
+<pre><code class="language-html">
+&lt;div class=&quot;card&quot;&gt;
+    &lt;input type=&quot;text&quot; class=&quot;inputfield inline-block&quot; /&gt;
+    &lt;input type=&quot;text&quot; class=&quot;inputfield inline-block&quot; /&gt;
+&lt;/div&gt;
+
+</code></pre>
+
+    <h5>Flex</h5>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <div class="card flex">
+        <input type="text" class="inputfield" />
+        <input type="text" class="inputfield" />
+    </div>
+
+<pre><code class="language-html">
+&lt;div class=&quot;card flex&quot;&gt;
+    &lt;input type=&quot;text&quot; class=&quot;inputfield&quot; /&gt;
+    &lt;input type=&quot;text&quot; class=&quot;inputfield&quot; /&gt;
+&lt;/div&gt;
+
+</code></pre>
+
+    <h5>Inline Flex</h5>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <div class="card inline-flex">
+        <input type="text" class="inputfield" />
+        <input type="text" class="inputfield" />
+    </div>
+
+<pre><code class="language-html">
+&lt;div class=&quot;card inline-flex&quot;&gt;
+    &lt;input type=&quot;text&quot; class=&quot;inputfield&quot; /&gt;
+    &lt;input type=&quot;text&quot; class=&quot;inputfield&quot; /&gt;
+&lt;/div&gt;
+
+</code></pre>
+
+    <h5>Responsive</h5>
+    <p>Breakpoints define how the display property should be defined depending on the screen size. Design is mobile first so smaller values
+        can also apply to larger values e.g. md also applies to lg or xl if they are not explicitly defined.</p>
+    <ul>
+        <li><b>sm</b>: small screens e.g. phones</li>
+        <li><b>md</b>: medium screens e.g. tablets</li>
+        <li><b>lg</b>: large screens e.g. notebooks</li>
+        <li><b>xl</b>: larger screens .e.g monitors</li>
+    </ul>
+
+    <div class="card">
+        <h5>Hidden on a Small Screen</h5>
+        <p>Resize to hide.</p>
+        <input type="text" placeholder="First Input" class="inputfield hidden md:block" />
+
+        <h5>Visible on a Small Screen</h5>
+        <p>Resize to view.</p>
+        <input type="text" placeholder="Second Input" class="inputfield block md:hidden" />
+    </div>
+
+<pre><code class="language-html">
+&lt;div class=&quot;card&quot;&gt;
+    &lt;input type=&quot;text&quot; placeholder=&quot;First Input&quot; class=&quot;inputfield hidden md:block&quot; /&gt;
+    &lt;input type=&quot;text&quot; placeholder=&quot;Second Input&quot; class=&quot;inputfield block md:hidden&quot; /&gt;
+&lt;/div&gt;
+
+</code></pre>
+</div>

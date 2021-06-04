@@ -1,0 +1,135 @@
+.home-page {
+    .hero {
+        background-color: $heroBgColor;
+        color: $heroTextColor;
+        height: auto;
+        padding: 36px;
+
+        > .grid {
+            height: 100%;
+        }
+
+        p {
+            font-size: 1.1rem;
+            color: #BAD0E4;
+        }
+
+        img {
+            max-height: 400px;
+        }
+
+        .hero-npm {
+            background: rgba(121, 140, 157, 0.2);
+            border: 1.5px solid #FFFFFF;
+            border-radius: 5px;
+            width: 100%;
+            max-width: 380px;
+            margin-top: 1.5rem;
+            padding: .5rem;
+
+            > input {
+                background: transparent;
+                border: 0 none;
+                font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
+                font-size: 1.1rem;
+                color: #ffffff;
+                width: 100%;
+                outline: 0 none;
+            }
+
+            > .copied-text {
+                font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
+                font-size: 1.1rem;
+                display: none;
+            }
+
+            > .copy {
+                font-size: 1rem;
+                background-color: #ffffff;
+                color: #181B21;
+                font-weight: 500;
+                border-radius: 30px;
+                border: 0 none;
+                padding: .5rem;
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .hero-links {
+            a {
+                color: $linkColor;
+                font-size: 1.1rem;
+
+                &:hover {
+                    color: $linkColor;
+                }
+            }
+        }
+    }
+
+    .content-wrapper {
+        padding: 1rem 1rem 5rem 1rem;
+
+        .content {
+            .header-text {
+                color: #495057;
+            }
+            .sub-text {
+                color: #6C757D;
+            }
+        }
+
+        .feature-boxes {
+            margin-bottom: 2.5rem;
+
+            .feature-box {
+                background: #FFFFFF;
+                box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+                border-radius: 4px;
+                min-height: 180px;
+                padding: 1rem;
+
+                .image-box {
+                    border-radius: 4px;
+                    width: 5rem;
+                    height: 5rem;
+                }
+
+                .sub-text {
+                    font-size: .9rem;
+                }
+            }
+        }
+
+        .users {
+            border-top: 1px solid rgba(108, 117, 125, 0.2);
+
+            .header-text {
+                color: #495057;
+            }
+            .sub-text {
+                color: #6C757D;
+            }
+
+            .user-box {
+                background: #FFFFFF;
+                box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+                border-radius: 4px;
+                min-height: 80px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .home-page {
+        .hero {
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+}

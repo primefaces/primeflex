@@ -1,0 +1,101 @@
+---
+layout: layout
+permalink: /backgroundsize
+---
+
+<div>
+    <h2>Background Size</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+    <h5>Getting Start</h5>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <div class="overflow-auto" style="max-height: 500px">
+        <table class="doc-table">
+            <thead>
+            <tr>
+                <th>Class</th>
+                <th>Properties</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>bg-auto</td>
+                <td>background-size: auto;</td>
+            </tr>
+            <tr>
+                <td>bg-cover</td>
+                <td>background-size: cover;</td>
+            </tr>
+            <tr>
+                <td>bg-contain</td>
+                <td>background-size: contain;</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h5>Auto</h5>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+    <div class="card overflow-hidden p-5">
+        <div class="bg-auto bg-no-repeat bg-center shadow-1 w-full" style="background-image: url('../../assets/images/product-placeholder.svg'); height: 20rem"></div>
+    </div>
+
+    <pre><code class="language-html">
+&lt;div class=&quot;card ...&quot;&gt;
+    &lt;div class=&quot;bg-auto bg-no-repeat bg-center ...&quot; style=&quot;background-image: url(&#39;...&#39;); ...&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+</code></pre>
+
+    <h5>Cover</h5>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+    <div class="card overflow-hidden p-5">
+        <div class="bg-cover bg-center shadow-1 w-full" style="background-image: url('../../assets/images/product-placeholder.svg'); height: 20rem"></div>
+    </div>
+
+    <pre><code class="language-html">
+&lt;div class=&quot;card ...&quot;&gt;
+    &lt;div class=&quot;bg-cover bg-center ...&quot; style=&quot;background-image: url(&#39;...&#39;); ...&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+</code></pre>
+
+    <h5>Contain</h5>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+    <div class="card overflow-hidden p-5">
+        <div class="bg-contain bg-center bg-no-repeat shadow-1 w-full" style="background-image: url('../../assets/images/product-placeholder.svg'); height: 20rem"></div>
+    </div>
+
+    <pre><code class="language-html">
+&lt;div class=&quot;card ...&quot;&gt;
+    &lt;div class=&quot;bg-contain bg-center bg-no-repeat ...&quot; style=&quot;background-image: url(&#39;...&#39;); ...&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+</code></pre>
+
+    <h5>Responsive</h5>
+    <p>Breakpoints define how the display property should be defined depending on the screen size. Design is mobile first so smaller values
+        can also apply to larger values e.g. md also applies to lg or xl if they are not explicitly defined.</p>
+    <ul>
+        <li><b>sm</b>: small screens e.g. phones</li>
+        <li><b>md</b>: medium screens e.g. tablets</li>
+        <li><b>lg</b>: large screens e.g. notebooks</li>
+        <li><b>xl</b>: larger screens .e.g monitors</li>
+    </ul>
+
+    <h5>Cover on a Small Screen</h5>
+    <p>Resize to change background size value.</p>
+    <div class="card overflow-hidden p-5">
+        <div class="bg-cover md:bg-contain bg-center bg-no-repeat shadow-1 w-full" style="background-image: url('../../assets/images/product-placeholder.svg'); height: 20rem"></div>
+    </div>
+
+    <pre><code class="language-html">
+&lt;div class=&quot;card ...&quot;&gt;
+    &lt;div class=&quot;bg-cover md:bg-contain bg-center bg-no-repeat ...&quot; style=&quot;background-image: url(&#39;...&#39;); ...&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+</code></pre>
+</div>

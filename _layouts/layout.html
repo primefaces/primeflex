@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrimeFlex</title>
+
+    <link rel="stylesheet" href="/assets/css/primeflex.css">
+    <link rel="stylesheet" href="/assets/css/primeicons-static.css">
+    <link rel="stylesheet" href="/assets/css/prism.css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>
+<header>
+    <div class="layout-topbar flex align-items-center justify-content-between">
+        <div class="mobile-menu-wrapper">
+            <a class="mobile-button" onclick="PrimeFlex.onToggleMobileMenu(event)"><i class="pi pi-bars"></i></a>
+        </div>
+
+        <div class="layout-topbar-left">
+
+            <a href="/">
+                <img src="/assets/images/logo-primeflex.svg" alt="prime">
+            </a>
+        </div>
+        <div class="layout-topbar-right">
+            <ul class="flex flex-row mr-5">
+                <li><a href="https://www.primetek.com.tr">PrimeTek</a></li>
+                <li><a href="https://forum.primefaces.org">Community</a></li>
+                <li><a href="https://forum.primefaces.org">v2.0.0</a></li>
+                <li><a href="https://www.github.com/primefaces/primeflex">GitHub <i class="pi pi-external-link ml-2"></i></a></li>
+            </ul>
+
+            <div class="mobile-topbar-menu-wrapper">
+                <a class="mobile-topbar-button" onclick="PrimeFlex.onToggleMobileTopbarMenu(event)"><i class="pi pi-ellipsis-v"></i></a>
+                <ul class="mobile-topbar-menu clearlist">
+                    <li><a href="https://www.github.com/primefaces/primeflex">GitHub</a></li>
+                    <li><a href="https://forum.primefaces.org">Community</a></li>
+                    <li><a href="https://www.primetek.com.tr">PrimeTek</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+<main>
+    <div class="layout-menu-wrapper" id="layout-menu-wrapper">
+        <ul class="layout-menu">
+            {% include navigation.html %}
+        </ul>
+    </div>
+
+    <div class="layout-main">
+        <div class="layout-content documentation" id="doc">
+            {{ content }}
+        </div>
+
+        <div class="layout-footer flex align-items-center justify-content-between">
+            <div class="layout-footer-left">
+                <img src="/assets/images/prime-logo-white.png" alt="prime">
+            </div>
+            <div class="layout-footer-right">
+                <a href="https://discord.com/invite/gzKFYnpmCY" class="mr-3"><i class="pi pi-discord"></i></a>
+                <a href="https://github.com/primefaces/primeng" class="mr-3 ml-3"><i class="pi pi-github"></i></a>
+                <a href="https://github.com/primefaces/primeng" class="ml-3"><i class="pi pi-globe"></i></a>
+            </div>
+        </div>
+    </div>
+</main>
+
+<script type="text/javascript" src="/assets/js/prism.js"></script>
+<script type="text/javascript" src="/assets/js/site.js"></script>
+</body>
+</html>

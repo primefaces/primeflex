@@ -1,0 +1,84 @@
+---
+layout: layout
+permalink: /minheight
+---
+
+<div>
+    <h2>Min Height</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+    <h5>Getting Start</h5>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <div class="overflow-auto" style="max-height: 500px">
+        <table class="doc-table">
+            <thead>
+            <tr>
+                <th>Class</th>
+                <th>Properties</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>min-h-0</td>
+                <td>min-height: 0px;</td>
+            </tr>
+            <tr>
+                <td>min-h-full</td>
+                <td>min-height: 100%;</td>
+            </tr>
+            <tr>
+                <td>min-h-screen</td>
+                <td>min-height: 100vh;</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+
+    <h5>Usage</h5>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+    <div class="card flex flex-wrap align-items-center justify-content-center">
+        <div class="bg-blue-50 shadow-1 p-3 m-3" style="width: 200px; height: 100px;">
+            <div class="min-h-full bg-blue-100 text-blue-500 font-bold shadow-2 p-3 flex align-items-center justify-content-center">min-h-full</div>
+        </div>
+    </div>
+
+    <pre><code class="language-html">
+&lt;div class=&quot;card ...&quot;&gt;
+    &lt;div class=&quot;...&quot; style=&quot;width: 200px; height: 100px;&quot;&gt;
+        &lt;div class=&quot;min-h-full ...&quot;&gt;min-h-full&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+</code></pre>
+
+    <h5>Responsive</h5>
+    <p>Breakpoints define how the display property should be defined depending on the screen size. Design is mobile first so smaller values
+        can also apply to larger values e.g. md also applies to lg or xl if they are not explicitly defined.</p>
+    <ul>
+        <li><b>sm</b>: small screens e.g. phones</li>
+        <li><b>md</b>: medium screens e.g. tablets</li>
+        <li><b>lg</b>: large screens e.g. notebooks</li>
+        <li><b>xl</b>: larger screens .e.g monitors</li>
+    </ul>
+
+    <h5>Min Height 0px on a Small Screen</h5>
+    <p>Resize to change height value.</p>
+
+    <div class="card flex flex-wrap align-items-center justify-content-center">
+        <div class="bg-blue-50 shadow-1 p-3 m-3" style="width: 220px; height: 150px;">
+            <div class="min-h-0 md:min-h-full bg-blue-100 text-blue-500 font-bold shadow-2 p-3 flex align-items-center justify-content-center" >min-h-0 on small screen</div>
+        </div>
+    </div>
+
+    <pre><code class="language-html">
+&lt;div class=&quot;card ...&quot;&gt;
+    &lt;div class=&quot;...&quot; style=&quot;width: 220px; height: 150px;&quot;&gt;
+        &lt;div class=&quot;min-h-0 md:min-h-full ...&quot;&gt;min-h-0 on small screen&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+</code></pre>
+</div>
