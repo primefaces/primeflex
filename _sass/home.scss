@@ -9,9 +9,13 @@
             height: 100%;
         }
 
+        h1 {
+            color: #313233;
+        }
+
         p {
             font-size: 1.1rem;
-            color: #BAD0E4;
+            color: #6C757D;
         }
 
         img {
@@ -19,7 +23,7 @@
         }
 
         .hero-npm {
-            background: rgba(121, 140, 157, 0.2);
+            background: #ffffff;
             border: 1.5px solid #FFFFFF;
             border-radius: 5px;
             width: 100%;
@@ -28,11 +32,11 @@
             padding: .5rem;
 
             > input {
-                background: transparent;
+                background: #ffffff;
                 border: 0 none;
                 font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
                 font-size: 1.1rem;
-                color: #ffffff;
+                color: #6C757D;
                 width: 100%;
                 outline: 0 none;
             }
@@ -41,6 +45,7 @@
                 font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
                 font-size: 1.1rem;
                 display: none;
+                color: #6C757D;
             }
 
             > .copy {
