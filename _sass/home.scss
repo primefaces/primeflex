@@ -1,6 +1,6 @@
 .home-page {
     .hero {
-        background-color: $heroBgColor;
+        background: $heroBgColor;
         color: $heroTextColor;
         height: auto;
         padding: 36px;
@@ -30,6 +30,7 @@
             max-width: 380px;
             margin-top: 1.5rem;
             padding: .5rem;
+            box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
 
             > input {
                 background: #ffffff;
