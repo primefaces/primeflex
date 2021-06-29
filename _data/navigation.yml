@@ -111,11 +111,15 @@
 
 - name: Interactivity
   link:
+- name: Appearance
+  link: /appearance
+- name: Outline
+  link: /outline
+- name: Pointer Events
+  link: /pointerevents
 - name: User Select
   link: /userselect
 
 
 - name: FormLayout
   link: /formlayout
-- name: GridSystem
-  link: /gridsystem
