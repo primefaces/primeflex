@@ -1,0 +1,89 @@
+---
+layout: layout
+permalink: /pointerevents
+---
+
+<div>
+    <h2>Pointer Events</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+    <h5>Getting Start</h5>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <div class="overflow-auto" style="max-height: 500px">
+        <table class="doc-table">
+            <thead>
+            <tr>
+                <th>Class</th>
+                <th>Properties</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>pointer-events-none</td>
+                <td>pointer-events: none;</td>
+            </tr>
+            <tr>
+                <td>pointer-events-auto</td>
+                <td>pointer-events: auto;</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h5>Usage</h5>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+    <div class="card flex flex-column align-items-center justify-content-center">
+        <p class="font-bold">Try clicking the caret icon to open the dropdown</p>
+        <p>pointer-events-auto (event captured)</p>
+        <div class="relative w-12rem mb-3">
+            <select class="block appearance-none w-full p-2 border-round">
+                <option>Indiana</option>
+                <option>Michigan</option>
+                <option>Ohio</option>
+            </select>
+            <div class="pointer-events-auto absolute bg-blue-300 flex align-items-center p-2 border-round-right" style="top:0; bottom: 0; right: 0">
+                <svg class="h-1rem w-1rem" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"></path></svg>
+            </div>
+        </div>
+
+        <p>pointer-events-none (event passes through)</p>
+        <div class="relative w-12rem">
+            <select class="block appearance-none w-full p-2 border-round">
+                <option>Indiana</option>
+                <option>Michigan</option>
+                <option>Ohio</option>
+            </select>
+            <div class="pointer-events-none absolute flex bg-blue-300 flex align-items-center p-2 border-round-right" style="top:0; bottom: 0; right: 0">
+                <svg class="h-1rem w-1rem" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"></path></svg>
+            </div>
+        </div>
+    </div>
+
+    <pre><code class="language-html">
+&lt;div class=&quot;card ...&quot;&gt;
+    &lt;div class=&quot;relative ...&quot;&gt;
+        &lt;select class=&quot;...&quot;&gt;
+            &lt;option&gt;Indiana&lt;/option&gt;
+            &lt;option&gt;Michigan&lt;/option&gt;
+            &lt;option&gt;Ohio&lt;/option&gt;
+        &lt;/select&gt;
+        &lt;div class=&quot;pointer-events-auto ...&quot; style=&quot;...&quot;&gt;
+            &lt;svg class=&quot;h-1rem w-1rem&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 20 20&quot;&gt;&lt;path d=&quot;M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;relative ...&quot;&gt;
+        &lt;select class=&quot;...&quot;&gt;
+            &lt;option&gt;Indiana&lt;/option&gt;
+            &lt;option&gt;Michigan&lt;/option&gt;
+            &lt;option&gt;Ohio&lt;/option&gt;
+        &lt;/select&gt;
+        &lt;div class=&quot;pointer-events-none ...&quot; style=&quot;...&quot;&gt;
+            &lt;svg class=&quot;h-1rem w-1rem&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 20 20&quot;&gt;&lt;path d=&quot;M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+</code></pre>
+</div>
