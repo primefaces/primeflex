@@ -27,8 +27,8 @@
             border: 1.5px solid #FFFFFF;
             border-radius: 5px;
             width: 100%;
-            max-width: 380px;
-            margin-top: 1.5rem;
+            max-width: 480px;
+            margin-top: 2rem;
             padding: .5rem;
             box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
 
@@ -77,54 +77,96 @@
     }
 
     .content-wrapper {
-        padding: 1rem 1rem 5rem 1rem;
+        padding: 2.5rem 1rem 1rem 1rem;
 
         .content {
             .header-text {
-                color: #495057;
+                font-size: 1.214em;
+                line-height: 26px;
+                color: #000000;
+                opacity: .6;
             }
             .sub-text {
-                color: #6C757D;
+                color: #000000;
+                opacity: .4;
+                font-size: 13px;
+                line-height: 19px;
             }
         }
 
         .feature-boxes {
-            margin-bottom: 2.5rem;
+            margin-bottom: 1rem;
 
             .feature-box {
-                background: #FFFFFF;
-                box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
-                border-radius: 4px;
-                min-height: 180px;
-                padding: 1rem;
-
-                .image-box {
-                    border-radius: 4px;
-                    width: 5rem;
-                    height: 5rem;
-                }
+                border-radius: 2px;
+                min-height: 200px;
+                padding: 1.5rem 1rem 1rem 1rem;
 
                 .sub-text {
                     font-size: .9rem;
+                }
+
+                &.utility {
+                    background: linear-gradient(158.84deg, rgba(97, 213, 228, 0.28) 11.11%, rgba(255, 255, 255, 0) 86.05%);
+                }
+
+                &.grid-system {
+                    background: linear-gradient(158.84deg, rgba(249, 174, 97, 0.28) 11.11%, rgba(255, 255, 255, 0) 86.05%);
+
+                }
+
+                &.flexbox {
+                    background: linear-gradient(158.84deg, rgba(156, 174, 183, 0.28) 11.11%, rgba(255, 255, 255, 0) 86.05%);
+
+                }
+
+                &.spacing {
+                    background: linear-gradient(158.84deg, rgba(194, 121, 206, 0.28) 11.11%, rgba(255, 255, 255, 0) 86.05%);
+                }
+
+                &.elevation {
+                    background: linear-gradient(158.84deg, rgba(97, 190, 181, 0.28) 11.11%, rgba(255, 255, 255, 0) 86.05%);
+
+                }
+
+                &.font {
+                    background: linear-gradient(158.84deg, rgba(117, 190, 248, 0.28) 11.11%, rgba(255, 255, 255, 0) 86.05%);
+
+                }
+
+                &.sizing {
+                    background: linear-gradient(158.84deg, rgba(253, 216, 125, 0.28) 11.11%, rgba(255, 255, 255, 0) 86.05%);
+
+                }
+
+                &.color {
+                    background: linear-gradient(158.84deg, rgba(223, 227, 231, 0.28) 11.11%, rgba(255, 255, 255, 0) 86.05%);
+
+                }
+
+                &.responsive {
+                    background: linear-gradient(158.84deg, rgba(144, 205, 147, 0.28) 11.11%, rgba(255, 255, 255, 0) 86.05%);
+
+                }
+
+                &.form {
+                    background: linear-gradient(158.84deg, rgba(156, 174, 183, 0.28) 11.11%, rgba(255, 255, 255, 0) 86.05%);
+
+                }
+
+                &.icons {
+                    background: linear-gradient(158.84deg, rgba(136, 147, 209, 0.28) 11.11%, rgba(255, 255, 255, 0) 86.05%);
+
                 }
             }
         }
 
         .users {
-            border-top: 1px solid rgba(108, 117, 125, 0.2);
-
             .header-text {
                 color: #495057;
             }
             .sub-text {
                 color: #6C757D;
-            }
-
-            .user-box {
-                background: #FFFFFF;
-                box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
-                border-radius: 4px;
-                min-height: 80px;
             }
         }
     }
