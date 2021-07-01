@@ -113,6 +113,8 @@
   link:
 - name: Appearance
   link: /appearance
+- name: Cursor
+  link: /cursor
 - name: Outline
   link: /outline
 - name: Pointer Events
