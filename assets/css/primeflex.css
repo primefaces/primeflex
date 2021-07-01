@@ -2987,6 +2987,26 @@
   border-color: #ffffff !important;
 }
 
+.surface-ground {
+  background-color: var(--surface-ground);
+}
+
+.surface-section {
+  background-color: var(--surface-section);
+}
+
+.surface-card {
+  background-color: var(--surface-card);
+}
+
+.surface-overlay {
+  background-color: var(--surface-overlay);
+}
+
+.surface-border {
+  border-color: var(--surface-border);
+}
+
 .field {
   margin-bottom: 1rem;
 }
@@ -10885,43 +10905,43 @@
 }
 
 .opacity-10 {
-  opacity: 10 !important;
+  opacity: .1 !important;
 }
 
 .opacity-20 {
-  opacity: 20 !important;
+  opacity: .2 !important;
 }
 
 .opacity-30 {
-  opacity: 30 !important;
+  opacity: .3 !important;
 }
 
 .opacity-40 {
-  opacity: 40 !important;
+  opacity: .4 !important;
 }
 
 .opacity-50 {
-  opacity: 50 !important;
+  opacity: .5 !important;
 }
 
 .opacity-60 {
-  opacity: 60 !important;
+  opacity: .6 !important;
 }
 
 .opacity-70 {
-  opacity: 70 !important;
+  opacity: .7 !important;
 }
 
 .opacity-80 {
-  opacity: 80 !important;
+  opacity: .8 !important;
 }
 
 .opacity-90 {
-  opacity: 90 !important;
+  opacity: .9 !important;
 }
 
 .opacity-100 {
-  opacity: 100 !important;
+  opacity: 1 !important;
 }
 
 .transition-none {

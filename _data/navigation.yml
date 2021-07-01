@@ -108,6 +108,8 @@
   link:
 - name: Elevation
   link: /elevation
+- name: Opacity
+  link: /opacity
 
 - name: Interactivity
   link:
