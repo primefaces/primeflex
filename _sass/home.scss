@@ -51,15 +51,59 @@
 
             > .copy {
                 font-size: 1rem;
-                background-color: #ffffff;
+                background: #E9EEF7;
                 color: #181B21;
                 font-weight: 500;
-                border-radius: 30px;
+                border-radius: 4px;
                 border: 0 none;
                 padding: .5rem;
+                position: relative;
 
                 &:hover {
                     cursor: pointer;
+                    text-decoration: none;
+                }
+
+                .confetti-container {
+                    position: absolute;
+                    .confetti-effect {
+                        position: absolute;
+                    }
+                }
+
+                i {
+                    position: absolute;
+                    display: block;
+                    width: 4px;
+                    height: 4px;
+                    top: 50%;
+                    left: 50%;
+                    margin: -2px 0 0 -2px;
+                    opacity: var(--o, 0);
+                    background: var(--b);
+                    transform: translate(var(--x), var(--y)) scale(.1);
+                }
+
+                &.animation {
+                    .confetti-container {
+                        .confetti-effect {
+                            --s: .1;
+                            --o: 0;
+                        }
+                    }
+                }
+
+                &.confetti {
+                    i {
+                        animation: confetti .6s ease-out forwards;
+                    }
+                }
+
+                @keyframes confetti {
+                    from {
+                        transform: translate(0, 0);
+                        opacity: 1;
+                    }
                 }
             }
         }

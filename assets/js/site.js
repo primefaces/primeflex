@@ -1,6 +1,7 @@
 var PrimeFlex = {
 
-    init: function() {
+    init: function () {
+        this.copyButton = document.getElementById('copy-button');
         this.menu = document.getElementById('layout-menu-wrapper');
         this.mask = document.getElementById('layout-mask');
         this.documentation = document.getElementById('doc');
@@ -12,32 +13,73 @@ var PrimeFlex = {
         var $this = this;
     },
 
-    onToggleMobileTopbarMenu: function(e) {
+    onToggleMobileTopbarMenu: function (e) {
         var menubutton = e.currentTarget;
         var menu = menubutton.nextElementSibling;
 
         if (this.hasClass(menu, 'active')) {
             this.removeClass(menu, 'active');
-        }
-        else {
+        } else {
             this.addClass(menu, 'active');
         }
     },
 
-    onToggleMobileMenu: function(e) {
+    onToggleMobileMenu: function (e) {
         var menubutton = e.currentTarget;
 
         if (this.hasClass(this.menu, 'active')) {
             this.removeClass(this.menu, 'active');
             this.removeClass(this.mask, 'layout-mask-active');
-        }
-        else {
+        } else {
             this.addClass(this.menu, 'active');
             this.addClass(this.mask, 'layout-mask-active');
         }
     },
 
-    copyText: function(e) {
+    copyText: function (e) {
+
+        let confettiAmount = 60,
+            confettiColors = [
+                '#7d32f5',
+                '#f6e434',
+                '#63fdf1',
+                '#e672da',
+                '#295dfe',
+                '#6e57ff'
+            ],
+            random = (min, max) => {
+                return Math.floor(Math.random() * (max - min + 1) + min);
+            },
+            createConfetti = to => {
+                let elem = document.createElement('i'),
+                    set = Math.random() < 0.5 ? -1 : 1;
+                elem.style.setProperty('--x', random(-260, 260) + 'px');
+                elem.style.setProperty('--y', random(-160, 160) + 'px');
+                elem.style.setProperty('--r', random(0, 360) + 'deg');
+                elem.style.setProperty('--s', .1);
+                elem.style.setProperty('--b', confettiColors[random(0, 5)]);
+                to.appendChild(elem);
+            };
+
+        if (!this.copyButton.classList.contains('animation')) {
+            this.copyButton.classList.add('animation');
+            for (let i = 0; i < confettiAmount; i++) {
+                createConfetti(this.copyButton);
+            }
+            setTimeout(() => {
+                this.copyButton.classList.add('confetti');
+                setTimeout(() => {
+                    this.copyButton.querySelectorAll('i').forEach(i => i.remove());
+                }, 500);
+            }, 50);
+        } else {
+            this.copyButton.classList.remove('animation', 'confetti');
+        }
+
+        setTimeout(() => {
+            this.copyButton.classList.remove('animation', 'confetti');
+        }, 650);
+
         var copyText = e.currentTarget.previousElementSibling;
         copyText.select();
         copyText.setSelectionRange(0, 99999);
@@ -47,18 +89,18 @@ var PrimeFlex = {
         copyText.previousElementSibling.style.display = 'block';
     },
 
-    refreshCodeHighlight: function() {
+    refreshCodeHighlight: function () {
         var codes = this.documentation.querySelectorAll('code');
         for (var i = 0; i < codes.length; i++) {
             Prism.highlightElement(codes[i]);
-        }  
+        }
     },
 
-    removeActiveClass: function() {
+    removeActiveClass: function () {
         this.removeClass(this.menu.querySelector('.active'), 'active');
     },
 
-    hasClass: function(element, className) {
+    hasClass: function (element, className) {
         if (element) {
             if (element.classList)
                 return element.classList.contains(className);
@@ -67,7 +109,7 @@ var PrimeFlex = {
         }
     },
 
-    addClass: function(element, className) {
+    addClass: function (element, className) {
         if (element) {
             if (element.classList)
                 element.classList.add(className);
@@ -76,7 +118,7 @@ var PrimeFlex = {
         }
     },
 
-    removeClass: function(element, className) {
+    removeClass: function (element, className) {
         if (element) {
             if (element.classList)
                 element.classList.remove(className);
@@ -88,72 +130,3 @@ var PrimeFlex = {
 
 PrimeFlex.init();
 
-/* Hero Text Animation
-var Animation = {
-
-    init: function() {
-        this.words = document.getElementsByClassName('word');
-		this.wordArray = [];
-		this.currentWord = 0;
-
-		this.words[this.currentWord].style.opacity = 1;
-		for (var i = 0; i < this.words.length; i++) {
-		    this.splitLetters(this.words[i]);
-        }
-        
-        this.run();
-    },
-
-    changeWord: function () {
-		var cw = this.wordArray[this.currentWord];
-		var nw = this.currentWord == this.words.length-1 ? this.wordArray[0] : this.wordArray[this.currentWord+1];
-		for (var i = 0; i < cw.length; i++) {
-			this.animateLetterOut(cw, i);
-		}
-		
-		for (var i = 0; i < nw.length; i++) {
-			nw[i].className = 'letter behind';
-			nw[0].parentElement.style.opacity = 1;
-			this.animateLetterIn(nw, i);
-		}
-		
-		this.currentWord = (this.currentWord == this.wordArray.length-1) ? 0 : this.currentWord+1;
-	},
-
-	animateLetterOut: function(cw, i) {
-		setTimeout(function() {
-			cw[i].className = 'letter out';
-		}, i*80);
-	},
-
-	animateLetterIn: function(nw, i) {
-		setTimeout(function() {
-			nw[i].className = 'letter in';
-		}, 340+(i*80));
-	},
-
-	splitLetters: function(word) {
-		var content = word.innerHTML;
-		word.innerHTML = '';
-		var letters = [];
-		for (var i = 0; i < content.length; i++) {
-			var letter = document.createElement('span');
-			letter.className = 'letter';
-			letter.innerHTML = content.charAt(i);
-			word.appendChild(letter);
-			letters.push(letter);
-		}
-		
-		this.wordArray.push(letters);
-    },
-    
-    run: function() {
-        var $this = this;
-        this.changeWord();
-		setInterval(function() {
-            $this.changeWord();
-        }, 4000);
-    }
-}
-
-Animation.init(); */
