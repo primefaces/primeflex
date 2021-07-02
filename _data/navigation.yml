@@ -111,6 +111,15 @@
 - name: Opacity
   link: /opacity
 
+- name: Transform
+  link:
+- name: Translate
+  link: /translate
+- name: Transform Origin
+  link: /transformorigin
+- name: Rotate
+  link: /rotate
+
 - name: Interactivity
   link:
 - name: Appearance

@@ -11144,6 +11144,14 @@
     transform: translateY(-100%) !important;
   }
 }
+.rotate-45 {
+  transform: rotate(45deg) !important;
+}
+
+.-rotate-45 {
+  transform: rotate(-45deg) !important;
+}
+
 .rotate-90 {
   transform: rotate(90deg) !important;
 }
@@ -11161,6 +11169,12 @@
 }
 
 @media screen and (min-width: 576px) {
+  .sm\:rotate-45 {
+    transform: rotate(45deg) !important;
+  }
+  .sm\:-rotate-45 {
+    transform: rotate(-45deg) !important;
+  }
   .sm\:rotate-90 {
     transform: rotate(90deg) !important;
   }
@@ -11175,6 +11189,12 @@
   }
 }
 @media screen and (min-width: 768px) {
+  .md\:rotate-45 {
+    transform: rotate(45deg) !important;
+  }
+  .md\:-rotate-45 {
+    transform: rotate(-45deg) !important;
+  }
   .md\:rotate-90 {
     transform: rotate(90deg) !important;
   }
@@ -11189,6 +11209,12 @@
   }
 }
 @media screen and (min-width: 992px) {
+  .lg\:rotate-45 {
+    transform: rotate(45deg) !important;
+  }
+  .lg\:-rotate-45 {
+    transform: rotate(-45deg) !important;
+  }
   .lg\:rotate-90 {
     transform: rotate(90deg) !important;
   }
@@ -11203,6 +11229,12 @@
   }
 }
 @media screen and (min-width: 1200px) {
+  .xl\:rotate-45 {
+    transform: rotate(45deg) !important;
+  }
+  .xl\:-rotate-45 {
+    transform: rotate(-45deg) !important;
+  }
   .xl\:rotate-90 {
     transform: rotate(90deg) !important;
   }
@@ -11225,7 +11257,7 @@
 }
 
 .origin-top-right {
-  transform-origin: top-right !important;
+  transform-origin: top right !important;
 }
 
 .origin-right {
@@ -11233,7 +11265,7 @@
 }
 
 .origin-bottom-right {
-  transform-origin: bottom-right !important;
+  transform-origin: bottom right !important;
 }
 
 .origin-bottom {
@@ -11241,7 +11273,7 @@
 }
 
 .origin-bottom-left {
-  transform-origin: bottom-left !important;
+  transform-origin: bottom left !important;
 }
 
 .origin-left {
@@ -11260,19 +11292,19 @@
     transform-origin: top !important;
   }
   .sm\:origin-top-right {
-    transform-origin: top-right !important;
+    transform-origin: top right !important;
   }
   .sm\:origin-right {
     transform-origin: right !important;
   }
   .sm\:origin-bottom-right {
-    transform-origin: bottom-right !important;
+    transform-origin: bottom right !important;
   }
   .sm\:origin-bottom {
     transform-origin: bottom !important;
   }
   .sm\:origin-bottom-left {
-    transform-origin: bottom-left !important;
+    transform-origin: bottom left !important;
   }
   .sm\:origin-left {
     transform-origin: left !important;
@@ -11289,19 +11321,19 @@
     transform-origin: top !important;
   }
   .md\:origin-top-right {
-    transform-origin: top-right !important;
+    transform-origin: top right !important;
   }
   .md\:origin-right {
     transform-origin: right !important;
   }
   .md\:origin-bottom-right {
-    transform-origin: bottom-right !important;
+    transform-origin: bottom right !important;
   }
   .md\:origin-bottom {
     transform-origin: bottom !important;
   }
   .md\:origin-bottom-left {
-    transform-origin: bottom-left !important;
+    transform-origin: bottom left !important;
   }
   .md\:origin-left {
     transform-origin: left !important;
@@ -11318,19 +11350,19 @@
     transform-origin: top !important;
   }
   .lg\:origin-top-right {
-    transform-origin: top-right !important;
+    transform-origin: top right !important;
   }
   .lg\:origin-right {
     transform-origin: right !important;
   }
   .lg\:origin-bottom-right {
-    transform-origin: bottom-right !important;
+    transform-origin: bottom right !important;
   }
   .lg\:origin-bottom {
     transform-origin: bottom !important;
   }
   .lg\:origin-bottom-left {
-    transform-origin: bottom-left !important;
+    transform-origin: bottom left !important;
   }
   .lg\:origin-left {
     transform-origin: left !important;
@@ -11347,19 +11379,19 @@
     transform-origin: top !important;
   }
   .xl\:origin-top-right {
-    transform-origin: top-right !important;
+    transform-origin: top right !important;
   }
   .xl\:origin-right {
     transform-origin: right !important;
   }
   .xl\:origin-bottom-right {
-    transform-origin: bottom-right !important;
+    transform-origin: bottom right !important;
   }
   .xl\:origin-bottom {
     transform-origin: bottom !important;
   }
   .xl\:origin-bottom-left {
-    transform-origin: bottom-left !important;
+    transform-origin: bottom left !important;
   }
   .xl\:origin-left {
     transform-origin: left !important;
