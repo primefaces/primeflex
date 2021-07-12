@@ -143,20 +143,14 @@ permalink: /display
     </ul>
 
     <div class="card">
-        <h5>Hidden on a Small Screen</h5>
-        <p>Resize to toggle the visibility.</p>
-        <input type="text" placeholder="First Input" class="inputfield hidden md:block" />
+        <input type="text" placeholder="Hidden on a small screen" class="inputfield hidden md:block" size="25">
 
-        <h5>Visible on a Small Screen</h5>
-        <p>Resize to toggle the visibility.</p>
-        <input type="text" placeholder="Second Input" class="inputfield block md:hidden" />
+        <span class="block md:hidden">Visible on a small screen</span>
     </div>
 
 <pre><code class="language-html">
-&lt;div class=&quot;card&quot;&gt;
-    &lt;input type=&quot;text&quot; placeholder=&quot;First Input&quot; class=&quot;inputfield hidden md:block&quot; /&gt;
-    &lt;input type=&quot;text&quot; placeholder=&quot;Second Input&quot; class=&quot;inputfield block md:hidden&quot; /&gt;
-&lt;/div&gt;
+&lt;input type="text" placeholder="Hidden on a small screen" class="inputfield hidden md:block" size="50"&gt;
+&lt;span class="block md:hidden"&gt;Visible on a small screen&lt;/span&gt;
 
 </code></pre>
 </div>
