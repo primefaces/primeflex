@@ -34,7 +34,7 @@
 - name: Align Self
   link: /alignself
 
-- name: Backgrounds
+- name: Background
   link:
 - name: Background Color
   link: /backgroundcolor
