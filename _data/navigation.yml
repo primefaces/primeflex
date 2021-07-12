@@ -111,6 +111,19 @@
 - name: Opacity
   link: /opacity
 
+- name: Transition and Animation
+  link:
+- name: Transition Property
+  link: /transitionproperty
+- name: Transition Duration
+  link: /transitionduration
+- name: Transition Timing Function
+  link: /transitiontimingfunction
+- name: Transition Delay
+  link: /transitiondelay
+- name: Animatiom
+  link: /animation
+
 - name: Transform
   link:
 - name: Translate
