@@ -126,6 +126,8 @@
   link:
 - name: Animations
   link: /animations
+- name: Animation Duration
+  link: /animationduration
 
 - name: Transform
   link:
