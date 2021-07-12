@@ -192,6 +192,10 @@ ul {
 
     ul {
         list-style-type: disc;
+
+        li {
+            line-height: 1.5;
+        }
     }
 
     .doc-table {
@@ -209,6 +213,12 @@ ul {
             td {
                 padding: 1rem;
                 border-bottom: 1px solid #dee2e6;
+
+                &:first-child {
+                    font-family: Courier New,monospace;
+                    font-weight: 700;
+                    color: #6C757D;
+                }
             }
         }
     }
