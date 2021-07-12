@@ -5,10 +5,9 @@ permalink: /borderradius
 
 <div>
     <h2>Border Radius</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <p>Defines the radius of an element's corners.</p>
 
-    <h5>Getting Start</h5>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <h5>Classes</h5>
     <div class="overflow-auto" style="max-height: 300px">
         <table class="doc-table">
             <thead>
@@ -55,7 +54,7 @@ permalink: /borderradius
     </div>
 
     <h5>Usage</h5>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <p>Border radius can be defined per corners or all at once.</p>
 
     <div class="card flex flex-wrap md:justify-content-start justify-content-center">
         <div class="border-noround border-1 border-blue-500 shadow-1 m-2 flex align-items-center justify-content-center" style="min-width: 200px; min-height: 100px">border-noround</div>
@@ -78,5 +77,23 @@ permalink: /borderradius
     &lt;div class=&quot;border-round-right ...&quot; style=&quot; ...&quot;&gt;border-round-right&lt;/div&gt;
 &lt;/div&gt;
 
+</code></pre>
+
+    <h5>Responsive</h5>
+    <p>Responsive alternatives are available for customizations based on screen size. Add the responsive breakpoint keyword followed by a semi-colon as a prefix such as <i>md:border-circle</i> to use a responsive class.</p>
+    <ul>
+        <li><b>sm</b>: small screens e.g. phones</li>
+        <li><b>md</b>: medium screens e.g. tablets</li>
+        <li><b>lg</b>: large screens e.g. notebooks</li>
+        <li><b>xl</b>: larger screens e.g monitors</li>
+    </ul>
+
+    <div class="card flex justify-content-center">
+        <div class="border-noround md:border-circle border-1 border-blue-500 shadow-1 m-2 flex align-items-center justify-content-center" style="min-width: 200px; min-height: 100px">Responsive Radius</div>
+    </div>
+
+    <pre><code class="language-html">
+&lt;div class="border-noround md:border-circle border-1 border-blue-500 shadow-1 m-2 flex align-items-center justify-content-center" style="min-width: 200px; min-height: 100px"&gt;Responsive Radius&lt;/div&gt;
+        
 </code></pre>
 </div>
