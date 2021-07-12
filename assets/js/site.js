@@ -6,6 +6,8 @@ var PrimeFlex = {
         this.menu = document.getElementById('layout-menu-wrapper');
         this.mask = document.getElementById('layout-mask');
         this.mobileMenuButton = document.getElementById('mobile-button');
+        this.mobileTopbarButton = document.getElementById('mobile-topbar-button');
+        this.mobileTopbarMenu = document.getElementById('mobile-topbar-menu');
 
         this.bindEvents();
 
@@ -19,6 +21,12 @@ var PrimeFlex = {
                 if (this.hasClass(this.menu, 'active')) {
                     this.removeClass(this.menu, 'active');
                     this.removeClass(this.mask, 'layout-mask-active');
+                }
+            }
+            if(!(this.mobileTopbarMenu.contains(e.target) || this.mobileTopbarButton.contains(e.target))) {
+                if (this.hasClass(this.mobileTopbarMenu, 'active')) {
+                    this.removeClass(this.mobileTopbarMenu, 'active');
+                    this.removeClass(this.mobileTopbarMenu, 'layout-mask-active');
                 }
             }
         })
