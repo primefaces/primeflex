@@ -1,16 +1,27 @@
 var PrimeFlex = {
 
     init: function () {
+        this.documentation = document.getElementById('doc');
         this.copyButton = document.getElementById('copy-button');
         this.menu = document.getElementById('layout-menu-wrapper');
         this.mask = document.getElementById('layout-mask');
-        this.documentation = document.getElementById('doc');
+        this.mobileMenuButton = document.getElementById('mobile-button');
 
         this.bindEvents();
+
     },
 
     bindEvents: function () {
         var $this = this;
+
+        document.addEventListener("click", (e)=> {
+            if(!(this.menu.contains(e.target) || this.mobileMenuButton.contains(e.target))) {
+                if (this.hasClass(this.menu, 'active')) {
+                    this.removeClass(this.menu, 'active');
+                    this.removeClass(this.mask, 'layout-mask-active');
+                }
+            }
+        })
     },
 
     onToggleMobileTopbarMenu: function (e) {

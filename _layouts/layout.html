@@ -14,7 +14,7 @@
 <header>
     <div class="layout-topbar flex align-items-center justify-content-between">
         <div class="mobile-menu-wrapper">
-            <a class="mobile-button" onclick="PrimeFlex.onToggleMobileMenu(event)"><i class="pi pi-bars"></i></a>
+            <a class="mobile-button" id="mobile-button" onclick="PrimeFlex.onToggleMobileMenu(event)"><i class="pi pi-bars"></i></a>
         </div>
 
         <div class="layout-topbar-left">
@@ -25,18 +25,19 @@
         </div>
         <div class="layout-topbar-right">
             <ul class="flex flex-row mr-5">
-                <li><a href="https://www.primetek.com.tr">PrimeTek</a></li>
-                <li><a href="https://forum.primefaces.org">Community</a></li>
-                <li><a href="https://forum.primefaces.org">v2.0.0</a></li>
-                <li><a href="https://www.github.com/primefaces/primeflex">GitHub <i class="pi pi-external-link ml-2"></i></a></li>
+                <li><a href="/setup">Setup</a></li>
+                <li><a href="https://discord.com/invite/gzKFYnpmCY">Discord</a></li>
+                <li><a href="https://forum.primefaces.org">Forum</a></li>
+                <li><a href="https://www.github.com/primefaces/primeflex">GitHub</a></li>
             </ul>
 
             <div class="mobile-topbar-menu-wrapper">
                 <a class="mobile-topbar-button" onclick="PrimeFlex.onToggleMobileTopbarMenu(event)"><i class="pi pi-ellipsis-v"></i></a>
                 <ul class="mobile-topbar-menu clearlist">
                     <li><a href="https://www.github.com/primefaces/primeflex">GitHub</a></li>
-                    <li><a href="https://forum.primefaces.org">Community</a></li>
-                    <li><a href="https://www.primetek.com.tr">PrimeTek</a></li>
+                    <li><a href="https://forum.primefaces.org">Forum</a></li>
+                    <li><a href="https://discord.com/invite/gzKFYnpmCY">Discord</a></li>
+                    <li><a href="/setup">Setup</a></li>
                 </ul>
             </div>
         </div>
@@ -64,6 +65,8 @@
             </div>
         </div>
     </div>
+
+    <div id="layout-mask" class="layout-mask"></div>
 </main>
 
 <script type="text/javascript" src="/assets/js/prism.js"></script>
