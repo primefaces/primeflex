@@ -1,0 +1,303 @@
+---
+layout: layout
+permalink: /animations
+---
+
+<div>
+    <h2>Animations</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+    <h5>Getting Start</h5>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <div class="overflow-auto" style="max-height: 500px">
+        <table class="doc-table">
+            <thead>
+            <tr>
+                <th>Class</th>
+                <th>Properties</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>fadein</td>
+                <td style="white-space: pre" class="p-0">
+    animation: fadein .15s linear;
+
+    @keyframes fadein {
+        0%   {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+                </td>
+            </tr>
+            <tr>
+                <td>fadeout</td>
+                <td style="white-space: pre" class="p-0">
+    animation: fadeout .15s linear;
+
+    @keyframes fadeout {
+        0%   {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+                </td>
+            </tr>
+            <tr>
+                <td>slidedown</td>
+                <td style="white-space: pre" class="p-0">
+    animation: slidedown .45s ease-in-out;
+
+    @keyframes slidedown {
+        0% {
+            max-height: 0;
+        }
+        100% {
+            max-height: auto;
+        }
+    }
+                </td>
+            </tr>
+            <tr>
+                <td>slideup</td>
+                <td style="white-space: pre" class="p-0">
+    animation: slideup .45s cubic-bezier(0, 1, 0, 1);
+
+    @keyframes slideup {
+        0% {
+            max-height: 1000px;
+        }
+        100% {
+            max-height: 0;
+        }
+    }
+                </td>
+            </tr>
+            <tr>
+                <td>scalein</td>
+                <td style="white-space: pre" class="p-0">
+    animation: scalein .15s linear;
+
+    @keyframes scalein {
+        0% {
+            opacity: 0;
+            transform: scaleY(0.8);
+            transition: transform .12s cubic-bezier(0, 0, 0.2, 1), opacity .12s cubic-bezier(0, 0, 0.2, 1);
+        }
+        100% {
+            opacity: 1;
+            transform: scaleY(1);
+        }
+    }
+                </td>
+            </tr>
+            <tr>
+                <td>fadeinleft</td>
+                <td style="white-space: pre" class="p-0">
+    animation: fadeinleft .15s linear;
+
+    @keyframes fadeinleft {
+        0%   {
+            opacity: 0;
+            transform: translateX(-100%);
+            transition: transform .12s cubic-bezier(0, 0, 0.2, 1), opacity .12s cubic-bezier(0, 0, 0.2, 1);
+        }
+        100% {
+            opacity: 1;
+            transform: translateX(0%);
+        }
+    }
+                </td>
+            </tr>
+            <tr>
+                <td>fadeoutleft</td>
+                <td style="white-space: pre" class="p-0">
+    animation: fadeoutleft .15s linear;
+
+    @keyframes fadeoutleft {
+        0%   {
+            opacity: 0;
+            transform: translateX(0%);
+            transition: transform .12s cubic-bezier(0, 0, 0.2, 1), opacity .12s cubic-bezier(0, 0, 0.2, 1);
+        }
+        100% {
+            opacity: 1;
+            transform: translateX(-100%);
+        }
+    }
+                </td>
+            </tr>
+            <tr>
+                <td>fadeinright</td>
+                <td style="white-space: pre" class="p-0">
+    animation: fadeinright .15s linear;
+
+    @keyframes fadeinright {
+        0%   {
+            opacity: 0;
+            transform: translateX(100%);
+            transition: transform .12s cubic-bezier(0, 0, 0.2, 1), opacity .12s cubic-bezier(0, 0, 0.2, 1);
+        }
+        100% {
+            opacity: 1;
+            transform: translateX(0%);
+        }
+    }
+                </td>
+            </tr>
+            <tr>
+                <td>fadeoutright</td>
+                <td style="white-space: pre" class="p-0">
+    animation: fadeoutright .15s linear;
+
+    @keyframes fadeoutright {
+        0%   {
+            opacity: 0;
+            transform: translateX(0%);
+            transition: transform .12s cubic-bezier(0, 0, 0.2, 1), opacity .12s cubic-bezier(0, 0, 0.2, 1);
+        }
+        100% {
+            opacity: 1;
+            transform: translateX(100%);
+        }
+    }
+                </td>
+            </tr>
+            <tr>
+                <td>fadeinup</td>
+                <td style="white-space: pre" class="p-0">
+    animation: fadeinup .15s linear;
+
+    @keyframes fadeinup {
+        0%   {
+            opacity: 0;
+            transform: translateY(-100%);
+            transition: transform .12s cubic-bezier(0, 0, 0.2, 1), opacity .12s cubic-bezier(0, 0, 0.2, 1);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0%);
+        }
+    }
+                </td>
+            </tr>
+            <tr>
+                <td>fadeoutup</td>
+                <td style="white-space: pre" class="p-0">
+    animation: fadeoutup .15s linear;
+
+    @keyframes fadeoutup {
+        0%   {
+            opacity: 0;
+            transform: translateY(0%);
+            transition: transform .12s cubic-bezier(0, 0, 0.2, 1), opacity .12s cubic-bezier(0, 0, 0.2, 1);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(-100%);
+        }
+    }
+                </td>
+            </tr>
+            <tr>
+                <td>fadeindown</td>
+                <td style="white-space: pre" class="p-0">
+    animation: fadeindown .15s linear;
+
+    @keyframes fadeindown {
+        0%   {
+            opacity: 0;
+            transform: translateY(100%);
+            transition: transform .12s cubic-bezier(0, 0, 0.2, 1), opacity .12s cubic-bezier(0, 0, 0.2, 1);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0%);
+        }
+    }
+                </td>
+            </tr>
+            <tr>
+                <td>fadeoutdown</td>
+                <td style="white-space: pre" class="p-0">
+    animation: fadeoutdown .15s linear;
+
+    @keyframes fadeoutdown {
+        0% {
+            opacity: 0;
+            transform: translateY(0%);
+            transition: transform .12s cubic-bezier(0, 0, 0.2, 1), opacity .12s cubic-bezier(0, 0, 0.2, 1);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(100%);
+        }
+    }
+                </td>
+            </tr>
+            <tr>
+                <td>animate-width</td>
+                <td style="white-space: pre" class="p-0">
+    animation: animate-width 1000ms linear;
+
+    @keyframes animate-width {
+        0% {
+            width: 0;
+        }
+        100% {
+            width: 100%;
+        }
+    }
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h5>fadeinleft</h5>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+    <div class="card flex flex-wrap align-items-center justify-content-center">
+        <div class="fadeinleft animation-duration-1000 animation-iteration-infinite flex align-items-center justify-content-center font-bold text-blue-500 border-round m-2 px-5 py-3 shadow-3">fadeinleft</div>
+    </div>
+
+    <pre><code class="language-html">
+&lt;div class=&quot;card ...&quot;&gt;
+    &lt;div class=&quot;fadeinleft animation-duration-1000 animation-iteration-infinite ...&quot;&gt;fadeinleft&lt;/div&gt;
+&lt;/div&gt;
+
+</code></pre>
+
+    <h5>fadeoutleft</h5>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+    <div class="card flex flex-wrap align-items-center justify-content-center">
+        <div class="fadeoutleft animation-duration-1000 animation-iteration-infinite flex align-items-center justify-content-center font-bold text-blue-500 border-round m-2 px-5 py-3 shadow-3">fadeoutleft</div>
+    </div>
+
+    <pre><code class="language-html">
+&lt;div class=&quot;card ...&quot;&gt;
+    &lt;div class=&quot;fadeoutleft animation-duration-1000 animation-iteration-infinite ...&quot;&gt;fadeoutleft&lt;/div&gt;
+&lt;/div&gt;
+
+</code></pre>
+
+    <h5>scalein</h5>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+    <div class="card flex flex-wrap align-items-center justify-content-center">
+        <div class="scalein animation-duration-1000 animation-iteration-infinite flex align-items-center justify-content-center font-bold text-blue-500 border-round m-2 px-5 py-3 shadow-3">scalein</div>
+    </div>
+
+    <pre><code class="language-html">
+&lt;div class=&quot;card ...&quot;&gt;
+    &lt;div class=&quot;scalein animation-duration-1000 animation-iteration-infinite ...&quot;&gt;scalein&lt;/div&gt;
+&lt;/div&gt;
+
+</code></pre>
+</div>

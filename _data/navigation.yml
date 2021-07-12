@@ -121,8 +121,11 @@
   link: /transitiontimingfunction
 - name: Transition Delay
   link: /transitiondelay
-- name: Animatiom
-  link: /animation
+
+- name: Animation
+  link:
+- name: Animations
+  link: /animations
 
 - name: Transform
   link:
