@@ -11688,17 +11688,17 @@
 }
 
 .animation-fill-none {
-  animation-fill: none !important;
+  animation-fill-mode: none !important;
 }
 
 .animation-fill-forwards {
-  animation-fill: forwards !important;
+  animation-fill-mode: forwards !important;
 }
 
 .animation-fill-backwards {
-  animation-fill: backwards !important;
+  animation-fill-mode: backwards !important;
 }
 
 .animation-fill-both {
-  animation-fill: both !important;
+  animation-fill-mode: both !important;
 }

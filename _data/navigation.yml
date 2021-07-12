@@ -128,6 +128,14 @@
   link: /animations
 - name: Animation Duration
   link: /animationduration
+- name: Animation Delay
+  link: /animationdelay
+- name: Animation Iteration
+  link: /animationiteration
+- name: Animation Timing Function
+  link: /animationtimingfunction
+- name: Animation Fill
+  link: /animationfill
 
 - name: Transform
   link:
