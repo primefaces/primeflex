@@ -11,7 +11,7 @@
 - name: Z-Index
   link: /zindex
 
-- name: Flexbox and Grid
+- name: Flexbox
   link:
 - name: Flex Direction
   link: /flexdirection
@@ -108,7 +108,7 @@
 - name: Opacity
   link: /opacity
 
-- name: Transition and Animation
+- name: Transition
   link:
 - name: Transition Property
   link: /transitionproperty
