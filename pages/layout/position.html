@@ -5,10 +5,9 @@ permalink: /position
 
 <div>
     <h2>Position</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <p>Specifies how an element is positioned on the screen.</p>
 
-    <h5>Getting Start</h5>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <h5>Classes</h5>
     <div class="overflow-auto" style="max-height: 500px">
         <table class="doc-table">
             <thead>
@@ -43,7 +42,7 @@ permalink: /position
     </div>
 
     <h5>Static</h5>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <p>A static positioned element is displayed according to the flow of the page and does not get affected by the top, left, right and bottom properties.</p>
 
     <div class="card relative p-5">
         <div class="static shadow-1 p-3" style="min-width: 300px; min-height: 200px;">
@@ -67,7 +66,7 @@ permalink: /position
 </code></pre>
 
     <h5>Fixed</h5>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <p>A fixed element is positioned relative to the viewport and always located in the same position even when the page is scrolled.</p>
 
     <div class="card overflow-hidden" style="height: 400px">
         <p class="font-bold">Window Review</p>
@@ -111,7 +110,7 @@ permalink: /position
 </code></pre>
 
     <h5>Relative</h5>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <p>A relative positioned element is displayed relative to its original position. Setting the top, left, right and bottom properties can be used to adjust the position of the element.</p>
 
     <div class="card relative p-5">
         <div class="relative shadow-1 p-3" style="min-width: 300px; min-height: 200px;">
@@ -135,7 +134,7 @@ permalink: /position
 </code></pre>
 
     <h5>Absolute</h5>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <p>An absolute positioned element is displayed relative to the nearest positioned element, if there is none then it is positioned according to the document.</p>
 
     <div class="card p-5">
         <p class="font-bold">Static Position</p>
@@ -186,7 +185,7 @@ permalink: /position
 </code></pre>
 
     <h5>Sticky</h5>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <p>A sticky element is dynamically positioned based on the scroll position and toggles between the relative and fixed behavior.</p>
 
     <div class="card overflow-hidden" style="height: 400px">
         <div class="overflow-auto border-round border-1 border-blue-500" style="height: 300px">
@@ -294,8 +293,7 @@ permalink: /position
 </code></pre>
 
     <h5>Responsive</h5>
-    <p>Breakpoints define how the display property should be defined depending on the screen size. Design is mobile first so smaller values
-        can also apply to larger values e.g. md also applies to lg or xl if they are not explicitly defined.</p>
+    <p>Responsive alternatives are available for customizations based on screen size. Add the responsive breakpoint keyword followed by a semi-colon as a prefix such as <i>md:absolute</i> to use a responsive class.</p>
     <ul>
         <li><b>sm</b>: small screens e.g. phones</li>
         <li><b>md</b>: medium screens e.g. tablets</li>
@@ -316,7 +314,7 @@ permalink: /position
 
     <pre><code class="language-html">
 &lt;div class=&quot;card relative p-3 md:p-5&quot;&gt;
-    &lt;p&gt;Resize to chang position value.&lt;/p&gt;
+    &lt;p&gt;Resize to change position value.&lt;/p&gt;
     &lt;div class=&quot;static ...&quot; style=&quot;...&quot;&gt;
         &lt;p class=&quot;...&quot;&gt;Static&lt;/p&gt;
         &lt;div class=&quot;static md:absolute bottom-0 left-0 ...&quot; style=&quot;...&quot;&gt;
