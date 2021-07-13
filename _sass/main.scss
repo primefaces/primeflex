@@ -1,10 +1,5 @@
 /* variables */
-$fontFamily: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-$fontSize: 14px;
-$textColor: #2E3440;
-$bodyBg: #F8F9FA;
 $linkColor: #0078E3;
-
 $heroBgColor: linear-gradient(197.37deg, rgba(0, 120, 227, 0.07) -0.38%, rgba(165, 72, 181, 0) 101.89%),
 linear-gradient(115.93deg, rgba(62, 136, 246, 0.15) 4.86%, rgba(62, 180, 246, 0.0495) 38.05%, rgba(62, 235, 246, 0) 74.14%),
 radial-gradient(56.47% 76.87% at 6.92% 7.55%, rgba(62, 136, 246, 0.05) 0%, rgba(62, 158, 246, 0.013) 52.16%, rgba(62, 246, 246, 0) 100%),
@@ -32,17 +27,17 @@ $heroTextColor: #ffffff;
 
 html {
     height: 100%;
-    font-size: $fontSize;
+    font-size: 16px;
 }
 
 body {
-    font-family: $fontFamily;
+    font-family: var(--font-family);
     font-weight: 400;
-    color: $textColor;
+    color: var(--text-color);
     padding: 0;
     margin: 0;
     min-height: 100%;
-    background: $bodyBg;
+    background: var(--surface-ground);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -213,12 +208,10 @@ ul {
             td {
                 padding: 1rem;
                 border-bottom: 1px solid #dee2e6;
-
-                &:first-child {
-                    font-family: Courier New,monospace;
-                    font-weight: 700;
-                    color: #6C757D;
-                }
+                font-family: Courier New,monospace;
+                font-weight: 700;
+                color: #6C757D;
+                font-size: 14px;
             }
         }
     }
