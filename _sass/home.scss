@@ -123,18 +123,16 @@
     .content-wrapper {
         padding: 2.5rem 1rem 1rem 1rem;
 
+        .sub-text {
+            line-height: 1.5;
+            color: var(--text-color-secondary);
+        }
+
         .content {
             .header-text {
                 font-size: 1.214em;
-                line-height: 26px;
                 color: #000000;
                 opacity: .6;
-            }
-            .sub-text {
-                color: #000000;
-                opacity: .4;
-                font-size: 13px;
-                line-height: 19px;
             }
         }
 
@@ -144,11 +142,7 @@
             .feature-box {
                 border-radius: 2px;
                 min-height: 200px;
-                padding: 1.5rem 1rem 1rem 1rem;
-
-                .sub-text {
-                    font-size: .9rem;
-                }
+                padding: 1.5rem;
 
                 &.utility {
                     background: linear-gradient(158.84deg, rgba(97, 213, 228, 0.28) 11.11%, rgba(255, 255, 255, 0) 86.05%);
@@ -204,15 +198,10 @@
                 }
             }
         }
+    }
 
-        .users {
-            .header-text {
-                color: #495057;
-            }
-            .sub-text {
-                color: #6C757D;
-            }
-        }
+    .users {
+        border-top: 1px solid var(--surface-border);
     }
 }
 
