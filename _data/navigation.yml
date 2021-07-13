@@ -1,3 +1,11 @@
+- name: General
+  link: 
+- name: Setup
+  link: /setup
+- name: Theming
+  link: /theming
+
+
 - name: Layout
   link:
 - name: Display
