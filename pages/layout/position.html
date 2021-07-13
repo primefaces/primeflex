@@ -54,11 +54,11 @@ permalink: /position
     </div>
 
     <pre><code class="language-html">
-&lt;div class=&quot;card ...&quot;&gt;
-    &lt;div class=&quot;static ...&quot; style=&quot;...&quot;&gt;
-        &lt;p class=&quot;...&quot;&gt;Static&lt;/p&gt;
-        &lt;div class=&quot;absolute bottom-0 left-0...&quot; style=&quot;...&quot;&gt;
-            &lt;p class=&quot;...&quot;&gt;Absolute&lt;/p&gt;
+&lt;div class=&quot;card relative p-5&quot;&gt;
+    &lt;div class=&quot;static shadow-1 p-3&quot; style=&quot;min-width: 300px; min-height: 200px;&quot;&gt;
+        &lt;p class=&quot;font-bold text-blue-500&quot;&gt;Static&lt;/p&gt;
+        &lt;div class=&quot;absolute bottom-0 left-0 shadow-2 p-3&quot; style=&quot;min-width: 100px; min-height: 100px&quot;&gt;
+            &lt;p class=&quot;font-bold text-blue-500&quot;&gt;Absolute&lt;/p&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
@@ -99,12 +99,34 @@ permalink: /position
     </div>
 
     <pre><code class="language-html">
-&lt;div class=&quot;fixed top-0 left-0 ...&quot;&gt;
-    Fixed
-&lt;/div&gt;
-&lt;div class=&quot;absolute overflow-auto ...&quot; style=&quot;...&quot;&gt;
-    &lt;p class=&quot;...&quot;&gt;Scroll Part&lt;/p&gt;
-    ...
+&lt;div class=&quot;card overflow-hidden&quot; style=&quot;height: 400px&quot;&gt;
+    &lt;p class=&quot;font-bold&quot;&gt;Window Review&lt;/p&gt;
+    &lt;div class=&quot;relative border-round border-1 border-blue-500&quot; style=&quot;height: 300px&quot;&gt;
+        &lt;div class=&quot;absolute top-0 left-0 shadow-1 p-3 w-full font-bold text-blue-500&quot;&gt;
+            Fixed
+        &lt;/div&gt;
+        &lt;div class=&quot;absolute overflow-auto mt-7 p-3&quot; style=&quot;height: 200px&quot;&gt;
+            &lt;p class=&quot;text-blue-500&quot;&gt;Scroll Part&lt;/p&gt;
+            &lt;p&gt;
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Vitae sapien pellentesque habitant morbi tristique senectus et netus. Vitae proin sagittis nisl rhoncus mattis.
+                Maecenas pharetra convallis posuere morbi leo urna molestie. At in tellus integer feugiat scelerisque.
+                Adipiscing elit duis tristique sollicitudin nibh sit amet commodo. Luctus accumsan tortor posuere ac ut.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Vitae sapien pellentesque habitant morbi tristique senectus et netus. Vitae proin sagittis nisl rhoncus mattis.
+                Maecenas pharetra convallis posuere morbi leo urna molestie. At in tellus integer feugiat scelerisque.
+                Adipiscing elit duis tristique sollicitudin nibh sit amet commodo. Luctus accumsan tortor posuere ac ut.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Vitae sapien pellentesque habitant morbi tristique senectus et netus. Vitae proin sagittis nisl rhoncus mattis.
+                Maecenas pharetra convallis posuere morbi leo urna molestie. At in tellus integer feugiat scelerisque.
+                Adipiscing elit duis tristique sollicitudin nibh sit amet commodo. Luctus accumsan tortor posuere ac ut.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Vitae sapien pellentesque habitant morbi tristique senectus et netus. Vitae proin sagittis nisl rhoncus mattis.
+                Maecenas pharetra convallis posuere morbi leo urna molestie. At in tellus integer feugiat scelerisque.
+                Adipiscing elit duis tristique sollicitudin nibh sit amet commodo. Luctus accumsan tortor posuere ac ut.
+            &lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
 &lt;/div&gt;
 
 </code></pre>
@@ -122,11 +144,11 @@ permalink: /position
     </div>
 
     <pre><code class="language-html">
-&lt;div class=&quot;card ...&quot;&gt;
-    &lt;div class=&quot;relative ...&quot; style=&quot;...&quot;&gt;
-        &lt;p class=&quot;...&quot;&gt;Relative&lt;/p&gt;
-        &lt;div class=&quot;absolute bottom-0 left-0...&quot; style=&quot;...&quot;&gt;
-            &lt;p class=&quot;...&quot;&gt;Absolute&lt;/p&gt;
+&lt;div class=&quot;card relative p-5&quot;&gt;
+    &lt;div class=&quot;relative shadow-1 p-3&quot; style=&quot;min-width: 300px; min-height: 200px;&quot;&gt;
+        &lt;p class=&quot;font-bold text-blue-500&quot;&gt;Relative&lt;/p&gt;
+        &lt;div class=&quot;absolute bottom-0 left-0 shadow-2 p-3&quot; style=&quot;min-width: 100px; min-height: 100px&quot;&gt;
+            &lt;p class=&quot;font-bold text-blue-500&quot;&gt;Absolute&lt;/p&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
@@ -161,22 +183,25 @@ permalink: /position
     </div>
 
     <pre><code class="language-html">
-&lt;div class=&quot;card ..&quot;&gt;
-    &lt;div class=&quot;relative ...&quot;&gt;
-        &lt;p class=&quot;....&quot;&gt;Relative&lt;/p&gt;
-        &lt;div class=&quot;static ...&quot; style=&quot;...&quot;&gt;
-            &lt;p class=&quot;....&quot;&gt;Static&lt;/p&gt;
-            &lt;div class=&quot;static bottom-0 left-0 ...&quot; style=&quot;...&quot;&gt;
-                &lt;p class=&quot;....&quot;&gt;Static&lt;/p&gt;
+&lt;div class=&quot;card p-5&quot;&gt;
+    &lt;p class=&quot;font-bold&quot;&gt;Static Position&lt;/p&gt;
+    &lt;div class=&quot;relative shadow-1 p-3&quot;&gt;
+        &lt;p class=&quot;font-bold text-blue-500&quot;&gt;Relative&lt;/p&gt;
+        &lt;div class=&quot;static shadow-2 p-3&quot; style=&quot;min-width: 300px; min-height: 200px;&quot;&gt;
+            &lt;p class=&quot;font-bold text-blue-500&quot;&gt;Static&lt;/p&gt;
+            &lt;div class=&quot;static bottom-0 left-0 shadow-3 p-3&quot; style=&quot;min-width: 100px; min-height: 100px&quot;&gt;
+                &lt;p class=&quot;font-bold text-blue-500&quot;&gt;Static&lt;/p&gt;
             &lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
-    &lt;div class=&quot;relative shadow-1 p-3&quot;&gt;
-        &lt;p class=&quot;....&quot;&gt;Relative&lt;/p&gt;
-        &lt;div class=&quot;static ...&quot; style=&quot;...&quot;&gt;
-            &lt;p class=&quot;....&quot;&gt;Static&lt;/p&gt;
-            &lt;div class=&quot;absolute bottom-0 left-0 ...&quot; style=&quot;...&quot;&gt;
-                &lt;p class=&quot;....&quot;&gt;Absolute&lt;/p&gt;
+
+    &lt;p class=&quot;font-bold&quot;&gt;Absolute Position&lt;/p&gt;
+    &lt;div class=&quot;relative shadow-1 p-3 mt-3&quot;&gt;
+        &lt;p class=&quot;font-bold text-blue-500&quot;&gt;Relative&lt;/p&gt;
+        &lt;div class=&quot;static shadow-2 p-3&quot; style=&quot;min-width: 300px; min-height: 200px;&quot;&gt;
+            &lt;p class=&quot;font-bold text-blue-500&quot;&gt;Static&lt;/p&gt;
+            &lt;div class=&quot;absolute bottom-0 left-0 shadow-3 p-3&quot; style=&quot;min-width: 100px; min-height: 100px&quot;&gt;
+                &lt;p class=&quot;font-bold text-blue-500&quot;&gt;Absolute&lt;/p&gt;
             &lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
@@ -268,26 +293,84 @@ permalink: /position
     </div>
 
     <pre><code class="language-html">
-&lt;div class=&quot;overflow-auto ...&quot; style=&quot;height: 300px&quot;&gt;
-    &lt;div&gt;
-        &lt;div class=&quot;sticky top-0 ...&quot;&gt;
-            Sticky Title 1
+&lt;div class=&quot;card overflow-hidden&quot; style=&quot;height: 400px&quot;&gt;
+    &lt;div class=&quot;overflow-auto border-round border-1 border-blue-500&quot; style=&quot;height: 300px&quot;&gt;
+        &lt;div&gt;
+            &lt;div class=&quot;sticky top-0 font-bold text-blue-500 bg-blue-100 p-3&quot;&gt;
+                Sticky Title 1
+            &lt;/div&gt;
+            &lt;p class=&quot;p-3&quot;&gt;
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Vitae sapien pellentesque habitant morbi tristique senectus et netus. Vitae proin sagittis nisl rhoncus mattis.
+                Maecenas pharetra convallis posuere morbi leo urna molestie. At in tellus integer feugiat scelerisque.
+                Adipiscing elit duis tristique sollicitudin nibh sit amet commodo. Luctus accumsan tortor posuere ac ut.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Vitae sapien pellentesque habitant morbi tristique senectus et netus. Vitae proin sagittis nisl rhoncus mattis.
+                Maecenas pharetra convallis posuere morbi leo urna molestie. At in tellus integer feugiat scelerisque.
+                Adipiscing elit duis tristique sollicitudin nibh sit amet commodo. Luctus accumsan tortor posuere ac ut.
+            &lt;/p&gt;
         &lt;/div&gt;
-        &lt;p class=&quot;p-3&quot;&gt;...&lt;/p&gt;
-    &lt;/div&gt;
-    &lt;div&gt;
-        &lt;div class=&quot;sticky top-0 ...&quot;&gt;
-            Sticky Title 2
+        &lt;div&gt;
+            &lt;div class=&quot;sticky top-0 font-bold text-blue-500 bg-blue-100 p-3&quot;&gt;
+                Sticky Title 2
+            &lt;/div&gt;
+            &lt;p class=&quot;p-3&quot;&gt;
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Vitae sapien pellentesque habitant morbi tristique senectus et netus. Vitae proin sagittis nisl rhoncus mattis.
+                Maecenas pharetra convallis posuere morbi leo urna molestie. At in tellus integer feugiat scelerisque.
+                Adipiscing elit duis tristique sollicitudin nibh sit amet commodo. Luctus accumsan tortor posuere ac ut.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Vitae sapien pellentesque habitant morbi tristique senectus et netus. Vitae proin sagittis nisl rhoncus mattis.
+                Maecenas pharetra convallis posuere morbi leo urna molestie. At in tellus integer feugiat scelerisque.
+                Adipiscing elit duis tristique sollicitudin nibh sit amet commodo. Luctus accumsan tortor posuere ac ut.
+            &lt;/p&gt;
         &lt;/div&gt;
-        &lt;p class=&quot;p-3&quot;&gt;...&lt;/p&gt;
-    &lt;/div&gt;
-    &lt;div&gt;
-        &lt;div class=&quot;sticky top-0 ..&quot;&gt;
-            Sticky Title 3
+        &lt;div&gt;
+            &lt;div class=&quot;sticky top-0 font-bold text-blue-500 bg-blue-100 p-3&quot;&gt;
+                Sticky Title 3
+            &lt;/div&gt;
+            &lt;p class=&quot;p-3&quot;&gt;
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Vitae sapien pellentesque habitant morbi tristique senectus et netus. Vitae proin sagittis nisl rhoncus mattis.
+                Maecenas pharetra convallis posuere morbi leo urna molestie. At in tellus integer feugiat scelerisque.
+                Adipiscing elit duis tristique sollicitudin nibh sit amet commodo. Luctus accumsan tortor posuere ac ut.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Vitae sapien pellentesque habitant morbi tristique senectus et netus. Vitae proin sagittis nisl rhoncus mattis.
+                Maecenas pharetra convallis posuere morbi leo urna molestie. At in tellus integer feugiat scelerisque.
+                Adipiscing elit duis tristique sollicitudin nibh sit amet commodo. Luctus accumsan tortor posuere ac ut.
+            &lt;/p&gt;
         &lt;/div&gt;
-        &lt;p class=&quot;p-3&quot;&gt;..&lt;/p&gt;
+        &lt;div&gt;
+            &lt;div class=&quot;sticky top-0 font-bold text-blue-500 bg-blue-100 p-3&quot;&gt;
+                Sticky Title 4
+            &lt;/div&gt;
+            &lt;p class=&quot;p-3&quot;&gt;
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Vitae sapien pellentesque habitant morbi tristique senectus et netus. Vitae proin sagittis nisl rhoncus mattis.
+                Maecenas pharetra convallis posuere morbi leo urna molestie. At in tellus integer feugiat scelerisque.
+                Adipiscing elit duis tristique sollicitudin nibh sit amet commodo. Luctus accumsan tortor posuere ac ut.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Vitae sapien pellentesque habitant morbi tristique senectus et netus. Vitae proin sagittis nisl rhoncus mattis.
+                Maecenas pharetra convallis posuere morbi leo urna molestie. At in tellus integer feugiat scelerisque.
+                Adipiscing elit duis tristique sollicitudin nibh sit amet commodo. Luctus accumsan tortor posuere ac ut.
+            &lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div&gt;
+            &lt;div class=&quot;sticky top-0 font-bold text-blue-500 bg-blue-100 p-3&quot;&gt;
+                Sticky Title 5
+            &lt;/div&gt;
+            &lt;p class=&quot;p-3&quot;&gt;
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Vitae sapien pellentesque habitant morbi tristique senectus et netus. Vitae proin sagittis nisl rhoncus mattis.
+                Maecenas pharetra convallis posuere morbi leo urna molestie. At in tellus integer feugiat scelerisque.
+                Adipiscing elit duis tristique sollicitudin nibh sit amet commodo. Luctus accumsan tortor posuere ac ut.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Vitae sapien pellentesque habitant morbi tristique senectus et netus. Vitae proin sagittis nisl rhoncus mattis.
+                Maecenas pharetra convallis posuere morbi leo urna molestie. At in tellus integer feugiat scelerisque.
+                Adipiscing elit duis tristique sollicitudin nibh sit amet commodo. Luctus accumsan tortor posuere ac ut.
+            &lt;/p&gt;
+        &lt;/div&gt;
     &lt;/div&gt;
-    ...
 &lt;/div&gt;
 
 </code></pre>
@@ -312,11 +395,10 @@ permalink: /position
 
     <pre><code class="language-html">
 &lt;div class=&quot;card relative p-3 md:p-5&quot;&gt;
-    &lt;p&gt;Resize to change position value.&lt;/p&gt;
-    &lt;div class=&quot;static ...&quot; style=&quot;...&quot;&gt;
-        &lt;p class=&quot;...&quot;&gt;Static&lt;/p&gt;
-        &lt;div class=&quot;static md:absolute bottom-0 left-0 ...&quot; style=&quot;...&quot;&gt;
-            &lt;p class=&quot;...&quot;&gt;Absolute in medium screens / Static in small screens&lt;/p&gt;
+    &lt;div class=&quot;static shadow-1 p-3&quot; style=&quot;min-width: 300px; min-height: 200px;&quot;&gt;
+        &lt;p class=&quot;font-bold text-blue-500&quot;&gt;Static&lt;/p&gt;
+        &lt;div class=&quot;static md:absolute bottom-0 left-0 shadow-2 p-3&quot; style=&quot;min-width: 100px; min-height: 100px&quot;&gt;
+            &lt;p class=&quot;font-bold text-blue-500&quot;&gt;Absolute on medium screens / Static on small screens&lt;/p&gt;
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;

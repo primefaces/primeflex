@@ -52,8 +52,8 @@ permalink: /display
 
 <pre><code class="language-html">
 &lt;div class=&quot;card&quot;&gt;
-    &lt;input type=&quot;text&quot; class=&quot;inputfield mb-2 hidden&quot; /&gt;
-    &lt;input type=&quot;text&quot; class=&quot;inputfield block&quot; /&gt;
+    &lt;input type=&quot;text&quot; class=&quot;inputfield mb-2 hidden&quot; value=&quot;This input is not visible&quot;/&gt;
+    &lt;input type=&quot;text&quot; class=&quot;inputfield block&quot; value=&quot;Visible input&quot;/&gt;
 &lt;/div&gt;
 
 </code></pre>
@@ -149,8 +149,11 @@ permalink: /display
     </div>
 
 <pre><code class="language-html">
-&lt;input type="text" placeholder="Hidden on a small screen" class="inputfield hidden md:block" size="50"&gt;
-&lt;span class="block md:hidden"&gt;Visible on a small screen&lt;/span&gt;
+&lt;div class=&quot;card&quot;&gt;
+    &lt;input type=&quot;text&quot; placeholder=&quot;Hidden on a small screen&quot; class=&quot;inputfield hidden md:block&quot; size=&quot;25&quot;&gt;
+
+    &lt;span class=&quot;block md:hidden&quot;&gt;Visible on a small screen&lt;/span&gt;
+&lt;/div&gt;
 
 </code></pre>
 </div>
