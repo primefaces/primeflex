@@ -34,6 +34,13 @@
 - name: Align Self
   link: /alignself
 
+- name: Grid
+  link:
+- name: Form Layout
+  link: /formlayout
+- name: Grid System
+  link: /gridsystem
+
 - name: Backgrounds
   link:
 - name: Background Color
