@@ -1,0 +1,15 @@
+$border-radius-props: (
+    'border-noround': 0,
+    'border-round': var(--border-radius, $borderRadius),
+    'border-circle': 50%
+);
+
+$border-radius-directions: (
+    'border-round-left': ('border-top-left-radius','border-bottom-left-radius'),
+    'border-round-top': ('border-top-left-radius','border-top-right-radius'),
+    'border-round-right': ('border-top-right-radius','border-bottom-right-radius'),
+    'border-round-bottom': ('border-bottom-left-radius','border-bottom-right-radius')
+);
+
+@include border-radius-class($border-radius-directions);
+@include style-class('border-radius', $border-radius-props, true);
