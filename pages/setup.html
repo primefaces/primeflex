@@ -101,5 +101,8 @@ npm install primeflex --save
         </tbody>
     </table>
 
-    <p>There are two ways to use these variables, one option is getting the source code of PrimeFlex from github, compile your own primeflex and importing the css file. Other alternative is importing your own variables to override the defaults if your application can import scss files.</p>
+    <h5>Production Size</h5>
+    <p>When using a utility CSS library like PrimeFlex, it is likely to use only a set of classes from the library leaving the rest of the library as unused. To avoid including the unused part from your application, it is strongly recommended to use a tool like <a href="https://purgecss.com/">PurgeCSS</a>
+    that analyzes your code and generates an optimized primeflex file that only contains the utilities you've used.</p>
+    
 </div>
