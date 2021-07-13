@@ -10,12 +10,12 @@
         }
 
         h1 {
-            color: #313233;
+            color: var(--text-color);
         }
 
         p {
-            font-size: 1.25rem;
-            color: #6C757D;
+            font-size: 1.1rem;
+            color: var(--text-color-secondary);
         }
 
         img {
@@ -124,16 +124,7 @@
         padding: 2.5rem 1rem 1rem 1rem;
 
         .sub-text {
-            line-height: 1.5;
             color: var(--text-color-secondary);
-        }
-
-        .content {
-            .header-text {
-                font-size: 1.214em;
-                color: #000000;
-                opacity: .6;
-            }
         }
 
         .feature-boxes {
