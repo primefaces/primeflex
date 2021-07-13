@@ -240,7 +240,7 @@ pre[class*="language-"] {
     }
 
     code {
-        border-left: 10px solid #2196f3 !important;
+        border-left: 10px solid var(--surface-border) !important;
         box-shadow: none !important;
         background: #ffffff !important;
         color: #2E3440;
