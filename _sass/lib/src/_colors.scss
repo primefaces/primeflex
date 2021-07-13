@@ -1,0 +1,92 @@
+$colors: "blue", "green", "yellow", "cyan", "pink", "indigo", "teal", "orange", "bluegray", "purple", "gray";
+$colorShades: 50, 100, 200, 300, 400, 500, 600, 700, 800, 900;
+$surfaceShades: 0, 50, 100, 200, 300, 400, 500, 600, 700, 800, 900;
+
+@include surface-class('text', 'color', $surfaceShades);
+@include surface-class('surface', 'background-color', $surfaceShades);
+@include surface-class('border', 'border-color', $surfaceShades);
+@include style-class('background-color', (bg-transparent:'transparent'), true);
+@include style-class('border-color', (border-transparent:'transparent'), true);
+@include color-class('text-', 'color', $colors, $colorShades);
+@include color-class('bg-', 'background-color', $colors, $colorShades);
+@include color-class('border-', 'border-color', $colors, $colorShades);
+
+.text-primary {
+    color: var(--primary-color) !important;
+}
+
+.hover\:text-primary:hover {
+    color: var(--primary-color) !important;
+}
+
+.bg-primary {
+    background-color: var(--primary-color) !important;
+    color: var(--primary-color-text) !important;
+}
+
+.hover\:bg-primary:hover {
+    background-color: var(--primary-color) !important;
+    color: var(--primary-color-text) !important;
+}
+
+.border-primary {
+    border-color: var(--primary-color) !important;
+}
+
+.hover\:border-primary:hover {
+    border-color: var(--primary-color) !important;
+}
+
+.bg-primary-reverse {
+    background-color: var(--primary-color-text) !important;
+    color: var(--primary-color) !important;
+}
+
+.hover\:bg-primary-reverse:hover {
+    background-color: var(--primary-color-text) !important;
+    color: var(--primary-color) !important;
+}
+
+.text-white {
+    color: #ffffff !important; 
+}
+
+.hover\:text-white:hover {
+    color: #ffffff !important; 
+}
+
+.bg-white {
+    background-color: #ffffff !important; 
+}
+
+.hover\:bg-white:hover {
+    background-color: #ffffff !important; 
+}
+
+.border-white {
+    border-color: #ffffff !important; 
+}
+
+.hover\:border-white:hover {
+    border-color: #ffffff !important; 
+}
+
+.surface-ground {
+    background-color: var(--surface-ground);
+}
+
+.surface-section {
+    background-color: var(--surface-section);
+}
+
+.surface-card {
+    background-color: var(--surface-card);
+}
+
+.surface-overlay {
+    background-color: var(--surface-overlay);
+}
+
+.surface-border {
+    border-color: var(--surface-border);
+}

@@ -5,10 +5,9 @@ permalink: /borderwidth
 
 <div>
     <h2>Border Width</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <p>Specifies the border width of an element.</p>
 
-    <h5>Getting Start</h5>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <h5>Classes</h5>
     <div class="overflow-auto" style="max-height: 300px">
         <table class="doc-table">
             <thead>
@@ -19,7 +18,7 @@ permalink: /borderwidth
             </thead>
             <tbody>
             <tr>
-                <td>border-0</td>
+                <td>border-none</td>
                 <td>border-width: 0px;</td>
             </tr>
             <tr>
@@ -35,7 +34,7 @@ permalink: /borderwidth
                 <td>border-width: 3px;</td>
             </tr>
             <tr>
-                <td>border-x-0</td>
+                <td>border-x-none</td>
                 <td>border-right-width: 0px;<br/>
                     border-left-width: 0px;
                 </td>
@@ -59,7 +58,7 @@ permalink: /borderwidth
                 </td>
             </tr>
             <tr>
-                <td>border-y-0</td>
+                <td>border-y-none</td>
                 <td>border-top-width: 0px;<br/>
                     border-bottom-width: 0px;
                 </td>
@@ -83,7 +82,7 @@ permalink: /borderwidth
                 </td>
             </tr>
             <tr>
-                <td>border-top-0</td>
+                <td>border-top-none</td>
                 <td>border-top-width: 0px;</td>
             </tr>
             <tr>
@@ -99,7 +98,7 @@ permalink: /borderwidth
                 <td>border-top-width: 3px;</td>
             </tr>
             <tr>
-                <td>border-left-0</td>
+                <td>border-left-none</td>
                 <td>border-left-width: 0px;</td>
             </tr>
             <tr>
@@ -115,7 +114,7 @@ permalink: /borderwidth
                 <td>border-left-width: 3px;</td>
             </tr>
             <tr>
-                <td>border-bottom-0</td>
+                <td>border-bottom-none</td>
                 <td>border-bottom-width: 0px;</td>
             </tr>
             <tr>
@@ -131,7 +130,7 @@ permalink: /borderwidth
                 <td>border-bottom-width: 3px;</td>
             </tr>
             <tr>
-                <td>border-right-0</td>
+                <td>border-right-none</td>
                 <td>border-right-width: 0px;</td>
             </tr>
             <tr>
@@ -151,10 +150,10 @@ permalink: /borderwidth
     </div>
 
     <h5>All Sides</h5>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <p>Widths of a border can be defined for all edges at once.</p>
 
     <div class="card flex flex-wrap md:justify-content-between justify-content-center">
-        <div class="border-0 border-blue-500 shadow-1 m-2 flex align-items-center justify-content-center" style="min-width: 200px; min-height: 100px">border-0</div>
+        <div class="border-none border-blue-500 shadow-1 m-2 flex align-items-center justify-content-center" style="min-width: 200px; min-height: 100px">border-none</div>
         <div class="border-1 border-blue-500 shadow-1 m-2 flex align-items-center justify-content-center" style="min-width: 200px; min-height: 100px">border-1</div>
         <div class="border-2 border-blue-500 shadow-1 m-2 flex align-items-center justify-content-center" style="min-width: 200px; min-height: 100px">border-2</div>
         <div class="border-3 border-blue-500 shadow-1 m-2 flex align-items-center justify-content-center" style="min-width: 200px; min-height: 100px">border-3</div>
@@ -162,7 +161,7 @@ permalink: /borderwidth
 
 <pre><code class="language-html">
 &lt;div class=&quot;card ...&quot;&gt;
-    &lt;div class=&quot;border-0 ...&quot; style=&quot;...&quot;&gt;border-0&lt;/div&gt;
+    &lt;div class=&quot;border-none ...&quot; style=&quot;...&quot;&gt;border-none&lt;/div&gt;
     &lt;div class=&quot;border-1 ...&quot; style=&quot;...&quot;&gt;border-1&lt;/div&gt;
     &lt;div class=&quot;border-2 ...&quot; style=&quot;...&quot;&gt;border-2&lt;/div&gt;
     &lt;div class=&quot;border-3 ...&quot; style=&quot;...&quot;&gt;border-3&lt;/div&gt;
@@ -170,8 +169,8 @@ permalink: /borderwidth
 
 </code></pre>
 
-    <h5>Special Sides</h5>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <h5>Specific Sides</h5>
+    <p>Widths of a border can be defined per edge as well.</p>
 
     <div class="card flex flex-wrap md:justify-content-between justify-content-center">
         <div class="border-top-2 border-blue-500 shadow-1 m-2 flex align-items-center justify-content-center" style="min-width: 200px; min-height: 100px">border-top-2</div>
@@ -201,5 +200,23 @@ permalink: /borderwidth
     &lt;div class=&quot;border-y-2 ...&quot; style=&quot;...&quot;&gt;border-y-2&lt;/div&gt;y
 &lt;/div&gt;
 
+</code></pre>
+
+    <h5>Responsive</h5>
+    <p>Responsive alternatives are available for customizations based on screen size. Add the responsive breakpoint keyword followed by a semi-colon as a prefix such as <i>md:border-2</i> to use a responsive class.</p>
+    <ul>
+        <li><b>sm</b>: small screens e.g. phones</li>
+        <li><b>md</b>: medium screens e.g. tablets</li>
+        <li><b>lg</b>: large screens e.g. notebooks</li>
+        <li><b>xl</b>: larger screens e.g monitors</li>
+    </ul>
+
+    <div class="card flex flex-wrap md:justify-content-between justify-content-center">
+        <div class="border-y-none border-x-2 md:border-x-none md:border-y-2 border-blue-500 shadow-1 m-2 flex align-items-center justify-content-center" style="min-width: 200px; min-height: 100px">Responsive Border</div>
+    </div>
+
+    <pre><code class="language-html">
+&lt;div class="border-y-none border-x-2 md:border-x-none md:border-y-2 border-blue-500 shadow-1 m-2 flex align-items-center justify-content-center" style="min-width: 200px; min-height: 100px"&gt;Responsive Border&lt;/div&gt;
+        
 </code></pre>
 </div>
