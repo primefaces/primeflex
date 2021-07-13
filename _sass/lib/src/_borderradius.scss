@@ -1,6 +1,6 @@
 $border-radius-props: (
     'border-noround': 0,
-    'border-round': var(--border-radius, $borderRadius),
+    'border-round': var(--border-radius),
     'border-circle': 50%
 );
 

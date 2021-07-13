@@ -1,4 +1,3 @@
-$prefix:"p-" !default;
 $separator:"\\:" !default;
 
 $sm:576px !default;
@@ -12,8 +11,6 @@ $fieldLabelMargin: .5rem !default;
 $helperTextMargin: .25rem !default;
 
 $spacer:1rem !default;
-
-$borderRadius: 4px !default;
 
 $breakpoints: (
     'sm': 576px,
