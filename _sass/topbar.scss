@@ -48,6 +48,7 @@
                     justify-content: center;
                     min-width: 80px;
                     text-decoration: none;
+                    transition: border-color .2s;
                     border-bottom: 2px solid transparent;
 
                     &:hover {
