@@ -3386,26 +3386,6 @@
   font-style: italic !important;
 }
 
-@media screen and (min-width: 576px) {
-  .sm\:font-italic {
-    font-style: italic !important;
-  }
-}
-@media screen and (min-width: 768px) {
-  .md\:font-italic {
-    font-style: italic !important;
-  }
-}
-@media screen and (min-width: 992px) {
-  .lg\:font-italic {
-    font-style: italic !important;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .xl\:font-italic {
-    font-style: italic !important;
-  }
-}
 .text-xs {
   font-size: 0.75rem !important;
 }
