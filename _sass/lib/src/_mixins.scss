@@ -104,7 +104,7 @@
     @each $dir, $prop in $directions {
         .#{$dir} {
             @each $propName in $prop {
-                #{$propName}: var(--border-radius, $borderRadius);
+                #{$propName}: var(--border-radius);
             }
         }
     }
@@ -115,7 +115,7 @@
                 @each $dir, $prop in $directions {
                     &#{$dir} {
                         @each $propName in $prop {
-                            #{$propName}: var(--border-radius, $borderRadius);
+                            #{$propName}: var(--border-radius);
                         }
                     }
                 }
