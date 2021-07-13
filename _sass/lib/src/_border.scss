@@ -18,4 +18,4 @@ $border-styles: (
 );
 
 @include border-class('border', $border-directions, $border-scales);
-@include style-class('border-style', $border-styles);
+@include style-class('border-style', $border-styles, true);

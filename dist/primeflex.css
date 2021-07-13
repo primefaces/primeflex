@@ -3314,10 +3314,98 @@
   font-weight: 700 !important;
 }
 
+@media screen and (min-width: 576px) {
+  .sm\:font-light {
+    font-weight: 300 !important;
+  }
+  .sm\:font-normal {
+    font-weight: 400 !important;
+  }
+  .sm\:font-medium {
+    font-weight: 500 !important;
+  }
+  .sm\:font-semibold {
+    font-weight: 600 !important;
+  }
+  .sm\:font-bold {
+    font-weight: 700 !important;
+  }
+}
+@media screen and (min-width: 768px) {
+  .md\:font-light {
+    font-weight: 300 !important;
+  }
+  .md\:font-normal {
+    font-weight: 400 !important;
+  }
+  .md\:font-medium {
+    font-weight: 500 !important;
+  }
+  .md\:font-semibold {
+    font-weight: 600 !important;
+  }
+  .md\:font-bold {
+    font-weight: 700 !important;
+  }
+}
+@media screen and (min-width: 992px) {
+  .lg\:font-light {
+    font-weight: 300 !important;
+  }
+  .lg\:font-normal {
+    font-weight: 400 !important;
+  }
+  .lg\:font-medium {
+    font-weight: 500 !important;
+  }
+  .lg\:font-semibold {
+    font-weight: 600 !important;
+  }
+  .lg\:font-bold {
+    font-weight: 700 !important;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .xl\:font-light {
+    font-weight: 300 !important;
+  }
+  .xl\:font-normal {
+    font-weight: 400 !important;
+  }
+  .xl\:font-medium {
+    font-weight: 500 !important;
+  }
+  .xl\:font-semibold {
+    font-weight: 600 !important;
+  }
+  .xl\:font-bold {
+    font-weight: 700 !important;
+  }
+}
 .font-italic {
   font-style: italic !important;
 }
 
+@media screen and (min-width: 576px) {
+  .sm\:font-italic {
+    font-style: italic !important;
+  }
+}
+@media screen and (min-width: 768px) {
+  .md\:font-italic {
+    font-style: italic !important;
+  }
+}
+@media screen and (min-width: 992px) {
+  .lg\:font-italic {
+    font-style: italic !important;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .xl\:font-italic {
+    font-style: italic !important;
+  }
+}
 .text-xs {
   font-size: 0.75rem !important;
 }
@@ -8044,6 +8132,62 @@
   border-style: double !important;
 }
 
+@media screen and (min-width: 576px) {
+  .sm\:border-solid {
+    border-style: solid !important;
+  }
+  .sm\:border-dashed {
+    border-style: dashed !important;
+  }
+  .sm\:border-dotted {
+    border-style: dotted !important;
+  }
+  .sm\:border-double {
+    border-style: double !important;
+  }
+}
+@media screen and (min-width: 768px) {
+  .md\:border-solid {
+    border-style: solid !important;
+  }
+  .md\:border-dashed {
+    border-style: dashed !important;
+  }
+  .md\:border-dotted {
+    border-style: dotted !important;
+  }
+  .md\:border-double {
+    border-style: double !important;
+  }
+}
+@media screen and (min-width: 992px) {
+  .lg\:border-solid {
+    border-style: solid !important;
+  }
+  .lg\:border-dashed {
+    border-style: dashed !important;
+  }
+  .lg\:border-dotted {
+    border-style: dotted !important;
+  }
+  .lg\:border-double {
+    border-style: double !important;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .xl\:border-solid {
+    border-style: solid !important;
+  }
+  .xl\:border-dashed {
+    border-style: dashed !important;
+  }
+  .xl\:border-dotted {
+    border-style: dotted !important;
+  }
+  .xl\:border-double {
+    border-style: double !important;
+  }
+}
 .border-round-left {
   border-top-left-radius: var(--border-radius, 4px);
   border-bottom-left-radius: var(--border-radius, 4px);
