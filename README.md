@@ -1,4 +1,6 @@
+# PrimeFlex
+PrimeFlex is a lightweight responsive CSS utility library to accompany Prime UI libraries and static webpages as well.
 
-Run `jekyll build` 
+See [PrimeFlex homepage](http://www.primefaces.org/primeflex) for live showcase and documentation.
 
-Run `jekyll serve` or `jekyll serve --livereload`
+![alt text](http://www.primefaces.org/images/primeflex.png "PrimeFlex")

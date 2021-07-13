@@ -1,0 +1,21 @@
+{
+    "name": "primeflex",
+    "version": "3.0.0-rc.1",
+    "description": "PrimeFlex is a lightweight responsive CSS utility library to accompany Prime UI libraries and static webpages as well.",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "build": "sass --update ../_sass/lib/primeflex.scss:../dist/primeflex.css && sass --update ../_sass/lib/primeflex.scss:../dist/primeflex.min.css --style compressed "
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/primefaces/primeflex.git"
+    },
+    "keywords": ["grid","responsive","flex","css utility"],
+    "author": "PrimeTek",
+    "license": "MIT",
+    "bugs": {
+      "url": "https://github.com/primefaces/primeflex/issues"
+    },
+    "homepage": "https://github.com/primefaces/primeflex#readme"
+  }
+  
