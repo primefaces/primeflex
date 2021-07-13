@@ -6,7 +6,7 @@
     left: 0;
     z-index: 98;
     background-color: #ffffff;
-    border: 1px solid #DEE2E6;
+    border-right: 1px solid #DEE2E6;
     transition: transform .4s cubic-bezier(.05,.74,.2,.99);
 
     .layout-menu {
@@ -27,9 +27,9 @@
 
             .menuitem-root-text {
                 padding: 7px 0;
-                font-weight: 500;
+                font-weight: 700;
                 letter-spacing: 0.04em;
-                color: #6C757D;
+                font-size: 14px;
                 text-transform: uppercase;
             }
 
