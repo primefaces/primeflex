@@ -8169,95 +8169,95 @@
   }
 }
 .border-round-left {
-  border-top-left-radius: var(--border-radius, 4px);
-  border-bottom-left-radius: var(--border-radius, 4px);
+  border-top-left-radius: var(--border-radius);
+  border-bottom-left-radius: var(--border-radius);
 }
 
 .border-round-top {
-  border-top-left-radius: var(--border-radius, 4px);
-  border-top-right-radius: var(--border-radius, 4px);
+  border-top-left-radius: var(--border-radius);
+  border-top-right-radius: var(--border-radius);
 }
 
 .border-round-right {
-  border-top-right-radius: var(--border-radius, 4px);
-  border-bottom-right-radius: var(--border-radius, 4px);
+  border-top-right-radius: var(--border-radius);
+  border-bottom-right-radius: var(--border-radius);
 }
 
 .border-round-bottom {
-  border-bottom-left-radius: var(--border-radius, 4px);
-  border-bottom-right-radius: var(--border-radius, 4px);
+  border-bottom-left-radius: var(--border-radius);
+  border-bottom-right-radius: var(--border-radius);
 }
 
 @media screen and (min-width: 576px) {
   .sm\:border-round-left {
-    border-top-left-radius: var(--border-radius, 4px);
-    border-bottom-left-radius: var(--border-radius, 4px);
+    border-top-left-radius: var(--border-radius);
+    border-bottom-left-radius: var(--border-radius);
   }
   .sm\:border-round-top {
-    border-top-left-radius: var(--border-radius, 4px);
-    border-top-right-radius: var(--border-radius, 4px);
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
   }
   .sm\:border-round-right {
-    border-top-right-radius: var(--border-radius, 4px);
-    border-bottom-right-radius: var(--border-radius, 4px);
+    border-top-right-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
   }
   .sm\:border-round-bottom {
-    border-bottom-left-radius: var(--border-radius, 4px);
-    border-bottom-right-radius: var(--border-radius, 4px);
+    border-bottom-left-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
   }
 }
 @media screen and (min-width: 768px) {
   .md\:border-round-left {
-    border-top-left-radius: var(--border-radius, 4px);
-    border-bottom-left-radius: var(--border-radius, 4px);
+    border-top-left-radius: var(--border-radius);
+    border-bottom-left-radius: var(--border-radius);
   }
   .md\:border-round-top {
-    border-top-left-radius: var(--border-radius, 4px);
-    border-top-right-radius: var(--border-radius, 4px);
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
   }
   .md\:border-round-right {
-    border-top-right-radius: var(--border-radius, 4px);
-    border-bottom-right-radius: var(--border-radius, 4px);
+    border-top-right-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
   }
   .md\:border-round-bottom {
-    border-bottom-left-radius: var(--border-radius, 4px);
-    border-bottom-right-radius: var(--border-radius, 4px);
+    border-bottom-left-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
   }
 }
 @media screen and (min-width: 992px) {
   .lg\:border-round-left {
-    border-top-left-radius: var(--border-radius, 4px);
-    border-bottom-left-radius: var(--border-radius, 4px);
+    border-top-left-radius: var(--border-radius);
+    border-bottom-left-radius: var(--border-radius);
   }
   .lg\:border-round-top {
-    border-top-left-radius: var(--border-radius, 4px);
-    border-top-right-radius: var(--border-radius, 4px);
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
   }
   .lg\:border-round-right {
-    border-top-right-radius: var(--border-radius, 4px);
-    border-bottom-right-radius: var(--border-radius, 4px);
+    border-top-right-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
   }
   .lg\:border-round-bottom {
-    border-bottom-left-radius: var(--border-radius, 4px);
-    border-bottom-right-radius: var(--border-radius, 4px);
+    border-bottom-left-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
   }
 }
 @media screen and (min-width: 1200px) {
   .xl\:border-round-left {
-    border-top-left-radius: var(--border-radius, 4px);
-    border-bottom-left-radius: var(--border-radius, 4px);
+    border-top-left-radius: var(--border-radius);
+    border-bottom-left-radius: var(--border-radius);
   }
   .xl\:border-round-top {
-    border-top-left-radius: var(--border-radius, 4px);
-    border-top-right-radius: var(--border-radius, 4px);
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
   }
   .xl\:border-round-right {
-    border-top-right-radius: var(--border-radius, 4px);
-    border-bottom-right-radius: var(--border-radius, 4px);
+    border-top-right-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
   }
   .xl\:border-round-bottom {
-    border-bottom-left-radius: var(--border-radius, 4px);
-    border-bottom-right-radius: var(--border-radius, 4px);
+    border-bottom-left-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
   }
 }
 .border-noround {
@@ -8265,7 +8265,7 @@
 }
 
 .border-round {
-  border-radius: var(--border-radius, 4px) !important;
+  border-radius: var(--border-radius) !important;
 }
 
 .border-circle {
@@ -8277,7 +8277,7 @@
     border-radius: 0 !important;
   }
   .sm\:border-round {
-    border-radius: var(--border-radius, 4px) !important;
+    border-radius: var(--border-radius) !important;
   }
   .sm\:border-circle {
     border-radius: 50% !important;
@@ -8288,7 +8288,7 @@
     border-radius: 0 !important;
   }
   .md\:border-round {
-    border-radius: var(--border-radius, 4px) !important;
+    border-radius: var(--border-radius) !important;
   }
   .md\:border-circle {
     border-radius: 50% !important;
@@ -8299,7 +8299,7 @@
     border-radius: 0 !important;
   }
   .lg\:border-round {
-    border-radius: var(--border-radius, 4px) !important;
+    border-radius: var(--border-radius) !important;
   }
   .lg\:border-circle {
     border-radius: 50% !important;
@@ -8310,7 +8310,7 @@
     border-radius: 0 !important;
   }
   .xl\:border-round {
-    border-radius: var(--border-radius, 4px) !important;
+    border-radius: var(--border-radius) !important;
   }
   .xl\:border-circle {
     border-radius: 50% !important;
