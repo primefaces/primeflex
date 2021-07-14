@@ -30,10 +30,30 @@
             }
         }
 
+        .focus#{$separator} {
+            &#{$name}#{$color} {
+                @each $shade in $shades {
+                    &-#{$shade}:focus {
+                        #{$prop}: var(--#{$color}-#{$shade}) !important;
+                    }
+                }
+            }
+        }
+
         .hover#{$separator} {
             &#{$name}#{$color} {
                 @each $shade in $shades {
                     &-#{$shade}:hover {
+                        #{$prop}: var(--#{$color}-#{$shade}) !important;
+                    }
+                }
+            }
+        }
+
+        .active#{$separator} {
+            &#{$name}#{$color} {
+                @each $shade in $shades {
+                    &-#{$shade}:active {
                         #{$prop}: var(--#{$color}-#{$shade}) !important;
                     }
                 }
@@ -50,8 +70,20 @@
     }
 
     @each $shade in $shades {
+        .focus#{$separator} {
+            &#{$name}-#{$shade}:focus {
+                #{$prop}: var(--surface-#{$shade}) !important;
+            }
+        }
+
         .hover#{$separator} {
             &#{$name}-#{$shade}:hover {
+                #{$prop}: var(--surface-#{$shade}) !important;
+            }
+        }
+
+        .active#{$separator} {
+            &#{$name}-#{$shade}:active {
                 #{$prop}: var(--surface-#{$shade}) !important;
             }
         }
