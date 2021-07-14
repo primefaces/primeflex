@@ -36,7 +36,6 @@ npm install primeflex --save
             
 </code></pre>
 
-    
     <h5>Variables</h5>
     <p>SASS variables are available to customize and create your own primeflex build. To begin with clone the <a href="https://github.com/primefaces/primeflex">primeflex repo</a> and then build the primeflex.scss file after your customizations. Refer to <a href="https://sass-lang.com/install">Sass</a> documentation for more information about how to build scss files.</p>
     <table class="doc-table">
@@ -100,6 +99,24 @@ npm install primeflex --save
             </tr>
         </tbody>
     </table>
+
+    <h5>Reuse Classes</h5>
+    <p>Commonly used class blocks can be merged as a single class to be reused using the <i>styleclass</i> mixin. Import the utils from <i>primeflex/utils</i> to be able to create your own classes based on PrimeFlex classes. Here is how to create a class called <i>mybutton</i>
+    with the built-in features.</p>
+
+    <pre><code class="language-css">
+@import 'primeflex/utils';
+
+.mybutton {
+    @include styleclass('bg-blue-500 text-white hover:bg-blue-600 border-round transition-colors transition-duration-150 p-3');
+}
+
+</code></pre>
+
+<pre><code class="language-markup">
+&lt;button type="button" class="mybutton"&gt;My Button&lt;/button&gt;
+
+</code></pre>
 
     <h5>Production Size</h5>
     <p>When using a utility CSS library like PrimeFlex, it is likely to use only a set of classes from the library leaving the rest of the library as unused. To avoid including the unused part from your application, it is strongly recommended to use a tool like <a href="https://purgecss.com/">PurgeCSS</a>
