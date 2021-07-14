@@ -2,6 +2,11 @@
     "name": "primeflex",
     "version": "3.0.0-rc.1",
     "description": "PrimeFlex is a lightweight responsive CSS utility library to accompany Prime UI libraries and static webpages as well.",
+    "scripts": {
+      "serve": "jekyll serve --livereload",
+      "build-app": "jekyll build --config _config_prod.yml",
+      "build-lib": "sass --update _sass/lib/primeflex.scss:dist/primeflex.css && sass --update _sass/lib/primeflex.scss:dist/primeflex.min.css --style compressed && sass --update _sass/lib/themes:dist/themes"
+    },
     "repository": {
       "type": "git",
       "url": "git+https://github.com/primefaces/primeflex.git"
