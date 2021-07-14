@@ -3,7 +3,8 @@ var PrimeFlex = {
     init: function () {
         this.documentation = document.getElementById('doc');
         this.copyButton = document.getElementById('copy-button');
-        this.menu = document.getElementById('layout-menu-wrapper');
+        this.menuWrapper = document.getElementById('layout-menu-wrapper');
+        this.menu = document.getElementById('layout-menu');
         this.mask = document.getElementById('layout-mask');
         this.mobileMenuButton = document.getElementById('mobile-button');
         this.mobileTopbarButton = document.getElementById('mobile-topbar-button');
@@ -11,15 +12,19 @@ var PrimeFlex = {
 
         this.bindEvents();
 
+        var scrollPos = window.sessionStorage.getItem('scroll-pos');
+        if (scrollPos) {
+            this.menu.scrollTop = parseInt(scrollPos);
+        }
     },
 
     bindEvents: function () {
         var $this = this;
 
-        document.addEventListener("click", (e)=> {
-            if(!(this.menu.contains(e.target) || this.mobileMenuButton.contains(e.target))) {
-                if (this.hasClass(this.menu, 'active')) {
-                    this.removeClass(this.menu, 'active');
+        document.addEventListener("click", (e) => {
+            if(!(this.menuWrapper.contains(e.target) || this.mobileMenuButton.contains(e.target))) {
+                if (this.hasClass(this.menuWrapper, 'active')) {
+                    this.removeClass(this.menuWrapper, 'active');
                     this.removeClass(this.mask, 'layout-mask-active');
                 }
             }
@@ -29,7 +34,11 @@ var PrimeFlex = {
                     this.removeClass(this.mobileTopbarMenu, 'layout-mask-active');
                 }
             }
-        })
+        });
+        
+        this.menuWrapper.addEventListener('click', function() {
+            window.sessionStorage.setItem('scroll-pos', $this.menu.scrollTop);
+        });
     },
 
     onToggleMobileTopbarMenu: function (e) {
@@ -46,17 +55,16 @@ var PrimeFlex = {
     onToggleMobileMenu: function (e) {
         var menubutton = e.currentTarget;
 
-        if (this.hasClass(this.menu, 'active')) {
-            this.removeClass(this.menu, 'active');
+        if (this.hasClass(this.menuWrapper, 'active')) {
+            this.removeClass(this.menuWrapper, 'active');
             this.removeClass(this.mask, 'layout-mask-active');
         } else {
-            this.addClass(this.menu, 'active');
+            this.addClass(this.menuWrapper, 'active');
             this.addClass(this.mask, 'layout-mask-active');
         }
     },
 
     copyText: function (e) {
-
         let confettiAmount = 60,
             confettiColors = [
                 '#7d32f5',
@@ -116,7 +124,7 @@ var PrimeFlex = {
     },
 
     removeActiveClass: function () {
-        this.removeClass(this.menu.querySelector('.active'), 'active');
+        this.removeClass(this.menuWrapper.querySelector('.active'), 'active');
     },
 
     hasClass: function (element, className) {
