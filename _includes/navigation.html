@@ -5,7 +5,7 @@
     <div class="menuitem-root-text mt-3" {% if item.link == null %}style="display: block"{% endif %}>
         {{ item.name }}
     </div>
-    <a href="{{ item.link }}" {% if item.link != null %}style="display: block"{% endif %}>
+    <a href="{{site.baseurl}}{{item.link}}" {% if item.link != null %}style="display: block"{% endif %}>
         {{ item.name }}
     </a>
 </li>
