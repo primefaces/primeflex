@@ -8,3 +8,4 @@ vendor
 .DS_STORE
 .idea
 _site
+Gemfile.lock
