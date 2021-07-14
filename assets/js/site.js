@@ -2,7 +2,6 @@ var PrimeFlex = {
 
     init: function () {
         this.documentation = document.getElementById('doc');
-        this.copyButton = document.getElementById('copy-button');
         this.menuWrapper = document.getElementById('layout-menu-wrapper');
         this.menu = document.getElementById('layout-menu');
         this.mask = document.getElementById('layout-mask');
@@ -21,17 +20,17 @@ var PrimeFlex = {
     bindEvents: function () {
         var $this = this;
 
-        document.addEventListener("click", (e) => {
-            if(!(this.menuWrapper.contains(e.target) || this.mobileMenuButton.contains(e.target))) {
-                if (this.hasClass(this.menuWrapper, 'active')) {
-                    this.removeClass(this.menuWrapper, 'active');
-                    this.removeClass(this.mask, 'layout-mask-active');
+        window.addEventListener('click', function(e){
+            if(!($this.menuWrapper.contains(e.target) || $this.mobileMenuButton.contains(e.target))) {
+                if ($this.hasClass($this.menuWrapper, 'active')) {
+                    $this.removeClass($this.menuWrapper, 'active');
+                    $this.removeClass($this.mask, 'layout-mask-active');
                 }
             }
-            if(!(this.mobileTopbarMenu.contains(e.target) || this.mobileTopbarButton.contains(e.target))) {
-                if (this.hasClass(this.mobileTopbarMenu, 'active')) {
-                    this.removeClass(this.mobileTopbarMenu, 'active');
-                    this.removeClass(this.mobileTopbarMenu, 'layout-mask-active');
+            if(!($this.mobileTopbarMenu.contains(e.target) || $this.mobileTopbarButton.contains(e.target))) {
+                if ($this.hasClass($this.mobileTopbarMenu, 'active')) {
+                    $this.removeClass($this.mobileTopbarMenu, 'active');
+                    $this.removeClass($this.mobileTopbarMenu, 'layout-mask-active');
                 }
             }
         });
