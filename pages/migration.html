@@ -1,0 +1,64 @@
+---
+layout: layout
+permalink: /migration
+---
+<div>
+    <h2>Migration Guide</h2>
+    <p>PrimeFlex was initially designed to be a grid library and as of v3 has evolved into a fully features CSS utility library to be the foundation of the PrimeBlocks project. As as result, it has to be rewritten from ground up.</p>
+
+    <h5>p Prefix</h5>
+    <p><i>p</i> prefix is removed from all of the classes in favor of the simplicity.</p>
+
+    <h5>Grid</h5>
+    <p><i>:</i> is now used to define responsive breakpoints.</p>
+
+    Before
+<pre><code class="language-markup">
+&lt;div class="p-grid"&gt;
+    &lt;div class="p-col-12 p-md-6 p-lg-3"&gt;A&lt;/div&gt;
+    &lt;div class="p-col-12 p-md-6 p-lg-3"&gt;B&lt;/div&gt;
+    &lt;div class="p-col-12 p-md-6 p-lg-3"&gt;C&lt;/div&gt;
+    &lt;div class="p-col-12 p-md-6 p-lg-3"&gt;D&lt;/div&gt;
+&lt;/div&gt;
+    
+</code></pre>
+
+    After
+<pre><code class="language-markup">
+&lt;div class="grid"&gt;
+    &lt;div class="col-12 md:col-6 lg:col-3"&gt;A&lt;/div&gt;
+    &lt;div class="col-12 md:col-6 lg:col-3"&gt;B&lt;/div&gt;
+    &lt;div class="col-12 md:col-6 lg:col-3"&gt;C&lt;/div&gt;
+    &lt;div class="col-12 md:col-6 lg:col-3"&gt;D&lt;/div&gt;
+&lt;/div&gt;
+    
+</code></pre>
+
+    <h5>Elevation</h5>
+    <p>Number of shadow classes have been reduced from 24 to 8.</p>
+
+    <h5>Display</h5>
+    <p><i>d</i> prefix has been removed from the display classes..</p>
+
+    Before
+<pre><code class="language-markup">
+&lt;div class="p-d-inline"&gt;Displayed as inline.&lt;/div&gt;
+&lt;div class="p-d-flex"&gt;Displayed as a flexbox container.&lt;/div&gt;
+&lt;div class="p-d-block p-d-lg-inline"&gt;Inline for larger screens and block for others.&lt;/div&gt;
+&lt;div class="p-d-md-none"&gt;Visible on a Small Screen&lt;/div&gt;
+&lt;div class="p-d-none p-d-md-inline-flex"&gt;Hidden on a Small Screen&lt;/div&gt;
+    
+</code></pre>
+
+    After
+<pre><code class="language-markup">
+&lt;div class="inline"&gt;Displayed as inline.&lt;/div&gt;
+&lt;div class="flex"&gt;Displayed as a flexbox container.&lt;/div&gt;
+&lt;div class="block lg:inline"&gt;Inline for larger screens and block for others.&lt;/div&gt;
+&lt;div class="md:hidden"&gt;Visible on a Small Screen&lt;/div&gt;
+&lt;div class="hidden md:inline-flex"&gt;Hidden on a Small Screen&lt;/div&gt;
+    
+</code></pre>
+
+    <h5>Flexbox</h5>
+    <p>Flexbox classes names have been reimplemented. Please refer to the Flexbox section for details.</p>
