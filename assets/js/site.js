@@ -61,6 +61,52 @@ var PrimeFlex = {
         }
     },
 
+    onToggleColorScheme: function (e) {
+        const element = document.getElementById('layout-css');
+        const urlTokens = element.getAttribute('href').split('/');
+
+        const topbarLogoLink = document.getElementById('topbar-logo');
+        const footerLogoLink = document.getElementById('footer-logo');
+
+        if(!e.target.checked) {
+            urlTokens[urlTokens.length - 1] = 'primeflex-arya.css';
+            topbarLogoLink.src = "/assets/images/primeflex-logo-white.svg";
+            footerLogoLink.src = "/assets/images/prime-logo-white.svg";
+        }
+        else {
+            urlTokens[urlTokens.length - 1] = 'primeflex-saga.css';
+            topbarLogoLink.src = "/assets/images/primeflex-logo-dark.svg";
+            footerLogoLink.src = "/assets/images/prime-logo-dark.svg";
+        }
+
+        const newURL = urlTokens.join('/');
+
+        this.replaceLink(element, newURL);
+    },
+
+    replaceLink: function (linkElement, href) {
+        if (this.isIE()) {
+            linkElement.setAttribute('href', href);
+        } else {
+            const id = linkElement.getAttribute('id');
+            const cloneLinkElement = linkElement.cloneNode(true);
+
+            cloneLinkElement.setAttribute('href', href);
+            cloneLinkElement.setAttribute('id', id + '-clone');
+
+            linkElement.parentNode.insertBefore(cloneLinkElement, linkElement.nextSibling);
+
+            cloneLinkElement.addEventListener('load', () => {
+                linkElement.remove();
+                cloneLinkElement.setAttribute('id', id);
+            });
+        }
+    },
+
+    isIE: function () {
+        return /(MSIE|Trident\/|Edge\/)/i.test(window.navigator.userAgent);
+    },
+
     copyText: function (e) {
         var copyText = e.currentTarget.previousElementSibling;
         copyText.select();

@@ -1,7 +1,7 @@
 .layout-footer {
     height: 95px;
-    border-top: 1px solid #DEE2E6;
-    background-color: #FFFFFF;
+    border-top: 1px solid var(--surface-border);
+    background-color: var(--surface-card);
     padding: 2rem 3rem;
 
     .layout-footer-left {
@@ -12,7 +12,7 @@
 
     .layout-footer-right {
         a {
-            color: #20272A;
+            color: var(--text-color);
 
             i {
                 font-size: 18px;
@@ -20,3 +20,4 @@
         }
     }
 }
+

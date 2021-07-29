@@ -6,7 +6,7 @@
     <title>PrimeFlex</title>
 
     <link rel="stylesheet" href="{{site.baseurl}}/assets/css/primeflex.css">
-    <link rel="stylesheet" href="{{site.baseurl}}/assets/css/primeflex-saga.css">
+    <link rel="stylesheet" id="layout-css" href="{{site.baseurl}}/assets/css/primeflex-saga.css">
     <link rel="stylesheet" href="{{site.baseurl}}/assets/css/primeicons.css">
     <link rel="stylesheet" href="{{site.baseurl}}/assets/css/prism.css">
     <link rel="stylesheet" href="{{site.baseurl}}/assets/css/styles.css">
@@ -27,11 +27,17 @@
 
         <div class="layout-topbar-left">
             <a href="{{site.baseurl}}">
-                <img src="{{site.baseurl}}/assets/images/logo-primeflex.svg" alt="prime">
+                <img src="{{site.baseurl}}/assets/images/primeflex-logo-dark.svg" alt="prime" id="topbar-logo">
             </a>
         </div>
         <div class="layout-topbar-right">
             <ul class="flex align-items-center">
+                <li>
+                    <label class="switch">
+                        <input type="checkbox" role="switch" checked onclick="PrimeFlex.onToggleColorScheme(event)">
+                        <span class="slider"></span>
+                    </label>
+                </li>
                 <li><a href="{{site.baseurl}}/setup">Setup</a></li>
                 <li><a href="https://forum.primefaces.org/viewforum.php?f=148">Forum</a></li>
                 <li><a href="https://discord.com/invite/gzKFYnpmCY">Discord</a></li>
@@ -62,7 +68,7 @@
 
         <div class="layout-footer flex align-items-center justify-content-between">
             <div class="layout-footer-left">
-                <img src="{{site.baseurl}}/assets/images/prime-logo-white.svg" alt="prime">
+                <img src="{{site.baseurl}}/assets/images/prime-logo-dark.svg" alt="prime" id="footer-logo">
             </div>
             <div class="layout-footer-right">
                 <a href="https://discord.com/invite/gzKFYnpmCY" class="mr-3"><i class="pi pi-discord"></i></a>

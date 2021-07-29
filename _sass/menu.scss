@@ -5,8 +5,8 @@
     top: 70px;
     left: 0;
     z-index: 98;
-    background-color: #ffffff;
-    border-right: 1px solid #DEE2E6;
+    background-color: var(--surface-card);
+    border-right: 1px solid var(--surface-border);
     transition: transform .4s cubic-bezier(.05,.74,.2,.99);
 
     .layout-menu {
@@ -35,22 +35,22 @@
 
             a {
                 padding: 7px;
-                color: #495057;
+                color: var(--text-color);
                 user-select: none;
                 cursor: pointer;
                 border-radius: 4px;
                 font-size: 14px;
 
                 &:hover {
-                    color: #495057;
+                    color: var(--text-color);
                     text-decoration: none;
-                    background-color: #E9ECEF;
+                    background-color: var(--surface-100); //menu item hover??
                 }
             }
 
             &.active-menuitem {
                 a {
-                    color: #0078E3;
+                    color: var(--primary-color);
                     font-weight: 500;
                 }
             }
