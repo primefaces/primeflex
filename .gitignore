@@ -9,3 +9,9 @@ vendor
 .idea
 _site
 Gemfile.lock
+
+dist/src
+dist/primeflex.scss
+dist/themes/*.scss
+
+node_modules
