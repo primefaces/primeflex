@@ -46,14 +46,20 @@ permalink: /display
     <h5>Hidden</h5>
     <p>A hidden element is not visible and does not allocate space.</p>
     <div class="card">
-        <input type="text" class="inputfield mb-2 hidden" value="This input is not visible"/>
-        <input type="text" class="inputfield block" value="Visible input"/>
+        <div class="card-container blue-container border-blue-500 flex align-items-center justify-content-start">
+            <div class="hidden w-4rem h-4rem bg-blue-500 text-white font-bold p-4 border-round mr-3">1</div>
+            <div class="w-4rem h-4rem bg-blue-500 text-white font-bold flex align-items-center justify-content-center p-4 border-round mr-3">2</div>
+            <div class="w-4rem h-4rem bg-blue-500 text-white font-bold flex align-items-center justify-content-center p-4 border-round">3</div>
+        </div>
     </div>
 
 <pre><code class="language-html">
 &lt;div class=&quot;card&quot;&gt;
-    &lt;input type=&quot;text&quot; class=&quot;inputfield mb-2 hidden&quot; value=&quot;This input is not visible&quot;/&gt;
-    &lt;input type=&quot;text&quot; class=&quot;inputfield block&quot; value=&quot;Visible input&quot;/&gt;
+    &lt;div class=&quot;card-container blue-container border-blue-500 flex align-items-center justify-content-start&quot;&gt;
+        &lt;div class=&quot;hidden w-4rem h-4rem bg-blue-500 text-white font-bold p-4 border-round mr-3&quot;&gt;1&lt;/div&gt;
+        &lt;div class=&quot;w-4rem h-4rem bg-blue-500 text-white font-bold flex align-items-center justify-content-center p-4 border-round mr-3&quot;&gt;2&lt;/div&gt;
+        &lt;div class=&quot;w-4rem h-4rem bg-blue-500 text-white font-bold flex align-items-center justify-content-center p-4 border-round&quot;&gt;3&lt;/div&gt;
+    &lt;/div&gt;
 &lt;/div&gt;
 
 </code></pre>
@@ -61,29 +67,41 @@ permalink: /display
     <h5>Block</h5>
     <p>A block element starts on a new line.</p>
     <div class="card">
-        <input type="text" class="inputfield mb-2 block" />
-        <input type="text" class="inputfield block" />
+        <div class="card-container yellow-container border-yellow-500">
+            <div class="block bg-yellow-500 font-bold text-center p-4 border-round mb-3">1</div>
+            <div class="block bg-yellow-500 font-bold text-center p-4 border-round mb-3">2</div>
+            <div class="block bg-yellow-500 font-bold text-center p-4 border-round mb-3">3</div>
+        </div>
     </div>
 
 <pre><code class="language-html">
 &lt;div class=&quot;card&quot;&gt;
-    &lt;input type=&quot;text&quot; class=&quot;inputfield mb-2 block&quot; /&gt;
-    &lt;input type=&quot;text&quot; class=&quot;inputfield block&quot; /&gt;
+    &lt;div class=&quot;card-container yellow-container border-yellow-500&quot;&gt;
+        &lt;div class=&quot;block bg-yellow-500 font-bold text-center p-4 border-round mb-3&quot;&gt;1&lt;/div&gt;
+        &lt;div class=&quot;block bg-yellow-500 font-bold text-center p-4 border-round mb-3&quot;&gt;2&lt;/div&gt;
+        &lt;div class=&quot;block bg-yellow-500 font-bold text-center p-4 border-round mb-3&quot;&gt;3&lt;/div&gt;
+    &lt;/div&gt;
 &lt;/div&gt;
 
 </code></pre>
 
     <h5>Inline</h5>
     <p>An inline element does not start on a new line and allocates width as necessary.</p>
-    <div class="card">
-        <input type="text" class="inputfield inline" />
-        <input type="text" class="inputfield inline" />
+    <div class="card py-6">
+        <div class="card-container green-container border-green-500 p-0">
+            <div class="inline w-4rem h-4rem bg-green-500 text-white font-bold text-center p-4 border-round mx-4">1</div>
+            <div class="inline w-4rem h-4rem bg-green-500 text-white font-bold text-center p-4 border-round">2</div>
+            <div class="inline w-4rem h-4rem bg-green-500 text-white font-bold text-center p-4 border-round mx-4">3</div>
+        </div>
     </div>
 
 <pre><code class="language-html">
-&lt;div class=&quot;card&quot;&gt;
-    &lt;input type=&quot;text&quot; class=&quot;inputfield inline&quot; /&gt;
-    &lt;input type=&quot;text&quot; class=&quot;inputfield inline&quot; /&gt;
+&lt;div class=&quot;card py-6&quot;&gt;
+    &lt;div class=&quot;card-container green-container border-green-500 p-0&quot;&gt;
+        &lt;div class=&quot;inline w-4rem h-4rem bg-green-500 text-white font-bold text-center p-4 border-round mx-4&quot;&gt;1&lt;/div&gt;
+        &lt;div class=&quot;inline w-4rem h-4rem bg-green-500 text-white font-bold text-center p-4 border-round&quot;&gt;2&lt;/div&gt;
+        &lt;div class=&quot;inline w-4rem h-4rem bg-green-500 text-white font-bold text-center p-4 border-round mx-4&quot;&gt;3&lt;/div&gt;
+    &lt;/div&gt;
 &lt;/div&gt;
 
 </code></pre>
@@ -91,44 +109,62 @@ permalink: /display
     <h5>Inline Block</h5>
     <p>Inline block is similar to an inline element but properties like width, height and top bottom paddings/margins are respected.</p>
     <div class="card">
-        <input type="text" class="inputfield inline-block" />
-        <input type="text" class="inputfield inline-block" />
+        <div class="card-container purple-container border-purple-500">
+            <div class="inline-block w-4rem h-4rem bg-purple-500 text-white font-bold text-center p-4 border-round">1</div>
+            <div class="inline-block w-4rem h-4rem bg-purple-500 text-white font-bold text-center p-4 border-round mx-4">2</div>
+            <div class="inline-block w-4rem h-4rem bg-purple-500 text-white font-bold text-center p-4 border-round">3</div>
+        </div>
     </div>
 
 <pre><code class="language-html">
 &lt;div class=&quot;card&quot;&gt;
-    &lt;input type=&quot;text&quot; class=&quot;inputfield inline-block&quot; /&gt;
-    &lt;input type=&quot;text&quot; class=&quot;inputfield inline-block&quot; /&gt;
+    &lt;div class=&quot;card-container purple-container border-purple-500&quot;&gt;
+        &lt;div class=&quot;inline-block w-4rem h-4rem bg-purple-500 text-white font-bold text-center p-4 border-round&quot;&gt;1&lt;/div&gt;
+        &lt;div class=&quot;inline-block w-4rem h-4rem bg-purple-500 text-white font-bold text-center p-4 border-round mx-4&quot;&gt;2&lt;/div&gt;
+        &lt;div class=&quot;inline-block w-4rem h-4rem bg-purple-500 text-white font-bold text-center p-4 border-round&quot;&gt;3&lt;/div&gt;
+    &lt;/div&gt;
 &lt;/div&gt;
 
 </code></pre>
 
     <h5>Flex</h5>
     <p>Displays the element as a block level flex container.</p>
-    <div class="card flex">
-        <input type="text" class="inputfield" />
-        <input type="text" class="inputfield" />
+    <div class="card">
+        <div class="flex card-container indigo-container border-indigo-500">
+            <div class="flex-1 h-4rem bg-indigo-500 text-white font-bold text-center p-4 border-round">1</div>
+            <div class="flex-1 h-4rem bg-indigo-500 text-white font-bold text-center p-4 border-round mx-4">2</div>
+            <div class="flex-1 h-4rem bg-indigo-500 text-white font-bold text-center p-4 border-round">3</div>
+        </div>
     </div>
 
 <pre><code class="language-html">
-&lt;div class=&quot;card flex&quot;&gt;
-    &lt;input type=&quot;text&quot; class=&quot;inputfield&quot; /&gt;
-    &lt;input type=&quot;text&quot; class=&quot;inputfield&quot; /&gt;
+&lt;div class=&quot;card&quot;&gt;
+    &lt;div class=&quot;flex card-container indigo-container border-indigo-500&quot;&gt;
+        &lt;div class=&quot;flex-1 h-4rem bg-indigo-500 text-white font-bold text-center p-4 border-round&quot;&gt;1&lt;/div&gt;
+        &lt;div class=&quot;flex-1 h-4rem bg-indigo-500 text-white font-bold text-center p-4 border-round mx-4&quot;&gt;2&lt;/div&gt;
+        &lt;div class=&quot;flex-1 h-4rem bg-indigo-500 text-white font-bold text-center p-4 border-round&quot;&gt;3&lt;/div&gt;
+    &lt;/div&gt;
 &lt;/div&gt;
 
 </code></pre>
 
     <h5>Inline Flex</h5>
     <p>Displays the element as an inline level flex container..</p>
-    <div class="card inline-flex">
-        <input type="text" class="inputfield" />
-        <input type="text" class="inputfield" />
+    <div class="card">
+        <div class="inline-flex card-container orange-container border-orange-500">
+            <div class="flex-1 h-4rem bg-orange-500 text-white font-bold text-center p-4 border-round">1</div>
+            <div class="flex-1 h-4rem bg-orange-500 text-white font-bold text-center p-4 border-round mx-4">2</div>
+            <div class="flex-1 h-4rem bg-orange-500 text-white font-bold text-center p-4 border-round">3</div>
+        </div>
     </div>
 
 <pre><code class="language-html">
-&lt;div class=&quot;card inline-flex&quot;&gt;
-    &lt;input type=&quot;text&quot; class=&quot;inputfield&quot; /&gt;
-    &lt;input type=&quot;text&quot; class=&quot;inputfield&quot; /&gt;
+&lt;div class=&quot;card&quot;&gt;
+    &lt;div class=&quot;inline-flex card-container orange-container border-orange-500&quot;&gt;
+        &lt;div class=&quot;flex-1 h-4rem bg-orange-500 text-white font-bold text-center p-4 border-round&quot;&gt;1&lt;/div&gt;
+        &lt;div class=&quot;flex-1 h-4rem bg-orange-500 text-white font-bold text-center p-4 border-round mx-4&quot;&gt;2&lt;/div&gt;
+        &lt;div class=&quot;flex-1 h-4rem bg-orange-500 text-white font-bold text-center p-4 border-round&quot;&gt;3&lt;/div&gt;
+    &lt;/div&gt;
 &lt;/div&gt;
 
 </code></pre>
@@ -143,16 +179,16 @@ permalink: /display
     </ul>
 
     <div class="card">
-        <input type="text" placeholder="Hidden on a small screen" class="inputfield hidden md:block" size="25">
-
-        <span class="block md:hidden">Visible on a small screen</span>
+        <div class="card-container cyan-container border-cyan-500 inline-flex">
+            <div class="hidden md:inline-flex h-4rem bg-cyan-500 text-white font-bold align-items-center justify-content-center p-4 border-round mr-3">Hide on a small screen</div>
+        </div>
     </div>
 
 <pre><code class="language-html">
 &lt;div class=&quot;card&quot;&gt;
-    &lt;input type=&quot;text&quot; placeholder=&quot;Hidden on a small screen&quot; class=&quot;inputfield hidden md:block&quot; size=&quot;25&quot;&gt;
-
-    &lt;span class=&quot;block md:hidden&quot;&gt;Visible on a small screen&lt;/span&gt;
+    &lt;div class=&quot;card-container cyan-container border-cyan-500 inline-flex&quot;&gt;
+        &lt;div class=&quot;hidden md:inline-flex h-4rem bg-cyan-500 text-white font-bold align-items-center justify-content-center p-4 border-round mr-3&quot;&gt;Hide on a small screen&lt;/div&gt;
+    &lt;/div&gt;
 &lt;/div&gt;
 
 </code></pre>

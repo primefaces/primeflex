@@ -161,11 +161,46 @@ ul {
 .documentation {
     .card {
         background-color: var(--surface-card);
-        padding: 1rem;
+        padding: 1.5rem;
         -webkit-box-shadow: 0 2px 1px -1px rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 3px 0 rgba(0,0,0,.12);
         box-shadow: 0 2px 1px -1px rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 3px 0 rgba(0,0,0,.12);
         border-radius: 4px;
         margin: 2rem 0;
+
+        .card-container {
+            background: var(--demo-bg-link);
+            border: 1px dashed;
+            border-radius: 4px;
+            padding: 24px;
+
+            &.blue-container {
+                background-color: var(--demo-bg-blue);
+            }
+
+            &.yellow-container {
+                background-color: var(--demo-bg-yellow);
+            }
+
+            &.green-container {
+                background-color: var(--demo-bg-green);
+            }
+
+            &.purple-container {
+                background-color: var(--demo-bg-purple);
+            }
+
+            &.indigo-container {
+                background-color: var(--demo-bg-indigo);
+            }
+
+            &.orange-container {
+                background-color: var(--demo-bg-orange);
+            }
+
+            &.cyan-container {
+                background-color: var(--demo-bg-cyan);
+            }
+        }
     }
 
     ul {
