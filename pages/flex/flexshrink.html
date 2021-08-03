@@ -29,17 +29,21 @@ permalink: /flexshrink
 
     <h5>Shrink</h5>
     <p>Second item does not shrink while others do.</p>
-    <div class="card flex">
-        <div class="flex-grow-1 flex-shrink-1 font-bold text-blue-500 shadow-1 m-2 flex align-items-center justify-content-center" style="width: 200px; min-height: 100px">1</div>
-        <div class="flex-shrink-0 font-bold text-blue-500 shadow-1 m-2 flex align-items-center justify-content-center" style="width: 200px; min-height: 100px">shrink item</div>
-        <div class="flex-grow-1 flex-shrink-1 font-bold text-blue-500 shadow-1 m-2 flex align-items-center justify-content-center" style="width: 200px; min-height: 100px">3</div>
+    <div class="card">
+        <div class="flex card-container blue-container">
+            <div class="flex-grow-1 flex-shrink-1 flex align-items-center justify-content-center bg-blue-500 font-bold text-white p-4 m-3 border-round">1</div>
+            <div class="flex-shrink-0 flex align-items-center justify-content-center bg-blue-500 font-bold text-white p-4 m-3 border-round">shrink item</div>
+            <div class="flex-grow-1 flex-shrink-1 flex align-items-center justify-content-center bg-blue-500 font-bold text-white p-4 m-3 border-round">3</div>
+        </div>
     </div>
 
     <pre><code class="language-html">
-&lt;div class=&quot;card flex&quot;&gt;
-    &lt;div class=&quot;flex-grow-1 flex-shrink-1 font-bold text-blue-500 shadow-1 m-2 flex align-items-center justify-content-center&quot; style=&quot;width: 200px; min-height: 100px&quot;&gt;1&lt;/div&gt;
-    &lt;div class=&quot;flex-shrink-0 font-bold text-blue-500 shadow-1 m-2 flex align-items-center justify-content-center&quot; style=&quot;width: 200px; min-height: 100px&quot;&gt;shrink item&lt;/div&gt;
-    &lt;div class=&quot;flex-grow-1 flex-shrink-1 font-bold text-blue-500 shadow-1 m-2 flex align-items-center justify-content-center&quot; style=&quot;width: 200px; min-height: 100px&quot;&gt;3&lt;/div&gt;
+&lt;div class=&quot;card&quot;&gt;
+    &lt;div class=&quot;flex card-container blue-container&quot;&gt;
+        &lt;div class=&quot;flex-grow-1 flex-shrink-1 flex align-items-center justify-content-center bg-blue-500 font-bold text-white p-4 m-3 border-round&quot;&gt;1&lt;/div&gt;
+        &lt;div class=&quot;flex-shrink-0 flex align-items-center justify-content-center bg-blue-500 font-bold text-white p-4 m-3 border-round&quot;&gt;shrink item&lt;/div&gt;
+        &lt;div class=&quot;flex-grow-1 flex-shrink-1 flex align-items-center justify-content-center bg-blue-500 font-bold text-white p-4 m-3 border-round&quot;&gt;3&lt;/div&gt;
+    &lt;/div&gt;
 &lt;/div&gt;
 
 </code></pre>
@@ -53,17 +57,21 @@ permalink: /flexshrink
         <li><b>xl</b>: larger screens .e.g monitors</li>
     </ul>
 
-    <div class="card flex">
-        <div class="flex-grow-1 font-bold text-blue-500 shadow-1 m-2 flex align-items-center justify-content-center" style="width: 200px; min-height: 100px">1</div>
-        <div class="flex-shrink-1 md:flex-shrink-0 font-bold text-blue-500 shadow-1 m-2 flex align-items-center justify-content-center" style="width: 200px; min-height: 100px">Shrink on Mobile</div>
-        <div class="flex-grow-1 font-bold text-blue-500 shadow-1 m-2 flex align-items-center justify-content-center" style="width: 200px; min-height: 100px">3</div>
+    <div class="card">
+        <div class="flex card-container yellow-container">
+            <div class="flex-grow-1 flex align-items-center justify-content-center bg-yellow-500 font-bold text-gray-900 p-4 m-3 border-round">1</div>
+            <div class="flex-shrink-1 md:flex-shrink-0 flex align-items-center justify-content-center bg-yellow-500 font-bold text-gray-900 p-4 m-3 border-round">Shrink on Mobile</div>
+            <div class="flex-grow-1 flex align-items-center justify-content-center bg-yellow-500 font-bold text-gray-900 p-4 m-3 border-round">3</div>
+        </div>
     </div>
 
     <pre><code class="language-html">
-&lt;div class=&quot;card flex&quot;&gt;
-    &lt;div class=&quot;flex-grow-1 font-bold text-blue-500 shadow-1 m-2 flex align-items-center justify-content-center&quot; style=&quot;width: 200px; min-height: 100px&quot;&gt;1&lt;/div&gt;
-    &lt;div class=&quot;flex-shrink-1 md:flex-shrink-0 font-bold text-blue-500 shadow-1 m-2 flex align-items-center justify-content-center&quot; style=&quot;width: 200px; min-height: 100px&quot;&gt;Shrink on Mobile&lt;/div&gt;
-    &lt;div class=&quot;flex-grow-1 font-bold text-blue-500 shadow-1 m-2 flex align-items-center justify-content-center&quot; style=&quot;width: 200px; min-height: 100px&quot;&gt;3&lt;/div&gt;
+&lt;div class=&quot;card&quot;&gt;
+    &lt;div class=&quot;flex card-container yellow-container&quot;&gt;
+        &lt;div class=&quot;flex-grow-1 flex align-items-center justify-content-center bg-yellow-500 font-bold text-gray-900 p-4 m-3 border-round&quot;&gt;1&lt;/div&gt;
+        &lt;div class=&quot;flex-shrink-1 md:flex-shrink-0 flex align-items-center justify-content-center bg-yellow-500 font-bold text-gray-900 p-4 m-3 border-round&quot;&gt;Shrink on Mobile&lt;/div&gt;
+        &lt;div class=&quot;flex-grow-1 flex align-items-center justify-content-center bg-yellow-500 font-bold text-gray-900 p-4 m-3 border-round&quot;&gt;3&lt;/div&gt;
+    &lt;/div&gt;
 &lt;/div&gt;
 
 </code></pre>
