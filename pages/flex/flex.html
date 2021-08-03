@@ -37,28 +37,32 @@ permalink: /flex
 
     <h5>Initial</h5>
     <p>flex-initial sets <i>flex-grow</i> to 0, <i>flex-shrink</i> to 1 and <i>flex-basis</i> to auto which is the default setting of browsers.</p>
-    <div class="card overflow-hidden">
-        <div class="flex">
-            <div class="flex-initial flex align-items-center justify-content-center font-bold text-blue-500 m-2 px-5 py-3 shadow-3">Prime</div>
-            <div class="flex-initial flex align-items-center justify-content-center font-bold text-blue-500 m-2 px-5 py-3 shadow-3">Prime and PrimeFlex</div>
-        </div>
-        <div class="flex">
-            <div class="flex-initial flex align-items-center justify-content-center font-bold text-blue-500 m-2 px-5 py-3 shadow-3">Prime</div>
-            <div class="flex-initial flex align-items-center justify-content-center font-bold text-blue-500 m-2 px-5 py-3 shadow-3">Prime and PrimeFlex</div>
-            <div class="flex-initial flex align-items-center justify-content-center font-bold text-blue-500 m-2 px-5 py-3 shadow-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
+    <div class="card">
+        <div class="card-container blue-container overflow-hidden">
+            <div class="flex">
+                <div class="flex-initial flex align-items-center justify-content-center bg-blue-500 font-bold text-white m-2 px-5 py-3 border-round">Prime</div>
+                <div class="flex-initial flex align-items-center justify-content-center bg-blue-500 font-bold text-white m-2 px-5 py-3 border-round">Prime and PrimeFlex</div>
+            </div>
+            <div class="flex">
+                <div class="flex-initial flex align-items-center justify-content-center bg-blue-500 font-bold text-white m-2 px-5 py-3 border-round">Prime</div>
+                <div class="flex-initial flex align-items-center justify-content-center bg-blue-500 font-bold text-white m-2 px-5 py-3 border-round">Prime and PrimeFlex</div>
+                <div class="flex-initial flex align-items-center justify-content-center bg-blue-500 font-bold text-white m-2 px-5 py-3 border-round">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
+            </div>
         </div>
     </div>
 
     <pre><code class="language-html">
-&lt;div class=&quot;card overflow-hidden&quot;&gt;
-    &lt;div class=&quot;flex&quot;&gt;
-        &lt;div class=&quot;flex-initial flex align-items-center justify-content-center font-bold text-blue-500 m-2 px-5 py-3 shadow-3&quot;&gt;Prime&lt;/div&gt;
-        &lt;div class=&quot;flex-initial flex align-items-center justify-content-center font-bold text-blue-500 m-2 px-5 py-3 shadow-3&quot;&gt;Prime and PrimeFlex&lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;flex&quot;&gt;
-        &lt;div class=&quot;flex-initial flex align-items-center justify-content-center font-bold text-blue-500 m-2 px-5 py-3 shadow-3&quot;&gt;Prime&lt;/div&gt;
-        &lt;div class=&quot;flex-initial flex align-items-center justify-content-center font-bold text-blue-500 m-2 px-5 py-3 shadow-3&quot;&gt;Prime and PrimeFlex&lt;/div&gt;
-        &lt;div class=&quot;flex-initial flex align-items-center justify-content-center font-bold text-blue-500 m-2 px-5 py-3 shadow-3&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. &lt;/div&gt;
+&lt;div class=&quot;card&quot;&gt;
+    &lt;div class=&quot;card-container blue-container overflow-hidden&quot;&gt;
+        &lt;div class=&quot;flex&quot;&gt;
+            &lt;div class=&quot;flex-initial flex align-items-center justify-content-center bg-blue-500 font-bold text-white m-2 px-5 py-3 border-round&quot;&gt;Prime&lt;/div&gt;
+            &lt;div class=&quot;flex-initial flex align-items-center justify-content-center bg-blue-500 font-bold text-white m-2 px-5 py-3 border-round&quot;&gt;Prime and PrimeFlex&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;flex&quot;&gt;
+            &lt;div class=&quot;flex-initial flex align-items-center justify-content-center bg-blue-500 font-bold text-white m-2 px-5 py-3 border-round&quot;&gt;Prime&lt;/div&gt;
+            &lt;div class=&quot;flex-initial flex align-items-center justify-content-center bg-blue-500 font-bold text-white m-2 px-5 py-3 border-round&quot;&gt;Prime and PrimeFlex&lt;/div&gt;
+            &lt;div class=&quot;flex-initial flex align-items-center justify-content-center bg-blue-500 font-bold text-white m-2 px-5 py-3 border-round&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. &lt;/div&gt;
+        &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -66,30 +70,34 @@ permalink: /flex
 
     <h5>Flex 1</h5>
     <p>Sets grow and shrink to 1 to auto grow and shrink while keeping flex-basis to 0.</p>
-    <div class="card overflow-hidden">
-        <div class="flex">
-            <div class="flex align-items-center justify-content-center font-bold text-blue-500 m-2 px-5 py-3 shadow-3">Prime</div>
-            <div class="flex align-items-center justify-content-center font-bold text-blue-500 m-2 px-5 py-3 shadow-3">Prime and PrimeFlex</div>
-            <div class="flex align-items-center justify-content-center font-bold text-blue-500 m-2 px-5 py-3 shadow-3">Lorem ipsum dolor sit amet</div>
-        </div>
-        <div class="flex">
-            <div class="flex-1 flex align-items-center justify-content-center font-bold text-blue-500 m-2 px-5 py-3 shadow-3">Prime</div>
-            <div class="flex-1 flex align-items-center justify-content-center font-bold text-blue-500 m-2 px-5 py-3 shadow-3">Prime and PrimeFlex</div>
-            <div class="flex-1 flex align-items-center justify-content-center font-bold text-blue-500 m-2 px-5 py-3 shadow-3">Lorem ipsum dolor sit amet</div>
+    <div class="card">
+        <div class="card-container yellow-container overflow-hidden">
+            <div class="flex">
+                <div class="flex align-items-center justify-content-center bg-yellow-500 font-bold text-gray-900 m-2 px-5 py-3 border-round">Prime</div>
+                <div class="flex align-items-center justify-content-center bg-yellow-500 font-bold text-gray-900 m-2 px-5 py-3 border-round">Prime and PrimeFlex</div>
+                <div class="flex align-items-center justify-content-center bg-yellow-500 font-bold text-gray-900 m-2 px-5 py-3 border-round">Lorem ipsum dolor sit amet</div>
+            </div>
+            <div class="flex">
+                <div class="flex-1 flex align-items-center justify-content-center bg-yellow-500 font-bold text-gray-900 m-2 px-5 py-3 border-round">Prime</div>
+                <div class="flex-1 flex align-items-center justify-content-center bg-yellow-500 font-bold text-gray-900 m-2 px-5 py-3 border-round">Prime and PrimeFlex</div>
+                <div class="flex-1 flex align-items-center justify-content-center bg-yellow-500 font-bold text-gray-900 m-2 px-5 py-3 border-round">Lorem ipsum dolor sit amet</div>
+            </div>
         </div>
     </div>
 
     <pre><code class="language-html">
-&lt;div class=&quot;card overflow-hidden&quot;&gt;
-    &lt;div class=&quot;flex&quot;&gt;
-        &lt;div class=&quot;flex align-items-center justify-content-center font-bold text-blue-500 m-2 px-5 py-3 shadow-3&quot;&gt;Prime&lt;/div&gt;
-        &lt;div class=&quot;flex align-items-center justify-content-center font-bold text-blue-500 m-2 px-5 py-3 shadow-3&quot;&gt;Prime and PrimeFlex&lt;/div&gt;
-        &lt;div class=&quot;flex align-items-center justify-content-center font-bold text-blue-500 m-2 px-5 py-3 shadow-3&quot;&gt;Lorem ipsum dolor sit amet&lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;flex&quot;&gt;
-        &lt;div class=&quot;flex-1 flex align-items-center justify-content-center font-bold text-blue-500 m-2 px-5 py-3 shadow-3&quot;&gt;Prime&lt;/div&gt;
-        &lt;div class=&quot;flex-1 flex align-items-center justify-content-center font-bold text-blue-500 m-2 px-5 py-3 shadow-3&quot;&gt;Prime and PrimeFlex&lt;/div&gt;
-        &lt;div class=&quot;flex-1 flex align-items-center justify-content-center font-bold text-blue-500 m-2 px-5 py-3 shadow-3&quot;&gt;Lorem ipsum dolor sit amet&lt;/div&gt;
+&lt;div class=&quot;card&quot;&gt;
+    &lt;div class=&quot;card-container yellow-container overflow-hidden&quot;&gt;
+        &lt;div class=&quot;flex&quot;&gt;
+            &lt;div class=&quot;flex align-items-center justify-content-center bg-yellow-500 font-bold text-gray-900 m-2 px-5 py-3 border-round&quot;&gt;Prime&lt;/div&gt;
+            &lt;div class=&quot;flex align-items-center justify-content-center bg-yellow-500 font-bold text-gray-900 m-2 px-5 py-3 border-round&quot;&gt;Prime and PrimeFlex&lt;/div&gt;
+            &lt;div class=&quot;flex align-items-center justify-content-center bg-yellow-500 font-bold text-gray-900 m-2 px-5 py-3 border-round&quot;&gt;Lorem ipsum dolor sit amet&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;flex&quot;&gt;
+            &lt;div class=&quot;flex-1 flex align-items-center justify-content-center bg-yellow-500 font-bold text-gray-900 m-2 px-5 py-3 border-round&quot;&gt;Prime&lt;/div&gt;
+            &lt;div class=&quot;flex-1 flex align-items-center justify-content-center bg-yellow-500 font-bold text-gray-900 m-2 px-5 py-3 border-round&quot;&gt;Prime and PrimeFlex&lt;/div&gt;
+            &lt;div class=&quot;flex-1 flex align-items-center justify-content-center bg-yellow-500 font-bold text-gray-900 m-2 px-5 py-3 border-round&quot;&gt;Lorem ipsum dolor sit amet&lt;/div&gt;
+        &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -97,30 +105,34 @@ permalink: /flex
 
     <h5>Auto</h5>
     <p>Sets grow and shrink to 1 to auto grow and shrink while keeping flex-basis to auto.</p>
-    <div class="card overflow-hidden">
-        <div class="flex">
-            <div class="flex align-items-center justify-content-center font-bold text-blue-500 m-2 px-5 py-3 shadow-3">Prime</div>
-            <div class="flex align-items-center justify-content-center font-bold text-blue-500 m-2 px-5 py-3 shadow-3">Prime and PrimeFlex</div>
-            <div class="flex align-items-center justify-content-center font-bold text-blue-500 m-2 px-5 py-3 shadow-3">Lorem ipsum dolor sit amet</div>
-        </div>
-        <div class="flex">
-            <div class="flex-auto flex align-items-center justify-content-center font-bold text-blue-500 m-2 px-5 py-3 shadow-3">Prime</div>
-            <div class="flex-auto flex align-items-center justify-content-center font-bold text-blue-500 m-2 px-5 py-3 shadow-3">Prime and PrimeFlex</div>
-            <div class="flex-auto flex align-items-center justify-content-center font-bold text-blue-500 m-2 px-5 py-3 shadow-3">Lorem ipsum dolor sit amet</div>
+    <div class="card">
+        <div class="card-container green-container overflow-hidden">
+            <div class="flex">
+                <div class="flex align-items-center justify-content-center bg-green-500 font-bold text-white m-2 px-5 py-3 border-round">Prime</div>
+                <div class="flex align-items-center justify-content-center bg-green-500 font-bold text-white m-2 px-5 py-3 border-round">Prime and PrimeFlex</div>
+                <div class="flex align-items-center justify-content-center bg-green-500 font-bold text-white m-2 px-5 py-3 border-round">Lorem ipsum dolor sit amet</div>
+            </div>
+            <div class="flex">
+                <div class="flex-auto flex align-items-center justify-content-center bg-green-500 font-bold text-white m-2 px-5 py-3 border-round">Prime</div>
+                <div class="flex-auto flex align-items-center justify-content-center bg-green-500 font-bold text-white m-2 px-5 py-3 border-round">Prime and PrimeFlex</div>
+                <div class="flex-auto flex align-items-center justify-content-center bg-green-500 font-bold text-white m-2 px-5 py-3 border-round">Lorem ipsum dolor sit amet</div>
+            </div>
         </div>
     </div>
 
     <pre><code class="language-html">
-&lt;div class=&quot;card overflow-hidden&quot;&gt;
-    &lt;div class=&quot;flex&quot;&gt;
-        &lt;div class=&quot;flex align-items-center justify-content-center font-bold text-blue-500 m-2 px-5 py-3 shadow-3&quot;&gt;Prime&lt;/div&gt;
-        &lt;div class=&quot;flex align-items-center justify-content-center font-bold text-blue-500 m-2 px-5 py-3 shadow-3&quot;&gt;Prime and PrimeFlex&lt;/div&gt;
-        &lt;div class=&quot;flex align-items-center justify-content-center font-bold text-blue-500 m-2 px-5 py-3 shadow-3&quot;&gt;Lorem ipsum dolor sit amet&lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;flex&quot;&gt;
-        &lt;div class=&quot;flex-auto flex align-items-center justify-content-center font-bold text-blue-500 m-2 px-5 py-3 shadow-3&quot;&gt;Prime&lt;/div&gt;
-        &lt;div class=&quot;flex-auto flex align-items-center justify-content-center font-bold text-blue-500 m-2 px-5 py-3 shadow-3&quot;&gt;Prime and PrimeFlex&lt;/div&gt;
-        &lt;div class=&quot;flex-auto flex align-items-center justify-content-center font-bold text-blue-500 m-2 px-5 py-3 shadow-3&quot;&gt;Lorem ipsum dolor sit amet&lt;/div&gt;
+&lt;div class=&quot;card&quot;&gt;
+    &lt;div class=&quot;card-container green-container overflow-hidden&quot;&gt;
+        &lt;div class=&quot;flex&quot;&gt;
+            &lt;div class=&quot;flex align-items-center justify-content-center bg-green-500 font-bold text-white m-2 px-5 py-3 border-round&quot;&gt;Prime&lt;/div&gt;
+            &lt;div class=&quot;flex align-items-center justify-content-center bg-green-500 font-bold text-white m-2 px-5 py-3 border-round&quot;&gt;Prime and PrimeFlex&lt;/div&gt;
+            &lt;div class=&quot;flex align-items-center justify-content-center bg-green-500 font-bold text-white m-2 px-5 py-3 border-round&quot;&gt;Lorem ipsum dolor sit amet&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;flex&quot;&gt;
+            &lt;div class=&quot;flex-auto flex align-items-center justify-content-center bg-green-500 font-bold text-white m-2 px-5 py-3 border-round&quot;&gt;Prime&lt;/div&gt;
+            &lt;div class=&quot;flex-auto flex align-items-center justify-content-center bg-green-500 font-bold text-white m-2 px-5 py-3 border-round&quot;&gt;Prime and PrimeFlex&lt;/div&gt;
+            &lt;div class=&quot;flex-auto flex align-items-center justify-content-center bg-green-500 font-bold text-white m-2 px-5 py-3 border-round&quot;&gt;Lorem ipsum dolor sit amet&lt;/div&gt;
+        &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -128,20 +140,24 @@ permalink: /flex
 
     <h5>None</h5>
     <p>Same as "0 0 auto" meaning the element does not grow or shrink.</p>
-    <div class="card overflow-hidden">
-        <div class="flex">
-            <div class="flex-1 flex align-items-center justify-content-center font-bold text-blue-500 m-2 px-5 py-3 shadow-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
-            <div class="flex-none flex align-items-center justify-content-center font-bold text-blue-500 m-2 px-5 py-3 shadow-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
-            <div class="flex-1 flex align-items-center justify-content-center font-bold text-blue-500 m-2 px-5 py-3 shadow-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
+    <div class="card">
+        <div class="card-container purple-container overflow-hidden">
+            <div class="flex">
+                <div class="flex-1 flex align-items-center justify-content-center bg-purple-500 font-bold text-white m-2 px-5 py-3 border-round">Lorem ipsum dolor sit amet</div>
+                <div class="flex-none flex align-items-center justify-content-center bg-purple-500 font-bold text-white m-2 px-5 py-3 border-round">Lorem ipsum dolor sit amet</div>
+                <div class="flex-1 flex align-items-center justify-content-center bg-purple-500 font-bold text-white m-2 px-5 py-3 border-round">Lorem ipsum dolor sit amet</div>
+            </div>
         </div>
     </div>
 
     <pre><code class="language-html">
-&lt;div class=&quot;card overflow-hidden&quot;&gt;
-    &lt;div class=&quot;flex&quot;&gt;
-        &lt;div class=&quot;flex-1 flex align-items-center justify-content-center font-bold text-blue-500 m-2 px-5 py-3 shadow-3&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit&lt;/div&gt;
-        &lt;div class=&quot;flex-none flex align-items-center justify-content-center font-bold text-blue-500 m-2 px-5 py-3 shadow-3&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit&lt;/div&gt;
-        &lt;div class=&quot;flex-1 flex align-items-center justify-content-center font-bold text-blue-500 m-2 px-5 py-3 shadow-3&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit&lt;/div&gt;
+&lt;div class=&quot;card&quot;&gt;
+    &lt;div class=&quot;card-container purple-container overflow-hidden&quot;&gt;
+        &lt;div class=&quot;flex&quot;&gt;
+            &lt;div class=&quot;flex-1 flex align-items-center justify-content-center bg-purple-500 font-bold text-white m-2 px-5 py-3 border-round&quot;&gt;Lorem ipsum dolor sit amet&lt;/div&gt;
+            &lt;div class=&quot;flex-none flex align-items-center justify-content-center bg-purple-500 font-bold text-white m-2 px-5 py-3 border-round&quot;&gt;Lorem ipsum dolor sit amet&lt;/div&gt;
+            &lt;div class=&quot;flex-1 flex align-items-center justify-content-center bg-purple-500 font-bold text-white m-2 px-5 py-3 border-round&quot;&gt;Lorem ipsum dolor sit amet&lt;/div&gt;
+        &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -156,15 +172,23 @@ permalink: /flex
         <li><b>xl</b>: larger screens .e.g monitors</li>
     </ul>
 
-    <div class="card flex overflow-hidden">
-        <div class="flex-1 md:flex-none flex align-items-center justify-content-center font-bold text-blue-500 m-2 px-5 py-3 shadow-3">flex-1 on small devices and none on bigger.</div>
-        <div class="flex-1 md:flex-none flex align-items-center justify-content-center font-bold text-blue-500 m-2 px-5 py-3 shadow-3">flex-1 on small devices and none on bigger.</div>
+    <div class="card">
+        <div class="card-container indigo-container overflow-hidden">
+            <div class="flex">
+                <div class="flex-1 md:flex-none flex align-items-center justify-content-center bg-indigo-500 font-bold text-white m-2 px-5 py-3 border-round">flex-1 on small devices and none on bigger.</div>
+                <div class="flex-1 md:flex-none flex align-items-center justify-content-center bg-indigo-500 font-bold text-white m-2 px-5 py-3 border-round">flex-1 on small devices and none on bigger.</div>
+            </div>
+        </div>
     </div>
 
     <pre><code class="language-html">
-&lt;div class=&quot;card flex overflow-hidden&quot;&gt;
-    &lt;div class=&quot;flex-1 md:flex-none flex align-items-center justify-content-center font-bold text-blue-500 m-2 px-5 py-3 shadow-3&quot;&gt;flex-1 on small devices and none on bigger.&lt;/div&gt;
-    &lt;div class=&quot;flex-1 md:flex-none flex align-items-center justify-content-center font-bold text-blue-500 m-2 px-5 py-3 shadow-3&quot;&gt;flex-1 on small devices and none on bigger.&lt;/div&gt;
+&lt;div class=&quot;card&quot;&gt;
+    &lt;div class=&quot;card-container indigo-container overflow-hidden&quot;&gt;
+        &lt;div class=&quot;flex&quot;&gt;
+            &lt;div class=&quot;flex-1 md:flex-none flex align-items-center justify-content-center bg-indigo-500 font-bold text-white m-2 px-5 py-3 border-round&quot;&gt;flex-1 on small devices and none on bigger.&lt;/div&gt;
+            &lt;div class=&quot;flex-1 md:flex-none flex align-items-center justify-content-center bg-indigo-500 font-bold text-white m-2 px-5 py-3 border-round&quot;&gt;flex-1 on small devices and none on bigger.&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
 &lt;/div&gt;
 
 </code></pre>
