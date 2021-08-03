@@ -29,17 +29,21 @@ permalink: /flexgrow
 
     <h5>Grow</h5>
     <p>Second item grows while others do not.</p>
-    <div class="card flex overflow-hidden">
-        <div class="flex-none flex align-items-center justify-content-center font-bold text-blue-500 m-2 px-5 py-3 shadow-3">PrimeFlex</div>
-        <div class="flex-grow-1 flex align-items-center justify-content-center font-bold text-blue-500 m-2 px-5 py-3 shadow-3">PrimeFlex</div>
-        <div class="flex-none flex align-items-center justify-content-center font-bold text-blue-500 m-2 px-5 py-3 shadow-3">PrimeFlex</div>
+    <div class="card">
+        <div class="flex card-container blue-container overflow-hidden">
+            <div class="flex-none flex align-items-center justify-content-center bg-blue-500 font-bold text-white m-2 px-5 py-3 border-round">PrimeFlex</div>
+            <div class="flex-grow-1 flex align-items-center justify-content-center bg-blue-500 font-bold text-white m-2 px-5 py-3 border-round">PrimeFlex</div>
+            <div class="flex-none flex align-items-center justify-content-center bg-blue-500 font-bold text-white m-2 px-5 py-3 border-round">PrimeFlex</div>
+        </div>
     </div>
 
     <pre><code class="language-html">
-&lt;div class=&quot;card flex overflow-hidden&quot;&gt;
-    &lt;div class=&quot;flex-none flex align-items-center justify-content-center font-bold text-blue-500 m-2 px-5 py-3 shadow-3&quot;&gt;PrimeFlex&lt;/div&gt;
-    &lt;div class=&quot;flex-grow-1 flex align-items-center justify-content-center font-bold text-blue-500 m-2 px-5 py-3 shadow-3&quot;&gt;PrimeFlex&lt;/div&gt;
-    &lt;div class=&quot;flex-none flex align-items-center justify-content-center font-bold text-blue-500 m-2 px-5 py-3 shadow-3&quot;&gt;PrimeFlex&lt;/div&gt;
+&lt;div class=&quot;card&quot;&gt;
+    &lt;div class=&quot;flex card-container blue-container overflow-hidden&quot;&gt;
+        &lt;div class=&quot;flex-none flex align-items-center justify-content-center bg-blue-500 font-bold text-white m-2 px-5 py-3 border-round&quot;&gt;PrimeFlex&lt;/div&gt;
+        &lt;div class=&quot;flex-grow-1 flex align-items-center justify-content-center bg-blue-500 font-bold text-white m-2 px-5 py-3 border-round&quot;&gt;PrimeFlex&lt;/div&gt;
+        &lt;div class=&quot;flex-none flex align-items-center justify-content-center bg-blue-500 font-bold text-white m-2 px-5 py-3 border-round&quot;&gt;PrimeFlex&lt;/div&gt;
+    &lt;/div&gt;
 &lt;/div&gt;
 
 </code></pre>
@@ -53,13 +57,17 @@ permalink: /flexgrow
         <li><b>xl</b>: larger screens .e.g monitors</li>
     </ul>
 
-    <div class="card flex overflow-hidden">
-        <div class="flex-grow-1 md:flex-grow-0 flex align-items-center justify-content-center font-bold text-blue-500 m-2 px-5 py-3 shadow-3">Grow on small device</div>
+    <div class="card">
+        <div class="flex card-container yellow-container overflow-hidden">
+            <div class="flex-grow-1 md:flex-grow-0 flex align-items-center justify-content-center bg-yellow-500 font-bold text-gray-900 m-2 px-5 py-3 border-round">Grow on small device</div>
+        </div>
     </div>
 
     <pre><code class="language-html">
-&lt;div class=&quot;card flex overflow-hidden&quot;&gt;
-    &lt;div class=&quot;flex-grow-1 md:flex-grow-0 flex align-items-center justify-content-center font-bold text-blue-500 m-2 px-5 py-3 shadow-3&quot;&gt;Grow on small device&lt;/div&gt;
+&lt;div class=&quot;card&quot;&gt;
+    &lt;div class=&quot;flex card-container yellow-container overflow-hidden&quot;&gt;
+        &lt;div class=&quot;flex-grow-1 md:flex-grow-0 flex align-items-center justify-content-center bg-yellow-500 font-bold text-gray-900 m-2 px-5 py-3 border-round&quot;&gt;Grow on small device&lt;/div&gt;
+    &lt;/div&gt;
 &lt;/div&gt;
 
 </code></pre>
