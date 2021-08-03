@@ -8,12 +8,26 @@ var PrimeFlex = {
         this.mobileMenuButton = document.getElementById('mobile-button');
         this.mobileTopbarButton = document.getElementById('mobile-topbar-button');
         this.mobileTopbarMenu = document.getElementById('mobile-topbar-menu');
+        this.colorSwitch = document.getElementById('color-switch');
 
         this.bindEvents();
 
         var scrollPos = window.sessionStorage.getItem('scroll-pos');
         if (scrollPos) {
             this.menu.scrollTop = parseInt(scrollPos);
+        }
+
+        var colorSchemeUrl = window.sessionStorage.getItem('color-scheme-url');
+        var colorScheme = window.sessionStorage.getItem('color-scheme');
+
+        if (colorSchemeUrl) {
+            const element = document.getElementById('layout-css');
+            this.replaceLink(element, colorSchemeUrl);
+        }
+
+        if(colorScheme) {
+            this.colorSwitch.checked = colorScheme === 'true' ? true : false;
+            this.changeLogos(this.colorSwitch.checked);
         }
     },
 
@@ -65,23 +79,35 @@ var PrimeFlex = {
         const element = document.getElementById('layout-css');
         const urlTokens = element.getAttribute('href').split('/');
 
-        const topbarLogoLink = document.getElementById('topbar-logo');
-        const footerLogoLink = document.getElementById('footer-logo');
-
         if(!e.target.checked) {
             urlTokens[urlTokens.length - 1] = 'primeflex-arya.css';
-            topbarLogoLink.src = "/assets/images/primeflex-logo-white.svg";
-            footerLogoLink.src = "/assets/images/prime-logo-white.svg";
+            this.changeLogos(e.target.checked);
         }
         else {
             urlTokens[urlTokens.length - 1] = 'primeflex-saga.css';
-            topbarLogoLink.src = "/assets/images/primeflex-logo-dark.svg";
-            footerLogoLink.src = "/assets/images/prime-logo-dark.svg";
+            this.changeLogos(e.target.checked);
         }
 
         const newURL = urlTokens.join('/');
 
         this.replaceLink(element, newURL);
+
+        window.sessionStorage.setItem('color-scheme', e.target.checked);
+        window.sessionStorage.setItem('color-scheme-url', newURL);
+    },
+
+    changeLogos: function (mode) {
+        const topbarLogoLink = document.getElementById('topbar-logo');
+        const footerLogoLink = document.getElementById('footer-logo');
+
+        if(!mode) {
+            topbarLogoLink.src = "/assets/images/primeflex-logo-white.svg";
+            footerLogoLink.src = "/assets/images/prime-logo-white.svg";
+        }
+        else {
+            topbarLogoLink.src = "/assets/images/primeflex-logo-dark.svg";
+            footerLogoLink.src = "/assets/images/prime-logo-dark.svg";
+        }
     },
 
     replaceLink: function (linkElement, href) {
