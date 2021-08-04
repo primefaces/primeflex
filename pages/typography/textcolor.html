@@ -638,17 +638,21 @@ permalink: /textcolor
     </div>
 
     <h5>Examples</h5>
-    <div class="card flex flex-wrap md:justify-content-between justify-content-center">
-        <div class="text-700 font-bold shadow-1 m-2 flex align-items-center justify-content-center" style="min-width: 200px; min-height: 100px">text-700</div>
-        <div class="text-blue-700 font-bold shadow-1 m-2 flex align-items-center justify-content-center" style="min-width: 200px; min-height: 100px">text-blue-700</div>
-        <div class="text-purple-700 font-bold shadow-1 m-2 flex align-items-center justify-content-center" style="min-width: 200px; min-height: 100px">text-purple-700</div>
+    <div class="card">
+        <div class="flex flex-wrap md:justify-content-between justify-content-center card-container">
+            <div class="text-700 w-12rem h-6rem surface-overlay border-round border-1 border-gray-500 font-bold m-2 flex align-items-center justify-content-center">text-700</div>
+            <div class="text-blue-700 w-12rem h-6rem surface-overlay border-round border-1 border-gray-500 font-bold m-2 flex align-items-center justify-content-center">text-blue-700</div>
+            <div class="text-purple-700 w-12rem h-6rem surface-overlay border-round border-1 border-gray-500 font-bold m-2 flex align-items-center justify-content-center">text-purple-700</div>
+        </div>
     </div>
 
     <pre><code class="language-html">
-&lt;div class=&quot;card flex flex-wrap md:justify-content-between justify-content-center&quot;&gt;
-    &lt;div class=&quot;text-700 font-bold shadow-1 m-2 flex align-items-center justify-content-center&quot; style=&quot;min-width: 200px; min-height: 100px&quot;&gt;text-700&lt;/div&gt;
-    &lt;div class=&quot;text-blue-700 font-bold shadow-1 m-2 flex align-items-center justify-content-center&quot; style=&quot;min-width: 200px; min-height: 100px&quot;&gt;text-blue-700&lt;/div&gt;
-    &lt;div class=&quot;text-purple-700 font-bold shadow-1 m-2 flex align-items-center justify-content-center&quot; style=&quot;min-width: 200px; min-height: 100px&quot;&gt;text-purple-700&lt;/div&gt;
+&lt;div class=&quot;card&quot;&gt;
+    &lt;div class=&quot;flex flex-wrap md:justify-content-between justify-content-center card-container&quot;&gt;
+        &lt;div class=&quot;text-700 w-12rem h-6rem surface-overlay border-round border-1 border-gray-500 font-bold m-2 flex align-items-center justify-content-center&quot;&gt;text-700&lt;/div&gt;
+        &lt;div class=&quot;text-blue-700 w-12rem h-6rem surface-overlay border-round border-1 border-gray-500 font-bold m-2 flex align-items-center justify-content-center&quot;&gt;text-blue-700&lt;/div&gt;
+        &lt;div class=&quot;text-purple-700 w-12rem h-6rem surface-overlay border-round border-1 border-gray-500 font-bold m-2 flex align-items-center justify-content-center&quot;&gt;text-purple-700&lt;/div&gt;
+    &lt;/div&gt;
 &lt;/div&gt;
 
 </code></pre>
@@ -656,17 +660,21 @@ permalink: /textcolor
     <h5>Pseudo States</h5>
     <p>Focus, Hover and Active states are available with the <i>focus:</i>, <i>hover:</i>, <i>active:</i> prefixes respectively.</p>
 
-    <div class="card flex flex-wrap md:justify-content-between justify-content-center">
-        <div class="text-500 hover:text-700 font-bold shadow-1 m-2 flex align-items-center justify-content-center" style="min-width: 200px; min-height: 100px">hover:text-700</div>
-        <div class="text-blue-500 hover:text-blue-700 font-bold shadow-1 m-2 flex align-items-center justify-content-center" style="min-width: 200px; min-height: 100px">hover:text-blue-700</div>
-        <div class="text-purple-500 hover:text-purple-700 font-bold shadow-1 m-2 flex align-items-center justify-content-center" style="min-width: 200px; min-height: 100px">hover:text-purple-700</div>
+    <div class="card">
+        <div class="flex flex-wrap md:justify-content-between justify-content-center card-container">
+            <div class="text-500 hover:text-700 w-12rem h-6rem surface-overlay border-round border-1 border-gray-500 font-bold m-2 flex align-items-center justify-content-center">hover:text-700</div>
+            <div class="text-blue-500 hover:text-blue-700 w-12rem h-6rem surface-overlay border-round border-1 border-gray-500 font-bold m-2 flex align-items-center justify-content-center">hover:text-blue-700</div>
+            <div class="text-purple-500 hover:text-purple-700 w-12rem h-6rem surface-overlay border-round border-1 border-gray-500 font-bold m-2 flex align-items-center justify-content-center">hover:text-purple-700</div>
+        </div>
     </div>
 
     <pre><code class="language-html">
-&lt;div class=&quot;card flex flex-wrap md:justify-content-between justify-content-center&quot;&gt;
-    &lt;div class=&quot;text-500 hover:text-700 font-bold shadow-1 m-2 flex align-items-center justify-content-center&quot; style=&quot;min-width: 200px; min-height: 100px&quot;&gt;hover:text-700&lt;/div&gt;
-    &lt;div class=&quot;text-blue-500 hover:text-blue-700 font-bold shadow-1 m-2 flex align-items-center justify-content-center&quot; style=&quot;min-width: 200px; min-height: 100px&quot;&gt;hover:text-blue-700&lt;/div&gt;
-    &lt;div class=&quot;text-purple-500 hover:text-purple-700 font-bold shadow-1 m-2 flex align-items-center justify-content-center&quot; style=&quot;min-width: 200px; min-height: 100px&quot;&gt;hover:text-purple-700&lt;/div&gt;
+&lt;div class=&quot;card&quot;&gt;
+    &lt;div class=&quot;flex flex-wrap md:justify-content-between justify-content-center card-container&quot;&gt;
+        &lt;div class=&quot;text-500 hover:text-700 w-12rem h-6rem surface-overlay border-round border-1 border-gray-500 font-bold m-2 flex align-items-center justify-content-center&quot;&gt;hover:text-700&lt;/div&gt;
+        &lt;div class=&quot;text-blue-500 hover:text-blue-700 w-12rem h-6rem surface-overlay border-round border-1 border-gray-500 font-bold m-2 flex align-items-center justify-content-center&quot;&gt;hover:text-blue-700&lt;/div&gt;
+        &lt;div class=&quot;text-purple-500 hover:text-purple-700 w-12rem h-6rem surface-overlay border-round border-1 border-gray-500 font-bold m-2 flex align-items-center justify-content-center&quot;&gt;hover:text-purple-700&lt;/div&gt;
+    &lt;/div&gt;
 &lt;/div&gt;
 
 </code></pre>
