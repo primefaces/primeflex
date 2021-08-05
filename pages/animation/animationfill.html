@@ -38,29 +38,35 @@ permalink: /animationfill
     </div>
 
     <h5>Examples</h5>
-    <div class="card flex flex-wrap align-items-center justify-content-center">
-        <div class="animation-color animation-fill-none flex align-items-center justify-content-center font-bold border-round m-2 px-5 py-3 shadow-3">fill-none</div>
-        <div class="animation-color animation-fill-forwards flex align-items-center justify-content-center font-bold border-round m-2 px-5 py-3 shadow-3">fill-forwards</div>
-        <div class="animation-color animation-fill-backwards flex align-items-center justify-content-center font-bold border-round m-2 px-5 py-3 shadow-3">fill-backwards</div>
-        <div class="animation-color animation-fill-both flex align-items-center justify-content-center font-bold border-round m-2 px-5 py-3 shadow-3">fill-both</div>
+    <div class="card">
+        <div class="flex flex-wrap align-items-center justify-content-center card-container blue-container">
+            <div class="animation-color animation-fill-none flex align-items-center justify-content-center font-bold border-round m-2 px-5 py-3">fill-none</div>
+            <div class="animation-color animation-fill-forwards flex align-items-center justify-content-center font-bold border-round m-2 px-5 py-3">fill-forwards</div>
+            <div class="animation-color animation-fill-backwards flex align-items-center justify-content-center font-bold border-round m-2 px-5 py-3">fill-backwards</div>
+            <div class="animation-color animation-fill-both flex align-items-center justify-content-center font-bold border-round m-2 px-5 py-3">fill-both</div>
+        </div>
     </div>
 
     <pre><code class="language-html">
-&lt;div class=&quot;card flex flex-wrap align-items-center justify-content-center&quot;&gt;
-    &lt;div class=&quot;animation-color animation-fill-none flex align-items-center justify-content-center font-bold border-round m-2 px-5 py-3 shadow-3&quot;&gt;fill-none&lt;/div&gt;
-    &lt;div class=&quot;animation-color animation-fill-forwards flex align-items-center justify-content-center font-bold border-round m-2 px-5 py-3 shadow-3&quot;&gt;fill-forwards&lt;/div&gt;
-    &lt;div class=&quot;animation-color animation-fill-backwards flex align-items-center justify-content-center font-bold border-round m-2 px-5 py-3 shadow-3&quot;&gt;fill-backwards&lt;/div&gt;
-    &lt;div class=&quot;animation-color animation-fill-both flex align-items-center justify-content-center font-bold border-round m-2 px-5 py-3 shadow-3&quot;&gt;fill-both&lt;/div&gt;
+&lt;div class=&quot;card&quot;&gt;
+    &lt;div class=&quot;flex flex-wrap align-items-center justify-content-center card-container blue-container&quot;&gt;
+        &lt;div class=&quot;animation-color animation-fill-none flex align-items-center justify-content-center font-bold border-round m-2 px-5 py-3&quot;&gt;fill-none&lt;/div&gt;
+        &lt;div class=&quot;animation-color animation-fill-forwards flex align-items-center justify-content-center font-bold border-round m-2 px-5 py-3&quot;&gt;fill-forwards&lt;/div&gt;
+        &lt;div class=&quot;animation-color animation-fill-backwards flex align-items-center justify-content-center font-bold border-round m-2 px-5 py-3&quot;&gt;fill-backwards&lt;/div&gt;
+        &lt;div class=&quot;animation-color animation-fill-both flex align-items-center justify-content-center font-bold border-round m-2 px-5 py-3&quot;&gt;fill-both&lt;/div&gt;
+    &lt;/div&gt;
 &lt;/div&gt;
 
 
 &lt;style lang=&quot;scss&quot;&gt;
 @keyframes animation-color {
     0%{
-        background-color: var(--blue-500)
+        background-color: var(--blue-500);
+        color: var(--gray-50);
     }
     100%{
-        background-color: var(--green-500)
+        background-color: var(--yellow-500);
+        color: var(--gray-900);
     }
 }
 .animation-color {
@@ -73,10 +79,12 @@ permalink: /animationfill
 <style lang="scss">
     @keyframes animation-color {
         0%{
-            background-color: var(--blue-500)
+            background-color: var(--blue-500);
+            color: var(--gray-50);
         }
         100%{
-            background-color: var(--green-500)
+            background-color: var(--yellow-500);
+            color: var(--gray-900);
         }
     }
     .animation-color {
