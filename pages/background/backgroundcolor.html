@@ -649,17 +649,21 @@ permalink: /backgroundcolor
 
     <h5>Examples</h5>
 
-    <div class="card flex flex-wrap md:justify-content-between justify-content-center">
-        <div class="surface-700 text-0 shadow-1 m-2 flex align-items-center justify-content-center" style="min-width: 200px; min-height: 100px">surface-700</div>
-        <div class="bg-blue-700 text-0 shadow-1 m-2 flex align-items-center justify-content-center" style="min-width: 200px; min-height: 100px">bg-blue-700</div>
-        <div class="bg-purple-700 text-0 shadow-1 m-2 flex align-items-center justify-content-center" style="min-width: 200px; min-height: 100px">bg-purple-700</div>
+    <div class="card">
+        <div class="flex flex-wrap md:justify-content-between justify-content-center card-container">
+            <div class="surface-500 text-white font-bold border-round m-2 flex align-items-center justify-content-center" style="min-width: 200px; min-height: 100px">surface-500</div>
+            <div class="bg-cyan-500 text-white font-bold border-round m-2 flex align-items-center justify-content-center" style="min-width: 200px; min-height: 100px">bg-cyan-500</div>
+            <div class="bg-orange-500 text-white font-bold border-round m-2 flex align-items-center justify-content-center" style="min-width: 200px; min-height: 100px">bg-orange-500</div>
+        </div>
     </div>
 
     <pre><code class="language-html">
-&lt;div class=&quot;card flex flex-wrap md:justify-content-between justify-content-center&quot;&gt;
-    &lt;div class=&quot;surface-700 text-0 shadow-1 m-2 flex align-items-center justify-content-center&quot; style=&quot;min-width: 200px; min-height: 100px&quot;&gt;surface-700&lt;/div&gt;
-    &lt;div class=&quot;bg-blue-700 text-0 shadow-1 m-2 flex align-items-center justify-content-center&quot; style=&quot;min-width: 200px; min-height: 100px&quot;&gt;bg-blue-700&lt;/div&gt;
-    &lt;div class=&quot;bg-purple-700 text-0 shadow-1 m-2 flex align-items-center justify-content-center&quot; style=&quot;min-width: 200px; min-height: 100px&quot;&gt;bg-purple-700&lt;/div&gt;
+&lt;div class=&quot;card&quot;&gt;
+    &lt;div class=&quot;flex flex-wrap md:justify-content-between justify-content-center card-container&quot;&gt;
+        &lt;div class=&quot;surface-500 text-white font-bold border-round m-2 flex align-items-center justify-content-center&quot; style=&quot;min-width: 200px; min-height: 100px&quot;&gt;surface-500&lt;/div&gt;
+        &lt;div class=&quot;bg-cyan-500 text-white font-bold border-round m-2 flex align-items-center justify-content-center&quot; style=&quot;min-width: 200px; min-height: 100px&quot;&gt;bg-cyan-500&lt;/div&gt;
+        &lt;div class=&quot;bg-orange-500 text-white font-bold border-round m-2 flex align-items-center justify-content-center&quot; style=&quot;min-width: 200px; min-height: 100px&quot;&gt;bg-orange-500&lt;/div&gt;
+    &lt;/div&gt;
 &lt;/div&gt;
 
 </code></pre>
@@ -667,17 +671,21 @@ permalink: /backgroundcolor
     <h5>Pseudo States</h5>
     <p>Focus, Hover and Active states are available with the <i>focus:</i>, <i>hover:</i>, <i>active:</i> prefixes respectively.</p>
 
-    <div class="card flex flex-wrap md:justify-content-between justify-content-center">
-        <div class="surface-500 hover:surface-700 text-0 shadow-1 m-2 flex align-items-center justify-content-center" style="min-width: 200px; min-height: 100px">hover:surface-700</div>
-        <div class="bg-blue-500 hover:bg-blue-700 text-0 shadow-1 m-2 flex align-items-center justify-content-center" style="min-width: 200px; min-height: 100px">hover:bg-blue-700</div>
-        <div class="bg-purple-500 hover:bg-purple-700 text-0 shadow-1 m-2 flex align-items-center justify-content-center" style="min-width: 200px; min-height: 100px">hover:bg-purple-700</div>
+    <div class="card">
+        <div class="flex flex-wrap md:justify-content-between justify-content-center card-container">
+            <div class="surface-500 hover:surface-700 border-round text-white font-bold m-2 flex align-items-center justify-content-center" style="min-width: 200px; min-height: 100px">hover:surface-700</div>
+            <div class="bg-cyan-500 hover:bg-cyan-700 border-round text-white font-bold m-2 flex align-items-center justify-content-center" style="min-width: 200px; min-height: 100px">hover:bg-cyan-700</div>
+            <div class="bg-orange-500 hover:bg-orange-700 border-round text-white font-bold m-2 flex align-items-center justify-content-center" style="min-width: 200px; min-height: 100px">hover:bg-orange-700</div>
+        </div>
     </div>
 
     <pre><code class="language-html">
-&lt;div class=&quot;card flex flex-wrap md:justify-content-between justify-content-center&quot;&gt;
-    &lt;div class=&quot;surface-500 hover:surface-700 text-0 shadow-1 m-2 flex align-items-center justify-content-center&quot; style=&quot;min-width: 200px; min-height: 100px&quot;&gt;hover:surface-700&lt;/div&gt;
-    &lt;div class=&quot;bg-blue-500 hover:bg-blue-700 text-0 shadow-1 m-2 flex align-items-center justify-content-center&quot; style=&quot;min-width: 200px; min-height: 100px&quot;&gt;hover:bg-blue-700&lt;/div&gt;
-    &lt;div class=&quot;bg-purple-500 hover:bg-purple-700 text-0 shadow-1 m-2 flex align-items-center justify-content-center&quot; style=&quot;min-width: 200px; min-height: 100px&quot;&gt;hover:bg-purple-700&lt;/div&gt;
+&lt;div class=&quot;card&quot;&gt;
+    &lt;div class=&quot;flex flex-wrap md:justify-content-between justify-content-center card-container&quot;&gt;
+        &lt;div class=&quot;surface-500 hover:surface-700 text-white font-bold m-2 flex align-items-center justify-content-center&quot; style=&quot;min-width: 200px; min-height: 100px&quot;&gt;hover:surface-700&lt;/div&gt;
+        &lt;div class=&quot;bg-cyan-500 hover:bg-cyan-700 text-white font-bold m-2 flex align-items-center justify-content-center&quot; style=&quot;min-width: 200px; min-height: 100px&quot;&gt;hover:bg-cyan-700&lt;/div&gt;
+        &lt;div class=&quot;bg-orange-500 hover:bg-orange-700 text-white font-bold m-2 flex align-items-center justify-content-center&quot; style=&quot;min-width: 200px; min-height: 100px&quot;&gt;hover:bg-orange-700&lt;/div&gt;
+    &lt;/div&gt;
 &lt;/div&gt;
 
 </code></pre>
