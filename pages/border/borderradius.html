@@ -59,7 +59,6 @@ permalink: /borderradius
         <div class="card-container blue-container">
             <div class="flex flex-wrap justify-content-center">
                 <div class="border-round w-12rem h-6rem m-2 bg-blue-500 text-white font-bold flex align-items-center justify-content-center">border-round</div>
-                <div class="border-circle w-12rem h-6rem m-2 bg-blue-500 text-white font-bold flex align-items-center justify-content-center">border-circle</div>
                 <div class="border-round-left w-12rem h-6rem m-2 bg-blue-500 text-white font-bold flex align-items-center justify-content-center">border-round-left</div>
             </div>
             <div class="flex flex-wrap justify-content-center">
@@ -72,14 +71,37 @@ permalink: /borderradius
 
     <pre><code class="language-html">
 &lt;div class=&quot;card&quot;&gt;
-    &lt;div class=&quot;flex flex-wrap md:justify-content-start justify-content-center card-container blue-container&quot;&gt;
-        &lt;div class=&quot;border-noround w-12rem h-6rem m-2 bg-blue-500 text-white font-bold flex align-items-center justify-content-center&quot;&gt;border-noround&lt;/div&gt;
-        &lt;div class=&quot;border-round w-12rem h-6rem m-2 bg-blue-500 text-white font-bold flex align-items-center justify-content-center&quot;&gt;border-round&lt;/div&gt;
-        &lt;div class=&quot;border-circle w-12rem h-6rem m-2 bg-blue-500 text-white font-bold flex align-items-center justify-content-center&quot;&gt;border-circle&lt;/div&gt;
-        &lt;div class=&quot;border-round-left w-12rem h-6rem m-2 bg-blue-500 text-white font-bold flex align-items-center justify-content-center&quot;&gt;border-round-left&lt;/div&gt;
-        &lt;div class=&quot;border-round-top w-12rem h-6rem m-2 bg-blue-500 text-white font-bold flex align-items-center justify-content-center&quot;&gt;border-round-top&lt;/div&gt;
-        &lt;div class=&quot;border-round-bottom w-12rem h-6rem m-2 bg-blue-500 text-white font-bold flex align-items-center justify-content-center&quot;&gt;border-round-bottom&lt;/div&gt;
-        &lt;div class=&quot;border-round-right w-12rem h-6rem m-2 bg-blue-500 text-white font-bold flex align-items-center justify-content-center&quot;&gt;border-round-right&lt;/div&gt;
+    &lt;div class=&quot;card-container blue-container&quot;&gt;
+        &lt;div class=&quot;flex flex-wrap justify-content-center&quot;&gt;
+            &lt;div class=&quot;border-round w-12rem h-6rem m-2 bg-blue-500 text-white font-bold flex align-items-center justify-content-center&quot;&gt;border-round&lt;/div&gt;
+            &lt;div class=&quot;border-round-left w-12rem h-6rem m-2 bg-blue-500 text-white font-bold flex align-items-center justify-content-center&quot;&gt;border-round-left&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;flex flex-wrap justify-content-center&quot;&gt;
+            &lt;div class=&quot;border-round-top w-12rem h-6rem m-2 bg-blue-500 text-white font-bold flex align-items-center justify-content-center&quot;&gt;border-round-top&lt;/div&gt;
+            &lt;div class=&quot;border-round-bottom w-12rem h-6rem m-2 bg-blue-500 text-white font-bold flex align-items-center justify-content-center&quot;&gt;border-round-bottom&lt;/div&gt;
+            &lt;div class=&quot;border-round-right w-12rem h-6rem m-2 bg-blue-500 text-white font-bold flex align-items-center justify-content-center&quot;&gt;border-round-right&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+</code></pre>
+
+    <div class="card">
+        <div class="card-container yellow-container">
+            <div class="flex flex-wrap justify-content-center">
+                <div class="border-circle w-12rem h-6rem m-2 bg-yellow-500 text-gray-900 font-bold flex align-items-center justify-content-center">oval</div>
+                <div class="border-circle w-6rem h-6rem m-2 bg-yellow-500 text-gray-900 font-bold flex align-items-center justify-content-center">circle</div>
+            </div>
+        </div>
+    </div>
+
+    <pre><code class="language-html">
+&lt;div class=&quot;card&quot;&gt;
+    &lt;div class=&quot;card-container yellow-container&quot;&gt;
+        &lt;div class=&quot;flex flex-wrap justify-content-center&quot;&gt;
+            &lt;div class=&quot;border-circle w-12rem h-6rem m-2 bg-yellow-500 text-gray-900 font-bold flex align-items-center justify-content-center&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;border-circle w-6rem h-6rem m-2 bg-yellow-500 text-gray-900 font-bold flex align-items-center justify-content-center&quot;&gt;circle&lt;/div&gt;
+        &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -88,15 +110,15 @@ permalink: /borderradius
     <h5>No Rounding</h5>
 
     <div class="card">
-        <div class="flex flex-wrap md:justify-content-start justify-content-center card-container yellow-container">
-            <div class="border-noround w-12rem h-6rem m-2 bg-yellow-500 text-gray-900 font-bold flex align-items-center justify-content-center">border-noround</div>
+        <div class="flex flex-wrap md:justify-content-start justify-content-center card-container green-container">
+            <div class="border-noround w-12rem h-6rem m-2 bg-green-500 text-white font-bold flex align-items-center justify-content-center">border-noround</div>
         </div>
     </div>
 
     <pre><code class="language-html">
 &lt;div class=&quot;card&quot;&gt;
-    &lt;div class=&quot;flex flex-wrap md:justify-content-start justify-content-center card-container yellow-container&quot;&gt;
-        &lt;div class=&quot;border-noround w-12rem h-6rem m-2 bg-yellow-500 text-gray-900 font-bold flex align-items-center justify-content-center&quot;&gt;border-noround&lt;/div&gt;
+    &lt;div class=&quot;flex flex-wrap md:justify-content-start justify-content-center card-container green-container&quot;&gt;
+        &lt;div class=&quot;border-noround w-12rem h-6rem m-2 bg-green-500 text-white font-bold flex align-items-center justify-content-center&quot;&gt;border-noround&lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
@@ -112,15 +134,15 @@ permalink: /borderradius
     </ul>
 
     <div class="card">
-        <div class="flex flex-wrap justify-content-center card-container green-container">
-            <div class="border-noround md:border-circle w-12rem h-6rem m-2 bg-green-500 text-white font-bold flex align-items-center justify-content-center">Responsive Radius</div>
+        <div class="flex flex-wrap justify-content-center card-container purple-container">
+            <div class="border-noround md:border-circle w-12rem h-6rem m-2 bg-purple-500 text-white font-bold flex align-items-center justify-content-center">Responsive Radius</div>
         </div>
     </div>
 
     <pre><code class="language-html">
 &lt;div class=&quot;card&quot;&gt;
-    &lt;div class=&quot;flex flex-wrap justify-content-center card-container green-container&quot;&gt;
-        &lt;div class=&quot;border-noround md:border-circle w-12rem h-6rem m-2 bg-green-500 text-white font-bold flex align-items-center justify-content-center&quot;&gt;Responsive Radius&lt;/div&gt;
+    &lt;div class=&quot;flex flex-wrap justify-content-center card-container purple-container&quot;&gt;
+        &lt;div class=&quot;border-noround md:border-circle w-12rem h-6rem m-2 bg-purple-500 text-white font-bold flex align-items-center justify-content-center&quot;&gt;Responsive Radius&lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
