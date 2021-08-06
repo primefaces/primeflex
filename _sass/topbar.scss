@@ -60,6 +60,16 @@
                 .scheme-button {
                     padding: 0;
                     margin-right: 2rem;
+                    background: var(--surface-card);
+                    color: var(--text-color);
+                    border-color: var(--gray-400);
+
+                    &:hover {
+                        background: var(--surface-ground);
+                    }
+                    &:active {
+                        background: var(--surface-ground);
+                    }
                 }
             }
         }
