@@ -33,10 +33,9 @@
         <div class="layout-topbar-right">
             <ul class="flex align-items-center">
                 <li>
-                    <label class="switch">
-                        <input id="color-switch" type="checkbox" role="switch" checked onclick="PrimeFlex.onToggleColorScheme(event)">
-                        <span class="slider"></span>
-                    </label>
+                    <button type="button" id="scheme-button" class="w-2rem h-2rem border-round button scheme-button" onclick="PrimeFlex.onToggleColorScheme(event)">
+                        <i class="pi pi-moon"></i>
+                    </button>
                 </li>
                 <li><a href="{{site.baseurl}}/setup">Setup</a></li>
                 <li><a href="https://forum.primefaces.org/viewforum.php?f=148">Forum</a></li>

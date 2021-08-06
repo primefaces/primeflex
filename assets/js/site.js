@@ -8,7 +8,7 @@ var PrimeFlex = {
         this.mobileMenuButton = document.getElementById('mobile-button');
         this.mobileTopbarButton = document.getElementById('mobile-topbar-button');
         this.mobileTopbarMenu = document.getElementById('mobile-topbar-menu');
-        this.colorSwitch = document.getElementById('color-switch');
+        this.schemeButton = document.getElementById('scheme-button');
 
         this.bindEvents();
 
@@ -18,16 +18,10 @@ var PrimeFlex = {
         }
 
         var colorSchemeUrl = window.sessionStorage.getItem('color-scheme-url');
-        var colorScheme = window.sessionStorage.getItem('color-scheme');
-
-        if (colorSchemeUrl) {
+        if(colorSchemeUrl) {
             const element = document.getElementById('layout-css');
             this.replaceLink(element, colorSchemeUrl);
-        }
-
-        if(colorScheme) {
-            this.colorSwitch.checked = colorScheme === 'true' ? true : false;
-            this.changeLogos(this.colorSwitch.checked);
+            this.changeLogos();
         }
     },
 
@@ -79,34 +73,41 @@ var PrimeFlex = {
         const element = document.getElementById('layout-css');
         const urlTokens = element.getAttribute('href').split('/');
 
-        if(!e.target.checked) {
+        const isLight = this.hasClass(e.currentTarget.firstElementChild, 'pi-moon');
+
+        if(isLight) {
             urlTokens[urlTokens.length - 1] = 'primeflex-arya.css';
-            this.changeLogos(e.target.checked);
         }
         else {
             urlTokens[urlTokens.length - 1] = 'primeflex-saga.css';
-            this.changeLogos(e.target.checked);
         }
 
         const newURL = urlTokens.join('/');
 
+        window.sessionStorage.setItem('color-scheme-url', newURL);
         this.replaceLink(element, newURL);
 
-        window.sessionStorage.setItem('color-scheme', e.target.checked);
-        window.sessionStorage.setItem('color-scheme-url', newURL);
+        this.changeLogos();
+
     },
 
-    changeLogos: function (mode) {
+    changeLogos: function () {
         const topbarLogoLink = document.getElementById('topbar-logo');
         const footerLogoLink = document.getElementById('footer-logo');
 
-        if(!mode) {
+        var colorSchemeUrl = window.sessionStorage.getItem('color-scheme-url');
+
+        if(colorSchemeUrl === '/assets/css/primeflex-arya.css') {
             topbarLogoLink.src = "/assets/images/primeflex-logo-white.svg";
             footerLogoLink.src = "/assets/images/prime-logo-white.svg";
+            this.removeClass(this.schemeButton.childNodes[1], 'pi-moon');
+            this.addClass(this.schemeButton.childNodes[1], 'pi-sun');
         }
         else {
             topbarLogoLink.src = "/assets/images/primeflex-logo-dark.svg";
             footerLogoLink.src = "/assets/images/prime-logo-dark.svg";
+            this.removeClass(this.schemeButton.childNodes[1], 'pi-sun');
+            this.addClass(this.schemeButton.childNodes[1], 'pi-moon');
         }
     },
 
