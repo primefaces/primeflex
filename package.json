@@ -30,5 +30,8 @@
     "gulp-rename": "^2.0.0",
     "gulp-uglify": "^3.0.2",
     "gulp-uglifycss": "^1.0.6"
+  },
+  "dependencies": {
+    "simple-jekyll-search": "^1.9.2"
   }
 }

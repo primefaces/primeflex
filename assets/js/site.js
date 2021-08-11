@@ -10,6 +10,11 @@ var PrimeFlex = {
         this.mobileTopbarMenu = document.getElementById('mobile-topbar-menu');
         this.schemeButton = document.getElementById('scheme-button');
 
+        this.searchMask = document.getElementById('search-mask');
+        this.searchContainer = document.getElementById('search-container');
+        this.searchInput = document.getElementById('search-input');
+        this.searchInputTopbar = document.getElementById('search-topbar');
+
         this.bindEvents();
 
         var scrollPos = window.sessionStorage.getItem('scroll-pos');
@@ -41,11 +46,41 @@ var PrimeFlex = {
                     $this.removeClass($this.mobileTopbarMenu, 'layout-mask-active');
                 }
             }
+            if(!($this.searchInputTopbar.contains(e.target) || $this.searchContainer.contains(e.target))) {
+                if ($this.hasClass($this.searchMask, 'active-mask')) {
+                    $this.removeClass($this.searchMask, 'active-mask');
+                    $this.searchInput.value = "";
+                }
+            }
+        });
+
+        window.addEventListener('keydown', function (e){
+            if((e.metaKey || e.ctrlKey) && (e.key === 'k' || e.key === 'K')) {
+                if (!$this.hasClass($this.searchMask, 'active-mask')) {
+                    $this.addClass($this.searchMask, 'active-mask');
+                    $this.searchInput.focus();
+                }
+            }
+            if(e.key === 'Escape') {
+                if ($this.hasClass($this.searchMask, 'active-mask')) {
+                    $this.removeClass($this.searchMask, 'active-mask');
+                    $this.searchInput.value = "";
+                }
+            }
         });
         
         this.menuWrapper.addEventListener('click', function() {
             window.sessionStorage.setItem('scroll-pos', $this.menu.scrollTop);
         });
+    },
+
+    onSearchClick: function (e) {
+        if (this.hasClass(this.searchMask, 'active-mask')) {
+            this.removeClass(this.searchMask, 'active-mask');
+        } else {
+            this.addClass(this.searchMask, 'active-mask');
+            this.searchInput.focus();
+        }
     },
 
     onToggleMobileTopbarMenu: function (e) {

@@ -29,6 +29,15 @@
             <a href="{{site.baseurl}}">
                 <img src="{{site.baseurl}}/assets/images/primeflex-logo-dark.svg" alt="prime" id="topbar-logo">
             </a>
+            <div id="search-wrapper" class="search-wrapper">
+                <input type="text" id="search-topbar" class="inputfield search-topbar" placeholder="Search ..." onclick="PrimeFlex.onSearchClick(event)">
+                <div id="search-mask" class="search-mask">
+                    <div id="search-container" class="search-container">
+                        <input type="text" id="search-input" class="inputfield w-full" placeholder="Search ...">
+                        <ul id="results-container" class="list-none m-0 p-0 border-round surface-ground"></ul>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="layout-topbar-right">
             <ul class="flex align-items-center">
@@ -81,5 +90,22 @@
 
 <script type="text/javascript" src="{{site.baseurl}}/assets/js/prism.js"></script>
 <script type="text/javascript" src="{{site.baseurl}}/assets/js/site.js"></script>
+
+<!-- Script pointing to search-script.js -->
+<script src="https://unpkg.com/simple-jekyll-search@latest/dest/simple-jekyll-search.min.js"></script>
+
+<!-- Configuration -->
+<script>
+    SimpleJekyllSearch({
+        searchInput: document.getElementById('search-input'),
+        resultsContainer: document.getElementById('results-container'),
+        searchResultTemplate: '<li><a href="{url}">{title}</a></li>',
+        noResultsText: '<li>No result found!</li>',
+        sortMiddleware: function(a, b) {
+            //console.log(a,b)
+        },
+        json: '/search.json'
+    })
+</script>
 </body>
 </html>

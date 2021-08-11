@@ -26,6 +26,79 @@
         }
     }
 
+    .layout-topbar-left {
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+        .search-topbar {
+            margin-left: 2rem;
+        }
+
+        .search-mask {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            flex-direction: column;
+            align-items: center;
+            background-color: #9e9e9e85;
+            transition-property: background-color;
+
+            &.active-mask {
+                display: flex;
+                z-index: 100;
+            }
+
+            .search-container {
+                min-width: 50%;
+                position: absolute;
+                top: 70px;
+
+                .inputfield {
+                    min-height: 3rem;
+                }
+
+                ul {
+                    min-width: 12rem;
+                    pointer-events: auto;
+                    z-index: 101;
+
+                    li {
+                        padding: .25rem 1rem;
+                        display: flex;
+
+                        &:first-child {
+                            padding-top: 1rem;
+                        }
+
+                        &:last-child {
+                            padding-bottom: 1rem;
+                        }
+
+                        a {
+                            padding: 1rem .5rem;
+                            text-decoration: none;
+                            width: 100%;
+                            font-weight: bold;
+                            border-radius: var(--border-radius);
+                            color: var(--blue-400);
+                            background-color: var(--surface-card);
+
+                            &:hover {
+                                background-color: var(--surface-100);
+                                color: var(--text-color);
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+
     .layout-topbar-right {
         height: 100%;
         display: flex;
