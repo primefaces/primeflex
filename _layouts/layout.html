@@ -30,10 +30,18 @@
                 <img src="{{site.baseurl}}/assets/images/primeflex-logo-dark.svg" alt="prime" id="topbar-logo">
             </a>
             <div id="search-wrapper" class="search-wrapper">
-                <input type="text" id="search-topbar" class="inputfield search-topbar" placeholder="Search ..." onclick="PrimeFlex.onSearchClick(event)">
+                <span class="inputfield-container relative inline-block ml-5">
+                    <i class="pi pi-search left-icon absolute top-50"></i>
+                    <input type="text" id="search-topbar" class="inputfield px-5" placeholder="Search ..." onclick="PrimeFlex.onSearchClick(event)">
+                    <span class="right-icon absolute top-50">⌘ K</span>
+                </span>
                 <div id="search-mask" class="search-mask">
                     <div id="search-container" class="search-container">
-                        <input type="text" id="search-input" class="inputfield w-full" placeholder="Search ...">
+                        <span class="inputfield-container relative inline-block w-full">
+                            <i class="pi pi-search left-icon absolute top-50"></i>
+                            <input type="text" id="search-input" class="inputfield w-full pl-5" placeholder="Search ...">
+                            <span class="right-icon absolute top-50">esc ⎋</span>
+                        </span>
                         <ul id="results-container" class="list-none m-0 p-0 border-round surface-ground"></ul>
                     </div>
                 </div>
@@ -101,9 +109,6 @@
         resultsContainer: document.getElementById('results-container'),
         searchResultTemplate: '<li><a href="{url}">{title}</a></li>',
         noResultsText: '<li>No result found!</li>',
-        sortMiddleware: function(a, b) {
-            //console.log(a,b)
-        },
         json: '/search.json'
     })
 </script>
