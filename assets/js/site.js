@@ -6,8 +6,6 @@ var PrimeFlex = {
         this.menu = document.getElementById('layout-menu');
         this.mask = document.getElementById('layout-mask');
         this.mobileMenuButton = document.getElementById('mobile-button');
-        this.mobileTopbarButton = document.getElementById('mobile-topbar-button');
-        this.mobileTopbarMenu = document.getElementById('mobile-topbar-menu');
         this.schemeButton = document.getElementById('scheme-button');
 
         this.searchMask = document.getElementById('search-mask');
@@ -15,6 +13,8 @@ var PrimeFlex = {
         this.searchInput = document.getElementById('search-input');
         this.searchInputTopbar = document.getElementById('search-topbar');
         this.resultList = document.getElementById('results-container');
+
+        this.mobileSearchButton = document.getElementById('mobile-search-button')
 
         this.bindEvents();
 
@@ -41,13 +41,8 @@ var PrimeFlex = {
                     $this.removeClass($this.mask, 'layout-mask-active');
                 }
             }
-            if(!($this.mobileTopbarMenu.contains(e.target) || $this.mobileTopbarButton.contains(e.target))) { //topbar outside click
-                if ($this.hasClass($this.mobileTopbarMenu, 'active')) {
-                    $this.removeClass($this.mobileTopbarMenu, 'active');
-                    $this.removeClass($this.mobileTopbarMenu, 'layout-mask-active');
-                }
-            }
-            if(!($this.searchInputTopbar.contains(e.target) || $this.searchContainer.contains(e.target))) { //search dialog outside click
+
+            if(!($this.searchInputTopbar.contains(e.target) || $this.searchContainer.contains(e.target) || $this.mobileSearchButton.contains(e.target))) { //search dialog outside click
                 if ($this.hasClass($this.searchMask, 'active-mask')) {
                     $this.removeClass($this.searchMask, 'active-mask');
                     $this.unblockBodyScroll();
@@ -123,23 +118,15 @@ var PrimeFlex = {
         }
     },
 
-    onKeydown: function (e) {
+    onKeyup: function (e) {
         if(this.resultList && this.resultList.childNodes.length > 0)
         {
             if(e.key === 'ArrowDown' && this.resultList.firstElementChild.firstElementChild) {
                 this.resultList.firstElementChild.firstElementChild.focus();
             }
-        }
-    },
 
-    onToggleMobileTopbarMenu: function (e) {
-        var menubutton = e.currentTarget;
-        var menu = menubutton.nextElementSibling;
-
-        if (this.hasClass(menu, 'active')) {
-            this.removeClass(menu, 'active');
-        } else {
-            this.addClass(menu, 'active');
+            this.searchInput.style.borderBottomLeftRadius = '0';
+            this.searchInput.style.borderBottomRightRadius = '0';
         }
     },
 
@@ -177,18 +164,21 @@ var PrimeFlex = {
 
     changeLogos: function () {
         const topbarLogoLink = document.getElementById('topbar-logo');
+        const mobileLogoLink = document.getElementById('mobile-logo');
         const footerLogoLink = document.getElementById('footer-logo');
 
         var colorSchemeUrl = window.sessionStorage.getItem('color-scheme-url');
 
         if(colorSchemeUrl === '/assets/css/primeflex-arya.css') {
             topbarLogoLink.src = "/assets/images/primeflex-logo-white.svg";
+            mobileLogoLink.src = "/assets/images/primeflex-logo-white.svg";
             footerLogoLink.src = "/assets/images/prime-logo-white.svg";
             this.removeClass(this.schemeButton.childNodes[1], 'pi-moon');
             this.addClass(this.schemeButton.childNodes[1], 'pi-sun');
         }
         else {
             topbarLogoLink.src = "/assets/images/primeflex-logo-dark.svg";
+            mobileLogoLink.src = "/assets/images/primeflex-logo-dark.svg";
             footerLogoLink.src = "/assets/images/prime-logo-dark.svg";
             this.removeClass(this.schemeButton.childNodes[1], 'pi-sun');
             this.addClass(this.schemeButton.childNodes[1], 'pi-moon');

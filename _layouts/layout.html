@@ -23,6 +23,10 @@
     <div class="layout-topbar flex align-items-center justify-content-between">
         <div class="mobile-menu-wrapper">
             <a class="mobile-button" id="mobile-button" onclick="PrimeFlex.onToggleMobileMenu(event)"><i class="pi pi-bars"></i></a>
+            <a href="{{site.baseurl}}">
+                <img src="{{site.baseurl}}/assets/images/primeflex-logo-dark.svg" alt="prime" id="mobile-logo">
+            </a>
+            <a class="mobile-search-button" id="mobile-search-button" onclick="PrimeFlex.onSearchClick(event)"><i class="pi pi-search"></i></a>
         </div>
 
         <div class="layout-topbar-left">
@@ -30,7 +34,7 @@
                 <img src="{{site.baseurl}}/assets/images/primeflex-logo-dark.svg" alt="prime" id="topbar-logo">
             </a>
             <div id="search-wrapper" class="search-wrapper">
-                <span class="inputfield-container relative inline-block ml-5 cursor-pointer" onclick="PrimeFlex.onSearchClick(event)">
+                <span class="inputfield-container relative ml-5 cursor-pointer" onclick="PrimeFlex.onSearchClick(event)">
                     <i class="pi pi-search left-icon absolute top-50"></i>
                     <input type="text" id="search-topbar" class="inputfield hover:border-gray-400 cursor-pointer px-5" placeholder="Search ..." readonly>
                     <span class="right-icon absolute top-50 bg-gray-200">⌘ K</span>
@@ -39,7 +43,7 @@
                     <div id="search-container" class="search-container">
                         <span class="inputfield-container relative inline-block w-full">
                             <i class="pi pi-search left-icon absolute top-50"></i>
-                            <input type="text" id="search-input" autocomplete="off" class="inputfield w-full pl-5" placeholder="Search ..." onkeyup="PrimeFlex.onKeydown(event)">
+                            <input type="text" id="search-input" autocomplete="off" class="inputfield w-full pl-5" placeholder="Search ..." onkeyup="PrimeFlex.onKeyup(event)">
                             <div class="right-icon absolute top-50 bg-gray-200 flex align-items-center"><div style="margin-bottom: 2px">esc</div> ⎋</div>
                         </span>
                         <ul id="results-container" class="list-none m-0 p-0 surface-ground"></ul>
@@ -61,7 +65,6 @@
             </ul>
 
             <div class="mobile-topbar-menu-wrapper">
-                <a class="mobile-topbar-button" id="mobile-topbar-button" onclick="PrimeFlex.onToggleMobileTopbarMenu(event)"><i class="pi pi-ellipsis-v"></i></a>
                 <ul class="mobile-topbar-menu clearlist" id="mobile-topbar-menu">
                     <li><a href="https://www.github.com/primefaces/primeflex">GitHub</a></li>
                     <li><a href="https://forum.primefaces.org/viewforum.php?f=148">Forum</a></li>

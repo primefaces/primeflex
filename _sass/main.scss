@@ -84,6 +84,10 @@ ul {
 @media screen and (max-width: 960px) {
     .layout-main {
         margin-left: 0;
+
+        .layout-content {
+            padding-top: 110px;
+        }
     }
 
     .layout-mask {
