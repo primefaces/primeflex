@@ -30,19 +30,19 @@
                 <img src="{{site.baseurl}}/assets/images/primeflex-logo-dark.svg" alt="prime" id="topbar-logo">
             </a>
             <div id="search-wrapper" class="search-wrapper">
-                <span class="inputfield-container relative inline-block ml-5">
+                <span class="inputfield-container relative inline-block ml-5 cursor-pointer" onclick="PrimeFlex.onSearchClick(event)">
                     <i class="pi pi-search left-icon absolute top-50"></i>
-                    <input type="text" id="search-topbar" class="inputfield px-5" placeholder="Search ..." onclick="PrimeFlex.onSearchClick(event)">
-                    <span class="right-icon absolute top-50">⌘ K</span>
+                    <input type="text" id="search-topbar" class="inputfield hover:border-gray-400 cursor-pointer px-5" placeholder="Search ..." readonly>
+                    <span class="right-icon absolute top-50 bg-gray-200">⌘ K</span>
                 </span>
                 <div id="search-mask" class="search-mask">
                     <div id="search-container" class="search-container">
                         <span class="inputfield-container relative inline-block w-full">
                             <i class="pi pi-search left-icon absolute top-50"></i>
                             <input type="text" id="search-input" autocomplete="off" class="inputfield w-full pl-5" placeholder="Search ..." onkeyup="PrimeFlex.onKeydown(event)">
-                            <span class="right-icon absolute top-50">esc ⎋</span>
+                            <div class="right-icon absolute top-50 bg-gray-200 flex align-items-center"><div style="margin-bottom: 2px">esc</div> ⎋</div>
                         </span>
-                        <ul id="results-container" class="list-none m-0 p-0 border-round surface-ground"></ul>
+                        <ul id="results-container" class="list-none m-0 p-0 surface-ground"></ul>
                     </div>
                 </div>
             </div>

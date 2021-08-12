@@ -4,7 +4,6 @@ layout: none
 [
 {% for post in site.pages %}
 {% if post.permalink contains "/" %}
-{% assign content = post.content | strip_newlines | strip_html | lstrip | remove: '"' | remove: "'" | remove: ":root { ** }" %}
 {% unless forloop.first %},{% endunless %}
 {
 "layout": "{{post.layout}}",
