@@ -39,7 +39,7 @@
                     <div id="search-container" class="search-container">
                         <span class="inputfield-container relative inline-block w-full">
                             <i class="pi pi-search left-icon absolute top-50"></i>
-                            <input type="text" id="search-input" class="inputfield w-full pl-5" placeholder="Search ...">
+                            <input type="text" id="search-input" autocomplete="off" class="inputfield w-full pl-5" placeholder="Search ..." onkeyup="PrimeFlex.onKeydown(event)">
                             <span class="right-icon absolute top-50">esc ⎋</span>
                         </span>
                         <ul id="results-container" class="list-none m-0 p-0 border-round surface-ground"></ul>
@@ -107,7 +107,7 @@
     SimpleJekyllSearch({
         searchInput: document.getElementById('search-input'),
         resultsContainer: document.getElementById('results-container'),
-        searchResultTemplate: '<li><a href="{url}">{title}</a></li>',
+        searchResultTemplate: '<li><a href="{url}" tabindex="1">{title}</a></li>',
         noResultsText: '<li>No result found!</li>',
         json: '/search.json'
     })

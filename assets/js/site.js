@@ -14,6 +14,7 @@ var PrimeFlex = {
         this.searchContainer = document.getElementById('search-container');
         this.searchInput = document.getElementById('search-input');
         this.searchInputTopbar = document.getElementById('search-topbar');
+        this.resultList = document.getElementById('results-container');
 
         this.bindEvents();
 
@@ -34,37 +35,57 @@ var PrimeFlex = {
         var $this = this;
 
         window.addEventListener('click', function(e){
-            if(!($this.menuWrapper.contains(e.target) || $this.mobileMenuButton.contains(e.target))) {
+            if(!($this.menuWrapper.contains(e.target) || $this.mobileMenuButton.contains(e.target))) { //menu outside click
                 if ($this.hasClass($this.menuWrapper, 'active')) {
                     $this.removeClass($this.menuWrapper, 'active');
                     $this.removeClass($this.mask, 'layout-mask-active');
                 }
             }
-            if(!($this.mobileTopbarMenu.contains(e.target) || $this.mobileTopbarButton.contains(e.target))) {
+            if(!($this.mobileTopbarMenu.contains(e.target) || $this.mobileTopbarButton.contains(e.target))) { //topbar outside click
                 if ($this.hasClass($this.mobileTopbarMenu, 'active')) {
                     $this.removeClass($this.mobileTopbarMenu, 'active');
                     $this.removeClass($this.mobileTopbarMenu, 'layout-mask-active');
                 }
             }
-            if(!($this.searchInputTopbar.contains(e.target) || $this.searchContainer.contains(e.target))) {
+            if(!($this.searchInputTopbar.contains(e.target) || $this.searchContainer.contains(e.target))) { //search dialog outside click
                 if ($this.hasClass($this.searchMask, 'active-mask')) {
                     $this.removeClass($this.searchMask, 'active-mask');
+                    $this.unblockBodyScroll();
                     $this.searchInput.value = "";
                 }
             }
         });
 
         window.addEventListener('keydown', function (e){
-            if((e.metaKey || e.ctrlKey) && (e.key === 'k' || e.key === 'K')) {
+            if((e.metaKey || e.ctrlKey) && (e.key === 'k' || e.key === 'K')) { //search dialog open
                 if (!$this.hasClass($this.searchMask, 'active-mask')) {
                     $this.addClass($this.searchMask, 'active-mask');
+                    $this.blockBodyScroll();
                     $this.searchInput.focus();
                 }
             }
             if(e.key === 'Escape') {
-                if ($this.hasClass($this.searchMask, 'active-mask')) {
+                if ($this.hasClass($this.searchMask, 'active-mask')) { //search dialog close
                     $this.removeClass($this.searchMask, 'active-mask');
+                    $this.unblockBodyScroll();
                     $this.searchInput.value = "";
+                }
+            }
+
+            var previousElement = document.activeElement.parentElement.previousElementSibling;
+            var nextElement = document.activeElement.parentElement.nextElementSibling;
+            if($this.resultList && $this.resultList.childNodes.length > 0) {    //search result navigation
+                if(e.key === 'ArrowDown' && nextElement) {
+                    nextElement.firstElementChild.focus();
+                }
+                if(e.key === 'ArrowUp' && previousElement) {
+                    previousElement.firstElementChild.focus();
+                }
+                if(e.key === 'ArrowRight' && nextElement) {
+                    nextElement.firstElementChild.focus();
+                }
+                if(e.key === 'ArrowLeft' && previousElement) {
+                    previousElement.firstElementChild.focus();
                 }
             }
         });
@@ -77,9 +98,37 @@ var PrimeFlex = {
     onSearchClick: function (e) {
         if (this.hasClass(this.searchMask, 'active-mask')) {
             this.removeClass(this.searchMask, 'active-mask');
+            this.unblockBodyScroll();
         } else {
             this.addClass(this.searchMask, 'active-mask');
+            this.blockBodyScroll();
             this.searchInput.focus();
+        }
+    },
+
+    blockBodyScroll: function () {
+        if (document.body.classList) {
+            document.body.classList.add('blocked-scroll');
+        } else {
+            document.body.className += ' blocked-scroll';
+        }
+    },
+
+    unblockBodyScroll: function() {
+        if (document.body.classList) {
+            document.body.classList.remove('blocked-scroll');
+        } else {
+            document.body.className = document.body.className.replace(new RegExp('(^|\\b)' +
+                'blocked-scroll'.split(' ').join('|') + '(\\b|$)', 'gi'), ' ');
+        }
+    },
+
+    onKeydown: function (e) {
+        if(this.resultList && this.resultList.childNodes.length > 0)
+        {
+            if(e.key === 'ArrowDown' && this.resultList.firstElementChild.firstElementChild) {
+                this.resultList.firstElementChild.firstElementChild.focus();
+            }
         }
     },
 

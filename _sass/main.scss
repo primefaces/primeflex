@@ -40,6 +40,10 @@ body {
     background: var(--surface-ground);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+
+    &.blocked-scroll {
+        overflow: hidden;
+    }
 }
 
 a {
