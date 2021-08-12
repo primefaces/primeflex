@@ -229,10 +229,16 @@ ul {
         width: 100%;
         background-color: var(--surface-overlay);
 
-        th {
-            border-bottom: 1px solid var(--surface-border);
-            padding: 1rem;
-            text-align: left;
+        thead {
+            background-color: var(--surface-overlay);
+            position: sticky;
+            top: 0;
+
+            th {
+                border-bottom: 1px solid var(--surface-border);
+                padding: 1rem;
+                text-align: left;
+            }
         }
 
         tbody{
@@ -243,6 +249,10 @@ ul {
                 font-weight: 700;
                 color: var(--text-color-secondary);
                 font-size: 14px;
+
+                &:first-child {
+                    user-select: all;
+                }
             }
         }
     }
