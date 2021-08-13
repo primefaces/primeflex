@@ -24,7 +24,7 @@
         <div class="mobile-menu-wrapper">
             <a class="mobile-button" id="mobile-button" onclick="PrimeFlex.onToggleMobileMenu(event)"><i class="pi pi-bars"></i></a>
             <a href="{{site.baseurl}}">
-                <img src="{{site.baseurl}}/assets/images/primeflex-logo-dark.svg" alt="prime" id="mobile-logo">
+                <img src="{{site.baseurl}}/assets/images/logo-text-dark.svg" alt="prime" id="mobile-logo">
             </a>
             <a class="mobile-search-button" id="mobile-search-button" onclick="PrimeFlex.onSearchClick(event)"><i class="pi pi-search"></i></a>
         </div>
@@ -37,14 +37,14 @@
                 <span class="inputfield-container relative ml-5 cursor-pointer" onclick="PrimeFlex.onSearchClick(event)">
                     <i class="pi pi-search left-icon absolute top-50"></i>
                     <input type="text" id="search-topbar" class="inputfield hover:border-gray-400 cursor-pointer px-5" placeholder="Search ..." readonly>
-                    <span class="right-icon absolute top-50 bg-gray-200">⌘ K</span>
+                    <span class="right-icon absolute top-50 surface-100">⌘ K</span>
                 </span>
                 <div id="search-mask" class="search-mask">
                     <div id="search-container" class="search-container">
                         <span class="inputfield-container relative inline-block w-full">
                             <i class="pi pi-search left-icon absolute top-50"></i>
                             <input type="text" id="search-input" autocomplete="off" class="inputfield w-full pl-5" placeholder="Search ..." onkeyup="PrimeFlex.onKeyup(event)">
-                            <div class="right-icon absolute top-50 bg-gray-200 flex align-items-center"><div style="margin-bottom: 2px">esc</div> ⎋</div>
+                            <div class="right-icon absolute top-50 surface-100 flex align-items-center"><div>esc</div> ⎋</div>
                         </span>
                         <ul id="results-container" class="list-none m-0 p-0 surface-ground"></ul>
                     </div>
@@ -53,15 +53,15 @@
         </div>
         <div class="layout-topbar-right">
             <ul class="flex align-items-center">
-                <li>
-                    <button type="button" id="scheme-button" class="w-2rem h-2rem border-round button scheme-button shadow-1" onclick="PrimeFlex.onToggleColorScheme(event)">
-                        <i class="pi pi-moon"></i>
-                    </button>
-                </li>
                 <li><a href="{{site.baseurl}}/setup">Setup</a></li>
                 <li><a href="https://forum.primefaces.org/viewforum.php?f=148">Forum</a></li>
                 <li><a href="https://discord.com/invite/gzKFYnpmCY">Discord</a></li>
                 <li><a href="https://www.github.com/primefaces/primeflex">GitHub</a></li>
+                <li>
+                    <button type="button" id="scheme-button" class="button scheme-button shadow-1" onclick="PrimeFlex.onToggleColorScheme(event)">
+                        <i class="pi pi-moon"></i>
+                    </button>
+                </li>
             </ul>
 
             <div class="mobile-topbar-menu-wrapper">

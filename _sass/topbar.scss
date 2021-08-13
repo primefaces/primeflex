@@ -34,14 +34,13 @@
             padding: .25rem;
             width: 2rem;
             height: 2rem;
-            font-size: 1rem;
+            font-size: 1.5rem;
             margin-left: 2rem;
             text-align: center;
             text-decoration: none;
             background: var(--surface-card);
             color: var(--text-color);
             border-radius: var(--border-radius);
-            border: 1px solid var(--gray-400);
 
             &:hover {
                 background: var(--surface-ground);
@@ -73,7 +72,7 @@
                     padding: .25rem;
 
                     div {
-                        margin-right: 2px;
+                        margin-right: 4px;
                         margin-bottom: 2px;
                     }
                 }
@@ -111,7 +110,7 @@
                         min-width: 12rem;
                         pointer-events: auto;
                         z-index: 101;
-                        border-radius: var(--border-radius);
+                        border-radius: 10px;
                         border-top-left-radius: 0;
                         border-top-right-radius: 0;
 
@@ -188,16 +187,22 @@
 
                 .scheme-button {
                     padding: 0;
-                    margin-right: 2rem;
-                    background: var(--surface-card);
-                    color: var(--text-color);
-                    border-color: var(--gray-400);
+                    margin-left: 1rem;
+                    background: var(--surface-900);
+                    color: var(--surface-0);
+                    border: 0 none;
+                    border-radius: 50%;
+                    width: 2rem;
+                    height: 2rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
 
                     &:hover {
-                        background: var(--surface-ground);
+                        background: var(--surface-800);
                     }
                     &:active {
-                        background: var(--surface-ground);
+                        background: var(--surface-800);
                     }
                 }
             }
@@ -283,18 +288,21 @@
 
         .layout-topbar-right {
             > ul {
-                li:not(:first-child) {
+                li:not(:last-child) {
                     display: none !important;
                 }
 
-                li:first-child {
+                li:last-child {
                     position: fixed;
-                    bottom: 3rem;
-                    right: 3rem;
+                    bottom: 2rem;
+                    right: 2rem;
                     height: auto;
 
                     .scheme-button {
-                        margin-right: 0;
+                        margin-left: 0;
+                        width: 3rem;
+                        height: 3rem;
+                        font-size: 1.5rem;
                     }
                 }
             }

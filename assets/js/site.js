@@ -128,6 +128,10 @@ var PrimeFlex = {
             this.searchInput.style.borderBottomLeftRadius = '0';
             this.searchInput.style.borderBottomRightRadius = '0';
         }
+        else {
+            this.searchInput.style.borderBottomLeftRadius = '10px';
+            this.searchInput.style.borderBottomRightRadius = '10px';
+        }
     },
 
     onToggleMobileMenu: function (e) {
@@ -171,14 +175,14 @@ var PrimeFlex = {
 
         if(colorSchemeUrl === '/assets/css/primeflex-arya.css') {
             topbarLogoLink.src = "/assets/images/primeflex-logo-white.svg";
-            mobileLogoLink.src = "/assets/images/primeflex-logo-white.svg";
+            mobileLogoLink.src = "/assets/images/logo-text-light.svg";
             footerLogoLink.src = "/assets/images/prime-logo-white.svg";
             this.removeClass(this.schemeButton.childNodes[1], 'pi-moon');
             this.addClass(this.schemeButton.childNodes[1], 'pi-sun');
         }
         else {
             topbarLogoLink.src = "/assets/images/primeflex-logo-dark.svg";
-            mobileLogoLink.src = "/assets/images/primeflex-logo-dark.svg";
+            mobileLogoLink.src = "/assets/images/logo-text-dark.svg";
             footerLogoLink.src = "/assets/images/prime-logo-dark.svg";
             this.removeClass(this.schemeButton.childNodes[1], 'pi-sun');
             this.addClass(this.schemeButton.childNodes[1], 'pi-moon');
