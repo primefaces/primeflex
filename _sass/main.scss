@@ -295,20 +295,20 @@ pre[class*="language-"] {
             &.keyword {
                 color: #2196F3 !important;
             }
-
+    
             &.attr-name,
             &.attr-string {
                 color: #2196F3 !important;
             }
-
+    
             &.attr-value {
                 color: #4CAF50 !important;
             }
-
+    
             &.punctuation {
-                color: #2E3440;
+                color: var(--text-color);
             }
-
+    
             &.operator,
             &.string {
                 background: transparent;
