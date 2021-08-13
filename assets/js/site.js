@@ -57,6 +57,7 @@ var PrimeFlex = {
                     $this.addClass($this.searchMask, 'active-mask');
                     $this.blockBodyScroll();
                     $this.searchInput.focus();
+                    e.preventDefault();
                 }
             }
             if(e.key === 'Escape') {
