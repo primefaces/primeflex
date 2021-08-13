@@ -23,7 +23,7 @@ var PrimeFlex = {
             this.menu.scrollTop = parseInt(scrollPos);
         }
 
-        var colorSchemeUrl = window.sessionStorage.getItem('color-scheme-url');
+        var colorSchemeUrl = window.localStorage.getItem('color-scheme-url');
         if(colorSchemeUrl) {
             const element = document.getElementById('layout-css');
             this.replaceLink(element, colorSchemeUrl);
@@ -159,7 +159,7 @@ var PrimeFlex = {
 
         const newURL = urlTokens.join('/');
 
-        window.sessionStorage.setItem('color-scheme-url', newURL);
+        window.localStorage.setItem('color-scheme-url', newURL);
         this.replaceLink(element, newURL);
 
         this.changeLogos();
@@ -171,19 +171,19 @@ var PrimeFlex = {
         const mobileLogoLink = document.getElementById('mobile-logo');
         const footerLogoLink = document.getElementById('footer-logo');
 
-        var colorSchemeUrl = window.sessionStorage.getItem('color-scheme-url');
+        var colorSchemeUrl = window.localStorage.getItem('color-scheme-url');
 
-        if(colorSchemeUrl === '/assets/css/primeflex-arya.css') {
-            topbarLogoLink.src = "/assets/images/primeflex-logo-white.svg";
-            mobileLogoLink.src = "/assets/images/logo-text-light.svg";
-            footerLogoLink.src = "/assets/images/prime-logo-white.svg";
+        if(colorSchemeUrl.endsWith('assets/css/primeflex-arya.css')) {
+            topbarLogoLink.src = "assets/images/primeflex-logo-white.svg";
+            mobileLogoLink.src = "assets/images/logo-text-light.svg";
+            footerLogoLink.src = "assets/images/prime-logo-white.svg";
             this.removeClass(this.schemeButton.childNodes[1], 'pi-moon');
             this.addClass(this.schemeButton.childNodes[1], 'pi-sun');
         }
         else {
-            topbarLogoLink.src = "/assets/images/primeflex-logo-dark.svg";
-            mobileLogoLink.src = "/assets/images/logo-text-dark.svg";
-            footerLogoLink.src = "/assets/images/prime-logo-dark.svg";
+            topbarLogoLink.src = "assets/images/primeflex-logo-dark.svg";
+            mobileLogoLink.src = "assets/images/logo-text-dark.svg";
+            footerLogoLink.src = "assets/images/prime-logo-dark.svg";
             this.removeClass(this.schemeButton.childNodes[1], 'pi-sun');
             this.addClass(this.schemeButton.childNodes[1], 'pi-moon');
         }
