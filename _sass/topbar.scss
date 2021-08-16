@@ -28,22 +28,15 @@
         }
 
         .mobile-search-button {
-            display: none;
-            align-items: center;
-            justify-content: center;
+            display: block;
             padding: .25rem;
-            width: 2rem;
-            height: 2rem;
-            font-size: 1.5rem;
-            margin-left: 2rem;
-            text-align: center;
+            font-size: 2rem;
             text-decoration: none;
             background: var(--surface-card);
             color: var(--text-color);
-            border-radius: var(--border-radius);
 
             &:hover {
-                background: var(--surface-ground);
+                color: var(--primary-color);
             }
         }
     }
@@ -261,10 +254,6 @@
         .mobile-menu-wrapper {
             display: flex;
             flex-grow: 1;
-
-            .mobile-search-button {
-                display: flex;
-            }
         }
 
         .layout-topbar-left {
