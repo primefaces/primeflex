@@ -313,4 +313,47 @@ title: Theming
             </div>
         </div>
     </div>
+
+    <h5>Custom Colors</h5>
+    <p>Add news colors to existing palette made override $colors variable after theme import</p>
+
+    <div class="overflow-auto" style="max-height: 500px">
+        <pre><code class="language-css">
+        
+        /* Theme import */
+
+        $colors: "blue", "green", "yellow", "cyan", "pink", "indigo", "teal", "orange", "bluegray", "purple", "gray", "red";
+        
+        :root {
+            --red-50: #FFEBEE;
+            --red-100:#FFCDD2;
+            --red-200:#EF9A9A;
+            --red-300:#E57373;
+            --red-400:#EF5350;
+            --red-500:#F44336;
+            --red-600:#E53935;
+            --red-700:#D32F2F;
+            --red-800:#C62828;
+            --red-900:#B71C1C;
+        }
+        
+        </code></pre>
+    </div>
+    
+    <div class="card">
+        <div class="flex flex-wrap">
+            <div class="color-stack mb-6">
+                <div class="color-box" style="background-color: var(--red-50); color:#000000">red-50</div>
+                <div class="color-box" style="background-color: var(--red-100); color:#000000">red-100</div>
+                <div class="color-box" style="background-color: var(--red-200); color:#000000">red-200</div>
+                <div class="color-box" style="background-color: var(--red-300); color:#000000">red-300</div>
+                <div class="color-box" style="background-color: var(--red-400); color:#000000">red-400</div>
+                <div class="color-box" style="background-color: var(--red-500); color:#000000">red-500</div>
+                <div class="color-box" style="background-color: var(--red-600); color:#000000">red-600</div>
+                <div class="color-box" style="background-color: var(--red-700); color:#ffffff">red-700</div>
+                <div class="color-box" style="background-color: var(--red-800); color:#ffffff">red-800</div>
+                <div class="color-box" style="background-color: var(--red-900); color:#ffffff">red-900</div>
+            </div>
+        </div>
+    </div>
 </div>

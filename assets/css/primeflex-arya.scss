@@ -2,6 +2,10 @@
 ---
 @import 'lib/themes/arya-blue.scss';
 
+$colors: "blue", "green", "yellow", "cyan", "pink", "indigo", "teal", "orange", "bluegray", "purple", "gray", "red";
+
+@debug $colors;
+
 :root {
     --demo-bg-link: url("../images/tiny-checkers-dark.png");
     --demo-bg-blue: var(--blue-900);
@@ -11,4 +15,15 @@
     --demo-bg-indigo: var(--indigo-900);
     --demo-bg-orange: var(--orange-900);
     --demo-bg-cyan: var(--cyan-900);
+        
+    --red-50: #FFEBEE;
+    --red-100:#FFCDD2;
+    --red-200:#EF9A9A;
+    --red-300:#E57373;
+    --red-400:#EF5350;
+    --red-500:#F44336;
+    --red-600:#E53935;
+    --red-700:#D32F2F;
+    --red-800:#C62828;
+    --red-900:#B71C1C;
 }
