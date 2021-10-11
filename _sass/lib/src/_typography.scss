@@ -17,7 +17,7 @@ $text-transform-props: (
     "capitalize": capitalize
 );
 
-$text-truncate {
+$text-truncate-props {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -65,7 +65,7 @@ $white-space-props: (
 @include style-class('text-align', $text-align-props, true);
 @include style-class('text-decoration', $text-decoration-props);
 @include style-class('text-transform', $text-transform-props);
-@include style-class('text-truncate', $text-truncate);
+@include style-class('text-truncate', $text-truncate-props);
 @include style-class('font-weight', $font-weight-props, true);
 @include style-class('font-style', $font-style-props);
 @include style-class('font-size', $font-size-props, true);
