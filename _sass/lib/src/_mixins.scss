@@ -156,3 +156,45 @@
     }
 }
 
+@mixin rgba-color-class($name, $prop, $colors, $shades) {
+    @each $colorName, $colorValue in $colors {
+        .#{$name}#{$colorName}-alpha {
+            @each $shade in $shades {
+                &-#{$shade} {
+                    #{$prop}: #{"rgba(#{$colorValue},#{$shade / 100})"} !important;
+                    
+                }
+            }
+        }
+
+        .hover#{$separator} {
+            &#{$name}#{$colorName}-alpha {
+                @each $shade in $shades {
+                    &-#{$shade}:hover {
+                        #{$prop}: #{"rgba(#{$colorValue},#{$shade / 100})"} !important;
+                    }
+                }
+            }
+        }
+
+        .focus#{$separator} {
+            &#{$name}#{$colorName}-alpha {
+                @each $shade in $shades {
+                    &-#{$shade}:focus {
+                        #{$prop}: #{"rgba(#{$colorValue},#{$shade / 100})"} !important;
+                    }
+                }
+            }
+        }
+
+        .active#{$separator} {
+            &#{$name}#{$colorName}-alpha {
+                @each $shade in $shades {
+                    &-#{$shade}:active {
+                        #{$prop}: #{"rgba(#{$colorValue},#{$shade / 100})"} !important;
+                    }
+                }
+            }
+        }
+    }
+}

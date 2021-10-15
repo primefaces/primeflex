@@ -1,6 +1,7 @@
 $colors: "blue", "green", "yellow", "cyan", "pink", "indigo", "teal", "orange", "bluegray", "purple", "gray";
 $colorShades: 50, 100, 200, 300, 400, 500, 600, 700, 800, 900;
 $surfaceShades: 0, 50, 100, 200, 300, 400, 500, 600, 700, 800, 900;
+$rgbaShades: 10, 20, 30, 40, 50, 60, 70, 80, 90;
 
 @include surface-class('text', 'color', $surfaceShades);
 @include surface-class('surface', 'background-color', $surfaceShades);
@@ -10,6 +11,9 @@ $surfaceShades: 0, 50, 100, 200, 300, 400, 500, 600, 700, 800, 900;
 @include color-class('text-', 'color', $colors, $colorShades);
 @include color-class('bg-', 'background-color', $colors, $colorShades);
 @include color-class('border-', 'border-color', $colors, $colorShades);
+@include rgba-color-class('bg-', 'background-color', ("white": '255,255,255', 'black': '0,0,0'), $rgbaShades);
+@include rgba-color-class('border-', 'border-color', ("white": '255,255,255', 'black': '0,0,0'), $rgbaShades);
+@include rgba-color-class('text-', 'color', ("white": '255,255,255', 'black': '0,0,0'), $rgbaShades);
 
 .text-primary {
     color: var(--primary-color) !important;
