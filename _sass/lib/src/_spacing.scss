@@ -16,15 +16,25 @@ $margin-directions: (
     'l': 'margin-left',
     'b': 'margin-bottom',
     'x': ('margin-left','margin-right'),
-    'y': ('margin-top','margin-bottom'),
+    'y': ('margin-top','margin-bottom')
 );
 
-@mixin spacing-class($name, $directions, $scales, $auto: false) {
+@mixin spacing-class($name, $directions, $scales, $auto: false, $negative: false) {
     @each $dir, $prop in $directions {
         @for $i from 0 through length($scales) - 1 {
             .#{$name}#{$dir}-#{$i} {
                 @each $propName in $prop {
                     #{$propName}: $spacer * nth($scales, $i + 1) !important;
+                }
+            }
+        }
+
+        @if ($negative) {
+            @for $i from 1 through length($scales) - 1 {
+                .-#{$name}#{$dir}-#{$i} {
+                    @each $propName in $prop {
+                        #{$propName}: -1 * $spacer * nth($scales, $i + 1) !important;
+                    }
                 }
             }
         }
@@ -49,6 +59,16 @@ $margin-directions: (
                     }
                 }
 
+                @if ($negative) {
+                    @for $i from 1 through length($scales) - 1 {
+                        .#{$key + $separator}-#{$name}#{$dir}-#{$i} {
+                            @each $propName in $prop {
+                                #{$propName}: -1 * $spacer * nth($scales, $i + 1) !important;
+                            }
+                        }
+                    }
+                }
+
                 @if ($auto) {
                     .#{$key + $separator}#{$name}#{$dir}-auto {
                         @each $propName in $prop {
@@ -62,4 +82,4 @@ $margin-directions: (
 }
 
 @include spacing-class('p', $padding-directions, $space-scales);
-@include spacing-class('m', $margin-directions, $space-scales, true);
+@include spacing-class('m', $margin-directions, $space-scales, true, true);
