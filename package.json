@@ -5,7 +5,7 @@
   "scripts": {
     "serve": "jekyll serve --livereload",
     "build-app": "jekyll build --config _config_prod.yml",
-    "build-lib": "sass --update _sass/lib/primeflex.scss:dist/primeflex.css && sass --update _sass/lib/primeflex.scss:dist/primeflex.min.css --style compressed && sass --update _sass/lib/themes:dist/themes && gulp copy-lib"
+    "build-lib": "sass --update _sass/lib/primeflex.scss:dist/primeflex.css --no-source-map && sass --update _sass/lib/primeflex.scss:dist/primeflex.min.css --no-source-map --style compressed && sass --update _sass/lib/themes:dist/themes && gulp copy-lib"
   },
   "repository": {
     "type": "git",
