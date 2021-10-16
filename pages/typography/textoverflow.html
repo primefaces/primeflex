@@ -1,0 +1,69 @@
+---
+layout: layout
+permalink: /textoverflow
+title: Text Overflow
+---
+
+<div>
+    <h2>Text Overflow</h2>
+    <p>Defines how the overflowed content gets displayed.</p>
+
+    <h5>Classes</h5>
+    <div class="overflow-auto" style="max-height: 500px">
+        <table class="doc-table">
+            <thead>
+                <tr>
+                    <th>Class</th>
+                    <th>Properties</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>text-overflow-clip</td>
+                    <td>text-overflow: clip;</td>
+                </tr>
+                <tr>
+                    <td>text-overflow-ellipsis</td>
+                    <td>text-overflow: ellipsis;</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h5>Examples</h5>
+    <div class="card">
+        <div class="flex align-items-center justify-content-center card-container flex-column">
+            <div class="surface-overlay border-round border-1 p-3 white-space-nowrap overflow-hidden text-overflow-clip" style="width:200px">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </div>
+
+            <div class="surface-overlay border-round border-1 p-3 mt-3 white-space-nowrap overflow-hidden text-overflow-ellipsis" style="width:200px">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </div>
+        </div>
+    </div>
+
+    <pre><code class="language-html">
+&lt;div class="card"&gt;
+    &lt;div class="flex align-items-center justify-content-center card-container flex-column"&gt;
+        &lt;div class="surface-overlay border-round border-1 p-3 white-space-nowrap overflow-hidden text-overflow-clip" style="width:200px"&gt;
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        &lt;/div&gt;
+
+        &lt;div class="surface-overlay border-round border-1 p-3 mt-3 white-space-nowrap overflow-hidden text-overflow-ellipsis" style="width:200px"&gt;
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+</code></pre>
+
+    <h5>Responsive</h5>
+    <p>Responsive alternatives are available for customizations based on screen size. Add the responsive breakpoint keyword followed by a semi-colon as a prefix such as <i>md:text-overflow-clip</i> to use a responsive class.</p>
+    <ul>
+        <li><b>sm</b>: small screens e.g. phones</li>
+        <li><b>md</b>: medium screens e.g. tablets</li>
+        <li><b>lg</b>: large screens e.g. notebooks</li>
+        <li><b>xl</b>: larger screens e.g monitors</li>
+    </ul>
+</div>

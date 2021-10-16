@@ -108,6 +108,8 @@
   link: /textalign
 - name: Text Decoration
   link: /textdecoration
+- name: Text Overflow
+  link: /textoverflow
 - name: Text Transform
   link: /texttransform
 - name: Line Height

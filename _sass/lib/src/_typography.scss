@@ -17,6 +17,11 @@ $text-transform-props: (
     "capitalize": capitalize
 );
 
+$text-overflow-props: (
+    "text-overflow-clip": clip,
+    "text-overflow-ellipsis": ellipsis
+);
+
 $font-weight-props: (
     "font-light": 300,
     "font-normal": 400,
@@ -59,6 +64,7 @@ $white-space-props: (
 @include style-class('text-align', $text-align-props, true);
 @include style-class('text-decoration', $text-decoration-props);
 @include style-class('text-transform', $text-transform-props);
+@include style-class('text-overflow', $text-overflow-props, true);
 @include style-class('font-weight', $font-weight-props, true);
 @include style-class('font-style', $font-style-props);
 @include style-class('font-size', $font-size-props, true);
