@@ -9,6 +9,7 @@ vendor
 .idea
 _site
 Gemfile.lock
+package-lock.json
 
 dist/src
 dist/primeflex.scss
