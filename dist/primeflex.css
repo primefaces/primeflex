@@ -5989,6 +5989,10 @@
   border-color: var(--surface-border);
 }
 
+.surface-hover {
+  border-color: var(--surface-hover);
+}
+
 .field {
   margin-bottom: 1rem;
 }
