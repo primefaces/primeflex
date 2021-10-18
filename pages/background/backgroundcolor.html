@@ -40,6 +40,36 @@ title: Background Color
                 <td style="padding: 0"><div class="bg-white shadow-1" style="width: 50px; height: 20px;"></div></td>
             </tr>
             <tr>
+                <td>surface-ground</td>
+                <td>background-color: var(--surface-ground);</td>
+                <td style="padding: 0"><div class="surface-ground shadow-1" style="width: 50px; height: 20px;"></div></td>
+            </tr>
+            <tr>
+                <td>surface-section</td>
+                <td>background-color: var(--surface-section);</td>
+                <td style="padding: 0"><div class="surface-ground shadow-1" style="width: 50px; height: 20px;"></div></td>
+            </tr>
+            <tr>
+                <td>surface-card</td>
+                <td>background-color: var(--surface-card);</td>
+                <td style="padding: 0"><div class="surface-ground shadow-1" style="width: 50px; height: 20px;"></div></td>
+            </tr>
+            <tr>
+                <td>surface-overlay</td>
+                <td>background-color: var(--surface-overlay);</td>
+                <td style="padding: 0"><div class="surface-ground shadow-1" style="width: 50px; height: 20px;"></div></td>
+            </tr>
+            <tr>
+                <td>surface-border</td>
+                <td>background-color: var(--surface-border);</td>
+                <td style="padding: 0"><div class="surface-ground shadow-1" style="width: 50px; height: 20px;"></div></td>
+            </tr>
+            <tr>
+                <td>surface-hover</td>
+                <td>background-color: var(--surface-hover);</td>
+                <td style="padding: 0"><div class="surface-ground shadow-1" style="width: 50px; height: 20px;"></div></td>
+            </tr>
+            <tr>
                 <td>surface-0</td>
                 <td>background-color: var(--surface-0);</td>
                 <td style="padding: 0"><div class="surface-0 shadow-1" style="width: 50px; height: 20px;"></div></td>
@@ -761,6 +791,25 @@ title: Background Color
 
     <h5>Pseudo States</h5>
     <p>Focus, Hover and Active states are available with the <i>focus:</i>, <i>hover:</i>, <i>active:</i> prefixes respectively.</p>
+
+    <div class="card">
+        <div class="flex flex-wrap md:justify-content-between justify-content-center card-container">
+            <div class="surface-500 hover:surface-700 border-round text-white font-bold m-2 flex align-items-center justify-content-center" style="min-width: 200px; min-height: 100px">hover:surface-700</div>
+            <div class="bg-cyan-500 hover:bg-cyan-700 border-round text-white font-bold m-2 flex align-items-center justify-content-center" style="min-width: 200px; min-height: 100px">hover:bg-cyan-700</div>
+            <div class="bg-orange-500 hover:bg-orange-700 border-round text-white font-bold m-2 flex align-items-center justify-content-center" style="min-width: 200px; min-height: 100px">hover:bg-orange-700</div>
+        </div>
+    </div>
+
+    <h5>Named Theme Color</h5>
+    <p>Each theme provides named colors that are recommended to be used for certain surfaces, these are exported as css variables and can be used with the following classes.</p>
+    <ul>
+        <li><i>.surface-ground</i>: Ground color like body background</li>
+        <li><i>.surface-section</i>: Background of a content section</li>
+        <li><i>.surface-card</i>: Background of an elevated card element</li>
+        <li><i>.surface-overlay</i>: Overlay elements like modals</li>
+        <li><i>.surface-border</i>: Border colors to divide content</li>
+        <li><i>.surface-hover</i>: Background color of an element in hover state</li>
+    </ul>
 
     <div class="card">
         <div class="flex flex-wrap md:justify-content-between justify-content-center card-container">

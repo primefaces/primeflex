@@ -20,6 +20,7 @@
   --surface-card:#1e1e1e;
   --surface-overlay:#1e1e1e;
   --surface-border:#383838;
+  --surface-hover:rgba(255,255,255,.03);
   --content-padding:1rem;
   --inline-spacing:0.5rem;
   --border-radius:3px;
@@ -134,5 +135,3 @@
   --gray-800: #2a2a2a;
   --gray-900: #121212;
 }
-
-/*# sourceMappingURL=arya-blue.css.map */
