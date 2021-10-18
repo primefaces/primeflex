@@ -1,6 +1,6 @@
 {
     "name": "primeflex",
-    "version": "3.0.1",
+    "version": "3.1.0",
     "description": "PrimeFlex is a lightweight responsive CSS utility library to accompany Prime UI libraries and static webpages as well.",
     "repository": {
       "type": "git",
@@ -12,6 +12,6 @@
     "bugs": {
       "url": "https://github.com/primefaces/primeflex/issues"
     },
-    "homepage": "https://github.com/primefaces/primeflex#readme"
+    "homepage": "https://www.primefaces.org/primeflex"
   }
   
