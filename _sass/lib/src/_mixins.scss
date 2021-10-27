@@ -1,3 +1,5 @@
+@use 'sass:math'
+
 @mixin style-class($prop, $map, $responsive: false) {
     @each $key, $val in $map {
         .#{$key} {
@@ -161,7 +163,7 @@
         .#{$name}#{$colorName}-alpha {
             @each $shade in $shades {
                 &-#{$shade} {
-                    #{$prop}: #{"rgba(#{$colorValue},#{$shade / 100})"} !important;
+                    #{$prop}: #{"rgba(#{$colorValue},#{math.div($shade, 100)})"} !important;
                     
                 }
             }
@@ -171,7 +173,7 @@
             &#{$name}#{$colorName}-alpha {
                 @each $shade in $shades {
                     &-#{$shade}:hover {
-                        #{$prop}: #{"rgba(#{$colorValue},#{$shade / 100})"} !important;
+                        #{$prop}: #{"rgba(#{$colorValue},#{math.div($shade, 100)})"} !important;
                     }
                 }
             }
@@ -181,7 +183,7 @@
             &#{$name}#{$colorName}-alpha {
                 @each $shade in $shades {
                     &-#{$shade}:focus {
-                        #{$prop}: #{"rgba(#{$colorValue},#{$shade / 100})"} !important;
+                        #{$prop}: #{"rgba(#{$colorValue},#{math.div($shade, 100)})"} !important;
                     }
                 }
             }
@@ -191,7 +193,7 @@
             &#{$name}#{$colorName}-alpha {
                 @each $shade in $shades {
                     &-#{$shade}:active {
-                        #{$prop}: #{"rgba(#{$colorValue},#{$shade / 100})"} !important;
+                        #{$prop}: #{"rgba(#{$colorValue},#{math.div($shade, 100)})"} !important;
                     }
                 }
             }
