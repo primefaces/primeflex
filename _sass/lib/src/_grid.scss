@@ -84,12 +84,12 @@ $grid-column-offsets: (
             }
 
                 
-            &.col-fixed {
+            &col-fixed {
                 flex: 0 0 auto;
                 padding: $gutter;
             }
 
-            &.col {
+            &col {
                 flex-grow: 1;
                 flex-basis: 0;
                 padding: $gutter;
