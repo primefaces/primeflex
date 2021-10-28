@@ -82,17 +82,18 @@ $grid-column-offsets: (
                     width: #{$width};
                 }
             }
-        }
 
-        .col-fixed {
-            flex: 0 0 auto;
-            padding: $gutter;
-        }
+                
+            &.col-fixed {
+                flex: 0 0 auto;
+                padding: $gutter;
+            }
 
-        .col {
-            flex-grow: 1;
-            flex-basis: 0;
-            padding: $gutter;
+            &.col {
+                flex-grow: 1;
+                flex-basis: 0;
+                padding: $gutter;
+            }
         }
     }
 }
