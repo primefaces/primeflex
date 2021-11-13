@@ -1,4 +1,4 @@
-@use 'sass:math'
+@use 'sass:math';
 
 @mixin style-class($prop, $map, $responsive: false) {
     @each $key, $val in $map {
