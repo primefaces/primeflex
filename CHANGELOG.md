@@ -4,7 +4,9 @@
 
 [Full Changelog](https://github.com/primefaces/primevue/compare/3.1.0...3.1.1)
 
-**Implemented New Features and Enhancements:**
+**Fixed bugs:**
+
+- Deprecation Warnings for Dart Sass [\#81](https://github.com/primefaces/primevue/issues/81)
 
 ## [3.1.0](https://github.com/primefaces/primeflex/tree/3.0.1) (2021-10-18)
 
@@ -12,7 +14,7 @@
 
 **Implemented New Features and Enhancements:**
 
-- feat: more colors customization [\#80](https://github.com/primefaces/primevue/issues/80)
+- feat: more colors customization [\#62](https://github.com/primefaces/primevue/issues/62)
 - Add text overflow classes [\#78](https://github.com/primefaces/primevue/issues/78)
 - RGBA colors for black and white [\#77](https://github.com/primefaces/primevue/issues/77)
 - Negative Margins [\#76](https://github.com/primefaces/primevue/issues/76)
