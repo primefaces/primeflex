@@ -1,5 +1,11 @@
 # Changelog
 
+## [3.1.1](https://github.com/primefaces/primeflex/tree/3.1.1) (2021-12-15)
+
+[Full Changelog](https://github.com/primefaces/primevue/compare/3.1.0...3.1.1)
+
+**Implemented New Features and Enhancements:**
+
 ## [3.1.0](https://github.com/primefaces/primeflex/tree/3.0.1) (2021-10-18)
 
 [Full Changelog](https://github.com/primefaces/primevue/compare/3.0.1...3.1.0)
