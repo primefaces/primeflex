@@ -1,5 +1,13 @@
 # Changelog
 
+## [3.1.2](https://github.com/primefaces/primeflex/tree/3.1.2) (2021-12-16)
+
+[Full Changelog](https://github.com/primefaces/primevue/compare/3.1.1...3.1.2)
+
+**Fixed bugs:**
+
+- primeflex.scss is missing in primeflex 3.1.1 [\#90](https://github.com/primefaces/primevue/issues/90)
+
 ## [3.1.1](https://github.com/primefaces/primeflex/tree/3.1.1) (2021-12-15)
 
 [Full Changelog](https://github.com/primefaces/primevue/compare/3.1.0...3.1.1)
