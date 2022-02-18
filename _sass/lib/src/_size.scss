@@ -3,44 +3,7 @@ $width-properties: (
     'w-screen': 100vw,
     'w-auto': auto,
     'w-min': min-content,
-    'w-max': max-content
-);
-
-$height-properties: (
-    'h-full': 100%,
-    'h-screen': 100vh,
-    'h-auto': auto
-);
-
-$min-width-properties: (
-    'min-w-0': 0px,
-    'min-w-full': 100%,
-    'min-w-screen': 100vw,
-    'min-w-min': min-content,
-    'min-w-max': max-content
-);
-
-$max-width-properties: (
-    'max-w-0': 0px,
-    'max-w-full': 100%,
-    'max-w-screen': 100vw,
-    'max-w-min': min-content,
-    'max-w-max': max-content
-);
-
-$min-height-properties: (
-    'min-h-0': 0px,
-    'min-h-full': 100%,
-    'min-h-screen': 100vh
-);
-
-$max-height-properties: (
-    'max-h-0': 0px,
-    'max-h-full': 100%,
-    'max-h-screen': 100vh
-);
-
-$widths: (
+    'w-max': max-content,
     "w-1": 8.3333%,
     "w-2": 16.6667%,
     "w-3": 25%,
@@ -52,10 +15,7 @@ $widths: (
     "w-9": 75%,
     "w-10": 83.3333%,
     "w-11": 91.6667%,
-    "w-12": 100%
-);
-
-$rem-widths: (
+    "w-12": 100%,
     "w-1rem": 1rem,
     "w-2rem": 2rem,
     "w-3rem": 3rem,
@@ -88,7 +48,10 @@ $rem-widths: (
     "w-30rem": 30rem
 );
 
-$rem-heights: (
+$height-properties: (
+    'h-full': 100%,
+    'h-screen': 100vh,
+    'h-auto': auto,
     "h-1rem": 1rem,
     "h-2rem": 2rem,
     "h-3rem": 3rem,
@@ -121,12 +84,37 @@ $rem-heights: (
     "h-30rem": 30rem
 );
 
+$min-width-properties: (
+    'min-w-0': 0px,
+    'min-w-full': 100%,
+    'min-w-screen': 100vw,
+    'min-w-min': min-content,
+    'min-w-max': max-content
+);
+
+$max-width-properties: (
+    'max-w-0': 0px,
+    'max-w-full': 100%,
+    'max-w-screen': 100vw,
+    'max-w-min': min-content,
+    'max-w-max': max-content
+);
+
+$min-height-properties: (
+    'min-h-0': 0px,
+    'min-h-full': 100%,
+    'min-h-screen': 100vh
+);
+
+$max-height-properties: (
+    'max-h-0': 0px,
+    'max-h-full': 100%,
+    'max-h-screen': 100vh
+);
+
 @include style-class('width', $width-properties, true);
 @include style-class('height', $height-properties, true);
 @include style-class('min-width', $min-width-properties, true);
 @include style-class('max-width', $max-width-properties, true);
 @include style-class('min-height', $min-height-properties, true);
 @include style-class('max-height', $max-height-properties, true);
-@include style-class('width', $widths, true);
-@include style-class('width', $rem-widths, true);
-@include style-class('height', $rem-heights, true);
