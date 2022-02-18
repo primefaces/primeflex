@@ -1,5 +1,15 @@
 # Changelog
 
+## [3.1.3](https://github.com/primefaces/primeflex/tree/3.1.3) (2022-02-18)
+
+[Full Changelog](https://github.com/primefaces/primevue/compare/3.1.2...3.1.3)
+
+**Fixed bugs:**
+
+- Surface colors might be overridden [\#100](https://github.com/primefaces/primevue/issues/100)
+- surface-hover uses border-color not bg-color [\#101](https://github.com/primefaces/primevue/issues/101)
+- widths may not be overridden responsively [\#102](https://github.com/primefaces/primevue/issues/102)
+
 ## [3.1.2](https://github.com/primefaces/primeflex/tree/3.1.2) (2021-12-16)
 
 [Full Changelog](https://github.com/primefaces/primevue/compare/3.1.1...3.1.2)
