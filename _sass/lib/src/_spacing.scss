@@ -1,4 +1,4 @@
-$space-scales:0, 0.25, 0.5, 1, 1.5, 2, 3, 4, 5; 
+$space-scales:0, 0.25, 0.5, 1, 1.5, 2, 3, 4, 5;
 $padding-directions: (
     '': 'padding',
     't': 'padding-top',
@@ -17,6 +17,12 @@ $margin-directions: (
     'b': 'margin-bottom',
     'x': ('margin-left','margin-right'),
     'y': ('margin-top','margin-bottom')
+);
+
+$gap-directions: (
+    '': 'gap',
+    '-col': 'column-gap',
+    '-row': 'row-gap'
 );
 
 @mixin spacing-class($name, $directions, $scales, $auto: false, $negative: false) {
@@ -45,7 +51,7 @@ $margin-directions: (
                     #{$propName}: auto !important;
                 }
             }
-        } 
+        }
     }
 
     @each $key, $val in $breakpoints {
@@ -83,3 +89,4 @@ $margin-directions: (
 
 @include spacing-class('p', $padding-directions, $space-scales);
 @include spacing-class('m', $margin-directions, $space-scales, true, true);
+@include spacing-class('gap', $gap-directions, $space-scales);
