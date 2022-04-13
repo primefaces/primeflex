@@ -20,7 +20,6 @@
   --surface-card:#ffffff;
   --surface-overlay:#ffffff;
   --surface-border:#dee2e6;
-  --surface-hover: #e9ecef;
   --content-padding:1rem;
   --inline-spacing:0.5rem;
   --border-radius:3px;
@@ -134,4 +133,26 @@
   --gray-700: #616161;
   --gray-800: #424242;
   --gray-900: #212121;
+  --red-50:#fff5f5;
+  --red-100:#ffd1ce;
+  --red-200:#ffada7;
+  --red-300:#ff8980;
+  --red-400:#ff6459;
+  --red-500:#ff4032;
+  --red-600:#d9362b;
+  --red-700:#b32d23;
+  --red-800:#8c231c;
+  --red-900:#661a14;
+  --primary-50:#f4fafe;
+  --primary-100:#cae6fc;
+  --primary-200:#a0d2fa;
+  --primary-300:#75bef8;
+  --primary-400:#4baaf5;
+  --primary-500:#2196f3;
+  --primary-600:#1c80cf;
+  --primary-700:#1769aa;
+  --primary-800:#125386;
+  --primary-900:#0d3c61;
 }
+
+/*# sourceMappingURL=saga-blue.css.map */
