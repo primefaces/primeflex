@@ -7004,11 +7004,47 @@
   text-decoration: underline !important;
 }
 
+.focus\:underline:focus {
+  text-decoration: underline !important;
+}
+
+.hover\:underline:hover {
+  text-decoration: underline !important;
+}
+
+.active\:underline:active {
+  text-decoration: underline !important;
+}
+
 .line-through {
   text-decoration: line-through !important;
 }
 
+.focus\:line-through:focus {
+  text-decoration: line-through !important;
+}
+
+.hover\:line-through:hover {
+  text-decoration: line-through !important;
+}
+
+.active\:line-through:active {
+  text-decoration: line-through !important;
+}
+
 .no-underline {
+  text-decoration: none !important;
+}
+
+.focus\:no-underline:focus {
+  text-decoration: none !important;
+}
+
+.hover\:no-underline:hover {
+  text-decoration: none !important;
+}
+
+.active\:no-underline:active {
   text-decoration: none !important;
 }
 

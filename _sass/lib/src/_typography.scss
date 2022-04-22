@@ -73,7 +73,7 @@ $vertical-align-props: (
 );
 
 @include style-class('text-align', $text-align-props, true);
-@include style-class('text-decoration', $text-decoration-props);
+@include style-class('text-decoration', $text-decoration-props, false, true);
 @include style-class('text-transform', $text-transform-props);
 @include style-class('text-overflow', $text-overflow-props, true);
 @include style-class('font-weight', $font-weight-props, true);

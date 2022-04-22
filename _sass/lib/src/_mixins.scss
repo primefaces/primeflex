@@ -1,9 +1,29 @@
 @use 'sass:math';
 
-@mixin style-class($prop, $map, $responsive: false) {
+@mixin style-class($prop, $map, $responsive: false, $states: false) {
     @each $key, $val in $map {
         .#{$key} {
             #{$prop}: #{$val} !important;
+        }
+
+        @if ($states) {
+            .focus#{$separator} {
+                &#{$key}:focus {
+                    #{$prop}: #{$val} !important;
+                }
+            }
+
+            .hover#{$separator} {
+                &#{$key}:hover {
+                    #{$prop}: #{$val} !important;
+                }
+            }
+
+            .active#{$separator} {
+                &#{$key}:active {
+                    #{$prop}: #{$val} !important;
+                }
+            }
         }
     }
 
@@ -14,6 +34,26 @@
                     @each $key, $val in $map {
                         &#{$key} {
                             #{$prop}: #{$val} !important;
+                        }
+
+                        @if ($states) {
+                            .focus#{$separator} {
+                                &#{$key}:focus {
+                                    #{$prop}: #{$val} !important;
+                                }
+                            }
+                
+                            .hover#{$separator} {
+                                &#{$key}:hover {
+                                    #{$prop}: #{$val} !important;
+                                }
+                            }
+                
+                            .active#{$separator} {
+                                &#{$key}:active {
+                                    #{$prop}: #{$val} !important;
+                                }
+                            }
                         }
                     }
                 }
@@ -164,7 +204,6 @@
             @each $shade in $shades {
                 &-#{$shade} {
                     #{$prop}: #{"rgba(#{$colorValue},#{math.div($shade, 100)})"} !important;
-                    
                 }
             }
         }
