@@ -200,3 +200,67 @@
         }
     }
 }
+
+@mixin spacing-class($prefix, $map, $scales, $responsive: true, $auto: false, $negative: false) {
+    @each $name, $prop in $map {
+        @for $i from 0 through length($scales) - 1 {
+            .#{$prefix}#{$name}-#{$i} {
+                @each $propName in $prop {
+                    #{$propName}: $spacer * nth($scales, $i + 1) !important;
+                }
+            }
+        }
+
+        @if ($negative) {
+            @for $i from 1 through length($scales) - 1 {
+                .-#{$prefix}#{$name}-#{$i} {
+                    @each $propName in $prop {
+                        #{$propName}: -1 * $spacer * nth($scales, $i + 1) !important;
+                    }
+                }
+            }
+        }
+
+        @if ($auto) {
+            .#{$prefix}#{$name}-auto {
+                @each $propName in $prop {
+                    #{$propName}: auto !important;
+                }
+            }
+        } 
+    }
+
+    @if ($responsive) {
+        @each $key, $val in $breakpoints {
+            @media screen and (min-width: #{$val}) {
+                @each $name, $prop in $map {
+                    @for $i from 0 through length($scales) - 1 {
+                        .#{$key + $separator}#{$prefix}#{$name}-#{$i} {
+                            @each $propName in $prop {
+                                #{$propName}: $spacer * nth($scales, $i + 1) !important;;
+                            }
+                        }
+                    }
+
+                    @if ($negative) {
+                        @for $i from 1 through length($scales) - 1 {
+                            .#{$key + $separator}-#{$prefix}#{$name}-#{$i} {
+                                @each $propName in $prop {
+                                    #{$propName}: -1 * $spacer * nth($scales, $i + 1) !important;
+                                }
+                            }
+                        }
+                    }
+
+                    @if ($auto) {
+                        .#{$key + $separator}#{$prefix}#{$name}-auto {
+                            @each $propName in $prop {
+                                #{$propName}: auto !important;;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
