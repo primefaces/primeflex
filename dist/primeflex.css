@@ -7380,6 +7380,142 @@
   white-space: nowrap !important;
 }
 
+.vertical-align-baseline {
+  vertical-align: baseline !important;
+}
+
+.vertical-align-top {
+  vertical-align: top !important;
+}
+
+.vertical-align-middle {
+  vertical-align: middle !important;
+}
+
+.vertical-align-bottom {
+  vertical-align: bottom !important;
+}
+
+.vertical-align-text-top {
+  vertical-align: text-top !important;
+}
+
+.vertical-align-text-bottom {
+  vertical-align: text-bottom !important;
+}
+
+.vertical-align-sub {
+  vertical-align: sub !important;
+}
+
+.vertical-align-super {
+  vertical-align: super !important;
+}
+
+@media screen and (min-width: 576px) {
+  .sm\:vertical-align-baseline {
+    vertical-align: baseline !important;
+  }
+  .sm\:vertical-align-top {
+    vertical-align: top !important;
+  }
+  .sm\:vertical-align-middle {
+    vertical-align: middle !important;
+  }
+  .sm\:vertical-align-bottom {
+    vertical-align: bottom !important;
+  }
+  .sm\:vertical-align-text-top {
+    vertical-align: text-top !important;
+  }
+  .sm\:vertical-align-text-bottom {
+    vertical-align: text-bottom !important;
+  }
+  .sm\:vertical-align-sub {
+    vertical-align: sub !important;
+  }
+  .sm\:vertical-align-super {
+    vertical-align: super !important;
+  }
+}
+@media screen and (min-width: 768px) {
+  .md\:vertical-align-baseline {
+    vertical-align: baseline !important;
+  }
+  .md\:vertical-align-top {
+    vertical-align: top !important;
+  }
+  .md\:vertical-align-middle {
+    vertical-align: middle !important;
+  }
+  .md\:vertical-align-bottom {
+    vertical-align: bottom !important;
+  }
+  .md\:vertical-align-text-top {
+    vertical-align: text-top !important;
+  }
+  .md\:vertical-align-text-bottom {
+    vertical-align: text-bottom !important;
+  }
+  .md\:vertical-align-sub {
+    vertical-align: sub !important;
+  }
+  .md\:vertical-align-super {
+    vertical-align: super !important;
+  }
+}
+@media screen and (min-width: 992px) {
+  .lg\:vertical-align-baseline {
+    vertical-align: baseline !important;
+  }
+  .lg\:vertical-align-top {
+    vertical-align: top !important;
+  }
+  .lg\:vertical-align-middle {
+    vertical-align: middle !important;
+  }
+  .lg\:vertical-align-bottom {
+    vertical-align: bottom !important;
+  }
+  .lg\:vertical-align-text-top {
+    vertical-align: text-top !important;
+  }
+  .lg\:vertical-align-text-bottom {
+    vertical-align: text-bottom !important;
+  }
+  .lg\:vertical-align-sub {
+    vertical-align: sub !important;
+  }
+  .lg\:vertical-align-super {
+    vertical-align: super !important;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .xl\:vertical-align-baseline {
+    vertical-align: baseline !important;
+  }
+  .xl\:vertical-align-top {
+    vertical-align: top !important;
+  }
+  .xl\:vertical-align-middle {
+    vertical-align: middle !important;
+  }
+  .xl\:vertical-align-bottom {
+    vertical-align: bottom !important;
+  }
+  .xl\:vertical-align-text-top {
+    vertical-align: text-top !important;
+  }
+  .xl\:vertical-align-text-bottom {
+    vertical-align: text-bottom !important;
+  }
+  .xl\:vertical-align-sub {
+    vertical-align: sub !important;
+  }
+  .xl\:vertical-align-super {
+    vertical-align: super !important;
+  }
+}
 .flex-row {
   flex-direction: row !important;
 }
