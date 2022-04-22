@@ -5,8 +5,10 @@
         .#{$key} {
             #{$prop}: #{$val} !important;
         }
+    }
 
-        @if ($states) {
+    @if ($states) {
+        @each $key, $val in $map {
             .focus#{$separator} {
                 &#{$key}:focus {
                     #{$prop}: #{$val} !important;
@@ -35,21 +37,23 @@
                         &#{$key} {
                             #{$prop}: #{$val} !important;
                         }
+                    }
 
-                        @if ($states) {
-                            .focus#{$separator} {
+                    @if ($states) {
+                        @each $key, $val in $map {
+                            &focus#{$separator} {
                                 &#{$key}:focus {
                                     #{$prop}: #{$val} !important;
                                 }
                             }
                 
-                            .hover#{$separator} {
+                            &hover#{$separator} {
                                 &#{$key}:hover {
                                     #{$prop}: #{$val} !important;
                                 }
                             }
                 
-                            .active#{$separator} {
+                            &active#{$separator} {
                                 &#{$key}:active {
                                     #{$prop}: #{$val} !important;
                                 }
