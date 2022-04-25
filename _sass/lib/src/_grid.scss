@@ -75,6 +75,17 @@ $grid-column-offsets: (
 @each $key, $val in $breakpoints {
     @media screen and (min-width: #{$val}) {
         .#{$key + $separator} {
+            &#{$prefix}col {
+                flex-grow: 1;
+                flex-basis: 0;
+                padding: $gutter;
+            }
+            
+            &#{$prefix}col-fixed {
+                flex: 0 0 auto;
+                padding: $gutter;
+            }
+
             @each $col, $width in $grid-columns {
                 &#{$prefix}#{$col} {
                     flex: 0 0 auto;

@@ -106,6 +106,15 @@
 }
 
 @media screen and (min-width: 576px) {
+  .sm\:col {
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 0.5rem;
+  }
+  .sm\:col-fixed {
+    flex: 0 0 auto;
+    padding: 0.5rem;
+  }
   .sm\:col-1 {
     flex: 0 0 auto;
     padding: 0.5rem;
@@ -168,6 +177,15 @@
   }
 }
 @media screen and (min-width: 768px) {
+  .md\:col {
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 0.5rem;
+  }
+  .md\:col-fixed {
+    flex: 0 0 auto;
+    padding: 0.5rem;
+  }
   .md\:col-1 {
     flex: 0 0 auto;
     padding: 0.5rem;
@@ -230,6 +248,15 @@
   }
 }
 @media screen and (min-width: 992px) {
+  .lg\:col {
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 0.5rem;
+  }
+  .lg\:col-fixed {
+    flex: 0 0 auto;
+    padding: 0.5rem;
+  }
   .lg\:col-1 {
     flex: 0 0 auto;
     padding: 0.5rem;
@@ -292,6 +319,15 @@
   }
 }
 @media screen and (min-width: 1200px) {
+  .xl\:col {
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 0.5rem;
+  }
+  .xl\:col-fixed {
+    flex: 0 0 auto;
+    padding: 0.5rem;
+  }
   .xl\:col-1 {
     flex: 0 0 auto;
     padding: 0.5rem;
