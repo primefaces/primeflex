@@ -72,6 +72,23 @@
                 }
             }
 
+            .inputfield {
+                font-size: 1rem;
+                color: var(--text-color);
+                background: var(--surface-overlay);
+                padding: 0.5rem 0.5rem;
+                border: 1px solid var(--surface-border);
+                appearance: none;
+                border-radius: 3px;
+                
+                &:focus {
+                    outline: 0 none;
+                    outline-offset: 0;
+                    box-shadow: 0 0 0 0.2rem #a6d5fa;
+                    border-color: var(--primary-color);
+                }
+            }
+
             .search-mask {
                 display: none;
                 position: fixed;
