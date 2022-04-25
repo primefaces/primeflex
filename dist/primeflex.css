@@ -6713,6 +6713,22 @@
   border-color: #ffffff !important;
 }
 
+.text-color {
+  color: var(--text-color) !important;
+}
+
+.hover\:text-color:hover {
+  color: var(--text-color) !important;
+}
+
+.text-color-secondary {
+  color: var(--text-color-secondary) !important;
+}
+
+.hover\:text-color-secondary:hover {
+  color: var(--text-color-secondary) !important;
+}
+
 .surface-ground {
   background-color: var(--surface-ground) !important;
 }
