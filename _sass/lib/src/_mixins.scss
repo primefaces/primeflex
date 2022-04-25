@@ -178,11 +178,22 @@
     }
 }
 
-@mixin border-radius-class($directions) {
-    @each $dir, $prop in $directions {
-        .#{$prefix}#{$dir} {
-            @each $propName in $prop {
-                #{$propName}: var(--border-radius);
+@mixin border-radius-class($map, $directions) {
+    @each $key, $val in $map {
+        $prefixName: $key;
+        $suffixName: '';
+        $index: str-index($key, 'border-round');
+
+        @if $index != null {
+            $prefixName: 'border-round';
+            $suffixName: str-slice($key, str-length('border-round') + 1, str-length($key));
+        }
+
+        @each $dir, $prop in $directions {
+            .#{$prefix}#{$prefixName}-#{$dir}#{$suffixName} {
+                @each $propName in $prop {
+                    #{$propName}: #{$val} !important;
+                }
             }
         }
     }
@@ -190,10 +201,21 @@
     @each $key, $val in $breakpoints {
         @media screen and (min-width: #{$val}) {
             .#{$key + $separator} {
-                @each $dir, $prop in $directions {
-                    &#{$prefix}#{$dir} {
-                        @each $propName in $prop {
-                            #{$propName}: var(--border-radius);
+                @each $key, $val in $map {
+                    $prefixName: $key;
+                    $suffixName: '';
+                    $index: str-index($key, 'border-round');
+            
+                    @if $index != null {
+                        $prefixName: 'border-round';
+                        $suffixName: str-slice($key, str-length('border-round') + 1, str-length($key));
+                    }
+            
+                    @each $dir, $prop in $directions {
+                        &#{$prefix}#{$prefixName}-#{$dir}#{$suffixName} {
+                            @each $propName in $prop {
+                                #{$propName}: #{$val} !important;
+                            }
                         }
                     }
                 }

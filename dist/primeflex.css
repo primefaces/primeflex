@@ -15210,104 +15210,40 @@
     border-style: double !important;
   }
 }
-.border-round-left {
-  border-top-left-radius: var(--border-radius);
-  border-bottom-left-radius: var(--border-radius);
-}
-
-.border-round-top {
-  border-top-left-radius: var(--border-radius);
-  border-top-right-radius: var(--border-radius);
-}
-
-.border-round-right {
-  border-top-right-radius: var(--border-radius);
-  border-bottom-right-radius: var(--border-radius);
-}
-
-.border-round-bottom {
-  border-bottom-left-radius: var(--border-radius);
-  border-bottom-right-radius: var(--border-radius);
-}
-
-@media screen and (min-width: 576px) {
-  .sm\:border-round-left {
-    border-top-left-radius: var(--border-radius);
-    border-bottom-left-radius: var(--border-radius);
-  }
-  .sm\:border-round-top {
-    border-top-left-radius: var(--border-radius);
-    border-top-right-radius: var(--border-radius);
-  }
-  .sm\:border-round-right {
-    border-top-right-radius: var(--border-radius);
-    border-bottom-right-radius: var(--border-radius);
-  }
-  .sm\:border-round-bottom {
-    border-bottom-left-radius: var(--border-radius);
-    border-bottom-right-radius: var(--border-radius);
-  }
-}
-@media screen and (min-width: 768px) {
-  .md\:border-round-left {
-    border-top-left-radius: var(--border-radius);
-    border-bottom-left-radius: var(--border-radius);
-  }
-  .md\:border-round-top {
-    border-top-left-radius: var(--border-radius);
-    border-top-right-radius: var(--border-radius);
-  }
-  .md\:border-round-right {
-    border-top-right-radius: var(--border-radius);
-    border-bottom-right-radius: var(--border-radius);
-  }
-  .md\:border-round-bottom {
-    border-bottom-left-radius: var(--border-radius);
-    border-bottom-right-radius: var(--border-radius);
-  }
-}
-@media screen and (min-width: 992px) {
-  .lg\:border-round-left {
-    border-top-left-radius: var(--border-radius);
-    border-bottom-left-radius: var(--border-radius);
-  }
-  .lg\:border-round-top {
-    border-top-left-radius: var(--border-radius);
-    border-top-right-radius: var(--border-radius);
-  }
-  .lg\:border-round-right {
-    border-top-right-radius: var(--border-radius);
-    border-bottom-right-radius: var(--border-radius);
-  }
-  .lg\:border-round-bottom {
-    border-bottom-left-radius: var(--border-radius);
-    border-bottom-right-radius: var(--border-radius);
-  }
-}
-@media screen and (min-width: 1200px) {
-  .xl\:border-round-left {
-    border-top-left-radius: var(--border-radius);
-    border-bottom-left-radius: var(--border-radius);
-  }
-  .xl\:border-round-top {
-    border-top-left-radius: var(--border-radius);
-    border-top-right-radius: var(--border-radius);
-  }
-  .xl\:border-round-right {
-    border-top-right-radius: var(--border-radius);
-    border-bottom-right-radius: var(--border-radius);
-  }
-  .xl\:border-round-bottom {
-    border-bottom-left-radius: var(--border-radius);
-    border-bottom-right-radius: var(--border-radius);
-  }
-}
 .border-noround {
   border-radius: 0 !important;
 }
 
 .border-round {
   border-radius: var(--border-radius) !important;
+}
+
+.border-round-xs {
+  border-radius: 0.125rem !important;
+}
+
+.border-round-sm {
+  border-radius: 0.25rem !important;
+}
+
+.border-round-md {
+  border-radius: 0.375rem !important;
+}
+
+.border-round-lg {
+  border-radius: 0.5rem !important;
+}
+
+.border-round-xl {
+  border-radius: 0.75rem !important;
+}
+
+.border-round-2xl {
+  border-radius: 1rem !important;
+}
+
+.border-round-3xl {
+  border-radius: 1.5rem !important;
 }
 
 .border-circle {
@@ -15321,6 +15257,27 @@
   .sm\:border-round {
     border-radius: var(--border-radius) !important;
   }
+  .sm\:border-round-xs {
+    border-radius: 0.125rem !important;
+  }
+  .sm\:border-round-sm {
+    border-radius: 0.25rem !important;
+  }
+  .sm\:border-round-md {
+    border-radius: 0.375rem !important;
+  }
+  .sm\:border-round-lg {
+    border-radius: 0.5rem !important;
+  }
+  .sm\:border-round-xl {
+    border-radius: 0.75rem !important;
+  }
+  .sm\:border-round-2xl {
+    border-radius: 1rem !important;
+  }
+  .sm\:border-round-3xl {
+    border-radius: 1.5rem !important;
+  }
   .sm\:border-circle {
     border-radius: 50% !important;
   }
@@ -15331,6 +15288,27 @@
   }
   .md\:border-round {
     border-radius: var(--border-radius) !important;
+  }
+  .md\:border-round-xs {
+    border-radius: 0.125rem !important;
+  }
+  .md\:border-round-sm {
+    border-radius: 0.25rem !important;
+  }
+  .md\:border-round-md {
+    border-radius: 0.375rem !important;
+  }
+  .md\:border-round-lg {
+    border-radius: 0.5rem !important;
+  }
+  .md\:border-round-xl {
+    border-radius: 0.75rem !important;
+  }
+  .md\:border-round-2xl {
+    border-radius: 1rem !important;
+  }
+  .md\:border-round-3xl {
+    border-radius: 1.5rem !important;
   }
   .md\:border-circle {
     border-radius: 50% !important;
@@ -15343,6 +15321,27 @@
   .lg\:border-round {
     border-radius: var(--border-radius) !important;
   }
+  .lg\:border-round-xs {
+    border-radius: 0.125rem !important;
+  }
+  .lg\:border-round-sm {
+    border-radius: 0.25rem !important;
+  }
+  .lg\:border-round-md {
+    border-radius: 0.375rem !important;
+  }
+  .lg\:border-round-lg {
+    border-radius: 0.5rem !important;
+  }
+  .lg\:border-round-xl {
+    border-radius: 0.75rem !important;
+  }
+  .lg\:border-round-2xl {
+    border-radius: 1rem !important;
+  }
+  .lg\:border-round-3xl {
+    border-radius: 1.5rem !important;
+  }
   .lg\:border-circle {
     border-radius: 50% !important;
   }
@@ -15354,8 +15353,877 @@
   .xl\:border-round {
     border-radius: var(--border-radius) !important;
   }
+  .xl\:border-round-xs {
+    border-radius: 0.125rem !important;
+  }
+  .xl\:border-round-sm {
+    border-radius: 0.25rem !important;
+  }
+  .xl\:border-round-md {
+    border-radius: 0.375rem !important;
+  }
+  .xl\:border-round-lg {
+    border-radius: 0.5rem !important;
+  }
+  .xl\:border-round-xl {
+    border-radius: 0.75rem !important;
+  }
+  .xl\:border-round-2xl {
+    border-radius: 1rem !important;
+  }
+  .xl\:border-round-3xl {
+    border-radius: 1.5rem !important;
+  }
   .xl\:border-circle {
     border-radius: 50% !important;
+  }
+}
+.border-noround-left {
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+}
+
+.border-noround-top {
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;
+}
+
+.border-noround-right {
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+
+.border-noround-bottom {
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+
+.border-round-left {
+  border-top-left-radius: var(--border-radius) !important;
+  border-bottom-left-radius: var(--border-radius) !important;
+}
+
+.border-round-top {
+  border-top-left-radius: var(--border-radius) !important;
+  border-top-right-radius: var(--border-radius) !important;
+}
+
+.border-round-right {
+  border-top-right-radius: var(--border-radius) !important;
+  border-bottom-right-radius: var(--border-radius) !important;
+}
+
+.border-round-bottom {
+  border-bottom-left-radius: var(--border-radius) !important;
+  border-bottom-right-radius: var(--border-radius) !important;
+}
+
+.border-round-left-xs {
+  border-top-left-radius: 0.125rem !important;
+  border-bottom-left-radius: 0.125rem !important;
+}
+
+.border-round-top-xs {
+  border-top-left-radius: 0.125rem !important;
+  border-top-right-radius: 0.125rem !important;
+}
+
+.border-round-right-xs {
+  border-top-right-radius: 0.125rem !important;
+  border-bottom-right-radius: 0.125rem !important;
+}
+
+.border-round-bottom-xs {
+  border-bottom-left-radius: 0.125rem !important;
+  border-bottom-right-radius: 0.125rem !important;
+}
+
+.border-round-left-sm {
+  border-top-left-radius: 0.25rem !important;
+  border-bottom-left-radius: 0.25rem !important;
+}
+
+.border-round-top-sm {
+  border-top-left-radius: 0.25rem !important;
+  border-top-right-radius: 0.25rem !important;
+}
+
+.border-round-right-sm {
+  border-top-right-radius: 0.25rem !important;
+  border-bottom-right-radius: 0.25rem !important;
+}
+
+.border-round-bottom-sm {
+  border-bottom-left-radius: 0.25rem !important;
+  border-bottom-right-radius: 0.25rem !important;
+}
+
+.border-round-left-md {
+  border-top-left-radius: 0.375rem !important;
+  border-bottom-left-radius: 0.375rem !important;
+}
+
+.border-round-top-md {
+  border-top-left-radius: 0.375rem !important;
+  border-top-right-radius: 0.375rem !important;
+}
+
+.border-round-right-md {
+  border-top-right-radius: 0.375rem !important;
+  border-bottom-right-radius: 0.375rem !important;
+}
+
+.border-round-bottom-md {
+  border-bottom-left-radius: 0.375rem !important;
+  border-bottom-right-radius: 0.375rem !important;
+}
+
+.border-round-left-lg {
+  border-top-left-radius: 0.5rem !important;
+  border-bottom-left-radius: 0.5rem !important;
+}
+
+.border-round-top-lg {
+  border-top-left-radius: 0.5rem !important;
+  border-top-right-radius: 0.5rem !important;
+}
+
+.border-round-right-lg {
+  border-top-right-radius: 0.5rem !important;
+  border-bottom-right-radius: 0.5rem !important;
+}
+
+.border-round-bottom-lg {
+  border-bottom-left-radius: 0.5rem !important;
+  border-bottom-right-radius: 0.5rem !important;
+}
+
+.border-round-left-xl {
+  border-top-left-radius: 0.75rem !important;
+  border-bottom-left-radius: 0.75rem !important;
+}
+
+.border-round-top-xl {
+  border-top-left-radius: 0.75rem !important;
+  border-top-right-radius: 0.75rem !important;
+}
+
+.border-round-right-xl {
+  border-top-right-radius: 0.75rem !important;
+  border-bottom-right-radius: 0.75rem !important;
+}
+
+.border-round-bottom-xl {
+  border-bottom-left-radius: 0.75rem !important;
+  border-bottom-right-radius: 0.75rem !important;
+}
+
+.border-round-left-2xl {
+  border-top-left-radius: 1rem !important;
+  border-bottom-left-radius: 1rem !important;
+}
+
+.border-round-top-2xl {
+  border-top-left-radius: 1rem !important;
+  border-top-right-radius: 1rem !important;
+}
+
+.border-round-right-2xl {
+  border-top-right-radius: 1rem !important;
+  border-bottom-right-radius: 1rem !important;
+}
+
+.border-round-bottom-2xl {
+  border-bottom-left-radius: 1rem !important;
+  border-bottom-right-radius: 1rem !important;
+}
+
+.border-round-left-3xl {
+  border-top-left-radius: 1.5rem !important;
+  border-bottom-left-radius: 1.5rem !important;
+}
+
+.border-round-top-3xl {
+  border-top-left-radius: 1.5rem !important;
+  border-top-right-radius: 1.5rem !important;
+}
+
+.border-round-right-3xl {
+  border-top-right-radius: 1.5rem !important;
+  border-bottom-right-radius: 1.5rem !important;
+}
+
+.border-round-bottom-3xl {
+  border-bottom-left-radius: 1.5rem !important;
+  border-bottom-right-radius: 1.5rem !important;
+}
+
+.border-circle-left {
+  border-top-left-radius: 50% !important;
+  border-bottom-left-radius: 50% !important;
+}
+
+.border-circle-top {
+  border-top-left-radius: 50% !important;
+  border-top-right-radius: 50% !important;
+}
+
+.border-circle-right {
+  border-top-right-radius: 50% !important;
+  border-bottom-right-radius: 50% !important;
+}
+
+.border-circle-bottom {
+  border-bottom-left-radius: 50% !important;
+  border-bottom-right-radius: 50% !important;
+}
+
+@media screen and (min-width: 576px) {
+  .sm\:border-noround-left {
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+  }
+  .sm\:border-noround-top {
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+  }
+  .sm\:border-noround-right {
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+  }
+  .sm\:border-noround-bottom {
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+  }
+  .sm\:border-round-left {
+    border-top-left-radius: var(--border-radius) !important;
+    border-bottom-left-radius: var(--border-radius) !important;
+  }
+  .sm\:border-round-top {
+    border-top-left-radius: var(--border-radius) !important;
+    border-top-right-radius: var(--border-radius) !important;
+  }
+  .sm\:border-round-right {
+    border-top-right-radius: var(--border-radius) !important;
+    border-bottom-right-radius: var(--border-radius) !important;
+  }
+  .sm\:border-round-bottom {
+    border-bottom-left-radius: var(--border-radius) !important;
+    border-bottom-right-radius: var(--border-radius) !important;
+  }
+  .sm\:border-round-left-xs {
+    border-top-left-radius: 0.125rem !important;
+    border-bottom-left-radius: 0.125rem !important;
+  }
+  .sm\:border-round-top-xs {
+    border-top-left-radius: 0.125rem !important;
+    border-top-right-radius: 0.125rem !important;
+  }
+  .sm\:border-round-right-xs {
+    border-top-right-radius: 0.125rem !important;
+    border-bottom-right-radius: 0.125rem !important;
+  }
+  .sm\:border-round-bottom-xs {
+    border-bottom-left-radius: 0.125rem !important;
+    border-bottom-right-radius: 0.125rem !important;
+  }
+  .sm\:border-round-left-sm {
+    border-top-left-radius: 0.25rem !important;
+    border-bottom-left-radius: 0.25rem !important;
+  }
+  .sm\:border-round-top-sm {
+    border-top-left-radius: 0.25rem !important;
+    border-top-right-radius: 0.25rem !important;
+  }
+  .sm\:border-round-right-sm {
+    border-top-right-radius: 0.25rem !important;
+    border-bottom-right-radius: 0.25rem !important;
+  }
+  .sm\:border-round-bottom-sm {
+    border-bottom-left-radius: 0.25rem !important;
+    border-bottom-right-radius: 0.25rem !important;
+  }
+  .sm\:border-round-left-md {
+    border-top-left-radius: 0.375rem !important;
+    border-bottom-left-radius: 0.375rem !important;
+  }
+  .sm\:border-round-top-md {
+    border-top-left-radius: 0.375rem !important;
+    border-top-right-radius: 0.375rem !important;
+  }
+  .sm\:border-round-right-md {
+    border-top-right-radius: 0.375rem !important;
+    border-bottom-right-radius: 0.375rem !important;
+  }
+  .sm\:border-round-bottom-md {
+    border-bottom-left-radius: 0.375rem !important;
+    border-bottom-right-radius: 0.375rem !important;
+  }
+  .sm\:border-round-left-lg {
+    border-top-left-radius: 0.5rem !important;
+    border-bottom-left-radius: 0.5rem !important;
+  }
+  .sm\:border-round-top-lg {
+    border-top-left-radius: 0.5rem !important;
+    border-top-right-radius: 0.5rem !important;
+  }
+  .sm\:border-round-right-lg {
+    border-top-right-radius: 0.5rem !important;
+    border-bottom-right-radius: 0.5rem !important;
+  }
+  .sm\:border-round-bottom-lg {
+    border-bottom-left-radius: 0.5rem !important;
+    border-bottom-right-radius: 0.5rem !important;
+  }
+  .sm\:border-round-left-xl {
+    border-top-left-radius: 0.75rem !important;
+    border-bottom-left-radius: 0.75rem !important;
+  }
+  .sm\:border-round-top-xl {
+    border-top-left-radius: 0.75rem !important;
+    border-top-right-radius: 0.75rem !important;
+  }
+  .sm\:border-round-right-xl {
+    border-top-right-radius: 0.75rem !important;
+    border-bottom-right-radius: 0.75rem !important;
+  }
+  .sm\:border-round-bottom-xl {
+    border-bottom-left-radius: 0.75rem !important;
+    border-bottom-right-radius: 0.75rem !important;
+  }
+  .sm\:border-round-left-2xl {
+    border-top-left-radius: 1rem !important;
+    border-bottom-left-radius: 1rem !important;
+  }
+  .sm\:border-round-top-2xl {
+    border-top-left-radius: 1rem !important;
+    border-top-right-radius: 1rem !important;
+  }
+  .sm\:border-round-right-2xl {
+    border-top-right-radius: 1rem !important;
+    border-bottom-right-radius: 1rem !important;
+  }
+  .sm\:border-round-bottom-2xl {
+    border-bottom-left-radius: 1rem !important;
+    border-bottom-right-radius: 1rem !important;
+  }
+  .sm\:border-round-left-3xl {
+    border-top-left-radius: 1.5rem !important;
+    border-bottom-left-radius: 1.5rem !important;
+  }
+  .sm\:border-round-top-3xl {
+    border-top-left-radius: 1.5rem !important;
+    border-top-right-radius: 1.5rem !important;
+  }
+  .sm\:border-round-right-3xl {
+    border-top-right-radius: 1.5rem !important;
+    border-bottom-right-radius: 1.5rem !important;
+  }
+  .sm\:border-round-bottom-3xl {
+    border-bottom-left-radius: 1.5rem !important;
+    border-bottom-right-radius: 1.5rem !important;
+  }
+  .sm\:border-circle-left {
+    border-top-left-radius: 50% !important;
+    border-bottom-left-radius: 50% !important;
+  }
+  .sm\:border-circle-top {
+    border-top-left-radius: 50% !important;
+    border-top-right-radius: 50% !important;
+  }
+  .sm\:border-circle-right {
+    border-top-right-radius: 50% !important;
+    border-bottom-right-radius: 50% !important;
+  }
+  .sm\:border-circle-bottom {
+    border-bottom-left-radius: 50% !important;
+    border-bottom-right-radius: 50% !important;
+  }
+}
+@media screen and (min-width: 768px) {
+  .md\:border-noround-left {
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+  }
+  .md\:border-noround-top {
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+  }
+  .md\:border-noround-right {
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+  }
+  .md\:border-noround-bottom {
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+  }
+  .md\:border-round-left {
+    border-top-left-radius: var(--border-radius) !important;
+    border-bottom-left-radius: var(--border-radius) !important;
+  }
+  .md\:border-round-top {
+    border-top-left-radius: var(--border-radius) !important;
+    border-top-right-radius: var(--border-radius) !important;
+  }
+  .md\:border-round-right {
+    border-top-right-radius: var(--border-radius) !important;
+    border-bottom-right-radius: var(--border-radius) !important;
+  }
+  .md\:border-round-bottom {
+    border-bottom-left-radius: var(--border-radius) !important;
+    border-bottom-right-radius: var(--border-radius) !important;
+  }
+  .md\:border-round-left-xs {
+    border-top-left-radius: 0.125rem !important;
+    border-bottom-left-radius: 0.125rem !important;
+  }
+  .md\:border-round-top-xs {
+    border-top-left-radius: 0.125rem !important;
+    border-top-right-radius: 0.125rem !important;
+  }
+  .md\:border-round-right-xs {
+    border-top-right-radius: 0.125rem !important;
+    border-bottom-right-radius: 0.125rem !important;
+  }
+  .md\:border-round-bottom-xs {
+    border-bottom-left-radius: 0.125rem !important;
+    border-bottom-right-radius: 0.125rem !important;
+  }
+  .md\:border-round-left-sm {
+    border-top-left-radius: 0.25rem !important;
+    border-bottom-left-radius: 0.25rem !important;
+  }
+  .md\:border-round-top-sm {
+    border-top-left-radius: 0.25rem !important;
+    border-top-right-radius: 0.25rem !important;
+  }
+  .md\:border-round-right-sm {
+    border-top-right-radius: 0.25rem !important;
+    border-bottom-right-radius: 0.25rem !important;
+  }
+  .md\:border-round-bottom-sm {
+    border-bottom-left-radius: 0.25rem !important;
+    border-bottom-right-radius: 0.25rem !important;
+  }
+  .md\:border-round-left-md {
+    border-top-left-radius: 0.375rem !important;
+    border-bottom-left-radius: 0.375rem !important;
+  }
+  .md\:border-round-top-md {
+    border-top-left-radius: 0.375rem !important;
+    border-top-right-radius: 0.375rem !important;
+  }
+  .md\:border-round-right-md {
+    border-top-right-radius: 0.375rem !important;
+    border-bottom-right-radius: 0.375rem !important;
+  }
+  .md\:border-round-bottom-md {
+    border-bottom-left-radius: 0.375rem !important;
+    border-bottom-right-radius: 0.375rem !important;
+  }
+  .md\:border-round-left-lg {
+    border-top-left-radius: 0.5rem !important;
+    border-bottom-left-radius: 0.5rem !important;
+  }
+  .md\:border-round-top-lg {
+    border-top-left-radius: 0.5rem !important;
+    border-top-right-radius: 0.5rem !important;
+  }
+  .md\:border-round-right-lg {
+    border-top-right-radius: 0.5rem !important;
+    border-bottom-right-radius: 0.5rem !important;
+  }
+  .md\:border-round-bottom-lg {
+    border-bottom-left-radius: 0.5rem !important;
+    border-bottom-right-radius: 0.5rem !important;
+  }
+  .md\:border-round-left-xl {
+    border-top-left-radius: 0.75rem !important;
+    border-bottom-left-radius: 0.75rem !important;
+  }
+  .md\:border-round-top-xl {
+    border-top-left-radius: 0.75rem !important;
+    border-top-right-radius: 0.75rem !important;
+  }
+  .md\:border-round-right-xl {
+    border-top-right-radius: 0.75rem !important;
+    border-bottom-right-radius: 0.75rem !important;
+  }
+  .md\:border-round-bottom-xl {
+    border-bottom-left-radius: 0.75rem !important;
+    border-bottom-right-radius: 0.75rem !important;
+  }
+  .md\:border-round-left-2xl {
+    border-top-left-radius: 1rem !important;
+    border-bottom-left-radius: 1rem !important;
+  }
+  .md\:border-round-top-2xl {
+    border-top-left-radius: 1rem !important;
+    border-top-right-radius: 1rem !important;
+  }
+  .md\:border-round-right-2xl {
+    border-top-right-radius: 1rem !important;
+    border-bottom-right-radius: 1rem !important;
+  }
+  .md\:border-round-bottom-2xl {
+    border-bottom-left-radius: 1rem !important;
+    border-bottom-right-radius: 1rem !important;
+  }
+  .md\:border-round-left-3xl {
+    border-top-left-radius: 1.5rem !important;
+    border-bottom-left-radius: 1.5rem !important;
+  }
+  .md\:border-round-top-3xl {
+    border-top-left-radius: 1.5rem !important;
+    border-top-right-radius: 1.5rem !important;
+  }
+  .md\:border-round-right-3xl {
+    border-top-right-radius: 1.5rem !important;
+    border-bottom-right-radius: 1.5rem !important;
+  }
+  .md\:border-round-bottom-3xl {
+    border-bottom-left-radius: 1.5rem !important;
+    border-bottom-right-radius: 1.5rem !important;
+  }
+  .md\:border-circle-left {
+    border-top-left-radius: 50% !important;
+    border-bottom-left-radius: 50% !important;
+  }
+  .md\:border-circle-top {
+    border-top-left-radius: 50% !important;
+    border-top-right-radius: 50% !important;
+  }
+  .md\:border-circle-right {
+    border-top-right-radius: 50% !important;
+    border-bottom-right-radius: 50% !important;
+  }
+  .md\:border-circle-bottom {
+    border-bottom-left-radius: 50% !important;
+    border-bottom-right-radius: 50% !important;
+  }
+}
+@media screen and (min-width: 992px) {
+  .lg\:border-noround-left {
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+  }
+  .lg\:border-noround-top {
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+  }
+  .lg\:border-noround-right {
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+  }
+  .lg\:border-noround-bottom {
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+  }
+  .lg\:border-round-left {
+    border-top-left-radius: var(--border-radius) !important;
+    border-bottom-left-radius: var(--border-radius) !important;
+  }
+  .lg\:border-round-top {
+    border-top-left-radius: var(--border-radius) !important;
+    border-top-right-radius: var(--border-radius) !important;
+  }
+  .lg\:border-round-right {
+    border-top-right-radius: var(--border-radius) !important;
+    border-bottom-right-radius: var(--border-radius) !important;
+  }
+  .lg\:border-round-bottom {
+    border-bottom-left-radius: var(--border-radius) !important;
+    border-bottom-right-radius: var(--border-radius) !important;
+  }
+  .lg\:border-round-left-xs {
+    border-top-left-radius: 0.125rem !important;
+    border-bottom-left-radius: 0.125rem !important;
+  }
+  .lg\:border-round-top-xs {
+    border-top-left-radius: 0.125rem !important;
+    border-top-right-radius: 0.125rem !important;
+  }
+  .lg\:border-round-right-xs {
+    border-top-right-radius: 0.125rem !important;
+    border-bottom-right-radius: 0.125rem !important;
+  }
+  .lg\:border-round-bottom-xs {
+    border-bottom-left-radius: 0.125rem !important;
+    border-bottom-right-radius: 0.125rem !important;
+  }
+  .lg\:border-round-left-sm {
+    border-top-left-radius: 0.25rem !important;
+    border-bottom-left-radius: 0.25rem !important;
+  }
+  .lg\:border-round-top-sm {
+    border-top-left-radius: 0.25rem !important;
+    border-top-right-radius: 0.25rem !important;
+  }
+  .lg\:border-round-right-sm {
+    border-top-right-radius: 0.25rem !important;
+    border-bottom-right-radius: 0.25rem !important;
+  }
+  .lg\:border-round-bottom-sm {
+    border-bottom-left-radius: 0.25rem !important;
+    border-bottom-right-radius: 0.25rem !important;
+  }
+  .lg\:border-round-left-md {
+    border-top-left-radius: 0.375rem !important;
+    border-bottom-left-radius: 0.375rem !important;
+  }
+  .lg\:border-round-top-md {
+    border-top-left-radius: 0.375rem !important;
+    border-top-right-radius: 0.375rem !important;
+  }
+  .lg\:border-round-right-md {
+    border-top-right-radius: 0.375rem !important;
+    border-bottom-right-radius: 0.375rem !important;
+  }
+  .lg\:border-round-bottom-md {
+    border-bottom-left-radius: 0.375rem !important;
+    border-bottom-right-radius: 0.375rem !important;
+  }
+  .lg\:border-round-left-lg {
+    border-top-left-radius: 0.5rem !important;
+    border-bottom-left-radius: 0.5rem !important;
+  }
+  .lg\:border-round-top-lg {
+    border-top-left-radius: 0.5rem !important;
+    border-top-right-radius: 0.5rem !important;
+  }
+  .lg\:border-round-right-lg {
+    border-top-right-radius: 0.5rem !important;
+    border-bottom-right-radius: 0.5rem !important;
+  }
+  .lg\:border-round-bottom-lg {
+    border-bottom-left-radius: 0.5rem !important;
+    border-bottom-right-radius: 0.5rem !important;
+  }
+  .lg\:border-round-left-xl {
+    border-top-left-radius: 0.75rem !important;
+    border-bottom-left-radius: 0.75rem !important;
+  }
+  .lg\:border-round-top-xl {
+    border-top-left-radius: 0.75rem !important;
+    border-top-right-radius: 0.75rem !important;
+  }
+  .lg\:border-round-right-xl {
+    border-top-right-radius: 0.75rem !important;
+    border-bottom-right-radius: 0.75rem !important;
+  }
+  .lg\:border-round-bottom-xl {
+    border-bottom-left-radius: 0.75rem !important;
+    border-bottom-right-radius: 0.75rem !important;
+  }
+  .lg\:border-round-left-2xl {
+    border-top-left-radius: 1rem !important;
+    border-bottom-left-radius: 1rem !important;
+  }
+  .lg\:border-round-top-2xl {
+    border-top-left-radius: 1rem !important;
+    border-top-right-radius: 1rem !important;
+  }
+  .lg\:border-round-right-2xl {
+    border-top-right-radius: 1rem !important;
+    border-bottom-right-radius: 1rem !important;
+  }
+  .lg\:border-round-bottom-2xl {
+    border-bottom-left-radius: 1rem !important;
+    border-bottom-right-radius: 1rem !important;
+  }
+  .lg\:border-round-left-3xl {
+    border-top-left-radius: 1.5rem !important;
+    border-bottom-left-radius: 1.5rem !important;
+  }
+  .lg\:border-round-top-3xl {
+    border-top-left-radius: 1.5rem !important;
+    border-top-right-radius: 1.5rem !important;
+  }
+  .lg\:border-round-right-3xl {
+    border-top-right-radius: 1.5rem !important;
+    border-bottom-right-radius: 1.5rem !important;
+  }
+  .lg\:border-round-bottom-3xl {
+    border-bottom-left-radius: 1.5rem !important;
+    border-bottom-right-radius: 1.5rem !important;
+  }
+  .lg\:border-circle-left {
+    border-top-left-radius: 50% !important;
+    border-bottom-left-radius: 50% !important;
+  }
+  .lg\:border-circle-top {
+    border-top-left-radius: 50% !important;
+    border-top-right-radius: 50% !important;
+  }
+  .lg\:border-circle-right {
+    border-top-right-radius: 50% !important;
+    border-bottom-right-radius: 50% !important;
+  }
+  .lg\:border-circle-bottom {
+    border-bottom-left-radius: 50% !important;
+    border-bottom-right-radius: 50% !important;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .xl\:border-noround-left {
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+  }
+  .xl\:border-noround-top {
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+  }
+  .xl\:border-noround-right {
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+  }
+  .xl\:border-noround-bottom {
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+  }
+  .xl\:border-round-left {
+    border-top-left-radius: var(--border-radius) !important;
+    border-bottom-left-radius: var(--border-radius) !important;
+  }
+  .xl\:border-round-top {
+    border-top-left-radius: var(--border-radius) !important;
+    border-top-right-radius: var(--border-radius) !important;
+  }
+  .xl\:border-round-right {
+    border-top-right-radius: var(--border-radius) !important;
+    border-bottom-right-radius: var(--border-radius) !important;
+  }
+  .xl\:border-round-bottom {
+    border-bottom-left-radius: var(--border-radius) !important;
+    border-bottom-right-radius: var(--border-radius) !important;
+  }
+  .xl\:border-round-left-xs {
+    border-top-left-radius: 0.125rem !important;
+    border-bottom-left-radius: 0.125rem !important;
+  }
+  .xl\:border-round-top-xs {
+    border-top-left-radius: 0.125rem !important;
+    border-top-right-radius: 0.125rem !important;
+  }
+  .xl\:border-round-right-xs {
+    border-top-right-radius: 0.125rem !important;
+    border-bottom-right-radius: 0.125rem !important;
+  }
+  .xl\:border-round-bottom-xs {
+    border-bottom-left-radius: 0.125rem !important;
+    border-bottom-right-radius: 0.125rem !important;
+  }
+  .xl\:border-round-left-sm {
+    border-top-left-radius: 0.25rem !important;
+    border-bottom-left-radius: 0.25rem !important;
+  }
+  .xl\:border-round-top-sm {
+    border-top-left-radius: 0.25rem !important;
+    border-top-right-radius: 0.25rem !important;
+  }
+  .xl\:border-round-right-sm {
+    border-top-right-radius: 0.25rem !important;
+    border-bottom-right-radius: 0.25rem !important;
+  }
+  .xl\:border-round-bottom-sm {
+    border-bottom-left-radius: 0.25rem !important;
+    border-bottom-right-radius: 0.25rem !important;
+  }
+  .xl\:border-round-left-md {
+    border-top-left-radius: 0.375rem !important;
+    border-bottom-left-radius: 0.375rem !important;
+  }
+  .xl\:border-round-top-md {
+    border-top-left-radius: 0.375rem !important;
+    border-top-right-radius: 0.375rem !important;
+  }
+  .xl\:border-round-right-md {
+    border-top-right-radius: 0.375rem !important;
+    border-bottom-right-radius: 0.375rem !important;
+  }
+  .xl\:border-round-bottom-md {
+    border-bottom-left-radius: 0.375rem !important;
+    border-bottom-right-radius: 0.375rem !important;
+  }
+  .xl\:border-round-left-lg {
+    border-top-left-radius: 0.5rem !important;
+    border-bottom-left-radius: 0.5rem !important;
+  }
+  .xl\:border-round-top-lg {
+    border-top-left-radius: 0.5rem !important;
+    border-top-right-radius: 0.5rem !important;
+  }
+  .xl\:border-round-right-lg {
+    border-top-right-radius: 0.5rem !important;
+    border-bottom-right-radius: 0.5rem !important;
+  }
+  .xl\:border-round-bottom-lg {
+    border-bottom-left-radius: 0.5rem !important;
+    border-bottom-right-radius: 0.5rem !important;
+  }
+  .xl\:border-round-left-xl {
+    border-top-left-radius: 0.75rem !important;
+    border-bottom-left-radius: 0.75rem !important;
+  }
+  .xl\:border-round-top-xl {
+    border-top-left-radius: 0.75rem !important;
+    border-top-right-radius: 0.75rem !important;
+  }
+  .xl\:border-round-right-xl {
+    border-top-right-radius: 0.75rem !important;
+    border-bottom-right-radius: 0.75rem !important;
+  }
+  .xl\:border-round-bottom-xl {
+    border-bottom-left-radius: 0.75rem !important;
+    border-bottom-right-radius: 0.75rem !important;
+  }
+  .xl\:border-round-left-2xl {
+    border-top-left-radius: 1rem !important;
+    border-bottom-left-radius: 1rem !important;
+  }
+  .xl\:border-round-top-2xl {
+    border-top-left-radius: 1rem !important;
+    border-top-right-radius: 1rem !important;
+  }
+  .xl\:border-round-right-2xl {
+    border-top-right-radius: 1rem !important;
+    border-bottom-right-radius: 1rem !important;
+  }
+  .xl\:border-round-bottom-2xl {
+    border-bottom-left-radius: 1rem !important;
+    border-bottom-right-radius: 1rem !important;
+  }
+  .xl\:border-round-left-3xl {
+    border-top-left-radius: 1.5rem !important;
+    border-bottom-left-radius: 1.5rem !important;
+  }
+  .xl\:border-round-top-3xl {
+    border-top-left-radius: 1.5rem !important;
+    border-top-right-radius: 1.5rem !important;
+  }
+  .xl\:border-round-right-3xl {
+    border-top-right-radius: 1.5rem !important;
+    border-bottom-right-radius: 1.5rem !important;
+  }
+  .xl\:border-round-bottom-3xl {
+    border-bottom-left-radius: 1.5rem !important;
+    border-bottom-right-radius: 1.5rem !important;
+  }
+  .xl\:border-circle-left {
+    border-top-left-radius: 50% !important;
+    border-bottom-left-radius: 50% !important;
+  }
+  .xl\:border-circle-top {
+    border-top-left-radius: 50% !important;
+    border-top-right-radius: 50% !important;
+  }
+  .xl\:border-circle-right {
+    border-top-right-radius: 50% !important;
+    border-bottom-right-radius: 50% !important;
+  }
+  .xl\:border-circle-bottom {
+    border-bottom-left-radius: 50% !important;
+    border-bottom-right-radius: 50% !important;
   }
 }
 .w-full {
