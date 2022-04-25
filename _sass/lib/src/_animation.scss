@@ -151,59 +151,59 @@
   }
 }
 
-.fadein {
+.#{$prefix}fadein {
   animation: fadein .15s linear;
 }
 
-.fadeout {
+.#{$prefix}fadeout {
   animation: fadeout .15s linear;
 }
 
-.slidedown {
+.#{$prefix}slidedown {
   animation: slidedown .45s ease-in-out;
 }
 
-.slideup {
+.#{$prefix}slideup {
   animation: slideup .45s cubic-bezier(0, 1, 0, 1);
 }
 
-.scalein {
+.#{$prefix}scalein {
   animation: scalein .15s linear;
 }
 
-.fadeinleft {
+.#{$prefix}fadeinleft {
   animation: fadeinleft .15s linear;
 }
 
-.fadeoutleft {
+.#{$prefix}fadeoutleft {
   animation: fadeoutleft .15s linear;
 }
 
-.fadeinright {
+.#{$prefix}fadeinright {
   animation: fadeinright .15s linear;
 }
 
-.fadeoutright {
+.#{$prefix}fadeoutright {
   animation: fadeoutright .15s linear;
 }
 
-.fadeinup {
+.#{$prefix}fadeinup {
   animation: fadeinup .15s linear;
 }
 
-.fadeoutup {
+.#{$prefix}fadeoutup {
   animation: fadeoutup .15s linear;
 }
 
-.fadeindown {
+.#{$prefix}fadeindown {
   animation: fadeindown .15s linear;
 }
 
-.fadeoutdown {
+.#{$prefix}fadeoutdown {
   animation: fadeoutdown .15s linear;
 }
 
-.animate-width {
+.#{$prefix}animate-width {
   animation: animate-width 1000ms linear;
 }
 

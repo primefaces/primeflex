@@ -15,86 +15,86 @@ $rgbaShades: 10, 20, 30, 40, 50, 60, 70, 80, 90;
 @include rgba-color-class('border-', 'border-color', ("white": '255,255,255', 'black': '0,0,0'), $rgbaShades);
 @include rgba-color-class('text-', 'color', ("white": '255,255,255', 'black': '0,0,0'), $rgbaShades);
 
-.text-primary {
+.#{$prefix}text-primary {
     color: var(--primary-color) !important;
 }
 
-.hover\:text-primary:hover {
+.hover\:#{$prefix}text-primary:hover {
     color: var(--primary-color) !important;
 }
 
-.bg-primary {
+.#{$prefix}bg-primary {
     background-color: var(--primary-color) !important;
     color: var(--primary-color-text) !important;
 }
 
-.hover\:bg-primary:hover {
+.hover\:#{$prefix}bg-primary:hover {
     background-color: var(--primary-color) !important;
     color: var(--primary-color-text) !important;
 }
 
-.border-primary {
+.#{$prefix}border-primary {
     border-color: var(--primary-color) !important;
 }
 
-.hover\:border-primary:hover {
+.hover\:#{$prefix}border-primary:hover {
     border-color: var(--primary-color) !important;
 }
 
-.bg-primary-reverse {
+.#{$prefix}bg-primary-reverse {
     background-color: var(--primary-color-text) !important;
     color: var(--primary-color) !important;
 }
 
-.hover\:bg-primary-reverse:hover {
+.hover\:#{$prefix}bg-primary-reverse:hover {
     background-color: var(--primary-color-text) !important;
     color: var(--primary-color) !important;
 }
 
-.text-white {
+.#{$prefix}text-white {
     color: #ffffff !important; 
 }
 
-.hover\:text-white:hover {
+.hover\:#{$prefix}text-white:hover {
     color: #ffffff !important; 
 }
 
-.bg-white {
+.#{$prefix}bg-white {
     background-color: #ffffff !important; 
 }
 
-.hover\:bg-white:hover {
+.hover\:#{$prefix}bg-white:hover {
     background-color: #ffffff !important; 
 }
 
-.border-white {
+.#{$prefix}border-white {
     border-color: #ffffff !important; 
 }
 
-.hover\:border-white:hover {
+.hover\:#{$prefix}border-white:hover {
     border-color: #ffffff !important; 
 }
 
-.surface-ground {
+.#{$prefix}surface-ground {
     background-color: var(--surface-ground) !important; 
 }
 
-.surface-section {
+.#{$prefix}surface-section {
     background-color: var(--surface-section) !important; 
 }
 
-.surface-card {
+.#{$prefix}surface-card {
     background-color: var(--surface-card) !important; 
 }
 
-.surface-overlay {
+.#{$prefix}surface-overlay {
     background-color: var(--surface-overlay) !important; 
 }
 
-.surface-border {
+.#{$prefix}surface-border {
     border-color: var(--surface-border) !important; 
 }
 
-.surface-hover {
+.#{$prefix}surface-hover {
     background-color: var(--surface-hover) !important;
 }

@@ -1,4 +1,4 @@
-.grid {
+.#{$prefix}grid {
     display: flex;
     flex-wrap: wrap;
     margin-right: -1 * $gutter;
@@ -6,29 +6,29 @@
     margin-top: -1 * $gutter;
 }
 
-.grid > .col,
-.grid > [class*="col"] {
+.#{$prefix}grid > #{$prefix}.col,
+.#{$prefix}grid > [class*="#{$prefix}col"] {
     box-sizing: border-box;
 }
 
-.grid-nogutter {
+.#{$prefix}grid-nogutter {
     margin-right: 0;
     margin-left: 0;
     margin-top: 0;
 }
 
-.grid-nogutter > .col,
-.grid-nogutter > [class*="col-"] {
+.#{$prefix}grid-nogutter > .#{$prefix}col,
+.#{$prefix}grid-nogutter > [class*="#{$prefix}col-"] {
     padding: 0;
 }
 
-.col {
+.#{$prefix}col {
     flex-grow: 1;
     flex-basis: 0;
     padding: $gutter;
 }
 
-.col-fixed {
+.#{$prefix}col-fixed {
     flex: 0 0 auto;
     padding: $gutter;
 }
@@ -65,7 +65,7 @@ $grid-column-offsets: (
 );
 
 @each $col,$width in $grid-columns {
-    .#{$col} {
+    .#{$prefix}#{$col} {
         flex: 0 0 auto;
         padding: $gutter;
         width: #{$width};
@@ -75,8 +75,8 @@ $grid-column-offsets: (
 @each $key, $val in $breakpoints {
     @media screen and (min-width: #{$val}) {
         .#{$key + $separator} {
-            @each $col,$width in $grid-columns {
-                &#{$col} {
+            @each $col, $width in $grid-columns {
+                &#{$prefix}#{$col} {
                     flex: 0 0 auto;
                     padding: $gutter;
                     width: #{$width};
