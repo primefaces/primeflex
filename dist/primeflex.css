@@ -6657,59 +6657,29 @@
   color: var(--primary-color) !important;
 }
 
-.hover\:text-primary:hover {
-  color: var(--primary-color) !important;
-}
-
 .bg-primary {
-  background-color: var(--primary-color) !important;
   color: var(--primary-color-text) !important;
-}
-
-.hover\:bg-primary:hover {
   background-color: var(--primary-color) !important;
-  color: var(--primary-color-text) !important;
-}
-
-.border-primary {
-  border-color: var(--primary-color) !important;
-}
-
-.hover\:border-primary:hover {
-  border-color: var(--primary-color) !important;
 }
 
 .bg-primary-reverse {
-  background-color: var(--primary-color-text) !important;
   color: var(--primary-color) !important;
-}
-
-.hover\:bg-primary-reverse:hover {
   background-color: var(--primary-color-text) !important;
-  color: var(--primary-color) !important;
-}
-
-.text-white {
-  color: #ffffff !important;
-}
-
-.hover\:text-white:hover {
-  color: #ffffff !important;
 }
 
 .bg-white {
   background-color: #ffffff !important;
 }
 
-.hover\:bg-white:hover {
-  background-color: #ffffff !important;
+.border-primary {
+  border-color: var(--primary-color) !important;
+}
+
+.text-white {
+  color: #ffffff !important;
 }
 
 .border-white {
-  border-color: #ffffff !important;
-}
-
-.hover\:border-white:hover {
   border-color: #ffffff !important;
 }
 
@@ -6717,15 +6687,7 @@
   color: var(--text-color) !important;
 }
 
-.hover\:text-color:hover {
-  color: var(--text-color) !important;
-}
-
 .text-color-secondary {
-  color: var(--text-color-secondary) !important;
-}
-
-.hover\:text-color-secondary:hover {
   color: var(--text-color-secondary) !important;
 }
 
@@ -6745,14 +6707,960 @@
   background-color: var(--surface-overlay) !important;
 }
 
-.surface-border {
-  border-color: var(--surface-border) !important;
-}
-
 .surface-hover {
   background-color: var(--surface-hover) !important;
 }
 
+.surface-border {
+  border-color: var(--surface-border) !important;
+}
+
+.focus\:text-primary:focus {
+  color: var(--primary-color) !important;
+}
+
+.hover\:text-primary:hover {
+  color: var(--primary-color) !important;
+}
+
+.active\:text-primary:active {
+  color: var(--primary-color) !important;
+}
+
+.focus\:bg-primary:focus {
+  color: var(--primary-color-text) !important;
+  background-color: var(--primary-color) !important;
+}
+
+.hover\:bg-primary:hover {
+  color: var(--primary-color-text) !important;
+  background-color: var(--primary-color) !important;
+}
+
+.active\:bg-primary:active {
+  color: var(--primary-color-text) !important;
+  background-color: var(--primary-color) !important;
+}
+
+.focus\:bg-primary-reverse:focus {
+  color: var(--primary-color) !important;
+  background-color: var(--primary-color-text) !important;
+}
+
+.hover\:bg-primary-reverse:hover {
+  color: var(--primary-color) !important;
+  background-color: var(--primary-color-text) !important;
+}
+
+.active\:bg-primary-reverse:active {
+  color: var(--primary-color) !important;
+  background-color: var(--primary-color-text) !important;
+}
+
+.focus\:bg-white:focus {
+  background-color: #ffffff !important;
+}
+
+.hover\:bg-white:hover {
+  background-color: #ffffff !important;
+}
+
+.active\:bg-white:active {
+  background-color: #ffffff !important;
+}
+
+.focus\:border-primary:focus {
+  border-color: var(--primary-color) !important;
+}
+
+.hover\:border-primary:hover {
+  border-color: var(--primary-color) !important;
+}
+
+.active\:border-primary:active {
+  border-color: var(--primary-color) !important;
+}
+
+.focus\:text-white:focus {
+  color: #ffffff !important;
+}
+
+.hover\:text-white:hover {
+  color: #ffffff !important;
+}
+
+.active\:text-white:active {
+  color: #ffffff !important;
+}
+
+.focus\:border-white:focus {
+  border-color: #ffffff !important;
+}
+
+.hover\:border-white:hover {
+  border-color: #ffffff !important;
+}
+
+.active\:border-white:active {
+  border-color: #ffffff !important;
+}
+
+.focus\:text-color:focus {
+  color: var(--text-color) !important;
+}
+
+.hover\:text-color:hover {
+  color: var(--text-color) !important;
+}
+
+.active\:text-color:active {
+  color: var(--text-color) !important;
+}
+
+.focus\:text-color-secondary:focus {
+  color: var(--text-color-secondary) !important;
+}
+
+.hover\:text-color-secondary:hover {
+  color: var(--text-color-secondary) !important;
+}
+
+.active\:text-color-secondary:active {
+  color: var(--text-color-secondary) !important;
+}
+
+.focus\:surface-ground:focus {
+  background-color: var(--surface-ground) !important;
+}
+
+.hover\:surface-ground:hover {
+  background-color: var(--surface-ground) !important;
+}
+
+.active\:surface-ground:active {
+  background-color: var(--surface-ground) !important;
+}
+
+.focus\:surface-section:focus {
+  background-color: var(--surface-section) !important;
+}
+
+.hover\:surface-section:hover {
+  background-color: var(--surface-section) !important;
+}
+
+.active\:surface-section:active {
+  background-color: var(--surface-section) !important;
+}
+
+.focus\:surface-card:focus {
+  background-color: var(--surface-card) !important;
+}
+
+.hover\:surface-card:hover {
+  background-color: var(--surface-card) !important;
+}
+
+.active\:surface-card:active {
+  background-color: var(--surface-card) !important;
+}
+
+.focus\:surface-overlay:focus {
+  background-color: var(--surface-overlay) !important;
+}
+
+.hover\:surface-overlay:hover {
+  background-color: var(--surface-overlay) !important;
+}
+
+.active\:surface-overlay:active {
+  background-color: var(--surface-overlay) !important;
+}
+
+.focus\:surface-hover:focus {
+  background-color: var(--surface-hover) !important;
+}
+
+.hover\:surface-hover:hover {
+  background-color: var(--surface-hover) !important;
+}
+
+.active\:surface-hover:active {
+  background-color: var(--surface-hover) !important;
+}
+
+.focus\:surface-border:focus {
+  border-color: var(--surface-border) !important;
+}
+
+.hover\:surface-border:hover {
+  border-color: var(--surface-border) !important;
+}
+
+.active\:surface-border:active {
+  border-color: var(--surface-border) !important;
+}
+
+@media screen and (min-width: 576px) {
+  .sm\:text-primary {
+    color: var(--primary-color) !important;
+  }
+  .sm\:bg-primary {
+    color: var(--primary-color-text) !important;
+    background-color: var(--primary-color) !important;
+  }
+  .sm\:bg-primary-reverse {
+    color: var(--primary-color) !important;
+    background-color: var(--primary-color-text) !important;
+  }
+  .sm\:bg-white {
+    background-color: #ffffff !important;
+  }
+  .sm\:border-primary {
+    border-color: var(--primary-color) !important;
+  }
+  .sm\:text-white {
+    color: #ffffff !important;
+  }
+  .sm\:border-white {
+    border-color: #ffffff !important;
+  }
+  .sm\:text-color {
+    color: var(--text-color) !important;
+  }
+  .sm\:text-color-secondary {
+    color: var(--text-color-secondary) !important;
+  }
+  .sm\:surface-ground {
+    background-color: var(--surface-ground) !important;
+  }
+  .sm\:surface-section {
+    background-color: var(--surface-section) !important;
+  }
+  .sm\:surface-card {
+    background-color: var(--surface-card) !important;
+  }
+  .sm\:surface-overlay {
+    background-color: var(--surface-overlay) !important;
+  }
+  .sm\:surface-hover {
+    background-color: var(--surface-hover) !important;
+  }
+  .sm\:surface-border {
+    border-color: var(--surface-border) !important;
+  }
+  .sm\:focus\:text-primary:focus {
+    color: var(--primary-color) !important;
+  }
+  .sm\:hover\:text-primary:hover {
+    color: var(--primary-color) !important;
+  }
+  .sm\:active\:text-primary:active {
+    color: var(--primary-color) !important;
+  }
+  .sm\:focus\:bg-primary:focus {
+    color: var(--primary-color-text) !important;
+    background-color: var(--primary-color) !important;
+  }
+  .sm\:hover\:bg-primary:hover {
+    color: var(--primary-color-text) !important;
+    background-color: var(--primary-color) !important;
+  }
+  .sm\:active\:bg-primary:active {
+    color: var(--primary-color-text) !important;
+    background-color: var(--primary-color) !important;
+  }
+  .sm\:focus\:bg-primary-reverse:focus {
+    color: var(--primary-color) !important;
+    background-color: var(--primary-color-text) !important;
+  }
+  .sm\:hover\:bg-primary-reverse:hover {
+    color: var(--primary-color) !important;
+    background-color: var(--primary-color-text) !important;
+  }
+  .sm\:active\:bg-primary-reverse:active {
+    color: var(--primary-color) !important;
+    background-color: var(--primary-color-text) !important;
+  }
+  .sm\:focus\:bg-white:focus {
+    background-color: #ffffff !important;
+  }
+  .sm\:hover\:bg-white:hover {
+    background-color: #ffffff !important;
+  }
+  .sm\:active\:bg-white:active {
+    background-color: #ffffff !important;
+  }
+  .sm\:focus\:border-primary:focus {
+    border-color: var(--primary-color) !important;
+  }
+  .sm\:hover\:border-primary:hover {
+    border-color: var(--primary-color) !important;
+  }
+  .sm\:active\:border-primary:active {
+    border-color: var(--primary-color) !important;
+  }
+  .sm\:focus\:text-white:focus {
+    color: #ffffff !important;
+  }
+  .sm\:hover\:text-white:hover {
+    color: #ffffff !important;
+  }
+  .sm\:active\:text-white:active {
+    color: #ffffff !important;
+  }
+  .sm\:focus\:border-white:focus {
+    border-color: #ffffff !important;
+  }
+  .sm\:hover\:border-white:hover {
+    border-color: #ffffff !important;
+  }
+  .sm\:active\:border-white:active {
+    border-color: #ffffff !important;
+  }
+  .sm\:focus\:text-color:focus {
+    color: var(--text-color) !important;
+  }
+  .sm\:hover\:text-color:hover {
+    color: var(--text-color) !important;
+  }
+  .sm\:active\:text-color:active {
+    color: var(--text-color) !important;
+  }
+  .sm\:focus\:text-color-secondary:focus {
+    color: var(--text-color-secondary) !important;
+  }
+  .sm\:hover\:text-color-secondary:hover {
+    color: var(--text-color-secondary) !important;
+  }
+  .sm\:active\:text-color-secondary:active {
+    color: var(--text-color-secondary) !important;
+  }
+  .sm\:focus\:surface-ground:focus {
+    background-color: var(--surface-ground) !important;
+  }
+  .sm\:hover\:surface-ground:hover {
+    background-color: var(--surface-ground) !important;
+  }
+  .sm\:active\:surface-ground:active {
+    background-color: var(--surface-ground) !important;
+  }
+  .sm\:focus\:surface-section:focus {
+    background-color: var(--surface-section) !important;
+  }
+  .sm\:hover\:surface-section:hover {
+    background-color: var(--surface-section) !important;
+  }
+  .sm\:active\:surface-section:active {
+    background-color: var(--surface-section) !important;
+  }
+  .sm\:focus\:surface-card:focus {
+    background-color: var(--surface-card) !important;
+  }
+  .sm\:hover\:surface-card:hover {
+    background-color: var(--surface-card) !important;
+  }
+  .sm\:active\:surface-card:active {
+    background-color: var(--surface-card) !important;
+  }
+  .sm\:focus\:surface-overlay:focus {
+    background-color: var(--surface-overlay) !important;
+  }
+  .sm\:hover\:surface-overlay:hover {
+    background-color: var(--surface-overlay) !important;
+  }
+  .sm\:active\:surface-overlay:active {
+    background-color: var(--surface-overlay) !important;
+  }
+  .sm\:focus\:surface-hover:focus {
+    background-color: var(--surface-hover) !important;
+  }
+  .sm\:hover\:surface-hover:hover {
+    background-color: var(--surface-hover) !important;
+  }
+  .sm\:active\:surface-hover:active {
+    background-color: var(--surface-hover) !important;
+  }
+  .sm\:focus\:surface-border:focus {
+    border-color: var(--surface-border) !important;
+  }
+  .sm\:hover\:surface-border:hover {
+    border-color: var(--surface-border) !important;
+  }
+  .sm\:active\:surface-border:active {
+    border-color: var(--surface-border) !important;
+  }
+}
+@media screen and (min-width: 768px) {
+  .md\:text-primary {
+    color: var(--primary-color) !important;
+  }
+  .md\:bg-primary {
+    color: var(--primary-color-text) !important;
+    background-color: var(--primary-color) !important;
+  }
+  .md\:bg-primary-reverse {
+    color: var(--primary-color) !important;
+    background-color: var(--primary-color-text) !important;
+  }
+  .md\:bg-white {
+    background-color: #ffffff !important;
+  }
+  .md\:border-primary {
+    border-color: var(--primary-color) !important;
+  }
+  .md\:text-white {
+    color: #ffffff !important;
+  }
+  .md\:border-white {
+    border-color: #ffffff !important;
+  }
+  .md\:text-color {
+    color: var(--text-color) !important;
+  }
+  .md\:text-color-secondary {
+    color: var(--text-color-secondary) !important;
+  }
+  .md\:surface-ground {
+    background-color: var(--surface-ground) !important;
+  }
+  .md\:surface-section {
+    background-color: var(--surface-section) !important;
+  }
+  .md\:surface-card {
+    background-color: var(--surface-card) !important;
+  }
+  .md\:surface-overlay {
+    background-color: var(--surface-overlay) !important;
+  }
+  .md\:surface-hover {
+    background-color: var(--surface-hover) !important;
+  }
+  .md\:surface-border {
+    border-color: var(--surface-border) !important;
+  }
+  .md\:focus\:text-primary:focus {
+    color: var(--primary-color) !important;
+  }
+  .md\:hover\:text-primary:hover {
+    color: var(--primary-color) !important;
+  }
+  .md\:active\:text-primary:active {
+    color: var(--primary-color) !important;
+  }
+  .md\:focus\:bg-primary:focus {
+    color: var(--primary-color-text) !important;
+    background-color: var(--primary-color) !important;
+  }
+  .md\:hover\:bg-primary:hover {
+    color: var(--primary-color-text) !important;
+    background-color: var(--primary-color) !important;
+  }
+  .md\:active\:bg-primary:active {
+    color: var(--primary-color-text) !important;
+    background-color: var(--primary-color) !important;
+  }
+  .md\:focus\:bg-primary-reverse:focus {
+    color: var(--primary-color) !important;
+    background-color: var(--primary-color-text) !important;
+  }
+  .md\:hover\:bg-primary-reverse:hover {
+    color: var(--primary-color) !important;
+    background-color: var(--primary-color-text) !important;
+  }
+  .md\:active\:bg-primary-reverse:active {
+    color: var(--primary-color) !important;
+    background-color: var(--primary-color-text) !important;
+  }
+  .md\:focus\:bg-white:focus {
+    background-color: #ffffff !important;
+  }
+  .md\:hover\:bg-white:hover {
+    background-color: #ffffff !important;
+  }
+  .md\:active\:bg-white:active {
+    background-color: #ffffff !important;
+  }
+  .md\:focus\:border-primary:focus {
+    border-color: var(--primary-color) !important;
+  }
+  .md\:hover\:border-primary:hover {
+    border-color: var(--primary-color) !important;
+  }
+  .md\:active\:border-primary:active {
+    border-color: var(--primary-color) !important;
+  }
+  .md\:focus\:text-white:focus {
+    color: #ffffff !important;
+  }
+  .md\:hover\:text-white:hover {
+    color: #ffffff !important;
+  }
+  .md\:active\:text-white:active {
+    color: #ffffff !important;
+  }
+  .md\:focus\:border-white:focus {
+    border-color: #ffffff !important;
+  }
+  .md\:hover\:border-white:hover {
+    border-color: #ffffff !important;
+  }
+  .md\:active\:border-white:active {
+    border-color: #ffffff !important;
+  }
+  .md\:focus\:text-color:focus {
+    color: var(--text-color) !important;
+  }
+  .md\:hover\:text-color:hover {
+    color: var(--text-color) !important;
+  }
+  .md\:active\:text-color:active {
+    color: var(--text-color) !important;
+  }
+  .md\:focus\:text-color-secondary:focus {
+    color: var(--text-color-secondary) !important;
+  }
+  .md\:hover\:text-color-secondary:hover {
+    color: var(--text-color-secondary) !important;
+  }
+  .md\:active\:text-color-secondary:active {
+    color: var(--text-color-secondary) !important;
+  }
+  .md\:focus\:surface-ground:focus {
+    background-color: var(--surface-ground) !important;
+  }
+  .md\:hover\:surface-ground:hover {
+    background-color: var(--surface-ground) !important;
+  }
+  .md\:active\:surface-ground:active {
+    background-color: var(--surface-ground) !important;
+  }
+  .md\:focus\:surface-section:focus {
+    background-color: var(--surface-section) !important;
+  }
+  .md\:hover\:surface-section:hover {
+    background-color: var(--surface-section) !important;
+  }
+  .md\:active\:surface-section:active {
+    background-color: var(--surface-section) !important;
+  }
+  .md\:focus\:surface-card:focus {
+    background-color: var(--surface-card) !important;
+  }
+  .md\:hover\:surface-card:hover {
+    background-color: var(--surface-card) !important;
+  }
+  .md\:active\:surface-card:active {
+    background-color: var(--surface-card) !important;
+  }
+  .md\:focus\:surface-overlay:focus {
+    background-color: var(--surface-overlay) !important;
+  }
+  .md\:hover\:surface-overlay:hover {
+    background-color: var(--surface-overlay) !important;
+  }
+  .md\:active\:surface-overlay:active {
+    background-color: var(--surface-overlay) !important;
+  }
+  .md\:focus\:surface-hover:focus {
+    background-color: var(--surface-hover) !important;
+  }
+  .md\:hover\:surface-hover:hover {
+    background-color: var(--surface-hover) !important;
+  }
+  .md\:active\:surface-hover:active {
+    background-color: var(--surface-hover) !important;
+  }
+  .md\:focus\:surface-border:focus {
+    border-color: var(--surface-border) !important;
+  }
+  .md\:hover\:surface-border:hover {
+    border-color: var(--surface-border) !important;
+  }
+  .md\:active\:surface-border:active {
+    border-color: var(--surface-border) !important;
+  }
+}
+@media screen and (min-width: 992px) {
+  .lg\:text-primary {
+    color: var(--primary-color) !important;
+  }
+  .lg\:bg-primary {
+    color: var(--primary-color-text) !important;
+    background-color: var(--primary-color) !important;
+  }
+  .lg\:bg-primary-reverse {
+    color: var(--primary-color) !important;
+    background-color: var(--primary-color-text) !important;
+  }
+  .lg\:bg-white {
+    background-color: #ffffff !important;
+  }
+  .lg\:border-primary {
+    border-color: var(--primary-color) !important;
+  }
+  .lg\:text-white {
+    color: #ffffff !important;
+  }
+  .lg\:border-white {
+    border-color: #ffffff !important;
+  }
+  .lg\:text-color {
+    color: var(--text-color) !important;
+  }
+  .lg\:text-color-secondary {
+    color: var(--text-color-secondary) !important;
+  }
+  .lg\:surface-ground {
+    background-color: var(--surface-ground) !important;
+  }
+  .lg\:surface-section {
+    background-color: var(--surface-section) !important;
+  }
+  .lg\:surface-card {
+    background-color: var(--surface-card) !important;
+  }
+  .lg\:surface-overlay {
+    background-color: var(--surface-overlay) !important;
+  }
+  .lg\:surface-hover {
+    background-color: var(--surface-hover) !important;
+  }
+  .lg\:surface-border {
+    border-color: var(--surface-border) !important;
+  }
+  .lg\:focus\:text-primary:focus {
+    color: var(--primary-color) !important;
+  }
+  .lg\:hover\:text-primary:hover {
+    color: var(--primary-color) !important;
+  }
+  .lg\:active\:text-primary:active {
+    color: var(--primary-color) !important;
+  }
+  .lg\:focus\:bg-primary:focus {
+    color: var(--primary-color-text) !important;
+    background-color: var(--primary-color) !important;
+  }
+  .lg\:hover\:bg-primary:hover {
+    color: var(--primary-color-text) !important;
+    background-color: var(--primary-color) !important;
+  }
+  .lg\:active\:bg-primary:active {
+    color: var(--primary-color-text) !important;
+    background-color: var(--primary-color) !important;
+  }
+  .lg\:focus\:bg-primary-reverse:focus {
+    color: var(--primary-color) !important;
+    background-color: var(--primary-color-text) !important;
+  }
+  .lg\:hover\:bg-primary-reverse:hover {
+    color: var(--primary-color) !important;
+    background-color: var(--primary-color-text) !important;
+  }
+  .lg\:active\:bg-primary-reverse:active {
+    color: var(--primary-color) !important;
+    background-color: var(--primary-color-text) !important;
+  }
+  .lg\:focus\:bg-white:focus {
+    background-color: #ffffff !important;
+  }
+  .lg\:hover\:bg-white:hover {
+    background-color: #ffffff !important;
+  }
+  .lg\:active\:bg-white:active {
+    background-color: #ffffff !important;
+  }
+  .lg\:focus\:border-primary:focus {
+    border-color: var(--primary-color) !important;
+  }
+  .lg\:hover\:border-primary:hover {
+    border-color: var(--primary-color) !important;
+  }
+  .lg\:active\:border-primary:active {
+    border-color: var(--primary-color) !important;
+  }
+  .lg\:focus\:text-white:focus {
+    color: #ffffff !important;
+  }
+  .lg\:hover\:text-white:hover {
+    color: #ffffff !important;
+  }
+  .lg\:active\:text-white:active {
+    color: #ffffff !important;
+  }
+  .lg\:focus\:border-white:focus {
+    border-color: #ffffff !important;
+  }
+  .lg\:hover\:border-white:hover {
+    border-color: #ffffff !important;
+  }
+  .lg\:active\:border-white:active {
+    border-color: #ffffff !important;
+  }
+  .lg\:focus\:text-color:focus {
+    color: var(--text-color) !important;
+  }
+  .lg\:hover\:text-color:hover {
+    color: var(--text-color) !important;
+  }
+  .lg\:active\:text-color:active {
+    color: var(--text-color) !important;
+  }
+  .lg\:focus\:text-color-secondary:focus {
+    color: var(--text-color-secondary) !important;
+  }
+  .lg\:hover\:text-color-secondary:hover {
+    color: var(--text-color-secondary) !important;
+  }
+  .lg\:active\:text-color-secondary:active {
+    color: var(--text-color-secondary) !important;
+  }
+  .lg\:focus\:surface-ground:focus {
+    background-color: var(--surface-ground) !important;
+  }
+  .lg\:hover\:surface-ground:hover {
+    background-color: var(--surface-ground) !important;
+  }
+  .lg\:active\:surface-ground:active {
+    background-color: var(--surface-ground) !important;
+  }
+  .lg\:focus\:surface-section:focus {
+    background-color: var(--surface-section) !important;
+  }
+  .lg\:hover\:surface-section:hover {
+    background-color: var(--surface-section) !important;
+  }
+  .lg\:active\:surface-section:active {
+    background-color: var(--surface-section) !important;
+  }
+  .lg\:focus\:surface-card:focus {
+    background-color: var(--surface-card) !important;
+  }
+  .lg\:hover\:surface-card:hover {
+    background-color: var(--surface-card) !important;
+  }
+  .lg\:active\:surface-card:active {
+    background-color: var(--surface-card) !important;
+  }
+  .lg\:focus\:surface-overlay:focus {
+    background-color: var(--surface-overlay) !important;
+  }
+  .lg\:hover\:surface-overlay:hover {
+    background-color: var(--surface-overlay) !important;
+  }
+  .lg\:active\:surface-overlay:active {
+    background-color: var(--surface-overlay) !important;
+  }
+  .lg\:focus\:surface-hover:focus {
+    background-color: var(--surface-hover) !important;
+  }
+  .lg\:hover\:surface-hover:hover {
+    background-color: var(--surface-hover) !important;
+  }
+  .lg\:active\:surface-hover:active {
+    background-color: var(--surface-hover) !important;
+  }
+  .lg\:focus\:surface-border:focus {
+    border-color: var(--surface-border) !important;
+  }
+  .lg\:hover\:surface-border:hover {
+    border-color: var(--surface-border) !important;
+  }
+  .lg\:active\:surface-border:active {
+    border-color: var(--surface-border) !important;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .xl\:text-primary {
+    color: var(--primary-color) !important;
+  }
+  .xl\:bg-primary {
+    color: var(--primary-color-text) !important;
+    background-color: var(--primary-color) !important;
+  }
+  .xl\:bg-primary-reverse {
+    color: var(--primary-color) !important;
+    background-color: var(--primary-color-text) !important;
+  }
+  .xl\:bg-white {
+    background-color: #ffffff !important;
+  }
+  .xl\:border-primary {
+    border-color: var(--primary-color) !important;
+  }
+  .xl\:text-white {
+    color: #ffffff !important;
+  }
+  .xl\:border-white {
+    border-color: #ffffff !important;
+  }
+  .xl\:text-color {
+    color: var(--text-color) !important;
+  }
+  .xl\:text-color-secondary {
+    color: var(--text-color-secondary) !important;
+  }
+  .xl\:surface-ground {
+    background-color: var(--surface-ground) !important;
+  }
+  .xl\:surface-section {
+    background-color: var(--surface-section) !important;
+  }
+  .xl\:surface-card {
+    background-color: var(--surface-card) !important;
+  }
+  .xl\:surface-overlay {
+    background-color: var(--surface-overlay) !important;
+  }
+  .xl\:surface-hover {
+    background-color: var(--surface-hover) !important;
+  }
+  .xl\:surface-border {
+    border-color: var(--surface-border) !important;
+  }
+  .xl\:focus\:text-primary:focus {
+    color: var(--primary-color) !important;
+  }
+  .xl\:hover\:text-primary:hover {
+    color: var(--primary-color) !important;
+  }
+  .xl\:active\:text-primary:active {
+    color: var(--primary-color) !important;
+  }
+  .xl\:focus\:bg-primary:focus {
+    color: var(--primary-color-text) !important;
+    background-color: var(--primary-color) !important;
+  }
+  .xl\:hover\:bg-primary:hover {
+    color: var(--primary-color-text) !important;
+    background-color: var(--primary-color) !important;
+  }
+  .xl\:active\:bg-primary:active {
+    color: var(--primary-color-text) !important;
+    background-color: var(--primary-color) !important;
+  }
+  .xl\:focus\:bg-primary-reverse:focus {
+    color: var(--primary-color) !important;
+    background-color: var(--primary-color-text) !important;
+  }
+  .xl\:hover\:bg-primary-reverse:hover {
+    color: var(--primary-color) !important;
+    background-color: var(--primary-color-text) !important;
+  }
+  .xl\:active\:bg-primary-reverse:active {
+    color: var(--primary-color) !important;
+    background-color: var(--primary-color-text) !important;
+  }
+  .xl\:focus\:bg-white:focus {
+    background-color: #ffffff !important;
+  }
+  .xl\:hover\:bg-white:hover {
+    background-color: #ffffff !important;
+  }
+  .xl\:active\:bg-white:active {
+    background-color: #ffffff !important;
+  }
+  .xl\:focus\:border-primary:focus {
+    border-color: var(--primary-color) !important;
+  }
+  .xl\:hover\:border-primary:hover {
+    border-color: var(--primary-color) !important;
+  }
+  .xl\:active\:border-primary:active {
+    border-color: var(--primary-color) !important;
+  }
+  .xl\:focus\:text-white:focus {
+    color: #ffffff !important;
+  }
+  .xl\:hover\:text-white:hover {
+    color: #ffffff !important;
+  }
+  .xl\:active\:text-white:active {
+    color: #ffffff !important;
+  }
+  .xl\:focus\:border-white:focus {
+    border-color: #ffffff !important;
+  }
+  .xl\:hover\:border-white:hover {
+    border-color: #ffffff !important;
+  }
+  .xl\:active\:border-white:active {
+    border-color: #ffffff !important;
+  }
+  .xl\:focus\:text-color:focus {
+    color: var(--text-color) !important;
+  }
+  .xl\:hover\:text-color:hover {
+    color: var(--text-color) !important;
+  }
+  .xl\:active\:text-color:active {
+    color: var(--text-color) !important;
+  }
+  .xl\:focus\:text-color-secondary:focus {
+    color: var(--text-color-secondary) !important;
+  }
+  .xl\:hover\:text-color-secondary:hover {
+    color: var(--text-color-secondary) !important;
+  }
+  .xl\:active\:text-color-secondary:active {
+    color: var(--text-color-secondary) !important;
+  }
+  .xl\:focus\:surface-ground:focus {
+    background-color: var(--surface-ground) !important;
+  }
+  .xl\:hover\:surface-ground:hover {
+    background-color: var(--surface-ground) !important;
+  }
+  .xl\:active\:surface-ground:active {
+    background-color: var(--surface-ground) !important;
+  }
+  .xl\:focus\:surface-section:focus {
+    background-color: var(--surface-section) !important;
+  }
+  .xl\:hover\:surface-section:hover {
+    background-color: var(--surface-section) !important;
+  }
+  .xl\:active\:surface-section:active {
+    background-color: var(--surface-section) !important;
+  }
+  .xl\:focus\:surface-card:focus {
+    background-color: var(--surface-card) !important;
+  }
+  .xl\:hover\:surface-card:hover {
+    background-color: var(--surface-card) !important;
+  }
+  .xl\:active\:surface-card:active {
+    background-color: var(--surface-card) !important;
+  }
+  .xl\:focus\:surface-overlay:focus {
+    background-color: var(--surface-overlay) !important;
+  }
+  .xl\:hover\:surface-overlay:hover {
+    background-color: var(--surface-overlay) !important;
+  }
+  .xl\:active\:surface-overlay:active {
+    background-color: var(--surface-overlay) !important;
+  }
+  .xl\:focus\:surface-hover:focus {
+    background-color: var(--surface-hover) !important;
+  }
+  .xl\:hover\:surface-hover:hover {
+    background-color: var(--surface-hover) !important;
+  }
+  .xl\:active\:surface-hover:active {
+    background-color: var(--surface-hover) !important;
+  }
+  .xl\:focus\:surface-border:focus {
+    border-color: var(--surface-border) !important;
+  }
+  .xl\:hover\:surface-border:hover {
+    border-color: var(--surface-border) !important;
+  }
+  .xl\:active\:surface-border:active {
+    border-color: var(--surface-border) !important;
+  }
+}
 .field {
   margin-bottom: 1rem;
 }

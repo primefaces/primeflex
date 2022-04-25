@@ -309,3 +309,85 @@
         }
     }
 }
+
+@mixin generate-class($map, $responsive: false, $states: false) {
+    @each $name, $propMap in $map {
+        .#{$prefix}#{$name} {
+            @each $prop, $val in $propMap {
+                #{$prop}: #{$val} !important;
+            }
+        }
+    }
+
+    @if ($states) {
+        @each $name, $propMap in $map {
+            .focus#{$separator} {
+                &#{$prefix}#{$name}:focus {
+                    @each $prop, $val in $propMap {
+                        #{$prop}: #{$val} !important;
+                    }
+                }
+            }
+
+            .hover#{$separator} {
+                &#{$prefix}#{$name}:hover {
+                    @each $prop, $val in $propMap {
+                        #{$prop}: #{$val} !important;
+                    }
+                }
+            }
+
+            .active#{$separator} {
+                &#{$prefix}#{$name}:active {
+                    @each $prop, $val in $propMap {
+                        #{$prop}: #{$val} !important;
+                    }
+                }
+            }
+        }
+    }
+
+    @if ($responsive) {
+        @each $key, $val in $breakpoints {
+            @media screen and (min-width: #{$val}) {
+                .#{$key + $separator} {
+                    @each $name, $propMap in $map {
+                        &#{$prefix}#{$name} {
+                            @each $prop, $val in $propMap {
+                                #{$prop}: #{$val} !important;
+                            }
+                        }
+                    }
+                
+                    @if ($states) {
+                        @each $name, $propMap in $map {
+                            &focus#{$separator} {
+                                &#{$prefix}#{$name}:focus {
+                                    @each $prop, $val in $propMap {
+                                        #{$prop}: #{$val} !important;
+                                    }
+                                }
+                            }
+                
+                            &hover#{$separator} {
+                                &#{$prefix}#{$name}:hover {
+                                    @each $prop, $val in $propMap {
+                                        #{$prop}: #{$val} !important;
+                                    }
+                                }
+                            }
+                
+                            &active#{$separator} {
+                                &#{$prefix}#{$name}:active {
+                                    @each $prop, $val in $propMap {
+                                        #{$prop}: #{$val} !important;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

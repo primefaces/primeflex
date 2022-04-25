@@ -1,4 +1,4 @@
-$colors: "blue", "green", "yellow", "cyan", "pink", "indigo", "teal", "orange", "bluegray", "purple", "gray", "red", "primary" !default;
+$colors: 'blue', 'green', 'yellow', 'cyan', 'pink', 'indigo', 'teal', 'orange', 'bluegray', 'purple', 'gray', 'red', 'primary' !default;
 $colorShades: 50, 100, 200, 300, 400, 500, 600, 700, 800, 900;
 $surfaceShades: 0, 50, 100, 200, 300, 400, 500, 600, 700, 800, 900;
 $rgbaShades: 10, 20, 30, 40, 50, 60, 70, 80, 90;
@@ -11,106 +11,26 @@ $rgbaShades: 10, 20, 30, 40, 50, 60, 70, 80, 90;
 @include color-class('text-', 'color', $colors, $colorShades);
 @include color-class('bg-', 'background-color', $colors, $colorShades);
 @include color-class('border-', 'border-color', $colors, $colorShades);
-@include rgba-color-class('bg-', 'background-color', ("white": '255,255,255', 'black': '0,0,0'), $rgbaShades);
-@include rgba-color-class('border-', 'border-color', ("white": '255,255,255', 'black': '0,0,0'), $rgbaShades);
-@include rgba-color-class('text-', 'color', ("white": '255,255,255', 'black': '0,0,0'), $rgbaShades);
+@include rgba-color-class('bg-', 'background-color', ('white': '255,255,255', 'black': '0,0,0'), $rgbaShades);
+@include rgba-color-class('border-', 'border-color', ('white': '255,255,255', 'black': '0,0,0'), $rgbaShades);
+@include rgba-color-class('text-', 'color', ('white': '255,255,255', 'black': '0,0,0'), $rgbaShades);
 
-.#{$prefix}text-primary {
-    color: var(--primary-color) !important;
-}
+$custom-properties: (
+    'text-primary': ('color': var(--primary-color)),
+    'bg-primary': ('color': var(--primary-color-text), 'background-color': var(--primary-color)),
+    'bg-primary-reverse': ('color': var(--primary-color), 'background-color': var(--primary-color-text)),
+    'bg-white': ('background-color': #ffffff),
+    'border-primary': ('border-color': var(--primary-color)),
+    'text-white': ('color': #ffffff),
+    'border-white': ('border-color': #ffffff),
+    'text-color': ('color': var(--text-color)),
+    'text-color-secondary': ('color': var(--text-color-secondary)),
+    'surface-ground': ('background-color': var(--surface-ground)),
+    'surface-section': ('background-color': var(--surface-section)),
+    'surface-card': ('background-color': var(--surface-card)),
+    'surface-overlay': ('background-color': var(--surface-overlay)),
+    'surface-hover': ('background-color': var(--surface-hover)),
+    'surface-border': ('border-color': var(--surface-border))
+);
 
-.hover\:#{$prefix}text-primary:hover {
-    color: var(--primary-color) !important;
-}
-
-.#{$prefix}bg-primary {
-    background-color: var(--primary-color) !important;
-    color: var(--primary-color-text) !important;
-}
-
-.hover\:#{$prefix}bg-primary:hover {
-    background-color: var(--primary-color) !important;
-    color: var(--primary-color-text) !important;
-}
-
-.#{$prefix}border-primary {
-    border-color: var(--primary-color) !important;
-}
-
-.hover\:#{$prefix}border-primary:hover {
-    border-color: var(--primary-color) !important;
-}
-
-.#{$prefix}bg-primary-reverse {
-    background-color: var(--primary-color-text) !important;
-    color: var(--primary-color) !important;
-}
-
-.hover\:#{$prefix}bg-primary-reverse:hover {
-    background-color: var(--primary-color-text) !important;
-    color: var(--primary-color) !important;
-}
-
-.#{$prefix}text-white {
-    color: #ffffff !important; 
-}
-
-.hover\:#{$prefix}text-white:hover {
-    color: #ffffff !important; 
-}
-
-.#{$prefix}bg-white {
-    background-color: #ffffff !important; 
-}
-
-.hover\:#{$prefix}bg-white:hover {
-    background-color: #ffffff !important; 
-}
-
-.#{$prefix}border-white {
-    border-color: #ffffff !important; 
-}
-
-.hover\:#{$prefix}border-white:hover {
-    border-color: #ffffff !important; 
-}
-
-.#{$prefix}text-color {
-    color: var(--text-color) !important;
-}
-
-.hover\:#{$prefix}text-color:hover {
-    color: var(--text-color) !important;
-}
-
-.#{$prefix}text-color-secondary {
-    color: var(--text-color-secondary) !important;
-}
-
-.hover\:#{$prefix}text-color-secondary:hover {
-    color: var(--text-color-secondary) !important;
-}
-
-.#{$prefix}surface-ground {
-    background-color: var(--surface-ground) !important; 
-}
-
-.#{$prefix}surface-section {
-    background-color: var(--surface-section) !important; 
-}
-
-.#{$prefix}surface-card {
-    background-color: var(--surface-card) !important; 
-}
-
-.#{$prefix}surface-overlay {
-    background-color: var(--surface-overlay) !important; 
-}
-
-.#{$prefix}surface-border {
-    border-color: var(--surface-border) !important; 
-}
-
-.#{$prefix}surface-hover {
-    background-color: var(--surface-hover) !important;
-}
+@include generate-class($custom-properties, true, true);
