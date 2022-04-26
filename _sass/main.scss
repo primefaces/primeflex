@@ -76,7 +76,7 @@ ul {
         flex: 1 1 0;
 
         > div:not(.home-page) {
-            padding: 28px;
+            padding: 2rem 4rem;
         }
     }
 }
@@ -87,6 +87,10 @@ ul {
 
         .layout-content {
             padding-top: 110px;
+
+            > div:not(.home-page) {
+                padding: 2rem 1rem;
+            }
         }
     }
 
@@ -209,48 +213,9 @@ ul {
         font-weight: 600;
         margin: 0 2px;
     }
-}
 
-/* Prism */
-pre[class*="language-"] {
-    background-color: transparent !important;
-
-    &:before, &:after {
-        display: none !important;
-    }
-
-    code {
-        border-left: 10px solid var(--surface-border) !important;
-        box-shadow: none !important;
-        background: var(--surface-overlay) !important;
-        color: var(--text-color);
-        font-size: 14px;
-
-        .token {
-            &.tag,
-            &.keyword {
-                color: #2196F3 !important;
-            }
-    
-            &.attr-name,
-            &.attr-string {
-                color: #2196F3 !important;
-            }
-    
-            &.attr-value {
-                color: #4CAF50 !important;
-            }
-    
-            &.punctuation {
-                color: var(--text-color);
-            }
-    
-            &.operator,
-            &.url,
-            &.string {
-                background: transparent;
-            }
-        }
+    h2, h5 {
+        color: var(--surface-900);
     }
 }
 

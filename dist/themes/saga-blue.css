@@ -20,9 +20,12 @@
   --surface-card:#ffffff;
   --surface-overlay:#ffffff;
   --surface-border:#dee2e6;
+  --surface-hover: #e9ecef;
   --content-padding:1rem;
   --inline-spacing:0.5rem;
   --border-radius:3px;
+  --maskbg: rgba(0, 0, 0, 0.4);
+  --focus-ring: 0 0 0 0.2rem #a6d5fa;
   --blue-50:#f4fafe;
   --blue-100:#cae6fc;
   --blue-200:#a0d2fa;
@@ -154,3 +157,5 @@
   --primary-800:#125386;
   --primary-900:#0d3c61;
 }
+
+/*# sourceMappingURL=saga-blue.css.map */

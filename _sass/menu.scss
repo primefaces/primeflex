@@ -26,25 +26,24 @@
             }
 
             .menuitem-root-text {
-                padding: 7px 0;
+                color: var(--surface-900);
                 font-weight: 700;
-                letter-spacing: 0.04em;
-                font-size: 14px;
+                user-select: none;
+                padding: 0.5rem 0.25rem;
+                font-size: .857rem;
                 text-transform: uppercase;
             }
 
             a {
-                padding: 7px;
-                color: var(--text-color);
-                user-select: none;
-                cursor: pointer;
-                border-radius: 4px;
                 font-size: 14px;
+                color: var(--text-color);
+                padding: 0.5rem 0.75rem;
+                border-radius: 10px;
+                cursor: pointer;
 
                 &:hover {
-                    color: var(--text-color);
                     text-decoration: none;
-                    background-color: var(--surface-100); //menu item hover??
+                    background-color: var(--surface-hover);
                 }
             }
 

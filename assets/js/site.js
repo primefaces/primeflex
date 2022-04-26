@@ -151,11 +151,15 @@ var PrimeFlex = {
 
         const isLight = this.hasClass(e.currentTarget.firstElementChild, 'pi-moon');
 
-        if(isLight) {
+        if (isLight) {
             urlTokens[urlTokens.length - 1] = 'primeflex-arya.css';
+            this.addClass(document.body, 'layout-wrapper-dark');
+            this.removeClass(document.body, 'layout-wrapper-light');
         }
         else {
             urlTokens[urlTokens.length - 1] = 'primeflex-saga.css';
+            this.addClass(document.body, 'layout-wrapper-light');
+            this.removeClass(document.body, 'layout-wrapper-dark');
         }
 
         const newURL = urlTokens.join('/');
