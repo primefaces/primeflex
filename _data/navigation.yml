@@ -32,6 +32,8 @@
   link: /flexgrow
 - name: Flex Shrink
   link: /flexshrink
+- name: Gap
+  link: /gap
 - name: Order
   link: /order
 - name: Justify Content
@@ -118,6 +120,8 @@
   link: /whitespace
 - name: List Style Type
   link: /liststyletype
+- name: Vertical Align
+  link: /verticalalign
 
 - name: Effects
   link:
