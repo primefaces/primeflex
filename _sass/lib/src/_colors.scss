@@ -1,7 +1,7 @@
 $colors: 'blue', 'green', 'yellow', 'cyan', 'pink', 'indigo', 'teal', 'orange', 'bluegray', 'purple', 'gray', 'red', 'primary' !default;
-$colorShades: 50, 100, 200, 300, 400, 500, 600, 700, 800, 900;
-$surfaceShades: 0, 50, 100, 200, 300, 400, 500, 600, 700, 800, 900;
-$rgbaShades: 10, 20, 30, 40, 50, 60, 70, 80, 90;
+$colorShades: 50, 100, 200, 300, 400, 500, 600, 700, 800, 900 !default;
+$surfaceShades: 0, 50, 100, 200, 300, 400, 500, 600, 700, 800, 900 !default;
+$rgbaShades: 10, 20, 30, 40, 50, 60, 70, 80, 90 !default;
 
 @include surface-class('text', 'color', $surfaceShades);
 @include surface-class('surface', 'background-color', $surfaceShades);
@@ -31,6 +31,6 @@ $custom-properties: (
     'surface-overlay': ('background-color': var(--surface-overlay)),
     'surface-hover': ('background-color': var(--surface-hover)),
     'surface-border': ('border-color': var(--surface-border))
-);
+) !default;
 
 @include generate-class($custom-properties, true, true);

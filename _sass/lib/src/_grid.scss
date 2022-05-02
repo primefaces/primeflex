@@ -46,7 +46,7 @@ $grid-columns: (
     "col-10": 83.3333%,
     "col-11": 91.6667%,
     "col-12": 100%
-);
+) !default;
 
 $grid-column-offsets: (
     "col-offset-0": 0,
@@ -62,7 +62,7 @@ $grid-column-offsets: (
     "col-offset-10": 83.3333%,
     "col-offset-11": 91.6667%,
     "col-offset-12": 100%,
-);
+) !default;
 
 @each $col,$width in $grid-columns {
     .#{$prefix}#{$col} {

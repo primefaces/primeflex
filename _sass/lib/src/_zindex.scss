@@ -6,6 +6,6 @@ $zindex-props: (
     'z-3': 3,
     'z-4': 4,
     'z-5': 5
-);
+) !default;
 
 @include style-class('z-index', $zindex-props, true);

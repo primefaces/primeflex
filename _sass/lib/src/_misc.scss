@@ -1,29 +1,29 @@
 $appearance-props: (
     'appearance-none': none
-);
+) !default;
 
 $outline-props: (
     'outline-none': none
-);
+) !default;
 
 $pointer-events-props: (
     'pointer-events-none': none,
     'pointer-events-auto': auto
-);
+) !default;
 
 $cursor-props: (
     'cursor-auto': 'auto',
     'cursor-pointer': 'pointer',
     'cursor-wait': 'wait',
     'cursor-move': 'move'
-);
+) !default;
 
 $select-props: (
     'select-none': 'none',
     'select-text': 'text',
     'select-all': 'all',
     'select-auto': 'auto'
-);
+) !default;
 
 $opacity-props: (
     'opacity-0': '0',
@@ -37,7 +37,7 @@ $opacity-props: (
     'opacity-80': '.8',
     'opacity-90': '.9',
     'opacity-100': '1'
-);
+) !default;
 
 @include style-class('appearance', $appearance-props);
 @include style-class('outline', $outline-props);

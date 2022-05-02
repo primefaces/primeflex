@@ -217,7 +217,7 @@ $animation-duration-props: (
   'animation-duration-1000': '1000ms',
   'animation-duration-2000': '2000ms',
   'animation-duration-3000': '3000ms'
-);
+) !default;
 
 $animation-delay-props: (
   'animation-delay-100': '100ms',
@@ -227,27 +227,27 @@ $animation-delay-props: (
   'animation-delay-400': '400ms',
   'animation-delay-500': '500ms',
   'animation-delay-1000': '1000ms'
-);
+) !default;
 
 $animation-iteration-props: (
   'animation-iteration-1': '1',
   'animation-iteration-2': '2',
   'animation-iteration-infinite': 'infinite'
-);
+) !default;
 
 $animation-timing-props: (
   'animation-linear': 'linear',
   'animation-ease-in': 'cubic-bezier(0.4, 0, 1, 1)',
   'animation-ease-out': 'cubic-bezier(0, 0, 0.2, 1)',
   'animation-ease-in-out': 'cubic-bezier(0.4, 0, 0.2, 1)'
-);
+) !default;
 
 $animation-fill-props: (
   'animation-fill-none': 'none',
   'animation-fill-forwards': 'forwards',
   'animation-fill-backwards': 'backwards',
   'animation-fill-both': 'both'
-);
+) !default;
 
 @include style-class('animation-duration', $animation-duration-props);
 @include style-class('animation-delay', $animation-delay-props);
