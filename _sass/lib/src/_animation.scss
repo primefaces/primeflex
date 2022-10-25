@@ -151,6 +151,118 @@
   }
 }
 
+@keyframes flip {
+    from {
+        transform: perspective($animationPerspective) rotateX(-100deg);
+    }
+
+    to {
+        transform: perspective($animationPerspective) rotateX(0);
+    }
+}
+
+@keyframes flipleft {
+    from {
+        transform: perspective($animationPerspective) rotateY(-100deg);
+        opacity: 0;
+    }
+
+    to {
+        transform: perspective($animationPerspective) rotateY(0)
+    }
+}
+
+@keyframes flipright {
+    from {
+        transform: perspective($animationPerspective) rotateY(100deg);
+        opacity: 0;
+    }
+
+    to {
+        transform: perspective($animationPerspective) rotateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes flipup {
+    from {
+        transform: perspective($animationPerspective) rotateX(-100deg);
+        opacity: 0;
+    }
+
+    to {
+        transform: perspective($animationPerspective) rotateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes zoomin {
+    from {
+        opacity: 0;
+        transform: scale3d(0.3, 0.3, 0.3);
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+@keyframes zoomindown {
+    from {
+        opacity: 0;
+        transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0);
+        animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    }
+
+    60% {
+        opacity: 1;
+        transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);
+        animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+    }
+}
+
+@keyframes zoominleft {
+    from {
+        opacity: 0;
+        transform: scale3d(0.1, 0.1, 0.1) translate3d(-1000px, 0, 0);
+        animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    }
+
+    60% {
+        opacity: 1;
+        transform: scale3d(0.475, 0.475, 0.475) translate3d(10px, 0, 0);
+        animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+    }
+}
+
+@keyframes zoominright {
+    from {
+        opacity: 0;
+        transform: scale3d(0.1, 0.1, 0.1) translate3d(1000px, 0, 0);
+        animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    }
+
+    60% {
+        opacity: 1;
+        transform: scale3d(0.475, 0.475, 0.475) translate3d(-10px, 0, 0);
+        animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+    }
+}
+
+@keyframes zoominup {
+    from {
+        opacity: 0;
+        transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 1000px, 0);
+        animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    }
+
+    60% {
+        opacity: 1;
+        transform: scale3d(0.475, 0.475, 0.475) translate3d(0, -60px, 0);
+        animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+    }
+}
+
 .#{$prefix}fadein {
   animation: fadein .15s linear;
 }
@@ -205,6 +317,46 @@
 
 .#{$prefix}animate-width {
   animation: animate-width 1000ms linear;
+}
+
+.#{$prefix}flip {
+    backface-visibility: visible;
+    animation: flip .15s linear;
+}
+
+.#{$prefix}flipup {
+    backface-visibility: visible;
+    animation: flipup .15s linear;
+}
+
+.#{$prefix}flipleft {
+    backface-visibility: visible;
+    animation: flipleft .15s linear;
+}
+
+.#{$prefix}flipright {
+    backface-visibility: visible;
+    animation: flipright .15s linear;
+}
+
+.#{$prefix}zoomin {
+    animation: zoomin .15s linear;
+}
+
+.#{$prefix}zoomindown {
+    animation: zoomindown .15s linear;
+}
+
+.#{$prefix}zoominleft {
+    animation: zoominleft .15s linear;
+}
+
+.#{$prefix}zoominright {
+    animation: zoominright .15s linear;
+}
+
+.#{$prefix}zoominup {
+    animation: zoominup .15s linear;
 }
 
 $animation-duration-props: (
