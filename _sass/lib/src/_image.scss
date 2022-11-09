@@ -5,13 +5,13 @@ $repeat-props: (
     'bg-repeat-y': 'repeat-y',
     'bg-repeat-round': 'round',
     'bg-repeat-space': 'space'
-);
+) !default;
 
 $size-props: (
     'bg-auto': 'auto',
     'bg-cover': 'cover',
     'bg-contain': 'contain'
-);
+) !default;
 
 $position-props: (
     'bg-bottom': 'bottom',
@@ -23,7 +23,7 @@ $position-props: (
     'bg-right-bottom': 'right bottom',
     'bg-right-top': 'right top',
     'bg-top': 'top'
-);
+) !default;
 
 @include style-class('background-repeat', $repeat-props, true);
 @include style-class('background-size', $size-props, true);

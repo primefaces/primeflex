@@ -5,7 +5,7 @@ $translate-props: (
     'translate-y-0': 'translateY(0%)',
     'translate-y-100': 'translateY(100%)',
     '-translate-y-100': 'translateY(-100%)'
-);
+) !default;
 
 $rotate-props: (
     'rotate-45': 'rotate(45deg)',
@@ -14,7 +14,7 @@ $rotate-props: (
     '-rotate-90': 'rotate(-90deg)',
     'rotate-180': 'rotate(180deg)',
     '-rotate-180': 'rotate(-180deg)'
-);
+) !default;
 
 $transform-origin-props: (
     'origin-center': 'center',
@@ -26,7 +26,7 @@ $transform-origin-props: (
     'origin-bottom-left': 'bottom left',
     'origin-left': 'left',
     'origin-top-left': 'top-left'
-);
+) !default;
 
 @include style-class('transform', $translate-props, true);
 @include style-class('transform', $rotate-props, true);

@@ -5,6 +5,6 @@ $display-props: (
     'inline-block': 'inline-block',
     'flex': 'flex',
     'inline-flex': 'inline-flex'
-);
+) !default;
 
 @include style-class('display', $display-props, true);

@@ -3,6 +3,6 @@ $userselect-props: (
     'select-text': 'text',
     'select-all': 'all',
     'select-auto': 'auto'
-);
+) !default;
 
 @include style-class('user-select', $userselect-props);

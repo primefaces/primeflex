@@ -2,6 +2,6 @@ $list-style-props: (
     'list-none': 'none',
     'list-disc': 'disc',
     'list-decimal': 'decimal'
-);
+) !default;
 
 @include style-class('list-style', $list-style-props);
