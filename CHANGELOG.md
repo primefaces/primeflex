@@ -1,8 +1,8 @@
 # Changelog
 
-## [3.2.2](https://github.com/primefaces/primeflex/tree/3.2.2) (2022-10-09)
+## [3.3.0](https://github.com/primefaces/primeflex/tree/3.3.0) (2022-10-09)
 
-[Full Changelog](https://github.com/primefaces/primeflex/compare/3.2.1...3.2.2)
+[Full Changelog](https://github.com/primefaces/primeflex/compare/3.2.1...3.3.0)
 
 **Implemented New Features and Enhancements:**
 
