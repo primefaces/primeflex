@@ -1,5 +1,14 @@
 # Changelog
 
+## [3.2.2](https://github.com/primefaces/primeflex/tree/3.2.2) (2022-10-09)
+
+[Full Changelog](https://github.com/primefaces/primeflex/compare/3.2.1...3.2.2)
+
+**Implemented New Features and Enhancements:**
+
+- Add new animation classes [\#140](https://github.com/primefaces/primeflex/issues/140)
+- Add reset class [\#137](https://github.com/primefaces/primeflex/issues/137)
+
 ## [3.2.1](https://github.com/primefaces/primeflex/tree/3.2.1) (2022-05-30)
 
 [Full Changelog](https://github.com/primefaces/primeflex/compare/3.2.0...3.2.1)
