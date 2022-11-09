@@ -20673,6 +20673,93 @@
     width: 100%;
   }
 }
+@keyframes flip {
+  from {
+    transform: perspective(2000px) rotateX(-100deg);
+  }
+  to {
+    transform: perspective(2000px) rotateX(0);
+  }
+}
+@keyframes flipleft {
+  from {
+    transform: perspective(2000px) rotateY(-100deg);
+    opacity: 0;
+  }
+  to {
+    transform: perspective(2000px) rotateY(0);
+    opacity: 1;
+  }
+}
+@keyframes flipright {
+  from {
+    transform: perspective(2000px) rotateY(100deg);
+    opacity: 0;
+  }
+  to {
+    transform: perspective(2000px) rotateY(0);
+    opacity: 1;
+  }
+}
+@keyframes flipup {
+  from {
+    transform: perspective(2000px) rotateX(-100deg);
+    opacity: 0;
+  }
+  to {
+    transform: perspective(2000px) rotateX(0);
+    opacity: 1;
+  }
+}
+@keyframes zoomin {
+  from {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  50% {
+    opacity: 1;
+  }
+}
+@keyframes zoomindown {
+  from {
+    opacity: 0;
+    transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0);
+  }
+  60% {
+    opacity: 1;
+    transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);
+  }
+}
+@keyframes zoominleft {
+  from {
+    opacity: 0;
+    transform: scale3d(0.1, 0.1, 0.1) translate3d(-1000px, 0, 0);
+  }
+  60% {
+    opacity: 1;
+    transform: scale3d(0.475, 0.475, 0.475) translate3d(10px, 0, 0);
+  }
+}
+@keyframes zoominright {
+  from {
+    opacity: 0;
+    transform: scale3d(0.1, 0.1, 0.1) translate3d(1000px, 0, 0);
+  }
+  60% {
+    opacity: 1;
+    transform: scale3d(0.475, 0.475, 0.475) translate3d(-10px, 0, 0);
+  }
+}
+@keyframes zoominup {
+  from {
+    opacity: 0;
+    transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 1000px, 0);
+  }
+  60% {
+    opacity: 1;
+    transform: scale3d(0.475, 0.475, 0.475) translate3d(0, -60px, 0);
+  }
+}
 .fadein {
   animation: fadein 0.15s linear;
 }
@@ -20727,6 +20814,46 @@
 
 .animate-width {
   animation: animate-width 1000ms linear;
+}
+
+.flip {
+  backface-visibility: visible;
+  animation: flip 0.15s linear;
+}
+
+.flipup {
+  backface-visibility: visible;
+  animation: flipup 0.15s linear;
+}
+
+.flipleft {
+  backface-visibility: visible;
+  animation: flipleft 0.15s linear;
+}
+
+.flipright {
+  backface-visibility: visible;
+  animation: flipright 0.15s linear;
+}
+
+.zoomin {
+  animation: zoomin 0.15s linear;
+}
+
+.zoomindown {
+  animation: zoomindown 0.15s linear;
+}
+
+.zoominleft {
+  animation: zoominleft 0.15s linear;
+}
+
+.zoominright {
+  animation: zoominright 0.15s linear;
+}
+
+.zoominup {
+  animation: zoominup 0.15s linear;
 }
 
 .animation-duration-100 {
