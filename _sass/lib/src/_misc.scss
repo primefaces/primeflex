@@ -45,3 +45,7 @@ $opacity-props: (
 @include style-class('cursor', $cursor-props);
 @include style-class('user-select', $select-props);
 @include style-class('opacity', $opacity-props);
+
+.#{$prefix}reset {
+    all: unset;
+}

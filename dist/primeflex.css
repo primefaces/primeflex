@@ -20078,6 +20078,10 @@
   opacity: 1 !important;
 }
 
+.reset {
+  all: unset;
+}
+
 .transition-none {
   transition-property: none !important;
 }
