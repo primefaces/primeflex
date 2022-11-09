@@ -1,7 +1,7 @@
 ---
 layout: layout
 permalink: /animations
-title: Animaitons
+title: Animations
 ---
 
 <div>
@@ -251,6 +251,165 @@ title: Animaitons
         }
         100% {
             width: 100%;
+        }
+    }
+                </td>
+            </tr>
+            <tr>
+                <td>flip</td>
+                <td style="white-space: pre" class="p-0">
+    animation: flip .15s linear;
+
+    @keyframes flip {
+        from {
+            transform: perspective($animationPerspective) rotateX(-100deg);
+        }
+    
+        to {
+            transform: perspective($animationPerspective) rotateX(0);
+        }
+    }
+                </td>
+            </tr>
+            <tr>
+                <td>flipleft</td>
+                <td style="white-space: pre" class="p-0">
+    animation: flipleft .15s linear;
+
+    @keyframes flipleft {
+        from {
+            transform: perspective($animationPerspective) rotateY(-100deg);
+            opacity: 0;
+        }
+    
+        to {
+            transform: perspective($animationPerspective) rotateY(0);
+            opacity: 1;
+        }
+    }
+                </td>
+            </tr>
+            <tr>
+                <td>flipright</td>
+                <td style="white-space: pre" class="p-0">
+    animation: flipright .15s linear;
+
+    @keyframes flipright {
+        from {
+            transform: perspective($animationPerspective) rotateY(100deg);
+            opacity: 0;
+        }
+    
+        to {
+            transform: perspective($animationPerspective) rotateY(0);
+            opacity: 1;
+        }
+    }
+                </td>
+            </tr>
+            <tr>
+                <td>flipup</td>
+                <td style="white-space: pre" class="p-0">
+    animation: flipup .15s linear;
+
+    @keyframes flipup {
+        from {
+            transform: perspective($animationPerspective) rotateX(-100deg);
+            opacity: 0;
+        }
+    
+        to {
+            transform: perspective($animationPerspective) rotateX(0);
+            opacity: 1;
+        }
+    }
+                </td>
+            </tr>
+            <tr>
+                <td>zoomin</td>
+                <td style="white-space: pre" class="p-0">
+    animation: zoomin .15s linear;
+
+    @keyframes zoomin {
+        from {
+            opacity: 0;
+            transform: scale3d(0.3, 0.3, 0.3);
+        }
+    
+        50% {
+            opacity: 1;
+        }
+    }
+                </td>
+            </tr>
+            <tr>
+                <td>zoomindown</td>
+                <td style="white-space: pre" class="p-0">
+    animation: zoomindown .15s linear;
+
+    @keyframes zoomindown {
+        from {
+            opacity: 0;
+            transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0);
+        }
+    
+        60% {
+            opacity: 1;
+            transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);
+        }
+    }
+                </td>
+            </tr>
+            <tr>
+                <td>zoominleft</td>
+                <td style="white-space: pre" class="p-0">
+    animation: zoominleft .15s linear;
+
+    @keyframes zoominleft {
+        from {
+            opacity: 0;
+            transform: scale3d(0.1, 0.1, 0.1) translate3d(-1000px, 0, 0);
+        }
+    
+        60% {
+            opacity: 1;
+            transform: scale3d(0.475, 0.475, 0.475) translate3d(10px, 0, 0);
+        }
+    }
+                </td>
+            </tr>
+            <tr>
+                <td>zoomninright</td>
+                <td style="white-space: pre" class="p-0">
+    animation: zoomninright .15s linear;
+
+    @keyframes zoomninright {
+        from {
+            opacity: 0;
+            transform: scale3d(0.1, 0.1, 0.1) translate3d(1000px, 0, 0);
+        }
+    
+        60% {
+            opacity: 1;
+            transform: scale3d(0.475, 0.475, 0.475) translate3d(-10px, 0, 0);
+        }
+    }
+                </td>
+            </tr>
+            <tr>
+                <td>zoominup</td>
+                <td style="white-space: pre" class="p-0">
+    animation: zoominup .15s linear;
+
+    @keyframes zoominup {
+        from {
+            opacity: 0;
+            transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 1000px, 0);
+        }
+    
+        60% {
+            opacity: 1;
+            transform: scale3d(0.475, 0.475, 0.475) translate3d(0, -60px, 0);
         }
     }
                 </td>
