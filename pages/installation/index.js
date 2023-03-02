@@ -52,8 +52,8 @@ const InstallationPage = () => {
     return (
         <div>
             <Head>
-                <title>Getting Started - PrimeReact</title>
-                <meta name="description" content="PrimeReact is a rich set of open source components for React." />
+                <title>Getting Started - PrimeFlex</title>
+                <meta name="description" content="PrimeFlex is a lightweight responsive CSS utility library to accompany Prime UI libraries and static webpages as well." />
             </Head>
             <div className="doc">
                 <div className="doc-main">
