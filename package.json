@@ -1,37 +1,37 @@
 {
-  "name": "primeflex",
-  "version": "3.3.1-SNAPSHOT",
-  "description": "PrimeFlex is a lightweight responsive CSS utility library to accompany Prime UI libraries and static webpages as well.",
-  "scripts": {
-    "serve": "jekyll serve --livereload",
-    "build-app": "jekyll build --config _config_prod.yml",
-    "build-lib": "sass --update _sass/lib/primeflex.scss:dist/primeflex.css --no-source-map && sass --update _sass/lib/primeflex.scss:dist/primeflex.min.css --no-source-map --style compressed && sass --update _sass/lib/themes:dist/themes && gulp copy-lib"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/primefaces/primeflex.git"
-  },
-  "keywords": [
-    "grid",
-    "responsive",
-    "flex",
-    "css utility"
-  ],
-  "author": "PrimeTek",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/primefaces/primeflex/issues"
-  },
-  "homepage": "https://github.com/primefaces/primeflex#readme",
-  "devDependencies": {
-    "gulp": "^4.0.2",
-    "gulp-concat": "^2.6.0",
-    "gulp-flatten": "^0.4.0",
-    "gulp-rename": "^2.0.0",
-    "gulp-uglify": "^3.0.2",
-    "gulp-uglifycss": "^1.0.6"
-  },
-  "dependencies": {
-    "simple-jekyll-search": "^1.9.2"
-  }
+    "name": "primeflex",
+    "version": "3.3.1-SNAPSHOT",
+    "description": "PrimeFlex is a lightweight responsive CSS utility library to accompany Prime UI libraries and static webpages as well.",
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "format": "prettier --write \"{components,pages}/**/*.{js,ts,tsx,d.ts}\"",
+        "format:check": "prettier --check \"{components,pages}/**/*.{js,ts,tsx,d.ts}\"",
+        "lint": "next lint --max-warnings=0 --ignore-path .gitignore .",
+        "lint:fix": "next lint --fix --ignore-path .gitignore ."
+    },
+    "dependencies": {
+        "@docsearch/react": "^3.3.3",
+        "next": "13.2.1",
+        "primeicons": "^6.0.1",
+        "primereact": "^9.2.0",
+        "react": "18.2.0",
+        "react-dom": "18.2.0"
+    },
+    "devDependencies": {
+        "eslint": "8.35.0",
+        "eslint-config-next": "13.2.1",
+        "eslint-config-prettier": "^8.6.0",
+        "eslint-plugin-jest-dom": "^4.0.3",
+        "gulp": "^4.0.2",
+        "gulp-concat": "^2.6.1",
+        "gulp-flatten": "^0.4.0",
+        "gulp-rename": "^2.0.0",
+        "gulp-uglify": "^3.0.2",
+        "gulp-uglifycss": "^1.1.0",
+        "prettier": "^2.8.4",
+        "sass": "^1.58.3"
+    }
 }

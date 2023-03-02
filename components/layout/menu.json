@@ -1,0 +1,158 @@
+{
+    "data": [
+        {
+            "name": "Getting Started",
+            "icon": "pi pi-home",
+            "children": [
+                {
+                    "name": "Installation",
+                    "to": "/installation"
+                },
+                { "name": "Theming", "to": "/theming" },
+                { "name": "Migration", "to": "/migration" }
+            ]
+        },
+        {
+            "name": "Layout",
+            "icon": "pi pi-home",
+            "children": [
+                { "name": "Display", "to": "/display" },
+                { "name": "Overflow", "to": "/overflow" },
+                { "name": "Position", "to": "/position" },
+                {
+                    "name": "Top / Right / Bottom / Left",
+                    "to": "/toprightbottomleft"
+                },
+                { "name": "Z-Index", "to": "/zindex" }
+            ]
+        },
+        {
+            "name": "Flexbox",
+            "icon": "pi pi-home",
+            "children": [
+                { "name": "Flex Direction", "to": "/flexdirection" },
+                { "name": "Flex Wrap", "to": "/flexwrap" },
+                { "name": "Flex", "to": "/flex" },
+                { "name": "Flex Grow", "to": "/flexgrow" },
+                { "name": "Flex Shrink", "to": "/flexshrink" },
+                { "name": "Gap", "to": "/gap" },
+                { "name": "Order", "to": "/order" },
+                { "name": "Justify Content", "to": "/justifycontent" },
+                { "name": "Align Content", "to": "/aligncontent" },
+                { "name": "Align Items", "to": "/alignitems" },
+                { "name": "Align Self", "to": "/alignself" }
+            ]
+        },
+        {
+            "name": "Grid",
+            "icon": "pi pi-home",
+            "children": [
+                { "name": "Form Layout", "to": "/formlayout" },
+                { "name": "Grid System", "to": "/gridsystem" }
+            ]
+        },
+        {
+            "name": "Background",
+            "icon": "pi pi-home",
+            "children": [
+                { "name": "Background Color", "to": "/backgroundcolor" },
+                { "name": "Background Repeat", "to": "/backgroundrepeat" },
+                { "name": "Background Size", "to": "/backgroundsize" },
+                { "name": "Background Position", "to": "/backgroundposition" }
+            ]
+        },
+        {
+            "name": "Border",
+            "icon": "pi pi-home",
+            "children": [
+                { "name": "Border Radius", "to": "/borderradius" },
+                { "name": "Border Width", "to": "/borderwidth" },
+                { "name": "Border Style", "to": "/borderstyle" },
+                { "name": "Border Color", "to": "/bordercolor" }
+            ]
+        },
+        {
+            "name": "Spacing",
+            "icon": "pi pi-home",
+            "children": [
+                { "name": "Padding", "to": "/padding" },
+                { "name": "Margin", "to": "/margin" },
+                { "name": "Sizing", "to": "" },
+                { "name": "Min Width", "to": "/minwidth" },
+                { "name": "Width", "to": "/width" },
+                { "name": "Max Width", "to": "/maxwidth" },
+                { "name": "Min Height", "to": "/minheight" },
+                { "name": "Height", "to": "/height" },
+                { "name": "Max Height", "to": "/maxheight" }
+            ]
+        },
+        {
+            "name": "Typography",
+            "icon": "pi pi-home",
+            "children": [
+                { "name": "Font Family", "to": "/fontfamily" },
+                { "name": "Font Size", "to": "/fontsize" },
+                { "name": "Font Style", "to": "/fontstyle" },
+                { "name": "Font Weight", "to": "/fontweight" },
+                { "name": "Letter Spacing", "to": "/letterspacing" },
+                { "name": "Line Height", "to": "/lineheight" },
+                { "name": "Text Align", "to": "/textalign" },
+                { "name": "Text Decoration", "to": "/textdecoration" },
+                { "name": "Text Shadow", "to": "/textshadow" },
+                { "name": "Text Transform", "to": "/texttransform" },
+                { "name": "White Space", "to": "/whitespace" }
+            ]
+        },
+        {
+            "name": "Effects",
+            "icon": "pi pi-home",
+            "children": [
+                { "name": "Elevation", "to": "/elevation" },
+                { "name": "Opacity", "to": "/opacity" },
+                { "name": "Transition", "to": "" },
+                { "name": "Transition Property", "to": "/transitionproperty" },
+                { "name": "Transition Duration", "to": "/transitionduration" },
+                {
+                    "name": "Transition Timing Function",
+                    "to": "/transitiontimingfunction"
+                },
+                { "name": "Transition Delay", "to": "/transitiondelay" }
+            ]
+        },
+        {
+            "name": "Animation",
+            "icon": "pi pi-home",
+            "children": [
+                { "name": "Animations", "to": "/animations" },
+                { "name": "Animation Duration", "to": "/animationduration" },
+                { "name": "Animation Delay", "to": "/animationdelay" },
+                { "name": "Animation Iteration", "to": "/animationiteration" },
+                {
+                    "name": "Animation Timing Function",
+                    "to": "/animationtimingfunction"
+                },
+                { "name": "Animation Fill", "to": "/animationfill" }
+            ]
+        },
+        {
+            "name": "Transforms",
+            "icon": "pi pi-home",
+            "children": [
+                { "name": "Translate", "to": "/translate" },
+                { "name": "Transform Origin", "to": "/transformorigin" },
+                { "name": "Rotate", "to": "/rotate" }
+            ]
+        },
+        {
+            "name": "Interactivity",
+            "icon": "pi pi-home",
+            "children": [
+                { "name": "Appearance", "to": "/appearance" },
+                { "name": "Cursor", "to": "/cursor" },
+                { "name": "Outline", "to": "/outline" },
+                { "name": "Pointer Events", "to": "/pointerevents" },
+                { "name": "User Select", "to": "/userselect" }
+            ]
+        }
+    ]
+}

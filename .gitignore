@@ -1,18 +1,41 @@
-# See http://help.github.com/ignore-files/ for more about ignoring files.
-.sass-cache
-.jekyll-cache
-.jekyll-metadata
-vendor
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+/vscode
+/.vscode
+/idea
+/.idea
 /.sass-cache
-.DS_STORE
-.idea
-_site
-Gemfile.lock
-package-lock.json
 
-dist/src
-dist/primeflex.scss
-dist/themes/*.scss
+# testing
+/coverage
 
-node_modules
+# next.js
+/.next/
+/out/
+tsconfig.tsbuildinfo
+
+# production
+/dist
+/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# local env files
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# vercel
+.vercel
