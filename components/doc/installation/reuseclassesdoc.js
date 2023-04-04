@@ -2,17 +2,17 @@ import { DocSectionCode } from '../common/docsectioncode';
 import { DocSectionText } from '../common/docsectiontext';
 
 export function ReuseClassesDoc(props) {
-    const code1 = `
+    const code1 = {basic:`
 @import 'primeflex/primeflex.scss';
 
 .mybutton {
     @include styleclass('bg-blue-500 text-white hover:bg-blue-600 border-round transition-colors transition-duration-150 p-3 border-none');
 }
-        `;
+        `};
 
-    const code2 = `
+    const code2 = {basic:`
 <button type="button" class="mybutton">My Button</button>
-        `;
+        `};
 
     return (
         <>

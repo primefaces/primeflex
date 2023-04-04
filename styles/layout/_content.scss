@@ -1,12 +1,66 @@
+
+
 .layout-content {
     margin-left: 250px;
     padding-top: 5rem;
 
     .layout-content-inner {
         padding: 2rem 4rem;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        min-height: calc(100vh - 70px);
+
+        >div {
+            &:first-child {
+                flex-grow: 1;
+            }
+        }
     }
 
     .card {
         @include card;
+        
+        .card-container {
+            background: var(--demo-bg-link);
+            border: 1px dashed;
+            border-radius: 4px;
+            padding: 24px;
+
+            &.blue-container {
+                background-color: var(--demo-bg-blue);
+                border-color: var(--blue-500);
+            }
+
+            &.yellow-container {
+                background-color: var(--demo-bg-yellow);
+                border-color: var(--yellow-500);
+            }
+
+            &.green-container {
+                background-color: var(--demo-bg-green);
+                border-color: var(--green-500);
+            }
+
+            &.purple-container {
+                background-color: var(--demo-bg-purple);
+                border-color: var(--purple-500);
+            }
+
+            &.indigo-container {
+                background-color: var(--demo-bg-indigo);
+                border-color: var(--indigo-500);
+            }
+
+            &.orange-container {
+                background-color: var(--demo-bg-orange);
+                border-color: var(--orange-500);
+            }
+
+            &.cyan-container {
+                background-color: var(--demo-bg-cyan);
+                border-color: var(--cyan-500);
+            }
+        }
     }
 }

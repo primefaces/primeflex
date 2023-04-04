@@ -76,8 +76,13 @@
             "icon": "pi pi-home",
             "children": [
                 { "name": "Padding", "to": "/padding" },
-                { "name": "Margin", "to": "/margin" },
-                { "name": "Sizing", "to": "" },
+                { "name": "Margin", "to": "/margin" }
+            ]
+        },
+        {
+            "name": "Sizing",
+            "icon": "pi pi-home",
+            "children": [
                 { "name": "Min Width", "to": "/minwidth" },
                 { "name": "Width", "to": "/width" },
                 { "name": "Max Width", "to": "/maxwidth" },
@@ -90,17 +95,18 @@
             "name": "Typography",
             "icon": "pi pi-home",
             "children": [
-                { "name": "Font Family", "to": "/fontfamily" },
                 { "name": "Font Size", "to": "/fontsize" },
-                { "name": "Font Style", "to": "/fontstyle" },
                 { "name": "Font Weight", "to": "/fontweight" },
-                { "name": "Letter Spacing", "to": "/letterspacing" },
-                { "name": "Line Height", "to": "/lineheight" },
+                { "name": "Font Style", "to": "/fontstyle" },
+                { "name": "Text Color", "to": "/textcolor" },
                 { "name": "Text Align", "to": "/textalign" },
                 { "name": "Text Decoration", "to": "/textdecoration" },
-                { "name": "Text Shadow", "to": "/textshadow" },
+                { "name": "Text Overflow", "to": "/textoverflow" },
                 { "name": "Text Transform", "to": "/texttransform" },
-                { "name": "White Space", "to": "/whitespace" }
+                { "name": "Line Height", "to": "/lineheight" },
+                { "name": "White Space", "to": "/whitespace" },
+                { "name": "List Style Type", "to": "/liststyletype" },
+                { "name": "Vertical Align", "to": "/verticalalign" }
             ]
         },
         {
@@ -108,14 +114,16 @@
             "icon": "pi pi-home",
             "children": [
                 { "name": "Elevation", "to": "/elevation" },
-                { "name": "Opacity", "to": "/opacity" },
-                { "name": "Transition", "to": "" },
+                { "name": "Opacity", "to": "/opacity" }
+            ]
+        },
+        {
+            "name": "Transition",
+            "icon": "pi pi-home",
+            "children": [
                 { "name": "Transition Property", "to": "/transitionproperty" },
                 { "name": "Transition Duration", "to": "/transitionduration" },
-                {
-                    "name": "Transition Timing Function",
-                    "to": "/transitiontimingfunction"
-                },
+                {"name": "Transition Timing Function","to": "/transitiontimingfunction"},
                 { "name": "Transition Delay", "to": "/transitiondelay" }
             ]
         },

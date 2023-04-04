@@ -143,7 +143,6 @@ pre[class*="language-"] {
  .token.url,
  .token.variable {
      color: #a67f59;
-     background: rgba(255, 255, 255, 0.5);
  }
  
  .token.atrule,
@@ -287,6 +286,24 @@ pre[class*="language-"] {
 
  .layout-wrapper-dark {
     pre[class*="language-"] {
+        position: relative;
+        background: transparent !important;
+    
+        &:before, &:after {
+            display: none !important;
+        }
+    
+        code {
+            border-left: 1rem solid transparent !important;
+            box-shadow: none !important;
+            background: #191c31 !important;
+            margin: 0;
+            color: var(--surface-900);
+            font-size: 14px;
+            border-radius: 10px;
+        }
+    }
+    pre[class*="language-"] {
         color: var(--text-color);
 
         code {
@@ -307,10 +324,13 @@ pre[class*="language-"] {
                 &.string {
                     color: var(--text-color) !important;
                 }
+
+                &.property{
+                    color: rgb(164, 208, 252) !important;
+                }
     
                 &.attr-value {
                     color: #4CAF50 !important;
-    
                     .punctuation {
                         color: rgb(108,182,255) !important;
                     }
@@ -343,37 +363,62 @@ pre[class*="language-"] {
 
  .layout-wrapper-light {
     pre[class*="language-"] {
-        color: var(--text-color);
+        position: relative;
+        background: transparent !important;
+    
+        &:before, &:after {
+            display: none !important;
+        }
+    
+        code {
+            border-left: 1rem solid transparent !important;
+            box-shadow: none !important;
+            background: #303346 !important;
+            margin: 0;
+            color: #fff;
+            font-size: 14px;
+            border-radius: 10px;
+        }
+    }
+    pre[class*="language-"] {
+        color: #ffffff !important;
 
         code {
             .token {
                 &.tag {
-                    color: rgb(5,80,174) !important;
+                    color: rgb(108,182,255) !important;
                 }
                 &.keyword,
                 &.rule {
-                    color: rgb(207,34,46) !important;
+                    color: rgb(244,112,103) !important;
                 }
     
                 &.attr-name,
                 &.attr-string {
-                    color: rgb(5,80,174) !important;
+                    color: rgb(108,182,255) !important;
+                }
+
+                &.property{
+                    color: rgb(164, 208, 252) !important;
                 }
     
                 &.string {
-                    color: rgb(10,48,105) !important;
+                    color: #ffffff !important;
+                }
+
+                &.plain-text{
+                    color: #ffffff !important;
                 }
     
                 &.attr-value {
                     color: #4CAF50 !important;
-    
                     .punctuation {
-                        color: rgb(10,48,105) !important;
+                        color: rgb(108,182,255) !important;
                     }
                 }
     
                 &.punctuation {
-                    color: rgb(5,80,174) !important;
+                    color: #ffffff !important;
                 }
     
                 &.operator,
@@ -382,39 +427,22 @@ pre[class*="language-"] {
                 }
     
                 &.function {
-                    color: rgb(130,80,223) !important;
+                    color: rgb(220,189,251) !important;
                 }
     
                 &.class-name {
-                    color: rgb(17,99,41) !important;
+                    color: rgb(141,219,140) !important;
                 }
     
                 &.operator {
-                    color: rgb(5,80,174) !important;
+                    color: rgb(150,208,255) !important;
                 }
             }
         }
     }
-}
+ }
  
- pre[class*="language-"] {
-    position: relative;
-    background: transparent !important;
 
-    &:before, &:after {
-        display: none !important;
-    }
-
-    code {
-        border-left: 1rem solid transparent !important;
-        box-shadow: none !important;
-        background: var(--surface-card) !important;
-        margin: 0;
-        color: var(--surface-900);
-        font-size: 14px;
-        border-radius: 10px;
-    }
-}
 
 .code-toolbar {
     div.toolbar {

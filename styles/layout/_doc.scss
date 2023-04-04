@@ -62,6 +62,17 @@
     p {
         font-size: 1.25rem;
         color: var(--surface-800);
+
+        i {
+            background-color: var(--primary-100);
+            color: var(--primary-900);
+            border-radius: 6px;
+            padding: 2px 6px;
+            font-size: 0.875rem;
+            font-weight: 600;
+            font-style: normal;
+          
+        }
     }
 }
 
@@ -100,6 +111,7 @@
             font-size: 0.875rem;
             font-weight: 600;
             font-style: normal;
+            white-space: nowrap;
         }
 
         a {
@@ -152,7 +164,7 @@
     > .navbar-item {
         .navbar-item-content {
             border-left: 1px solid var(--surface-border);
-            padding-left: .25rem;
+            padding-left: 0.25rem;
         }
     }
 
@@ -228,20 +240,31 @@
 }
 
 .doc-tablewrapper {
+    max-height: 30rem;
     overflow: auto;
     @include card;
+    background-color: var(--surface-overlay);
+    padding-top: 0;
 }
 
 .doc-table {
     border-collapse: collapse;
     width: 100%;
     min-width: 450px;
-    background-color: var(--surface-card);
-    margin-bottom: 1.5rem;
+    background-color: var(--surface-overlay);
     overflow-x: auto;
+    position: relative;
+
+    thead {
+        position: sticky;
+        top: 0;
+        left: 0;
+        background-color: var(--surface-overlay);
+    }
     th {
         border-bottom: 1px solid var(--surface-border);
         padding: 1rem;
+        padding-top: 3rem;
         text-align: left;
         text-transform: capitalize;
     }
