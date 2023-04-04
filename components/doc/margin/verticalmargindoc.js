@@ -23,10 +23,10 @@ export function VerticalMarginDoc(props) {
             <DocSectionText {...props}>
                 <p>Same margin value can also be defined at the top and bottom sides with shorthand classes.</p>
             </DocSectionText>
-            <div class="card">
-                <div class="flex flex-wrap align-items-center justify-content-center card-container green-container">
-                    <div class="bg-green-100 w-12rem m-3 border-round">
-                        <div class="my-5 border-round bg-green-500 text-white font-bold p-3 flex align-items-center justify-content-center">my-5</div>
+            <div className="card">
+                <div className="flex flex-wrap align-items-center justify-content-center card-container green-container">
+                    <div className="bg-green-100 w-12rem m-3 border-round">
+                        <div className="my-5 border-round bg-green-500 text-white font-bold p-3 flex align-items-center justify-content-center">my-5</div>
                     </div>
                 </div>
             </div>

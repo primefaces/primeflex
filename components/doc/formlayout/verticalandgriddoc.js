@@ -38,11 +38,11 @@ export function VerticalAndGridDoc(props) {
             <div className="card">
                 <div className="formgrid grid">
                     <div className="field col">
-                        <label for="firstname2">Firstname</label>
+                        <label htmlFor="firstname2">Firstname</label>
                         <input id="firstname2" type="text" className="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full"></input>
                     </div>
                     <div className="field col">
-                        <label for="lastname2">Lastname</label>
+                        <label htmlFor="lastname2">Lastname</label>
                         <input id="lastname2" type="text" className="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full"></input>
                     </div>
                 </div>

@@ -39,15 +39,15 @@ export function HorizontalAndFixedWidthDoc(props) {
             <DocSectionText {...props}></DocSectionText>
             <div className="card">
                 <div className="field grid">
-                    <label for="firstname3" className="col-fixed" style={{ width: '100px' }}>
+                    <label htmlFor="firstname3" className="col-fixed" style={{ width: '100px' }}>
                         Firstname
                     </label>
-                    <div class="col">
+                    <div className="col">
                         <input id="firstname3" type="text" className="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary"></input>
                     </div>
                 </div>
                 <div className="field grid">
-                    <label for="lastname3" className="col-fixed" style={{ width: '100px' }}>
+                    <label htmlFor="lastname3" className="col-fixed" style={{ width: '100px' }}>
                         Lastname
                     </label>
                     <div className="col">

@@ -37,22 +37,22 @@ export function VerticalAndHorizontalCheckboxDoc(props) {
                 <p>Vertical</p>
                 <div className="field-checkbox">
                     <input type="checkbox" id="city1"></input>
-                    <label for="city1">Chicago</label>
+                    <label htmlFor="city1">Chicago</label>
                 </div>
                 <div className="field-checkbox">
                     <input type="checkbox" id="city2"></input>
-                    <label for="city2">Los Angeles</label>
+                    <label htmlFor="city2">Los Angeles</label>
                 </div>
 
                 <p>Horizontal</p>
                 <div className="formgroup-inline">
                     <div className="field-checkbox">
                         <input type="checkbox" id="city3"></input>
-                        <label for="city3">Chicago</label>
+                        <label htmlFor="city3">Chicago</label>
                     </div>
                     <div className="field-checkbox">
                         <input type="checkbox" id="city4"></input>
-                        <label for="city4">Los Angeles</label>
+                        <label htmlFor="city4">Los Angeles</label>
                     </div>
                 </div>
             </div>

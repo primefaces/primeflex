@@ -27,7 +27,7 @@ export function HelpDoc(props) {
             <DocSectionText {...props}></DocSectionText>
             <div className="card">
                 <div className="field">
-                    <label for="username">Username</label>
+                    <label htmlFor="username">Username</label>
                     <input
                         id="username"
                         type="username"

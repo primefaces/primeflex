@@ -26,15 +26,15 @@ export function WrapReverseDoc(props) {
                 <p>Flexible items wrap if necessary but in reverse order..</p>
             </DocSectionText>
 
-            <div class="card">
-                <div class="flex flex-wrap-reverse card-container yellow-container" style={{ maxWidth: '500px' }}>
-                    <div class="flex align-items-center justify-content-center bg-yellow-500 font-bold text-gray-900 m-2 border-round" style={{ minWidth: '200px', minHeight: '100px' }}>
+            <div className="card">
+                <div className="flex flex-wrap-reverse card-container yellow-container" style={{ maxWidth: '500px' }}>
+                    <div className="flex align-items-center justify-content-center bg-yellow-500 font-bold text-gray-900 m-2 border-round" style={{ minWidth: '200px', minHeight: '100px' }}>
                         1
                     </div>
-                    <div class="flex align-items-center justify-content-center bg-yellow-500 font-bold text-gray-900 m-2 border-round" style={{ minWidth: '200px', minHeight: '100px' }}>
+                    <div className="flex align-items-center justify-content-center bg-yellow-500 font-bold text-gray-900 m-2 border-round" style={{ minWidth: '200px', minHeight: '100px' }}>
                         2
                     </div>
-                    <div class="flex align-items-center justify-content-center bg-yellow-500 font-bold text-gray-900 m-2 border-round" style={{ minWidth: '200px', minHeight: '100px' }}>
+                    <div className="flex align-items-center justify-content-center bg-yellow-500 font-bold text-gray-900 m-2 border-round" style={{ minWidth: '200px', minHeight: '100px' }}>
                         3
                     </div>
                 </div>

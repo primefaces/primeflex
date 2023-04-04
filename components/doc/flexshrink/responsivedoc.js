@@ -55,11 +55,11 @@ export function ResponsiveDoc(props) {
                     </table>
                 </div>
             </DocSectionText>
-            <div class="card">
-                <div class="flex card-container yellow-container">
-                    <div class="flex-grow-1 flex align-items-center justify-content-center bg-yellow-500 font-bold text-gray-900 p-4 m-3 border-round">1</div>
-                    <div class="flex-shrink-1 md:flex-shrink-0 flex align-items-center justify-content-center bg-yellow-500 font-bold text-gray-900 p-4 m-3 border-round">Shrink on Mobile</div>
-                    <div class="flex-grow-1 flex align-items-center justify-content-center bg-yellow-500 font-bold text-gray-900 p-4 m-3 border-round">3</div>
+            <div className="card">
+                <div className="flex card-container yellow-container">
+                    <div className="flex-grow-1 flex align-items-center justify-content-center bg-yellow-500 font-bold text-gray-900 p-4 m-3 border-round">1</div>
+                    <div className="flex-shrink-1 md:flex-shrink-0 flex align-items-center justify-content-center bg-yellow-500 font-bold text-gray-900 p-4 m-3 border-round">Shrink on Mobile</div>
+                    <div className="flex-grow-1 flex align-items-center justify-content-center bg-yellow-500 font-bold text-gray-900 p-4 m-3 border-round">3</div>
                 </div>
             </div>
             <DocSectionCode code={code} />

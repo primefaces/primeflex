@@ -26,15 +26,15 @@ export function NoWrapDoc(props) {
                 <p>Flexible items do not wrap and keep their position.</p>
             </DocSectionText>
 
-            <div class="card">
-                <div class="flex flex-wrap card-container green-container" style={{ maxWidth: '500px' }}>
-                    <div class="flex align-items-center justify-content-center bg-green-500 font-bold text-white m-2 border-round" style={{ minWidth: '150px', minHeight: '100px' }}>
+            <div className="card">
+                <div className="flex flex-wrap card-container green-container" style={{ maxWidth: '500px' }}>
+                    <div className="flex align-items-center justify-content-center bg-green-500 font-bold text-white m-2 border-round" style={{ minWidth: '150px', minHeight: '100px' }}>
                         1
                     </div>
-                    <div class="flex align-items-center justify-content-center bg-green-500 font-bold text-white m-2 border-round" style={{ minWidth: '150px', minHeight: '100px' }}>
+                    <div className="flex align-items-center justify-content-center bg-green-500 font-bold text-white m-2 border-round" style={{ minWidth: '150px', minHeight: '100px' }}>
                         2
                     </div>
-                    <div class="flex align-items-center justify-content-center bg-green-500 font-bold text-white m-2 border-round" style={{ minWidth: '150px', minHeight: '100px' }}>
+                    <div className="flex align-items-center justify-content-center bg-green-500 font-bold text-white m-2 border-round" style={{ minWidth: '150px', minHeight: '100px' }}>
                         3
                     </div>
                 </div>

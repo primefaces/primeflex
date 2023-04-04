@@ -41,7 +41,7 @@ export function HorizontalDoc(props) {
             <DocSectionText {...props}></DocSectionText>
             <div className="card">
                 <div className="field grid">
-                    <label for="firstname4" className="col-12 mb-2 md:col-2 md:mb-0">
+                    <label htmlFor="firstname4" className="col-12 mb-2 md:col-2 md:mb-0">
                         Firstname
                     </label>
                     <div className="col-12 md:col-10">
@@ -49,7 +49,7 @@ export function HorizontalDoc(props) {
                     </div>
                 </div>
                 <div className="field grid">
-                    <label for="lastname4" className="col-12 mb-2 md:col-2 md:mb-0">
+                    <label htmlFor="lastname4" className="col-12 mb-2 md:col-2 md:mb-0">
                         Lastname
                     </label>
                     <div className="col-12 md:col-10">
