@@ -28,37 +28,37 @@ export function SurfaceColorPaletteDoc(props) {
             <div className="card theming-colors">
                 <div className="flex flex-wrap">
                     <div className="color-stack mb-6">
-                        <div className="color-box" style={{ backgroundColor: 'var(--surface-0)', color: '#000000' }}>
+                        <div className="color-box" style={{ backgroundColor: 'var(--surface-0)', color: 'var(--surface-900)' }}>
                             surface-0
                         </div>
-                        <div className="color-box" style={{ backgroundColor: 'var(--surface-50)', color: '#000000' }}>
+                        <div className="color-box" style={{ backgroundColor: 'var(--surface-50)', color: 'var(--surface-900)' }}>
                             surface-50
                         </div>
-                        <div className="color-box" style={{ backgroundColor: 'var(--surface-100)', color: '#000000' }}>
+                        <div className="color-box" style={{ backgroundColor: 'var(--surface-100)', color: 'var(--surface-900)' }}>
                             surface-100
                         </div>
-                        <div className="color-box" style={{ backgroundColor: 'var(--surface-200)', color: '#000000' }}>
+                        <div className="color-box" style={{ backgroundColor: 'var(--surface-200)', color: 'var(--surface-900)' }}>
                             surface-200
                         </div>
-                        <div className="color-box" style={{ backgroundColor: 'var(--surface-300)', color: '#000000' }}>
+                        <div className="color-box" style={{ backgroundColor: 'var(--surface-300)', color: 'var(--surface-900)' }}>
                             surface-300
                         </div>
-                        <div className="color-box" style={{ backgroundColor: 'var(--surface-400)', color: '#000000' }}>
+                        <div className="color-box" style={{ backgroundColor: 'var(--surface-400)', color: 'var(--surface-900)' }}>
                             surface-400
                         </div>
-                        <div className="color-box" style={{ backgroundColor: 'var(--surface-500)', color: '#000000' }}>
+                        <div className="color-box" style={{ backgroundColor: 'var(--surface-500)', color: 'var(--surface-0)' }}>
                             surface-500
                         </div>
-                        <div className="color-box" style={{ backgroundColor: 'var(--surface-600)', color: '#ffffff' }}>
+                        <div className="color-box" style={{ backgroundColor: 'var(--surface-600)', color: 'var(--surface-0)' }}>
                             surface-600
                         </div>
-                        <div className="color-box" style={{ backgroundColor: 'var(--surface-700)', color: '#ffffff' }}>
+                        <div className="color-box" style={{ backgroundColor: 'var(--surface-700)', color: 'var(--surface-0)' }}>
                             surface-700
                         </div>
-                        <div className="color-box" style={{ backgroundColor: 'var(--surface-800)', color: '#ffffff' }}>
+                        <div className="color-box" style={{ backgroundColor: 'var(--surface-800)', color: 'var(--surface-0)' }}>
                             surface-800
                         </div>
-                        <div className="color-box" style={{ backgroundColor: 'var(--surface-900)', color: '#ffffff' }}>
+                        <div className="color-box" style={{ backgroundColor: 'var(--surface-900)', color: 'var(--surface-0)' }}>
                             surface-900
                         </div>
                     </div>
