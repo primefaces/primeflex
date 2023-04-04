@@ -53,6 +53,11 @@
                     background-color: var(--surface-hover);
                 }
 
+                &:focus {
+                    outline: 0 none;
+                    box-shadow: inset var(--focus-ring);
+                }
+
                 .menu-icon {
                     width: 2rem;
                     height: 2rem;
@@ -92,11 +97,17 @@
         a.router-link-active {
             background-color: var(--highlight-bg);
             color: var(--highlight-text-color);
+            transition: all .3s;
 
             > .menu-icon {
                 i {
                     color: var(--highlight-text-color);
                 }
+            }
+
+            &:hover {
+                background-color: var(--primary-600);
+                color: var(--highlight-text-color);
             }
         }
 

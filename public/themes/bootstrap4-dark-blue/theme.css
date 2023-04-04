@@ -39,8 +39,8 @@
   --surface-card:#101322;
   --surface-overlay:#101322;
   --surface-border:#333548;
-  --surface-hover:rgba(255,255,255,.04);
-  --focus-ring: 0 0 0 1px #e3f3fe;
+  --surface-hover:rgba(255,255,255,.1);
+  --focus-ring: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
   --maskbg: rgba(0, 0, 0, 0.4);
   --highlight-bg: #8dd0ff;
   --highlight-text-color: #151515;
