@@ -7,7 +7,7 @@
     width: calc(100% - 250px);
     z-index: 1100;
     border-bottom: 1px solid var(--surface-border);
-
+    
     .layout-topbar-inner {
         height: 100%;
         display: flex;
@@ -18,6 +18,7 @@
 
     &.layout-topbar-sticky {
         backdrop-filter: blur(8px);
+        background: var(--topbar-bg);
     }
 
     .linkbox {
