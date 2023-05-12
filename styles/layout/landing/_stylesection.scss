@@ -1,0 +1,197 @@
+.landing-style-section {
+    padding: 1rem 0;
+    position: relative;
+    border: none;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 2px;
+        width: 100%;
+        background: var(--landing-section-border);
+    }
+    
+    .landing-style-container {
+        min-height: 67rem;
+
+        .landing-style-content {
+
+            .landing-style-title {
+                max-width: 68rem;
+                font-size: 6rem;
+                background-image: linear-gradient(112.31deg, #00e08f 19.49%, #00a3ff 98.51%);
+                background-size: auto auto;
+                background-clip: border-box;
+                background-size: 100% auto;
+                background-clip: text;
+                text-fill-color: transparent;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+
+            .landing-style-subtitle {
+                line-height: 140%;
+                max-width: 68rem;
+                text-align: center;
+
+                color: var(--landing-text-color);
+            }
+
+            .linkbox-button {
+                background: linear-gradient(
+                        180deg,
+                        rgba(0, 0, 0, 0) 0%,
+                        rgba(0, 0, 0, 0) 0.01%,
+                        rgba(0, 0, 0, 0.12) 100%
+                    ),
+                    linear-gradient(0deg, #061a49, #061a49), #002342;
+            }
+        }
+
+        .landing-style-cards-wrapper {
+            .landing-style-cards {
+                display: flex;
+                gap: 2rem;
+            }
+            .landing-style-code-section {
+                width: 50%;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1960px) {
+    .landing-cards-container {
+        width: 1650px !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}
+
+.landing-style-code-section {
+    > pre {
+        width: 100%;
+        max-width: 600px;
+    }
+    pre {
+        width: 100%;
+        height: 513px;
+        max-height: 513px;
+        max-width: 600px;
+        background: rgb(1, 4, 27);
+        code[class*="language-"] {
+            overflow: auto;
+            width: 100%;
+            max-height: 513px;
+            max-width: 600px;
+            background: radial-gradient(93.88% 63.6% at 50% 0%, rgba(2, 225, 255, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%),
+                rgba(1, 4, 27, 0.1) !important;
+            background-blend-mode: color-dodge, normal !important;
+            border: 1px solid rgba(255, 255, 255, 0.1) !important;
+            backdrop-filter: blur(20px) !important;
+            border-radius: 7px !important;
+            color: #fff !important;
+
+            &::-webkit-scrollbar {
+                width: 8px;
+                height: 8px;
+                background: #f1f1f12d;
+            }
+
+            &::-webkit-scrollbar-thumb {
+                background: #e6e5ff56;
+                border-radius: 6px;
+            }
+
+            &::-webkit-scrollbar-thumb:hover {
+                background: #e6e5ff77;
+            }
+            &::-webkit-scrollbar-corner {
+                background: #f1f1f12d;
+            }
+        }
+        .token.property,
+        .token.tag,
+        .token.boolean,
+        .token.number,
+        .token.function-name,
+        .token.constant,
+        .token.symbol,
+        .token.deleted {
+            color: #cc00ff;
+        }
+        .token.selector,
+        .token.attr-name,
+        .token.string,
+        .token.char,
+        .token.function,
+        .token.builtin,
+        .token.inserted {
+            color: rgba(255, 255, 255, 0.6);
+        }
+    }
+}
+// Variables
+
+// Mixins
+@mixin transform($parameter) {
+    -webkit-transform: $parameter;
+    -moz-transform: $parameter;
+    -o-transform: $parameter;
+    -ms-transform: $parameter;
+    transform: $parameter;
+}
+
+@mixin transition($parameters...) {
+    -webkit-transition: $parameters;
+    -moz-transition: $parameters;
+    -o-transition: $parameters;
+    -ms-transition: $parameters;
+    transition: $parameters;
+}
+
+#slider-wrapp {
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    margin: 150px auto;
+    text-align: center;
+
+    #slider {
+        width: 100%;
+        height: auto;
+        position: relative;
+
+        .slide {
+            position: absolute;
+            left: 50%;
+            margin-left: -150px;
+            @include transition(all 0.5s ease, opacity 0.5s linear);
+            @include transform(perspective(1300px) translate3d(0px, -130px, -500px));
+            z-index: 0;
+            opacity: 1;
+
+            $transX: 0;
+            $transY: -150;
+            $transZ: -370;
+
+            @for $i from 4 to 0 {
+                &:nth-last-child(#{$i}) {
+                    $transX: $transX + 40;
+                    $transY: $transY - 20;
+                    $transZ: $transZ + 80;
+                    @include transform(perspective(1300px) translate3d($transX + px, $transY + px, $transZ + px));
+                }
+            }
+
+            &.active {
+                @include transform(perspective(1300px) translate3d(200px, -230px, 30px));
+                z-index: 1;
+                opacity: 1;
+                
+            }
+        }
+    }
+}

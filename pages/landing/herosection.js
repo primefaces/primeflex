@@ -1,0 +1,139 @@
+import Link from 'next/link';
+import { useEffect, useRef, useState } from 'react';
+
+const Typewriter = ({ data, setClassName }) => {
+    const [index, setIndex] = useState(0);
+    const [text, setText] = useState('');
+    const [isDeleting, setIsDeleting] = useState(false);
+    const [typingSpeed, setTypingSpeed] = useState(150);
+
+    const handleType = () => {
+        const currentIndex = index % data.length;
+        const fullText = data[currentIndex];
+
+        if (isDeleting) {
+            setText(fullText.substring(0, text.length - 1));
+            setTypingSpeed(30);
+        } else {
+            setText(fullText.substring(0, text.length + 1));
+            setTypingSpeed(150);
+        }
+
+        if (!isDeleting && text === fullText) {
+            setTimeout(() => {
+                setIsDeleting(true);
+            }, 5000); // 10 sec pause after fully written
+        } else if (isDeleting && text === '') {
+            setIsDeleting(false);
+            setIndex((prevIndex) => prevIndex + 1);
+            setTimeout(() => {
+                setClassName(data[currentIndex]);
+            }, 10000); // 10 sec pause after fully deleted
+        }
+    };
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            handleType();
+        }, typingSpeed);
+
+        return () => clearTimeout(timer);
+    }, [text, isDeleting, index]);
+
+    useEffect(() => {
+        if (isDeleting) {
+            setClassName('');
+        } else {
+            setClassName(data[index % data.length]);
+        }
+    }, [isDeleting, index, data, setClassName]);
+
+    return <span>{text}</span>;
+};
+
+const HeroSection = () => {
+    const [borderClass, setBorderClassName] = useState('border-round');
+    const borders = ['border-round', 'border-round-2xl'];
+
+    const [flexClass, setFlexClassName] = useState('flex-row');
+    const flexs = ['flex-row', 'flex-column'];
+
+    return (
+        <section className="landing-hero-section relative">
+            <span className="ellipse-1"></span>
+            <span className="ellipse-2"></span>
+            <span className="ellipse-3"></span>
+            <span className="ellipse-4"></span>
+            <div className="landing-hero-container pt-7 pb-8 px-5 relative z-5">
+                <div className="landing-hero-content text-center flex flex-column gap-5 flex-shrink-0 justify-content-center align-items-center mb-5">
+                    <Link href="/" className="updates-link" aria-label="PrimeReact logo">
+                        <span className="updates-icon"></span>
+                        <span className="updates-text">See New Update Notes</span>
+                    </Link>
+
+                    <h1 className="landing-hero-title font-semibold m-0">Perfect CSS Utility Companion</h1>
+                    <h3 className="landing-hero-subtitle m-0 text-xl font-normal text-center">PrimeFlex is a lightweight responsive CSS utility library to accompany Prime UI libraries and static webpages as well.</h3>
+                </div>
+                <div className="landing-hero-getstarted flex flex-column md:flex-row align-items-center justify-content-center">
+                    <Link href="/installation" className="linkbox-button active fadeinleft animation-duration-2000 animation-ease-out">
+                        Get Started
+                    </Link>
+                    <div className="box download-box surface-100 fadeinright animation-duration-2000 animation-ease-out border-1 surface-border">
+                        <span className="npm-text text-700" style={{ fontFamily: 'monaco, monospace' }}>
+                            npm i primeflex
+                        </span>
+                        <button className="copy-button cursor-pointer">
+                            <i className="pi pi-copy"></i>
+                        </button>
+                    </div>
+                </div>
+                <div className="landing-hero-example flex justify-content-center my-8 mx-auto relative">
+                    <div className="example-card-container relative block">
+                        <span className="card-container-classes absolute block p-1 font-medium text-sm text-center text-blue-500">
+                            bg-surface border-1 surface-border flex gap-2 <Typewriter data={borders} setClassName={setBorderClassName} />
+                        </span>
+
+                        <div className={'example-card flex flex-column align-items-start p-5 gap-5 ' + borderClass}>
+                            <div className="example-card-header-container">
+                                <span className="header-container-classes absolute block p-1 font-medium text-sm text-center text-purple-400">
+                                    flex w-full gap-2 p-4 <Typewriter data={flexs} setClassName={setFlexClassName} />
+                                </span>
+                                <div className={'example-card-header gap-2 flex justify-content-between align-items-center w-full ' + flexClass}>
+                                    <img src="/images/landing/profile.png" width={100} height={100}></img>
+                                    <div className="example-card-header-content flex align-items-center gap-5">
+                                        <div className="content-info">
+                                            <h3 className="font-medium text-4xl m-0 mb-2">73</h3>
+                                            <span className="block font-normal ">Posts</span>
+                                        </div>
+                                        <div className="content-info">
+                                            <h3 className="font-medium text-4xl  m-0 mb-2">73.3K</h3>
+                                            <span className="block font-normal ">Followers</span>
+                                        </div>
+                                        <div className="content-info">
+                                            <h3 className="font-medium text-4xl m-0 mb-2">204</h3>
+                                            <span className="block font-normal">Following</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="example-card-content-container relative w-full">
+                                <span className="content-container-classes absolute block p-1 font-medium text-sm text-center text-pink-500">flex w-full gap-2 flex-column p-4</span>
+                                <div className="example-card-content flex align-items-center justify-content-between gap-6">
+                                    <div className="content">
+                                        <h3 className='font-bold text-2xl white-space-nowrap m-0'>Jane JOSHUA</h3>
+                                        <h3 className='font-normal text-2xl white-space-nowrap m-0 mt-2'>Freelance UI/UX Designer</h3>
+                                    </div>
+                                    <Link href="/" className="linkbox-button">
+                                        Follow
+                                    </Link>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    );
+};
+
+export default HeroSection;

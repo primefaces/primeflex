@@ -1,0 +1,49 @@
+.landing-header-section {
+    .landing-header-container {
+        padding: 1rem 2rem;
+
+        .landing-header-left {
+            .header-logo {
+                img {
+                    height: 3rem;
+                }
+            }
+        }
+        .landing-header-center {
+        }
+
+        .landing-header-right {
+            a {
+                color: var(--landing-menu-item-text-color);
+                font-size: 1rem;
+                line-height: 1;
+                padding: 0.25rem 0.5rem;
+                transition: color .3s;
+
+                &:hover{
+                    color: var(--landing-menu-item-hover-text-color);
+                }
+            }
+            button {
+                color: var(--landing-menu-item-text-color);
+                background-color: transparent;
+                font-size: 1rem;
+                line-height: 1;
+                padding: 0.25rem 0.5rem;
+                transition: color .3s;
+                &:hover{
+                    color: var(--landing-menu-item-hover-text-color);
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 1960px) {
+    .landing-header-container{
+        width: 1650px !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}

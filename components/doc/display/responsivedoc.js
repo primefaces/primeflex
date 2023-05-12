@@ -1,6 +1,8 @@
 import { Button } from 'primereact/button';
 import { DocSectionCode } from '../common/docsectioncode';
 import { DocSectionText } from '../common/docsectiontext';
+import { Splitter, SplitterPanel } from 'primereact/splitter';
+import React, { useEffect, useRef } from 'react';
 
 export function ResponsiveDoc(props) {
     const code = {
@@ -17,7 +19,7 @@ export function ResponsiveDoc(props) {
 </div>
 `
     };
-
+    
     return (
         <>
             <DocSectionText {...props}>
@@ -53,13 +55,14 @@ export function ResponsiveDoc(props) {
                     </table>
                 </div>
             </DocSectionText>
-            <div className="card">
-                <div className="card-container cyan-container inline-flex">
-                    <div className="hidden md:block bg-cyan-500 text-white font-bold align-items-center justify-content-center p-4 border-round mr-3">Hide on a small screen</div>
-                    <div className="block md:hidden bg-gray-500 text-white font-bold align-items-center justify-content-center p-4 border-round mr-3">Visible on a small screen</div>
-                </div>
-            </div>
+            <Splitter style={{ height: '300px', border: 'none' }}>
+                <SplitterPanel className="flex align-items-center justify-content-center">
+                    <iframe src='/display/example' className="w-full h-full pointer-events-none z-5 relative" width="100%" height="500" frameBorder="0" scrolling="no" />
+                </SplitterPanel>
+                <SplitterPanel className="opacity-0"></SplitterPanel>
+            </Splitter>
             <DocSectionCode code={code} />
         </>
     );
 }
+

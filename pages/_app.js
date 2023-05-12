@@ -8,6 +8,7 @@ import 'primereact/resources/primereact.min.css';
 import 'primeicons/primeicons.css';
 import '../styles/demo/demo.scss';
 import '../styles/prism.scss';
+import AppContentContext from '../components/layout/appcontentcontext';
 
 export default function MyApp({ Component }) {
     const [dark, setDark] = useState(false);
@@ -66,8 +67,21 @@ export default function MyApp({ Component }) {
         document.documentElement.style.fontSize = '14px';
     }, []);
 
+    useEffect(() => {
+        console.log('Component:', Component);
+    }, []);
+
     if (Component.getLayout) {
-        return Component.getLayout(<Component {...props} />);
+        return Component.getLayout(
+            <AppContentContext.Provider   
+            value={{
+                ripple: true,
+                inputStyle: 'outlined',
+                darkTheme: props.dark
+            }}>
+                <Component {...props} />
+            </AppContentContext.Provider>
+        );
     } else {
         return (
             <Layout {...props}>
