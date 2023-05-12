@@ -1,14 +1,12 @@
 import '@docsearch/css';
-import '../styles/primeflex.css';
 import 'primeicons/primeicons.css';
-import { useRef, useState, useEffect } from 'react';
-import Layout from '../components/layout/layout';
-import '../styles/layout/layout.scss';
 import 'primereact/resources/primereact.min.css';
-import 'primeicons/primeicons.css';
+import { useEffect, useRef, useState } from 'react';
+import Layout from '../components/layout/layout';
 import '../styles/demo/demo.scss';
+import '../styles/layout/layout.scss';
+import '../styles/primeflex.css';
 import '../styles/prism.scss';
-import AppContentContext from '../components/layout/appcontentcontext';
 
 export default function MyApp({ Component }) {
     const [dark, setDark] = useState(false);
@@ -67,21 +65,8 @@ export default function MyApp({ Component }) {
         document.documentElement.style.fontSize = '14px';
     }, []);
 
-    useEffect(() => {
-        console.log('Component:', Component);
-    }, []);
-
     if (Component.getLayout) {
-        return Component.getLayout(
-            <AppContentContext.Provider   
-            value={{
-                ripple: true,
-                inputStyle: 'outlined',
-                darkTheme: props.dark
-            }}>
-                <Component {...props} />
-            </AppContentContext.Provider>
-        );
+        return Component.getLayout(<Component {...props} />);
     } else {
         return (
             <Layout {...props}>

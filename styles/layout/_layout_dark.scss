@@ -1,14 +1,14 @@
-.layout-wrapper-dark{
-    --body-bg:radial-gradient(39.27% 40.65% at 50% 0%, rgba(0, 8, 65, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%);
+.layout-wrapper-dark {
+    --body-bg: radial-gradient(39.27% 40.65% at 50% 0%, rgba(0, 8, 65, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%);
 
-        --demo-bg-link: url("/images/tiny-checkers-dark.png");
-        --demo-bg-blue: var(--blue-900);
-        --demo-bg-yellow: var(--yellow-900);
-        --demo-bg-green: var(--green-900);
-        --demo-bg-purple: var(--purple-900);
-        --demo-bg-indigo: var(--indigo-900);
-        --demo-bg-orange: var(--orange-900);
-        --demo-bg-cyan: var(--cyan-900);
-        
-        --topbar-bg:rgb(0 1 8 / 80%);
+    --demo-bg-link: url("/images/tiny-checkers-dark.png");
+    --demo-bg-blue: var(--blue-900);
+    --demo-bg-yellow: var(--yellow-900);
+    --demo-bg-green: var(--green-900);
+    --demo-bg-purple: var(--purple-900);
+    --demo-bg-indigo: var(--indigo-900);
+    --demo-bg-orange: var(--orange-900);
+    --demo-bg-cyan: var(--cyan-900);
+
+    --topbar-bg: rgb(0 1 8 / 80%);
 }

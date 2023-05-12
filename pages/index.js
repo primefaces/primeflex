@@ -1,18 +1,16 @@
 import Head from 'next/head';
+import { classNames } from 'primereact/utils';
 import { useEffect, useState } from 'react';
 import Analytics from '../components/layout/analytics';
-import { classNames } from 'primereact/utils';
-import Landing from './landing/index';
-import HeroSection from './landing/herosection';
-import HeaderSection from './landing/headersection';
-import CardsSection from './landing/cardssection';
-import BlocksSection from './landing/blockssection';
-import StyleSection from './landing/stylesection';
-import ResponsiveSection from './landing/responsivesection';
 import AnimationsSection from './landing/animationssection';
+import BlocksSection from './landing/blockssection';
+import CardsSection from './landing/cardssection';
+import HeaderSection from './landing/headersection';
+import HeroSection from './landing/herosection';
+import ResponsiveSection from './landing/responsivesection';
+import StyleSection from './landing/stylesection';
 
 export default function Home(props) {
-    
     const [tableTheme, setTableTheme] = useState('bootstrap4-light-blue');
     const rootClassName = classNames('landing', { 'landing-light': !props.dark, 'landing-dark': props.dark, 'landing-news-active': props.newsActive });
 
@@ -49,9 +47,9 @@ export default function Home(props) {
             <CardsSection />
             <AnimationsSection />
             <StyleSection />
-            <ResponsiveSection />
+            <ResponsiveSection dark={props.dark} />
             <BlocksSection />
-            
+
             {/* <Landing /> */}
         </div>
     );

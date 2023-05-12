@@ -1,9 +1,11 @@
 import Link from 'next/link';
-import { useEffect, useState } from 'react';
+import { DomHandler } from 'primereact/utils';
+import { useEffect, useRef, useState } from 'react';
 
-const ResponsiveSection = () => {
+const ResponsiveSection = ({ dark }) => {
     const [iframeWidth, setIframeWidth] = useState(576);
     const [activeSections, setActiveSections] = useState([]);
+    const IframeRef = useRef(null);
 
     const breakpoints = [
         { label: 'Screen 1200px', width: 1200, buttonWidth: 102 },
@@ -44,12 +46,24 @@ const ResponsiveSection = () => {
         setActiveSections(active.map((a) => a.label));
     }, [iframeWidth]);
 
+    useEffect(() => {
+        const iframeDocument = IframeRef.current.contentDocument || IframeRef.current.contentWindow.document;
+        const frameBody = iframeDocument.documentElement;
+
+        DomHandler.removeMultipleClasses(frameBody, 'dark light');
+        DomHandler.addClass(frameBody, dark ? 'dark' : 'light');
+    }, [dark]);
+
     return (
         <section className="landing-responsive-section relative">
             <div className="landing-responsive-container pt-7 pb-8 px-5 relative z-5">
                 <div className="landing-responsive-content text-center flex flex-column gap-5 flex-shrink-0 justify-content-center align-items-center mb-5">
-                    <h1 className="landing-responsive-title font-semibold m-0">Adaptive <br></br>for Every Screen</h1>
-                    <h3 className="landing-responsive-subtitle m-0 text-xl font-normal text-center">Unlock consistency and flexibility in your designs with our collection of pre-built components and utility classes, designed to work seamlessly across all screen sizes.</h3>
+                    <h1 className="landing-responsive-title font-semibold m-0">
+                        Adaptive <br></br>for Every Screen
+                    </h1>
+                    <h3 className="landing-responsive-subtitle m-0 text-xl font-normal text-center">
+                        Unlock consistency and flexibility in your designs with our collection of pre-built components and utility classes, designed to work seamlessly across all screen sizes.
+                    </h3>
 
                     <Link href="/installation" className="linkbox-button active w-9rem fadeinleft animation-duration-2000 animation-ease-out">
                         Learn more
@@ -69,7 +83,7 @@ const ResponsiveSection = () => {
                     </div>
                     <div className="landing-responsive-iframe w-full mx-auto">
                         <div className="resize-wrapper m-auto relative" style={{ width: `${iframeWidth}px` }}>
-                            <iframe src="/landing/example" className="w-full pointer-events-none z-5 relative" width={iframeWidth} height="628" frameBorder="0" scrolling="no" />
+                            <iframe ref={IframeRef} src="/landing/example" className="w-full pointer-events-none z-5 relative" width={iframeWidth} height="628" frameBorder="0" scrolling="no" />
                             <div className="resize-handle absolute  z-10" onMouseDown={handleMouseDown}></div>
                         </div>
                     </div>
