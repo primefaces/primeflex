@@ -1,0 +1,19 @@
+.layout-example {
+    background: var(--body-bg);
+    background-color: var(--body-bg-color);
+    color: var(--example-text-color);
+    span {
+        color: var(--example-text-color);
+    }
+    button {
+        color: var(--example-button-text-color);
+        background: var(--example-button-bg);
+        border-radius: 52px;
+    }
+    .example-topbar {
+        background: var(--example-topbar-bg);
+        button {
+            color: var(--example-text-color);
+        }
+    }
+}

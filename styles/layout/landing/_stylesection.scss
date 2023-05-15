@@ -3,7 +3,7 @@
     position: relative;
     border: none;
     &::before {
-        content: '';
+        content: "";
         position: absolute;
         top: 0;
         left: 0;
@@ -12,12 +12,11 @@
         width: 100%;
         background: var(--landing-section-border);
     }
-    
+
     .landing-style-container {
         min-height: 67rem;
 
         .landing-style-content {
-
             .landing-style-title {
                 max-width: 68rem;
                 font-size: 6rem;
@@ -40,13 +39,7 @@
             }
 
             .linkbox-button {
-                background: linear-gradient(
-                        180deg,
-                        rgba(0, 0, 0, 0) 0%,
-                        rgba(0, 0, 0, 0) 0.01%,
-                        rgba(0, 0, 0, 0.12) 100%
-                    ),
-                    linear-gradient(0deg, #061a49, #061a49), #002342;
+                background: var(--linkbox-button-bg);
             }
         }
 
@@ -80,16 +73,14 @@
         height: 513px;
         max-height: 513px;
         max-width: 600px;
-        background: rgb(1, 4, 27);
         code[class*="language-"] {
             overflow: auto;
             width: 100%;
             max-height: 513px;
             max-width: 600px;
-            background: radial-gradient(93.88% 63.6% at 50% 0%, rgba(2, 225, 255, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%),
-                rgba(1, 4, 27, 0.1) !important;
+            background: var(--code-background);
             background-blend-mode: color-dodge, normal !important;
-            border: 1px solid rgba(255, 255, 255, 0.1) !important;
+            border: var(--code-border);
             backdrop-filter: blur(20px) !important;
             border-radius: 7px !important;
             color: #fff !important;
@@ -120,7 +111,7 @@
         .token.constant,
         .token.symbol,
         .token.deleted {
-            color: #cc00ff;
+            color: var(--code-divs-color);
         }
         .token.selector,
         .token.attr-name,
@@ -129,7 +120,14 @@
         .token.function,
         .token.builtin,
         .token.inserted {
-            color: rgba(255, 255, 255, 0.6);
+            color: var(--code-text-color);
+        }
+
+        .token.atrule,
+        .token.attr-value,
+        .token.keyword,
+        .token.class-name {
+            color: var(--code-class-text-color);
         }
     }
 }
@@ -190,7 +188,6 @@
                 @include transform(perspective(1300px) translate3d(200px, -230px, 30px));
                 z-index: 1;
                 opacity: 1;
-                
             }
         }
     }

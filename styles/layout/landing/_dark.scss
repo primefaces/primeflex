@@ -8,40 +8,70 @@
         rgba(0, 102, 255, 0) 60%,
         rgba(0, 255, 240, 0.45) 100%
     );
-    --linkbox-button-bg: linear-gradient(
-        180deg,
-        rgba(0, 0, 0, 0) 0%,
-        rgba(0, 0, 0, 0) 0.01%,
-        rgba(0, 0, 0, 0.12) 100%
-    ),
-    linear-gradient(0deg, #061a49, #061a49), #002342;
+    --linkbox-button-bg: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 0.01%, rgba(0, 0, 0, 0.12) 100%),
+        linear-gradient(0deg, #061a49, #061a49), #002342;
     //hero
     --patern-1: linear-gradient(180deg, #000000 1.39%, #ffffff 100%);
     --patern-2: linear-gradient(180deg, #ffffff 0%, #00ff94 100%);
     --patern-3: linear-gradient(180deg, #ffffff 0%, #ffffff 100%);
     --patern-4: linear-gradient(180deg, #dbdbdb 0%, #000aff 100%);
-    --pattern-mode:screen;
+    --pattern-mode: screen;
 
     //hero-box
-    --hero-box-bg:linear-gradient(116.22deg, #012278 33.5%, rgba(1, 25, 85, 0.58) 99.16%);
+    --hero-box-bg: linear-gradient(116.22deg, #012278 33.5%, rgba(1, 25, 85, 0.58) 99.16%);
     --hero-box-shadow: 0px 0px 28px 14px #000424;
     --hero-box-border: 2px solid #0078e3;
-    --hero-box-text-color:#ffffff;
+    --hero-box-text-color: #ffffff;
     --hero-box-classes-bg: rgba(0, 120, 227, 0.4);
     --hero-box-classes-purple-bg: rgba(128, 0, 255, 0.4);
     --hero-box-pink-bg: rgba(227, 0, 204, 0.4);
 
     //cards
-    --cards-bg:radial-gradient(
-        93.88% 63.6% at 50% 0%,
-        rgba(2, 225, 255, 0.3) 0%,
-        rgba(0, 0, 0, 0.3) 100%
-    ),
-    rgba(1, 4, 27, 0.3);
-    --cards-border:1px solid rgba(255, 255, 255, 0.1);
-    --cards-shadow:0px 0px 40px rgba(0, 0, 0, 0.3);
-    --cards-color-text-color:rgba(255, 255, 255, 0.7);
+    --cards-bg: radial-gradient(93.88% 63.6% at 50% 0%, rgba(2, 225, 255, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%),
+        rgba(1, 4, 27, 0.3);
+    --cards-border: 1px solid rgba(255, 255, 255, 0.1);
+    --cards-shadow: 0px 0px 40px rgba(0, 0, 0, 0.3);
+    --cards-color-text-color: rgba(255, 255, 255, 0.7);
 
+    --color-cards-animated-bg: rgba(1, 4, 36, 0.2);
+    --layout-card-bg: rgba(255, 255, 255, 0.1);
+    --layout-card-border: 1px solid rgba(255, 255, 255, 0.15);
+    --card-slider-text-color: rgba(255, 255, 255, 0.7);
+    --slider-bg: transparent;
+    --slider-handle-bg: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 0.01%, rgba(0, 0, 0, 0.12) 100%),
+        linear-gradient(0deg, #061a49, #061a49), #002342;
+    --slider-handle-border: none;
+
+    --animations-text-backdrop: linear-gradient(180deg, rgba(1, 4, 27, 0) 0%, #01041b 29.97%);
+    --animation-card-bg: radial-gradient(
+            79.09% 79.09% at 50% 98.36%,
+            rgba(255, 255, 255, 0.14) 0%,
+            rgba(255, 255, 255, 0) 100%
+        ),
+        rgba(255, 255, 255, 0.1);
+    --animation-card-border: 1px solid rgba(255, 255, 255, 0.2);
+
+    --responsive-breaks-bg: rgba(1, 4, 27, 0.3);
+    --responsive-breaks-border: 1px solid rgba(255, 255, 255, 0.1);
+    --responsive-breaks-shadow: 0px 0px 40px rgba(0, 0, 0, 0.3);
+    --responsive-active-bg: radial-gradient(
+            79.09% 79.09% at 50% 98.36%,
+            rgb(0 0 0 / 14%) 0%,
+            rgba(255, 255, 255, 0) 100%
+        ),
+        rgba(255, 255, 255, 0.1);
+    --responsive-resize-handle-bg: rgba(255, 255, 255, 0.1);
+    --responsive-resize-handle-border: 1px solid rgba(255, 255, 255, 0.1);
+    --responsive-resize-handle-hover-bg: rgba(255, 255, 255, 0.2);
+
+    --blocks-backdrop: radial-gradient(50% 50% at 50% 50%, #00031a 0%, rgba(0, 3, 26, 0.5) 50%, #00031a 100%);
+
+    --code-background: radial-gradient(93.88% 63.6% at 50% 0%, rgba(2, 225, 255, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%),
+        rgba(1, 4, 27, 0.1) !important;
+    --code-border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    --code-divs-color: #cc00ff;
+    --code-text-color: rgba(255, 255, 255, 0.6);
+    --code-class-text-color: rgba(0, 194, 255, 1);
     --landing-background-mask: url("/images/landing/bg-hero-grid-dark.svg");
     --landing-menu-item-text-color: rgba(255, 255, 255, 0.4);
     --landing-menu-item-hover-text-color: #04b9d7;

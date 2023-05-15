@@ -18,9 +18,9 @@
                 font-size: 1rem;
                 line-height: 1;
                 padding: 0.25rem 0.5rem;
-                transition: color .3s;
+                transition: color 0.3s;
 
-                &:hover{
+                &:hover {
                     color: var(--landing-menu-item-hover-text-color);
                 }
             }
@@ -30,8 +30,8 @@
                 font-size: 1rem;
                 line-height: 1;
                 padding: 0.25rem 0.5rem;
-                transition: color .3s;
-                &:hover{
+                transition: color 0.3s;
+                &:hover {
                     color: var(--landing-menu-item-hover-text-color);
                 }
             }
@@ -39,9 +39,8 @@
     }
 }
 
-
 @media screen and (min-width: 1960px) {
-    .landing-header-container{
+    .landing-header-container {
         width: 1650px !important;
         margin-left: auto !important;
         margin-right: auto !important;

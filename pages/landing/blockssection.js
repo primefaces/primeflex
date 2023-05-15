@@ -1,6 +1,5 @@
 import Link from 'next/link';
-import { useEffect, useRef, useState } from 'react';
-import { Slider } from 'primereact/slider';
+import { useState } from 'react';
 const BlocksSection = () => {
     const [weight, setWeight] = useState(50);
     const [size, setSize] = useState(50);
@@ -67,11 +66,11 @@ const BlocksSection = () => {
                     <h1 className="landing-blocks-title font-semibold m-0">
                         Made with <br></br> PrimeFlex
                     </h1>
-                    <h3 className="landing-blocks-subtitle m-0 text-xl font-normal text-center text-white">
+                    <h3 className="landing-blocks-subtitle m-0 text-xl font-normal text-center">
                         Unlock consistency and flexibility in your designs with our collection of pre-built components and utility classes, designed to work seamlessly across all screen sizes.
                     </h3>
 
-                    <Link href="/installation" className="linkbox-button active w-9rem fadeinleft animation-duration-2000 animation-ease-out">
+                    <Link href="/installation" className="linkbox-button active w-9rem fadeinleft animation-duration-2000 animation-ease-out text-700">
                         Learn more
                     </Link>
                 </div>

@@ -140,6 +140,11 @@
         }
 
         .landing-hero-example {
+            min-height: 380px;
+            .example-card-wrapper {
+                position: absolute;
+                margin: 0 auto;
+            }
             .example-card-container {
                 border: var(--hero-box-border);
                 padding: 0.75rem;
@@ -154,9 +159,9 @@
                     background: var(--hero-box-bg);
                     box-shadow: var(--hero-box-shadow);
                     border: var(--hero-box-border);
-                    color:var(--hero-box-text-color);
-                    h3{
-                        color:var(--hero-box-text-color);
+                    color: var(--hero-box-text-color);
+                    h3 {
+                        color: var(--hero-box-text-color);
                     }
                     .example-card-header-container {
                         padding: 10px;

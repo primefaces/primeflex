@@ -3,7 +3,7 @@
     position: relative;
     border: none;
     &::before {
-        content: '';
+        content: "";
         position: absolute;
         top: 0;
         left: 0;
@@ -12,9 +12,8 @@
         width: 100%;
         background: var(--landing-section-border);
     }
-    
-    .landing-responsive-container {
 
+    .landing-responsive-container {
         .landing-responsive-content {
             text-align: center;
 
@@ -39,50 +38,37 @@
             }
 
             .linkbox-button {
-                background: linear-gradient(
-                        180deg,
-                        rgba(0, 0, 0, 0) 0%,
-                        rgba(0, 0, 0, 0) 0.01%,
-                        rgba(0, 0, 0, 0.12) 100%
-                    ),
-                    linear-gradient(0deg, #061a49, #061a49), #002342;
+                background: var(--linkbox-button-bg);
             }
         }
 
         .landing-responsive-wrapper {
             .landing-responsive-breaks {
                 > div {
-                    background: rgba(1, 4, 27, 0.3);
+                    background: var(--responsive-breaks-bg);
                     background-blend-mode: color-dodge;
-                    border: 1px solid rgba(255, 255, 255, 0.1);
-                    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.3);
+                    border: var(--responsive-breaks-border);
+                    box-shadow: var(--responsive-breaks-shadow);
                     border-radius: 3.5px;
+                    color: var(--card-slider-text-color);
 
                     &.active-responsive {
                         opacity: 1 !important;
-                        background: radial-gradient(
-                                79.09% 79.09% at 50% 98.36%,
-                                rgb(0 0 0 / 14%) 0%,
-                                rgba(255, 255, 255, 0) 100%
-                            ),
-                            rgba(255, 255, 255, 0.1);
-                    }
-
-                    &:hover {
-                        background: rgba(1, 4, 27, 1);
+                        background: var(--responsive-active-bg);
+                        color: #fff;
                     }
                 }
             }
             .landing-responsive-iframe {
-                .resize-wrapper{
+                .resize-wrapper {
                     max-width: 1200px;
                     min-width: 400px;
                 }
                 .resize-handle {
                     width: 17.5px;
                     height: 77px;
-                    background: rgba(255, 255, 255, 0.1);
-                    border: 1px solid rgba(255, 255, 255, 0.1);
+                    background: var(--responsive-resize-handle-bg);
+                    border: var(--responsive-resize-handle-border);
                     border-radius: 3.5px;
                     z-index: 10;
                     right: -20px;
@@ -90,7 +76,7 @@
                     cursor: col-resize;
 
                     &:hover {
-                        background: rgba(255, 255, 255, 0.2);
+                        background: var(--responsive-resize-handle-hover-bg);
                     }
                 }
             }

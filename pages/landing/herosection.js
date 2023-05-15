@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 const Typewriter = ({ data, setClassName }) => {
     const [index, setIndex] = useState(0);
@@ -88,44 +88,46 @@ const HeroSection = () => {
                     </div>
                 </div>
                 <div className="landing-hero-example flex justify-content-center my-8 mx-auto relative">
-                    <div className="example-card-container relative block">
-                        <span className="card-container-classes absolute block p-1 font-medium text-sm text-center text-blue-500">
-                            bg-surface border-1 surface-border flex gap-2 <Typewriter data={borders} setClassName={setBorderClassName} />
-                        </span>
+                    <div className="example-card-wrapper">
+                        <div className="example-card-container relative block">
+                            <span className="card-container-classes absolute block p-1 font-medium text-sm text-center text-blue-500">
+                                bg-surface border-1 surface-border flex gap-2 <Typewriter data={borders} setClassName={setBorderClassName} />
+                            </span>
 
-                        <div className={'example-card flex flex-column align-items-start p-5 gap-5 ' + borderClass}>
-                            <div className="example-card-header-container">
-                                <span className="header-container-classes absolute block p-1 font-medium text-sm text-center text-purple-400">
-                                    flex w-full gap-2 p-4 <Typewriter data={flexs} setClassName={setFlexClassName} />
-                                </span>
-                                <div className={'example-card-header gap-2 flex justify-content-between align-items-center w-full ' + flexClass}>
-                                    <img src="/images/landing/profile.png" width={100} height={100}></img>
-                                    <div className="example-card-header-content flex align-items-center gap-5">
-                                        <div className="content-info">
-                                            <h3 className="font-medium text-4xl m-0 mb-2">73</h3>
-                                            <span className="block font-normal ">Posts</span>
-                                        </div>
-                                        <div className="content-info">
-                                            <h3 className="font-medium text-4xl  m-0 mb-2">73.3K</h3>
-                                            <span className="block font-normal ">Followers</span>
-                                        </div>
-                                        <div className="content-info">
-                                            <h3 className="font-medium text-4xl m-0 mb-2">204</h3>
-                                            <span className="block font-normal">Following</span>
+                            <div className={'example-card flex flex-column align-items-start p-5 gap-5 ' + borderClass}>
+                                <div className="example-card-header-container">
+                                    <span className="header-container-classes absolute block p-1 font-medium text-sm text-center text-purple-400">
+                                        flex w-full gap-2 p-4 <Typewriter data={flexs} setClassName={setFlexClassName} />
+                                    </span>
+                                    <div className={'example-card-header gap-2 flex justify-content-between align-items-center w-full ' + flexClass}>
+                                        <img src="/images/landing/profile.png" width={100} height={100}></img>
+                                        <div className="example-card-header-content flex align-items-center gap-5">
+                                            <div className="content-info">
+                                                <h3 className="font-medium text-4xl m-0 mb-2">73</h3>
+                                                <span className="block font-normal ">Posts</span>
+                                            </div>
+                                            <div className="content-info">
+                                                <h3 className="font-medium text-4xl  m-0 mb-2">73.3K</h3>
+                                                <span className="block font-normal ">Followers</span>
+                                            </div>
+                                            <div className="content-info">
+                                                <h3 className="font-medium text-4xl m-0 mb-2">204</h3>
+                                                <span className="block font-normal">Following</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div className="example-card-content-container relative w-full">
-                                <span className="content-container-classes absolute block p-1 font-medium text-sm text-center text-pink-500">flex w-full gap-2 flex-column p-4</span>
-                                <div className="example-card-content flex align-items-center justify-content-between gap-6">
-                                    <div className="content">
-                                        <h3 className='font-bold text-2xl white-space-nowrap m-0'>Jane JOSHUA</h3>
-                                        <h3 className='font-normal text-2xl white-space-nowrap m-0 mt-2'>Freelance UI/UX Designer</h3>
+                                <div className="example-card-content-container relative w-full">
+                                    <span className="content-container-classes absolute block p-1 font-medium text-sm text-center text-pink-500">flex w-full gap-2 flex-column p-4</span>
+                                    <div className="example-card-content flex align-items-center justify-content-between gap-6">
+                                        <div className="content">
+                                            <h3 className="font-bold text-2xl white-space-nowrap m-0">Jane JOSHUA</h3>
+                                            <h3 className="font-normal text-2xl white-space-nowrap m-0 mt-2">Freelance UI/UX Designer</h3>
+                                        </div>
+                                        <Link href="/" className="linkbox-button">
+                                            Follow
+                                        </Link>
                                     </div>
-                                    <Link href="/" className="linkbox-button">
-                                        Follow
-                                    </Link>
                                 </div>
                             </div>
                         </div>

@@ -1,9 +1,6 @@
 import Link from 'next/link';
-import { useCallback, useEffect, useRef, useState } from 'react';
-import { Slider } from 'primereact/slider';
-import { DocSectionCode } from '../../components/doc/common/docsectioncode';
-import { CodeHighlight } from '../../components/doc/common/codehighlight';
 import { classNames } from 'primereact/utils';
+import { useCallback, useEffect, useRef, useState } from 'react';
 
 const StyleSection = () => {
     const [activeSlide, setActiveSlide] = useState(0);
@@ -306,15 +303,14 @@ transition-duration-200"
         );
     }
 
-    
     return (
         <section className="landing-style-section relative">
             <div className="landing-style-container pt-7 pb-8 px-5 relative z-5">
                 <div className="landing-style-content text-center flex flex-column gap-5 flex-shrink-0 justify-content-center align-items-center mb-5">
                     <h1 className="landing-style-title font-semibold m-0">Create Your Style</h1>
                     <h3 className="landing-style-subtitle m-0 text-xl font-normal text-center">PrimeFlex is a lightweight responsive CSS utility library to accompany Prime UI libraries and static webpages as well.</h3>
-                
-                    <Link href="/installation" className="linkbox-button active w-9rem fadeinleft animation-duration-2000 animation-ease-out">
+
+                    <Link href="/installation" className="linkbox-button active w-9rem fadeinleft animation-duration-2000 animation-ease-out text-700">
                         Learn more
                     </Link>
                 </div>
@@ -336,7 +332,7 @@ transition-duration-200"
                         </div>
                     </div> */}
 
-                    <div id="slider-wrapp" className=' w-6'>
+                    <div id="slider-wrapp" className=" w-6">
                         <div id="slider">
                             <Slide slideIndex={0} activeSlide={activeSlide} onClick={() => handleSlideClick(0)}>
                                 <div

@@ -3,7 +3,7 @@
     position: relative;
     border: none;
     &::before {
-        content: '';
+        content: "";
         position: absolute;
         top: 0;
         left: 0;
@@ -12,7 +12,7 @@
         width: 100%;
         background: var(--landing-section-border);
     }
-    
+
     .landing-cards-container {
         .landing-cards-content {
             .landing-cards-title {
@@ -35,7 +35,7 @@
             }
 
             .linkbox-button {
-                background: var(--linkbox-button-bg)
+                background: var(--linkbox-button-bg);
             }
         }
 
@@ -48,7 +48,7 @@
                     height: 303px;
                     background: var(--cards-bg);
                     background-blend-mode: color-dodge;
-                    border:var(--cards-border);
+                    border: var(--cards-border);
                     box-shadow: var(--cards-shadow);
                     border-radius: 7px;
 
@@ -135,8 +135,8 @@
                                     align-items: center;
                                     justify-content: center;
                                     text-align: center;
-                                    background: rgba(255, 255, 255, 0.1);
-                                    border: 1px solid rgba(255, 255, 255, 0.15);
+                                    background: var(--layout-card-bg);
+                                    border: var(--layout-card-border);
                                     border-radius: 6px;
                                     height: 42px;
                                     width: 100%;
@@ -307,7 +307,7 @@
                             .shadows-subtitle {
                                 font-size: 29.75px;
                                 line-height: 100%;
-                                color: rgba(255, 255, 255, 0.25);
+                                color: var(--cards-color-text-color);
                             }
                         }
                     }
@@ -342,14 +342,15 @@
                             padding: 24px;
                             .slider {
                                 width: 100%;
-                                border: 1px solid rgba(255, 255, 255, 0.1);
+                                border: var(--layout-card-border);
+                                background: var(--slider-bg);
                                 border-radius: 3.5px;
                                 padding: 7px;
                                 .slider-title {
                                     font-size: 12px;
                                     line-height: 13px;
                                     text-align: center;
-                                    color: rgba(255, 255, 255, 0.7);
+                                    color: var(--card-slider-text-color);
                                     margin-bottom: 7px;
                                     display: block;
                                 }
@@ -370,31 +371,15 @@
                                         width: 26.62px;
                                         height: 17px;
                                         border-radius: 999px;
-                                        border: none;
+                                        border: var(--slider-handle-border);
                                         top: 2px;
                                         margin-left: -10px;
-                                        background: linear-gradient(
-                                                180deg,
-                                                rgba(0, 0, 0, 0) 0%,
-                                                rgba(0, 0, 0, 0) 0.01%,
-                                                rgba(0, 0, 0, 0.12) 100%
-                                            ),
-                                            linear-gradient(0deg, #061a49, #061a49), #002342;
+                                        background: var(--slider-handle-bg);
                                         background-blend-mode: multiply, normal, normal;
                                         box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.25);
                                         transition: all 0.3s;
                                         &:hover {
-                                            background: linear-gradient(
-                                                    180deg,
-                                                    rgba(0, 0, 0, 0) 0%,
-                                                    rgba(0, 0, 0, 0) 0.01%,
-                                                    rgba(0, 0, 0, 0.12) 100%
-                                                ),
-                                                linear-gradient(0deg, #07215f, #072058), #043a69;
-                                        }
-
-                                        &:before{
-
+                                            opacity: 0.9;
                                         }
                                     }
                                 }
@@ -407,26 +392,14 @@
                                 width: 42px;
                                 height: 42px;
                                 border: none;
-                                background: linear-gradient(
-                                        180deg,
-                                        rgba(0, 0, 0, 0) 0%,
-                                        rgba(0, 0, 0, 0) 0.01%,
-                                        rgba(0, 0, 0, 0.12) 100%
-                                    ),
-                                    linear-gradient(0deg, #061a49, #061a49), #002342;
+                                background: var(--slider-bg);
                                 background-blend-mode: multiply, normal, normal;
                                 box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.25);
                                 border-radius: 3.5px;
                                 transition: all 0.3s;
-
+                                color: var(--card-slider-text-color);
                                 &:hover {
-                                    background: linear-gradient(
-                                            180deg,
-                                            rgba(0, 0, 0, 0) 0%,
-                                            rgba(0, 0, 0, 0) 0.01%,
-                                            rgba(0, 0, 0, 0.12) 100%
-                                        ),
-                                        linear-gradient(0deg, #082261, #041d57), #002c53;
+                                    opacity: 0.9;
                                 }
                             }
                         }
@@ -456,7 +429,7 @@
         background: rgba(255, 255, 255, 0.1);
     }
     50% {
-        background: rgba(1, 4, 36, 0.2);
+        background: var(--color-cards-animated-bg);
     }
     100% {
         background: rgba(255, 255, 255, 0.1);

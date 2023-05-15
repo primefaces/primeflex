@@ -13,7 +13,7 @@ const AnimationsSection = () => {
                 entries.forEach((entry) => {
                     if (entry.isIntersecting) {
                         setVisible(true);
-                        setFinishedAnimating([]); 
+                        setFinishedAnimating([]);
                     } else {
                         setVisible(false);
                     }
@@ -39,7 +39,7 @@ const AnimationsSection = () => {
 
     const handleMouseEnter = (index) => {
         setHovered(index);
-        setFinishedAnimating((prev) => prev.filter((item) => item !== index)); 
+        setFinishedAnimating((prev) => prev.filter((item) => item !== index));
     };
 
     const handleMouseLeave = (index) => {
@@ -53,10 +53,29 @@ const AnimationsSection = () => {
     return (
         <section ref={sectionRef} className="landing-animations-section relative">
             <div className="landing-animations-container  py-8 px-5 relative z-5 flex flex-column gap-5 flex-shrink-0 justify-content-center align-items-center ">
+                {/* <video
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    className="your-custom-class"
+                    style={{
+                        position: 'absolute',
+                        width: '100%',
+                        left: '50%',
+                        top: '50%',
+                        height: '100%',
+                        objectFit: 'cover',
+                        transform: 'translate(-50%, -50%)',
+                        zIndex: '-1'
+                    }}
+                >
+                    <source src="/images/landing/Eclipse_18.webm" type="video/webm" />
+                </video> */}
                 <div className="landing-animations-cards flex gap-5 justify-content-center mt-8 mx-auto" style={{ height: '318px', width: '512px' }}>
                     <div className="flex flex-column gap-5 w-full">
                         <div
-                            className={`animation-card flex justify-content-center align-items-center w-full text-white font-semibold text-xl p-6 cursor-normal ${animationClass('fadeindown', 4)}`}
+                            className={`animation-card flex justify-content-center align-items-center w-full  font-semibold text-xl p-6 cursor-normal ${animationClass('fadeindown', 4)}`}
                             onMouseEnter={() => handleMouseEnter(4)}
                             onMouseLeave={() => handleMouseLeave(4)}
                             onAnimationEnd={() => handleAnimationEnd(4)}
@@ -66,7 +85,7 @@ const AnimationsSection = () => {
                         </div>
 
                         <div
-                            className={`animation-card flex justify-content-center align-items-center h-full w-full text-white font-semibold text-xl p-6 cursor-normal ${animationClass('fadeinup', 3)}`}
+                            className={`animation-card flex justify-content-center align-items-center h-full w-full  font-semibold text-xl p-6 cursor-normal ${animationClass('fadeinup', 3)}`}
                             onMouseEnter={() => handleMouseEnter(3)}
                             onMouseLeave={() => handleMouseLeave(3)}
                             onAnimationEnd={() => handleAnimationEnd(3)}
@@ -77,7 +96,7 @@ const AnimationsSection = () => {
                     </div>
 
                     <div
-                        className={`animation-card h-full flex justify-content-center align-items-center w-full text-white font-semibold text-xl p-6 cursor-normal ${animationClass('flipright', 2)}`}
+                        className={`animation-card h-full flex justify-content-center align-items-center w-full font-semibold text-xl p-6 cursor-normal ${animationClass('flipright', 2)}`}
                         onMouseEnter={() => handleMouseEnter(2)}
                         onMouseLeave={() => handleMouseLeave(2)}
                         onAnimationEnd={() => handleAnimationEnd(2)}
@@ -87,7 +106,7 @@ const AnimationsSection = () => {
                     </div>
                     <div className="flex flex-column gap-5 w-full">
                         <div
-                            className={`animation-card flex justify-content-center align-items-center h-full w-full text-white font-semibold text-xl p-6 cursor-normal ${animationClass('scalein', 1)}`}
+                            className={`animation-card flex justify-content-center align-items-center h-full w-full  font-semibold text-xl p-6 cursor-normal ${animationClass('scalein', 1)}`}
                             onMouseEnter={() => handleMouseEnter(1)}
                             onMouseLeave={() => handleMouseLeave(1)}
                             onAnimationEnd={() => handleAnimationEnd(1)}
@@ -96,7 +115,7 @@ const AnimationsSection = () => {
                             scalein
                         </div>
                         <div
-                            className={`animation-card flex justify-content-center align-items-center h-full w-full text-white font-semibold text-xl p-6 cursor-normal ${animationClass('zoomindown', 0)}`}
+                            className={`animation-card flex justify-content-center align-items-center h-full w-full  font-semibold text-xl p-6 cursor-normal ${animationClass('zoomindown', 0)}`}
                             onMouseEnter={() => handleMouseEnter(0)}
                             onMouseLeave={() => handleMouseLeave(0)}
                             onAnimationEnd={() => handleAnimationEnd(0)}
@@ -111,7 +130,7 @@ const AnimationsSection = () => {
                     <h3 className="landing-animations-subtitle m-0 text-xl font-normal text-center">
                         Unlock consistency and flexibility in your designs with our collection of pre-built components and utility classes, designed to work seamlessly across all screen sizes.
                     </h3>
-                    <Link href="/installation" className="linkbox-button active w-9rem fadeinleft animation-duration-2000 animation-ease-out">
+                    <Link href="/installation" className="linkbox-button active w-9rem fadeinleft animation-duration-2000 animation-ease-out text-700">
                         Learn more
                     </Link>
                 </div>

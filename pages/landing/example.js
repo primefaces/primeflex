@@ -7,35 +7,27 @@ const ResponsiveExample = () => {
                 <style>
                     {`
 .light{
-    --body-bg:radial-gradient(39.27% 40.65% at 50% 0%, rgba( 0, 240, 255, 0.1) 0%, rgba(255, 255, 255, 0.7) 100%);
-    --demo-bg-link: url("/images/tiny-checkers.png");
-    --demo-bg-blue: var(--blue-50);
-    --demo-bg-yellow: var(--yellow-50);
-    --demo-bg-green: var(--green-50);
-    --demo-bg-purple: var(--purple-50);
-    --demo-bg-indigo: var(--indigo-50);
-    --demo-bg-orange: var(--orange-50);
-    --demo-bg-cyan: var(--cyan-50);
-    --topbar-bg: rgb(250 250 250 / 80%);
+--body-bg:  linear-gradient(95.24deg, #FAFBFC 0%, rgba(250, 251, 252, 0) 100%);
+--body-bg-color: #fff;
+--example-topbar-bg: #FAFBFC;
+--example-text-color: #24292E;
+--example-button-text-color: #fff;
+--example-button-bg:#0366D6;
 }
 .dark {
-    --body-bg: radial-gradient(39.27% 40.65% at 50% 0%, rgba(0, 8, 65, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%);
-    --demo-bg-link: url("/images/tiny-checkers-dark.png");
-    --demo-bg-blue: var(--blue-900);
-    --demo-bg-yellow: var(--yellow-900);
-    --demo-bg-green: var(--green-900);
-    --demo-bg-purple: var(--purple-900);
-    --demo-bg-indigo: var(--indigo-900);
-    --demo-bg-orange: var(--orange-900);
-    --demo-bg-cyan: var(--cyan-900);
-    --topbar-bg: rgb(0 1 8 / 80%);
+    --body-bg: linear-gradient(95.24deg, #040506 0%, rgba(4, 5, 6, 0) 100%);
+    --body-bg-color: #00031A;
+    --example-topbar-bg: #24292E;
+    --example-text-color: #fff;
+    --example-button-text-color: #24292E;
+    --example-button-bg:#79B8FF;
 }
                     `}
                 </style>
             </Head>
-            <div className="layout-wrapper">
+            <div className="layout-example">
                 <div className="w-full h-screen flex flex-column">
-                    <div className="w-full absolute top-0  left-0 h-4rem surface-400 flex align-items-center justify-content-between p-5">
+                    <div className="example-topbar w-full absolute top-0  left-0  flex align-items-center justify-content-between p-5">
                         <div className="flex align-items-center gap-3">
                             <div>
                                 <svg width="38" height="39" viewBox="0 0 38 39" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -53,10 +45,10 @@ const ResponsiveExample = () => {
                                     </defs>
                                 </svg>
                             </div>
-                            <span className="text-3xl block text-color font-semibold">Untitled</span>
+                            <span className="text-3xl block  font-semibold">Untitled</span>
                         </div>
                         <button className="flex align-items-center justify-content-center border-none bg-transparent cursor-pointer hover:surface-600 p-2">
-                            <i className="pi pi-bars text-color"></i>
+                            <i className="pi pi-bars "></i>
                         </button>
                     </div>
                     <div className="flex w-full flex-grow-1 flex-column md:flex-row h-full p-5 align-items-center justify-content-center md:justify-content-between mt-6 gap-4">
@@ -65,7 +57,7 @@ const ResponsiveExample = () => {
                         </div>
                         <div className="flex flex-column justify-content-center md:justify-content-start align-items-center md:align-items-start gap-5">
                             <span className="text-4xl block md:text-left text-center">Est placerat in egestas erat imperdiet sed tincidunt nunc pulvinar sapien et ligula.</span>
-                            <button className="flex align-items-center justify-content-center border-none bg-blue-300 cursor-pointer hover:bg-blue-400 text-surface-0 p-2 border-round">Get Started</button>
+                            <button className="flex align-items-center justify-content-center border-none  cursor-pointer hover:bg-blue-400  p-3">Get Started</button>
                         </div>
                     </div>
                 </div>

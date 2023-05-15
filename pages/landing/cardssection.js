@@ -1,6 +1,7 @@
 import Link from 'next/link';
-import { useEffect, useRef, useState } from 'react';
 import { Slider } from 'primereact/slider';
+import { useEffect, useState } from 'react';
+
 const CardsSection = () => {
     const [cardWidths, setCardWidths] = useState({
         cardWidth24: 24,
@@ -51,6 +52,7 @@ const CardsSection = () => {
         setSize(event.value);
     }
     let isItalic = false;
+
     function handleClick() {
         let sliderTitle = document.querySelector('.typo-title');
         isItalic = !isItalic;
@@ -383,7 +385,7 @@ const CardsSection = () => {
                                     <Slider value={weight} onChange={handleSliderWeightChange} step={25} />
                                 </div>
                                 <div className="slider p-2 pt-1">
-                                <div className="slider-header flex align-items-center justify-content-between pb-1">
+                                    <div className="slider-header flex align-items-center justify-content-between pb-1">
                                         <span className="slider-title text-sm mb-2 block opacity-70">xs</span>
                                         <span className="slider-title text-sm mb-2 block">Size</span>
                                         <span className="slider-title text-sm mb-2 block opacity-70">8xl</span>
@@ -396,7 +398,7 @@ const CardsSection = () => {
                                             fill-rule="evenodd"
                                             clip-rule="evenodd"
                                             d="M8.77295 1.33328H11.0832C11.6355 1.33328 12.0832 1.78099 12.0832 2.33328C12.0832 2.88556 11.6355 3.33328 11.0832 3.33328H9.44261L6.69262 10.6666H8.16602C8.7183 10.6666 9.16602 11.1143 9.16602 11.6666C9.16602 12.2189 8.7183 12.6666 8.16602 12.6666H5.27396C5.25767 12.667 5.24133 12.667 5.22496 12.6666H2.91602C2.36373 12.6666 1.91602 12.2189 1.91602 11.6666C1.91602 11.1143 2.36373 10.6666 2.91602 10.6666H4.55662L7.30661 3.33328H5.8332C5.28092 3.33328 4.8332 2.88556 4.8332 2.33328C4.8332 1.78099 5.28092 1.33328 5.8332 1.33328H8.72656C8.74199 1.33292 8.75746 1.33292 8.77295 1.33328Z"
-                                            fill="white"
+                                            fill="var(--card-slider-text-color)"
                                         />
                                     </svg>
                                 </button>

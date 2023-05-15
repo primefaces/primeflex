@@ -3,7 +3,7 @@
     position: relative;
     border: none;
     &::before {
-        content: '';
+        content: "";
         position: absolute;
         top: 0;
         left: 0;
@@ -12,13 +12,11 @@
         width: 100%;
         background: var(--landing-section-border);
     }
-    
-    
+
     .landing-animations-container {
         .landing-animations-content {
             margin-top: -7rem;
-            background: linear-gradient(180deg, rgba(1, 4, 27, 0) 0%, #01041b 29.97%);
-
+            background: var(--animations-text-backdrop);
             .landing-animations-title {
                 max-width: 68rem;
                 font-size: 6rem;
@@ -39,27 +37,17 @@
             }
 
             .linkbox-button {
-                background: linear-gradient(
-                        180deg,
-                        rgba(0, 0, 0, 0) 0%,
-                        rgba(0, 0, 0, 0) 0.01%,
-                        rgba(0, 0, 0, 0.12) 100%
-                    ),
-                    linear-gradient(0deg, #061a49, #061a49), #002342;
+                background: var(--linkbox-button-bg);
             }
         }
 
         .landing-animations-cards {
             .animation-card {
-                background: radial-gradient(
-                        79.09% 79.09% at 50% 98.36%,
-                        rgba(255, 255, 255, 0.14) 0%,
-                        rgba(255, 255, 255, 0) 100%
-                    ),
-                    rgba(255, 255, 255, 0.1);
+                background: var(--animation-card-bg);
                 backdrop-filter: blur(3.5px);
-                border: 1px solid rgba(255, 255, 255, 0.2);
+                border: var(--animation-card-border);
                 border-radius: 16px;
+                color: var(--cards-color-text-color);
             }
         }
     }

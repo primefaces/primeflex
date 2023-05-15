@@ -3,7 +3,7 @@
     position: relative;
     border: none;
     &::before {
-        content: '';
+        content: "";
         position: absolute;
         top: -2px;
         left: 0;
@@ -12,7 +12,7 @@
         width: 100%;
         background: var(--landing-section-border);
     }
-    
+
     .landing-blocks-container {
         position: relative;
         z-index: 5;
@@ -27,7 +27,7 @@
             width: 100%;
             position: relative;
             z-index: 5;
-            background: radial-gradient(50% 50% at 50% 50%, #00031a 0%, rgba(0, 3, 26, 0.5) 50%, #00031a 100%);
+            background: var(--blocks-backdrop);
             .landing-blocks-title {
                 max-width: 68rem;
                 font-size: 6rem;
@@ -45,16 +45,11 @@
                 line-height: 140%;
                 text-align: center;
                 max-width: 68rem;
+                color: var(--landing-text-color);
             }
 
             .linkbox-button {
-                background: linear-gradient(
-                        180deg,
-                        rgba(0, 0, 0, 0) 0%,
-                        rgba(0, 0, 0, 0) 0.01%,
-                        rgba(0, 0, 0, 0.12) 100%
-                    ),
-                    linear-gradient(0deg, #061a49, #061a49), #002342;
+                background: var(--linkbox-button-bg);
             }
         }
 

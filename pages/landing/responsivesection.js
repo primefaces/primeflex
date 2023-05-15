@@ -65,7 +65,7 @@ const ResponsiveSection = ({ dark }) => {
                         Unlock consistency and flexibility in your designs with our collection of pre-built components and utility classes, designed to work seamlessly across all screen sizes.
                     </h3>
 
-                    <Link href="/installation" className="linkbox-button active w-9rem fadeinleft animation-duration-2000 animation-ease-out">
+                    <Link href="/installation" className="linkbox-button active w-9rem fadeinleft animation-duration-2000 animation-ease-out text-700">
                         Learn more
                     </Link>
                 </div>
@@ -73,7 +73,7 @@ const ResponsiveSection = ({ dark }) => {
                     <div className="landing-responsive-breaks flex justify-content-center gap-1 mx-auto w-full">
                         {breakpoints.map((breakpoint) => (
                             <div
-                                className={`opacity-60 text-white text-sm text-center border-1 py-2 cursor-pointer transition-duration-200 ${activeSections.includes(breakpoint.label) ? 'active-responsive' : ''}`}
+                                className={`opacity-60  text-sm text-center border-1 py-2 cursor-pointer transition-duration-200 ${activeSections.includes(breakpoint.label) ? 'active-responsive' : ''}`}
                                 style={{ width: `${breakpoint.buttonWidth}px` }}
                                 onClick={() => handleBreakpointClick(breakpoint.width)}
                             >
