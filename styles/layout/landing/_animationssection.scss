@@ -40,7 +40,26 @@
                 background: var(--linkbox-button-bg);
             }
         }
+        .bg-animations-wrapper {
+            position: absolute;
+            width: 100%;
+            opacity: 0.25;
+            z-index: -1;
+            top: 65px;
 
+            .bg-animations {
+                background: #00e08f;
+                mix-blend-mode: screen;
+                filter: blur(171.45px);
+                width: 247px;
+                height: 244px;
+                display: block;
+
+                &.bg-2 {
+                    background: #3b82f6;
+                }
+            }
+        }
         .landing-animations-cards {
             .animation-card {
                 background: var(--animation-card-bg);
@@ -58,5 +77,21 @@
         width: 1650px !important;
         margin-left: auto !important;
         margin-right: auto !important;
+    }
+}
+
+@media screen and (max-width: $landingBreakpointMD) {
+    .landing-animations-section {
+        .landing-animations-container {
+            .landing-animations-cards {
+                width: 100% !important;
+                .animation-card {
+                    min-height: 120px !important;
+                }
+            }
+            .landing-animations-content {
+                margin-top: -6rem;
+            }
+        }
     }
 }

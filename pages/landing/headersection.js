@@ -57,12 +57,12 @@ const HeaderSection = (props) => {
                         <img id="header-logo" src={`/images/primeflex-logo-${props.dark ? 'white' : 'dark'}.svg`} alt="prime"></img>
                     </Link>
                 </div>
-                <div className="landing-header-center opacity-0">
+                <div className="landing-header-center">
                     <DocSearch appId="SCRI13XXZO" apiKey="ea9e6c8a983c5646d6b9079921d4aed7" indexName="primereact" container="" debug={false} />
                 </div>
-                <div className="landing-header-right flex align-items-center">
+                <div className="landing-header-right flex  align-items-center">
                     <nav className="scalein origin-top">
-                        <ol className="list-none m-0 p-0 flex flex-column lg:flex-row flex-wrap lg:flex-nowrap lg:align-items-center font-semibold">
+                        <ol className="list-none m-0 p-0 flex sm:flex-row flex-column lg:align-items-center font-semibold">
                             <li className="mr-1">
                                 <Link href="/installation">Docs</Link>
                             </li>
@@ -71,19 +71,23 @@ const HeaderSection = (props) => {
                                     Blocks
                                 </a>
                             </li>
-                            <li className="mr-1">
-                                <a href="/installation">Playground</a>
-                            </li>
                         </ol>
                     </nav>
-                    <button type="button" className="linkbox border-none header-button inline-flex align-items-center justify-content-center mr-1 cursor-pointer" onClick={changeColorScheme}>
+                    <DocSearch appId="SCRI13XXZO" apiKey="ea9e6c8a983c5646d6b9079921d4aed7" indexName="primereact" container="" debug={false} />
+                    <button type="button" className="linkbox border-none header-button mx-1 inline-flex align-items-center justify-content-center mr-1 cursor-pointer" onClick={changeColorScheme}>
                         <i className={colorSchemeIcon}></i>
                     </button>
-                    <a href="https://github.com/primefaces/primeflex" target="_blank" rel="noopener noreferrer" className="linkbox header-button mr-1 flex align-items-center justify-content-center flex-shrink-0">
-                        <i className="pi pi-github"></i>
+                    <a href="https://discord.gg/gzKFYnpmCY" target="_blank" rel="noopener noreferrer" className="linkbox header-button flex align-items-center justify-content-center flex-shrink-0">
+                        <i className="pi pi-comments"></i>
                     </a>
                     <a href="https://discord.gg/gzKFYnpmCY" target="_blank" rel="noopener noreferrer" className="linkbox header-button flex align-items-center justify-content-center flex-shrink-0">
                         <i className="pi pi-discord"></i>
+                    </a>
+                    <a href="https://github.com/primefaces/primeflex" target="_blank" rel="noopener noreferrer" className="linkbox header-button mr-1 flex align-items-center justify-content-center flex-shrink-0">
+                        <i className="pi pi-github"></i>
+                    </a>
+                    <a type="button" className="linkbox header-button inline-flex align-items-center justify-content-center lg:hidden  menu-button" onClick={() => setMenuActive(!menuActive)}>
+                        <i className="pi pi-bars"></i>
                     </a>
                 </div>
             </div>

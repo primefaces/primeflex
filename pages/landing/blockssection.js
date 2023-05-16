@@ -1,41 +1,41 @@
 import Link from 'next/link';
 import { useState } from 'react';
-const BlocksSection = () => {
+const BlocksSection = ({ dark }) => {
     const [weight, setWeight] = useState(50);
     const [size, setSize] = useState(50);
+    const assetsRow1 = ['ec-9', 'ec-2', 'ec-16', 'ec-10', 'app-7', 'app-10', '9', '28', '22', '19', '12'];
+    const assetsRow2 = ['ec-8', 'ec-18', 'ec-15', 'ec-11', 'app-8', 'app-11', 'app-1', '4', '23', '2', '17', '13', '10'];
+    const assetsRow3 = ['ec-7', 'ec-17', 'app-9', 'app-5', 'app-3', '5', '25', '18', '16', '1'];
+    const assetsRow4 = ['ec-6', 'ec-3', 'ec-13', '14', '11', '8', '3', '21', '15'];
+    const assetsRow5 = ['ec-5', 'ec-4', 'ec-14', 'ec-12', 'ec-1', 'app-2', '7', '27', '20'];
 
-    const assetsRow1 = ['ec-9-dark', 'ec-2-dark', 'ec-16-dark', 'ec-10-dark', 'app-7-dark', 'app-10-dark', '9', '28', '22', '19', '12'];
-    const assetsRow2 = ['ec-8-dark', 'ec-18-dark', 'ec-15-dark', 'ec-11-dark', 'app-8-dark', 'app-11-dark', 'app-1-dark', '4', '23', '2', '17', '13', '10'];
-    const assetsRow3 = ['ec-7-dark', 'ec-17-dark', 'app-9-dark', 'app-5-dark', 'app-3-dark', '5', '25', '18', '16', '1'];
-    const assetsRow4 = ['ec-6-dark', 'ec-3-dark', 'ec-13-dark', '14', '11', '8', '3', '21', '15'];
-    const assetsRow5 = ['ec-5-dark', 'ec-4-dark', 'ec-14-dark', 'ec-12-dark', 'ec-1-dark', 'app-2-dark', '7', '27', '20'];
     const getRow1 = () =>
         assetsRow1.map((name) => ({
             name,
-            image: `/images/landing/blocks/dark/${name}.jpg`
+            image: `/images/landing/blocks/${dark ? 'dark' : 'light'}/${name}.jpg`
         }));
 
     const getRow2 = () =>
         assetsRow2.map((name) => ({
             name,
-            image: `/images/landing/blocks/dark/${name}.jpg`
+            image: `/images/landing/blocks/${dark ? 'dark' : 'light'}/${name}.jpg`
         }));
 
     const getRow3 = () =>
         assetsRow3.map((name) => ({
             name,
-            image: `/images/landing/blocks/dark/${name}.jpg`
+            image: `/images/landing/blocks/${dark ? 'dark' : 'light'}/${name}.jpg`
         }));
 
     const getRow4 = () =>
         assetsRow4.map((name) => ({
             name,
-            image: `/images/landing/blocks/dark/${name}.jpg`
+            image: `/images/landing/blocks/${dark ? 'dark' : 'light'}/${name}.jpg`
         }));
     const getRow5 = () =>
         assetsRow5.map((name) => ({
             name,
-            image: `/images/landing/blocks/dark/${name}.jpg`
+            image: `/images/landing/blocks/${dark ? 'dark' : 'light'}/${name}.jpg`
         }));
 
     const Marquee = ({ users, reverse }) => (
@@ -63,10 +63,8 @@ const BlocksSection = () => {
         <section className="landing-blocks-section relative">
             <div className="landing-blocks-container mt-3">
                 <div className="landing-blocks-content text-center flex flex-column gap-5 flex-shrink-0 justify-content-center align-items-center mb-5">
-                    <h1 className="landing-blocks-title font-semibold m-0">
-                        Made with <br></br> PrimeFlex
-                    </h1>
-                    <h3 className="landing-blocks-subtitle m-0 text-xl font-normal text-center">
+                    <h1 className="landing-blocks-title font-bold m-0 text-7xl">Made with PrimeFlex</h1>
+                    <h3 className="landing-blocks-subtitle m-0 text-2xl font-normal text-center">
                         Unlock consistency and flexibility in your designs with our collection of pre-built components and utility classes, designed to work seamlessly across all screen sizes.
                     </h3>
 

@@ -57,12 +57,20 @@
                         background: var(--responsive-active-bg);
                         color: #fff;
                     }
+                    &.semi-active-break {
+                        background: var(--responsive-active-bg);
+                        opacity: 0.6;
+                        color: #fff;
+                    }
                 }
             }
             .landing-responsive-iframe {
                 .resize-wrapper {
                     max-width: 1200px;
-                    min-width: 400px;
+                    min-width: 250px;
+                    border-radius: 0.25rem;
+                    height: 631px;
+                    box-shadow: var(--responsive-iframe-shadow);
                 }
                 .resize-handle {
                     width: 17.5px;
@@ -74,9 +82,21 @@
                     right: -20px;
                     top: 40%;
                     cursor: col-resize;
+                    position: relative;
 
                     &:hover {
                         background: var(--responsive-resize-handle-hover-bg);
+                    }
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        width: 3.5px;
+                        height: 21px;
+                        background: var(--responsive-resize-handle-icon-color);
+                        border-radius: 3.5px;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
                     }
                 }
             }

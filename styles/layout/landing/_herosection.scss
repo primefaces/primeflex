@@ -94,15 +94,16 @@
                 padding: 3.5px 3.5px 3.5px 10.5px;
                 width: 196px;
                 height: 35px;
-                border: 1px solid #0d276b;
-                box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.05);
+                background: var(--download-box-bg);
+                border: var(--download-box-border);
+                box-shadow: var(--download-box-shadow);
                 border-radius: 7px;
 
                 .npm-text {
                     font-size: 14px;
                     line-height: 100%;
                     text-align: center;
-                    color: #c9c9c9;
+                    color: var(--landing-text-color);
                 }
 
                 .copy-button {
@@ -112,29 +113,13 @@
                     padding: 0.5rem;
                     width: 28px;
                     height: 28px;
-                    background: linear-gradient(
-                            180deg,
-                            rgba(0, 0, 0, 0) 0%,
-                            rgba(0, 0, 0, 0) 0.01%,
-                            rgba(0, 0, 0, 0.12) 100%
-                        ),
-                        rgba(0, 135, 255, 0.2);
+                    background: var(--download-box-button-bg);
                     background-blend-mode: multiply, normal;
-                    box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+                    box-shadow: var(--download-box-button-shadow);
                     border-radius: 3.5px;
                     outline: none;
                     border: none;
-                    color: #ffffff;
-                    transition: background 0.3s;
-                    &:hover {
-                        background: linear-gradient(
-                                180deg,
-                                rgba(0, 0, 0, 0) 0%,
-                                rgba(0, 0, 0, 0) 0.01%,
-                                rgba(0, 0, 0, 0.3) 100%
-                            ),
-                            rgba(0, 135, 255, 0.3);
-                    }
+                    color: var(--download-box-button-color);
                 }
             }
         }
@@ -262,5 +247,20 @@
         width: 1650px !important;
         margin-left: auto !important;
         margin-right: auto !important;
+    }
+}
+
+@media screen and (max-width: $landingBreakpointMD) {
+    .landing-hero-section {
+        .landing-hero-container {
+            .linkbox-button {
+                width: 196px;
+            }
+            .landing-hero-example {
+                .example-card-wrapper {
+                    width: 100%;
+                }
+            }
+        }
     }
 }

@@ -11,11 +11,11 @@
 }
 
 @media screen and (max-width: 991px) {
-    .layout-wrapper {    
+    .layout-wrapper {
         .layout-topbar {
             left: 0;
             width: 100%;
-    
+
             .menu-button {
                 display: flex;
             }
@@ -41,25 +41,25 @@
                 }
             }
         }
-    
+
         .layout-sidebar {
             top: 0;
             z-index: 1102;
             height: 100%;
             transform: translateX(-100%);
-    
+
             &.active {
                 transform: translateX(0);
             }
         }
-    
+
         .layout-content {
-            margin-left: 0;            
+            margin-left: 0;
         }
-    
+
         .layout-mask {
             background-color: rgba(0, 0, 0, 0.1);
-    
+
             &.layout-mask-active {
                 z-index: 1101;
                 width: 100%;
@@ -68,7 +68,7 @@
                 top: 0;
                 left: 0;
                 background-color: rgba(0, 0, 0, 0.4);
-                transition: background-color .5s;
+                transition: background-color 0.5s;
             }
         }
 
@@ -96,9 +96,9 @@
         }
     }
 
-    .blocked-scroll {
-        overflow: hidden;
-    }
+    // .blocked-scroll {
+    //     overflow: hidden;
+    // }
 }
 
 @media screen and (max-width: 575px) {

@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { useEffect, useRef, useState } from 'react';
-const AnimationsSection = () => {
+const AnimationsSection = ({ dark }) => {
     const [visible, setVisible] = useState(false);
     const [hovered, setHovered] = useState(null);
     const sectionRef = useRef(null);
@@ -53,27 +53,34 @@ const AnimationsSection = () => {
     return (
         <section ref={sectionRef} className="landing-animations-section relative">
             <div className="landing-animations-container  py-8 px-5 relative z-5 flex flex-column gap-5 flex-shrink-0 justify-content-center align-items-center ">
-                {/* <video
-                    autoPlay
-                    loop
-                    muted
-                    playsInline
-                    className="your-custom-class"
-                    style={{
-                        position: 'absolute',
-                        width: '100%',
-                        left: '50%',
-                        top: '50%',
-                        height: '100%',
-                        objectFit: 'cover',
-                        transform: 'translate(-50%, -50%)',
-                        zIndex: '-1'
-                    }}
-                >
-                    <source src="/images/landing/Eclipse_18.webm" type="video/webm" />
-                </video> */}
-                <div className="landing-animations-cards flex gap-5 justify-content-center mt-8 mx-auto" style={{ height: '318px', width: '512px' }}>
-                    <div className="flex flex-column gap-5 w-full">
+                {dark && (
+                    <video
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                        className="your-custom-class md:w-7 w-full md:mt-0 -mt-6"
+                        style={{
+                            position: 'absolute',
+                            left: '50%',
+                            top: '34%',
+                            objectFit: 'cover',
+                            transform: 'translate(-50%, -50%)',
+                            zIndex: '-1',
+                            opacity: '0.5'
+                        }}
+                    >
+                        <source src="/images/landing/Eclipse_18.webm" type="video/webm" />
+                    </video>
+                )}
+                {!dark && (
+                    <div className="bg-animations-wrapper flex justify-content-center align-items-center">
+                        <span className="bg-animations bg-1"></span>
+                        <span className="bg-animations bg-2"></span>
+                    </div>
+                )}
+                <div className="landing-animations-cards flex gap-5 md:flex-row flex-column justify-content-center mt-8 mx-auto" style={{ height: '318px', width: '512px' }}>
+                    <div className="flex flex-row md:flex-column gap-5 w-full">
                         <div
                             className={`animation-card flex justify-content-center align-items-center w-full  font-semibold text-xl p-6 cursor-normal ${animationClass('fadeindown', 4)}`}
                             onMouseEnter={() => handleMouseEnter(4)}
@@ -96,7 +103,7 @@ const AnimationsSection = () => {
                     </div>
 
                     <div
-                        className={`animation-card h-full flex justify-content-center align-items-center w-full font-semibold text-xl p-6 cursor-normal ${animationClass('flipright', 2)}`}
+                        className={`animation-card h-full hidden md:flex justify-content-center align-items-center w-full font-semibold text-xl p-6 cursor-normal ${animationClass('flipright', 2)}`}
                         onMouseEnter={() => handleMouseEnter(2)}
                         onMouseLeave={() => handleMouseLeave(2)}
                         onAnimationEnd={() => handleAnimationEnd(2)}
@@ -104,7 +111,7 @@ const AnimationsSection = () => {
                     >
                         flipright
                     </div>
-                    <div className="flex flex-column gap-5 w-full">
+                    <div className="flex  gap-5 w-full flex-row md:flex-column">
                         <div
                             className={`animation-card flex justify-content-center align-items-center h-full w-full  font-semibold text-xl p-6 cursor-normal ${animationClass('scalein', 1)}`}
                             onMouseEnter={() => handleMouseEnter(1)}
@@ -126,8 +133,8 @@ const AnimationsSection = () => {
                     </div>
                 </div>
                 <div className="landing-animations-content flex flex-column justify-content-center align-items-center text-center z-5 relative gap-5">
-                    <h1 className="landing-animations-title font-semibold m-0">Animation</h1>
-                    <h3 className="landing-animations-subtitle m-0 text-xl font-normal text-center">
+                    <h1 className="landing-animations-title font-bold m-0 text-6xl md:text-7xl">Animation</h1>
+                    <h3 className="landing-animations-subtitle m-0 text-xl md:text-2xl font-normal text-center">
                         Unlock consistency and flexibility in your designs with our collection of pre-built components and utility classes, designed to work seamlessly across all screen sizes.
                     </h3>
                     <Link href="/installation" className="linkbox-button active w-9rem fadeinleft animation-duration-2000 animation-ease-out text-700">

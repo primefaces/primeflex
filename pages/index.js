@@ -5,6 +5,7 @@ import Analytics from '../components/layout/analytics';
 import AnimationsSection from './landing/animationssection';
 import BlocksSection from './landing/blockssection';
 import CardsSection from './landing/cardssection';
+import FooterSection from './landing/footersection';
 import HeaderSection from './landing/headersection';
 import HeroSection from './landing/herosection';
 import ResponsiveSection from './landing/responsivesection';
@@ -45,11 +46,11 @@ export default function Home(props) {
                 <HeroSection />
             </div>
             <CardsSection />
-            <AnimationsSection />
+            <AnimationsSection dark={props.dark} />
             <StyleSection />
             <ResponsiveSection dark={props.dark} />
-            <BlocksSection />
-
+            <BlocksSection dark={props.dark} />
+            <FooterSection dark={props.dark} />
             {/* <Landing /> */}
         </div>
     );

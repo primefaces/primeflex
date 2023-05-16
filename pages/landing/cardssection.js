@@ -3,30 +3,50 @@ import { Slider } from 'primereact/slider';
 import { useEffect, useState } from 'react';
 
 const CardsSection = () => {
-    const [cardWidths, setCardWidths] = useState({
-        cardWidth24: 24,
-        cardWidth10: 10,
-        cardWidth22: 22,
-        cardWidth12: 12,
-        cardWidth14: 14,
-        cardWidth20: 20
-    });
+    const [windowWidth, setWindowWidth] = useState(null);
+    const [cardWidths, setCardWidths] = useState({});
+
+    const updateDimensions = () => {
+        setWindowWidth(window.innerWidth);
+    };
 
     useEffect(() => {
-        const interval = setInterval(() => {
-            setCardWidths((prevWidths) => ({
-                ...prevWidths,
-                cardWidth24: prevWidths['cardWidth24'] === 24 ? 18 : 24,
-                cardWidth10: prevWidths['cardWidth10'] === 10 ? 16 : 10,
-                cardWidth22: prevWidths['cardWidth22'] === 22 ? 16 : 22,
-                cardWidth12: prevWidths['cardWidth12'] === 12 ? 18 : 12,
-                cardWidth14: prevWidths['cardWidth14'] === 14 ? 20 : 14,
-                cardWidth20: prevWidths['cardWidth20'] === 20 ? 14 : 20
-            }));
-        }, 6000);
-
-        return () => clearInterval(interval);
+        setWindowWidth(window.innerWidth);
+        window.addEventListener('resize', updateDimensions);
+        return () => window.removeEventListener('resize', updateDimensions);
     }, []);
+
+    useEffect(() => {
+        if (windowWidth !== null) {
+            setCardWidths({
+                cardWidth24: windowWidth < 768 ? 8 : 24,
+                cardWidth10: windowWidth < 768 ? 4 : 10,
+                cardWidth22: windowWidth < 768 ? 7 : 22,
+                cardWidth12: windowWidth < 768 ? 5 : 12,
+                cardWidth14: windowWidth < 768 ? 5 : 14,
+                cardWidth20: windowWidth < 768 ? 7 : 20
+            });
+        }
+    }, [windowWidth]);
+
+    useEffect(() => {
+        if (windowWidth !== null) {
+            const interval = setInterval(() => {
+                setCardWidths((prevWidths) => ({
+                    ...prevWidths,
+                    cardWidth24: windowWidth < 768 ? (prevWidths['cardWidth24'] === 8 ? 7 : 8) : prevWidths['cardWidth24'] === 24 ? 18 : 24,
+                    cardWidth10: windowWidth < 768 ? (prevWidths['cardWidth10'] === 4 ? 5 : 4) : prevWidths['cardWidth10'] === 10 ? 16 : 10,
+                    cardWidth22: windowWidth < 768 ? (prevWidths['cardWidth22'] === 7 ? 6 : 7) : prevWidths['cardWidth22'] === 22 ? 16 : 22,
+                    cardWidth12: windowWidth < 768 ? (prevWidths['cardWidth12'] === 5 ? 6 : 5) : prevWidths['cardWidth12'] === 12 ? 18 : 12,
+                    cardWidth14: windowWidth < 768 ? (prevWidths['cardWidth14'] === 5 ? 4 : 5) : prevWidths['cardWidth14'] === 14 ? 20 : 14,
+                    cardWidth20: windowWidth < 768 ? (prevWidths['cardWidth20'] === 7 ? 8 : 7) : prevWidths['cardWidth20'] === 20 ? 14 : 20
+                }));
+            }, 6000);
+
+            return () => clearInterval(interval);
+        }
+    }, [windowWidth]);
+
     const [waves, setWaves] = useState([0, 0, 0, 0, 0, 0, 0, 0]);
 
     useEffect(() => {
@@ -111,8 +131,8 @@ const CardsSection = () => {
         <section className="landing-cards-section relative">
             <div className="landing-cards-container py-8 px-5 relative z-5 flex flex-column gap-5 flex-shrink-0 justify-content-center align-items-center">
                 <div className="landing-cards-content text-center flex flex-column justify-content-center align-items-center gap-5">
-                    <h1 className="landing-cards-title font-semibold m-0">Consistency Flexible</h1>
-                    <h3 className="landing-cards-subtitle m-0 text-xl font-normal text-center">
+                    <h1 className="landing-cards-title font-bold m-0 text-6xl md:text-7xl">Consistency Flexible</h1>
+                    <h3 className="landing-cards-subtitle m-0 text-xl md:text-2xl font-normal text-center">
                         Unlock consistency and flexibility in your designs with our collection of pre-built components and utility classes, designed to work seamlessly across all screen sizes.
                     </h3>
                     <Link href="/installation" className="linkbox-button active fadeinleft animation-duration-2000 animation-ease-out mx-auto text-700" style={{ width: '104px' }}>
@@ -315,46 +335,46 @@ const CardsSection = () => {
                         <div className="landing-card layout">
                             <div className="layout-cards">
                                 <div className="layout-cards-row">
-                                    <div className="layout-card" style={{ width: `${cardWidths['cardWidth24']}rem` }}>
-                                        <span>{`${cardWidths['cardWidth24']} rem`}</span>
+                                    <div className={`layout-card w-${cardWidths['cardWidth24']}${windowWidth >= 768 ? ' rem' : ''}`}>
+                                        <span>w-{`${cardWidths['cardWidth24']}${windowWidth >= 768 ? ' rem' : ''}`}</span>
                                     </div>
-                                    <div className="layout-card" style={{ width: `${cardWidths['cardWidth10']}rem` }}>
-                                        <span>{`${cardWidths['cardWidth10']} rem`}</span>
+                                    <div className={`layout-card w-${cardWidths['cardWidth10']}${windowWidth >= 768 ? ' rem' : ''}`}>
+                                        <span>w-{`${cardWidths['cardWidth10']}${windowWidth >= 768 ? ' rem' : ''}`}</span>
                                     </div>
                                 </div>
                                 <div className="layout-cards-row">
-                                    <div className="layout-card" style={{ width: `${cardWidths['cardWidth22']}rem` }}>
-                                        <span>{`${cardWidths['cardWidth22']} rem`}</span>
+                                    <div className={`layout-card w-${cardWidths['cardWidth22']}${windowWidth >= 768 ? ' rem' : ''}`}>
+                                        <span>w-{`${cardWidths['cardWidth22']}${windowWidth >= 768 ? ' rem' : ''}`}</span>
                                     </div>
-                                    <div className="layout-card" style={{ width: `${cardWidths['cardWidth12']}rem` }}>
-                                        <span>{`${cardWidths['cardWidth12']} rem`}</span>
+                                    <div className={`layout-card w-${cardWidths['cardWidth12']}${windowWidth >= 768 ? ' rem' : ''}`}>
+                                        <span>w-{`${cardWidths['cardWidth12']}${windowWidth >= 768 ? ' rem' : ''}`}</span>
                                     </div>
                                 </div>
                                 <div className="layout-cards-row gap-0">
-                                    <div className="layout-card w-6rem">
-                                        <span>6 rem</span>
+                                    <div className="layout-card static-card w-1 md:w-6rem">
+                                        <span>{`${windowWidth >= 768 ? 'w-6rem' : '1'}`}</span>
                                     </div>
-                                    <div className="layout-title white-nospace mx-2">
+                                    <div className="layout-title white-nospace mx-2 md:w-auto">
                                         <span>LAYOUT UTILITIES</span>
                                     </div>
-                                    <div className="layout-card  w-6rem">
-                                        <span>6 rem</span>
+                                    <div className="layout-card static-card w-1 md:w-6rem">
+                                        <span>{`${windowWidth >= 768 ? 'w-6rem' : '1'}`}</span>
                                     </div>
                                 </div>
                                 <div className="layout-cards-row">
-                                    <div className="layout-card" style={{ width: `${cardWidths['cardWidth14']}rem` }}>
-                                        <span>{`${cardWidths['cardWidth14']} rem`}</span>
+                                    <div className={`layout-card w-${cardWidths['cardWidth14']}${windowWidth >= 768 ? ' rem' : ''}`}>
+                                        <span>w-{`${cardWidths['cardWidth14']}${windowWidth >= 768 ? ' rem' : ''}`}</span>
                                     </div>
-                                    <div className="layout-card" style={{ width: `${cardWidths['cardWidth20']}rem` }}>
-                                        <span>{`${cardWidths['cardWidth20']} rem`}</span>
+                                    <div className={`layout-card w-${cardWidths['cardWidth20']}${windowWidth >= 768 ? ' rem' : ''}`}>
+                                        <span>w-{`${cardWidths['cardWidth20']}${windowWidth >= 768 ? ' rem' : ''}`}</span>
                                     </div>
                                 </div>
                                 <div className="layout-cards-row">
-                                    <div className="layout-card" style={{ width: `${cardWidths['cardWidth10']}rem` }}>
-                                        <span>{`${cardWidths['cardWidth10']} rem`}</span>
+                                    <div className={`layout-card w-${cardWidths['cardWidth10']}${windowWidth >= 768 ? ' rem' : ''}`}>
+                                        <span>w-{`${cardWidths['cardWidth10']}${windowWidth >= 768 ? ' rem' : ''}`}</span>
                                     </div>
-                                    <div className="layout-card" style={{ width: `${cardWidths['cardWidth24']}rem` }}>
-                                        <span>{`${cardWidths['cardWidth24']} rem`}</span>
+                                    <div className={`layout-card w-${cardWidths['cardWidth24']}${windowWidth >= 768 ? ' rem' : ''}`}>
+                                        <span>w-{`${cardWidths['cardWidth24']}${windowWidth >= 768 ? ' rem' : ''}`}</span>
                                     </div>
                                 </div>
                             </div>
@@ -362,7 +382,7 @@ const CardsSection = () => {
                         <div className="landing-card shadows">
                             <div className="shadow-circles">
                                 {waves.map((wave, i) => (
-                                    <div key={`circle-${i}`} className={`shadow-circle circle-shadow-${9 - i}`} style={{ transform: `translateX(${wave}px)` }}></div>
+                                    <div key={`circle-${i}`} className={`shadow-circle circle-shadow-${8 - i}`} style={{ transform: `translateX(${wave}px)` }}></div>
                                 ))}
                             </div>
                             <div className="shadows-text-content absolute w-full text-center">
@@ -374,8 +394,8 @@ const CardsSection = () => {
                             <div className="typo-text-content">
                                 <span className="typo-title font-semibold text-7xl">Typography Properties</span>
                             </div>
-                            <div className="typo-sliders">
-                                <div className="slider p-2 pt-1">
+                            <div className="typo-sliders flex  sm:flex-row">
+                                <div className="slider p-2 pt-1 px-3">
                                     <div className="slider-header flex align-items-center justify-content-between pb-1">
                                         <span className="slider-title text-sm mb-2 block opacity-70">Light</span>
                                         <span className="slider-title text-sm mb-2 block">Weight</span>
@@ -384,7 +404,7 @@ const CardsSection = () => {
 
                                     <Slider value={weight} onChange={handleSliderWeightChange} step={25} />
                                 </div>
-                                <div className="slider p-2 pt-1">
+                                <div className="slider p-2 pt-1 px-3">
                                     <div className="slider-header flex align-items-center justify-content-between pb-1">
                                         <span className="slider-title text-sm mb-2 block opacity-70">xs</span>
                                         <span className="slider-title text-sm mb-2 block">Size</span>
@@ -392,7 +412,7 @@ const CardsSection = () => {
                                     </div>
                                     <Slider value={size} onChange={handleSliderSizeChange} step={8} />
                                 </div>
-                                <button className="typo-dec-button cursor-pointer" onClick={handleClick}>
+                                <button className="typo-dec-button cursor-pointer hidden sm:block" onClick={handleClick}>
                                     <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path
                                             fill-rule="evenodd"

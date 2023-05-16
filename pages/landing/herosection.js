@@ -71,14 +71,14 @@ const HeroSection = () => {
                         <span className="updates-text">See New Update Notes</span>
                     </Link>
 
-                    <h1 className="landing-hero-title font-semibold m-0">Perfect CSS Utility Companion</h1>
+                    <h1 className="landing-hero-title font-bold m-0 text-7xl lg:text-8xl">Perfect CSS Utility Companion</h1>
                     <h3 className="landing-hero-subtitle m-0 text-xl font-normal text-center">PrimeFlex is a lightweight responsive CSS utility library to accompany Prime UI libraries and static webpages as well.</h3>
                 </div>
                 <div className="landing-hero-getstarted flex flex-column md:flex-row align-items-center justify-content-center">
                     <Link href="/installation" className="linkbox-button active fadeinleft animation-duration-2000 animation-ease-out">
                         Get Started
                     </Link>
-                    <div className="box download-box surface-100 fadeinright animation-duration-2000 animation-ease-out border-1 surface-border">
+                    <div className="box download-box fadeinright animation-duration-2000 animation-ease-out border-1 ">
                         <span className="npm-text text-700" style={{ fontFamily: 'monaco, monospace' }}>
                             npm i primeflex
                         </span>
@@ -91,38 +91,38 @@ const HeroSection = () => {
                     <div className="example-card-wrapper">
                         <div className="example-card-container relative block">
                             <span className="card-container-classes absolute block p-1 font-medium text-sm text-center text-blue-500">
-                                bg-surface border-1 surface-border flex gap-2 <Typewriter data={borders} setClassName={setBorderClassName} />
+                                border-1 surface-border flex gap-2 <Typewriter data={borders} setClassName={setBorderClassName} />
                             </span>
 
-                            <div className={'example-card flex flex-column align-items-start p-5 gap-5 ' + borderClass}>
+                            <div className={'example-card flex flex-column align-items-start p-3 py-5 md:p-5 gap-5 ' + borderClass}>
                                 <div className="example-card-header-container">
                                     <span className="header-container-classes absolute block p-1 font-medium text-sm text-center text-purple-400">
                                         flex w-full gap-2 p-4 <Typewriter data={flexs} setClassName={setFlexClassName} />
                                     </span>
-                                    <div className={'example-card-header gap-2 flex justify-content-between align-items-center w-full ' + flexClass}>
-                                        <img src="/images/landing/profile.png" width={100} height={100}></img>
-                                        <div className="example-card-header-content flex align-items-center gap-5">
-                                            <div className="content-info">
-                                                <h3 className="font-medium text-4xl m-0 mb-2">73</h3>
+                                    <div className={'example-card-header gap-1 sm:gap-2 flex justify-content-between align-items-center w-full ' + flexClass}>
+                                        <img src="/images/landing/profile.png" width={100} height={100} className="w-3rem h-3rem sm:w-5rem sm:h-5rem md:w-7rem md:h-7rem"></img>
+                                        <div className="example-card-header-content flex align-items-center gap-3 sm:gap-5">
+                                            <div className="content-info text-center md:text-right">
+                                                <h3 className="font-medium text-xl sm:text-2xl md:text-4xl m-0 mb-2">73</h3>
                                                 <span className="block font-normal ">Posts</span>
                                             </div>
-                                            <div className="content-info">
-                                                <h3 className="font-medium text-4xl  m-0 mb-2">73.3K</h3>
+                                            <div className="content-info text-center sm:text-right">
+                                                <h3 className="font-medium text-xl sm:text-2xl md:text-4xl m-0 mb-2">73.3K</h3>
                                                 <span className="block font-normal ">Followers</span>
                                             </div>
-                                            <div className="content-info">
-                                                <h3 className="font-medium text-4xl m-0 mb-2">204</h3>
-                                                <span className="block font-normal">Following</span>
+                                            <div className="content-info text-center md:text-right">
+                                                <h3 className="font-medium  text-xl sm:text-2xl md:text-4xl m-0 mb-2">204</h3>
+                                                <span className="block font-normal md:text-md text-sm">Following</span>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="example-card-content-container relative w-full">
                                     <span className="content-container-classes absolute block p-1 font-medium text-sm text-center text-pink-500">flex w-full gap-2 flex-column p-4</span>
-                                    <div className="example-card-content flex align-items-center justify-content-between gap-6">
+                                    <div className="example-card-content flex align-items-center justify-content-between gap-3 sm:gap-6 sm:flex-row flex-column">
                                         <div className="content">
-                                            <h3 className="font-bold text-2xl white-space-nowrap m-0">Jane JOSHUA</h3>
-                                            <h3 className="font-normal text-2xl white-space-nowrap m-0 mt-2">Freelance UI/UX Designer</h3>
+                                            <h3 className="font-bold text-xl sm:text-2xl white-space-nowrap m-0">Jane JOSHUA</h3>
+                                            <h3 className="font-normal text-xl sm:text-2xl white-space-nowrap m-0 mt-2">Freelance UI/UX Designer</h3>
                                         </div>
                                         <Link href="/" className="linkbox-button">
                                             Follow

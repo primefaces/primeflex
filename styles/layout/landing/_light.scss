@@ -1,12 +1,19 @@
 .landing-light {
     --landing-body-bg: #fff;
     --landing-text-color: #333333;
-
+    --landing-border: 1px solid rgba(0, 0, 0, 0.1);
     --landing-section-border: linear-gradient(
         90deg,
         rgba(0, 67, 238, 0.55) 0%,
-        rgba(0, 102, 255, 0) 60%,
+        rgba(0, 45, 160, 0) 60%,
         rgba(0, 255, 240, 0.45) 100%
+    );
+
+    --landing-footer-border: linear-gradient(
+        270deg,
+        rgba(0, 0, 0, 0.2) -0.2%,
+        rgba(255, 255, 255, 0.2) 49.87%,
+        rgba(0, 0, 0, 0.2) 99.93%
     );
 
     --linkbox-button-bg: #f7f7f7;
@@ -27,6 +34,22 @@
     --hero-box-classes-purple-bg: rgba(128, 0, 255, 0.4);
     --hero-box-pink-bg: rgba(227, 0, 204, 0.4);
 
+    --docsearch-bg: rgba(255, 255, 255, 0.3);
+    --docsearch-border: 3px solid rgba(0, 0, 0, 0.07);
+    --docsearch-shadow: 0px 0px 7px rgba(0, 0, 0, 0.05);
+    --docsearch-color: #8f8f8f;
+
+    --docsearch-button-bg: #ffffff;
+
+    --docsearch-button-shadow: 0px 0.6875px 1.375px rgba(0, 0, 0, 0.06);
+    --docsearch-button-color: #8f8f8f;
+
+    --download-box-bg: #f7f7f7;
+    --download-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.06);
+    --download-box-border: 1px solid #c9c9c9;
+    --download-box-button-bg: #ffffff;
+    --download-box-button-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+    --download-box-button-color: #8f8f8f;
     //cards
     --cards-bg: #fff;
     --cards-border: 1px solid rgba(0, 0, 0, 0.1);
@@ -40,6 +63,7 @@
     --slider-bg: #f7f7f7;
     --slider-handle-bg: #ffffff;
     --slider-handle-border: 0px 1px 2px rgba(0, 0, 0, 0.04);
+    --slider-div-bg: #ffffff;
 
     --animations-text-backdrop: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #ffffff 29.97%);
     --animation-card-bg: rgba(255, 255, 255, 0.4);
@@ -52,6 +76,9 @@
     --responsive-resize-handle-bg: rgba(0, 0, 0, 0.1);
     --responsive-resize-handle-border: 1px solid rgba(0, 0, 0, 0.1);
     --responsive-resize-handle-hover-bg: rgba(0, 0, 0, 0.2);
+    --responsive-resize-handle-icon-color: rgba(0, 0, 0, 0.4);
+    --responsive-iframe-shadow: 0px 2px 6px rgba(0, 0, 0, 0.12), 0px 0px 2px rgba(0, 0, 0, 0.06),
+        0px 4px 10px rgba(0, 0, 0, 0.03);
 
     --blocks-backdrop: radial-gradient(
         50% 50% at 50% 50%,

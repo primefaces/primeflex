@@ -1,13 +1,20 @@
 .landing-dark {
     --landing-body-bg: #00031a;
     --landing-text-color: #c9c9c9;
-
+    --landing-border: 1px solid rgba(255, 255, 255, 0.1);
     --landing-section-border: linear-gradient(
         90deg,
         rgba(0, 67, 238, 0.55) 0%,
         rgba(0, 102, 255, 0) 60%,
         rgba(0, 255, 240, 0.45) 100%
     );
+    --landing-footer-border: linear-gradient(
+        270deg,
+        rgba(255, 255, 255, 0.2) -0.2%,
+        rgba(0, 0, 0, 0.2) 49.87%,
+        rgba(255, 255, 255, 0.2) 99.93%
+    );
+
     --linkbox-button-bg: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 0.01%, rgba(0, 0, 0, 0.12) 100%),
         linear-gradient(0deg, #061a49, #061a49), #002342;
     //hero
@@ -26,6 +33,34 @@
     --hero-box-classes-purple-bg: rgba(128, 0, 255, 0.4);
     --hero-box-pink-bg: rgba(227, 0, 204, 0.4);
 
+    --docsearch-bg: rgba(7, 0, 33, 0.3);
+    --docsearch-border: 2.0625px solid rgba(255, 255, 255, 0.07);
+    --docsearch-shadow: 0px 0px 4.8125px rgba(0, 0, 0, 0.05);
+    --docsearch-color: #808080;
+
+    --docsearch-button-bg: linear-gradient(
+            180deg,
+            rgba(0, 0, 0, 0) 0%,
+            rgba(0, 0, 0, 0) 0.01%,
+            rgba(0, 0, 0, 0.12) 100%
+        ),
+        linear-gradient(0deg, #061a49, #061a49), #002342;
+
+    --docsearch-button-shadow: inset 0px 0.6875px 0px rgba(255, 255, 255, 0.25);
+    --docsearch-button-color: #ffffff;
+
+    --download-box-bg: transparent;
+    --download-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.05);
+    --download-box-border: 1px solid #0d276b;
+    --download-box-button-bg: linear-gradient(
+            180deg,
+            rgba(0, 0, 0, 0) 0%,
+            rgba(0, 0, 0, 0) 0.01%,
+            rgba(0, 0, 0, 0.12) 100%
+        ),
+        rgba(0, 135, 255, 0.2);
+    --download-box-button-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+    --download-box-button-color: #ffffff;
     //cards
     --cards-bg: radial-gradient(93.88% 63.6% at 50% 0%, rgba(2, 225, 255, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%),
         rgba(1, 4, 27, 0.3);
@@ -41,8 +76,8 @@
     --slider-handle-bg: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 0.01%, rgba(0, 0, 0, 0.12) 100%),
         linear-gradient(0deg, #061a49, #061a49), #002342;
     --slider-handle-border: none;
-
-    --animations-text-backdrop: linear-gradient(180deg, rgba(1, 4, 27, 0) 0%, #01041b 29.97%);
+    --slider-div-bg: transparent;
+    --animations-text-backdrop: linear-gradient(180deg, rgba(1, 4, 27, 0) 0%, #00031a 29.97%);
     --animation-card-bg: radial-gradient(
             79.09% 79.09% at 50% 98.36%,
             rgba(255, 255, 255, 0.14) 0%,
@@ -63,7 +98,8 @@
     --responsive-resize-handle-bg: rgba(255, 255, 255, 0.1);
     --responsive-resize-handle-border: 1px solid rgba(255, 255, 255, 0.1);
     --responsive-resize-handle-hover-bg: rgba(255, 255, 255, 0.2);
-
+    --responsive-resize-handle-icon-color: rgba(255, 255, 255, 0.4);
+    --responsive-iframe-shadow: none;
     --blocks-backdrop: radial-gradient(50% 50% at 50% 50%, #00031a 0%, rgba(0, 3, 26, 0.5) 50%, #00031a 100%);
 
     --code-background: radial-gradient(93.88% 63.6% at 50% 0%, rgba(2, 225, 255, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%),

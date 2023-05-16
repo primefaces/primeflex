@@ -1,8 +1,12 @@
 .landing-header-section {
+    padding: 1.5rem 0 0;
+    z-index: 999;
+    position: relative;
     .landing-header-container {
         padding: 1rem 2rem;
 
         .landing-header-left {
+            min-width: 17rem;
             .header-logo {
                 img {
                     height: 3rem;
@@ -10,9 +14,32 @@
             }
         }
         .landing-header-center {
+            min-width: 17rem;
+            .DocSearch-Button {
+                width: 17rem !important;
+                background: var(--docsearch-bg) !important;
+                border: var(--docsearch-border) !important;
+                box-shadow: var(--docsearch-shadow) !important;
+                color: var(--docsearch-color) !important;
+                border-radius: 3.5px !important;
+                .DocSearch-Button-Keys {
+                    background: var(--docsearch-button-bg) !important;
+                    box-shadow: var(--docsearch-button-shadow) !important;
+                    color: var(--docsearch-button-color) !important;
+                    height: 1.7rem !important;
+                }
+            }
         }
 
         .landing-header-right {
+            min-width: 17rem;
+            text-align: right;
+            display: flex;
+            justify-content: flex-end;
+
+            .DocSearch-Button {
+                display: none;
+            }
             a {
                 color: var(--landing-menu-item-text-color);
                 font-size: 1rem;
@@ -23,6 +50,10 @@
                 &:hover {
                     color: var(--landing-menu-item-hover-text-color);
                 }
+            }
+            ol {
+                border-right: var(--landing-border);
+                display: flex;
             }
             button {
                 color: var(--landing-menu-item-text-color);
@@ -44,5 +75,110 @@
         width: 1650px !important;
         margin-left: auto !important;
         margin-right: auto !important;
+    }
+}
+@media screen and (max-width: $landingBreakpointLG) {
+    .landing-header-section {
+        .landing-header-container {
+            .landing-header-center {
+                display: flex;
+                justify-content: center;
+                .DocSearch-Button {
+                    width: 14rem !important;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: $landingBreakpointMD) {
+    .landing-header-section {
+        nav {
+            display: none;
+        }
+
+        .menu-button {
+            border-left: var(--landing-border);
+            padding-left: 0.75rem !important;
+        }
+
+        &.landing-header-active {
+            background-color: var(--home-header-bg);
+            backdrop-filter: blur(12px);
+            height: 100vh;
+
+            nav {
+                display: block;
+                position: fixed;
+                left: 100px;
+                top: 100px;
+                width: 100%;
+                padding: 4rem 2rem;
+                top: 5rem;
+                left: 0;
+            }
+
+            .menu-button {
+                i:before {
+                    content: "\e90b";
+                }
+            }
+        }
+        .landing-header-container {
+            .DocSearch-Button {
+                width: auto !important;
+                background: transparent !important;
+                border: none !important;
+                box-shadow: none !important;
+                color: var(--landing-menu-item-text-color) !important;
+                border-radius: 0 !important;
+                svg.DocSearch-Search-Icon {
+                    color: var(--landing-menu-item-text-color) !important;
+                    width: 1rem;
+                    height: 1rem;
+                }
+                .DocSearch-Button-Keys {
+                    display: none;
+                }
+            }
+            .landing-header-center {
+                min-width: auto;
+                display: none;
+                justify-content: flex-end;
+            }
+            .landing-header-right {
+                min-width: auto;
+                .DocSearch-Button {
+                    display: block;
+                }
+            }
+            .landing-header-left {
+                min-width: auto;
+                a {
+                    img {
+                        height: 2.2rem !important;
+                    }
+                }
+            }
+        }
+
+        ol {
+            a {
+                border: 1px solid var(--landing-border);
+                background-color: var(--hero-box-bg);
+                margin-bottom: 1rem;
+                color: var(--landing-text-color);
+                cursor: pointer;
+                font-size: 1.5rem;
+                text-align: left;
+                display: flex;
+                align-items: center;
+                padding: 1.5rem;
+
+                img {
+                    display: block;
+                    margin-right: 1.5rem;
+                }
+            }
+        }
     }
 }

@@ -129,7 +129,7 @@
                                 display: flex;
                                 gap: 1rem;
                                 align-items: center;
-
+                                width: 100%;
                                 .layout-card {
                                     display: flex;
                                     align-items: center;
@@ -179,10 +179,11 @@
                     }
                     &.shadows {
                         position: relative;
+                        overflow: hidden;
                         .shadow-circles {
                             position: relative;
                             z-index: 0;
-                            overflow: hidden;
+
                             .shadow-circle {
                                 display: block;
                                 position: relative;
@@ -357,8 +358,8 @@
 
                                 .p-slider {
                                     height: 7px;
-                                    background-color: transparent;
-                                    border: 1px solid rgba(255, 255, 255, 0.1);
+                                    background-color: var(--slider-div-bg);
+                                    border: var(--layout-card-border);
                                     border-radius: 3.5px;
 
                                     .p-slider-range {
@@ -368,7 +369,7 @@
                                     }
 
                                     .p-slider-handle {
-                                        width: 26.62px;
+                                        width: 24px;
                                         height: 17px;
                                         border-radius: 999px;
                                         border: var(--slider-handle-border);
@@ -378,8 +379,18 @@
                                         background-blend-mode: multiply, normal, normal;
                                         box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.25);
                                         transition: all 0.3s;
-                                        &:hover {
-                                            opacity: 0.9;
+                                        position: relative;
+
+                                        &::before {
+                                            content: "\e91d";
+                                            font-family: "primeicons";
+                                            position: absolute;
+                                            top: 50%;
+                                            left: 50%;
+                                            transform: translate(-50%, -50%) rotate(90deg);
+                                            font-size: 8px;
+                                            margin-top: 0.8px;
+                                            margin-left: -0.2px;
                                         }
                                     }
                                 }
@@ -427,12 +438,17 @@
 @keyframes color-animation {
     0% {
         background: rgba(255, 255, 255, 0.1);
+        transform: scale(1);
     }
     50% {
         background: var(--color-cards-animated-bg);
+        transform: scale(1.01);
+        transform: translateZ(2px);
+        transform: translateY(2px);
     }
     100% {
         background: rgba(255, 255, 255, 0.1);
+        transform: scale(1);
     }
 }
 @media screen and (min-width: 1960px) {
@@ -440,5 +456,86 @@
         width: 1650px !important;
         margin-left: auto !important;
         margin-right: auto !important;
+    }
+}
+
+@media screen and (max-width: $landingBreakpointMD) {
+    .landing-cards-section {
+        .landing-cards-container {
+            .landing-cards-wrapper {
+                .landing-cards {
+                    width: 100%;
+                    .landing-card {
+                        width: 400px;
+                        &.colors {
+                            .color-cards {
+                                top: -20px;
+                                left: -145px;
+                            }
+                        }
+                        &.shadows {
+                            overflow: hidden;
+                            .shadow-circles {
+                                position: relative;
+                                z-index: 0;
+                                left: -10%;
+                                transform: scale(0.7);
+                                top: -139%;
+                            }
+                        }
+                        &.typo {
+                            overflow: hidden;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .landing-cards-section {
+        .landing-cards-container {
+            .landing-cards-wrapper {
+                .landing-cards {
+                    width: 100%;
+                    .landing-card {
+                        width: 320px;
+                        &.colors {
+                            .color-cards {
+                                top: -16px;
+                                left: -196px;
+                            }
+                        }
+                        &.shadows {
+                            .shadow-circles {
+                                left: -23%;
+                                top: -142%;
+                            }
+                        }
+                        &.typo {
+                            overflow: hidden;
+                            .typo-sliders {
+                                padding: 0.75rem;
+                            }
+                        }
+                        &.layout {
+                            .layout-cards {
+                                .layout-cards-row {
+                                    .layout-card {
+                                        &.static-card {
+                                            display: none !important;
+                                        }
+                                    }
+                                    .layout-title {
+                                        font-size: 30px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
