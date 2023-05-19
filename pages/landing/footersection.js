@@ -12,7 +12,7 @@ const FooterSection = (props) => {
                         </Link>
                     </div>
                     <div className="landing-footer-right flex flex-row gap-1 md:gap-3 align-items-center">
-                        <a href="https://discord.gg/gzKFYnpmCY" target="_blank" rel="noopener noreferrer" className="linkbox header-button flex align-items-center justify-content-center flex-shrink-0">
+                        <a href="https://forum.primefaces.org/" target="_blank" rel="noopener noreferrer" className="linkbox header-button flex align-items-center justify-content-center flex-shrink-0">
                             <i className="pi pi-comments"></i>
                         </a>
                         <a href="https://discord.gg/gzKFYnpmCY" target="_blank" rel="noopener noreferrer" className="linkbox header-button flex align-items-center justify-content-center flex-shrink-0">
@@ -27,11 +27,7 @@ const FooterSection = (props) => {
                     <div className="landing-footer-left">
                         <span>PrimeFlex 2023. All rights reserved.</span>
                     </div>
-                    <div className="landing-footer-right flex flex-row gap-3 align-items-center">
-                        <a href="https://discord.gg/gzKFYnpmCY" target="_blank" rel="noopener noreferrer" className="linkbox header-button flex align-items-center justify-content-center flex-shrink-0">
-                            Follow for more
-                        </a>
-                    </div>
+                    <div className="landing-footer-right flex flex-row gap-3 align-items-center">Follow for more</div>
                 </div>
             </div>
         </section>

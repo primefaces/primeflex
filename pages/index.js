@@ -10,6 +10,7 @@ import HeaderSection from './landing/headersection';
 import HeroSection from './landing/herosection';
 import ResponsiveSection from './landing/responsivesection';
 import StyleSection from './landing/stylesection';
+import UsersSection from './landing/userssection';
 
 export default function Home(props) {
     const [tableTheme, setTableTheme] = useState('bootstrap4-light-blue');
@@ -31,8 +32,7 @@ export default function Home(props) {
         const newTheme = props.dark ? tableTheme.replace('light', 'dark') : tableTheme.replace('dark', 'light');
 
         changeTableTheme(newTheme);
-    }, [props.dark]); // eslint-disable-line react-hooks/exhaustive-deps
-
+    }, [props.dark]);
     return (
         <div className={rootClassName}>
             <Analytics />
@@ -43,7 +43,8 @@ export default function Home(props) {
             </Head>
             <div className="landing-intro">
                 <HeaderSection dark={props.dark} onToggleColorScheme={toggleColorScheme} />
-                <HeroSection />
+                <HeroSection dark={props.dark} />
+                <UsersSection dark={props.dark} />
             </div>
             <CardsSection />
             <AnimationsSection dark={props.dark} />
@@ -51,7 +52,6 @@ export default function Home(props) {
             <ResponsiveSection dark={props.dark} />
             <BlocksSection dark={props.dark} />
             <FooterSection dark={props.dark} />
-            {/* <Landing /> */}
         </div>
     );
 }

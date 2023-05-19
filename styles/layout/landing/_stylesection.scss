@@ -15,7 +15,9 @@
 
     .landing-style-container {
         min-height: 67rem;
-
+        max-width: 1650px !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
         .landing-style-content {
             .landing-style-title {
                 max-width: 68rem;
@@ -48,9 +50,6 @@
                 display: flex;
                 gap: 2rem;
             }
-            .landing-style-code-section {
-                width: 50%;
-            }
         }
     }
 }
@@ -67,12 +66,14 @@
     > pre {
         width: 100%;
         max-width: 600px;
+        width: 518px;
     }
     pre {
         width: 100%;
-        height: 513px;
+        height: 448px;
         max-height: 513px;
         max-width: 600px;
+        width: 518px;
         code[class*="language-"] {
             overflow: auto;
             width: 100%;
@@ -80,6 +81,7 @@
             max-width: 600px;
             background: var(--code-background);
             background-blend-mode: color-dodge, normal !important;
+            background-color: var(--cards-bg-color);
             border: var(--code-border);
             backdrop-filter: blur(20px) !important;
             border-radius: 7px !important;
@@ -131,9 +133,6 @@
         }
     }
 }
-// Variables
-
-// Mixins
 @mixin transform($parameter) {
     -webkit-transform: $parameter;
     -moz-transform: $parameter;
@@ -151,43 +150,77 @@
 }
 
 #slider-wrapp {
-    width: 100%;
-    max-width: 900px;
     height: auto;
-    margin: 150px auto;
+    width: 518px;
+    min-height: 400px;
     text-align: center;
+    display: flex;
+    justify-content: flex-end;
 
     #slider {
-        width: 100%;
+        width: 443px;
         height: auto;
         position: relative;
+        left: 0;
+        padding-left: 140px;
+        top: -8px;
 
-        .slide {
+        .slide-1 {
+            transform: translate3d(0px, 0px, -500px) scale(1);
+            z-index: 4;
             position: absolute;
-            left: 50%;
-            margin-left: -150px;
-            @include transition(all 0.5s ease, opacity 0.5s linear);
-            @include transform(perspective(1300px) translate3d(0px, -130px, -500px));
-            z-index: 0;
-            opacity: 1;
+            transition: all 0.3s;
+        }
 
-            $transX: 0;
-            $transY: -150;
-            $transZ: -370;
+        .slide-2 {
+            transform: translate3d(-60px, 0px, -500px) scale(0.9);
+            z-index: 3;
+            position: absolute;
+            transition: all 0.3s;
+        }
 
-            @for $i from 4 to 0 {
-                &:nth-last-child(#{$i}) {
-                    $transX: $transX + 40;
-                    $transY: $transY - 20;
-                    $transZ: $transZ + 80;
-                    @include transform(perspective(1300px) translate3d($transX + px, $transY + px, $transZ + px));
-                }
-            }
+        .slide-3 {
+            transform: translate3d(-120px, 0px, -500px) scale(0.8);
+            z-index: 2;
+            position: absolute;
+            transition: all 0.3s;
+        }
 
-            &.active {
-                @include transform(perspective(1300px) translate3d(200px, -230px, 30px));
-                z-index: 1;
-                opacity: 1;
+        .slide-4 {
+            transform: translate3d(-180px, 0px, -500px) scale(0.7);
+            z-index: 1;
+            position: absolute;
+            transition: all 0.3s;
+        }
+    }
+}
+
+@media screen and (min-width: 1960px) {
+    .landing-style-container {
+        width: 1650px !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}
+
+@media screen and (max-width: $landingBreakpointMD) {
+    .landing-style-code-section {
+        > pre {
+            width: 100%;
+            max-width: 600px;
+            width: auto;
+        }
+        pre {
+            width: 100%;
+            height: 448px;
+            max-height: 513px;
+            max-width: 600px;
+            width: auto;
+            code[class*="language-"] {
+                overflow: auto;
+                width: 100%;
+                max-height: 513px;
+                max-width: 600px;
             }
         }
     }

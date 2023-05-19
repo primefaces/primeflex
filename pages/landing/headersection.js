@@ -67,7 +67,7 @@ const HeaderSection = (props) => {
                                 <Link href="/installation">Docs</Link>
                             </li>
                             <li className="mr-1">
-                                <a href="/installation" target="_blank">
+                                <a href="https://blocks.primereact.org/" target="_blank">
                                     Blocks
                                 </a>
                             </li>
@@ -77,7 +77,7 @@ const HeaderSection = (props) => {
                     <button type="button" className="linkbox border-none header-button mx-1 inline-flex align-items-center justify-content-center mr-1 cursor-pointer" onClick={changeColorScheme}>
                         <i className={colorSchemeIcon}></i>
                     </button>
-                    <a href="https://discord.gg/gzKFYnpmCY" target="_blank" rel="noopener noreferrer" className="linkbox header-button flex align-items-center justify-content-center flex-shrink-0">
+                    <a href="https://forum.primefaces.org/" target="_blank" rel="noopener noreferrer" className="linkbox header-button flex align-items-center justify-content-center flex-shrink-0">
                         <i className="pi pi-comments"></i>
                     </a>
                     <a href="https://discord.gg/gzKFYnpmCY" target="_blank" rel="noopener noreferrer" className="linkbox header-button flex align-items-center justify-content-center flex-shrink-0">

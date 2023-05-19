@@ -51,6 +51,7 @@
                     border: var(--cards-border);
                     box-shadow: var(--cards-shadow);
                     border-radius: 7px;
+                    background-color: var(--cards-bg-color);
 
                     &.colors {
                         .color-cards {
@@ -155,10 +156,6 @@
                                         -webkit-background-clip: text;
                                         -webkit-text-fill-color: transparent;
                                     }
-                                    // &.card-10 {
-                                    //     width: 100%;
-                                    //     animation: changeWidth10 8s linear infinite;
-                                    // }
                                 }
                                 .layout-title {
                                     font-weight: 600;

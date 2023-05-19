@@ -68,7 +68,7 @@ const BlocksSection = ({ dark }) => {
                         Unlock consistency and flexibility in your designs with our collection of pre-built components and utility classes, designed to work seamlessly across all screen sizes.
                     </h3>
 
-                    <Link href="/installation" className="linkbox-button active w-9rem fadeinleft animation-duration-2000 animation-ease-out text-700">
+                    <Link href="https://blocks.primereact.org/" target="_blank" className="linkbox-button active w-9rem fadeinleft animation-duration-2000 animation-ease-out text-700">
                         Learn more
                     </Link>
                 </div>

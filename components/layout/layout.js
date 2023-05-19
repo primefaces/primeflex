@@ -1,8 +1,8 @@
 import Head from 'next/head';
 import { useRouter } from 'next/router';
-import { useEffect, useState } from 'react';
 import PrimeReact from 'primereact/api';
 import { classNames } from 'primereact/utils';
+import { useEffect, useState } from 'react';
 import Analytics from './analytics';
 import AppContentContext from './appcontentcontext';
 import Footer from './footer';
@@ -39,7 +39,7 @@ export default function Layout(props) {
     useEffect(() => {
         if (sidebarActive) document.body.classList.add('blocked-scroll');
         else document.body.classList.remove('blocked-scroll');
-    }, [sidebarActive]); // eslint-disable-line react-hooks/exhaustive-deps
+    }, [sidebarActive]);
 
     useEffect(() => {
         const handleRouteChange = (url, { shallow }) => {
@@ -51,7 +51,7 @@ export default function Layout(props) {
         return () => {
             router.events.off('routeChangeComplete', handleRouteChange);
         };
-    }, []); // eslint-disable-line react-hooks/exhaustive-deps
+    }, []);
 
     PrimeReact.ripple = true;
 

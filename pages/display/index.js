@@ -2,12 +2,12 @@ import Head from 'next/head';
 import React from 'react';
 import { DocSectionNav } from '../../components/doc/common/docsectionnav';
 import { DocSections } from '../../components/doc/common/docsections';
-import { ClassesDoc, VariablesDoc } from '../../components/doc/display/classesdoc';
-import { HiddenDoc } from '../../components/doc/display/hiddendoc';
 import { BlockDoc } from '../../components/doc/display/blockdoc';
-import { InlineDoc } from '../../components/doc/display/inlinedoc';
-import { InlineBlockDoc } from '../../components/doc/display/inlineblockdoc';
+import { ClassesDoc } from '../../components/doc/display/classesdoc';
 import { FlexDoc } from '../../components/doc/display/flexdoc';
+import { HiddenDoc } from '../../components/doc/display/hiddendoc';
+import { InlineBlockDoc } from '../../components/doc/display/inlineblockdoc';
+import { InlineDoc } from '../../components/doc/display/inlinedoc';
 import { InlineFlexDoc } from '../../components/doc/display/inlineflexdoc';
 import { ResponsiveDoc } from '../../components/doc/display/responsivedoc';
 
@@ -52,7 +52,7 @@ const DisplayPage = () => {
             id: 'responsive',
             label: 'Responsive',
             component: ResponsiveDoc
-        },
+        }
     ];
 
     return (

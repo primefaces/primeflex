@@ -47,6 +47,7 @@
             z-index: 1102;
             height: 100%;
             transform: translateX(-100%);
+            background: var(--menu-bg);
 
             &.active {
                 transform: translateX(0);
@@ -95,10 +96,6 @@
             }
         }
     }
-
-    // .blocked-scroll {
-    //     overflow: hidden;
-    // }
 }
 
 @media screen and (max-width: 575px) {

@@ -56,11 +56,48 @@
                         opacity: 1 !important;
                         background: var(--responsive-active-bg);
                         color: #fff;
+
+                        &:first-child {
+                            background: var(--responsive-active-bg-side-1);
+                        }
+                        &:nth-child(2) {
+                            background: var(--responsive-active-bg-side-1);
+                        }
+                        &:nth-child(3) {
+                            background: var(--responsive-active-bg-side-1);
+                        }
+                        &:nth-child(5) {
+                            background: var(--responsive-active-bg-side-2);
+                        }
+                        &:nth-child(6) {
+                            background: var(--responsive-active-bg-side-2);
+                        }
+                        &:nth-child(7) {
+                            background: var(--responsive-active-bg-side-2);
+                        }
                     }
                     &.semi-active-break {
                         background: var(--responsive-active-bg);
                         opacity: 0.6;
                         color: #fff;
+                        &:first-child {
+                            background: var(--responsive-active-bg-side-1);
+                        }
+                        &:nth-child(2) {
+                            background: var(--responsive-active-bg-side-1);
+                        }
+                        &:nth-child(3) {
+                            background: var(--responsive-active-bg-side-1);
+                        }
+                        &:nth-child(5) {
+                            background: var(--responsive-active-bg-side-2);
+                        }
+                        &:nth-child(6) {
+                            background: var(--responsive-active-bg-side-2);
+                        }
+                        &:nth-child(7) {
+                            background: var(--responsive-active-bg-side-2);
+                        }
                     }
                 }
             }

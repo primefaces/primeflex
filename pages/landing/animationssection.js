@@ -63,7 +63,7 @@ const AnimationsSection = ({ dark }) => {
                         style={{
                             position: 'absolute',
                             left: '50%',
-                            top: '34%',
+                            top: '40%',
                             objectFit: 'cover',
                             transform: 'translate(-50%, -50%)',
                             zIndex: '-1',

@@ -64,6 +64,7 @@
     //cards
     --cards-bg: radial-gradient(93.88% 63.6% at 50% 0%, rgba(2, 225, 255, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%),
         rgba(1, 4, 27, 0.3);
+    --cards-bg-color: #00031a;
     --cards-border: 1px solid rgba(255, 255, 255, 0.1);
     --cards-shadow: 0px 0px 40px rgba(0, 0, 0, 0.3);
     --cards-color-text-color: rgba(255, 255, 255, 0.7);
@@ -86,10 +87,26 @@
         rgba(255, 255, 255, 0.1);
     --animation-card-border: 1px solid rgba(255, 255, 255, 0.2);
 
+    --style-cards-fancy-bg: radial-gradient(93.88% 63.6% at 50% 0%, rgba(2, 225, 255, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%),
+        #01041b;
+    --style-cards-bg: linear-gradient(0deg, rgba(1, 4, 27, 0.4), rgba(1, 4, 27, 0.4)),
+        radial-gradient(93.88% 63.6% at 50% 0%, rgba(2, 225, 255, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%);
     --responsive-breaks-bg: rgba(1, 4, 27, 0.3);
     --responsive-breaks-border: 1px solid rgba(255, 255, 255, 0.1);
     --responsive-breaks-shadow: 0px 0px 40px rgba(0, 0, 0, 0.3);
     --responsive-active-bg: radial-gradient(
+            79.09% 79.09% at 50% 98.36%,
+            rgb(0 0 0 / 14%) 0%,
+            rgba(255, 255, 255, 0) 100%
+        ),
+        rgba(255, 255, 255, 0.1);
+    --responsive-active-bg-side-1: radial-gradient(
+            79.09% 79.09% at 50% 98.36%,
+            rgb(0 0 0 / 14%) 0%,
+            rgba(255, 255, 255, 0) 100%
+        ),
+        rgba(255, 255, 255, 0.1);
+    --responsive-active-bg-side-2: radial-gradient(
             79.09% 79.09% at 50% 98.36%,
             rgb(0 0 0 / 14%) 0%,
             rgba(255, 255, 255, 0) 100%

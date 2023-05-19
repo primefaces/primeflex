@@ -52,6 +52,8 @@
     --download-box-button-color: #8f8f8f;
     //cards
     --cards-bg: #fff;
+    --cards-bg-color: #fff;
+
     --cards-border: 1px solid rgba(0, 0, 0, 0.1);
     --cards-shadow: none;
     --cards-color-text-color: rgba(0, 0, 0, 0.3);
@@ -69,10 +71,17 @@
     --animation-card-bg: rgba(255, 255, 255, 0.4);
     --animation-card-border: 1px solid rgba(0, 0, 0, 0.1);
 
+    --style-cards-fancy-bg: radial-gradient(93.88% 63.6% at 50% 0%, rgba(2, 225, 255, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%),
+        #01041b;
+    --style-cards-bg: linear-gradient(0deg, rgba(1, 4, 27, 0.4), rgba(1, 4, 27, 0.4)),
+        radial-gradient(93.88% 63.6% at 50% 0%, rgba(2, 225, 255, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%);
+
     --responsive-breaks-bg: gba(1, 4, 27, 0.3);
     --responsive-breaks-border: 1px solid rgba(0, 0, 0, 0.1);
     --responsive-breaks-shadow: 0px 1px 2px rgba(0, 0, 0, 0.06);
     --responsive-active-bg: linear-gradient(112.31deg, #00e08f 19.49%, #00a3ff 98.51%);
+    --responsive-active-bg-side-1: #00e08f;
+    --responsive-active-bg-side-2: #00a3ff;
     --responsive-resize-handle-bg: rgba(0, 0, 0, 0.1);
     --responsive-resize-handle-border: 1px solid rgba(0, 0, 0, 0.1);
     --responsive-resize-handle-hover-bg: rgba(0, 0, 0, 0.2);

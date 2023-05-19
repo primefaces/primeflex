@@ -1,8 +1,8 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import React, { useEffect, useRef, useState } from 'react';
 import { useEventListener } from 'primereact/hooks';
-import { classNames, DomHandler, ObjectUtils } from 'primereact/utils';
+import { DomHandler, ObjectUtils, classNames } from 'primereact/utils';
+import React, { useEffect, useRef, useState } from 'react';
 
 export function DocSectionNav({ docs = [] }) {
     const router = useRouter();
@@ -75,7 +75,7 @@ export function DocSectionNav({ docs = [] }) {
         setActiveId(id);
         hasHash && scrollToLabelById(id);
         bindDocumentScrollListener();
-    }, []); // eslint-disable-line react-hooks/exhaustive-deps
+    }, []);
 
     const createItem = ({ id, label, children }, level = 0) => {
         const { basePath, pathname } = router;

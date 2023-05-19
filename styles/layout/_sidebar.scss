@@ -10,7 +10,7 @@
     flex-direction: column;
     padding: 1rem 0;
     border-right: 1px solid var(--surface-border);
-    
+
     .logo {
         display: flex;
         justify-content: center;
@@ -43,7 +43,7 @@
                 display: flex;
                 width: 100%;
                 align-items: center;
-                padding: 0.5rem;
+                padding: 1rem;
                 color: var(--surface-900);
                 font-weight: 600;
                 transition: box-shadow 0.2s;
@@ -67,6 +67,7 @@
                     display: inline-flex;
                     align-items: center;
                     justify-content: center;
+                    display: none;
 
                     i {
                         color: var(--surface-700);
@@ -97,7 +98,7 @@
         a.router-link-active {
             background-color: var(--highlight-bg);
             color: var(--highlight-text-color);
-            transition: all .3s;
+            transition: all 0.3s;
 
             > .menu-icon {
                 i {

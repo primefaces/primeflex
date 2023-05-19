@@ -1,16 +1,10 @@
-import { useContext, useEffect } from 'react';
-import AppContentContext from '../../components/layout/appcontentcontext';
 import { classNames } from 'primereact/utils';
 
 const DisplayExample = ({ dark, theme }) => {
-     const wrapperClassName = classNames('layout-wrapper', {
+    const wrapperClassName = classNames('layout-wrapper', {
         'layout-wrapper-dark': dark,
         'layout-wrapper-light': !dark
     });
-
-    useEffect(() => {
-        console.log('dark:', dark, 'theme:', theme);
-    }, [dark, theme]);
 
     return (
         <div className={wrapperClassName}>

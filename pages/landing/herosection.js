@@ -22,13 +22,13 @@ const Typewriter = ({ data, setClassName }) => {
         if (!isDeleting && text === fullText) {
             setTimeout(() => {
                 setIsDeleting(true);
-            }, 5000); // 10 sec pause after fully written
+            }, 5000);
         } else if (isDeleting && text === '') {
             setIsDeleting(false);
             setIndex((prevIndex) => prevIndex + 1);
             setTimeout(() => {
                 setClassName(data[currentIndex]);
-            }, 10000); // 10 sec pause after fully deleted
+            }, 10000);
         }
     };
 
@@ -51,7 +51,7 @@ const Typewriter = ({ data, setClassName }) => {
     return <span>{text}</span>;
 };
 
-const HeroSection = () => {
+const HeroSection = ({ dark }) => {
     const [borderClass, setBorderClassName] = useState('border-round');
     const borders = ['border-round', 'border-round-2xl'];
 
@@ -64,14 +64,52 @@ const HeroSection = () => {
             <span className="ellipse-2"></span>
             <span className="ellipse-3"></span>
             <span className="ellipse-4"></span>
+            {dark && (
+                <video
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    className="w-full"
+                    style={{
+                        position: 'absolute',
+                        left: '0',
+                        top: '-94px',
+                        objectFit: 'cover',
+                        zIndex: '0',
+                        height: 'calc(100% + 94px)'
+                    }}
+                >
+                    <source src="/images/landing/hero-primeflex-dark.webm" type="video/webm" />
+                </video>
+            )}
+            {!dark && (
+                <video
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    className="w-full"
+                    style={{
+                        position: 'absolute',
+                        left: '0',
+                        top: '-94px',
+                        objectFit: 'cover',
+                        zIndex: '0',
+                        height: 'calc(100% + 94px)'
+                    }}
+                >
+                    <source src="/images/landing/hero-primeflex-light.webm" type="video/webm" />
+                </video>
+            )}
             <div className="landing-hero-container pt-7 pb-8 px-5 relative z-5">
                 <div className="landing-hero-content text-center flex flex-column gap-5 flex-shrink-0 justify-content-center align-items-center mb-5">
-                    <Link href="/" className="updates-link" aria-label="PrimeReact logo">
+                    {/* <Link href="/" className="updates-link" aria-label="PrimeReact logo">
                         <span className="updates-icon"></span>
                         <span className="updates-text">See New Update Notes</span>
-                    </Link>
+                    </Link> */}
 
-                    <h1 className="landing-hero-title font-bold m-0 text-7xl lg:text-8xl">Perfect CSS Utility Companion</h1>
+                    <h1 className="landing-hero-title font-bold m-0 mt-5 text-7xl lg:text-8xl">Perfect CSS Utility Companion</h1>
                     <h3 className="landing-hero-subtitle m-0 text-xl font-normal text-center">PrimeFlex is a lightweight responsive CSS utility library to accompany Prime UI libraries and static webpages as well.</h3>
                 </div>
                 <div className="landing-hero-getstarted flex flex-column md:flex-row align-items-center justify-content-center">

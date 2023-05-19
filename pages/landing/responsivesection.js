@@ -37,7 +37,6 @@ const ResponsiveSection = ({ dark }) => {
         const active = sortedBreakpoints.filter((bp) => iframeWidth >= bp.width);
         setActiveSections(active.map((a) => a.label));
 
-        // find the semi-active breakpoint
         const sortedBreakpointsAscending = [...breakpoints].sort((a, b) => a.width - b.width);
         const semiActive = sortedBreakpointsAscending.find((bp) => iframeWidth <= bp.width);
         setSemiActiveSections(semiActive ? [semiActive.label] : []);

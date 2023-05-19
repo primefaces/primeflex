@@ -1,5 +1,6 @@
 {
     "data": [
+      
         {
             "name": "Getting Started",
             "icon": "pi pi-home",
@@ -11,6 +12,11 @@
                 { "name": "Theming", "to": "/theming" },
                 { "name": "Migration", "to": "/migration" }
             ]
+        },
+        {
+            "name": "PrimeBlocks",
+            "icon": "pi pi-server",
+            "href": "https://blocks.primereact.org"
         },
         {
             "name": "Layout",

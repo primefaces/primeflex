@@ -191,7 +191,7 @@
         mix-blend-mode: var(--pattern-mode);
         opacity: 0.2;
         filter: blur(69px);
-        transform: matrix(0.82, 0.57, 0.57, -0.82, 0, 0);
+        transform: matrix(0.82, -0.57, -0.57, -0.82, 0, 0);
     }
     .ellipse-2 {
         position: absolute;
@@ -204,7 +204,7 @@
         mix-blend-mode: var(--pattern-mode);
         opacity: 0.2;
         filter: blur(69px);
-        transform: matrix(0.82, 0.57, 0.57, -0.82, 0, 0);
+        transform: matrix(0.82, -0.57, -0.57, -0.82, 0, 0);
     }
     .ellipse-3 {
         position: absolute;
@@ -216,7 +216,7 @@
         mix-blend-mode: var(--pattern-mode);
         opacity: 0.1;
         filter: blur(69px);
-        transform: matrix(0.82, 0.57, 0.57, -0.82, 0, 0);
+        transform: matrix(0.82, -0.57, -0.57, -0.82, 0, 0);
     }
     .ellipse-4 {
         position: absolute;
@@ -228,7 +228,16 @@
         mix-blend-mode: var(--pattern-mode);
         opacity: 0.2;
         filter: blur(69px);
-        transform: matrix(0.82, 0.57, 0.57, -0.82, 0, 0);
+        transform: matrix(0.82, 0.57, 0.57, 0.82, 0, 0);
+    }
+
+    .ellipse-1,
+    .ellipse-2,
+    .ellipse-3,
+    .ellipse-4 {
+        animation: swing 8s infinite ease-in-out;
+        transform-origin: 50% 0%;
+        z-index: 1;
     }
 }
 
@@ -262,5 +271,15 @@
                 }
             }
         }
+    }
+}
+
+@keyframes swing {
+    0%,
+    100% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(20deg);
     }
 }
