@@ -105,6 +105,7 @@ const ResponsiveSection = ({ dark }) => {
 
                             return (
                                 <div
+                                    key={index}
                                     className={`opacity-60 white-space-nowrap text-sm text-center border-1 py-2 cursor-pointer transition-duration-200 
                             ${activeSections.includes(breakpoint.label) ? 'active-responsive' : ''} 
                             ${semiActiveSections.includes(breakpoint.label) ? 'semi-active-break' : ''}
