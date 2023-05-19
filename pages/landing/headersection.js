@@ -62,7 +62,7 @@ const HeaderSection = (props) => {
                 </div>
                 <div className="landing-header-right flex  align-items-center">
                     <nav className="scalein origin-top">
-                        <ol className="list-none m-0 p-0 flex sm:flex-row flex-column lg:align-items-center font-semibold">
+                        <ol className="list-none m-0 p-0 flex md:flex-row flex-column lg:align-items-center font-semibold">
                             <li className="mr-1">
                                 <Link href="/installation">Docs</Link>
                             </li>

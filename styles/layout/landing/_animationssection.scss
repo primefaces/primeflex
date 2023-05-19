@@ -95,3 +95,15 @@
         }
     }
 }
+
+@media screen and (max-width: 560px) {
+    .landing-animations-section {
+        .landing-animations-container {
+            .landing-animations-cards {
+                .animation-card {
+                    padding: 2rem !important;
+                }
+            }
+        }
+    }
+}

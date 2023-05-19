@@ -225,3 +225,46 @@
         }
     }
 }
+
+@media screen and (max-width: 560px) {
+    .landing-style-code-section {
+        > pre {
+            width: 100%;
+            max-width: 600px;
+            width: auto;
+        }
+        pre {
+            width: 100%;
+            height: 448px;
+            max-height: 513px;
+            max-width: 600px;
+            width: auto;
+            code[class*="language-"] {
+                overflow: auto;
+                width: 100%;
+                max-height: 513px;
+                max-width: 350px;
+            }
+        }
+    }
+    #slider-wrapp {
+        #slider {
+            padding-left: 100px;
+            .slide-1 {
+                transform: translate3d(0px, 0px, -500px) scale(1);
+            }
+
+            .slide-2 {
+                transform: translate3d(-30px, 0px, -500px) scale(0.9);
+            }
+
+            .slide-3 {
+                transform: translate3d(-60px, 0px, -500px) scale(0.8);
+            }
+
+            .slide-4 {
+                transform: translate3d(-90px, 0px, -500px) scale(0.7);
+            }
+        }
+    }
+}
