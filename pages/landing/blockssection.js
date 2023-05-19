@@ -65,7 +65,7 @@ const BlocksSection = ({ dark }) => {
                 <div className="landing-blocks-content text-center flex flex-column gap-5 flex-shrink-0 justify-content-center align-items-center mb-5">
                     <h1 className="landing-blocks-title font-bold m-0 text-7xl">Made with PrimeFlex</h1>
                     <h3 className="landing-blocks-subtitle m-0 text-2xl font-normal text-center">
-                        Unlock consistency and flexibility in your designs with our collection of pre-built components and utility classes, designed to work seamlessly across all screen sizes.
+                        Leverage PrimeBlocks, the building blocks crafted with PrimeFlex. Streamline your project and concentrate on core functionalities, leaving the aesthetics to us.
                     </h3>
 
                     <Link href="https://blocks.primereact.org/" target="_blank" className="linkbox-button active w-9rem fadeinleft animation-duration-2000 animation-ease-out text-700">

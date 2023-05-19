@@ -88,7 +88,7 @@ const ResponsiveSection = ({ dark }) => {
                         Adaptive <br></br>for Every Screen
                     </h1>
                     <h3 className="landing-responsive-subtitle m-0 text-xl md:text-2xl font-normal text-center">
-                        Unlock consistency and flexibility in your designs with our collection of pre-built components and utility classes, designed to work seamlessly across all screen sizes.
+                        PrimeFlex guarantees optimal adaptability. Enjoy seamless display and functionality on every screen size, ensuring universal access to your projects.
                     </h3>
 
                     <Link href="/installation" className="linkbox-button active w-9rem fadeinleft animation-duration-2000 animation-ease-out text-700">
