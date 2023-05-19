@@ -57,7 +57,7 @@ const HeroSection = ({ dark }) => {
 
     const [flexClass, setFlexClassName] = useState('flex-row');
     const flexs = ['flex-row', 'flex-column'];
-
+    const [npmText, npmCopied] = useState('npm i primeflex');
     return (
         <section className="landing-hero-section relative">
             <span className="ellipse-1"></span>
@@ -118,9 +118,18 @@ const HeroSection = ({ dark }) => {
                     </Link>
                     <div className="box download-box fadeinright animation-duration-2000 animation-ease-out border-1 ">
                         <span className="npm-text text-700" style={{ fontFamily: 'monaco, monospace' }}>
-                            npm i primeflex
+                            {npmText}
                         </span>
-                        <button className="copy-button cursor-pointer">
+                        <button
+                            className="copy-button cursor-pointer"
+                            onClick={() => {
+                                navigator.clipboard.writeText('npm i primeflex');
+                                npmCopied('copied!');
+                                setTimeout(() => {
+                                    npmCopied('npm i primereact');
+                                }, 2000);
+                            }}
+                        >
                             <i className="pi pi-copy"></i>
                         </button>
                     </div>
