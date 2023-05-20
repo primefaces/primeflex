@@ -7,6 +7,7 @@ html {
 }
 
 body {
+    font-family: 'Inter', sans-serif;
     margin: 0px;
     min-height: 100%;
     overflow-x: hidden;
@@ -84,7 +85,6 @@ input[type="number"] {
     background: var(--body-bg);
     position: relative;
     background-color: var(--surface-ground);
-    font-family: var(--font-family);
     font-weight: normal;
     color: var(--text-color);
 }
