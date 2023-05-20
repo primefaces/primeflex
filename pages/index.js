@@ -23,16 +23,6 @@ export default function Home(props) {
         props.onThemeChange(newTheme, darkMode);
     };
 
-    const changeTableTheme = (newTheme) => {
-        props.onTableThemeChange(tableTheme, newTheme);
-        setTableTheme(newTheme);
-    };
-
-    useEffect(() => {
-        const newTheme = props.dark ? tableTheme.replace('light', 'dark') : tableTheme.replace('dark', 'light');
-
-        changeTableTheme(newTheme);
-    }, [props.dark]);
     return (
         <div className={rootClassName}>
             <Analytics />
