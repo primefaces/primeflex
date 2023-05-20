@@ -26,10 +26,7 @@ export default function Layout(props) {
     };
 
     const toggleColorScheme = () => {
-        const darkMode = !props.dark;
-        const newTheme = darkMode ? 'bootstrap4-dark-blue' : 'bootstrap4-light-blue';
-
-        props.onThemeChange(newTheme, darkMode);
+        props.onThemeChange(!props.dark);
     };
 
     const onMaskClick = () => {

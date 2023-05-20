@@ -7,10 +7,6 @@ body {
     min-height: 100%;
     overflow-x: hidden;
     overflow-y: auto;
-    background-color: var(--surface-ground);
-    font-family: var(--font-family);
-    font-weight: normal;
-    color: var(--text-color);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -83,34 +79,8 @@ input[type="number"] {
 .layout-wrapper {
     background: var(--body-bg);
     position: relative;
+    background-color: var(--surface-ground);
+    font-family: var(--font-family);
+    font-weight: normal;
+    color: var(--text-color);
 }
-// .layout-wrapper::before {
-//     content: "";
-//     position: absolute;
-//     width: 371.21px;
-//     height: 1163.18px;
-//     left: 10%;
-//     top: -150px;
-//     border-radius: 50%;
-//     background: var(--patern-1);
-//     mix-blend-mode: var(--pattern-mode);
-//     opacity: 0.2;
-//     filter: blur(69px);
-//     transform: matrix(0.82, 0.57, 0.57, -0.82, 0, 0);
-//     z-index: 0;
-// }
-
-// .layout-wrapper::after {
-//     content: "";
-//     position: absolute;
-//     width: 91.43px;
-//     height: 1147px;
-//     left: 40%;
-//     top: -150px;
-//     background: var(--patern-2);
-//     mix-blend-mode: var(--pattern-mode);
-//     opacity: 0.2;
-//     filter: blur(69px);
-//     transform: matrix(0.82, 0.57, 0.57, -0.82, 0, 0);
-//     z-index: 0;
-// }
