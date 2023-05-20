@@ -1,11 +1,10 @@
 import '@docsearch/css';
 import 'primeicons/primeicons.css';
-import 'primereact/resources/primereact.min.css';
+import 'primereact/resources/primereact.css';
 import { useEffect, useRef, useState } from 'react';
 import Layout from '../components/layout/layout';
-import '../styles/demo/demo.scss';
 import '../styles/layout/layout.scss';
-import '../styles/primeflex.css';
+import '../styles/lib/primeflex.scss';
 import '../styles/prism.scss';
 
 export default function MyApp({ Component }) {
