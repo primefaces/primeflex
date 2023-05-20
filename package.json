@@ -16,7 +16,6 @@
     "dependencies": {
         "@docsearch/react": "^3.3.3",
         "next": "13.2.1",
-        "primeicons": "^6.0.1",
         "primereact": "^9.2.0",
         "react": "18.2.0",
         "react-dom": "18.2.0"

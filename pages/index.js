@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import { classNames } from 'primereact/utils';
-import Analytics from '../components/layout/analytics';
 import AnimationsSection from './landing/animationssection';
 import BlocksSection from './landing/blockssection';
 import CardsSection from './landing/cardssection';
@@ -20,7 +19,6 @@ export default function Home(props) {
 
     return (
         <div className={rootClassName}>
-            <Analytics />
             <Head>
                 <meta charSet="UTF-8" />
                 <title>PrimeFlex</title>

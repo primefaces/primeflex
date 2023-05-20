@@ -3,7 +3,6 @@ import { useRouter } from 'next/router';
 import PrimeReact from 'primereact/api';
 import { classNames } from 'primereact/utils';
 import { useEffect, useState } from 'react';
-import Analytics from './analytics';
 import AppContentContext from './appcontentcontext';
 import Footer from './footer';
 import Menu from './menu';
@@ -54,7 +53,6 @@ export default function Layout(props) {
 
     return (
         <div className={wrapperClassName}>
-            <Analytics />
             <Head>
                 <title>PrimeFlex</title>
                 <meta charSet="UTF-8" />
