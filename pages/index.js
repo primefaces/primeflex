@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import { classNames } from 'primereact/utils';
+import NewsSection from '../components/news/newssection';
 import AnimationsSection from './landing/animationssection';
 import BlocksSection from './landing/blockssection';
 import CardsSection from './landing/cardssection';
@@ -38,6 +39,7 @@ export default function Home(props) {
                 <link rel="icon" href="https://primefaces.org/cdn/primereact/images/favicon.ico" type="image/x-icon"></link>  
             </Head>
             <div className="landing-intro">
+                {props.newsActive && <NewsSection announcement={props.announcement} onClose={props.onNewsClose} />}
                 <HeaderSection dark={props.dark} onToggleColorScheme={toggleColorScheme} />
                 <HeroSection dark={props.dark} />
                 <UsersSection dark={props.dark} />

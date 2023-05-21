@@ -2,6 +2,7 @@ import Head from 'next/head';
 import { useRouter } from 'next/router';
 import { classNames } from 'primereact/utils';
 import { useEffect, useState } from 'react';
+import NewsSection from '../news/newssection';
 import AppContentContext from './appcontentcontext';
 import Footer from './footer';
 import Menu from './menu';
@@ -13,7 +14,8 @@ export default function Layout(props) {
 
     const wrapperClassName = classNames('layout-wrapper', {
         'layout-wrapper-dark': props.dark,
-        'layout-wrapper-light': !props.dark
+        'layout-wrapper-light': !props.dark,
+        'layout-news-active': props.newsActive
     });
     const maskClassName = classNames('layout-mask', {
         'layout-mask-active': sidebarActive
@@ -68,6 +70,7 @@ export default function Layout(props) {
                 <meta property="og:ttl" content="604800"></meta>
                 <link rel="icon" href="https://primefaces.org/cdn/primereact/images/favicon.ico" type="image/x-icon"></link>                
             </Head>
+            {props.newsActive && <NewsSection announcement={props.announcement} onClose={props.onNewsClose} />}
             <Topbar dark={props.dark} onMenuButtonClick={onMenuButtonClick} onToggleColorScheme={toggleColorScheme} />
             <Menu active={sidebarActive} darkTheme={props.dark} />
             <AppContentContext.Provider

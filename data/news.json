@@ -1,0 +1,10 @@
+{
+    "id": 1,
+    "content": "New PrimeFlex website is available now!",
+    "linkText": "",
+    "linkHref": "",
+    "backgroundStyle": "background-color:#07c4e8",
+    "textStyle": "color:#191919;font-weight:500",
+    "linkStyle": "color:#191919;font-weight:700",
+    "linkHoverStyle": "text-decoration: underline"
+}

@@ -1,21 +1,48 @@
 import '@docsearch/css';
 import { useEffect, useRef, useState } from 'react';
 import Layout from '../components/layout/layout';
+import AnnouncementData from '../data/news.json';
 import '../styles/layout/layout.scss';
 import '../styles/lib/primeflex.scss';
 import '../styles/prism.scss';
 
 export default function MyApp({ Component }) {
     const [dark, setDark] = useState(false);
-    const announcement = useRef(null);
+    const [newsActive, setNewsActive] = useState(false);
+    const announcement = useRef(AnnouncementData);
+    const storageKey = 'primeflex-news';
 
     const props = {
         dark: dark,
+        newsActive: newsActive && announcement.current,
         announcement: announcement.current,
+        onNewsClose: () => {
+            setNewsActive(false);
+
+            const item = {
+                hiddenNews: announcement.current.id
+            };
+
+            localStorage.setItem(storageKey, JSON.stringify(item));
+        },
         onThemeChange: (dark) => {
             setDark(dark);
         }
     };
+
+    useEffect(() => {
+        const itemString = localStorage.getItem(storageKey);
+
+        if (itemString) {
+            const item = JSON.parse(itemString);
+
+            if (item.hiddenNews && item.hiddenNews !== announcement.current.id) {
+                setNewsActive(true);
+            }
+        } else {
+            setNewsActive(true);
+        }
+    }, []);
 
     useEffect(() => {
         document.documentElement.style.fontSize = '14px';
