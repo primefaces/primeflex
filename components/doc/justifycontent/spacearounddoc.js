@@ -1,4 +1,3 @@
-import { Button } from 'primereact/button';
 import { DocSectionCode } from '../common/docsectioncode';
 import { DocSectionText } from '../common/docsectiontext';
 
