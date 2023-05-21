@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Button } from 'primereact/button';
 import { CodeHighlight } from './codehighlight';
 
 export function DocSectionCode(props) {
@@ -38,25 +37,20 @@ export function DocSectionCode(props) {
 
             <div className="flex surface-card align-items-center justify-content-end absolute" style={{ right: '.75rem', top: '.75rem', gap: '.75rem' }}>
                 {props.code.expanded && (
-                     <Button
-                     type="button"
-                     onClick={() => toggleCodeMode('expanded')}
-                     className="p-button-rounded p-button-text p-button-plain h-2rem w-2rem p-0 inline-flex align-items-center justify-content-center z-5"
-                     icon="pi pi-code"
-                     tooltip="Toggle Full Code"
-                     tooltipOptions={{ position: 'bottom', className: 'doc-section-code-tooltip' }}
-                 ></Button>
+                    <button
+                        type="button"
+                        onClick={() => toggleCodeMode('expanded')}
+                        className="bg-transparent border-circle border-none text-white cursor-pointer hover:bg-white-alpha-20 transition-colors transition-duration-150 h-2rem w-2rem p-0 inline-flex align-items-center justify-content-center z-5">
+                        <span className="pi pi-code"></span>
+                    </button>
                 )}
               
-                <Button
+                <button
                     type="button"
                     onClick={copyCode}
-                    onMouseLeave={() => setButtonTooltip('Copy code')}
-                    className="p-button-rounded p-button-text p-button-plain h-2rem w-2rem p-0 inline-flex align-items-center justify-content-center z-5"
-                    icon="pi pi-copy"
-                    tooltip={buttonTooltip}
-                    tooltipOptions={{ position: 'bottom', className: 'doc-section-code-tooltip' }}
-                ></Button>
+                    className="bg-transparent border-circle border-none text-white cursor-pointer hover:bg-white-alpha-20 transition-colors transition-duration-150 h-2rem w-2rem p-0 inline-flex align-items-center justify-content-center z-5">
+                    <span className="pi pi-copy"></span>
+                </button>
             </div>
         </div>
     );

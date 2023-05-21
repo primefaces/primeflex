@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import { useRouter } from 'next/router';
-import PrimeReact from 'primereact/api';
 import { classNames } from 'primereact/utils';
 import { useEffect, useState } from 'react';
 import AppContentContext from './appcontentcontext';
@@ -48,8 +47,6 @@ export default function Layout(props) {
             router.events.off('routeChangeComplete', handleRouteChange);
         };
     }, []);
-
-    PrimeReact.ripple = true;
 
     return (
         <div className={wrapperClassName}>

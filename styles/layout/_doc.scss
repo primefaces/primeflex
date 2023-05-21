@@ -172,7 +172,7 @@
         > .navbar-item-content {
             display: flex;
 
-            .p-link {
+            .link-button {
                 padding: 0.25rem 1rem 0.25rem 1rem;
                 color: var(--text-color);
                 white-space: nowrap;
@@ -190,7 +190,7 @@
             > .navbar-item-content {
                 border-color: var(--primary-color);
 
-                .p-link {
+                .link-button {
                     font-weight: 700;
                     color: var(--primary-color);
                 }
@@ -220,17 +220,6 @@
     div {
         &::-webkit-scrollbar {
             width: 5px;
-        }
-    }
-
-    .p-button-label {
-        font-weight: normal;
-        font-size: 0.875rem;
-    }
-
-    .doc-section-code-active {
-        .p-button-label {
-            font-weight: bold;
         }
     }
 

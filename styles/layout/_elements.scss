@@ -1,0 +1,44 @@
+.link-button {
+	text-align: left;
+	background-color: transparent;
+	margin: 0;
+	padding: 0;
+	border: none;
+    cursor: pointer;
+    user-select: none;
+
+    &:disabled {
+        cursor: default;
+    }
+}
+
+.p-slider {
+	position: relative;
+
+    .p-slider-range {
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        height: 100%;
+    }
+
+    .p-slider-handle {
+        cursor: grab;
+        touch-action: none;
+        display: block;
+        z-index: 1;
+        margin-top: -0.5715rem;
+        border-radius: 50%;
+
+        &.p-slider-handle-active {
+            z-index: 2;
+        }
+
+        &:focus {
+            outline: 0 none;
+            outline-offset: 0;
+            box-shadow: 0 0 0 0.2rem #C7D2FE;
+        }
+    }
+}

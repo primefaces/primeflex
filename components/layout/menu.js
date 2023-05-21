@@ -93,7 +93,7 @@ const Menu = memo((props) => {
 
         return (
             <StyleClass nodeRef={btnRef} selector="@next" enterClassName="hidden" enterActiveClassName="slidedown" leaveToClassName="hidden" leaveActiveClassName="slideup">
-                <button ref={btnRef} type="button" className="p-link">
+                <button ref={btnRef} type="button" className="link-button">
                     <div className="menu-icon">
                         <i className={menuitem.icon}></i>
                     </div>
