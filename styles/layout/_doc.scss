@@ -211,11 +211,6 @@
     }
 }
 
-.doc-section-code-tooltip .p-tooltip-text {
-    padding: 0.5rem;
-    font-size: 11px;
-}
-
 .doc-section-code {
     div {
         &::-webkit-scrollbar {
@@ -223,8 +218,22 @@
         }
     }
 
-    pre {
-        margin: 0 0 1.5rem 0;
+    pre[class*=language] {
+        margin: 0 0 1rem 0;
+    }
+
+    .toolbar {
+        display: none;
+    }
+
+    button {
+        display: none;
+    }
+
+    &:hover {
+        button {
+            display: inline-flex;
+        }
     }
 }
 
