@@ -75,7 +75,7 @@ export function DocSectionNav({ docs = [] }) {
         setActiveId(id);
         hasHash && scrollToLabelById(id);
         bindDocumentScrollListener();
-    }, []);
+    }, [docs, bindDocumentScrollListener]);
 
     const createItem = ({ id, label, children }, level = 0) => {
         const { basePath, pathname } = router;

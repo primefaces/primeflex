@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 
 const Typewriter = ({ data, setClassName }) => {
     const [index, setIndex] = useState(0);
@@ -7,7 +7,7 @@ const Typewriter = ({ data, setClassName }) => {
     const [isDeleting, setIsDeleting] = useState(false);
     const [typingSpeed, setTypingSpeed] = useState(150);
 
-    const handleType = () => {
+    const handleType = useCallback(() => {
         const currentIndex = index % data.length;
         const fullText = data[currentIndex];
 
@@ -30,7 +30,7 @@ const Typewriter = ({ data, setClassName }) => {
                 setClassName(data[currentIndex]);
             }, 10000);
         }
-    };
+    }, [index, data, isDeleting, text, setClassName]);
 
     useEffect(() => {
         const timer = setTimeout(() => {
@@ -38,7 +38,7 @@ const Typewriter = ({ data, setClassName }) => {
         }, typingSpeed);
 
         return () => clearTimeout(timer);
-    }, [text, isDeleting, index]);
+    }, [text, isDeleting, index, handleType, typingSpeed]);
 
     useEffect(() => {
         if (isDeleting) {
@@ -58,6 +58,7 @@ const HeroSection = ({ dark }) => {
     const [flexClass, setFlexClassName] = useState('flex-row');
     const flexs = ['flex-row', 'flex-column'];
     const [npmText, npmCopied] = useState('npm i primeflex');
+
     return (
         <section className="landing-hero-section relative">
             <span className="ellipse-1"></span>
@@ -147,7 +148,7 @@ const HeroSection = ({ dark }) => {
                                         flex w-full gap-2 p-4 <Typewriter data={flexs} setClassName={setFlexClassName} />
                                     </span>
                                     <div className={'example-card-header gap-1 sm:gap-2 flex justify-content-between align-items-center w-full ' + flexClass}>
-                                        <img src="/images/landing/profile.png" width={100} height={100} className="w-3rem h-3rem sm:w-5rem sm:h-5rem md:w-7rem md:h-7rem"></img>
+                                        <img src="/images/landing/profile.png" alt="Landing Profile" width={100} height={100} className="w-3rem h-3rem sm:w-5rem sm:h-5rem md:w-7rem md:h-7rem"></img>
                                         <div className="example-card-header-content flex align-items-center gap-3 sm:gap-5">
                                             <div className="content-info text-center md:text-right">
                                                 <h3 className="font-medium text-xl sm:text-2xl md:text-4xl m-0 mb-2">73</h3>

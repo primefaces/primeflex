@@ -13,6 +13,7 @@ const CardsSection = () => {
     useEffect(() => {
         setWindowWidth(window.innerWidth);
         window.addEventListener('resize', updateDimensions);
+
         return () => window.removeEventListener('resize', updateDimensions);
     }, []);
 
@@ -53,7 +54,9 @@ const CardsSection = () => {
         const interval = setInterval(() => {
             setWaves((prevWaves) => {
                 const newWaves = [...prevWaves];
+
                 newWaves.unshift(newWaves.pop());
+
                 return newWaves;
             });
         }, 6000);
@@ -71,10 +74,12 @@ const CardsSection = () => {
     function handleSliderSizeChange(event) {
         setSize(event.value);
     }
+
     let isItalic = false;
 
     function handleClick() {
         let sliderTitle = document.querySelector('.typo-title');
+
         isItalic = !isItalic;
         sliderTitle.classList.toggle('font-italic');
     }
@@ -86,6 +91,7 @@ const CardsSection = () => {
         if (sliderTitle.classList.contains('font-italic')) {
             className += ' font-italic';
         }
+
         if (weight >= 0 && weight < 25) {
             className += ' font-light';
         } else if (weight >= 25 && weight < 50) {
@@ -97,6 +103,7 @@ const CardsSection = () => {
         } else if (weight === 100) {
             className += ' font-bold';
         }
+
         if (size >= 0 && size < 8) {
             className += ' text-xs';
         } else if (size >= 8 && size < 16) {
@@ -124,6 +131,7 @@ const CardsSection = () => {
         } else if (size >= 96 && size <= 100) {
             className += ' text-8xl';
         }
+
         sliderTitle.className = className;
     }, [weight, size]);
 

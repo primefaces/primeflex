@@ -1,13 +1,14 @@
 import Link from 'next/link';
 import { classNames } from 'primereact/utils';
-import { useCallback, useEffect, useRef, useState } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 
 const StyleSection = () => {
     const [activeSlide, setActiveSlide] = useState(0);
     const [previousSlide, setPreviousSlide] = useState(null);
     const [slideOrder, setSlideOrder] = useState([0, 1, 2, 3]);
-    const codes = {
-        glass: `<div class="p-2 border-round-xl" style="background: var(--style-cards-bg); backgroundBlendMode: normal, color-dodge; width: 300px;">
+    const codes = useMemo(
+        () => ({
+            glass: `<div class="p-2 border-round-xl" style="background: var(--style-cards-bg); backgroundBlendMode: normal, color-dodge; width: 300px;">
     <div class="content p-2 h-full relative bg-cover bg-no-repeat bg-center border-round-xl shadow-1 flex flex-column justify-content-end" style="background: url(/images/landing/style-cards/glassmorphic-bg.jpeg); backgroundBlendMode: color-dodge, normal, normal; minHeight: 385px;">
         <div class="content-image absolute top-0 right-0">
             <div class="rating mt-2 border-round-sm mr-2 p-2 flex align-items-center gap-2 bg-white-alpha-20 w-8rem border-1" style="backdropFilter: blur(27px); borderColor: rgba(255, 255, 255, 0.2);">
@@ -61,7 +62,7 @@ const StyleSection = () => {
     </div>
 </div>`,
 
-        fancy: `<div class="p-2 border-round-xl" style="background: var(--style-cards-fancy-bg); border: 1px solid rgba(255, 255, 255, 0.1); backgroundBlendMode: normal, color-dodge; width: 300px;">
+            fancy: `<div class="p-2 border-round-xl" style="background: var(--style-cards-fancy-bg); border: 1px solid rgba(255, 255, 255, 0.1); backgroundBlendMode: normal, color-dodge; width: 300px;">
     <div class="content border-round-sm">
         <div class="content-image bg-cover bg-no-repeat bg-center relative" style="height: 244px; background-image: url(/images/landing/style-cards/fancy.jpg);">
             <div class="rating mt-2 border-round-sm absolute ml-2 p-2 flex align-items-center gap-2 bg-black-alpha-20 w-8rem border-1" style="backdropFilter: blur(27px);">
@@ -115,7 +116,7 @@ const StyleSection = () => {
     </div>
 </div>`,
 
-        basic: `<div class="p-2 border-round-xl" style="background: var(--style-cards-bg); border: 1px solid rgba(255, 255, 255, 0.1); backgroundBlendMode: normal, color-dodge; width: 300px;">
+            basic: `<div class="p-2 border-round-xl" style="background: var(--style-cards-bg); border: 1px solid rgba(255, 255, 255, 0.1); backgroundBlendMode: normal, color-dodge; width: 300px;">
     <div class="content bg-white p-2">
         <div class="content-image bg-cover bg-no-repeat bg-center relative" style="height: 247px; background-image: url(/images/landing/style-cards/basic.jpg);">
             <div class="rating mt-2 absolute ml-2 p-2 bg-white flex align-items-center gap-2 opacity-90 w-8rem ">
@@ -169,7 +170,7 @@ const StyleSection = () => {
     </div>
 </div>`,
 
-        modern: `<div class="p-2 border-round-xl" style="background: var(--style-cards-bg); border: 1px solid rgba(255, 255, 255, 0.1); backgroundBlendMode: normal, color-dodge; width: 300px;">
+            modern: `<div class="p-2 border-round-xl" style="background: var(--style-cards-bg); border: 1px solid rgba(255, 255, 255, 0.1); backgroundBlendMode: normal, color-dodge; width: 300px;">
     <div class="content bg-white h-full p-2">
         <div class="flex align-items-center gap-2 py-2 px-3">
             <i class="pi pi-verified text-gray-900"></i>
@@ -225,13 +226,17 @@ const StyleSection = () => {
         </div>
     </div>
 </div>`
-    };
+        }),
+        []
+    );
 
     const [code, setCode] = useState(codes.glass);
 
     const nextSlideOrder = useCallback((currentOrder, clickedSlide) => {
         const newOrder = currentOrder.filter((slide) => slide !== clickedSlide);
+
         newOrder.unshift(clickedSlide);
+
         return newOrder;
     }, []);
 
@@ -242,9 +247,11 @@ const StyleSection = () => {
             setSlideOrder((oldOrder) => {
                 const newOrder = nextSlideOrder(oldOrder, slideIndex);
                 const updatedOrder = [newOrder[0], ...newOrder.slice(1), oldOrder[0]];
+
                 return updatedOrder;
             });
             const slideCodes = [codes.glass, codes.fancy, codes.modern, codes.basic];
+
             setCode(slideCodes[slideIndex]);
         },
         [nextSlideOrder, codes, activeSlide]
@@ -276,7 +283,7 @@ const StyleSection = () => {
             }
 
             slideRef.current.className = slideClass;
-        }, [slideOrder, props.slideIndex, activeSlide, previousSlide]);
+        }, [props.slideIndex]);
 
         return (
             <div ref={slideRef} onClick={handleClick}>
@@ -284,6 +291,7 @@ const StyleSection = () => {
             </div>
         );
     }
+
     function CustomCodeHighlight(props) {
         const codeElement = useRef();
         const languageClassName = `language-${props.lang || 'jsx'}`;

@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { useState } from 'react';
+
 const BlocksSection = ({ dark }) => {
     const [weight, setWeight] = useState(50);
     const [size, setSize] = useState(50);
@@ -59,6 +60,7 @@ const BlocksSection = ({ dark }) => {
     const row3 = getRow3();
     const row4 = getRow4();
     const row5 = getRow5();
+
     return (
         <section className="landing-blocks-section relative">
             <div className="landing-blocks-container mt-3">

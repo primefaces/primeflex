@@ -48,7 +48,7 @@ export default function Layout(props) {
         return () => {
             router.events.off('routeChangeComplete', handleRouteChange);
         };
-    }, []);
+    }, [router]);
 
     return (
         <div className={wrapperClassName}>

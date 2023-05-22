@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { DomHandler } from 'primereact/utils';
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 
 const ResponsiveSection = ({ dark }) => {
     const [iframeWidth, setIframeWidth] = useState(576);
@@ -10,22 +10,28 @@ const ResponsiveSection = ({ dark }) => {
     const [windowWidth, setWindowWidth] = useState(null);
     const [semiActiveSections, setSemiActiveSections] = useState([]);
 
-    const breakpoints = [
-        { label: 'Screen 1200px', width: 1200, buttonWidth: 102 },
-        { label: 'Laptop 992px', width: 992, buttonWidth: 108 },
-        { label: 'Tablet 768px', width: 768, buttonWidth: 95 },
-        { label: 'Mobile 576px', width: 576, buttonWidth: 576 },
-        { label: 'Tablet 768px', width: 768, buttonWidth: 95 },
-        { label: 'Laptop 992px', width: 992, buttonWidth: 108 },
-        { label: 'Screen 1200px', width: 1200, buttonWidth: 102 }
-    ];
+    const breakpoints = useMemo(
+        () => [
+            { label: 'Screen 1200px', width: 1200, buttonWidth: 102 },
+            { label: 'Laptop 992px', width: 992, buttonWidth: 108 },
+            { label: 'Tablet 768px', width: 768, buttonWidth: 95 },
+            { label: 'Mobile 576px', width: 576, buttonWidth: 576 },
+            { label: 'Tablet 768px', width: 768, buttonWidth: 95 },
+            { label: 'Laptop 992px', width: 992, buttonWidth: 108 },
+            { label: 'Screen 1200px', width: 1200, buttonWidth: 102 }
+        ],
+        []
+    );
 
     const isMobile = windowWidth < 576;
+
     useEffect(() => {
         if (typeof window !== 'undefined') {
             setWindowWidth(window.innerWidth);
             const handleResize = () => setWindowWidth(window.innerWidth - 30);
+
             window.addEventListener('resize', handleResize);
+
             return () => {
                 window.removeEventListener('resize', handleResize);
             };
@@ -35,19 +41,21 @@ const ResponsiveSection = ({ dark }) => {
     useEffect(() => {
         const sortedBreakpoints = [...breakpoints].sort((a, b) => b.width - a.width);
         const active = sortedBreakpoints.filter((bp) => iframeWidth >= bp.width);
+
         setActiveSections(active.map((a) => a.label));
 
         const sortedBreakpointsAscending = [...breakpoints].sort((a, b) => a.width - b.width);
         const semiActive = sortedBreakpointsAscending.find((bp) => iframeWidth <= bp.width);
+
         setSemiActiveSections(semiActive ? [semiActive.label] : []);
-    }, [iframeWidth]);
+    }, [iframeWidth, breakpoints]);
 
     useEffect(() => {
         const visibleBreakpoints = breakpoints.filter((breakpoint) => windowWidth >= breakpoint.width);
         const newMaxIframeWidth = Math.max(...visibleBreakpoints.map((bp) => bp.width));
 
         setMaxIframeWidth(newMaxIframeWidth);
-    }, [windowWidth]);
+    }, [windowWidth, breakpoints]);
 
     const handleMouseDown = (e) => {
         e.preventDefault();
@@ -56,6 +64,7 @@ const ResponsiveSection = ({ dark }) => {
 
         const handleMouseMove = (e) => {
             const deltaX = e.clientX - initialX;
+
             setIframeWidth(initialWidth + deltaX);
         };
 
@@ -106,8 +115,8 @@ const ResponsiveSection = ({ dark }) => {
                             return (
                                 <div
                                     key={index}
-                                    className={`opacity-60 white-space-nowrap text-sm text-center border-1 py-2 cursor-pointer transition-duration-200 
-                            ${activeSections.includes(breakpoint.label) ? 'active-responsive' : ''} 
+                                    className={`opacity-60 white-space-nowrap text-sm text-center border-1 py-2 cursor-pointer transition-duration-200
+                            ${activeSections.includes(breakpoint.label) ? 'active-responsive' : ''}
                             ${semiActiveSections.includes(breakpoint.label) ? 'semi-active-break' : ''}
                             ${isHidden ? 'hidden' : isMobile && isFirstMobileBreakpoint ? 'w-full' : ''}`}
                                     style={{ width: `${isMobile && isFirstMobileBreakpoint ? '100%' : breakpoint.buttonWidth + 'px'}`, minWidth: `${isMobile ? 'auto' : breakpoint.buttonWidth + 'px'}` }}

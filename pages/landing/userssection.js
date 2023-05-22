@@ -2,7 +2,7 @@ import { memo, useMemo } from 'react';
 
 const UsersSection = ({ dark }) => {
     const colorScheme = !dark ? 'light' : 'dark';
-    const usersData = ['LogoFrame-1', 'LogoFrame-2', 'LogoFrame-3', 'LogoFrame-4', 'LogoFrame-5', 'LogoFrame-6', 'LogoFrame-7', 'LogoFrame-8', 'LogoFrame-9'];
+    const usersData = useMemo(() => ['LogoFrame-1', 'LogoFrame-2', 'LogoFrame-3', 'LogoFrame-4', 'LogoFrame-5', 'LogoFrame-6', 'LogoFrame-7', 'LogoFrame-8', 'LogoFrame-9'], []);
     const getUsersImages = (usersData, colorScheme) =>
         usersData.map((name) => ({
             name,

@@ -1,10 +1,10 @@
 import Link from 'next/link';
 import { useEffect, useRef, useState } from 'react';
+
 const AnimationsSection = ({ dark }) => {
     const [visible, setVisible] = useState(false);
     const [hovered, setHovered] = useState(null);
     const sectionRef = useRef(null);
-
     const [finishedAnimating, setFinishedAnimating] = useState([]);
 
     useEffect(() => {
@@ -22,13 +22,15 @@ const AnimationsSection = ({ dark }) => {
             { threshold: 0.5 }
         );
 
-        if (sectionRef.current) {
-            observer.observe(sectionRef.current);
+        const selectionEl = sectionRef.current;
+
+        if (selectionEl) {
+            observer.observe(selectionEl);
         }
 
         return () => {
-            if (sectionRef.current) {
-                observer.unobserve(sectionRef.current);
+            if (selectionEl) {
+                observer.unobserve(selectionEl);
             }
         };
     }, []);
