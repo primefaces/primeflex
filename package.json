@@ -7,8 +7,8 @@
         "dev": "next dev",
         "build": "next build",
         "start": "next start",
-        "format": "prettier --write \"{components,pages}/**/*.{js,ts,tsx,d.ts}\"",
-        "format:check": "prettier --check \"{components,pages}/**/*.{js,ts,tsx,d.ts}\"",
+        "format": "prettier --write \"{components,pages}/**/*.js\"",
+        "format:check": "prettier --check \"{components,pages}/**/*.js\"",
         "lint": "next lint --max-warnings=0 --ignore-path .gitignore .",
         "lint:fix": "next lint --fix --ignore-path .gitignore .",
         "build-lib": "sass --update styles/lib/primeflex.scss:dist-lib/primeflex.css --no-source-map && sass --update styles/lib/primeflex.scss:dist-lib/primeflex.min.css --no-source-map --style compressed && sass --update styles/lib/themes:dist-lib/themes --no-source-map && gulp build-lib"

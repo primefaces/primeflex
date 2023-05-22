@@ -38,7 +38,7 @@ export function AdvancedDoc(props) {
     </div>
 </div>
 `,
-expanded: `<div class="card">
+        expanded: `<div class="card">
     <div class="formgrid grid">
         <div class="field col-12 md:col-6">
             <label for="firstname6">Firstname</label>

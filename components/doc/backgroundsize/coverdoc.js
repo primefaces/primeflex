@@ -18,7 +18,7 @@ export function CoverDoc(props) {
     return (
         <>
             <DocSectionText {...props}>
-            <p>Image is resized to cover the container fully by stretching of clipping if necessary.</p>
+                <p>Image is resized to cover the container fully by stretching of clipping if necessary.</p>
             </DocSectionText>
             <div className="card">
                 <div className="card-container blue-container overflow-hidden">

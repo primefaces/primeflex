@@ -28,7 +28,7 @@ const PositionPage = () => {
             id: 'scalein',
             label: 'scalein',
             component: ScaleinDoc
-        },
+        }
     ];
 
     return (

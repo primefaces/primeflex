@@ -3,9 +3,7 @@ import { DocSectionText } from '../common/docsectiontext';
 export function ClassesDoc(props) {
     return (
         <>
-            <DocSectionText {...props}>
-          
-            </DocSectionText>
+            <DocSectionText {...props}></DocSectionText>
             <div className="doc-tablewrapper">
                 <table className="doc-table">
                     <thead>
@@ -43,7 +41,6 @@ export function ClassesDoc(props) {
                             <td>z-5</td>
                             <td>z-index: 5;</td>
                         </tr>
-                       
                     </tbody>
                 </table>
             </div>

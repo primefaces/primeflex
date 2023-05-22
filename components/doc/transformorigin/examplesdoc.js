@@ -39,7 +39,7 @@ export function ExamplesDoc(props) {
         <>
             <DocSectionText {...props}></DocSectionText>
             <div className="card">
-                <div className="flex flex-wrap align-items-center justify-content-center md:justify-content-between card-container blue-container" style={{minHeight: '250px'}}>
+                <div className="flex flex-wrap align-items-center justify-content-center md:justify-content-between card-container blue-container" style={{ minHeight: '250px' }}>
                     <div className="h-6rem w-6rem bg-blue-500 m-5 border-round">
                         <img src="/images/product-placeholder-blue.svg" className="origin-center rotate-45 h-6rem w-6rem" alt="primeflex"></img>
                     </div>

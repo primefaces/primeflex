@@ -52,7 +52,7 @@ export function ResponsiveDoc(props) {
             </DocSectionText>
             <div className="card">
                 <div className="card-container yellow-container overflow-hidden flex align-items-center justify-content-center">
-                    <div className="bg-top md:bg-bottom bg-no-repeat w-10rem h-10rem bg-yellow-500 border-round m-3" style={{ backgroundImage: "url('/images/product-placeholder-yellow.svg')",backgroundSize:'5rem' }}></div>
+                    <div className="bg-top md:bg-bottom bg-no-repeat w-10rem h-10rem bg-yellow-500 border-round m-3" style={{ backgroundImage: "url('/images/product-placeholder-yellow.svg')", backgroundSize: '5rem' }}></div>
                 </div>
             </div>
             <DocSectionCode code={code} />

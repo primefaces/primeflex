@@ -62,9 +62,9 @@ export function ResponsiveDoc(props) {
             </DocSectionText>
             <div className="card">
                 <div className="relative card-container orange-container md:p-5">
-                    <div className="static bg-orange-100 font-bold text-gray-900 border-round p-4" style={{ minWidth: '300px',minHeight:'200px' }}>
+                    <div className="static bg-orange-100 font-bold text-gray-900 border-round p-4" style={{ minWidth: '300px', minHeight: '200px' }}>
                         <p className="mt-0">Static</p>
-                        <div className="static md:absolute bottom-0 left-0 bg-orange-500 border-round font-bold text-white p-4" style={{ minWidth: '120px',minHeight:'70px' }}>
+                        <div className="static md:absolute bottom-0 left-0 bg-orange-500 border-round font-bold text-white p-4" style={{ minWidth: '120px', minHeight: '70px' }}>
                             Absolute on medium screens / Static on small screens
                         </div>
                     </div>

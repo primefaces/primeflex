@@ -60,9 +60,9 @@ export function AbsoluteDoc(props) {
                 <div className="card-container purple-container mb-4">
                     <div className="relative bg-purple-100 border-round p-4 font-bold text-gray-900">
                         <p className="mt-0">Relative</p>
-                        <div className="static bg-purple-200 border-round p-4 font-bold text-gray-900" style={{ minWidth: '300px',minHeight:'150px' }}>
+                        <div className="static bg-purple-200 border-round p-4 font-bold text-gray-900" style={{ minWidth: '300px', minHeight: '150px' }}>
                             <p className="mt-0">Static</p>
-                            <div className="static bottom-0 left-0 bg-purple-500 border-round p-4 font-bold text-white" style={{ minWidth: '120px',minHeight:'70px' }}>
+                            <div className="static bottom-0 left-0 bg-purple-500 border-round p-4 font-bold text-white" style={{ minWidth: '120px', minHeight: '70px' }}>
                                 Static
                             </div>
                         </div>
@@ -72,9 +72,9 @@ export function AbsoluteDoc(props) {
                 <div className="card-container purple-container">
                     <div className="relative bg-purple-100 border-round p-4 font-bold text-gray-900">
                         <p className="mt-0">Relative</p>
-                        <div className="static bg-purple-200 border-round p-4 font-bold text-gray-900" style={{ minWidth: '300px',minHeight:'150px' }}>
+                        <div className="static bg-purple-200 border-round p-4 font-bold text-gray-900" style={{ minWidth: '300px', minHeight: '150px' }}>
                             <p className="mt-0">Static</p>
-                            <div className="absolute bottom-0 left-0 bg-purple-500 border-round p-4 font-bold text-white" style={{ minWidth: '120px',minHeight:'70px' }}>
+                            <div className="absolute bottom-0 left-0 bg-purple-500 border-round p-4 font-bold text-white" style={{ minWidth: '120px', minHeight: '70px' }}>
                                 Dynamic
                             </div>
                         </div>

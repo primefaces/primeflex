@@ -2,7 +2,8 @@ import { DocSectionText } from '../common/docsectiontext';
 
 export function ClassesDoc(props) {
     return (
-        <>bordercolor
+        <>
+            bordercolor
             <DocSectionText {...props}></DocSectionText>
             <div className="doc-tablewrapper">
                 <table className="doc-table">

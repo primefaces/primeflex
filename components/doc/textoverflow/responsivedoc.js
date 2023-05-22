@@ -2,8 +2,6 @@ import { DocSectionCode } from '../common/docsectioncode';
 import { DocSectionText } from '../common/docsectiontext';
 
 export function ResponsiveDoc(props) {
-
-
     return (
         <>
             <DocSectionText {...props}>
@@ -39,7 +37,6 @@ export function ResponsiveDoc(props) {
                     </table>
                 </div>
             </DocSectionText>
-            
         </>
     );
 }

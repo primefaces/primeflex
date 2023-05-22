@@ -55,10 +55,16 @@ export function ResponsiveDoc(props) {
                 </div>
             </DocSectionText>
             <div className="card">
-                <div className="flex md:align-items-stretch align-items-stretch flex-wrap card-container cyan-container" style={{minHeight:'200px'}}>
-                    <div className="md:align-self-auto align-self-center flex align-items-center justify-content-center bg-cyan-500 font-bold text-white border-round m-2"  style={{ minWidth: '200px', minHeight: '50px' }}>1</div>
-                    <div className="md:align-self-auto align-self-center flex align-items-center justify-content-center bg-cyan-500 font-bold text-white border-round m-2"  style={{ minWidth: '200px', minHeight: '50px' }}>2</div>
-                    <div className="md:align-self-auto align-self-center flex align-items-center justify-content-center bg-cyan-500 font-bold text-white border-round m-2"  style={{ minWidth: '200px', minHeight: '50px' }}>3</div>
+                <div className="flex md:align-items-stretch align-items-stretch flex-wrap card-container cyan-container" style={{ minHeight: '200px' }}>
+                    <div className="md:align-self-auto align-self-center flex align-items-center justify-content-center bg-cyan-500 font-bold text-white border-round m-2" style={{ minWidth: '200px', minHeight: '50px' }}>
+                        1
+                    </div>
+                    <div className="md:align-self-auto align-self-center flex align-items-center justify-content-center bg-cyan-500 font-bold text-white border-round m-2" style={{ minWidth: '200px', minHeight: '50px' }}>
+                        2
+                    </div>
+                    <div className="md:align-self-auto align-self-center flex align-items-center justify-content-center bg-cyan-500 font-bold text-white border-round m-2" style={{ minWidth: '200px', minHeight: '50px' }}>
+                        3
+                    </div>
                 </div>
             </div>
             <DocSectionCode code={code} />

@@ -33,9 +33,9 @@ export function StaticDoc(props) {
             </DocSectionText>
             <div className="card">
                 <div className="relative card-container blue-container">
-                    <div className="static bg-blue-100 p-4 border-round" style={{ minWidth: '300px',minHeight:'150px' }}>
+                    <div className="static bg-blue-100 p-4 border-round" style={{ minWidth: '300px', minHeight: '150px' }}>
                         <p className="font-bold text-gray-900">Static</p>
-                        <div className="absolute bottom-0 left-0 bg-blue-500 border-round p-4 font-bold text-white" style={{ minWidth: '120px',minHeight:'70px' }}>
+                        <div className="absolute bottom-0 left-0 bg-blue-500 border-round p-4 font-bold text-white" style={{ minWidth: '120px', minHeight: '70px' }}>
                             Absolute
                         </div>
                     </div>

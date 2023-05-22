@@ -25,10 +25,16 @@ export function EndDoc(props) {
                 <p>Items are located at the end of the container.</p>
             </DocSectionText>
             <div className="card">
-                <div className="flex align-items-end flex-wrap card-container purple-container" style={{minHeight:'200px'}}>
-                    <div className="flex align-items-center justify-content-center bg-purple-500 font-bold text-white border-round m-2"  style={{ minWidth: '200px', minHeight: '50px' }}>1</div>
-                    <div className="flex align-items-center justify-content-center bg-purple-500 font-bold text-white border-round m-2"  style={{ minWidth: '200px', minHeight: '150px' }}>2</div>
-                    <div className="flex align-items-center justify-content-center bg-purple-500 font-bold text-white border-round m-2"  style={{ minWidth: '200px', minHeight: '100px' }}>3</div>
+                <div className="flex align-items-end flex-wrap card-container purple-container" style={{ minHeight: '200px' }}>
+                    <div className="flex align-items-center justify-content-center bg-purple-500 font-bold text-white border-round m-2" style={{ minWidth: '200px', minHeight: '50px' }}>
+                        1
+                    </div>
+                    <div className="flex align-items-center justify-content-center bg-purple-500 font-bold text-white border-round m-2" style={{ minWidth: '200px', minHeight: '150px' }}>
+                        2
+                    </div>
+                    <div className="flex align-items-center justify-content-center bg-purple-500 font-bold text-white border-round m-2" style={{ minWidth: '200px', minHeight: '100px' }}>
+                        3
+                    </div>
                 </div>
             </div>
             <DocSectionCode code={code} />

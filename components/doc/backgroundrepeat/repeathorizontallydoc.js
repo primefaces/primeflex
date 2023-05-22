@@ -18,12 +18,11 @@ export function RepeatHorizontallyDoc(props) {
     return (
         <>
             <DocSectionText {...props}>
-            <p>Background image is repeated horizontally only.</p>
+                <p>Background image is repeated horizontally only.</p>
             </DocSectionText>
             <div className="card">
                 <div className="card-container green-container overflow-hidden">
-                    <div className="bg-repeat-x bg-green-100 bg-center border-green-500 border-2 border-round h-10rem w-full" 
-                    style={{ backgroundImage: "url('/images/product-placeholder-green.svg')",backgroundSize:'10rem' }}></div>
+                    <div className="bg-repeat-x bg-green-100 bg-center border-green-500 border-2 border-round h-10rem w-full" style={{ backgroundImage: "url('/images/product-placeholder-green.svg')", backgroundSize: '10rem' }}></div>
                 </div>
             </div>
             <DocSectionCode code={code} />

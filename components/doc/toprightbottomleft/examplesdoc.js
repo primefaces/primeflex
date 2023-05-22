@@ -39,9 +39,7 @@ export function ExamplesDoc(props) {
 
     return (
         <>
-            <DocSectionText {...props}>
-               
-            </DocSectionText>
+            <DocSectionText {...props}></DocSectionText>
             <div className="card">
                 <div className="flex flex-wrap gap-3 align-items-center justify-content-center card-container blue-container">
                     <div className="relative bg-blue-200 w-9rem h-9rem mx-3 my-3 md:my-0 border-round">

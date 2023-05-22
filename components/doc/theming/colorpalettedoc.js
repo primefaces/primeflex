@@ -5,9 +5,9 @@ import Head from 'next/head';
 export function ColorPaletteDoc(props) {
     return (
         <>
-         <Head>
-        <style>
-          {`
+            <Head>
+                <style>
+                    {`
            .theming-colors .color-box {
             display: flex;
             align-items: center;
@@ -16,8 +16,8 @@ export function ColorPaletteDoc(props) {
             font-weight: bold;
         }
           `}
-        </style>
-      </Head>
+                </style>
+            </Head>
             <DocSectionText {...props}>
                 <p>
                     PrimeFlex does not ship with a built-in color scheme by default as it is derived from the Prime UI library. In case you need to use it standalone without a Prime library, include one of the themes from the themes folder. A theme

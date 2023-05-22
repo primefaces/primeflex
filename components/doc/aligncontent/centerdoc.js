@@ -25,7 +25,7 @@ export function CenterDoc(props) {
                 <p>Flex lines are distributed at the center of the container.</p>
             </DocSectionText>
             <div className="card">
-                <div className="flex align-content-center flex-wrap card-container yellow-container" style={{minHeight:'200px'}}>
+                <div className="flex align-content-center flex-wrap card-container yellow-container" style={{ minHeight: '200px' }}>
                     <div className="flex align-items-center justify-content-center w-4rem h-4rem bg-yellow-500 font-bold text-white border-round m-2">1</div>
                     <div className="flex align-items-center justify-content-center w-4rem h-4rem bg-yellow-500 font-bold text-white border-round m-2">2</div>
                     <div className="flex align-items-center justify-content-center w-4rem h-4rem bg-yellow-500 font-bold text-white border-round m-2">3</div>

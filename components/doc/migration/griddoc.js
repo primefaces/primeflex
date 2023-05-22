@@ -2,7 +2,6 @@ import { DocSectionCode } from '../common/docsectioncode';
 import { DocSectionText } from '../common/docsectiontext';
 
 export function GridDoc(props) {
-
     return (
         <>
             <DocSectionText {...props}>

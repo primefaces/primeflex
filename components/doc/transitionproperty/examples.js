@@ -23,8 +23,10 @@ export function ExamplesDoc(props) {
             <DocSectionText {...props}></DocSectionText>
             <div className="card">
                 <div className="flex flex-wrap align-items-center justify-content-center card-container blue-container">
-                    <div className="transition-colors transition-duration-500 bg-blue-500 hover:bg-yellow-500 text-white hover:text-gray-900
-                        flex align-items-center justify-content-center font-bold border-round cursor-pointer m-2 px-5 py-3">
+                    <div
+                        className="transition-colors transition-duration-500 bg-blue-500 hover:bg-yellow-500 text-white hover:text-gray-900
+                        flex align-items-center justify-content-center font-bold border-round cursor-pointer m-2 px-5 py-3"
+                    >
                         Hover me
                     </div>
                 </div>

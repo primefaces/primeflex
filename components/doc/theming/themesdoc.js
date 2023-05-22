@@ -169,7 +169,7 @@ export function ThemesDoc(props) {
                     consists of the following set of CSS variables that can be easily customized to build your own.
                 </p>
             </DocSectionText>
-            <DocSectionCode code={code} style={{maxHeight:'500px'}} />
+            <DocSectionCode code={code} style={{ maxHeight: '500px' }} />
         </>
     );
 }

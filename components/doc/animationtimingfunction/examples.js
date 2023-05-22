@@ -46,20 +46,28 @@ export function ExamplesDoc(props) {
             <DocSectionText {...props}></DocSectionText>
             <div className="card">
                 <div className="flex flex-wrap align-items-center justify-content-center card-container blue-container">
-                    <div className="scalein animation-linear animation-duration-500 animation-iteration-infinite flex align-items-center justify-content-center
-                        font-bold bg-blue-500 text-white border-round m-2 px-5 py-3">
+                    <div
+                        className="scalein animation-linear animation-duration-500 animation-iteration-infinite flex align-items-center justify-content-center
+                        font-bold bg-blue-500 text-white border-round m-2 px-5 py-3"
+                    >
                         linear
                     </div>
-                    <div className="scalein animation-ease-in animation-duration-500 animation-iteration-infinite flex align-items-center justify-content-center
-                        font-bold bg-blue-500 text-white border-round m-2 px-5 py-3">
+                    <div
+                        className="scalein animation-ease-in animation-duration-500 animation-iteration-infinite flex align-items-center justify-content-center
+                        font-bold bg-blue-500 text-white border-round m-2 px-5 py-3"
+                    >
                         ease-in
                     </div>
-                    <div className="scalein animation-ease-out animation-duration-500 animation-iteration-infinite flex align-items-center justify-content-center
-                        font-bold bg-blue-500 text-white border-round m-2 px-5 py-3">
+                    <div
+                        className="scalein animation-ease-out animation-duration-500 animation-iteration-infinite flex align-items-center justify-content-center
+                        font-bold bg-blue-500 text-white border-round m-2 px-5 py-3"
+                    >
                         ease-out
                     </div>
-                    <div className="scalein animation-ease-in-out animation-duration-500 animation-iteration-infinite flex align-items-center justify-content-center
-                        font-bold bg-blue-500 text-white border-round m-2 px-5 py-3">
+                    <div
+                        className="scalein animation-ease-in-out animation-duration-500 animation-iteration-infinite flex align-items-center justify-content-center
+                        font-bold bg-blue-500 text-white border-round m-2 px-5 py-3"
+                    >
                         ease-in-out
                     </div>
                 </div>

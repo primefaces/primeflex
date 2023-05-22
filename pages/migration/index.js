@@ -31,7 +31,7 @@ const PositionPage = () => {
             id: 'elevation',
             label: 'Elevation',
             component: ElevationDoc
-        }, 
+        },
         {
             id: 'display',
             label: 'Display',
@@ -46,7 +46,7 @@ const PositionPage = () => {
             id: 'text',
             label: 'Text',
             component: TextDoc
-        },
+        }
     ];
 
     return (

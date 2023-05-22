@@ -18,7 +18,7 @@ export function ContainDoc(props) {
     return (
         <>
             <DocSectionText {...props}>
-            <p>Image is resized to fill the container</p>
+                <p>Image is resized to fill the container</p>
             </DocSectionText>
             <div className="card">
                 <div className="card-container green-container overflow-hidden">

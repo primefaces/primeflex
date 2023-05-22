@@ -40,15 +40,17 @@ export function DocSectionCode(props) {
                     <button
                         type="button"
                         onClick={() => toggleCodeMode('expanded')}
-                        className="bg-transparent border-circle border-none text-white cursor-pointer hover:bg-white-alpha-20 transition-colors transition-duration-150 h-2rem w-2rem p-0 inline-flex align-items-center justify-content-center z-5">
+                        className="bg-transparent border-circle border-none text-white cursor-pointer hover:bg-white-alpha-20 transition-colors transition-duration-150 h-2rem w-2rem p-0 inline-flex align-items-center justify-content-center z-5"
+                    >
                         <span className="pi pi-code"></span>
                     </button>
                 )}
-              
+
                 <button
                     type="button"
                     onClick={copyCode}
-                    className="bg-transparent border-circle border-none text-white cursor-pointer hover:bg-white-alpha-20 transition-colors transition-duration-150 h-2rem w-2rem p-0 inline-flex align-items-center justify-content-center z-5">
+                    className="bg-transparent border-circle border-none text-white cursor-pointer hover:bg-white-alpha-20 transition-colors transition-duration-150 h-2rem w-2rem p-0 inline-flex align-items-center justify-content-center z-5"
+                >
                     <span className="pi pi-copy"></span>
                 </button>
             </div>

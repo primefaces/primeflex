@@ -1,6 +1,6 @@
 import { DocSectionCode } from '../common/docsectioncode';
 import { DocSectionText } from '../common/docsectiontext';
-import Head from 'next/head'
+import Head from 'next/head';
 
 export function ExamplesDoc(props) {
     const code = {

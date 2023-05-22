@@ -1,8 +1,7 @@
 {
-  "plugins": ["@typescript-eslint", "jest-dom"],
+  "plugins": ["jest-dom"],
   "extends": [
     "next/core-web-vitals",
-    "plugin:@typescript-eslint/recommended",
     "prettier"
   ],
   "rules": {

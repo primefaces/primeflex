@@ -53,9 +53,13 @@ export function ResponsiveDoc(props) {
                 </div>
             </DocSectionText>
             <div className="card">
-                <div className="flex md:align-items-center align-items-stretch flex-wrap card-container orange-container" style={{minHeight:'200px'}}>
-                    <div className="flex align-items-center justify-content-center bg-orange-500 font-bold text-white border-round m-2"  style={{ minWidth: '200px', minHeight: '50px' }}>1</div>
-                    <div className="flex align-items-center justify-content-center bg-orange-500 font-bold text-white border-round m-2"  style={{ minWidth: '200px', minHeight: '50px' }}>2</div>
+                <div className="flex md:align-items-center align-items-stretch flex-wrap card-container orange-container" style={{ minHeight: '200px' }}>
+                    <div className="flex align-items-center justify-content-center bg-orange-500 font-bold text-white border-round m-2" style={{ minWidth: '200px', minHeight: '50px' }}>
+                        1
+                    </div>
+                    <div className="flex align-items-center justify-content-center bg-orange-500 font-bold text-white border-round m-2" style={{ minWidth: '200px', minHeight: '50px' }}>
+                        2
+                    </div>
                 </div>
             </div>
             <DocSectionCode code={code} />

@@ -49,11 +49,11 @@ export default function MyApp({ Component }) {
 
         if (typeof window !== 'undefined') {
             const media = window.matchMedia('(prefers-color-scheme: dark)');
-      
+
             if (media.matches) {
                 setDark(true);
             }
-          }
+        }
     }, []);
 
     if (Component.getLayout) {

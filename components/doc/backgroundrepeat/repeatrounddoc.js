@@ -18,12 +18,11 @@ export function RepeatRoundDoc(props) {
     return (
         <>
             <DocSectionText {...props}>
-            <p>Background image is repeated or stretched to fill space</p>
+                <p>Background image is repeated or stretched to fill space</p>
             </DocSectionText>
             <div className="card">
                 <div className="card-container indigo-container overflow-hidden">
-                    <div className="bg-repeat-round bg-indigo-100 border-indigo-500 border-round border-2 h-20rem w-full" 
-                    style={{ backgroundImage: "url('/images/product-placeholder-indigo.svg')",backgroundSize:'10rem' }}></div>
+                    <div className="bg-repeat-round bg-indigo-100 border-indigo-500 border-round border-2 h-20rem w-full" style={{ backgroundImage: "url('/images/product-placeholder-indigo.svg')", backgroundSize: '10rem' }}></div>
                 </div>
             </div>
             <DocSectionCode code={code} />

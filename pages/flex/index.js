@@ -25,17 +25,17 @@ const PositionPage = () => {
             id: 'flex1',
             label: 'Flex 1',
             component: Flex1Doc
-        },     
+        },
         {
             id: 'auto',
             label: 'Auto',
             component: AutoDoc
-        },    
+        },
         {
             id: 'none',
             label: 'None',
             component: NoneDoc
-        },   
+        },
         {
             id: 'responsive',
             label: 'Responsive',
@@ -53,7 +53,9 @@ const PositionPage = () => {
                 <div className="doc-main">
                     <div className="doc-intro">
                         <h1>Flex</h1>
-                        <p>A shorthand property to define <i>flex-grow</i>, <i>flex-shrink</i> and <i>flex-basis</i> at once.</p>
+                        <p>
+                            A shorthand property to define <i>flex-grow</i>, <i>flex-shrink</i> and <i>flex-basis</i> at once.
+                        </p>
                     </div>
                     <DocSections docs={docs} />
                 </div>

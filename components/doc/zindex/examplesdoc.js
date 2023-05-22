@@ -27,9 +27,7 @@ export function ExamplesDoc(props) {
 
     return (
         <>
-            <DocSectionText {...props}>
-              
-            </DocSectionText>
+            <DocSectionText {...props}></DocSectionText>
 
             <div className="card">
                 <div className="card-container blue-container flex flex-wrap justify-content-center" style={{ minHeight: '200px' }}>

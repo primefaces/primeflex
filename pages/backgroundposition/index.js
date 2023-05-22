@@ -18,7 +18,7 @@ const PositionPage = () => {
             label: 'Examples',
             component: ExamplesDoc
         },
-        
+
         {
             id: 'responsive',
             label: 'Responsive',

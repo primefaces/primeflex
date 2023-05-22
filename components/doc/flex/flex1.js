@@ -36,9 +36,7 @@ export function Flex1Doc(props) {
     return (
         <>
             <DocSectionText {...props}>
-                <p>
-                Sets grow and shrink to 1 to auto grow and shrink while keeping flex-basis to 0.
-                </p>
+                <p>Sets grow and shrink to 1 to auto grow and shrink while keeping flex-basis to 0.</p>
             </DocSectionText>
             <div className="card">
                 <div className="card-container yellow-container overflow-hidden">
