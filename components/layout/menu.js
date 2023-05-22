@@ -1,19 +1,21 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import React, { memo, useEffect } from 'react';
 import { StyleClass } from 'primereact/styleclass';
 import { classNames } from 'primereact/utils';
+import React, { memo, useEffect, useState } from 'react';
 import MenuData from './menu.json';
 
 const Menu = memo((props) => {
     const router = useRouter();
-    const menu = MenuData.data.map((data) => {
-        const rootItem = { ...data };
+    const [activeSubmenus, setActiveSubmenus] = useState([]);
 
-        rootItem.expanded = rootItem.children && rootItem.children.some((item) => item.to === router.pathname || (item.children && item.children.some((it) => it.to === router.pathname)));
+    useEffect(() => {
+        (MenuData.data || []).forEach((rootItem) => {
+            const isExpanded = rootItem.children && rootItem.children.some((item) => item.to === router.pathname || (item.children && item.children.some((it) => it.to === router.pathname)));
 
-        return rootItem;
-    });
+            isExpanded && setActiveSubmenus((prevActiveSubmenus) => [...prevActiveSubmenus, rootItem]);
+        });
+    }, [router]);
 
     const renderLink = (item) => {
         const { name, to, href } = item;
@@ -79,7 +81,7 @@ const Menu = memo((props) => {
     const renderRootMenuItemChildren = (menuitem, parentIndex) => {
         if (menuitem.children) {
             return (
-                <div className={classNames({ hidden: !menuitem.expanded }, 'overflow-y-hidden transition-all transition-duration-400 transition-ease-in-out')}>
+                <div className={classNames({ hidden: activeSubmenus.length && !activeSubmenus.includes(menuitem) }, 'overflow-y-hidden transition-all transition-duration-400 transition-ease-in-out')}>
                     <ol>{menuitem.children.map((item, index) => renderChild(item, parentIndex + '_' + index))}</ol>
                 </div>
             );
@@ -107,8 +109,8 @@ const Menu = memo((props) => {
     const renderRootMenuItems = () => {
         return (
             <>
-                {menu &&
-                    menu.map((menuitem, index) => {
+                {MenuData.data &&
+                    MenuData.data.map((menuitem, index) => {
                         const label = menuitem.children ? renderRootItemButton(menuitem, index) : renderLink(menuitem);
                         const children = renderRootMenuItemChildren(menuitem, index);
 
