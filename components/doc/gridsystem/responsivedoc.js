@@ -2,40 +2,21 @@ import { DocSectionCode } from '../common/docsectioncode';
 import { DocSectionText } from '../common/docsectiontext';
 
 export function ResponsiveDoc(props) {
-    const code = {
-        basic: `<div class="grid">
+    const code = `<div class="grid">
     <div class="col-12 md:col-6 lg:col-3">
-        <div>col-12 md:col-6 lg:col-3</div>
+        <div class="text-center p-3 border-round-sm bg-cyan-500 font-bold text-white">col-12 md:col-6 lg:col-3</div>
     </div>
     <div class="col-12 md:col-6 lg:col-3">
-        <div>col-12 md:col-6 lg:col-3</div>
+        <div class="text-center p-3 border-round-sm bg-cyan-500 font-bold text-white">col-12 md:col-6 lg:col-3</div>
     </div>
     <div class="col-12 md:col-6 lg:col-3">
-        <div>col-12 md:col-6 lg:col-3</div>
+        <div class="text-center p-3 border-round-sm bg-cyan-500 font-bold text-white">col-12 md:col-6 lg:col-3</div>
     </div>
     <div class="col-12 md:col-6 lg:col-3">
-        <div>col-12 md:col-6 lg:col-3</div>
+        <div class="text-center p-3 border-round-sm bg-cyan-500 font-bold text-white">col-12 md:col-6 lg:col-3</div>
     </div>
 </div>
-    `,
-        expanded: `<div class="card">
-    <div class="grid">
-        <div class="col-12 md:col-6 lg:col-3">
-            <div class="text-center p-3 border-round-sm bg-cyan-500 font-bold text-white">col-12 md:col-6 lg:col-3</div>
-        </div>
-        <div class="col-12 md:col-6 lg:col-3">
-            <div class="text-center p-3 border-round-sm bg-cyan-500 font-bold text-white">col-12 md:col-6 lg:col-3</div>
-        </div>
-        <div class="col-12 md:col-6 lg:col-3">
-            <div class="text-center p-3 border-round-sm bg-cyan-500 font-bold text-white">col-12 md:col-6 lg:col-3</div>
-        </div>
-        <div class="col-12 md:col-6 lg:col-3">
-            <div class="text-center p-3 border-round-sm bg-cyan-500 font-bold text-white">col-12 md:col-6 lg:col-3</div>
-        </div>
-    </div>
-</div>
-`
-    };
+`;
 
     return (
         <>

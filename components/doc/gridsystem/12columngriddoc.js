@@ -2,94 +2,48 @@ import { DocSectionCode } from '../common/docsectioncode';
 import { DocSectionText } from '../common/docsectiontext';
 
 export function TwelweColumnGridDoc(props) {
-    const code = {
-        basic: `<div class="grid">
+    const code = `<div class="grid">
     <div class="col-4">
-        <div>4</div>
+        <div class="text-center p-3 border-round-sm bg-yellow-500 font-bold text-gray-900">4</div>
     </div>
     <div class="col">
-        <div>1</div>
+        <div class="text-center p-3 border-round-sm bg-yellow-500 font-bold text-gray-900">1</div>
     </div>
     <div class="col">
-        <div>1</div>
+        <div class="text-center p-3 border-round-sm bg-yellow-500 font-bold text-gray-900">1</div>
     </div>
     <div class="col">
-        <div>1</div>
+        <div class="text-center p-3 border-round-sm bg-yellow-500 font-bold text-gray-900">1</div>
     </div>
     <div class="col">
-        <div>1</div>
+        <div class="text-center p-3 border-round-sm bg-yellow-500 font-bold text-gray-900">1</div>
     </div>
     <div class="col">
-        <div>1</div>
+        <div class="text-center p-3 border-round-sm bg-yellow-500 font-bold text-gray-900">1</div>
     </div>
     <div class="col">
-        <div>1</div>
+        <div class="text-center p-3 border-round-sm bg-yellow-500 font-bold text-gray-900">1</div>
     </div>
     <div class="col">
-        <div>1</div>
+        <div class="text-center p-3 border-round-sm bg-yellow-500 font-bold text-gray-900">1</div>
     </div>
     <div class="col">
-        <div>1</div>
+        <div class="text-center p-3 border-round-sm bg-yellow-500 font-bold text-gray-900">1</div>
     </div>
 </div>
 
 <div class="grid">
     <div class="col-2">
-        <div>2</div>
+        <div class="text-center p-3 border-round-sm bg-yellow-500 font-bold text-gray-900">2</div>
     </div>
     <div class="col-6">
-        <div>6</div>
+        <div class="text-center p-3 border-round-sm bg-yellow-500 font-bold text-gray-900">6</div>
     </div>
     <div class="col-4">
-        <div>4</div>
+        <div class="text-center p-3 border-round-sm bg-yellow-500 font-bold text-gray-900">4</div>
     </div>
 </div>
-    `,
-        expanded: `<div class="card">
-    <div class="grid">
-        <div class="col-4">
-            <div class="text-center p-3 border-round-sm bg-yellow-500 font-bold text-gray-900">4</div>
-        </div>
-        <div class="col">
-            <div class="text-center p-3 border-round-sm bg-yellow-500 font-bold text-gray-900">1</div>
-        </div>
-        <div class="col">
-            <div class="text-center p-3 border-round-sm bg-yellow-500 font-bold text-gray-900">1</div>
-        </div>
-        <div class="col">
-            <div class="text-center p-3 border-round-sm bg-yellow-500 font-bold text-gray-900">1</div>
-        </div>
-        <div class="col">
-            <div class="text-center p-3 border-round-sm bg-yellow-500 font-bold text-gray-900">1</div>
-        </div>
-        <div class="col">
-            <div class="text-center p-3 border-round-sm bg-yellow-500 font-bold text-gray-900">1</div>
-        </div>
-        <div class="col">
-            <div class="text-center p-3 border-round-sm bg-yellow-500 font-bold text-gray-900">1</div>
-        </div>
-        <div class="col">
-            <div class="text-center p-3 border-round-sm bg-yellow-500 font-bold text-gray-900">1</div>
-        </div>
-        <div class="col">
-            <div class="text-center p-3 border-round-sm bg-yellow-500 font-bold text-gray-900">1</div>
-        </div>
-    </div>
-
-    <div class="grid">
-        <div class="col-2">
-            <div class="text-center p-3 border-round-sm bg-yellow-500 font-bold text-gray-900">2</div>
-        </div>
-        <div class="col-6">
-            <div class="text-center p-3 border-round-sm bg-yellow-500 font-bold text-gray-900">6</div>
-        </div>
-        <div class="col-4">
-            <div class="text-center p-3 border-round-sm bg-yellow-500 font-bold text-gray-900">4</div>
-        </div>
-    </div>
-</div>
-`
-    };
+`;
 
     return (
         <>

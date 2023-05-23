@@ -2,22 +2,14 @@ import { DocSectionCode } from '../common/docsectioncode';
 import { DocSectionText } from '../common/docsectiontext';
 
 export function PseudoStatesDoc(props) {
-    const code = {
-        basic: `<a href="#" class="no-underline hover:underline">
-    Link with no underline
-</a>
-    `,
-        expanded: `<div class="card">
-    <div class="flex flex-wrap align-items-center justify-content-center card-container">
-        <div class="surface-overlay border-round border-1 p-3 m-3 w-16rem min-h-full">
-            <a href="#" class="no-underline hover:underline">
-                Link with no underline
-            </a>
-        </div>
+    const code = `<div class="flex flex-wrap align-items-center justify-content-center card-container">
+    <div class="surface-overlay border-round border-1 p-3 m-3 w-16rem min-h-full">
+        <a href="#" class="no-underline hover:underline">
+            Link with no underline
+        </a>
     </div>
 </div>
-`
-    };
+`;
 
     return (
         <>
@@ -27,7 +19,7 @@ export function PseudoStatesDoc(props) {
                 </p>
             </DocSectionText>
             <div className="card">
-                <div className="flex flex-wrap align-items-center justify-content-center card-container">
+                <div className="flex flex-wrap align-items-center justify-content-center">
                     <div className="surface-overlay border-round border-1 p-3 m-3 w-16rem min-h-full">
                         <a href="#" className="no-underline hover:underline">
                             Link with no underline

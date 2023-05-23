@@ -2,112 +2,57 @@ import { DocSectionCode } from '../common/docsectioncode';
 import { DocSectionText } from '../common/docsectiontext';
 
 export function ExamplesDoc(props) {
-    const code = {
-        basic: `<div>
-    <div class="flex">
-        <p class="text-left font-bold text-blue-500">text-xs</p>
-        <p class="text-xs">Lorem ipsum dolor sit amet</p>
+    const code = `<div class="flex flex-wrap align-items-center justify-content-center">
+    <div class="flex align-items-center border-bottom-1 surface-border surface-overlay w-full">
+        <p class="w-2 text-left font-bold text-blue-500 mr-3">text-xs</p>
+        <p class="text-xs w-10">Lorem ipsum dolor sit amet</p>
     </div>
-    <div class="flex">
-        <p class="text-left font-bold text-blue-500">text-sm</p>
-        <p class="text-sm">Lorem ipsum dolor sit amet</p>
+    <div class="flex align-items-center border-bottom-1 surface-border surface-overlay w-full">
+        <p class="w-2 text-left font-bold text-blue-500 mr-3">text-sm</p>
+        <p class="text-sm w-10">Lorem ipsum dolor sit amet</p>
     </div>
-    <div class="flex">
-        <p class="text-left font-bold text-blue-500">text-base</p>
-        <p class="text-base">Lorem ipsum dolor sit amet</p>
+    <div class="flex align-items-center border-bottom-1 surface-border surface-overlay w-full">
+        <p class="w-2 text-left font-bold text-blue-500 mr-3">text-base</p>
+        <p class="text-base w-10">Lorem ipsum dolor sit amet</p>
     </div>
-    <div class="flex">
-        <p class="text-left font-bold text-blue-500">text-lg</p>
-        <p class="text-lg">Lorem ipsum dolor sit amet</p>
+    <div class="flex align-items-center border-bottom-1 surface-border surface-overlay w-full">
+        <p class="w-2 text-left font-bold text-blue-500 mr-3">text-lg</p>
+        <p class="text-lg w-10">Lorem ipsum dolor sit amet</p>
     </div>
-    <div class="flex">
-        <p class="text-left font-bold text-blue-500">text-xl</p>
-        <p class="text-xl">Lorem ipsum dolor sit amet</p>
+    <div class="flex align-items-center border-bottom-1 surface-border surface-overlay w-full">
+        <p class="w-2 text-left font-bold text-blue-500 mr-3">text-xl</p>
+        <p class="text-xl w-10">Lorem ipsum dolor sit amet</p>
     </div>
-    <div class="flex">
-        <p class="text-left font-bold text-blue-500">text-2xl</p>
-        <p class="text-2xl">Lorem ipsum dolor sit amet</p>
+    <div class="flex align-items-center border-bottom-1 surface-border surface-overlay w-full">
+        <p class="w-2 text-left font-bold text-blue-500 mr-3">text-2xl</p>
+        <p class="text-2xl w-10">Lorem ipsum dolor sit amet</p>
     </div>
-    <div class="flex">
-        <p class="text-left font-bold text-blue-500">text-3xl</p>
-        <p class="text-3xl">Lorem ipsum dolor sit amet</p>
+    <div class="flex align-items-center border-bottom-1 surface-border surface-overlay w-full">
+        <p class="w-2 text-left font-bold text-blue-500 mr-3">text-3xl</p>
+        <p class="text-3xl w-10">Lorem ipsum dolor sit amet</p>
     </div>
-    <div class="flex">
-        <p class="text-left font-bold text-blue-500">text-4xl</p>
-        <p class="text-4xl">Lorem ipsum dolor sit amet</p>
+    <div class="flex align-items-center border-bottom-1 surface-border surface-overlay w-full">
+        <p class="w-2 text-left font-bold text-blue-500 mr-3">text-4xl</p>
+        <p class="text-4xl w-10">Lorem ipsum dolor sit amet</p>
     </div>
-    <div class="flex">
-        <p class="text-left font-bold text-blue-500">text-5xl</p>
-        <p class="text-5xl">Lorem ipsum dolor sit amet</p>
+    <div class="flex align-items-center border-bottom-1 surface-border surface-overlay w-full">
+        <p class="w-2 text-left font-bold text-blue-500 mr-3">text-5xl</p>
+        <p class="text-5xl w-10">Lorem ipsum dolor sit amet</p>
     </div>
-    <div class="flex">
-        <p class="text-left font-bold text-blue-500">text-6xl</p>
-        <p class="text-6xl">Lorem ipsum dolor sit amet</p>
+    <div class="flex align-items-center border-bottom-1 surface-border surface-overlay w-full">
+        <p class="w-2 text-left font-bold text-blue-500 mr-3">text-6xl</p>
+        <p class="text-6xl w-10">Lorem ipsum dolor sit amet</p>
     </div>
-    <div class="flex">
-        <p class="text-left font-bold text-blue-500">text-7xl</p>
-        <p class="text-7xl">Lorem ipsum dolor sit amet</p>
+    <div class="flex align-items-center border-bottom-1 surface-border surface-overlay w-full">
+        <p class="w-2 text-left font-bold text-blue-500 mr-3">text-7xl</p>
+        <p class="text-7xl w-10">Lorem ipsum dolor sit amet</p>
     </div>
-    <div class="flex">
-        <p class="text-left font-bold text-blue-500">text-8xl</p>
-        <p class="text-8xl">Lorem ipsum dolor sit amet</p>
-    </div>
-</div>
-    `,
-        expanded: `<div class="card">
-    <div class="flex flex-wrap align-items-center justify-content-center">
-        <div class="flex align-items-center border-bottom-1 surface-border surface-overlay w-full">
-            <p class="w-2 text-left font-bold text-blue-500 mr-3">text-xs</p>
-            <p class="text-xs w-10">Lorem ipsum dolor sit amet</p>
-        </div>
-        <div class="flex align-items-center border-bottom-1 surface-border surface-overlay w-full">
-            <p class="w-2 text-left font-bold text-blue-500 mr-3">text-sm</p>
-            <p class="text-sm w-10">Lorem ipsum dolor sit amet</p>
-        </div>
-        <div class="flex align-items-center border-bottom-1 surface-border surface-overlay w-full">
-            <p class="w-2 text-left font-bold text-blue-500 mr-3">text-base</p>
-            <p class="text-base w-10">Lorem ipsum dolor sit amet</p>
-        </div>
-        <div class="flex align-items-center border-bottom-1 surface-border surface-overlay w-full">
-            <p class="w-2 text-left font-bold text-blue-500 mr-3">text-lg</p>
-            <p class="text-lg w-10">Lorem ipsum dolor sit amet</p>
-        </div>
-        <div class="flex align-items-center border-bottom-1 surface-border surface-overlay w-full">
-            <p class="w-2 text-left font-bold text-blue-500 mr-3">text-xl</p>
-            <p class="text-xl w-10">Lorem ipsum dolor sit amet</p>
-        </div>
-        <div class="flex align-items-center border-bottom-1 surface-border surface-overlay w-full">
-            <p class="w-2 text-left font-bold text-blue-500 mr-3">text-2xl</p>
-            <p class="text-2xl w-10">Lorem ipsum dolor sit amet</p>
-        </div>
-        <div class="flex align-items-center border-bottom-1 surface-border surface-overlay w-full">
-            <p class="w-2 text-left font-bold text-blue-500 mr-3">text-3xl</p>
-            <p class="text-3xl w-10">Lorem ipsum dolor sit amet</p>
-        </div>
-        <div class="flex align-items-center border-bottom-1 surface-border surface-overlay w-full">
-            <p class="w-2 text-left font-bold text-blue-500 mr-3">text-4xl</p>
-            <p class="text-4xl w-10">Lorem ipsum dolor sit amet</p>
-        </div>
-        <div class="flex align-items-center border-bottom-1 surface-border surface-overlay w-full">
-            <p class="w-2 text-left font-bold text-blue-500 mr-3">text-5xl</p>
-            <p class="text-5xl w-10">Lorem ipsum dolor sit amet</p>
-        </div>
-        <div class="flex align-items-center border-bottom-1 surface-border surface-overlay w-full">
-            <p class="w-2 text-left font-bold text-blue-500 mr-3">text-6xl</p>
-            <p class="text-6xl w-10">Lorem ipsum dolor sit amet</p>
-        </div>
-        <div class="flex align-items-center border-bottom-1 surface-border surface-overlay w-full">
-            <p class="w-2 text-left font-bold text-blue-500 mr-3">text-7xl</p>
-            <p class="text-7xl w-10">Lorem ipsum dolor sit amet</p>
-        </div>
-        <div class="flex align-items-center border-bottom-1 surface-border surface-overlay w-full">
-            <p class="w-2 text-left font-bold text-blue-500 mr-3">text-8xl</p>
-            <p class="text-8xl w-10">Lorem ipsum dolor sit amet</p>
-        </div>
+    <div class="flex align-items-center border-bottom-1 surface-border surface-overlay w-full">
+        <p class="w-2 text-left font-bold text-blue-500 mr-3">text-8xl</p>
+        <p class="text-8xl w-10">Lorem ipsum dolor sit amet</p>
     </div>
 </div>
-`
-    };
+`;
 
     return (
         <>

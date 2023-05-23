@@ -2,22 +2,12 @@ import { DocSectionCode } from '../common/docsectioncode';
 import { DocSectionText } from '../common/docsectiontext';
 
 export function ResponsiveDoc(props) {
-    const code = {
-        basic: `<div class="flex flex-wrap align-items-stretch">
-    <div class="md:align-self-auto align-self-center">1</div>
-    <div class="md:align-self-auto align-self-center">2</div>
-    <div class="md:align-self-auto align-self-center">3</div>
+    const code = `<div class="flex align-items-stretch flex-wrap" style="min-height: 200px">
+    <div class="md:align-self-auto align-self-center flex align-items-center justify-content-center bg-cyan-500 font-bold text-white border-round m-2" style="min-width: 200px; min-height: 50px">1</div>
+    <div class="md:align-self-auto align-self-center flex align-items-center justify-content-center bg-cyan-500 font-bold text-white border-round m-2" style="min-width: 200px; min-height: 50px">2</div>
+    <div class="md:align-self-auto align-self-center flex align-items-center justify-content-center bg-cyan-500 font-bold text-white border-round m-2" style="min-width: 200px; min-height: 50px">3</div>
 </div>
-    `,
-        expanded: `<div class="card">
-    <div class="flex align-items-stretch flex-wrap card-container cyan-container" style="min-height: 200px">
-        <div class="md:align-self-auto align-self-center flex align-items-center justify-content-center bg-cyan-500 font-bold text-white border-round m-2" style="min-width: 200px; min-height: 50px">1</div>
-        <div class="md:align-self-auto align-self-center flex align-items-center justify-content-center bg-cyan-500 font-bold text-white border-round m-2" style="min-width: 200px; min-height: 50px">2</div>
-        <div class="md:align-self-auto align-self-center flex align-items-center justify-content-center bg-cyan-500 font-bold text-white border-round m-2" style="min-width: 200px; min-height: 50px">3</div>
-    </div>
-</div>
-`
-    };
+`;
 
     return (
         <>
@@ -55,7 +45,7 @@ export function ResponsiveDoc(props) {
                 </div>
             </DocSectionText>
             <div className="card">
-                <div className="flex md:align-items-stretch align-items-stretch flex-wrap card-container cyan-container" style={{ minHeight: '200px' }}>
+                <div className="flex md:align-items-stretch align-items-stretch flex-wrap" style={{ minHeight: '200px' }}>
                     <div className="md:align-self-auto align-self-center flex align-items-center justify-content-center bg-cyan-500 font-bold text-white border-round m-2" style={{ minWidth: '200px', minHeight: '50px' }}>
                         1
                     </div>

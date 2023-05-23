@@ -1,4 +1,3 @@
-import { DocSectionCode } from '../common/docsectioncode';
 import { DocSectionText } from '../common/docsectiontext';
 
 export function TextDoc(props) {

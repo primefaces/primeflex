@@ -61,10 +61,10 @@ const HeroSection = ({ dark }) => {
 
     return (
         <section className="landing-hero-section relative">
-            <span className="ellipse-1"></span>
-            <span className="ellipse-2"></span>
-            <span className="ellipse-3"></span>
-            <span className="ellipse-4"></span>
+            <span className="hero-bg-light-1"></span>
+            <span className="hero-bg-light-2"></span>
+            <span className="hero-bg-light-3"></span>
+            <span className="hero-bg-light-4"></span>
             {dark && (
                 <video
                     autoPlay
@@ -110,8 +110,8 @@ const HeroSection = ({ dark }) => {
                         <span className="updates-text">See New Update Notes</span>
                     </Link> */}
 
-                    <h1 className="landing-hero-title font-bold m-0 mt-5 text-7xl lg:text-8xl">Perfect CSS Utility Companion</h1>
-                    <h3 className="landing-hero-subtitle m-0 text-xl font-normal text-center">PrimeFlex is a lightweight responsive CSS utility library to accompany Prime UI libraries and static webpages as well.</h3>
+                    <h1 className="landing-title font-bold m-0 mt-5 text-7xl lg:text-8xl">Perfect CSS Utility Companion</h1>
+                    <h3 className="landing-subtitle m-0 text-xl font-normal text-center">PrimeFlex is a lightweight responsive CSS utility library to accompany Prime UI libraries and static webpages as well.</h3>
                 </div>
                 <div className="landing-hero-getstarted flex flex-column md:flex-row align-items-center justify-content-center">
                     <Link href="/installation" className="linkbox-button active fadeinleft animation-duration-2000 animation-ease-out">

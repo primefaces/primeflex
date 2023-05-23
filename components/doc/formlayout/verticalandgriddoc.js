@@ -2,34 +2,17 @@ import { DocSectionCode } from '../common/docsectioncode';
 import { DocSectionText } from '../common/docsectiontext';
 
 export function VerticalAndGridDoc(props) {
-    const code = {
-        basic: `<div>
-    <div class="formgrid grid">
-        <div class="field col">
-            <label for="firstname2">Firstname</label>
-            <input id="firstname2" type="text">
-        </div>
-        <div class="field col">
-            <label for="lastname2">Lastname</label>
-            <input id="lastname2" type="text">
-        </div>
+    const code = `<div class="formgrid grid">
+    <div class="field col">
+        <label for="firstname2">Firstname</label>
+        <input id="firstname2" type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+    </div>
+    <div class="field col">
+        <label for="lastname2">Lastname</label>
+        <input id="lastname2" type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
     </div>
 </div>
-    `,
-        expanded: `<div class="card">
-    <div class="formgrid grid">
-        <div class="field col">
-            <label for="firstname2">Firstname</label>
-            <input id="firstname2" type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
-        </div>
-        <div class="field col">
-            <label for="lastname2">Lastname</label>
-            <input id="lastname2" type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
-        </div>
-    </div>
-</div>
-`
-    };
+`;
 
     return (
         <>

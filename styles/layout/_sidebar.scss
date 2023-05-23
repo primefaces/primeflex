@@ -3,21 +3,20 @@
     left: 0;
     top: 0;
     height: 100%;
-    width: 250px;
+    width: 300px;
     user-select: none;
     transition: transform 0.4s cubic-bezier(0.05, 0.74, 0.2, 0.99);
     display: flex;
     flex-direction: column;
     padding: 1rem 0;
-    border-right: 1px solid var(--surface-border);
 
     .logo {
         display: flex;
         justify-content: center;
-        padding: 0 1rem;
+        padding: 0 2rem;
 
         img {
-            width: 100%;
+            height: 3rem;
         }
     }
 
@@ -48,6 +47,7 @@
                 font-weight: 600;
                 transition: box-shadow 0.2s;
                 border-radius: var(--border-radius);
+                font-size: 1rem;
 
                 &:hover {
                     background-color: var(--surface-hover);

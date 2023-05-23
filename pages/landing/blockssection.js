@@ -62,11 +62,11 @@ const BlocksSection = ({ dark }) => {
     const row5 = getRow5();
 
     return (
-        <section className="landing-blocks-section relative">
+        <section className="landing-blocks-section relative landing-section-border">
             <div className="landing-blocks-container mt-3">
                 <div className="landing-blocks-content text-center flex flex-column gap-5 flex-shrink-0 justify-content-center align-items-center mb-5">
-                    <h1 className="landing-blocks-title font-bold m-0 text-7xl">Made with PrimeFlex</h1>
-                    <h3 className="landing-blocks-subtitle m-0 text-2xl font-normal text-center">
+                    <h1 className="landing-title font-bold m-0 text-7xl">Made with PrimeFlex</h1>
+                    <h3 className="landing-subtitle m-0 text-2xl font-normal text-center">
                         Leverage PrimeBlocks, the building blocks crafted with PrimeFlex. Streamline your project and concentrate on core functionalities, leaving the aesthetics to us.
                     </h3>
 

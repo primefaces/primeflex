@@ -2,20 +2,12 @@ import { DocSectionCode } from '../common/docsectioncode';
 import { DocSectionText } from '../common/docsectiontext';
 
 export function ResponsiveDoc(props) {
-    const code = {
-        basic: `<div>
-    <img src="/images/product-placeholder-yellow.svg" class="-translate-x-100 md:translate-x-100" alt="primeflex">
-</div>
-    `,
-        expanded: `<div class="card">
-    <div class="flex align-items-center justify-content-center card-container yellow-container">
-        <div class="h-6rem w-6rem bg-yellow-500 border-round-left">
-            <img src="/images/product-placeholder-yellow.svg" class="-translate-x-100 md:translate-x-100 w-6rem h-6rem" alt="primeflex">
-        </div>
+    const code = `<div class="flex align-items-center justify-content-center">
+    <div class="h-6rem w-6rem bg-yellow-500 border-round-left">
+        <img src="/images/product-placeholder-yellow.svg" class="-translate-x-100 md:translate-x-100 w-6rem h-6rem" alt="primeflex">
     </div>
 </div>
-`
-    };
+`;
 
     return (
         <>
@@ -53,7 +45,7 @@ export function ResponsiveDoc(props) {
                 </div>
             </DocSectionText>
             <div className="card">
-                <div className="flex align-items-center justify-content-center card-container yellow-container">
+                <div className="flex align-items-center justify-content-center">
                     <div className="h-6rem w-6rem bg-yellow-500 border-round-left">
                         <img src="/images/product-placeholder-yellow.svg" className="-translate-x-100 md:translate-x-100 w-6rem h-6rem" alt="primeflex"></img>
                     </div>

@@ -2,16 +2,10 @@ import { DocSectionCode } from '../common/docsectioncode';
 import { DocSectionText } from '../common/docsectiontext';
 
 export function ResponsiveDoc(props) {
-    const code = {
-        basic: `<div class="shadow-8 md:shadow-2">shadow-8 on small screen</div>
-    `,
-        expanded: `<div class="card">
-        <div class="flex flex-wrap align-items-center justify-content-center card-container">
-            <div class="shadow-8 md:shadow-2 text-center border-round-sm h-6rem surface-overlay p-3 m-3 flex align-items-center justify-content-center font-bold">shadow-8 on small screen</div>
-        </div>
-    </div>
-`
-    };
+    const code = `<div class="flex flex-wrap align-items-center justify-content-center">
+    <div class="shadow-8 md:shadow-2 text-center border-round-sm h-6rem surface-overlay p-3 m-3 flex align-items-center justify-content-center font-bold">shadow-8 on small screen</div>
+</div>
+`;
 
     return (
         <>
@@ -49,7 +43,7 @@ export function ResponsiveDoc(props) {
                 </div>
             </DocSectionText>
             <div className="card">
-                <div className="flex flex-wrap align-items-center justify-content-center card-container">
+                <div className="flex flex-wrap align-items-center justify-content-center">
                     <div className="shadow-8 md:shadow-2 text-center border-round-sm h-6rem surface-overlay p-3 m-3 flex align-items-center justify-content-center font-bold">shadow-8 on small screen</div>
                 </div>
             </div>

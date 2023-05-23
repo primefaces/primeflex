@@ -2,34 +2,18 @@ import { DocSectionCode } from '../common/docsectioncode';
 import { DocSectionText } from '../common/docsectiontext';
 
 export function GettingStartedDoc(props) {
-    const code = {
-        basic: `<div class="grid">
+    const code = `<div class="grid">
     <div class="col">
-        <div>1</div>
+        <div class="text-center p-3 border-round-sm bg-blue-500 font-bold text-white">1</div>
     </div>
     <div class="col">
-        <div>2</div>
+        <div class="text-center p-3 border-round-sm bg-blue-500 font-bold text-white">2</div>
     </div>
     <div class="col">
-        <div>3</div>
+        <div class="text-center p-3 border-round-sm bg-blue-500 font-bold text-white">3</div>
     </div>
 </div>
-    `,
-        expanded: `<div class="card">
-    <div class="grid">
-        <div class="col">
-            <div class="text-center p-3 border-round-sm bg-blue-500 font-bold text-white">1</div>
-        </div>
-        <div class="col">
-            <div class="text-center p-3 border-round-sm bg-blue-500 font-bold text-white">2</div>
-        </div>
-        <div class="col">
-            <div class="text-center p-3 border-round-sm bg-blue-500 font-bold text-white">3</div>
-        </div>
-    </div>
-</div>
-`
-    };
+`;
 
     return (
         <>

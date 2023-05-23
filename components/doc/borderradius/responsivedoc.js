@@ -2,16 +2,10 @@ import { DocSectionCode } from '../common/docsectioncode';
 import { DocSectionText } from '../common/docsectiontext';
 
 export function ResponsiveDoc(props) {
-    const code = {
-        basic: `<div class="border-noround md:border-circle w-12rem h-6rem">Responsive Radius</div>
-    `,
-        expanded: `<div class="card">
-    <div class="flex flex-wrap justify-content-center card-container purple-container">
-        <div class="border-noround md:border-circle w-12rem h-6rem m-2 bg-purple-500 text-white font-bold flex align-items-center justify-content-center">Responsive Radius</div>
-    </div>
+    const code = `<div class="flex flex-wrap justify-content-center">
+    <div class="border-noround md:border-circle w-12rem h-6rem m-2 bg-purple-500 text-white font-bold flex align-items-center justify-content-center">Responsive Radius</div>
 </div>
-`
-    };
+`;
 
     return (
         <>
@@ -49,7 +43,7 @@ export function ResponsiveDoc(props) {
                 </div>
             </DocSectionText>
             <div className="card">
-                <div className="flex flex-wrap justify-content-center card-container purple-container">
+                <div className="flex flex-wrap justify-content-center">
                     <div className="border-noround md:border-circle w-12rem h-6rem m-2 bg-purple-500 text-white font-bold flex align-items-center justify-content-center">Responsive Radius</div>
                 </div>
             </div>

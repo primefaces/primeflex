@@ -2,34 +2,18 @@ import { DocSectionCode } from '../common/docsectioncode';
 import { DocSectionText } from '../common/docsectiontext';
 
 export function NamedThemeColorDoc(props) {
-    const code = {
-        basic: `<div class="flex">
-    <div class="surface-ground hover:surface-500 border-round surface-border border-3 text-surface-100">
+    const code = `<div class="flex flex-wrap md:justify-content-between justify-content-center">
+    <div class="surface-ground hover:surface-500 border-round surface-border border-3 text-surface-100 font-bold m-2 flex align-items-center justify-content-center" style="min-width: 200px; min-height: 100px">
         surface-ground <br/> surface-border
     </div>
-    <div class="surface-section hover:surface-500 border-round text-surface-100">
+    <div class="surface-section hover:surface-500 border-round text-surface-100 font-bold m-2 flex align-items-center justify-content-center" style="min-width: 200px; min-height: 100px">
         surface-section
     </div>
-    <div class="surface-card hover:surface-500 border-round surface-border border-3 text-surface-100">
+    <div class="surface-card hover:surface-500 border-round surface-border border-3 text-surface-100 font-bold m-2 flex align-items-center justify-content-center" style="min-width: 200px; min-height: 100px">
         surface-card
     </div>
 </div>
-    `,
-        expanded: `<div class="card">
-    <div class="flex flex-wrap md:justify-content-between justify-content-center card-container">
-        <div class="surface-ground hover:surface-500 border-round surface-border border-3 text-surface-100 font-bold m-2 flex align-items-center justify-content-center" style="min-width: 200px; min-height: 100px">
-            surface-ground <br/> surface-border
-        </div>
-        <div class="surface-section hover:surface-500 border-round text-surface-100 font-bold m-2 flex align-items-center justify-content-center" style="min-width: 200px; min-height: 100px">
-            surface-section
-        </div>
-        <div class="surface-card hover:surface-500 border-round surface-border border-3 text-surface-100 font-bold m-2 flex align-items-center justify-content-center" style="min-width: 200px; min-height: 100px">
-            surface-card
-        </div>
-    </div>
-</div>
-`
-    };
+`;
 
     return (
         <>
@@ -75,7 +59,7 @@ export function NamedThemeColorDoc(props) {
                 </div>
             </DocSectionText>
             <div className="card">
-                <div className="flex flex-wrap md:justify-content-between justify-content-center card-container">
+                <div className="flex flex-wrap md:justify-content-between justify-content-center">
                     <div className="surface-ground hover:surface-500 border-round surface-border border-3 text-surface-100 font-bold m-2 flex align-items-center justify-content-center" style={{ minWidth: '200px', minHeight: '100px' }}>
                         surface-ground <br /> surface-border
                     </div>

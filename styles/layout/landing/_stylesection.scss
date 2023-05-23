@@ -1,17 +1,5 @@
 .landing-style-section {
     padding: 1rem 0;
-    position: relative;
-    border: none;
-    &::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        height: 2px;
-        width: 100%;
-        background: var(--landing-section-border);
-    }
 
     .landing-style-container {
         min-height: 67rem;
@@ -19,29 +7,12 @@
         margin-left: auto !important;
         margin-right: auto !important;
         .landing-style-content {
-            .landing-style-title {
+            .landing-title {
                 max-width: 68rem;
-                font-size: 6rem;
-                background-image: linear-gradient(112.31deg, #00e08f 19.49%, #00a3ff 98.51%);
-                background-size: auto auto;
-                background-clip: border-box;
-                background-size: 100% auto;
-                background-clip: text;
-                text-fill-color: transparent;
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
             }
 
-            .landing-style-subtitle {
-                line-height: 140%;
-                max-width: 68rem;
+            .landing-subtitle {
                 text-align: center;
-
-                color: var(--landing-text-color);
-            }
-
-            .linkbox-button {
-                background: var(--linkbox-button-bg);
             }
         }
 

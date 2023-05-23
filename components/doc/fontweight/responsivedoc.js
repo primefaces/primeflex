@@ -2,18 +2,12 @@ import { DocSectionCode } from '../common/docsectioncode';
 import { DocSectionText } from '../common/docsectiontext';
 
 export function ResponsiveDoc(props) {
-    const code = {
-        basic: `<p class="font-bold md:font-light">Responsive Font Weight</p>
-    `,
-        expanded: `<div class="card">
-    <div class="flex flex-wrap align-items-center justify-content-center card-container">
-        <div class="surface-overlay border-round border-1 w-16rem min-h-full p-3 m-3 flex align-items-center justify-content-center">
-            <p class="font-bold md:font-light">Responsive Font Weight</p>
-        </div>
+    const code = `<div class="flex flex-wrap align-items-center justify-content-center">
+    <div class="surface-overlay border-round border-1 w-16rem min-h-full p-3 m-3 flex align-items-center justify-content-center">
+        <p class="font-bold md:font-light">Responsive Font Weight</p>
     </div>
 </div>
-`
-    };
+`;
 
     return (
         <>
@@ -51,7 +45,7 @@ export function ResponsiveDoc(props) {
                 </div>
             </DocSectionText>
             <div className="card">
-                <div className="flex flex-wrap align-items-center justify-content-center card-container">
+                <div className="flex flex-wrap align-items-center justify-content-center">
                     <div className="surface-overlay border-round border-1 w-16rem min-h-full p-3 m-3 flex align-items-center justify-content-center">
                         <p className="font-bold md:font-light">Responsive Font Weight</p>
                     </div>

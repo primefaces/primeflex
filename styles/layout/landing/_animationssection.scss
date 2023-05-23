@@ -1,43 +1,12 @@
 .landing-animations-section {
     padding: 1rem 0;
-    position: relative;
-    border: none;
-    &::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        height: 2px;
-        width: 100%;
-        background: var(--landing-section-border);
-    }
 
     .landing-animations-container {
         .landing-animations-content {
             margin-top: -7rem;
             background: var(--animations-text-backdrop);
-            .landing-animations-title {
+            .landing-title {
                 max-width: 68rem;
-                font-size: 6rem;
-                background-image: linear-gradient(112.31deg, #00e08f 19.49%, #00a3ff 98.51%);
-                background-size: auto auto;
-                background-clip: border-box;
-                background-size: 100% auto;
-                background-clip: text;
-                text-fill-color: transparent;
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-            }
-
-            .landing-animations-subtitle {
-                line-height: 140%;
-                max-width: 68rem;
-                color: var(--landing-text-color);
-            }
-
-            .linkbox-button {
-                background: var(--linkbox-button-bg);
             }
         }
         .bg-animations-wrapper {

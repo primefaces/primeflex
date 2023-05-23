@@ -2,40 +2,21 @@ import { DocSectionCode } from '../common/docsectioncode';
 import { DocSectionText } from '../common/docsectiontext';
 
 export function OffsetDoc(props) {
-    const code = {
-        basic: `<div class="grid">
+    const code = `<div class="grid">
     <div class="col-6 col-offset-3">
-        <div>6</div>
+        <div class="text-center p-3 border-round-sm bg-indigo-500 font-bold text-white">6</div>
     </div>
 </div>
 
 <div class="grid">
     <div class="col-4">
-        <div>4</div>
+        <div class="text-center p-3 border-round-sm bg-indigo-500 font-bold text-white">4</div>
     </div>
     <div class="col-4 col-offset-4">
-        <div>4</div>
+        <div class="text-center p-3 border-round-sm bg-indigo-500 font-bold text-white">4</div>
     </div>
 </div>
-    `,
-        expanded: `<div class="card">
-    <div class="grid">
-        <div class="col-6 col-offset-3">
-            <div class="text-center p-3 border-round-sm bg-indigo-500 font-bold text-white">6</div>
-        </div>
-    </div>
-
-    <div class="grid">
-        <div class="col-4">
-            <div class="text-center p-3 border-round-sm bg-indigo-500 font-bold text-white">4</div>
-        </div>
-        <div class="col-4 col-offset-4">
-            <div class="text-center p-3 border-round-sm bg-indigo-500 font-bold text-white">4</div>
-        </div>
-    </div>
-</div>
-`
-    };
+`;
 
     return (
         <>

@@ -2,16 +2,10 @@ import { DocSectionCode } from '../common/docsectioncode';
 import { DocSectionText } from '../common/docsectiontext';
 
 export function ResponsiveDoc(props) {
-    const code = {
-        basic: ` <div class="border-dashed md:border-solid border-yellow-500">Responsive Border Style</div>
-    `,
-        expanded: `<div class="card">
-    <div class="flex flex-wrap justify-content-center card-container yellow-container">
-        <div class="border-dashed md:border-solid border-yellow-500 w-15rem h-6rem m-2 surface-overlay font-bold flex align-items-center justify-content-center">Responsive Border Style</div>
-    </div>
+    const code = `<div class="flex flex-wrap justify-content-center">
+    <div class="border-dashed md:border-solid border-yellow-500 w-15rem h-6rem m-2 surface-overlay font-bold flex align-items-center justify-content-center">Responsive Border Style</div>
 </div>
-`
-    };
+`;
 
     return (
         <>
@@ -49,7 +43,7 @@ export function ResponsiveDoc(props) {
                 </div>
             </DocSectionText>
             <div className="card">
-                <div className="flex flex-wrap justify-content-center card-container yellow-container">
+                <div className="flex flex-wrap justify-content-center">
                     <div className="border-dashed md:border-solid border-yellow-500 w-15rem h-6rem m-2 surface-overlay font-bold flex align-items-center justify-content-center">Responsive Border Style</div>
                 </div>
             </div>

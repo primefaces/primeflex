@@ -2,36 +2,19 @@ import { DocSectionCode } from '../common/docsectioncode';
 import { DocSectionText } from '../common/docsectiontext';
 
 export function HorizontalAndFixedWidthDoc(props) {
-    const code = {
-        basic: `<div class="field grid">
+    const code = `<div class="field grid">
     <label for="firstname3" class="col-fixed" style="width:100px">Firstname</label>
     <div class="col">
-        <input id="firstname3" type="text">
+        <input id="firstname3" type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary">
     </div>
 </div>
 <div class="field grid">
     <label for="lastname3" class="col-fixed" style="width:100px">Lastname</label>
     <div class="col">
-        <input id="lastname3" type="text">
+        <input id="lastname3" type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary">
     </div>
 </div>
-    `,
-        expanded: `<div class="card">
-    <div class="field grid">
-        <label for="firstname3" class="col-fixed" style="width:100px">Firstname</label>
-        <div class="col">
-            <input id="firstname3" type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary">
-        </div>
-    </div>
-    <div class="field grid">
-        <label for="lastname3" class="col-fixed" style="width:100px">Lastname</label>
-        <div class="col">
-            <input id="lastname3" type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary">
-        </div>
-    </div>
-</div>
-`
-    };
+`;
 
     return (
         <>

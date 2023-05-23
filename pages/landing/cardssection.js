@@ -136,14 +136,14 @@ const CardsSection = () => {
     }, [weight, size]);
 
     return (
-        <section className="landing-cards-section relative">
+        <section className="landing-cards-section relative landing-section-border">
             <div className="landing-cards-container py-8 px-5 relative z-5 flex flex-column gap-5 flex-shrink-0 justify-content-center align-items-center">
                 <div className="landing-cards-content text-center flex flex-column justify-content-center align-items-center gap-5">
-                    <h1 className="landing-cards-title font-bold m-0 text-6xl md:text-7xl">Consistency Flexible</h1>
-                    <h3 className="landing-cards-subtitle m-0 text-xl md:text-2xl font-normal text-center">
+                    <h1 className="landing-title font-bold m-0 text-6xl md:text-7xl">Consistency Flexible</h1>
+                    <h3 className="landing-subtitle m-0 text-xl md:text-2xl font-normal text-center">
                         Unlock consistency and flexibility in your designs with our collection of pre-built components and utility classes, designed to work seamlessly across all screen sizes.
                     </h3>
-                    <Link href="/installation" className="linkbox-button active fadeinleft animation-duration-2000 animation-ease-out mx-auto text-700" style={{ width: '104px' }}>
+                    <Link href="/installation" className="linkbox-button active fadeinleft animation-duration-2000 animation-ease-out mx-auto text-700">
                         Learn More
                     </Link>
                 </div>

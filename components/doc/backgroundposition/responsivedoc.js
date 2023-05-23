@@ -2,18 +2,10 @@ import { DocSectionCode } from '../common/docsectioncode';
 import { DocSectionText } from '../common/docsectiontext';
 
 export function ResponsiveDoc(props) {
-    const code = {
-        basic: `<div>
-    <div class="bg-top md:bg-bottom bg-no-repeat" style="background-image: url('images/product-placeholder-yellow.svg');background-size: 5rem"></div>
+    const code = `<div class="overflow-hidden flex align-items-center justify-content-center">
+    <div class="bg-top md:bg-bottom bg-no-repeat w-10rem h-10rem bg-yellow-500 border-round m-3" style="background-image: url('images/product-placeholder-yellow.svg');background-size: 5rem"></div>
 </div>
-    `,
-        expanded: `<div class="card">
-    <div class="card-container yellow-container overflow-hidden flex align-items-center justify-content-center">
-        <div class="bg-top md:bg-bottom bg-no-repeat w-10rem h-10rem bg-yellow-500 border-round m-3" style="background-image: url('images/product-placeholder-yellow.svg');background-size: 5rem"></div>
-    </div>
-</div>
-`
-    };
+`;
 
     return (
         <>
@@ -51,7 +43,7 @@ export function ResponsiveDoc(props) {
                 </div>
             </DocSectionText>
             <div className="card">
-                <div className="card-container yellow-container overflow-hidden flex align-items-center justify-content-center">
+                <div className="overflow-hidden flex align-items-center justify-content-center">
                     <div className="bg-top md:bg-bottom bg-no-repeat w-10rem h-10rem bg-yellow-500 border-round m-3" style={{ backgroundImage: "url('/images/product-placeholder-yellow.svg')", backgroundSize: '5rem' }}></div>
                 </div>
             </div>

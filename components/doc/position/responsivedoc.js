@@ -2,28 +2,15 @@ import { DocSectionCode } from '../common/docsectioncode';
 import { DocSectionText } from '../common/docsectiontext';
 
 export function ResponsiveDoc(props) {
-    const code = {
-        basic: `<div class="relative">
-    <div class="static" style="min-width: 300px; min-height: 200px;">
-        <p>Static</p>
-        <div class="static md:absolute bottom-0 left-0" style="min-width: 120px; min-height: 70px">
+    const code = `<div class="relative md:p-5">
+    <div class="static bg-orange-100 font-bold text-gray-900 border-round p-4" style="min-width: 300px; min-height: 200px;">
+        <p class="mt-0">Static</p>
+        <div class="static md:absolute bottom-0 left-0 bg-orange-500 border-round font-bold text-white p-4" style="min-width: 120px; min-height: 70px">
             Absolute on medium screens / Static on small screens
         </div>
     </div>
 </div>
-    `,
-        expanded: `<div class="card">
-    <div class="relative card-container orange-container md:p-5">
-        <div class="static bg-orange-100 font-bold text-gray-900 border-round p-4" style="min-width: 300px; min-height: 200px;">
-            <p class="mt-0">Static</p>
-            <div class="static md:absolute bottom-0 left-0 bg-orange-500 border-round font-bold text-white p-4" style="min-width: 120px; min-height: 70px">
-                Absolute on medium screens / Static on small screens
-            </div>
-        </div>
-    </div>
-</div>
-`
-    };
+`;
 
     return (
         <>
@@ -61,7 +48,7 @@ export function ResponsiveDoc(props) {
                 </div>
             </DocSectionText>
             <div className="card">
-                <div className="relative card-container orange-container md:p-5">
+                <div className="relative md:p-5">
                     <div className="static bg-orange-100 font-bold text-gray-900 border-round p-4" style={{ minWidth: '300px', minHeight: '200px' }}>
                         <p className="mt-0">Static</p>
                         <div className="static md:absolute bottom-0 left-0 bg-orange-500 border-round font-bold text-white p-4" style={{ minWidth: '120px', minHeight: '70px' }}>

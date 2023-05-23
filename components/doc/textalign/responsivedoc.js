@@ -2,25 +2,15 @@ import { DocSectionCode } from '../common/docsectioncode';
 import { DocSectionText } from '../common/docsectiontext';
 
 export function ResponsiveDoc(props) {
-    const code = {
-        basic: `<div>
-    <p class="text-left md:text-center">
-        Lorem ipsum dolor sit amet...
-    </p>
-</div>
-    `,
-        expanded: `<div class="card">
-    <div class="flex flex-wrap align-items-center justify-content-center card-container">
-        <div class="surface-overlay border-round border-1 w-16rem min-h-full shadow-1 p-5 py-0 m-3">
-            <p class="text-left md:text-center">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et netus. Vitae proin sagittis nisl
-                rhoncus mattis. Maecenas pharetra convallis posuere morbi leo urna molestie.{' '}
-            </p>
-        </div>
+    const code = `<div class="flex flex-wrap align-items-center justify-content-center">
+    <div class="surface-overlay border-round border-1 w-16rem min-h-full shadow-1 p-5 py-0 m-3">
+        <p class="text-left md:text-center">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et netus. Vitae proin sagittis nisl
+            rhoncus mattis. Maecenas pharetra convallis posuere morbi leo urna molestie.{' '}
+        </p>
     </div>
 </div>
-`
-    };
+`;
 
     return (
         <>
@@ -58,7 +48,7 @@ export function ResponsiveDoc(props) {
                 </div>
             </DocSectionText>
             <div className="card">
-                <div className="flex flex-wrap align-items-center justify-content-center card-container">
+                <div className="flex flex-wrap align-items-center justify-content-center">
                     <div className="surface-overlay border-round border-1 w-16rem min-h-full shadow-1 p-5 py-0 m-3">
                         <p className="text-left md:text-center">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae sapien pellentesque habitant morbi tristique senectus et netus. Vitae proin sagittis nisl

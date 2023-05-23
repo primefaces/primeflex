@@ -90,13 +90,13 @@ const ResponsiveSection = ({ dark }) => {
     }, [dark]);
 
     return (
-        <section className="landing-responsive-section relative">
+        <section className="landing-responsive-section relative landing-section-border">
             <div className="landing-responsive-container pt-7 pb-8 px-5 relative z-5">
                 <div className="landing-responsive-content text-center flex flex-column gap-5 flex-shrink-0 justify-content-center align-items-center mb-5">
-                    <h1 className="landing-responsive-title font-bold m-0 text-6xl md:text-7xl">
+                    <h1 className="landing-title font-bold m-0 text-6xl md:text-7xl">
                         Adaptive <br></br>for Every Screen
                     </h1>
-                    <h3 className="landing-responsive-subtitle m-0 text-xl md:text-2xl font-normal text-center">
+                    <h3 className="landing-subtitle m-0 text-xl md:text-2xl font-normal text-center">
                         PrimeFlex guarantees optimal adaptability. Enjoy seamless display and functionality on every screen size, ensuring universal access to your projects.
                     </h3>
 

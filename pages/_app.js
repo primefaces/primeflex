@@ -45,8 +45,6 @@ export default function MyApp({ Component }) {
     }, []);
 
     useEffect(() => {
-        document.documentElement.style.fontSize = '14px';
-
         if (typeof window !== 'undefined') {
             const media = window.matchMedia('(prefers-color-scheme: dark)');
 

@@ -2,8 +2,7 @@ import { DocSectionCode } from '../common/docsectioncode';
 import { DocSectionText } from '../common/docsectiontext';
 
 export function ThemesDoc(props) {
-    const code = {
-        basic: `:root {
+    const code = `:root {
     --text-color:#495057;
     --text-color-secondary:#6c757d;
     --primary-color:#2196F3;
@@ -158,8 +157,7 @@ export function ThemesDoc(props) {
     --primary-800:#125386;
     --primary-900:#0d3c61;
 }        
-    `
-    };
+        `;
 
     return (
         <>

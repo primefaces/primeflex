@@ -3,17 +3,17 @@
     height: 5rem;
     position: fixed;
     top: 0;
-    left: 250px;
-    width: calc(100% - 250px);
+    left: 300px;
+    width: calc(100% - 300px);
     z-index: 1100;
-    border-bottom: 1px solid var(--surface-border);
-    
+
     .layout-topbar-inner {
         height: 100%;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 0 4rem;
+        padding: 0 1rem;
+        padding-right: 2rem;
     }
 
     &.layout-topbar-sticky {
@@ -23,11 +23,11 @@
 
     .linkbox {
         font-family: var(--font-family);
-        transition: background-color .3s;
+        transition: background-color 0.3s;
         display: inline-flex;
         align-items: center;
         color: var(--home-linkbox-text-color);
-        padding: .5rem 1rem;
+        padding: 0.5rem 1rem;
         border: var(--home-linkbox-border);
         background-color: var(--home-linkbox-bg);
         border-radius: 10px;
@@ -47,7 +47,6 @@
         }
     }
 
-
     .header-button {
         width: 2.5rem;
         height: 2.5rem;
@@ -62,7 +61,7 @@
         border: 1px solid var(--surface-border);
         align-items: center;
         justify-content: center;
-        transition: border-color .3s;
+        transition: border-color 0.3s;
         cursor: pointer;
 
         &:hover {

@@ -2,17 +2,13 @@ import { DocSectionCode } from '../common/docsectioncode';
 import { DocSectionText } from '../common/docsectiontext';
 
 export function ModuleLoaderDoc(props) {
-    const code1 = {
-        basic: `
+    const code1 = `
 npm install primeflex --save
-            `
-    };
+                `;
 
-    const code2 = {
-        basic: `
+    const code2 = `
 /node_modules/primeflex/primeflex.css
-        `
-    };
+            `;
 
     return (
         <>

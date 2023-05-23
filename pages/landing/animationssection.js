@@ -53,7 +53,7 @@ const AnimationsSection = ({ dark }) => {
     };
 
     return (
-        <section ref={sectionRef} className="landing-animations-section relative">
+        <section ref={sectionRef} className="landing-animations-section relative landing-section-border">
             <div className="landing-animations-container  py-8 px-5 relative z-5 flex flex-column gap-5 flex-shrink-0 justify-content-center align-items-center ">
                 {dark && (
                     <video
@@ -61,7 +61,7 @@ const AnimationsSection = ({ dark }) => {
                         loop
                         muted
                         playsInline
-                        className="your-custom-class md:w-7 w-full md:mt-0 -mt-6"
+                        className=" md:w-7 w-full md:mt-0 -mt-6"
                         style={{
                             position: 'absolute',
                             left: '50%',
@@ -135,8 +135,8 @@ const AnimationsSection = ({ dark }) => {
                     </div>
                 </div>
                 <div className="landing-animations-content flex flex-column justify-content-center align-items-center text-center z-5 relative gap-5">
-                    <h1 className="landing-animations-title font-bold m-0 text-6xl md:text-7xl">Animation</h1>
-                    <h3 className="landing-animations-subtitle m-0 text-xl md:text-2xl font-normal text-center">
+                    <h1 className="landing-title font-bold m-0 text-6xl md:text-7xl">Animation</h1>
+                    <h3 className="landing-subtitle m-0 text-xl md:text-2xl font-normal text-center">
                         Bring your design to life with PrimeFlex's effortless animation classes. Implement dynamic, engaging visuals with ease, adding an extra layer of interactivity to your creations.
                     </h3>
                     <Link href="/installation" className="linkbox-button active w-9rem fadeinleft animation-duration-2000 animation-ease-out text-700">

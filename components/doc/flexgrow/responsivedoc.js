@@ -2,18 +2,10 @@ import { DocSectionCode } from '../common/docsectioncode';
 import { DocSectionText } from '../common/docsectiontext';
 
 export function ResponsiveDoc(props) {
-    const code = {
-        basic: `<div class="flex">
-    <div class="flex-grow-1 md:flex-grow-0 flex">Grow on small device</div>
+    const code = `<div class="flex overflow-hidden">
+    <div class="flex-grow-1 md:flex-grow-0 flex align-items-center justify-content-center bg-yellow-500 font-bold text-gray-900 m-2 px-5 py-3 border-round">Grow on small device</div>
 </div>
-    `,
-        expanded: `<div class="card">
-    <div class="flex card-container yellow-container overflow-hidden">
-        <div class="flex-grow-1 md:flex-grow-0 flex align-items-center justify-content-center bg-yellow-500 font-bold text-gray-900 m-2 px-5 py-3 border-round">Grow on small device</div>
-    </div>
-</div>
-`
-    };
+`;
 
     return (
         <>
@@ -51,7 +43,7 @@ export function ResponsiveDoc(props) {
                 </div>
             </DocSectionText>
             <div className="card">
-                <div className="flex card-container yellow-container overflow-hidden">
+                <div className="flex overflow-hidden">
                     <div className="flex-grow-1 md:flex-grow-0 flex align-items-center justify-content-center bg-yellow-500 font-bold text-gray-900 m-2 px-5 py-3 border-round">Grow on small device</div>
                 </div>
             </div>

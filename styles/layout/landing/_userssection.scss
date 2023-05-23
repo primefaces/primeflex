@@ -1,16 +1,5 @@
 .landing-users-section {
-    position: relative;
     background-color: var(--landing-body-bg);
-    &::before {
-        content: "";
-        position: absolute;
-        top: -2px;
-        left: 0;
-        right: 0;
-        height: 2px;
-        width: 100%;
-        background: var(--landing-section-border);
-    }
 
     .landing-marquee-container {
         position: relative;

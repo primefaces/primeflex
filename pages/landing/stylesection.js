@@ -310,13 +310,11 @@ const StyleSection = () => {
     }
 
     return (
-        <section className="landing-style-section relative">
+        <section className="landing-style-section relative landing-section-border">
             <div className="landing-style-container pt-7 pb-8 px-5 relative z-5">
                 <div className="landing-style-content text-center flex flex-column gap-5 flex-shrink-0 justify-content-center align-items-center mb-5">
-                    <h1 className="landing-style-title font-bold m-0 text-7xl">Create Your Style</h1>
-                    <h3 className="landing-style-subtitle m-0 text-2xl font-normal text-center">
-                        Craft unique aesthetics with PrimeFlex's classes. Use our flexible toolkit to make your design vision a reality, embodying your brand's distinct style.
-                    </h3>
+                    <h1 className="landing-title font-bold m-0 text-7xl">Create Your Style</h1>
+                    <h3 className="landing-subtitle m-0 text-2xl font-normal text-center">Craft unique aesthetics with PrimeFlex's classes. Use our flexible toolkit to make your design vision a reality, embodying your brand's distinct style.</h3>
 
                     <Link href="/installation" className="linkbox-button active w-9rem fadeinleft animation-duration-2000 animation-ease-out text-700">
                         Learn more

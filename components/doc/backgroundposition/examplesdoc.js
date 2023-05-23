@@ -2,52 +2,30 @@ import { DocSectionCode } from '../common/docsectioncode';
 import { DocSectionText } from '../common/docsectiontext';
 
 export function ExamplesDoc(props) {
-    const code = {
-        basic: `<div>
-    <div class="flex">
-        <div class="bg-left-top bg-no-repeat" style="background-image: url('/images/product-placeholder-blue.svg'); background-size: 5rem;"></div>
-        <div class="bg-top bg-no-repeat" style="background-image: url('/images/product-placeholder-blue.svg'); background-size: 5rem;"></div>
-        <div class="bg-right-top bg-no-repeat" style="background-image: url('/images/product-placeholder-blue.svg'); background-size: 5rem;"></div>
+    const code = `<div class="overflow-hidden">
+    <div class="flex flex-wrap align-items-center justify-content-center">
+        <div class="bg-left-top bg-no-repeat w-10rem h-10rem bg-blue-500 border-round m-3" style="background-image: url('/images/product-placeholder-blue.svg'); background-size: 5rem;"></div>
+        <div class="bg-top bg-no-repeat w-10rem h-10rem bg-blue-500 border-round m-3" style="background-image: url('/images/product-placeholder-blue.svg'); background-size: 5rem;"></div>
+        <div class="bg-right-top bg-no-repeat w-10rem h-10rem bg-blue-500 border-round m-3" style="background-image: url('/images/product-placeholder-blue.svg'); background-size: 5rem;"></div>
     </div>
-    <div class="flex">
-        <div class="bg-left bg-no-repeat" style="background-image: url('/images/product-placeholder-blue.svg'); background-size: 5rem;"></div>
-        <div class="bg-center bg-no-repeat" style="background-image: url('/images/product-placeholder-blue.svg'); background-size: 5rem;"></div>
-        <div class="bg-right bg-no-repeat" style="background-image: url('/images/product-placeholder-blue.svg'); background-size: 5rem;"></div>
+    <div class="flex flex-wrap align-items-center justify-content-center">
+        <div class="bg-left bg-no-repeat w-10rem h-10rem bg-blue-500 border-round m-3" style="background-image: url('/images/product-placeholder-blue.svg'); background-size: 5rem;"></div>
+        <div class="bg-center bg-no-repeat w-10rem h-10rem bg-blue-500 border-round m-3" style="background-image: url('/images/product-placeholder-blue.svg'); background-size: 5rem;"></div>
+        <div class="bg-right bg-no-repeat w-10rem h-10rem bg-blue-500 border-round m-3" style="background-image: url('/images/product-placeholder-blue.svg'); background-size: 5rem;"></div>
     </div>
-    <div class="flex">
-        <div class="bg-bottom bg-no-repeat" style="background-image: url('/images/product-placeholder-blue.svg'); background-size: 5rem;"></div>
-        <div class="bg-left-bottom bg-no-repeat" style="background-image: url('/images/product-placeholder-blue.svg'); background-size: 5rem;"></div>
-        <div class="bg-right-bottom bg-no-repeat" style="background-image: url('/images/product-placeholder-blue.svg'); background-size: 5rem;"></div>
-    </div>
-</div>
-    `,
-        expanded: `<div class="card">
-    <div class="card-container blue-container overflow-hidden">
-        <div class="flex flex-wrap align-items-center justify-content-center">
-            <div class="bg-left-top bg-no-repeat w-10rem h-10rem bg-blue-500 border-round m-3" style="background-image: url('/images/product-placeholder-blue.svg'); background-size: 5rem;"></div>
-            <div class="bg-top bg-no-repeat w-10rem h-10rem bg-blue-500 border-round m-3" style="background-image: url('/images/product-placeholder-blue.svg'); background-size: 5rem;"></div>
-            <div class="bg-right-top bg-no-repeat w-10rem h-10rem bg-blue-500 border-round m-3" style="background-image: url('/images/product-placeholder-blue.svg'); background-size: 5rem;"></div>
-        </div>
-        <div class="flex flex-wrap align-items-center justify-content-center">
-            <div class="bg-left bg-no-repeat w-10rem h-10rem bg-blue-500 border-round m-3" style="background-image: url('/images/product-placeholder-blue.svg'); background-size: 5rem;"></div>
-            <div class="bg-center bg-no-repeat w-10rem h-10rem bg-blue-500 border-round m-3" style="background-image: url('/images/product-placeholder-blue.svg'); background-size: 5rem;"></div>
-            <div class="bg-right bg-no-repeat w-10rem h-10rem bg-blue-500 border-round m-3" style="background-image: url('/images/product-placeholder-blue.svg'); background-size: 5rem;"></div>
-        </div>
-        <div class="flex flex-wrap align-items-center justify-content-center">
-            <div class="bg-bottom bg-no-repeat w-10rem h-10rem bg-blue-500 border-round m-3" style="background-image: url('/images/product-placeholder-blue.svg'); background-size: 5rem;"></div>
-            <div class="bg-left-bottom bg-no-repeat w-10rem h-10rem bg-blue-500 border-round m-3" style="background-image: url('/images/product-placeholder-blue.svg'); background-size: 5rem;"></div>
-            <div class="bg-right-bottom bg-no-repeat w-10rem h-10rem bg-blue-500 border-round m-3" style="background-image: url('/images/product-placeholder-blue.svg'); background-size: 5rem;"></div>
-        </div>
+    <div class="flex flex-wrap align-items-center justify-content-center">
+        <div class="bg-bottom bg-no-repeat w-10rem h-10rem bg-blue-500 border-round m-3" style="background-image: url('/images/product-placeholder-blue.svg'); background-size: 5rem;"></div>
+        <div class="bg-left-bottom bg-no-repeat w-10rem h-10rem bg-blue-500 border-round m-3" style="background-image: url('/images/product-placeholder-blue.svg'); background-size: 5rem;"></div>
+        <div class="bg-right-bottom bg-no-repeat w-10rem h-10rem bg-blue-500 border-round m-3" style="background-image: url('/images/product-placeholder-blue.svg'); background-size: 5rem;"></div>
     </div>
 </div>
-`
-    };
+`;
 
     return (
         <>
             <DocSectionText {...props}></DocSectionText>
             <div className="card">
-                <div className="card-container blue-container overflow-hidden">
+                <div className="overflow-hidden">
                     <div className="flex flex-wrap align-items-center justify-content-center">
                         <div className="bg-left-top bg-no-repeat w-10rem h-10rem bg-blue-500 border-round m-3" style={{ backgroundImage: "url('/images/product-placeholder-blue.svg')", backgroundSize: '5rem' }}></div>
                         <div className="bg-top bg-no-repeat w-10rem h-10rem bg-blue-500 border-round m-3" style={{ backgroundImage: "url('/images/product-placeholder-blue.svg')", backgroundSize: '5rem' }}></div>

@@ -15,15 +15,17 @@
         rgba(255, 255, 255, 0.2) 49.87%,
         rgba(0, 0, 0, 0.2) 99.93%
     );
-
+    --landing-background-mask: url("/images/landing/bg-hero-grid-light.svg");
+    --landing-menu-item-text-color: #505050;
+    --landing-menu-item-hover-text-color: #04b9d7;
     --linkbox-button-bg: #f7f7f7;
 
     //hero
-    --patern-1: linear-gradient(180deg, #ffffff 1.39%, #4feaff 100%);
-    --patern-2: linear-gradient(180deg, #ffffff 0%, #00ff94 100%);
-    --patern-3: linear-gradient(180deg, #ffffff 0%, #ffffff 100%);
-    --patern-4: linear-gradient(180deg, #dbdbdb 0%, #000aff 100%);
-    --pattern-mode: multiply;
+    --hero-bg-light-1: linear-gradient(180deg, #ffffff 1.39%, #4feaff 100%);
+    --hero-bg-light-2: linear-gradient(180deg, #ffffff 0%, #00ff94 100%);
+    --hero-bg-light-3: linear-gradient(180deg, #ffffff 0%, #ffffff 100%);
+    --hero-bg-light-4: linear-gradient(180deg, #dbdbdb 0%, #000aff 100%);
+    --hero-bg-light-mix-mode: multiply;
 
     //hero-box
     --hero-box-bg: linear-gradient(116.22deg, #ffffff 33.5%, rgba(255, 255, 255, 0.58) 99.16%);
@@ -34,30 +36,29 @@
     --hero-box-classes-purple-bg: rgba(128, 0, 255, 0.4);
     --hero-box-pink-bg: rgba(227, 0, 204, 0.4);
 
+    //docsearch
     --docsearch-bg: rgba(255, 255, 255, 0.3);
     --docsearch-border: 3px solid rgba(0, 0, 0, 0.07);
     --docsearch-shadow: 0px 0px 7px rgba(0, 0, 0, 0.05);
     --docsearch-color: #8f8f8f;
-
     --docsearch-button-bg: #ffffff;
-
     --docsearch-button-shadow: 0px 0.6875px 1.375px rgba(0, 0, 0, 0.06);
     --docsearch-button-color: #8f8f8f;
 
+    //download-box
     --download-box-bg: #f7f7f7;
     --download-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.06);
     --download-box-border: 1px solid #c9c9c9;
     --download-box-button-bg: #ffffff;
     --download-box-button-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
     --download-box-button-color: #8f8f8f;
+
     //cards
     --cards-bg: #fff;
     --cards-bg-color: #fff;
-
     --cards-border: 1px solid rgba(0, 0, 0, 0.1);
     --cards-shadow: none;
     --cards-color-text-color: rgba(0, 0, 0, 0.3);
-
     --color-cards-animated-bg: rgba(118, 179, 197, 0.2);
     --layout-card-bg: rgba(0, 0, 0, 0.01);
     --layout-card-border: 1px solid rgba(0, 0, 0, 0.1);
@@ -67,15 +68,18 @@
     --slider-handle-border: 0px 1px 2px rgba(0, 0, 0, 0.04);
     --slider-div-bg: #ffffff;
 
+    //animations
     --animations-text-backdrop: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #ffffff 29.97%);
     --animation-card-bg: rgba(255, 255, 255, 0.4);
     --animation-card-border: 1px solid rgba(0, 0, 0, 0.1);
 
+    //style-cards
     --style-cards-fancy-bg: radial-gradient(93.88% 63.6% at 50% 0%, rgba(2, 225, 255, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%),
         #01041b;
     --style-cards-bg: linear-gradient(0deg, rgba(1, 4, 27, 0.4), rgba(1, 4, 27, 0.4)),
         radial-gradient(93.88% 63.6% at 50% 0%, rgba(2, 225, 255, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%);
 
+    //responsive
     --responsive-breaks-bg: gba(1, 4, 27, 0.3);
     --responsive-breaks-border: 1px solid rgba(0, 0, 0, 0.1);
     --responsive-breaks-shadow: 0px 1px 2px rgba(0, 0, 0, 0.06);
@@ -89,6 +93,7 @@
     --responsive-iframe-shadow: 0px 2px 6px rgba(0, 0, 0, 0.12), 0px 0px 2px rgba(0, 0, 0, 0.06),
         0px 4px 10px rgba(0, 0, 0, 0.03);
 
+    //blocks
     --blocks-backdrop: radial-gradient(
         50% 50% at 50% 50%,
         #ffffff 33.9%,
@@ -96,26 +101,25 @@
         #ffffff 100%
     );
 
+    //code
     --code-background: rgba(247, 247, 247, 0.9) !important;
     --code-border: 1px solid rgba(0, 0, 0, 0.1) !important;
     --code-divs-color: rgba(255, 102, 204, 1);
     --code-text-color: rgba(0, 0, 0, 0.6);
     --code-class-text-color: rgba(0, 111, 255, 1);
-    --landing-background-mask: url("/images/landing/bg-hero-grid-light.svg");
-    --landing-menu-item-text-color: #505050;
-    --landing-menu-item-hover-text-color: #04b9d7;
 
-    --surface-a:#ffffff;
-    --surface-b:#efefef;
-    --surface-c:#e9ecef;
-    --surface-d:#dee2e6;
-    --surface-e:#ffffff;
-    --surface-f:#ffffff;
-    --text-color:#212529;
-    --text-color-secondary:#6c757d;
-    --primary-color:#007bff;
-    --primary-color-text:#ffffff;
-    --font-family:-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+    //theme
+    --surface-a: #ffffff;
+    --surface-b: #efefef;
+    --surface-c: #e9ecef;
+    --surface-d: #dee2e6;
+    --surface-e: #ffffff;
+    --surface-f: #ffffff;
+    --text-color: #212529;
+    --text-color-secondary: #6c757d;
+    --primary-color: #007bff;
+    --primary-color-text: #ffffff;
+    --font-family: "Inter";
     --surface-0: #ffffff;
     --surface-50: #f9fafb;
     --surface-100: #f8f9fa;
@@ -137,138 +141,138 @@
     --gray-700: #495057;
     --gray-800: #343a40;
     --gray-900: #212529;
-    --content-padding:1.25rem;
-    --inline-spacing:0.5rem;
-    --border-radius:4px;
-    --surface-ground:#efefef;
-    --surface-section:#ffffff;
-    --surface-card:#ffffff;
-    --surface-overlay:#ffffff;
-    --surface-border:#dee2e6;
-    --surface-hover:#e9ecef;
+    --content-padding: 1.25rem;
+    --inline-spacing: 0.5rem;
+    --border-radius: 4px;
+    --surface-ground: #efefef;
+    --surface-section: #ffffff;
+    --surface-card: #ffffff;
+    --surface-overlay: #ffffff;
+    --surface-border: #dee2e6;
+    --surface-hover: #e9ecef;
     --focus-ring: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
     --maskbg: rgba(0, 0, 0, 0.4);
     --highlight-bg: #007bff;
     --highlight-text-color: #ffffff;
-    --blue-50:#f3f8ff;
-    --blue-100:#c5dcff;
-    --blue-200:#97c1fe;
-    --blue-300:#69a5fe;
-    --blue-400:#3b8afd;
-    --blue-500:#0d6efd;
-    --blue-600:#0b5ed7;
-    --blue-700:#094db1;
-    --blue-800:#073d8b;
-    --blue-900:#052c65;
-    --green-50:#f4f9f6;
-    --green-100:#c8e2d6;
-    --green-200:#9ccbb5;
-    --green-300:#70b595;
-    --green-400:#459e74;
-    --green-500:#198754;
-    --green-600:#157347;
-    --green-700:#125f3b;
-    --green-800:#0e4a2e;
-    --green-900:#0a3622;
-    --yellow-50:#fffcf3;
-    --yellow-100:#fff0c3;
-    --yellow-200:#ffe494;
-    --yellow-300:#ffd965;
-    --yellow-400:#ffcd36;
-    --yellow-500:#ffc107;
-    --yellow-600:#d9a406;
-    --yellow-700:#b38705;
-    --yellow-800:#8c6a04;
-    --yellow-900:#664d03;
-    --cyan-50:#f3fcfe;
-    --cyan-100:#c5f2fb;
-    --cyan-200:#97e8f9;
-    --cyan-300:#69def6;
-    --cyan-400:#3bd4f3;
-    --cyan-500:#0dcaf0;
-    --cyan-600:#0baccc;
-    --cyan-700:#098da8;
-    --cyan-800:#076f84;
-    --cyan-900:#055160;
-    --pink-50:#fdf5f9;
-    --pink-100:#f5cee1;
-    --pink-200:#eda7ca;
-    --pink-300:#e681b3;
-    --pink-400:#de5a9b;
-    --pink-500:#d63384;
-    --pink-600:#b62b70;
-    --pink-700:#96245c;
-    --pink-800:#761c49;
-    --pink-900:#561435;
-    --indigo-50:#f7f3fe;
-    --indigo-100:#dac6fc;
-    --indigo-200:#bd98f9;
-    --indigo-300:#a06bf7;
-    --indigo-400:#833df4;
-    --indigo-500:#6610f2;
-    --indigo-600:#570ece;
-    --indigo-700:#470ba9;
-    --indigo-800:#380985;
-    --indigo-900:#290661;
-    --teal-50:#f4fcfa;
-    --teal-100:#c9f2e6;
-    --teal-200:#9fe8d2;
-    --teal-300:#75debf;
-    --teal-400:#4ad3ab;
-    --teal-500:#20c997;
-    --teal-600:#1bab80;
-    --teal-700:#168d6a;
-    --teal-800:#126f53;
-    --teal-900:#0d503c;
-    --orange-50:#fff9f3;
-    --orange-100:#ffe0c7;
-    --orange-200:#fec89a;
-    --orange-300:#feaf6d;
-    --orange-400:#fd9741;
-    --orange-500:#fd7e14;
-    --orange-600:#d76b11;
-    --orange-700:#b1580e;
-    --orange-800:#8b450b;
-    --orange-900:#653208;
-    --bluegray-50:#f8f9fb;
-    --bluegray-100:#e0e4ea;
-    --bluegray-200:#c7ced9;
-    --bluegray-300:#aeb9c8;
-    --bluegray-400:#95a3b8;
-    --bluegray-500:#7c8ea7;
-    --bluegray-600:#69798e;
-    --bluegray-700:#576375;
-    --bluegray-800:#444e5c;
-    --bluegray-900:#323943;
-    --purple-50:#f8f6fc;
-    --purple-100:#dcd2f0;
-    --purple-200:#c1aee4;
-    --purple-300:#a68ad9;
-    --purple-400:#8a66cd;
-    --purple-500:#6f42c1;
-    --purple-600:#5e38a4;
-    --purple-700:#4e2e87;
-    --purple-800:#3d246a;
-    --purple-900:#2c1a4d;
-    --red-50:#fdf5f6;
-    --red-100:#f7cfd2;
-    --red-200:#f0a8af;
-    --red-300:#e9828c;
-    --red-400:#e35b68;
-    --red-500:#dc3545;
-    --red-600:#bb2d3b;
-    --red-700:#9a2530;
-    --red-800:#791d26;
-    --red-900:#58151c;
-    --primary-50:#f2f8ff;
-    --primary-100:#c2dfff;
-    --primary-200:#91c6ff;
-    --primary-300:#61adff;
-    --primary-400:#3094ff;
-    --primary-500:#007bff;
-    --primary-600:#0069d9;
-    --primary-700:#0056b3;
-    --primary-800:#00448c;
-    --primary-900:#003166;
+    --blue-50: #f3f8ff;
+    --blue-100: #c5dcff;
+    --blue-200: #97c1fe;
+    --blue-300: #69a5fe;
+    --blue-400: #3b8afd;
+    --blue-500: #0d6efd;
+    --blue-600: #0b5ed7;
+    --blue-700: #094db1;
+    --blue-800: #073d8b;
+    --blue-900: #052c65;
+    --green-50: #f4f9f6;
+    --green-100: #c8e2d6;
+    --green-200: #9ccbb5;
+    --green-300: #70b595;
+    --green-400: #459e74;
+    --green-500: #198754;
+    --green-600: #157347;
+    --green-700: #125f3b;
+    --green-800: #0e4a2e;
+    --green-900: #0a3622;
+    --yellow-50: #fffcf3;
+    --yellow-100: #fff0c3;
+    --yellow-200: #ffe494;
+    --yellow-300: #ffd965;
+    --yellow-400: #ffcd36;
+    --yellow-500: #ffc107;
+    --yellow-600: #d9a406;
+    --yellow-700: #b38705;
+    --yellow-800: #8c6a04;
+    --yellow-900: #664d03;
+    --cyan-50: #f3fcfe;
+    --cyan-100: #c5f2fb;
+    --cyan-200: #97e8f9;
+    --cyan-300: #69def6;
+    --cyan-400: #3bd4f3;
+    --cyan-500: #0dcaf0;
+    --cyan-600: #0baccc;
+    --cyan-700: #098da8;
+    --cyan-800: #076f84;
+    --cyan-900: #055160;
+    --pink-50: #fdf5f9;
+    --pink-100: #f5cee1;
+    --pink-200: #eda7ca;
+    --pink-300: #e681b3;
+    --pink-400: #de5a9b;
+    --pink-500: #d63384;
+    --pink-600: #b62b70;
+    --pink-700: #96245c;
+    --pink-800: #761c49;
+    --pink-900: #561435;
+    --indigo-50: #f7f3fe;
+    --indigo-100: #dac6fc;
+    --indigo-200: #bd98f9;
+    --indigo-300: #a06bf7;
+    --indigo-400: #833df4;
+    --indigo-500: #6610f2;
+    --indigo-600: #570ece;
+    --indigo-700: #470ba9;
+    --indigo-800: #380985;
+    --indigo-900: #290661;
+    --teal-50: #f4fcfa;
+    --teal-100: #c9f2e6;
+    --teal-200: #9fe8d2;
+    --teal-300: #75debf;
+    --teal-400: #4ad3ab;
+    --teal-500: #20c997;
+    --teal-600: #1bab80;
+    --teal-700: #168d6a;
+    --teal-800: #126f53;
+    --teal-900: #0d503c;
+    --orange-50: #fff9f3;
+    --orange-100: #ffe0c7;
+    --orange-200: #fec89a;
+    --orange-300: #feaf6d;
+    --orange-400: #fd9741;
+    --orange-500: #fd7e14;
+    --orange-600: #d76b11;
+    --orange-700: #b1580e;
+    --orange-800: #8b450b;
+    --orange-900: #653208;
+    --bluegray-50: #f8f9fb;
+    --bluegray-100: #e0e4ea;
+    --bluegray-200: #c7ced9;
+    --bluegray-300: #aeb9c8;
+    --bluegray-400: #95a3b8;
+    --bluegray-500: #7c8ea7;
+    --bluegray-600: #69798e;
+    --bluegray-700: #576375;
+    --bluegray-800: #444e5c;
+    --bluegray-900: #323943;
+    --purple-50: #f8f6fc;
+    --purple-100: #dcd2f0;
+    --purple-200: #c1aee4;
+    --purple-300: #a68ad9;
+    --purple-400: #8a66cd;
+    --purple-500: #6f42c1;
+    --purple-600: #5e38a4;
+    --purple-700: #4e2e87;
+    --purple-800: #3d246a;
+    --purple-900: #2c1a4d;
+    --red-50: #fdf5f6;
+    --red-100: #f7cfd2;
+    --red-200: #f0a8af;
+    --red-300: #e9828c;
+    --red-400: #e35b68;
+    --red-500: #dc3545;
+    --red-600: #bb2d3b;
+    --red-700: #9a2530;
+    --red-800: #791d26;
+    --red-900: #58151c;
+    --primary-50: #f2f8ff;
+    --primary-100: #c2dfff;
+    --primary-200: #91c6ff;
+    --primary-300: #61adff;
+    --primary-400: #3094ff;
+    --primary-500: #007bff;
+    --primary-600: #0069d9;
+    --primary-700: #0056b3;
+    --primary-800: #00448c;
+    --primary-900: #003166;
     color-scheme: light;
 }

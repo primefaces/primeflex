@@ -2,20 +2,12 @@ import { DocSectionCode } from '../common/docsectioncode';
 import { DocSectionText } from '../common/docsectiontext';
 
 export function ResponsiveDoc(props) {
-    const code = {
-        basic: `<div class="w-20rem">
-    <div class="max-w-min md:max-w-max">max-w-min on small screen</div>
-</div>
-    `,
-        expanded: `<div class="card">
-    <div class="flex flex-wrap align-items-center justify-content-center card-container yellow-container">
-        <div class="border-round bg-yellow-100 w-20rem p-3 m-3">
-            <div class="max-w-min md:max-w-max border-round bg-yellow-500 text-gray-900 font-bold p-3 flex align-items-center justify-content-center">max-w-min on small screen</div>
-        </div>
+    const code = `<div class="flex flex-wrap align-items-center justify-content-center">
+    <div class="border-round bg-yellow-100 w-20rem p-3 m-3">
+        <div class="max-w-min md:max-w-max border-round bg-yellow-500 text-gray-900 font-bold p-3 flex align-items-center justify-content-center">max-w-min on small screen</div>
     </div>
 </div>
-`
-    };
+`;
 
     return (
         <>
@@ -53,7 +45,7 @@ export function ResponsiveDoc(props) {
                 </div>
             </DocSectionText>
             <div className="card">
-                <div className="flex flex-wrap align-items-center justify-content-center card-container yellow-container">
+                <div className="flex flex-wrap align-items-center justify-content-center">
                     <div className="border-round bg-yellow-100 w-20rem p-3 m-3">
                         <div className="max-w-min md:max-w-max border-round bg-yellow-500 text-gray-900 font-bold p-3 flex align-items-center justify-content-center">max-w-min on small screen</div>
                     </div>

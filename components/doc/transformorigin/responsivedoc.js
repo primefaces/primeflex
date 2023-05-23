@@ -2,20 +2,12 @@ import { DocSectionCode } from '../common/docsectioncode';
 import { DocSectionText } from '../common/docsectiontext';
 
 export function ResponsiveDoc(props) {
-    const code = {
-        basic: `<div>
-        <img src="/images/product-placeholder-yellow.svg" class="origin-top-right md:origin-bottom-left rotate-45 " alt="primeflex">
-    </div>
-    `,
-        expanded: `<div class="card">
-    <div class="flex align-items-center justify-content-center card-container yellow-container" style="min-height: 250px">
-        <div class="h-6rem w-6rem bg-yellow-500 border-round">
-            <img src="/images/product-placeholder-yellow.svg" class="origin-top-right md:origin-bottom-left rotate-45 h-6rem w-6rem" alt="primeflex">
-        </div>
+    const code = `<div class="flex align-items-center justify-content-center" style="min-height: 250px">
+    <div class="h-6rem w-6rem bg-yellow-500 border-round">
+        <img src="/images/product-placeholder-yellow.svg" class="origin-top-right md:origin-bottom-left rotate-45 h-6rem w-6rem" alt="primeflex">
     </div>
 </div>
-`
-    };
+`;
 
     return (
         <>
@@ -53,7 +45,7 @@ export function ResponsiveDoc(props) {
                 </div>
             </DocSectionText>
             <div className="card">
-                <div className="flex align-items-center justify-content-center card-container yellow-container" style={{ minHeight: '250px' }}>
+                <div className="flex align-items-center justify-content-center" style={{ minHeight: '250px' }}>
                     <div className="h-6rem w-6rem bg-yellow-500 border-round">
                         <img src="/images/product-placeholder-yellow.svg" className="origin-top-right md:origin-bottom-left rotate-45 h-6rem w-6rem" alt="primeflex"></img>
                     </div>

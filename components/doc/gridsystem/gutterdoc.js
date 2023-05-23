@@ -2,34 +2,18 @@ import { DocSectionCode } from '../common/docsectioncode';
 import { DocSectionText } from '../common/docsectiontext';
 
 export function GutterDoc(props) {
-    const code = {
-        basic: `<div class="grid grid-nogutter">
+    const code = `<div class="grid grid-nogutter">
     <div class="col">
-        <div>1</div>
+        <div class="text-center p-3 border-round-sm bg-indigo-500 font-bold text-white">1</div>
     </div>
     <div class="col">
-        <div>1</div>
+        <div class="text-center p-3 border-round-sm bg-indigo-500 font-bold text-white">1</div>
     </div>
     <div class="col">
-        <div>1</div>
+        <div class="text-center p-3 border-round-sm bg-indigo-500 font-bold text-white">1</div>
     </div>
 </div>
-    `,
-        expanded: `<div class="card">
-    <div class="grid grid-nogutter">
-        <div class="col">
-            <div class="text-center p-3 border-round-sm bg-indigo-500 font-bold text-white">1</div>
-        </div>
-        <div class="col">
-            <div class="text-center p-3 border-round-sm bg-indigo-500 font-bold text-white">1</div>
-        </div>
-        <div class="col">
-            <div class="text-center p-3 border-round-sm bg-indigo-500 font-bold text-white">1</div>
-        </div>
-    </div>
-</div>
-`
-    };
+`;
 
     return (
         <>
