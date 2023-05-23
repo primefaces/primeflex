@@ -71,7 +71,6 @@
             font-size: 0.875rem;
             font-weight: 600;
             font-style: normal;
-          
         }
     }
 }
@@ -163,7 +162,7 @@
 
     > .navbar-item {
         .navbar-item-content {
-            border-left: 1px solid var(--surface-border);
+            border-left: 1px solid var(--menu-border-color);
             padding-left: 0.25rem;
         }
     }
@@ -179,6 +178,7 @@
                 min-width: 0;
                 overflow: hidden;
                 text-overflow: ellipsis;
+                font-size: 0.875rem;
 
                 &:hover {
                     color: var(--primary-color);
@@ -218,7 +218,7 @@
         }
     }
 
-    pre[class*=language] {
+    pre[class*="language"] {
         margin: 0 0 1rem 0;
     }
 

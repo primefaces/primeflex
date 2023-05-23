@@ -8,7 +8,7 @@ const FooterSection = (props) => {
                     <div className="landing-footer-left">
                         {' '}
                         <Link href="/" className="header-logo" aria-label="PrimeReact logo">
-                            <img id="header-logo" src={`/images/primeflex-logo-${props.dark ? 'white' : 'dark'}.svg`} alt="prime"></img>
+                            <img id="header-logo" src={`/images/PrimeFlexLogo.svg`} alt="prime"></img>
                         </Link>
                     </div>
                     <div className="landing-footer-right flex flex-row gap-1 md:gap-3 align-items-center">

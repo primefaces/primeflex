@@ -54,7 +54,7 @@ const HeaderSection = (props) => {
                 <div className="landing-header-left">
                     {' '}
                     <Link href="/" className="header-logo" aria-label="PrimeReact logo">
-                        <img id="header-logo" src={`/images/primeflex-logo-${props.dark ? 'white' : 'dark'}.svg`} alt="prime"></img>
+                        <img id="header-logo" src={`/images/PrimeFlexLogo.svg`} alt="prime"></img>
                     </Link>
                 </div>
                 <div className="landing-header-center">

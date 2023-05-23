@@ -3,7 +3,7 @@
     "content": "New PrimeFlex website is available now!",
     "linkText": "",
     "linkHref": "",
-    "backgroundStyle": "background-color:#07c4e8",
+    "backgroundStyle": "background:linear-gradient(45deg, #00E08F,#00A3FF);",
     "textStyle": "color:#191919;font-weight:500",
     "linkStyle": "color:#191919;font-weight:700",
     "linkHoverStyle": "text-decoration: underline"

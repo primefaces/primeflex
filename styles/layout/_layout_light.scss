@@ -1,5 +1,6 @@
 .layout-wrapper-light {
     --body-bg: radial-gradient(39.27% 40.65% at 50% 0%, rgba(112, 232, 248, 0.1) 0%, rgb(246, 247, 249) 100%);
+    --body-bg-image: url("/images/headerfxlight.png");
     --menu-bg: rgba(255, 255, 255, 1);
     --demo-bg-link: url("/images/tiny-checkers.png");
     --demo-bg-blue: var(--blue-50);
@@ -9,6 +10,8 @@
     --demo-bg-indigo: var(--indigo-50);
     --demo-bg-orange: var(--orange-50);
     --demo-bg-cyan: var(--cyan-50);
+    --menu-border-color: rgba(255, 255, 255, 0.05);
+
     --topbar-bg: rgb(246, 247, 249 / 80%);
 
     --surface-a: #ffffff;
@@ -19,7 +22,7 @@
     --surface-f: #ffffff;
     --text-color: #212529;
     --text-color-secondary: #6c757d;
-    --primary-color: #007bff;
+    --primary-color: #00e08f;
     --primary-color-text: #ffffff;
     --font-family: "Inter";
     --surface-0: #ffffff;

@@ -4,8 +4,8 @@ import { DocSectionText } from '../common/docsectiontext';
 
 export function ResponsiveDoc(props) {
     const code = `<div class="inline-flex">
-    <div class="hidden md:block bg-cyan-500 text-white font-bold align-items-center justify-content-center p-4 border-round mr-3">Hide on a small screen</div>
-    <div class="block md:hidden bg-gray-500 text-white font-bold align-items-center justify-content-center p-4 border-round mr-3">Visible on a small screen</div>
+    <div class="hidden md:block bg-primary font-bold align-items-center justify-content-center p-4 border-round mr-3">Hide on a small screen</div>
+    <div class="block md:hidden bg-primary font-bold align-items-center justify-content-center p-4 border-round mr-3">Visible on a small screen</div>
 </div>
 `;
 
@@ -46,8 +46,8 @@ export function ResponsiveDoc(props) {
             </DocSectionText>
             <div className="card">
                 <div className="inline-flex">
-                    <div className="hidden md:block bg-cyan-500 text-white font-bold align-items-center justify-content-center p-4 border-round mr-3">Hide on a small screen</div>
-                    <div className="block md:hidden bg-gray-500 text-white font-bold align-items-center justify-content-center p-4 border-round mr-3">Visible on a small screen</div>
+                    <div className="hidden md:block bg-primary font-bold align-items-center justify-content-center p-4 border-round mr-3">Hide on a small screen</div>
+                    <div className="block md:hidden bg-primary font-bold align-items-center justify-content-center p-4 border-round mr-3">Visible on a small screen</div>
                 </div>
             </div>
             <DocSectionCode code={code} />

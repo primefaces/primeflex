@@ -17,9 +17,21 @@ body {
 }
 
 .layout-wrapper {
-    background: var(--body-bg);
     position: relative;
-    background-color: var(--surface-ground);
+    background-color: var(--body-bg);
     font-weight: normal;
     color: var(--text-color);
+
+    &::before {
+        width: 100%;
+        height: 236px;
+        content: "";
+        display: block;
+        z-index: 0;
+        position: fixed;
+        background-image: var(--body-bg-image);
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
 }

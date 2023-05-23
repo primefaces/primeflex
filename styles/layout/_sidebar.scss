@@ -12,7 +12,6 @@
 
     .logo {
         display: flex;
-        justify-content: center;
         padding: 0 2rem;
 
         img {
@@ -22,7 +21,7 @@
 
     nav {
         padding: 0.5rem 1rem 2rem 1rem;
-        margin-top: 2rem;
+        margin-top: 1rem;
         flex-grow: 1;
         overflow-y: auto;
     }
@@ -45,11 +44,14 @@
                 padding: 1rem;
                 color: var(--surface-900);
                 font-weight: 600;
-                transition: box-shadow 0.2s;
+                transition: all 0.2s;
                 border-radius: var(--border-radius);
+                font-size: 1rem;
+                opacity: 0.7;
                 font-size: 1rem;
 
                 &:hover {
+                    opacity: 1;
                     background-color: var(--surface-hover);
                 }
 
@@ -75,8 +77,9 @@
                 }
 
                 .menu-toggle-icon {
-                    color: var(--surface-600);
+                    color: var(--surface-900);
                     margin-left: auto;
+                    opacity: 0.5;
                 }
             }
 
@@ -84,7 +87,7 @@
                 > ol {
                     margin: 0 0 0 1.5rem;
                     padding: 0.25rem 0 0 0.5rem;
-                    border-left: 1px solid var(--surface-border);
+                    border-left: 1px solid var(--menu-border-color);
 
                     > li {
                         > ol {
@@ -99,6 +102,8 @@
             background-color: var(--highlight-bg);
             color: var(--highlight-text-color);
             transition: all 0.3s;
+            font-weight: 600;
+            opacity: 1;
 
             > .menu-icon {
                 i {
@@ -107,8 +112,8 @@
             }
 
             &:hover {
-                background-color: var(--primary-600);
                 color: var(--highlight-text-color);
+                background-color: var(--surface-hover);
             }
         }
 
@@ -134,13 +139,14 @@
                 color: var(--surface-900);
                 border-radius: var(--border-radius);
                 transition: box-shadow 0.2s;
-
+                opacity: 0.7;
                 &:focus {
                     outline: 0 none;
                     box-shadow: inset var(--focus-ring);
                 }
 
                 &:hover {
+                    opacity: 1;
                     background-color: var(--surface-hover);
                 }
             }

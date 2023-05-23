@@ -297,7 +297,7 @@ div.code-toolbar > .toolbar > .toolbar-item > span:focus {
         code {
             border-left: 1rem solid transparent !important;
             box-shadow: none !important;
-            background: #191c31 !important;
+            background: #0d1e3b !important;
             margin: 0;
             color: var(--surface-900);
             font-size: 16px;
@@ -310,16 +310,18 @@ div.code-toolbar > .toolbar > .toolbar-item > span:focus {
         code {
             .token {
                 &.tag {
-                    color: rgb(108, 182, 255) !important;
+                    color: #24b0ff !important;
                 }
                 &.keyword,
-                &.rule {
-                    color: rgb(244, 112, 103) !important;
+                &.rule,
+                &.number,
+                &.constant {
+                    color: #ff6161 !important;
                 }
 
                 &.attr-name,
                 &.attr-string {
-                    color: rgb(108, 182, 255) !important;
+                    color: #24b0ff !important;
                 }
 
                 &.string {
@@ -327,13 +329,13 @@ div.code-toolbar > .toolbar > .toolbar-item > span:focus {
                 }
 
                 &.property {
-                    color: rgb(164, 208, 252) !important;
+                    color: #b275ff !important;
                 }
 
                 &.attr-value {
-                    color: #4caf50 !important;
+                    color: var(--primary-color) !important;
                     .punctuation {
-                        color: rgb(108, 182, 255) !important;
+                        color: #24b0ff !important;
                     }
                 }
 
@@ -347,15 +349,15 @@ div.code-toolbar > .toolbar > .toolbar-item > span:focus {
                 }
 
                 &.function {
-                    color: rgb(220, 189, 251) !important;
+                    color: #e28fff !important;
                 }
 
                 &.class-name {
-                    color: rgb(141, 219, 140) !important;
+                    color: #09beca !important;
                 }
 
                 &.operator {
-                    color: rgb(150, 208, 255) !important;
+                    color: #7acfff !important;
                 }
             }
         }
@@ -388,7 +390,7 @@ div.code-toolbar > .toolbar > .toolbar-item > span:focus {
         code {
             .token {
                 &.tag {
-                    color: rgb(108, 182, 255) !important;
+                    color: #24b0ff !important;
                 }
                 &.keyword,
                 &.rule {
@@ -397,7 +399,7 @@ div.code-toolbar > .toolbar > .toolbar-item > span:focus {
 
                 &.attr-name,
                 &.attr-string {
-                    color: rgb(108, 182, 255) !important;
+                    color: #24b0ff !important;
                 }
 
                 &.property {
@@ -413,9 +415,9 @@ div.code-toolbar > .toolbar > .toolbar-item > span:focus {
                 }
 
                 &.attr-value {
-                    color: #4caf50 !important;
+                    color: var(--primary-color) !important;
                     .punctuation {
-                        color: rgb(108, 182, 255) !important;
+                        color: #24b0ff !important;
                     }
                 }
 

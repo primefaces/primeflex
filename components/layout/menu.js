@@ -131,7 +131,7 @@ const Menu = memo((props) => {
     return (
         <aside className={sidebarClassName}>
             <Link href="/" className="logo" aria-label="PrimeReact logo">
-                <img id="topbar-logo" src={`/images/primeflex-logo-${props.darkTheme ? 'white' : 'dark'}.svg`} alt="prime"></img>
+                <img id="topbar-logo" src={`/images/PrimeFlexLogo.svg`} alt="prime"></img>
             </Link>
             <nav>
                 <ol className="layout-menu">{menuItems}</ol>

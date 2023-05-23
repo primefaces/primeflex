@@ -1,5 +1,6 @@
 .layout-wrapper-dark {
-    --body-bg: radial-gradient(39.27% 40.65% at 50% 0%, rgba(0, 8, 65, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%);
+    --body-bg: rgb(8, 19, 37);
+    --body-bg-image: url("/images/headerfx.png");
     --menu-bg: radial-gradient(39.27% 40.65% at 50% 0%, rgba(0, 8, 65, 1) 0%, rgba(0, 0, 0, 1) 100%);
     --demo-bg-link: url("/images/tiny-checkers-dark.png");
     --demo-bg-blue: var(--blue-900);
@@ -9,8 +10,8 @@
     --demo-bg-indigo: var(--indigo-900);
     --demo-bg-orange: var(--orange-900);
     --demo-bg-cyan: var(--cyan-900);
-
-    --topbar-bg: rgb(0 1 8 / 80%);
+    --menu-border-color: rgba(255, 255, 255, 0.1);
+    --topbar-bg: rgba(8, 19, 37, 0.4);
 
     --surface-a: #00031a;
     --surface-b: #191c31;
@@ -20,7 +21,7 @@
     --surface-f: #80818d;
     --text-color: #e6e6e8;
     --text-color-secondary: #cccdd1;
-    --primary-color: #8dd0ff;
+    --primary-color: #00e08f;
     --primary-color-text: #151515;
     --font-family: "Inter";
     --surface-0: #00031a;
@@ -49,14 +50,14 @@
     --border-radius: 4px;
     --surface-ground: #00031a;
     --surface-section: #00031a;
-    --surface-card: #101322;
-    --surface-overlay: #101322;
-    --surface-border: #333548;
-    --surface-hover: rgba(255, 255, 255, 0.1);
+    --surface-card: #0d1e3b;
+    --surface-overlay: #0d1e3b;
+    --surface-border: #10274b;
+    --surface-hover: rgba(255, 255, 255, 0.03);
     --focus-ring: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
     --maskbg: rgba(0, 0, 0, 0.4);
-    --highlight-bg: #8dd0ff;
-    --highlight-text-color: #151515;
+    --highlight-bg: transparent;
+    --highlight-text-color: #00e08f;
     --blue-50: #f3f8ff;
     --blue-100: #c5dcff;
     --blue-200: #97c1fe;
