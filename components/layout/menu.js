@@ -23,7 +23,7 @@ const Menu = memo((props) => {
             <>
                 {item.icon && (
                     <div className="menu-icon">
-                        <img src={item.image + '.svg'}></img>
+                        <img src={item.image + (props.darkTheme ? '.svg' : '-light.svg')}></img>
                     </div>
                 )}
                 {name}
@@ -34,7 +34,7 @@ const Menu = memo((props) => {
             return (
                 <a href={href} target="_blank" rel="noopener noreferrer">
                     <div className="menu-icon">
-                        <img src={item.image + '.svg'}></img>
+                        <img src={item.image + (props.darkTheme ? '.svg' : '-light.svg')}></img>
                     </div>
                     <span>{content}</span>
                     <i className="menu-toggle-icon pi pi-external-link"></i>
