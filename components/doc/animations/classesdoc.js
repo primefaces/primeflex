@@ -86,7 +86,7 @@ export function ClassesDoc(props) {
                             </td>
                         </tr>
                         <tr>
-                            <td>slidedown</td>
+                            <td>slideup</td>
                             <td>
                                 animation: slideup 0.45s cubic-bezier(0, 1, 0, 1);
                                 <br />
