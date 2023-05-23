@@ -377,7 +377,7 @@ div.code-toolbar > .toolbar > .toolbar-item > span:focus {
         code {
             border-left: 1rem solid transparent !important;
             box-shadow: none !important;
-            background: #303346 !important;
+            background: #252837 !important;
             margin: 0;
             color: #fff;
             font-size: 16px;
@@ -390,7 +390,7 @@ div.code-toolbar > .toolbar > .toolbar-item > span:focus {
         code {
             .token {
                 &.tag {
-                    color: #24b0ff !important;
+                    color: #00e08f !important;
                 }
                 &.keyword,
                 &.rule {
@@ -399,11 +399,11 @@ div.code-toolbar > .toolbar > .toolbar-item > span:focus {
 
                 &.attr-name,
                 &.attr-string {
-                    color: #24b0ff !important;
+                    color: #00e08f !important;
                 }
 
                 &.property {
-                    color: rgb(164, 208, 252) !important;
+                    color: #7affcf !important;
                 }
 
                 &.string {
@@ -415,9 +415,9 @@ div.code-toolbar > .toolbar > .toolbar-item > span:focus {
                 }
 
                 &.attr-value {
-                    color: var(--primary-color) !important;
+                    color: var(--primary-400) !important;
                     .punctuation {
-                        color: #24b0ff !important;
+                        color: #00e08f !important;
                     }
                 }
 
