@@ -58,7 +58,7 @@ export default function Topbar(props) {
                 <button type="button" className="link-button menu-button" onClick={onMenuButtonClick} aria-haspopup aria-label="Menu">
                     <i className="pi pi-bars"></i>
                 </button>
-                <DocSearch appId="SCRI13XXZO" apiKey="ea9e6c8a983c5646d6b9079921d4aed7" indexName="primereact" container="" debug={false} />
+                <DocSearch appId="TLMMWZFW0F" apiKey="e6191f9edfded2e69492f3f3b315e237" indexName="primeflex" container="" debug={false} />
 
                 <ul className="flex list-none m-0 p-0 gap-2 align-items-center">
                     <li></li>

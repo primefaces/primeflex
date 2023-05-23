@@ -58,7 +58,7 @@ const HeaderSection = (props) => {
                     </Link>
                 </div>
                 <div className="landing-header-center">
-                    <DocSearch appId="SCRI13XXZO" apiKey="ea9e6c8a983c5646d6b9079921d4aed7" indexName="primereact" container="" debug={false} />
+                    <DocSearch appId="TLMMWZFW0F" apiKey="e6191f9edfded2e69492f3f3b315e237" indexName="primeflex" container="" debug={false} />
                 </div>
                 <div className="landing-header-right flex  align-items-center">
                     <nav className="scalein origin-top">
@@ -73,7 +73,7 @@ const HeaderSection = (props) => {
                             </li>
                         </ol>
                     </nav>
-                    <DocSearch appId="SCRI13XXZO" apiKey="ea9e6c8a983c5646d6b9079921d4aed7" indexName="primereact" container="" debug={false} />
+                    <DocSearch appId="TLMMWZFW0F" apiKey="e6191f9edfded2e69492f3f3b315e237" indexName="primeflex" container="" debug={false} />
                     <button type="button" className="linkbox border-none header-button mx-1 inline-flex align-items-center justify-content-center mr-1 cursor-pointer" onClick={changeColorScheme}>
                         <i className={colorSchemeIcon}></i>
                     </button>
