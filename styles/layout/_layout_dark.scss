@@ -1,7 +1,7 @@
 .layout-wrapper-dark {
     --body-bg: rgb(8, 19, 37);
     --body-bg-image: url("/images/headerfx.png");
-    --menu-bg: radial-gradient(39.27% 40.65% at 50% 0%, rgba(0, 8, 65, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    --menu-bg: rgb(8, 19, 37);
     --demo-bg-link: url("/images/tiny-checkers-dark.png");
     --demo-bg-blue: var(--blue-900);
     --demo-bg-yellow: var(--yellow-900);
@@ -13,7 +13,7 @@
     --menu-border-color: rgba(255, 255, 255, 0.1);
     --topbar-bg: rgba(8, 19, 37, 0.4);
     --menu-icon-hover-filter: invert(35%) sepia(100%) saturate(1296%) hue-rotate(80deg) brightness(215%) contrast(100%);
-
+    --table-border-color: #10274b;
     --surface-a: #00031a;
     --surface-b: #191c31;
     --surface-c: #333548;
@@ -51,9 +51,9 @@
     --border-radius: 4px;
     --surface-ground: #00031a;
     --surface-section: #00031a;
-    --surface-card: #0d1e3b;
-    --surface-overlay: #0d1e3b;
-    --surface-border: #10274b;
+    --surface-card: #0c1c37;
+    --surface-overlay: #0c1c37;
+    --surface-border: #003b5c;
     --surface-hover: rgba(255, 255, 255, 0.03);
     --focus-ring: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
     --maskbg: rgba(0, 0, 0, 0.4);
@@ -169,15 +169,15 @@
     --red-700: #9a2530;
     --red-800: #791d26;
     --red-900: #58151c;
-    --primary-50: #f9fdff;
-    --primary-100: #e4f4ff;
-    --primary-200: #ceebff;
-    --primary-300: #b8e2ff;
-    --primary-400: #a3d9ff;
-    --primary-500: #8dd0ff;
-    --primary-600: #78b1d9;
-    --primary-700: #6392b3;
-    --primary-800: #4e728c;
-    --primary-900: #385366;
+    --primary-50: #e6fcf4;
+    --primary-100: #ccf9e9;
+    --primary-200: #99f3d2;
+    --primary-300: #66ecbc;
+    --primary-400: #33e6a5;
+    --primary-500: #00e08f;
+    --primary-600: #00b372;
+    --primary-700: #008656;
+    --primary-800: #005a39;
+    --primary-900: #002d1d;
     color-scheme: dark;
 }

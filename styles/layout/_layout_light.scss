@@ -1,7 +1,7 @@
 .layout-wrapper-light {
     --body-bg: #f6f7f9;
     --body-bg-image: url("/images/headerfxlight.png");
-    --menu-bg: rgba(255, 255, 255, 1);
+    --menu-bg: #f6f7f9;
     --demo-bg-link: url("/images/tiny-checkers.png");
     --demo-bg-blue: var(--blue-50);
     --demo-bg-yellow: var(--yellow-50);
@@ -12,7 +12,7 @@
     --demo-bg-cyan: var(--cyan-50);
     --menu-border-color: rgba(255, 255, 255, 0.05);
     --menu-icon-hover-filter: invert(35%) sepia(100%) saturate(1218%) hue-rotate(80deg) brightness(99%) contrast(119%);
-
+    --table-border-color: #dee2e6;
     --topbar-bg: rgb(246, 247, 249 / 80%);
 
     --surface-a: #ffffff;
@@ -170,15 +170,15 @@
     --red-700: #9a2530;
     --red-800: #791d26;
     --red-900: #58151c;
-    --primary-50: #f2f8ff;
-    --primary-100: #c2dfff;
-    --primary-200: #91c6ff;
-    --primary-300: #61adff;
-    --primary-400: #3094ff;
-    --primary-500: #007bff;
-    --primary-600: #0069d9;
-    --primary-700: #0056b3;
-    --primary-800: #00448c;
-    --primary-900: #003166;
+    --primary-50: #e6fcf4;
+    --primary-100: #ccf9e9;
+    --primary-200: #99f3d2;
+    --primary-300: #66ecbc;
+    --primary-400: #33e6a5;
+    --primary-500: #00e08f;
+    --primary-600: #00b372;
+    --primary-700: #008656;
+    --primary-800: #005a39;
+    --primary-900: #002d1d;
     color-scheme: light;
 }
