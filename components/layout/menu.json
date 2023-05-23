@@ -1,9 +1,9 @@
 {
     "data": [
-      
+       
         {
             "name": "Getting Started",
-            "icon": "pi pi-home",
+            "image":"/images/menu-icons/icon-gettingstarted",
             "children": [
                 {
                     "name": "Installation",
@@ -13,14 +13,10 @@
                 { "name": "Migration", "to": "/migration" }
             ]
         },
-        {
-            "name": "PrimeBlocks",
-            "icon": "pi pi-server",
-            "href": "https://blocks.primereact.org"
-        },
+        
         {
             "name": "Layout",
-            "icon": "pi pi-home",
+            "image":"/images/menu-icons/icon-layout",
             "children": [
                 { "name": "Display", "to": "/display" },
                 { "name": "Overflow", "to": "/overflow" },
@@ -34,7 +30,7 @@
         },
         {
             "name": "Flexbox",
-            "icon": "pi pi-home",
+            "image":"/images/menu-icons/icon-flexbox",
             "children": [
                 { "name": "Flex Direction", "to": "/flexdirection" },
                 { "name": "Flex Wrap", "to": "/flexwrap" },
@@ -51,7 +47,7 @@
         },
         {
             "name": "Grid",
-            "icon": "pi pi-home",
+            "image":"/images/menu-icons/icon-grid",
             "children": [
                 { "name": "Form Layout", "to": "/formlayout" },
                 { "name": "Grid System", "to": "/gridsystem" }
@@ -59,7 +55,7 @@
         },
         {
             "name": "Background",
-            "icon": "pi pi-home",
+            "image":"/images/menu-icons/icon-background",
             "children": [
                 { "name": "Background Color", "to": "/backgroundcolor" },
                 { "name": "Background Repeat", "to": "/backgroundrepeat" },
@@ -69,7 +65,7 @@
         },
         {
             "name": "Border",
-            "icon": "pi pi-home",
+            "image":"/images/menu-icons/icon-border",
             "children": [
                 { "name": "Border Radius", "to": "/borderradius" },
                 { "name": "Border Width", "to": "/borderwidth" },
@@ -79,7 +75,7 @@
         },
         {
             "name": "Spacing",
-            "icon": "pi pi-home",
+            "image":"/images/menu-icons/icon-spacing",
             "children": [
                 { "name": "Padding", "to": "/padding" },
                 { "name": "Margin", "to": "/margin" }
@@ -87,7 +83,7 @@
         },
         {
             "name": "Sizing",
-            "icon": "pi pi-home",
+            "image":"/images/menu-icons/icon-sizing",
             "children": [
                 { "name": "Min Width", "to": "/minwidth" },
                 { "name": "Width", "to": "/width" },
@@ -99,7 +95,7 @@
         },
         {
             "name": "Typography",
-            "icon": "pi pi-home",
+            "image":"/images/menu-icons/icon-typography",
             "children": [
                 { "name": "Font Size", "to": "/fontsize" },
                 { "name": "Font Weight", "to": "/fontweight" },
@@ -117,7 +113,7 @@
         },
         {
             "name": "Effects",
-            "icon": "pi pi-home",
+            "image":"/images/menu-icons/icon-effects",
             "children": [
                 { "name": "Elevation", "to": "/elevation" },
                 { "name": "Opacity", "to": "/opacity" }
@@ -125,7 +121,7 @@
         },
         {
             "name": "Transition",
-            "icon": "pi pi-home",
+            "image":"/images/menu-icons/icon-transition",
             "children": [
                 { "name": "Transition Property", "to": "/transitionproperty" },
                 { "name": "Transition Duration", "to": "/transitionduration" },
@@ -135,7 +131,7 @@
         },
         {
             "name": "Animation",
-            "icon": "pi pi-home",
+            "image":"/images/menu-icons/icon-animation",
             "children": [
                 { "name": "Animations", "to": "/animations" },
                 { "name": "Animation Duration", "to": "/animationduration" },
@@ -150,7 +146,7 @@
         },
         {
             "name": "Transforms",
-            "icon": "pi pi-home",
+            "image":"/images/menu-icons/icon-transforms",
             "children": [
                 { "name": "Translate", "to": "/translate" },
                 { "name": "Transform Origin", "to": "/transformorigin" },
@@ -159,7 +155,7 @@
         },
         {
             "name": "Interactivity",
-            "icon": "pi pi-home",
+            "image":"/images/menu-icons/icon-interactivity",
             "children": [
                 { "name": "Appearance", "to": "/appearance" },
                 { "name": "Cursor", "to": "/cursor" },
@@ -167,6 +163,11 @@
                 { "name": "Pointer Events", "to": "/pointerevents" },
                 { "name": "User Select", "to": "/userselect" }
             ]
+        },
+        {
+            "name": "PrimeBlocks",
+            "image":"/images/menu-icons/icon-blocks",
+            "href": "https://blocks.primereact.org"
         }
     ]
 }

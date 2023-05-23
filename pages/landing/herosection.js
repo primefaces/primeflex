@@ -75,10 +75,10 @@ const HeroSection = ({ dark }) => {
                     style={{
                         position: 'absolute',
                         left: '0',
-                        top: '-94px',
+                        top: '-118px',
                         objectFit: 'cover',
                         zIndex: '0',
-                        height: 'calc(100% + 94px)'
+                        height: 'calc(100% + 118px)'
                     }}
                 >
                     <source src="/images/landing/hero-primeflex-dark.webm" type="video/webm" />
@@ -94,10 +94,10 @@ const HeroSection = ({ dark }) => {
                     style={{
                         position: 'absolute',
                         left: '0',
-                        top: '-94px',
+                        top: '-118px',
                         objectFit: 'cover',
                         zIndex: '0',
-                        height: 'calc(100% + 94px)'
+                        height: 'calc(100% + 118px)'
                     }}
                 >
                     <source src="/images/landing/hero-primeflex-light.webm" type="video/webm" />

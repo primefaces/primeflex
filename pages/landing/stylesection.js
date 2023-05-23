@@ -334,7 +334,7 @@ const StyleSection = () => {
                                 >
                                     <div
                                         className="content p-2 h-full relative bg-cover bg-no-repeat bg-center border-round-xl shadow-1 flex flex-column justify-content-end"
-                                        style={{ background: 'url(/images/landing/style-cards/glassmorphic-bg.jpeg)', backgroundBlendMode: 'color-dodge, normal, normal', minHeight: '385px' }}
+                                        style={{ background: 'url(/images/landing/style-cards/glassmorphic-bg.jpeg)', backgroundBlendMode: 'color-dodge, normal, normal', minHeight: '420px' }}
                                     >
                                         <div className="content-image  absolute top-0  right-0">
                                             <div className="rating mt-2 border-round-sm mr-2 p-2 flex align-items-center gap-2 bg-white-alpha-20 w-8rem border-1 " style={{ backdropFilter: 'blur(27px)', borderColor: 'rgba(255, 255, 255, 0.2)' }}>
@@ -475,7 +475,7 @@ transition-duration-200"
                                             <span className="font-medium text-gray-900">Prime Coffee Shop</span>
                                         </div>
                                         <div className="mt-3 content-image-wrapper relative text-center w-full flex align-items-center justify-content-center">
-                                            <div className="content-image bg-cover bg-no-repeat bg-center h-14rem w-7rem z-4" style={{ backgroundImage: 'url(/images/landing/style-cards/modern.jpg)', borderRadius: '70px' }}></div>
+                                            <div className="content-image bg-cover bg-no-repeat bg-center h-12rem w-6rem z-4" style={{ backgroundImage: 'url(/images/landing/style-cards/modern.jpg)', borderRadius: '70px' }}></div>
                                             <span className="block absolute w-11rem h-5rem bg-orange-300 z-3 origin-top-center -rotate-45"></span>
                                             <span className="block absolute w-11rem h-5rem bg-orange-300 z-2 origin-bottom-center rotate-45"></span>
                                         </div>

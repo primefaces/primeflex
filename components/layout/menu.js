@@ -23,7 +23,7 @@ const Menu = memo((props) => {
             <>
                 {item.icon && (
                     <div className="menu-icon">
-                        <i className={item.icon}></i>
+                        <img src={item.image + '.svg'}></img>
                     </div>
                 )}
                 {name}
@@ -33,7 +33,11 @@ const Menu = memo((props) => {
         if (href) {
             return (
                 <a href={href} target="_blank" rel="noopener noreferrer">
-                    {content}
+                    <div className="menu-icon">
+                        <img src={item.image + '.svg'}></img>
+                    </div>
+                    <span>{content}</span>
+                    <i className="menu-toggle-icon pi pi-external-link"></i>
                 </a>
             );
         } else {
@@ -97,7 +101,7 @@ const Menu = memo((props) => {
             <StyleClass nodeRef={btnRef} selector="@next" enterClassName="hidden" enterActiveClassName="slidedown" leaveToClassName="hidden" leaveActiveClassName="slideup">
                 <button ref={btnRef} type="button" className="link-button">
                     <div className="menu-icon">
-                        <i className={menuitem.icon}></i>
+                        <img src={menuitem.image + (props.darkTheme ? '.svg' : '-light.svg')}></img>
                     </div>
                     <span>{menuitem.name}</span>
                     <i className="menu-toggle-icon pi pi-angle-down"></i>

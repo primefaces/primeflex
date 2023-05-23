@@ -1,5 +1,5 @@
 .layout-wrapper-light {
-    --body-bg: radial-gradient(39.27% 40.65% at 50% 0%, rgba(112, 232, 248, 0.1) 0%, rgb(246, 247, 249) 100%);
+    --body-bg: #f6f7f9;
     --body-bg-image: url("/images/headerfxlight.png");
     --menu-bg: rgba(255, 255, 255, 1);
     --demo-bg-link: url("/images/tiny-checkers.png");
@@ -11,6 +11,7 @@
     --demo-bg-orange: var(--orange-50);
     --demo-bg-cyan: var(--cyan-50);
     --menu-border-color: rgba(255, 255, 255, 0.05);
+    --menu-icon-hover-filter: invert(35%) sepia(100%) saturate(1218%) hue-rotate(80deg) brightness(99%) contrast(119%);
 
     --topbar-bg: rgb(246, 247, 249 / 80%);
 
@@ -54,11 +55,11 @@
     --surface-card: #ffffff;
     --surface-overlay: #ffffff;
     --surface-border: #dee2e6;
-    --surface-hover: #e9ecef;
+    --surface-hover: rgba(0, 0, 0, 0.02);
     --focus-ring: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
     --maskbg: rgba(0, 0, 0, 0.4);
-    --highlight-bg: #007bff;
-    --highlight-text-color: #ffffff;
+    --highlight-bg: transparent;
+    --highlight-text-color: #00e08f;
     --blue-50: #f3f8ff;
     --blue-100: #c5dcff;
     --blue-200: #97c1fe;

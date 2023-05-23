@@ -3,9 +3,9 @@
     border: 1px solid var(--surface-border);
     width: 14rem;
     margin: 0;
-    transition: border-color .3s;
+    transition: border-color 0.3s;
     height: 3rem;
-    padding: 0 .75rem;
+    padding: 0 0.75rem;
     font-family: var(--font-family);
 
     &:hover {
@@ -28,7 +28,7 @@
         align-items: center;
         justify-content: center;
         width: auto;
-        padding: .28rem .35rem;
+        padding: 0.28rem 0.35rem;
         gap: 2px;
 
         .DocSearch-Button-Key {
@@ -47,7 +47,7 @@
                 font-size: 0.8rem;
                 font-weight: 700;
                 line-height: 13.5px;
-                svg{
+                svg {
                     height: 14.5px;
                 }
             }
@@ -62,16 +62,15 @@
                     display: flex;
                     color: var(--text-color);
                     font-family: "primeicons";
-                    font-size: .4rem;
-                    opacity: .7;
+                    font-size: 0.4rem;
+                    opacity: 0.7;
                     margin-right: 2px;
                     height: 13.5px;
                     align-items: center;
                     font-weight: 700;
-
                 }
             }
-        }        
+        }
     }
 }
 
@@ -95,13 +94,14 @@
     box-shadow: none;
     border: 1px solid var(--surface-border);
     border-radius: var(--border-radius);
-    transition: border-color .3s;
+    transition: border-color 0.3s;
 
     &:hover {
         border-color: var(--primary-color);
     }
 
-    .DocSearch-MagnifierLabel, .DocSearch-Reset {
+    .DocSearch-MagnifierLabel,
+    .DocSearch-Reset {
         color: var(--text-color);
     }
 }
@@ -109,14 +109,15 @@
 .DocSearch-Hit {
     border-bottom: 1px solid var(--surface-border);
     padding-bottom: 0;
-    margin-bottom: .25rem;
+    margin-bottom: 0.25rem;
 }
 
 .DocSearch-Hit-source {
     color: var(--primary-color);
 }
 
-.DocSearch-Logo .cls-1, .DocSearch-Logo .cls-2 {
+.DocSearch-Logo .cls-1,
+.DocSearch-Logo .cls-2 {
     fill: var(--primary-color);
 }
 

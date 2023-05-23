@@ -41,7 +41,7 @@
                 display: flex;
                 width: 100%;
                 align-items: center;
-                padding: 1rem;
+                padding: 0.5rem 1rem;
                 color: var(--surface-900);
                 font-weight: 600;
                 transition: all 0.2s;
@@ -53,6 +53,12 @@
                 &:hover {
                     opacity: 1;
                     background-color: var(--surface-hover);
+                    .menu-icon {
+                        img {
+                            opacity: 0.8;
+                            filter: var(--menu-icon-hover-filter);
+                        }
+                    }
                 }
 
                 &:focus {
@@ -63,16 +69,14 @@
                 .menu-icon {
                     width: 2rem;
                     height: 2rem;
-                    border-radius: var(--border-radius);
                     margin-right: 0.5rem;
-                    border: 1px solid var(--surface-border);
                     display: inline-flex;
                     align-items: center;
                     justify-content: center;
-                    display: none;
 
-                    i {
-                        color: var(--surface-700);
+                    img {
+                        width: 2rem;
+                        height: 2rem;
                     }
                 }
 
@@ -85,7 +89,7 @@
 
             > div {
                 > ol {
-                    margin: 0 0 0 1.5rem;
+                    margin: 0 0 0 2rem;
                     padding: 0.25rem 0 0 0.5rem;
                     border-left: 1px solid var(--menu-border-color);
 
