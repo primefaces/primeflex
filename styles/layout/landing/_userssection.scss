@@ -7,6 +7,7 @@
         height: 164px;
         margin: 0 auto;
         overflow: hidden;
+        max-width: 1650px;
         .marquee-wrapper {
             user-select: none;
             gap: 3rem;
@@ -21,7 +22,7 @@
             justify-content: space-around;
             gap: 3rem;
             min-width: 100%;
-            animation: scrolls 40s linear infinite;
+            animation: scrolls 60s linear infinite;
 
             > div {
                 max-width: clamp(10rem, 1rem + 28vmin, 20rem);

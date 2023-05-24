@@ -127,7 +127,7 @@ const HeroSection = ({ dark }) => {
                                 navigator.clipboard.writeText('npm i primeflex');
                                 npmCopied('copied!');
                                 setTimeout(() => {
-                                    npmCopied('npm i primereact');
+                                    npmCopied('npm i primeflex');
                                 }, 2000);
                             }}
                         >

@@ -194,7 +194,7 @@
     }
     .hero-bg-light-4 {
         width: 91.43px;
-        height: 1147px;
+        height: 997px;
         left: 90%;
         top: 60px;
         background: var(--hero-bg-light-4);
@@ -206,7 +206,7 @@
     .hero-bg-light-4 {
         position: absolute;
         mix-blend-mode: var(--hero-bg-light-mix-mode);
-        animation: swing 8s infinite ease-in-out;
+        animation: swing 16s infinite ease-in-out;
         transform-origin: 50% 0%;
         z-index: 1;
         transform: matrix(0.82, -0.57, -0.57, -0.82, 0, 0);

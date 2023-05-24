@@ -29,9 +29,9 @@ const UsersSection = ({ dark }) => {
     return (
         <section className="landing-users-section relative landing-section-border">
             <div className="landing-marquee-container px-5 relative z-5 flex align-items-center">
-                <div className="fade-left h-full w-6rem block absolute top-0 left-0 z-2" style={{ background: 'linear-gradient(to right, var(--landing-body-bg), transparent)' }}></div>
+                <div className="fade-left h-10rem w-6rem block absolute top-0 left-0 z-2" style={{ background: 'linear-gradient(to right, var(--landing-body-bg), transparent)' }}></div>
                 <Marquee users={usersImages} />
-                <div className="fade-right h-full w-6rem block absolute top-0 right-0 z-2" style={{ background: 'linear-gradient(to left, var(--landing-body-bg), transparent)' }}></div>
+                <div className="fade-right h-10rem w-6rem block absolute top-0 right-0 z-2" style={{ background: 'linear-gradient(to left, var(--landing-body-bg), transparent)' }}></div>
             </div>
         </section>
     );
