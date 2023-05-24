@@ -7,25 +7,20 @@
             flex-direction: row;
             justify-content: center;
             align-items: center;
-            padding: 0.75rem 1rem;
-            background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 0.01%, rgba(0, 0, 0, 0.12) 100%),
-                #00de94;
+            padding: 10px 14px;
+            gap: 10px;
+
+            background: #0078e3;
             background-blend-mode: multiply, normal;
-            box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.25);
+            box-shadow: 0px 0px 0px 1px #4dabff, 0px 2px 4px rgba(0, 0, 0, 0.07), 0px 1px 1.5px rgba(0, 0, 0, 0.05);
             border-radius: 7px;
             font-weight: 500;
             line-height: 100%;
             text-align: center;
-            transition: background 0.3s;
-            color: #000424;
+            transition: background 0.6s;
+            color: #ffffff;
             &:hover {
-                background: linear-gradient(
-                        180deg,
-                        rgba(0, 0, 0, 0) 0%,
-                        rgba(0, 0, 0, 0) 0.01%,
-                        rgba(0, 0, 0, 0.3) 100%
-                    ),
-                    #00de94;
+                background: #3ba3ff;
             }
         }
 
@@ -80,9 +75,8 @@
                 flex-direction: row;
                 justify-content: space-between;
                 align-items: center;
-                padding: 3.5px 3.5px 3.5px 10.5px;
+                padding: 4px 3.5px 4px 10.5px;
                 width: 196px;
-                height: 40px;
                 background: var(--download-box-bg);
                 border: var(--download-box-border);
                 box-shadow: var(--download-box-shadow);

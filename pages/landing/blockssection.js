@@ -70,7 +70,7 @@ const BlocksSection = ({ dark }) => {
                         Leverage PrimeBlocks, the building blocks crafted with PrimeFlex. Streamline your project and concentrate on core functionalities, leaving the aesthetics to us.
                     </h3>
 
-                    <Link href="https://blocks.primereact.org/" target="_blank" className="linkbox-button active w-9rem fadeinleft animation-duration-2000 animation-ease-out text-700">
+                    <Link href="https://blocks.primereact.org/" target="_blank" className="linkbox-button active w-9rem fadeinleft animation-duration-2000 animation-ease-out text-500">
                         Learn more
                     </Link>
                 </div>

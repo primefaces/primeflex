@@ -114,7 +114,7 @@ const StyleSection = () => {
                     <h1 className="landing-title font-bold m-0 text-7xl">Create Your Style</h1>
                     <h3 className="landing-subtitle m-0 text-2xl font-normal text-center">Craft unique aesthetics with PrimeFlex's classes. Use our flexible toolkit to make your design vision a reality, embodying your brand's distinct style.</h3>
 
-                    <Link href="/installation" className="linkbox-button active w-9rem fadeinleft animation-duration-2000 animation-ease-out text-700">
+                    <Link href="/installation" className="linkbox-button active w-9rem fadeinleft animation-duration-2000 animation-ease-out text-500">
                         Learn more
                     </Link>
                 </div>

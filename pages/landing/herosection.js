@@ -114,8 +114,8 @@ const HeroSection = ({ dark }) => {
                     <h3 className="landing-subtitle m-0 text-xl font-normal text-center">PrimeFlex is a lightweight responsive CSS utility library to accompany Prime UI libraries and static webpages as well.</h3>
                 </div>
                 <div className="landing-hero-getstarted flex flex-column md:flex-row align-items-center justify-content-center">
-                    <Link href="/installation" className="linkbox-button active fadeinleft animation-duration-2000 animation-ease-out">
-                        Get Started
+                    <Link href="/installation" className="linkbox-button active fadeinleft animation-duration-2000 animation-ease-out ">
+                        Get Started <i className="pi pi-bolt"></i>
                     </Link>
                     <div className="box download-box fadeinright animation-duration-2000 animation-ease-out border-1 ">
                         <span className="npm-text text-700" style={{ fontFamily: 'monaco, monospace' }}>
