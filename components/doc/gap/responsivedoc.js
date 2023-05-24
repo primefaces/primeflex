@@ -3,8 +3,8 @@ import { DocSectionText } from '../common/docsectiontext';
 
 export function ResponsiveDoc(props) {
     const code = `<div class="flex flex-wrap gap-1 md:gap-4 xl:gap-8">
-    <div class="border-round w-12rem h-6rem bg-blue-500 text-white font-bold flex align-items-center justify-content-center">1</div>
-    <div class="border-round w-12rem h-6rem bg-blue-500 text-white font-bold flex align-items-center justify-content-center">2</div>
+    <div class="border-round w-12rem h-6rem bg-primary-500 text-white font-bold flex align-items-center justify-content-center">1</div>
+    <div class="border-round w-12rem h-6rem bg-primary-500 text-white font-bold flex align-items-center justify-content-center">2</div>
 </div>
 `;
 
@@ -45,8 +45,8 @@ export function ResponsiveDoc(props) {
             </DocSectionText>
             <div className="card">
                 <div className="flex flex-wrap gap-1 md:gap-4 xl:gap-8">
-                    <div className="border-round w-12rem h-6rem bg-blue-500 text-white font-bold flex align-items-center justify-content-center">1</div>
-                    <div className="border-round w-12rem h-6rem bg-blue-500 text-white font-bold flex align-items-center justify-content-center">2</div>
+                    <div className="border-round w-12rem h-6rem bg-primary-500 text-white font-bold flex align-items-center justify-content-center">1</div>
+                    <div className="border-round w-12rem h-6rem bg-primary-500 text-white font-bold flex align-items-center justify-content-center">2</div>
                 </div>
             </div>
             <DocSectionCode code={code} />

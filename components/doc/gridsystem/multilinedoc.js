@@ -4,16 +4,16 @@ import { DocSectionText } from '../common/docsectiontext';
 export function MultilineDoc(props) {
     const code = `<div class="grid">
     <div class="col-6">
-        <div class="text-center p-3 border-round-sm bg-green-500 font-bold text-white">6</div>
+        <div class="text-center p-3 border-round-sm bg-primary font-bold text-white">6</div>
     </div>
     <div class="col-6">
-        <div class="text-center p-3 border-round-sm bg-green-500 font-bold text-white">6</div>
+        <div class="text-center p-3 border-round-sm bg-primary font-bold text-white">6</div>
     </div>
     <div class="col-6">
-        <div class="text-center p-3 border-round-sm bg-green-500 font-bold text-white">6</div>
+        <div class="text-center p-3 border-round-sm bg-primary font-bold text-white">6</div>
     </div>
     <div class="col-6">
-        <div class="text-center p-3 border-round-sm bg-green-500 font-bold text-white">6</div>
+        <div class="text-center p-3 border-round-sm bg-primary font-bold text-white">6</div>
     </div>
 </div>
 `;
@@ -26,16 +26,16 @@ export function MultilineDoc(props) {
             <div className="card">
                 <div className="grid">
                     <div className="col-6">
-                        <div className="text-center p-3 border-round-sm bg-green-500 font-bold text-white">6</div>
+                        <div className="text-center p-3 border-round-sm bg-primary font-bold text-white">6</div>
                     </div>
                     <div className="col-6">
-                        <div className="text-center p-3 border-round-sm bg-green-500 font-bold text-white">6</div>
+                        <div className="text-center p-3 border-round-sm bg-primary font-bold text-white">6</div>
                     </div>
                     <div className="col-6">
-                        <div className="text-center p-3 border-round-sm bg-green-500 font-bold text-white">6</div>
+                        <div className="text-center p-3 border-round-sm bg-primary font-bold text-white">6</div>
                     </div>
                     <div className="col-6">
-                        <div className="text-center p-3 border-round-sm bg-green-500 font-bold text-white">6</div>
+                        <div className="text-center p-3 border-round-sm bg-primary font-bold text-white">6</div>
                     </div>
                 </div>
             </div>

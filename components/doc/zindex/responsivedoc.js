@@ -3,8 +3,8 @@ import { DocSectionText } from '../common/docsectiontext';
 
 export function ResponsiveDoc(props) {
     const code = `<div class="flex flex-wrap justify-content-center" style="min-height: 200px">
-    <div class="z-1 md:z-0 relative flex align-items-center justify-content-center p-4 bg-yellow-500 font-bold text-gray-900 border-round shadow-1" style="width: 100px; height: 100px; left:25px">1</div>
-    <div class="z-0 relative flex align-items-center justify-content-center p-4 bg-yellow-500 font-bold text-gray-900 border-round shadow-1" style="width: 100px; height: 100px; top:10px">2</div>
+    <div class="z-1 md:z-0 relative flex align-items-center justify-content-center p-4 bg-primary-500 font-bold text-gray-900 border-round shadow-1" style="width: 100px; height: 100px; left:25px">1</div>
+    <div class="z-0 relative flex align-items-center justify-content-center p-4 bg-primary-500 font-bold text-gray-900 border-round shadow-1" style="width: 100px; height: 100px; top:10px">2</div>
 </div>
 `;
 
@@ -45,10 +45,10 @@ export function ResponsiveDoc(props) {
             </DocSectionText>
             <div className="card">
                 <div className="flex flex-wrap justify-content-center" style={{ minHeight: '200px' }}>
-                    <div className="z-1 md:z-0 relative flex align-items-center justify-content-center p-4 bg-yellow-500 font-bold text-gray-900 border-round shadow-1" style={{ width: '100px', height: '100px', left: '25px' }}>
+                    <div className="z-1 md:z-0 relative flex align-items-center justify-content-center p-4 bg-primary-500 font-bold text-gray-900 border-round shadow-1" style={{ width: '100px', height: '100px', left: '25px' }}>
                         1
                     </div>
-                    <div className="z-0 relative flex align-items-center justify-content-center p-4 bg-yellow-500 font-bold text-gray-900 border-round shadow-1" style={{ width: '100px', height: '100px', top: '10px' }}>
+                    <div className="z-0 relative flex align-items-center justify-content-center p-4 bg-primary-500 font-bold text-gray-900 border-round shadow-1" style={{ width: '100px', height: '100px', top: '10px' }}>
                         2
                     </div>
                 </div>

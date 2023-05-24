@@ -6,11 +6,11 @@ export function ExamplesDoc(props) {
     <div class="surface-500 text-white font-bold border-round m-2 flex align-items-center justify-content-center" style="min-width: 200px; min-height: 100px">
         surface-500
     </div>
-    <div class="bg-cyan-500 text-white font-bold border-round m-2 flex align-items-center justify-content-center" style="min-width: 200px; min-height: 100px">
-        bg-cyan-500
+    <div class="bg-primary-500 text-white font-bold border-round m-2 flex align-items-center justify-content-center" style="min-width: 200px; min-height: 100px">
+        bg-primary-500
     </div>
-    <div class="bg-orange-500 text-white font-bold border-round m-2 flex align-items-center justify-content-center" style="min-width: 200px; min-height: 100px">
-        bg-orange-500
+    <div class="bg-primary text-white font-bold border-round m-2 flex align-items-center justify-content-center" style="min-width: 200px; min-height: 100px">
+        bg-primary
     </div>
 </div>
 `;
@@ -23,11 +23,11 @@ export function ExamplesDoc(props) {
                     <div className="surface-500 text-white font-bold border-round m-2 flex align-items-center justify-content-center" style={{ minWidth: '200px', minHeight: '100px' }}>
                         surface-500
                     </div>
-                    <div className="bg-cyan-500 text-white font-bold border-round m-2 flex align-items-center justify-content-center" style={{ minWidth: '200px', minHeight: '100px' }}>
-                        bg-cyan-500
+                    <div className="bg-primary-500 text-white font-bold border-round m-2 flex align-items-center justify-content-center" style={{ minWidth: '200px', minHeight: '100px' }}>
+                        bg-primary-500
                     </div>
-                    <div className="bg-orange-500 text-white font-bold border-round m-2 flex align-items-center justify-content-center" style={{ minWidth: '200px', minHeight: '100px' }}>
-                        bg-orange-500
+                    <div className="bg-primary text-white font-bold border-round m-2 flex align-items-center justify-content-center" style={{ minWidth: '200px', minHeight: '100px' }}>
+                        bg-primary
                     </div>
                 </div>
             </div>

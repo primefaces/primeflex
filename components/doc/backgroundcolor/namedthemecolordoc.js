@@ -66,7 +66,7 @@ export function NamedThemeColorDoc(props) {
                     <div className="surface-section hover:surface-500 border-round text-surface-100 font-bold m-2 flex align-items-center justify-content-center" style={{ minWidth: '200px', minHeight: '100px' }}>
                         surface-section
                     </div>
-                    <div className="surface-card hover:surface-500 border-round surface-border border-3 text-surface-100 font-bold m-2 flex align-items-center justify-content-center" style={{ minWidth: '200px', minHeight: '100px' }}>
+                    <div className="surface-card hover:bg-orange-700 border-round surface-border border-3 text-surface-100 font-bold m-2 flex align-items-center justify-content-center" style={{ minWidth: '200px', minHeight: '100px' }}>
                         hover:bg-orange-700
                     </div>
                 </div>

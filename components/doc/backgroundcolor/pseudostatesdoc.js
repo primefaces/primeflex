@@ -6,10 +6,10 @@ export function PseudoStatesDoc(props) {
     <div class="surface-500 hover:surface-700 border-round text-white font-bold m-2 flex align-items-center justify-content-center" style="min-width: 200px; min-height: 100px">
         hover:surface-700
     </div>
-    <div class="bg-cyan-500 hover:bg-cyan-700 border-round text-white font-bold m-2 flex align-items-center justify-content-center" style="min-width: 200px; min-height: 100px">
+    <div class="bg-primary-500 hover:bg-cyan-700 border-round text-white font-bold m-2 flex align-items-center justify-content-center" style="min-width: 200px; min-height: 100px">
         hover:bg-cyan-700
     </div>
-    <div class="bg-orange-500 hover:bg-orange-700 border-round text-white font-bold m-2 flex align-items-center justify-content-center" style="min-width: 200px; min-height: 100px">
+    <div class="bg-primary hover:bg-orange-700 border-round text-white font-bold m-2 flex align-items-center justify-content-center" style="min-width: 200px; min-height: 100px">
         hover:bg-orange-700
     </div>
 </div>

@@ -3,7 +3,7 @@ import { DocSectionText } from '../common/docsectiontext';
 
 export function RepeatHorizontallyDoc(props) {
     const code = `<div class="overflow-hidden">
-    <div class="bg-repeat-x bg-green-100 bg-center border-green-500 border-2 border-round h-10rem w-full" style="background-image: url('/images/product-placeholder-green.svg');background-size: 10rem"></div>
+    <div class="bg-repeat-x bg-primary-100 bg-center border-primary-500 border-2 border-round h-10rem w-full" style="background-image: url('/images/product-placeholder-green.svg');background-size: 10rem"></div>
 </div>
 `;
 
@@ -14,7 +14,7 @@ export function RepeatHorizontallyDoc(props) {
             </DocSectionText>
             <div className="card">
                 <div className="overflow-hidden">
-                    <div className="bg-repeat-x bg-green-100 bg-center border-green-500 border-2 border-round h-10rem w-full" style={{ backgroundImage: "url('/images/product-placeholder-green.svg')", backgroundSize: '10rem' }}></div>
+                    <div className="bg-repeat-x bg-primary-100 bg-center border-primary-500 border-2 border-round h-10rem w-full" style={{ backgroundImage: "url('/images/product-placeholder-green.svg')", backgroundSize: '10rem' }}></div>
                 </div>
             </div>
             <DocSectionCode code={code} />

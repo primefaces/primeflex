@@ -3,8 +3,8 @@ import { DocSectionText } from '../common/docsectiontext';
 
 export function VerticalMarginDoc(props) {
     const code = `<div class="flex flex-wrap align-items-center justify-content-center">
-    <div class="bg-green-100 w-12rem m-3 border-round">
-        <div class="my-5 border-round bg-green-500 text-white font-bold p-3 flex align-items-center justify-content-center">my-5</div>
+    <div class="bg-primary-100 w-12rem m-3 border-round">
+        <div class="my-5 border-round bg-primary text-white font-bold p-3 flex align-items-center justify-content-center">my-5</div>
     </div>
 </div>
 `;
@@ -16,8 +16,8 @@ export function VerticalMarginDoc(props) {
             </DocSectionText>
             <div className="card">
                 <div className="flex flex-wrap align-items-center justify-content-center">
-                    <div className="bg-green-100 w-12rem m-3 border-round">
-                        <div className="my-5 border-round bg-green-500 text-white font-bold p-3 flex align-items-center justify-content-center">my-5</div>
+                    <div className="bg-primary-100 w-12rem m-3 border-round">
+                        <div className="my-5 border-round bg-primary text-white font-bold p-3 flex align-items-center justify-content-center">my-5</div>
                     </div>
                 </div>
             </div>

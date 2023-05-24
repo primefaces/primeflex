@@ -3,7 +3,7 @@ import { DocSectionText } from '../common/docsectiontext';
 
 export function ResponsiveDoc(props) {
     const code = `<div class="flex align-items-center overflow-hidden">
-    <div class="bg-repeat-round md:bg-repeat-space bg-cyan-100 border-cyan-500 border-2 border-round h-21rem w-full" style="background-image: url('/images/product-placeholder-cyan.svg');background-size: 10rem"></div>
+    <div class="bg-repeat-round md:bg-repeat-space bg-cyan-100 border-primary-500 border-2 border-round h-21rem w-full" style="background-image: url('/images/product-placeholder-cyan.svg');background-size: 10rem"></div>
 </div>
 `;
 
@@ -44,7 +44,7 @@ export function ResponsiveDoc(props) {
             </DocSectionText>
             <div className="card">
                 <div className="flex align-items-center overflow-hidden">
-                    <div className="bg-repeat-round md:bg-repeat-space bg-cyan-100 border-cyan-500 border-2 border-round h-21rem w-full" style={{ backgroundImage: "url('/images/product-placeholder-cyan.svg')", backgroundSize: '10rem' }}></div>
+                    <div className="bg-repeat-round md:bg-repeat-space bg-cyan-100 border-primary-500 border-2 border-round h-21rem w-full" style={{ backgroundImage: "url('/images/product-placeholder-cyan.svg')", backgroundSize: '10rem' }}></div>
                 </div>
             </div>
             <DocSectionCode code={code} />

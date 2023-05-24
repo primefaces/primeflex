@@ -4,7 +4,7 @@ import { DocSectionText } from '../common/docsectiontext';
 export function ScaleinDoc(props) {
     const code = `<div class="flex flex-wrap align-items-center justify-content-center">
     <div class="scalein animation-duration-1000 animation-iteration-infinite flex align-items-center justify-content-center
-        font-bold bg-green-500 text-white border-round m-2 px-5 py-3">
+        font-bold bg-primary text-white border-round m-2 px-5 py-3">
         scalein
     </div>
 </div>
@@ -17,7 +17,7 @@ export function ScaleinDoc(props) {
                 <div className="flex flex-wrap align-items-center justify-content-center">
                     <div
                         className="scalein animation-duration-1000 animation-iteration-infinite flex align-items-center justify-content-center
-                        font-bold bg-green-500 text-white border-round m-2 px-5 py-3"
+                        font-bold bg-primary text-white border-round m-2 px-5 py-3"
                     >
                         scalein
                     </div>

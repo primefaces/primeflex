@@ -3,9 +3,9 @@ import { DocSectionText } from '../common/docsectiontext';
 
 export function ResponsiveDoc(props) {
     const code = `<div class="flex align-items-stretch flex-wrap" style="min-height: 200px">
-    <div class="md:align-self-auto align-self-center flex align-items-center justify-content-center bg-cyan-500 font-bold text-white border-round m-2" style="min-width: 200px; min-height: 50px">1</div>
-    <div class="md:align-self-auto align-self-center flex align-items-center justify-content-center bg-cyan-500 font-bold text-white border-round m-2" style="min-width: 200px; min-height: 50px">2</div>
-    <div class="md:align-self-auto align-self-center flex align-items-center justify-content-center bg-cyan-500 font-bold text-white border-round m-2" style="min-width: 200px; min-height: 50px">3</div>
+    <div class="md:align-self-auto align-self-center flex align-items-center justify-content-center bg-primary-500 font-bold text-white border-round m-2" style="min-width: 200px; min-height: 50px">1</div>
+    <div class="md:align-self-auto align-self-center flex align-items-center justify-content-center bg-primary-500 font-bold text-white border-round m-2" style="min-width: 200px; min-height: 50px">2</div>
+    <div class="md:align-self-auto align-self-center flex align-items-center justify-content-center bg-primary-500 font-bold text-white border-round m-2" style="min-width: 200px; min-height: 50px">3</div>
 </div>
 `;
 
@@ -46,13 +46,13 @@ export function ResponsiveDoc(props) {
             </DocSectionText>
             <div className="card">
                 <div className="flex md:align-items-stretch align-items-stretch flex-wrap" style={{ minHeight: '200px' }}>
-                    <div className="md:align-self-auto align-self-center flex align-items-center justify-content-center bg-cyan-500 font-bold text-white border-round m-2" style={{ minWidth: '200px', minHeight: '50px' }}>
+                    <div className="md:align-self-auto align-self-center flex align-items-center justify-content-center bg-primary-500 font-bold text-white border-round m-2" style={{ minWidth: '200px', minHeight: '50px' }}>
                         1
                     </div>
-                    <div className="md:align-self-auto align-self-center flex align-items-center justify-content-center bg-cyan-500 font-bold text-white border-round m-2" style={{ minWidth: '200px', minHeight: '50px' }}>
+                    <div className="md:align-self-auto align-self-center flex align-items-center justify-content-center bg-primary-500 font-bold text-white border-round m-2" style={{ minWidth: '200px', minHeight: '50px' }}>
                         2
                     </div>
-                    <div className="md:align-self-auto align-self-center flex align-items-center justify-content-center bg-cyan-500 font-bold text-white border-round m-2" style={{ minWidth: '200px', minHeight: '50px' }}>
+                    <div className="md:align-self-auto align-self-center flex align-items-center justify-content-center bg-primary-500 font-bold text-white border-round m-2" style={{ minWidth: '200px', minHeight: '50px' }}>
                         3
                     </div>
                 </div>

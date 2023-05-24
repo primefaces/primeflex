@@ -4,7 +4,7 @@ import { DocSectionText } from '../common/docsectiontext';
 export function ZoominleftDoc(props) {
     const code = `<div class="flex flex-wrap align-items-center justify-content-center">
     <div class="zoominleft animation-duration-1000 animation-iteration-infinite flex align-items-center justify-content-center
-        font-bold bg-pink-500 text-white border-round m-2 px-5 py-3">
+        font-bold bg-primary text-white border-round m-2 px-5 py-3">
         zoominleft
     </div>
 </div>
@@ -17,7 +17,7 @@ export function ZoominleftDoc(props) {
                 <div className="flex flex-wrap align-items-center justify-content-center">
                     <div
                         className="zoominleft animation-duration-1000 animation-iteration-infinite flex align-items-center justify-content-center
-                        font-bold bg-pink-500 text-white border-round m-2 px-5 py-3"
+                        font-bold bg-primary text-white border-round m-2 px-5 py-3"
                     >
                         zoominleft
                     </div>

@@ -6,18 +6,18 @@ export function NestedDoc(props) {
     <div class="col-8">
         <div class="grid">
             <div class="col-6">
-                <div class="text-center p-3 border-round-sm bg-orange-500 font-bold text-white">6</div>
+                <div class="text-center p-3 border-round-sm bg-primary font-bold text-white">6</div>
             </div>
             <div class="col-6">
-                <div class="text-center p-3 border-round-sm bg-orange-500 font-bold text-white">6</div>
+                <div class="text-center p-3 border-round-sm bg-primary font-bold text-white">6</div>
             </div>
             <div class="col-12">
-                <div class="text-center p-3 border-round-sm bg-orange-500 font-bold text-white">12</div>
+                <div class="text-center p-3 border-round-sm bg-primary font-bold text-white">12</div>
             </div>
         </div>
     </div>
     <div class="col-4">
-        <div class="text-center p-3 border-round-sm h-full bg-orange-500 font-bold text-white">4</div>
+        <div class="text-center p-3 border-round-sm h-full bg-primary font-bold text-white">4</div>
     </div>
 </div>
 `;
@@ -32,18 +32,18 @@ export function NestedDoc(props) {
                     <div className="col-8">
                         <div className="grid">
                             <div className="col-6">
-                                <div className="text-center p-3 border-round-sm bg-orange-500 font-bold text-white">6</div>
+                                <div className="text-center p-3 border-round-sm bg-primary font-bold text-white">6</div>
                             </div>
                             <div className="col-6">
-                                <div className="text-center p-3 border-round-sm bg-orange-500 font-bold text-white">6</div>
+                                <div className="text-center p-3 border-round-sm bg-primary font-bold text-white">6</div>
                             </div>
                             <div className="col-12">
-                                <div className="text-center p-3 border-round-sm bg-orange-500 font-bold text-white">12</div>
+                                <div className="text-center p-3 border-round-sm bg-primary font-bold text-white">12</div>
                             </div>
                         </div>
                     </div>
                     <div className="col-4">
-                        <div className="text-center p-3 border-round-sm h-full bg-orange-500 font-bold text-white">4</div>
+                        <div className="text-center p-3 border-round-sm h-full bg-primary font-bold text-white">4</div>
                     </div>
                 </div>
             </div>

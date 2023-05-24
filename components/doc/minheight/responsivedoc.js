@@ -3,8 +3,8 @@ import { DocSectionText } from '../common/docsectiontext';
 
 export function ResponsiveDoc(props) {
     const code = `<div class="flex flex-wrap align-items-center justify-content-center">
-    <div class="border-round bg-yellow-100 w-20rem h-10rem p-3 m-3">
-        <div class="min-h-0 md:min-h-full border-round bg-yellow-500 text-gray-900 font-bold p-3 flex align-items-center justify-content-center">min-h-0 on small screen</div>
+    <div class="border-round bg-primary-100 w-20rem h-10rem p-3 m-3">
+        <div class="min-h-0 md:min-h-full border-round bg-primary-500 text-gray-900 font-bold p-3 flex align-items-center justify-content-center">min-h-0 on small screen</div>
     </div>
 </div>
 `;
@@ -46,8 +46,8 @@ export function ResponsiveDoc(props) {
             </DocSectionText>
             <div class="card">
                 <div class="flex flex-wrap align-items-center justify-content-center">
-                    <div class="border-round bg-yellow-100 w-20rem h-10rem p-3 m-3">
-                        <div class="min-h-0 md:min-h-full border-round bg-yellow-500 text-gray-900 font-bold p-3 flex align-items-center justify-content-center">min-h-0 on small screen</div>
+                    <div class="border-round bg-primary-100 w-20rem h-10rem p-3 m-3">
+                        <div class="min-h-0 md:min-h-full border-round bg-primary-500 text-gray-900 font-bold p-3 flex align-items-center justify-content-center">min-h-0 on small screen</div>
                     </div>
                 </div>
             </div>

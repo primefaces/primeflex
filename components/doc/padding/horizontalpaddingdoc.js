@@ -3,8 +3,8 @@ import { DocSectionText } from '../common/docsectiontext';
 
 export function HorizontalPaddingDoc(props) {
     const code = `<div class="flex flex-wrap align-items-center justify-content-center">
-    <div class="px-6 bg-yellow-100 w-12rem m-3 border-round">
-        <div class="border-round bg-yellow-500 text-gray-900 font-bold p-3 flex align-items-center justify-content-center">px-6</div>
+    <div class="px-6 bg-primary-100 w-12rem m-3 border-round">
+        <div class="border-round bg-primary-500 text-gray-900 font-bold p-3 flex align-items-center justify-content-center">px-6</div>
     </div>
 </div>
 `;
@@ -16,8 +16,8 @@ export function HorizontalPaddingDoc(props) {
             </DocSectionText>
             <div className="card">
                 <div className="flex flex-wrap align-items-center justify-content-center">
-                    <div className="px-6 bg-yellow-100 w-12rem m-3 border-round">
-                        <div className="border-round bg-yellow-500 text-gray-900 font-bold p-3 flex align-items-center justify-content-center">px-6</div>
+                    <div className="px-6 bg-primary-100 w-12rem m-3 border-round">
+                        <div className="border-round bg-primary-500 text-gray-900 font-bold p-3 flex align-items-center justify-content-center">px-6</div>
                     </div>
                 </div>
             </div>

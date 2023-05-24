@@ -4,7 +4,7 @@ import { DocSectionText } from '../common/docsectiontext';
 export function FadeoutleftDoc(props) {
     const code = `<div class="flex flex-wrap align-items-center justify-content-center">
     <div class="fadeoutleft animation-duration-1000 animation-iteration-infinite flex align-items-center justify-content-center
-        font-bold bg-yellow-500 text-gray-900 border-round m-2 px-5 py-3">
+        font-bold bg-primary-500 text-gray-900 border-round m-2 px-5 py-3">
         fadeoutleft
     </div>
 </div>
@@ -17,7 +17,7 @@ export function FadeoutleftDoc(props) {
                 <div className="flex flex-wrap align-items-center justify-content-center">
                     <div
                         className="fadeoutleft animation-duration-1000 animation-iteration-infinite flex align-items-center justify-content-center
-                        font-bold bg-yellow-500 text-gray-900 border-round m-2 px-5 py-3"
+                        font-bold bg-primary-500 text-gray-900 border-round m-2 px-5 py-3"
                     >
                         fadeoutleft
                     </div>

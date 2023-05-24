@@ -3,9 +3,9 @@ import { DocSectionText } from '../common/docsectiontext';
 
 export function ResponsiveDoc(props) {
     const code = `<div class="flex flex-wrap">
-    <div class="md:flex-order-2 flex align-items-center justify-content-center w-4rem h-4rem bg-yellow-500 font-bold text-gray-900 border-round m-2">1</div>
-    <div class="md:flex-order-1 flex align-items-center justify-content-center w-4rem h-4rem bg-yellow-500 font-bold text-gray-900 border-round m-2">2</div>
-    <div class="md:flex-order-0 flex align-items-center justify-content-center w-4rem h-4rem bg-yellow-500 font-bold text-gray-900 border-round m-2">3</div>
+    <div class="md:flex-order-2 flex align-items-center justify-content-center w-4rem h-4rem bg-primary-500 font-bold text-gray-900 border-round m-2">1</div>
+    <div class="md:flex-order-1 flex align-items-center justify-content-center w-4rem h-4rem bg-primary-500 font-bold text-gray-900 border-round m-2">2</div>
+    <div class="md:flex-order-0 flex align-items-center justify-content-center w-4rem h-4rem bg-primary-500 font-bold text-gray-900 border-round m-2">3</div>
 </div>
 `;
 
@@ -46,9 +46,9 @@ export function ResponsiveDoc(props) {
             </DocSectionText>
             <div className="card">
                 <div className="flex flex-wrap">
-                    <div className="md:flex-order-2 flex align-items-center justify-content-center w-4rem h-4rem bg-yellow-500 font-bold text-gray-900 border-round m-2">1</div>
-                    <div className="md:flex-order-1 flex align-items-center justify-content-center w-4rem h-4rem bg-yellow-500 font-bold text-gray-900 border-round m-2">2</div>
-                    <div className="md:flex-order-0 flex align-items-center justify-content-center w-4rem h-4rem bg-yellow-500 font-bold text-gray-900 border-round m-2">3</div>
+                    <div className="md:flex-order-2 flex align-items-center justify-content-center w-4rem h-4rem bg-primary-500 font-bold text-gray-900 border-round m-2">1</div>
+                    <div className="md:flex-order-1 flex align-items-center justify-content-center w-4rem h-4rem bg-primary-500 font-bold text-gray-900 border-round m-2">2</div>
+                    <div className="md:flex-order-0 flex align-items-center justify-content-center w-4rem h-4rem bg-primary-500 font-bold text-gray-900 border-round m-2">3</div>
                 </div>
             </div>
             <DocSectionCode code={code} />

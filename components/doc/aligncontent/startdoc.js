@@ -3,9 +3,9 @@ import { DocSectionText } from '../common/docsectiontext';
 
 export function StartDoc(props) {
     const code = `<div class="flex align-content-start flex-wrap" style="min-height: 200px">
-    <div class="flex align-items-center justify-content-center w-4rem h-4rem bg-blue-500 font-bold text-white border-round m-2">1</div>
-    <div class="flex align-items-center justify-content-center w-4rem h-4rem bg-blue-500 font-bold text-white border-round m-2">2</div>
-    <div class="flex align-items-center justify-content-center w-4rem h-4rem bg-blue-500 font-bold text-white border-round m-2">3</div>
+    <div class="flex align-items-center justify-content-center w-4rem h-4rem bg-primary-500 font-bold text-white border-round m-2">1</div>
+    <div class="flex align-items-center justify-content-center w-4rem h-4rem bg-primary-500 font-bold text-white border-round m-2">2</div>
+    <div class="flex align-items-center justify-content-center w-4rem h-4rem bg-primary-500 font-bold text-white border-round m-2">3</div>
 </div>
 `;
 
@@ -16,9 +16,9 @@ export function StartDoc(props) {
             </DocSectionText>
             <div className="card">
                 <div className="flex align-content-start flex-wrap" style={{ minHeight: '200px' }}>
-                    <div className="flex align-items-center justify-content-center w-4rem h-4rem bg-blue-500 font-bold text-white border-round m-2">1</div>
-                    <div className="flex align-items-center justify-content-center w-4rem h-4rem bg-blue-500 font-bold text-white border-round m-2">2</div>
-                    <div className="flex align-items-center justify-content-center w-4rem h-4rem bg-blue-500 font-bold text-white border-round m-2">3</div>
+                    <div className="flex align-items-center justify-content-center w-4rem h-4rem bg-primary-500 font-bold text-white border-round m-2">1</div>
+                    <div className="flex align-items-center justify-content-center w-4rem h-4rem bg-primary-500 font-bold text-white border-round m-2">2</div>
+                    <div className="flex align-items-center justify-content-center w-4rem h-4rem bg-primary-500 font-bold text-white border-round m-2">3</div>
                 </div>
             </div>
             <DocSectionCode code={code} />

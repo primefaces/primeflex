@@ -6,10 +6,10 @@ export function PseudoStatesDoc(props) {
     <div class="border-500 hover:border-700 border-3 border-round surface-overlay font-bold m-2 flex align-items-center justify-content-center" style="min-width: 200px; min-height: 100px">
         hover:border-700
     </div>
-    <div class="border-cyan-500 hover:border-cyan-700 border-round surface-overlay font-bold border-3 m-2 flex align-items-center justify-content-center" style="min-width: 200px; min-height: 100px">
+    <div class="border-primary-500 hover:border-cyan-700 border-round surface-overlay font-bold border-3 m-2 flex align-items-center justify-content-center" style="min-width: 200px; min-height: 100px">
         hover:border-cyan-700
     </div>
-    <div class="border-orange-500 hover:border-orange-700 border-round surface-overlay font-bold border-3 m-2 flex align-items-center justify-content-center" style="min-width: 200px; min-height: 100px">
+    <div class="border-primary-500 hover:border-orange-700 border-round surface-overlay font-bold border-3 m-2 flex align-items-center justify-content-center" style="min-width: 200px; min-height: 100px">
         hover:border-orange-700
     </div>
 </div>
@@ -27,10 +27,10 @@ export function PseudoStatesDoc(props) {
                     <div className="border-500 hover:border-700 border-3 border-round surface-overlay font-bold m-2 flex align-items-center justify-content-center" style={{ minWidth: '200px', minHeight: '100px' }}>
                         hover:border-700
                     </div>
-                    <div className="border-cyan-500 hover:border-cyan-700 border-round surface-overlay font-bold border-3 m-2 flex align-items-center justify-content-center" style={{ minWidth: '200px', minHeight: '100px' }}>
+                    <div className="border-primary-500 hover:border-cyan-700 border-round surface-overlay font-bold border-3 m-2 flex align-items-center justify-content-center" style={{ minWidth: '200px', minHeight: '100px' }}>
                         hover:border-cyan-700
                     </div>
-                    <div className="border-orange-500 hover:border-orange-700 border-round surface-overlay font-bold border-3 m-2 flex align-items-center justify-content-center" style={{ minWidth: '200px', minHeight: '100px' }}>
+                    <div className="border-primary-500 hover:border-orange-700 border-round surface-overlay font-bold border-3 m-2 flex align-items-center justify-content-center" style={{ minWidth: '200px', minHeight: '100px' }}>
                         hover:border-orange-700
                     </div>
                 </div>

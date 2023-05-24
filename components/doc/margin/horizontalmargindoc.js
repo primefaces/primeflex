@@ -3,8 +3,8 @@ import { DocSectionText } from '../common/docsectiontext';
 
 export function HorizontalMarginDoc(props) {
     const code = `<div class="flex flex-wrap align-items-center justify-content-center">
-    <div class="bg-yellow-100 w-12rem m-3 border-round">
-        <div class="mx-6 border-round bg-yellow-500 text-gray-900 font-bold p-3 flex align-items-center justify-content-center">mx-6</div>
+    <div class="bg-primary-100 w-12rem m-3 border-round">
+        <div class="mx-6 border-round bg-primary-500 text-gray-900 font-bold p-3 flex align-items-center justify-content-center">mx-6</div>
     </div>
 </div>
 `;
@@ -16,8 +16,8 @@ export function HorizontalMarginDoc(props) {
             </DocSectionText>
             <div className="card">
                 <div className="flex flex-wrap align-items-center justify-content-center">
-                    <div className="bg-yellow-100 w-12rem m-3 border-round">
-                        <div className="mx-6 border-round bg-yellow-500 text-gray-900 font-bold p-3 flex align-items-center justify-content-center">mx-6</div>
+                    <div className="bg-primary-100 w-12rem m-3 border-round">
+                        <div className="mx-6 border-round bg-primary-500 text-gray-900 font-bold p-3 flex align-items-center justify-content-center">mx-6</div>
                     </div>
                 </div>
             </div>

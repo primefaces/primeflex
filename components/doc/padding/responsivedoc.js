@@ -3,8 +3,8 @@ import { DocSectionText } from '../common/docsectiontext';
 
 export function ResponsiveDoc(props) {
     const code = `<div class="flex flex-wrap align-items-center justify-content-center">
-    <div class="py-6 px-0 md:px-6 md:py-0 bg-purple-100 w-20rem m-3 border-round">
-        <div class="border-round bg-purple-500 text-white font-bold p-3 flex align-items-center justify-content-center">py-6 and px-0 on small screen</div>
+    <div class="py-6 px-0 md:px-6 md:py-0 bg-primary-100 w-20rem m-3 border-round">
+        <div class="border-round bg-primary text-white font-bold p-3 flex align-items-center justify-content-center">py-6 and px-0 on small screen</div>
     </div>
 </div>
 `;
@@ -46,8 +46,8 @@ export function ResponsiveDoc(props) {
             </DocSectionText>
             <div className="card">
                 <div className="flex flex-wrap align-items-center justify-content-center">
-                    <div className="py-6 px-0 md:px-6 md:py-0 bg-purple-100 w-20rem m-3 border-round">
-                        <div className="border-round bg-purple-500 text-white font-bold p-3 flex align-items-center justify-content-center">py-6 and px-0 on small screen</div>
+                    <div className="py-6 px-0 md:px-6 md:py-0 bg-primary-100 w-20rem m-3 border-round">
+                        <div className="border-round bg-primary text-white font-bold p-3 flex align-items-center justify-content-center">py-6 and px-0 on small screen</div>
                     </div>
                 </div>
             </div>

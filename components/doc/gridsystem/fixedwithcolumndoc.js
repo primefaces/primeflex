@@ -4,10 +4,10 @@ import { DocSectionText } from '../common/docsectiontext';
 export function FixedWidthColumnDoc(props) {
     const code = `<div class="grid">
     <div class="col-fixed" style="width:100px">
-        <div class="text-center p-3 border-round-sm bg-purple-500 font-bold text-white">100px</div>
+        <div class="text-center p-3 border-round-sm bg-primary font-bold text-white">100px</div>
     </div>
     <div class="col">
-        <div class="text-center p-3 border-round-sm bg-purple-500 font-bold text-white">auto</div>
+        <div class="text-center p-3 border-round-sm bg-primary font-bold text-white">auto</div>
     </div>
 </div>
 `;
@@ -22,10 +22,10 @@ export function FixedWidthColumnDoc(props) {
             <div className="card">
                 <div className="grid">
                     <div className="col-fixed" style={{ width: '100px' }}>
-                        <div className="text-center p-3 border-round-sm bg-purple-500 font-bold text-white">100px</div>
+                        <div className="text-center p-3 border-round-sm bg-primary font-bold text-white">100px</div>
                     </div>
                     <div className="col">
-                        <div className="text-center p-3 border-round-sm bg-purple-500 font-bold text-white">auto</div>
+                        <div className="text-center p-3 border-round-sm bg-primary font-bold text-white">auto</div>
                     </div>
                 </div>
             </div>

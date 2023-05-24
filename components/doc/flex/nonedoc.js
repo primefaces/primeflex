@@ -4,9 +4,9 @@ import { DocSectionText } from '../common/docsectiontext';
 export function NoneDoc(props) {
     const code = `<div class="overflow-hidden">
     <div class="flex">
-        <div class="flex-1 flex align-items-center justify-content-center bg-purple-500 font-bold text-white m-2 px-5 py-3 border-round">Lorem ipsum dolor sit amet</div>
-        <div class="flex-none flex align-items-center justify-content-center bg-purple-500 font-bold text-white m-2 px-5 py-3 border-round">Lorem ipsum dolor sit amet</div>
-        <div class="flex-1 flex align-items-center justify-content-center bg-purple-500 font-bold text-white m-2 px-5 py-3 border-round">Lorem ipsum dolor sit amet</div>
+        <div class="flex-1 flex align-items-center justify-content-center bg-primary font-bold text-white m-2 px-5 py-3 border-round">Lorem ipsum dolor sit amet</div>
+        <div class="flex-none flex align-items-center justify-content-center bg-primary font-bold text-white m-2 px-5 py-3 border-round">Lorem ipsum dolor sit amet</div>
+        <div class="flex-1 flex align-items-center justify-content-center bg-primary font-bold text-white m-2 px-5 py-3 border-round">Lorem ipsum dolor sit amet</div>
     </div>
 </div>
 `;
@@ -19,9 +19,9 @@ export function NoneDoc(props) {
             <div className="card">
                 <div className="overflow-hidden">
                     <div className="flex">
-                        <div className="flex-1 flex align-items-center justify-content-center bg-purple-500 font-bold text-white m-2 px-5 py-3 border-round">Lorem ipsum dolor sit amet</div>
-                        <div className="flex-none flex align-items-center justify-content-center bg-purple-500 font-bold text-white m-2 px-5 py-3 border-round">Lorem ipsum dolor sit amet</div>
-                        <div className="flex-1 flex align-items-center justify-content-center bg-purple-500 font-bold text-white m-2 px-5 py-3 border-round">Lorem ipsum dolor sit amet</div>
+                        <div className="flex-1 flex align-items-center justify-content-center bg-primary font-bold text-white m-2 px-5 py-3 border-round">Lorem ipsum dolor sit amet</div>
+                        <div className="flex-none flex align-items-center justify-content-center bg-primary font-bold text-white m-2 px-5 py-3 border-round">Lorem ipsum dolor sit amet</div>
+                        <div className="flex-1 flex align-items-center justify-content-center bg-primary font-bold text-white m-2 px-5 py-3 border-round">Lorem ipsum dolor sit amet</div>
                     </div>
                 </div>
             </div>
