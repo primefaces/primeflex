@@ -5,7 +5,7 @@ export function ReuseClassesDoc(props) {
     const code1 = `@import 'primeflex/primeflex.scss';
 
 .mybutton {
-    @include styleclass('bg-blue-500 text-white hover:bg-blue-600 border-round transition-colors transition-duration-150 p-3 border-none');
+    @include styleclass('bg-blue-500 hover:bg-blue-600 border-round transition-colors transition-duration-150 p-3 border-none');
 }
             `;
 

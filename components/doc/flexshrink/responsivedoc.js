@@ -3,9 +3,9 @@ import { DocSectionText } from '../common/docsectiontext';
 
 export function ResponsiveDoc(props) {
     const code = `<div class="flex">
-    <div class="flex-grow-1 flex align-items-center justify-content-center bg-primary-500 font-bold text-gray-900 p-4 m-3 border-round">1</div>
-    <div class="flex-shrink-1 md:flex-shrink-0 flex align-items-center justify-content-center bg-primary-500 font-bold text-gray-900 p-4 m-3 border-round">Shrink on Mobile</div>
-    <div class="flex-grow-1 flex align-items-center justify-content-center bg-primary-500 font-bold text-gray-900 p-4 m-3 border-round">3</div>
+    <div class="flex-grow-1 flex align-items-center justify-content-center bg-primary font-bold p-4 m-3 border-round">1</div>
+    <div class="flex-shrink-1 md:flex-shrink-0 flex align-items-center justify-content-center bg-primary font-bold p-4 m-3 border-round">Shrink on Mobile</div>
+    <div class="flex-grow-1 flex align-items-center justify-content-center bg-primary font-bold p-4 m-3 border-round">3</div>
 </div>
 `;
 
@@ -46,9 +46,9 @@ export function ResponsiveDoc(props) {
             </DocSectionText>
             <div className="card">
                 <div className="flex">
-                    <div className="flex-grow-1 flex align-items-center justify-content-center bg-primary-500 font-bold text-gray-900 p-4 m-3 border-round">1</div>
-                    <div className="flex-shrink-1 md:flex-shrink-0 flex align-items-center justify-content-center bg-primary-500 font-bold text-gray-900 p-4 m-3 border-round">Shrink on Mobile</div>
-                    <div className="flex-grow-1 flex align-items-center justify-content-center bg-primary-500 font-bold text-gray-900 p-4 m-3 border-round">3</div>
+                    <div className="flex-grow-1 flex align-items-center justify-content-center bg-primary font-bold p-4 m-3 border-round">1</div>
+                    <div className="flex-shrink-1 md:flex-shrink-0 flex align-items-center justify-content-center bg-primary font-bold p-4 m-3 border-round">Shrink on Mobile</div>
+                    <div className="flex-grow-1 flex align-items-center justify-content-center bg-primary font-bold p-4 m-3 border-round">3</div>
                 </div>
             </div>
             <DocSectionCode code={code} />

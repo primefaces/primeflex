@@ -3,13 +3,13 @@ import { DocSectionText } from '../common/docsectiontext';
 
 export function PseudoStatesDoc(props) {
     const code = `<div class="flex flex-wrap md:justify-content-between justify-content-center">
-    <div class="surface-500 hover:surface-700 border-round text-white font-bold m-2 flex align-items-center justify-content-center" style="min-width: 200px; min-height: 100px">
+    <div class="surface-500 hover:surface-700 border-round font-bold m-2 flex align-items-center justify-content-center" style="min-width: 200px; min-height: 100px">
         hover:surface-700
     </div>
-    <div class="bg-primary-500 hover:bg-cyan-700 border-round text-white font-bold m-2 flex align-items-center justify-content-center" style="min-width: 200px; min-height: 100px">
+    <div class="bg-primary hover:bg-cyan-700 border-round font-bold m-2 flex align-items-center justify-content-center" style="min-width: 200px; min-height: 100px">
         hover:bg-cyan-700
     </div>
-    <div class="bg-primary hover:bg-orange-700 border-round text-white font-bold m-2 flex align-items-center justify-content-center" style="min-width: 200px; min-height: 100px">
+    <div class="bg-primary hover:bg-orange-700 border-round font-bold m-2 flex align-items-center justify-content-center" style="min-width: 200px; min-height: 100px">
         hover:bg-orange-700
     </div>
 </div>
@@ -24,13 +24,13 @@ export function PseudoStatesDoc(props) {
             </DocSectionText>
             <div className="card">
                 <div className="flex flex-wrap md:justify-content-between justify-content-center">
-                    <div className="surface-500 hover:surface-700 border-round text-white font-bold m-2 flex align-items-center justify-content-center" style={{ minWidth: '200px', minHeight: '100px' }}>
+                    <div className="surface-500 hover:surface-700 border-round font-bold m-2 flex align-items-center justify-content-center" style={{ minWidth: '200px', minHeight: '100px' }}>
                         hover:surface-700
                     </div>
-                    <div className="bg-cyan-500 hover:bg-cyan-700 border-round text-white font-bold m-2 flex align-items-center justify-content-center" style={{ minWidth: '200px', minHeight: '100px' }}>
+                    <div className="bg-cyan-500 hover:bg-cyan-700 border-round font-bold m-2 flex align-items-center justify-content-center" style={{ minWidth: '200px', minHeight: '100px' }}>
                         hover:bg-cyan-700
                     </div>
-                    <div className="bg-orange-500 hover:bg-orange-700 border-round text-white font-bold m-2 flex align-items-center justify-content-center" style={{ minWidth: '200px', minHeight: '100px' }}>
+                    <div className="bg-orange-500 hover:bg-orange-700 border-round font-bold m-2 flex align-items-center justify-content-center" style={{ minWidth: '200px', minHeight: '100px' }}>
                         hover:bg-orange-700
                     </div>
                 </div>

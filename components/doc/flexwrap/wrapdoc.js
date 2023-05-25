@@ -3,9 +3,9 @@ import { DocSectionText } from '../common/docsectiontext';
 
 export function WrapDoc(props) {
     const code = `<div class="flex flex-wrap" style="max-width: 500px">
-    <div class="flex align-items-center justify-content-center bg-primary-500 font-bold text-white m-2 border-round" style="min-width: 200px; min-height: 100px">1</div>
-    <div class="flex align-items-center justify-content-center bg-primary-500 font-bold text-white m-2 border-round" style="min-width: 200px; min-height: 100px">2</div>
-    <div class="flex align-items-center justify-content-center bg-primary-500 font-bold text-white m-2 border-round" style="min-width: 200px; min-height: 100px">3</div>
+    <div class="flex align-items-center justify-content-center bg-primary font-bold m-2 border-round" style="min-width: 200px; min-height: 100px">1</div>
+    <div class="flex align-items-center justify-content-center bg-primary font-bold m-2 border-round" style="min-width: 200px; min-height: 100px">2</div>
+    <div class="flex align-items-center justify-content-center bg-primary font-bold m-2 border-round" style="min-width: 200px; min-height: 100px">3</div>
 </div>
 `;
 
@@ -17,13 +17,13 @@ export function WrapDoc(props) {
 
             <div className="card">
                 <div className="flex flex-wrap" style={{ maxWidth: '500px' }}>
-                    <div className="flex align-items-center justify-content-center bg-primary-500 font-bold text-white m-2 border-round" style={{ minWidth: '200px', minHeight: '100px' }}>
+                    <div className="flex align-items-center justify-content-center bg-primary font-bold m-2 border-round" style={{ minWidth: '200px', minHeight: '100px' }}>
                         1
                     </div>
-                    <div className="flex align-items-center justify-content-center bg-primary-500 font-bold text-white m-2 border-round" style={{ minWidth: '200px', minHeight: '100px' }}>
+                    <div className="flex align-items-center justify-content-center bg-primary font-bold m-2 border-round" style={{ minWidth: '200px', minHeight: '100px' }}>
                         2
                     </div>
-                    <div className="flex align-items-center justify-content-center bg-primary-500 font-bold text-white m-2 border-round" style={{ minWidth: '200px', minHeight: '100px' }}>
+                    <div className="flex align-items-center justify-content-center bg-primary font-bold m-2 border-round" style={{ minWidth: '200px', minHeight: '100px' }}>
                         3
                     </div>
                 </div>

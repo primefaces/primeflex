@@ -4,7 +4,7 @@ import { DocSectionText } from '../common/docsectiontext';
 export function ResponsiveDoc(props) {
     const code = `<div class="flex flex-wrap align-items-center justify-content-center">
     <div class="border-round bg-primary-100 w-20rem p-3 m-3">
-        <div class="w-min md:w-max border-round bg-primary text-white font-bold p-3 flex align-items-center justify-content-center">w-min on small screen</div>
+        <div class="w-min md:w-max border-round bg-primary font-bold p-3 flex align-items-center justify-content-center">w-min on small screen</div>
     </div>
 </div>
 `;
@@ -47,7 +47,7 @@ export function ResponsiveDoc(props) {
             <div className="card">
                 <div className="flex flex-wrap align-items-center justify-content-center">
                     <div className="border-round bg-primary-100 w-20rem p-3 m-3">
-                        <div className="w-min md:w-max border-round bg-primary text-white font-bold p-3 flex align-items-center justify-content-center">w-min on small screen</div>
+                        <div className="w-min md:w-max border-round bg-primary font-bold p-3 flex align-items-center justify-content-center">w-min on small screen</div>
                     </div>
                 </div>
             </div>

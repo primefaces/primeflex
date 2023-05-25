@@ -3,8 +3,8 @@ import { DocSectionText } from '../common/docsectiontext';
 
 export function ResponsiveDoc(props) {
     const code = `<div class="flex md:align-items-center align-items-stretch flex-wrap" style="min-height: 200px">
-    <div class="flex align-items-center justify-content-center bg-primary font-bold text-white border-round m-2" style="min-width: 200px; min-height: 50px">1</div>
-    <div class="flex align-items-center justify-content-center bg-primary font-bold text-white border-round m-2" style="min-width: 200px; min-height: 50px">2</div>
+    <div class="flex align-items-center justify-content-center bg-primary font-bold border-round m-2" style="min-width: 200px; min-height: 50px">1</div>
+    <div class="flex align-items-center justify-content-center bg-primary font-bold border-round m-2" style="min-width: 200px; min-height: 50px">2</div>
 </div>
 `;
 
@@ -45,10 +45,10 @@ export function ResponsiveDoc(props) {
             </DocSectionText>
             <div className="card">
                 <div className="flex md:align-items-center align-items-stretch flex-wrap" style={{ minHeight: '200px' }}>
-                    <div className="flex align-items-center justify-content-center bg-primary font-bold text-white border-round m-2" style={{ minWidth: '200px', minHeight: '50px' }}>
+                    <div className="flex align-items-center justify-content-center bg-primary font-bold border-round m-2" style={{ minWidth: '200px', minHeight: '50px' }}>
                         1
                     </div>
-                    <div className="flex align-items-center justify-content-center bg-primary font-bold text-white border-round m-2" style={{ minWidth: '200px', minHeight: '50px' }}>
+                    <div className="flex align-items-center justify-content-center bg-primary font-bold border-round m-2" style={{ minWidth: '200px', minHeight: '50px' }}>
                         2
                     </div>
                 </div>

@@ -4,16 +4,16 @@ import { DocSectionText } from '../common/docsectiontext';
 export function ResponsiveDoc(props) {
     const code = `<div class="grid">
     <div class="col-12 md:col-6 lg:col-3">
-        <div class="text-center p-3 border-round-sm bg-primary-500 font-bold text-white">col-12 md:col-6 lg:col-3</div>
+        <div class="text-center p-3 border-round-sm bg-primary font-bold text-white">col-12 md:col-6 lg:col-3</div>
     </div>
     <div class="col-12 md:col-6 lg:col-3">
-        <div class="text-center p-3 border-round-sm bg-primary-500 font-bold text-white">col-12 md:col-6 lg:col-3</div>
+        <div class="text-center p-3 border-round-sm bg-primary font-bold text-white">col-12 md:col-6 lg:col-3</div>
     </div>
     <div class="col-12 md:col-6 lg:col-3">
-        <div class="text-center p-3 border-round-sm bg-primary-500 font-bold text-white">col-12 md:col-6 lg:col-3</div>
+        <div class="text-center p-3 border-round-sm bg-primary font-bold text-white">col-12 md:col-6 lg:col-3</div>
     </div>
     <div class="col-12 md:col-6 lg:col-3">
-        <div class="text-center p-3 border-round-sm bg-primary-500 font-bold text-white">col-12 md:col-6 lg:col-3</div>
+        <div class="text-center p-3 border-round-sm bg-primary font-bold text-white">col-12 md:col-6 lg:col-3</div>
     </div>
 </div>
 `;
@@ -56,16 +56,16 @@ export function ResponsiveDoc(props) {
             <div className="card">
                 <div className="grid">
                     <div className="col-12 md:col-6 lg:col-3">
-                        <div className="text-center p-3 border-round-sm bg-primary-500 font-bold text-white">col-12 md:col-6 lg:col-3</div>
+                        <div className="text-center p-3 border-round-sm bg-primary font-bold text-white">col-12 md:col-6 lg:col-3</div>
                     </div>
                     <div className="col-12 md:col-6 lg:col-3">
-                        <div className="text-center p-3 border-round-sm bg-primary-500 font-bold text-white">col-12 md:col-6 lg:col-3</div>
+                        <div className="text-center p-3 border-round-sm bg-primary font-bold text-white">col-12 md:col-6 lg:col-3</div>
                     </div>
                     <div className="col-12 md:col-6 lg:col-3">
-                        <div className="text-center p-3 border-round-sm bg-primary-500 font-bold text-white">col-12 md:col-6 lg:col-3</div>
+                        <div className="text-center p-3 border-round-sm bg-primary font-bold text-white">col-12 md:col-6 lg:col-3</div>
                     </div>
                     <div className="col-12 md:col-6 lg:col-3">
-                        <div className="text-center p-3 border-round-sm bg-primary-500 font-bold text-white">col-12 md:col-6 lg:col-3</div>
+                        <div className="text-center p-3 border-round-sm bg-primary font-bold text-white">col-12 md:col-6 lg:col-3</div>
                     </div>
                 </div>
             </div>

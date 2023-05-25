@@ -4,7 +4,7 @@ import { DocSectionText } from '../common/docsectiontext';
 export function VerticalPaddingDoc(props) {
     const code = `<div class="flex flex-wrap align-items-center justify-content-center">
     <div class="py-5 bg-primary-100 w-12rem m-3 border-round">
-        <div class="border-round bg-primary text-white font-bold p-3 flex align-items-center justify-content-center">py-5</div>
+        <div class="border-round bg-primary font-bold p-3 flex align-items-center justify-content-center">py-5</div>
     </div>
 </div>
 `;
@@ -17,7 +17,7 @@ export function VerticalPaddingDoc(props) {
             <div className="card">
                 <div className="flex flex-wrap align-items-center justify-content-center">
                     <div className="py-5 bg-primary-100 w-12rem m-3 border-round">
-                        <div className="border-round bg-primary text-white font-bold p-3 flex align-items-center justify-content-center">py-5</div>
+                        <div className="border-round bg-primary font-bold p-3 flex align-items-center justify-content-center">py-5</div>
                     </div>
                 </div>
             </div>

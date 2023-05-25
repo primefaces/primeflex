@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { CodeHighlight } from './codehighlight';
 
 export function DocSectionCode(props) {

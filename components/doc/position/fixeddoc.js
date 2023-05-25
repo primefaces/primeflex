@@ -3,7 +3,7 @@ import { DocSectionText } from '../common/docsectiontext';
 
 export function FixedDoc(props) {
     const code = `<div class="overflow-hidden" style="height: 250px">
-    <div class="relative bg-primary-500 border-round border-1 border-primary-500" style="height: 200px">
+    <div class="relative bg-primary border-round border-1 border-primary-500" style="height: 200px">
         <div class="absolute top-0 left-0 px-4 py-3 w-full font-bold">
             Fixed
         </div>

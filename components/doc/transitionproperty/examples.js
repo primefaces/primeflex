@@ -3,7 +3,7 @@ import { DocSectionText } from '../common/docsectiontext';
 
 export function ExamplesDoc(props) {
     const code = `<div class="flex flex-wrap align-items-center justify-content-center">
-    <div class="transition-colors transition-duration-500 bg-primary-500 hover:bg-primary-500 text-white hover:text-gray-900
+    <div class="transition-colors transition-duration-500 bg-primary hover:bg-primary hover:text-gray-900
         flex align-items-center justify-content-center font-bold border-round cursor-pointer m-2 px-5 py-3">
         Hover me
     </div>
@@ -16,7 +16,7 @@ export function ExamplesDoc(props) {
             <div className="card">
                 <div className="flex flex-wrap align-items-center justify-content-center">
                     <div
-                        className="transition-colors transition-duration-500 bg-primary-500 hover:bg-primary-500 text-white hover:text-gray-900
+                        className="transition-colors transition-duration-500 bg-primary hover:bg-primary hover:text-gray-900
                         flex align-items-center justify-content-center font-bold border-round cursor-pointer m-2 px-5 py-3"
                     >
                         Hover me

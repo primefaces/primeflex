@@ -4,43 +4,43 @@ import { DocSectionText } from '../common/docsectiontext';
 export function TwelweColumnGridDoc(props) {
     const code = `<div class="grid">
     <div class="col-4">
-        <div class="text-center p-3 border-round-sm bg-primary-500 font-bold text-gray-900">4</div>
+        <div class="text-center p-3 border-round-sm bg-primary font-bold ">4</div>
     </div>
     <div class="col">
-        <div class="text-center p-3 border-round-sm bg-primary-500 font-bold text-gray-900">1</div>
+        <div class="text-center p-3 border-round-sm bg-primary font-bold ">1</div>
     </div>
     <div class="col">
-        <div class="text-center p-3 border-round-sm bg-primary-500 font-bold text-gray-900">1</div>
+        <div class="text-center p-3 border-round-sm bg-primary font-bold ">1</div>
     </div>
     <div class="col">
-        <div class="text-center p-3 border-round-sm bg-primary-500 font-bold text-gray-900">1</div>
+        <div class="text-center p-3 border-round-sm bg-primary font-bold ">1</div>
     </div>
     <div class="col">
-        <div class="text-center p-3 border-round-sm bg-primary-500 font-bold text-gray-900">1</div>
+        <div class="text-center p-3 border-round-sm bg-primary font-bold ">1</div>
     </div>
     <div class="col">
-        <div class="text-center p-3 border-round-sm bg-primary-500 font-bold text-gray-900">1</div>
+        <div class="text-center p-3 border-round-sm bg-primary font-bold ">1</div>
     </div>
     <div class="col">
-        <div class="text-center p-3 border-round-sm bg-primary-500 font-bold text-gray-900">1</div>
+        <div class="text-center p-3 border-round-sm bg-primary font-bold ">1</div>
     </div>
     <div class="col">
-        <div class="text-center p-3 border-round-sm bg-primary-500 font-bold text-gray-900">1</div>
+        <div class="text-center p-3 border-round-sm bg-primary font-bold ">1</div>
     </div>
     <div class="col">
-        <div class="text-center p-3 border-round-sm bg-primary-500 font-bold text-gray-900">1</div>
+        <div class="text-center p-3 border-round-sm bg-primary font-bold ">1</div>
     </div>
 </div>
 
 <div class="grid">
     <div class="col-2">
-        <div class="text-center p-3 border-round-sm bg-primary-500 font-bold text-gray-900">2</div>
+        <div class="text-center p-3 border-round-sm bg-primary font-bold ">2</div>
     </div>
     <div class="col-6">
-        <div class="text-center p-3 border-round-sm bg-primary-500 font-bold text-gray-900">6</div>
+        <div class="text-center p-3 border-round-sm bg-primary font-bold ">6</div>
     </div>
     <div class="col-4">
-        <div class="text-center p-3 border-round-sm bg-primary-500 font-bold text-gray-900">4</div>
+        <div class="text-center p-3 border-round-sm bg-primary font-bold ">4</div>
     </div>
 </div>
 `;
@@ -57,43 +57,43 @@ export function TwelweColumnGridDoc(props) {
             <div className="card">
                 <div className="grid">
                     <div className="col-4">
-                        <div className="text-center p-3 border-round-sm bg-primary-500 font-bold text-gray-900">4</div>
+                        <div className="text-center p-3 border-round-sm bg-primary font-bold ">4</div>
                     </div>
                     <div className="col">
-                        <div className="text-center p-3 border-round-sm bg-primary-500 font-bold text-gray-900">1</div>
+                        <div className="text-center p-3 border-round-sm bg-primary font-bold ">1</div>
                     </div>
                     <div className="col">
-                        <div className="text-center p-3 border-round-sm bg-primary-500 font-bold text-gray-900">1</div>
+                        <div className="text-center p-3 border-round-sm bg-primary font-bold ">1</div>
                     </div>
                     <div className="col">
-                        <div className="text-center p-3 border-round-sm bg-primary-500 font-bold text-gray-900">1</div>
+                        <div className="text-center p-3 border-round-sm bg-primary font-bold ">1</div>
                     </div>
                     <div className="col">
-                        <div className="text-center p-3 border-round-sm bg-primary-500 font-bold text-gray-900">1</div>
+                        <div className="text-center p-3 border-round-sm bg-primary font-bold ">1</div>
                     </div>
                     <div className="col">
-                        <div className="text-center p-3 border-round-sm bg-primary-500 font-bold text-gray-900">1</div>
+                        <div className="text-center p-3 border-round-sm bg-primary font-bold ">1</div>
                     </div>
                     <div className="col">
-                        <div className="text-center p-3 border-round-sm bg-primary-500 font-bold text-gray-900">1</div>
+                        <div className="text-center p-3 border-round-sm bg-primary font-bold ">1</div>
                     </div>
                     <div className="col">
-                        <div className="text-center p-3 border-round-sm bg-primary-500 font-bold text-gray-900">1</div>
+                        <div className="text-center p-3 border-round-sm bg-primary font-bold ">1</div>
                     </div>
                     <div className="col">
-                        <div className="text-center p-3 border-round-sm bg-primary-500 font-bold text-gray-900">1</div>
+                        <div className="text-center p-3 border-round-sm bg-primary font-bold ">1</div>
                     </div>
                 </div>
 
                 <div className="grid">
                     <div className="col-2">
-                        <div className="text-center p-3 border-round-sm bg-primary-500 font-bold text-gray-900">2</div>
+                        <div className="text-center p-3 border-round-sm bg-primary font-bold ">2</div>
                     </div>
                     <div className="col-6">
-                        <div className="text-center p-3 border-round-sm bg-primary-500 font-bold text-gray-900">6</div>
+                        <div className="text-center p-3 border-round-sm bg-primary font-bold ">6</div>
                     </div>
                     <div className="col-4">
-                        <div className="text-center p-3 border-round-sm bg-primary-500 font-bold text-gray-900">4</div>
+                        <div className="text-center p-3 border-round-sm bg-primary font-bold ">4</div>
                     </div>
                 </div>
             </div>

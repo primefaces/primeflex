@@ -4,10 +4,10 @@ import { DocSectionText } from '../common/docsectiontext';
 export function ResponsiveDoc(props) {
     const code = `<div class="flex flex-wrap align-items-center justify-content-center">
     <div class="relative bg-primary-200 w-9rem h-9rem mx-3 my-3 md:my-0 border-round">
-        <div class="absolute md:top-0 md:left-0 top-50 left-50 bg-primary-500 text-white font-bold flex align-items-center justify-content-center w-4rem h-4rem border-round">1</div>
+        <div class="absolute md:top-0 md:left-0 top-50 left-50 bg-primary font-bold flex align-items-center justify-content-center w-4rem h-4rem border-round">1</div>
     </div>
     <div class="relative bg-primary-200 w-9rem h-9rem mx-3 my-3 md:my-0 border-round">
-        <div class="absolute md:bottom-0 md:right-0 bottom-50 right-50 bg-primary-500 text-white font-bold flex align-items-center justify-content-center w-4rem h-4rem border-round">2</div>
+        <div class="absolute md:bottom-0 md:right-0 bottom-50 right-50 bg-primary font-bold flex align-items-center justify-content-center w-4rem h-4rem border-round">2</div>
     </div>
 </div>
 `;
@@ -50,10 +50,10 @@ export function ResponsiveDoc(props) {
             <div className="card">
                 <div className="flex flex-wrap align-items-center justify-content-center">
                     <div className="relative bg-primary-200 w-9rem h-9rem mx-3 my-3 md:my-0 border-round">
-                        <div className="absolute md:top-0 md:left-0 top-50 left-50 bg-primary-500 text-white font-bold flex align-items-center justify-content-center w-4rem h-4rem border-round">1</div>
+                        <div className="absolute md:top-0 md:left-0 top-50 left-50 bg-primary font-bold flex align-items-center justify-content-center w-4rem h-4rem border-round">1</div>
                     </div>
                     <div className="relative bg-primary-200 w-9rem h-9rem mx-3 my-3 md:my-0 border-round">
-                        <div className="absolute md:bottom-0 md:right-0 bottom-50 right-50 bg-primary-500 text-white font-bold flex align-items-center justify-content-center w-4rem h-4rem border-round">2</div>
+                        <div className="absolute md:bottom-0 md:right-0 bottom-50 right-50 bg-primary font-bold flex align-items-center justify-content-center w-4rem h-4rem border-round">2</div>
                     </div>
                 </div>
             </div>

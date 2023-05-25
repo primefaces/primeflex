@@ -4,13 +4,13 @@ import { DocSectionText } from '../common/docsectiontext';
 export function GettingStartedDoc(props) {
     const code = `<div class="grid">
     <div class="col">
-        <div class="text-center p-3 border-round-sm bg-primary-500 font-bold text-white">1</div>
+        <div class="text-center p-3 border-round-sm bg-primary font-bold text-white">1</div>
     </div>
     <div class="col">
-        <div class="text-center p-3 border-round-sm bg-primary-500 font-bold text-white">2</div>
+        <div class="text-center p-3 border-round-sm bg-primary font-bold text-white">2</div>
     </div>
     <div class="col">
-        <div class="text-center p-3 border-round-sm bg-primary-500 font-bold text-white">3</div>
+        <div class="text-center p-3 border-round-sm bg-primary font-bold text-white">3</div>
     </div>
 </div>
 `;
@@ -29,13 +29,13 @@ export function GettingStartedDoc(props) {
             <div className="card">
                 <div className="grid">
                     <div className="col">
-                        <div className="text-center p-3 border-round-sm bg-primary-500 font-bold text-white">1</div>
+                        <div className="text-center p-3 border-round-sm bg-primary font-bold text-white">1</div>
                     </div>
                     <div className="col">
-                        <div className="text-center p-3 border-round-sm bg-primary-500 font-bold text-white">2</div>
+                        <div className="text-center p-3 border-round-sm bg-primary font-bold text-white">2</div>
                     </div>
                     <div className="col">
-                        <div className="text-center p-3 border-round-sm bg-primary-500 font-bold text-white">3</div>
+                        <div className="text-center p-3 border-round-sm bg-primary font-bold text-white">3</div>
                     </div>
                 </div>
             </div>

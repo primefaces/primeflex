@@ -4,8 +4,8 @@ import { DocSectionText } from '../common/docsectiontext';
 export function ResponsiveDoc(props) {
     const code = `<div class="overflow-hidden">
     <div class="flex">
-        <div class="flex-1 md:flex-none flex align-items-center justify-content-center bg-primary font-bold text-white m-2 px-5 py-3 border-round">flex-1 on small devices and none on bigger.</div>
-        <div class="flex-1 md:flex-none flex align-items-center justify-content-center bg-primary font-bold text-white m-2 px-5 py-3 border-round">flex-1 on small devices and none on bigger.</div>
+        <div class="flex-1 md:flex-none flex align-items-center justify-content-center bg-primary font-bold m-2 px-5 py-3 border-round">flex-1 on small devices and none on bigger.</div>
+        <div class="flex-1 md:flex-none flex align-items-center justify-content-center bg-primary font-bold m-2 px-5 py-3 border-round">flex-1 on small devices and none on bigger.</div>
     </div>
 </div>
 `;
@@ -48,8 +48,8 @@ export function ResponsiveDoc(props) {
             <div className="card">
                 <div className="overflow-hidden">
                     <div className="flex">
-                        <div className="flex-1 md:flex-none flex align-items-center justify-content-center bg-primary font-bold text-white m-2 px-5 py-3 border-round">flex-1 on small devices and none on bigger.</div>
-                        <div className="flex-1 md:flex-auto flex align-items-center justify-content-center bg-primary font-bold text-white m-2 px-5 py-3 border-round">flex-1 on small devices and auto on bigger.</div>
+                        <div className="flex-1 md:flex-none flex align-items-center justify-content-center bg-primary font-bold m-2 px-5 py-3 border-round">flex-1 on small devices and none on bigger.</div>
+                        <div className="flex-1 md:flex-auto flex align-items-center justify-content-center bg-primary font-bold m-2 px-5 py-3 border-round">flex-1 on small devices and auto on bigger.</div>
                     </div>
                 </div>
             </div>
