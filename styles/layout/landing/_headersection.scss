@@ -61,24 +61,25 @@
                     border-radius: 7px;
                     padding: 6px;
                     position: relative;
-                    left: -150%;
+                    left: -205%;
                     margin-top: 1rem;
                     &:before {
                         content: "";
                         position: absolute;
-                        right: 42%;
+                        right: 45%;
                         bottom: 100%;
                         transform: translateX(-50%);
                         width: 0;
                         height: 0;
-                        border-left: 10px solid transparent;
-                        border-right: 10px solid transparent;
-                        border-bottom: 10px solid var(--blocks-overlay-triangle-bg);
+                        border-left: 6px solid transparent;
+                        border-right: 6px solid transparent;
+                        border-bottom: 6px solid var(--blocks-overlay-triangle-bg);
                     }
                     ul {
                         padding: 0;
                         display: flex;
                         gap: 6px;
+                        margin: 0;
                         li {
                             color: var(--blocks-selection-item-text-color);
                             padding: 8px;
@@ -86,20 +87,21 @@
                             width: 100%;
                             text-align: center;
                             transition: all 0.3s;
-                            width: 60px;
+
                             a {
                                 display: block;
                                 white-space: nowrap;
                                 text-align: center;
+                                width: 60px;
                                 img {
-                                    height: 1rem;
+                                    height: 1.1rem;
                                 }
                                 span {
                                     display: block;
                                     color: var(--blocks-selection-item-text-color);
                                     font-weight: 400;
                                     transition: all 0.3s;
-                                    font-size: 10.5px;
+                                    font-size: 12.5px;
                                     margin-top: 4px;
                                 }
                             }
@@ -234,26 +236,58 @@
                         position: relative;
                         left: 0;
                         margin: 0 1rem;
-                        margin-top: -10px;
+                        margin-top: 0px;
+                        max-width: 270px;
                         &:before {
                             display: none;
                         }
                         ul {
                             flex-wrap: wrap;
-                            justify-content: center;
                             li {
-                                margin-bottom: 0;
-                                width: 100px;
+                                color: var(--blocks-selection-item-text-color);
+                                padding: 8px;
+                                border-radius: 3px;
+                                width: 100%;
+                                text-align: center;
+                                transition: all 0.3s;
+                                width: auto;
                                 a {
+                                    display: block;
+                                    white-space: nowrap;
                                     text-align: center;
-                                    margin-bottom: 0;
-                                    padding: 6px;
+                                    width: 110px;
+                                    padding: 0;
                                     img {
-                                        margin: 0 auto;
                                         height: 2rem;
+                                        margin: 0 auto;
                                     }
                                     span {
+                                        display: block;
+                                        color: var(--blocks-selection-item-text-color);
+                                        font-weight: 400;
+                                        transition: all 0.3s;
                                         font-size: 1rem;
+                                        margin-top: 0.5rem;
+                                    }
+                                }
+                                &:hover {
+                                    box-shadow: var(--blocks-selection-item-shadow);
+                                    background-color: var(--blocks-selection-item-bg);
+                                    a {
+                                        span {
+                                            background-image: linear-gradient(
+                                                112.31deg,
+                                                #00e08f 19.49%,
+                                                #00a3ff 98.51%
+                                            );
+                                            background-size: auto auto;
+                                            background-clip: border-box;
+                                            background-size: 100% auto;
+                                            background-clip: text;
+                                            text-fill-color: transparent;
+                                            -webkit-background-clip: text;
+                                            -webkit-text-fill-color: transparent;
+                                        }
                                     }
                                 }
                             }

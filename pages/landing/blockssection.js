@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import { useState } from 'react';
 
 const BlocksSection = ({ dark }) => {
@@ -70,9 +69,34 @@ const BlocksSection = ({ dark }) => {
                         Leverage PrimeBlocks, the building blocks crafted with PrimeFlex. Streamline your project and concentrate on core functionalities, leaving the aesthetics to us.
                     </h3>
 
-                    <Link href="https://blocks.primereact.org/" target="_blank" className="linkbox-button active w-9rem fadeinleft animation-duration-2000 animation-ease-out">
-                        Learn more
-                    </Link>
+                    <div className="blocks-selection ">
+                        <ul className="list-none ">
+                            <li>
+                                <a href="https://blocks.primeng.org/#/" target="_blank">
+                                    <img src="/images/landing/angular-logo.svg"></img>
+                                    <span>Angular</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://blocks.primevue.org/#/" target="_blank">
+                                    <img src="/images/landing/vue-logo.svg"></img>
+                                    <span>Vue</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://blocks.primereact.org/" target="_blank">
+                                    <img src="/images/landing/react-logo.svg"></img>
+                                    <span>React</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.primefaces.org/primeblocks-jsf/" target="_blank">
+                                    <img src="/images/landing/jsf-logo.svg"></img>
+                                    <span>JSF</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <div className="blocks-background">
                     <div className="blocks-marquees">

@@ -24,10 +24,10 @@ const FooterSection = (props) => {
                     </div>
                 </div>
                 <div className="landing-footer-row flex flex-row justify-content-between align-items-center w-full pt-3">
-                    <div className="landing-footer-left">
+                    <div className="landing-footer-left text-600">
                         <span>PrimeFlex 2023. All rights reserved.</span>
                     </div>
-                    <div className="landing-footer-right flex flex-row gap-3 align-items-center">Follow for more</div>
+                    <div className="landing-footer-right flex flex-row gap-3 align-items-center text-600">Made with Primeflex</div>
                 </div>
             </div>
         </section>

@@ -346,17 +346,29 @@
                                         box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.25);
                                         transition: all 0.3s;
                                         position: relative;
-
+                                        border-radius: 8.5px;
                                         &::before {
                                             content: "\e91d";
                                             font-family: "primeicons";
                                             position: absolute;
-                                            top: 50%;
+                                            top: 48%;
                                             left: 50%;
                                             transform: translate(-50%, -50%) rotate(90deg);
                                             font-size: 8px;
                                             margin-top: 0.8px;
-                                            margin-left: -0.2px;
+                                            color: var(--slider-handle-icon-color);
+                                        }
+                                        &:focus {
+                                            background: var(--secondary-button-hover-bg);
+                                            &::before {
+                                                color: var(--secondary-button-hover-text-color);
+                                            }
+                                        }
+                                        &:hover {
+                                            background: var(--secondary-button-hover-bg);
+                                            &::before {
+                                                color: var(--secondary-button-hover-text-color);
+                                            }
                                         }
                                     }
                                 }
@@ -374,9 +386,15 @@
                                 box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.25);
                                 border-radius: 3.5px;
                                 transition: all 0.3s;
-                                color: var(--card-slider-text-color);
+
+                                svg {
+                                    opacity: 0.75;
+                                }
+
                                 &:hover {
-                                    opacity: 0.9;
+                                    svg {
+                                        opacity: 1;
+                                    }
                                 }
                             }
                         }

@@ -19,7 +19,7 @@
     --landing-menu-item-text-color: #505050;
     --landing-menu-item-hover-text-color: #04b9d7;
 
-    --blocks-selection-bg: #ffffff;
+    --blocks-selection-bg: rgba(255, 255, 255, 0.75);
     --blocks-selection-shadow: 0px 0px 0px 1px #e0e0e0, 0px 2px 4px rgba(0, 0, 0, 0.07),
         0px 1px 1.5px rgba(0, 0, 0, 0.05);
     --blocks-selection-item-bg: #ffffff;
@@ -88,6 +88,7 @@
     --slider-handle-bg: #ffffff;
     --slider-handle-border: 0px 1px 2px rgba(0, 0, 0, 0.04);
     --slider-div-bg: #ffffff;
+    --slider-handle-icon-color: #ebebeb;
 
     //animations
     --animations-text-backdrop: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #ffffff 29.97%);

@@ -23,6 +23,63 @@
             .landing-subtitle {
                 text-align: center;
             }
+
+            .blocks-selection {
+                background-color: var(--blocks-selection-bg);
+                box-shadow: var(--blocks-selection-shadow);
+                border-radius: 7px;
+                padding: 6px;
+                position: relative;
+                margin-top: 1rem;
+                backdrop-filter: blur(8px);
+                ul {
+                    padding: 0;
+                    display: flex;
+                    gap: 6px;
+                    margin: 0;
+                    li {
+                        color: var(--blocks-selection-item-text-color);
+                        padding: 8px;
+                        border-radius: 3px;
+                        width: 100%;
+                        text-align: center;
+                        transition: all 0.3s;
+                        width: 100px;
+                        a {
+                            display: block;
+                            white-space: nowrap;
+                            text-align: center;
+                            img {
+                                height: 2rem;
+                            }
+                            span {
+                                display: block;
+                                color: var(--blocks-selection-item-text-color);
+                                font-weight: 400;
+                                transition: all 0.3s;
+                                font-size: 1rem;
+                                margin-top: 4px;
+                            }
+                        }
+                        &:hover {
+                            box-shadow: var(--blocks-selection-item-shadow);
+                            background-color: var(--blocks-selection-item-bg);
+                            a {
+                                span {
+                                    background-image: linear-gradient(112.31deg, #00e08f 19.49%, #00a3ff 98.51%);
+                                    background-size: auto auto;
+                                    background-clip: border-box;
+                                    background-size: 100% auto;
+                                    background-clip: text;
+                                    text-fill-color: transparent;
+                                    -webkit-background-clip: text;
+                                    -webkit-text-fill-color: transparent;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
 
         .blocks-background {
@@ -74,6 +131,85 @@
                 &.marquee-reverse {
                     animation-direction: reverse;
                     animation-delay: calc(30s / -2);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $landingBreakpointMD) {
+    .landing-blocks-section {
+        padding: 1rem 0;
+
+        .landing-blocks-container {
+            position: relative;
+            z-index: 5;
+
+            .landing-blocks-content {
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                min-height: 692px;
+                width: 100%;
+                position: relative;
+                z-index: 5;
+                background: var(--blocks-backdrop);
+                .landing-title {
+                    max-width: 68rem;
+                }
+
+                .landing-subtitle {
+                    text-align: center;
+                }
+
+                .blocks-selection {
+                    max-width: 300px;
+                    ul {
+                        flex-wrap: wrap;
+                        li {
+                            color: var(--blocks-selection-item-text-color);
+                            padding: 8px;
+                            border-radius: 3px;
+                            width: 100%;
+                            text-align: center;
+                            transition: all 0.3s;
+                            width: 141px;
+                            a {
+                                display: block;
+                                white-space: nowrap;
+                                text-align: center;
+                                img {
+                                    height: 2rem;
+                                }
+                                span {
+                                    display: block;
+                                    color: var(--blocks-selection-item-text-color);
+                                    font-weight: 400;
+                                    transition: all 0.3s;
+                                    font-size: 1rem;
+                                    margin-top: 4px;
+                                }
+                            }
+                            &:hover {
+                                box-shadow: var(--blocks-selection-item-shadow);
+                                background-color: var(--blocks-selection-item-bg);
+                                a {
+                                    span {
+                                        background-image: linear-gradient(112.31deg, #00e08f 19.49%, #00a3ff 98.51%);
+                                        background-size: auto auto;
+                                        background-clip: border-box;
+                                        background-size: 100% auto;
+                                        background-clip: text;
+                                        text-fill-color: transparent;
+                                        -webkit-background-clip: text;
+                                        -webkit-text-fill-color: transparent;
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
