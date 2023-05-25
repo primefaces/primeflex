@@ -45,15 +45,19 @@
 		justify-content: center;
 		align-items: center;
 		padding: 0.75rem 1rem;
-		background: var(--linkbox-button-bg);
+		background: var(--secondary-button-bg);
 		background-blend-mode: multiply, normal;
-		box-shadow: var(--linkbox-shadow);
+		box-shadow: var(--secondaty-button-shadow);
 		border-radius: 7px;
 		font-weight: 500;
 		line-height: 100%;
 		text-align: center;
-		color: #ffffff;
-		transition: background 0.3s;
+		color: var(--secondaty-button-text-color);
+		transition: all 0.2s;
+		&:hover {
+			background: var(--secondary-button-hover-bg);
+			color: var(--secondary-button-hover-text-color);
+		}
 	}
 }
 

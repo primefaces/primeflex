@@ -100,7 +100,7 @@ const ResponsiveSection = ({ dark }) => {
                         PrimeFlex guarantees optimal adaptability. Enjoy seamless display and functionality on every screen size, ensuring universal access to your projects.
                     </h3>
 
-                    <Link href="/installation" className="linkbox-button active w-9rem fadeinleft animation-duration-2000 animation-ease-out text-500">
+                    <Link href="/installation" className="linkbox-button active w-9rem fadeinleft animation-duration-2000 animation-ease-out">
                         Learn more
                     </Link>
                 </div>

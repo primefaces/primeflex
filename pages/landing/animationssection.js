@@ -139,7 +139,7 @@ const AnimationsSection = ({ dark }) => {
                     <h3 className="landing-subtitle m-0 text-xl md:text-2xl font-normal text-center">
                         Bring your design to life with PrimeFlex's effortless animation classes. Implement dynamic, engaging visuals with ease, adding an extra layer of interactivity to your creations.
                     </h3>
-                    <Link href="/installation" className="linkbox-button active w-9rem fadeinleft animation-duration-2000 animation-ease-out text-500">
+                    <Link href="/installation" className="linkbox-button active w-9rem fadeinleft animation-duration-2000 animation-ease-out ">
                         Learn more
                     </Link>
                 </div>

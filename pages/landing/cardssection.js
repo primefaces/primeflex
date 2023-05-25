@@ -143,7 +143,7 @@ const CardsSection = () => {
                     <h3 className="landing-subtitle m-0 text-xl md:text-2xl font-normal text-center">
                         Unlock consistency and flexibility in your designs with our collection of pre-built components and utility classes, designed to work seamlessly across all screen sizes.
                     </h3>
-                    <Link href="/installation" className="linkbox-button active fadeinleft animation-duration-2000 animation-ease-out mx-auto text-500">
+                    <Link href="/installation" className="linkbox-button active fadeinleft animation-duration-2000 animation-ease-out mx-auto ">
                         Learn More
                     </Link>
                 </div>
