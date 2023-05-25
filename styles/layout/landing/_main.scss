@@ -2,12 +2,6 @@
 	background-color: var(--landing-body-bg);
 	min-height: 100vh;
 	overflow-x: hidden;
-	.landing-intro {
-		background-image: var(--landing-background-mask);
-		background-position: top;
-		background-repeat: no-repeat;
-		background-size: cover;
-	}
 
 	.landing-title {
 		background-image: linear-gradient(112.31deg, #00e08f 19.49%, #00a3ff 98.51%);
