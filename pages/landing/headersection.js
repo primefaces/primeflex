@@ -1,5 +1,6 @@
 import { DocSearch } from '@docsearch/react';
 import Link from 'next/link';
+import { StyleClass } from 'primereact/styleclass';
 import { classNames } from 'primereact/utils';
 import { useEffect, useRef, useState } from 'react';
 
@@ -66,10 +67,42 @@ const HeaderSection = (props) => {
                             <li className="mr-1">
                                 <Link href="/installation">Docs</Link>
                             </li>
-                            <li className="mr-1">
-                                <a href="https://blocks.primereact.org/" target="_blank">
-                                    Blocks
-                                </a>
+                            <li className="mr-1 relative">
+                                <StyleClass selector="#blocks-overlay" enterClassName="hidden" enterActiveClassName="scalein" leaveToClassName="hidden" leaveActiveClassName="fadeout" hideOnOutsideClick>
+                                    <a className="cursor-pointer">Blocks</a>
+                                </StyleClass>
+                                <div id="blocks-overlay" className="menu-overlay hidden absolute right-0 top-auto  origin-top  mt-2">
+                                    <ul className="list-none ">
+                                        <li>
+                                            <a href="https://blocks.primeng.org/#/" target="_blank" selector="#blocks-overlay" enterClassName="hidden" enterActiveClassName="scalein" leaveToClassName="hidden" leaveActiveClassName="fadeout">
+                                                PrimeBlocks for Angular
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://blocks.primevue.org/#/" target="_blank" selector="#blocks-overlay" enterClassName="hidden" enterActiveClassName="scalein" leaveToClassName="hidden" leaveActiveClassName="fadeout">
+                                                PrimeBlocks for Vue
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://blocks.primereact.org/" target="_blank" selector="#blocks-overlay" enterClassName="hidden" enterActiveClassName="scalein" leaveToClassName="hidden" leaveActiveClassName="fadeout">
+                                                PrimeBlocks for React
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a
+                                                href="https://www.primefaces.org/primeblocks-jsf/"
+                                                target="_blank"
+                                                selector="#blocks-overlay"
+                                                enterClassName="hidden"
+                                                enterActiveClassName="scalein"
+                                                leaveToClassName="hidden"
+                                                leaveActiveClassName="fadeout"
+                                            >
+                                                PrimeBlocks for JSF
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </li>
                         </ol>
                     </nav>

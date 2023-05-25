@@ -18,9 +18,11 @@
     --landing-menu-item-text-color: rgba(255, 255, 255, 0.4);
     --landing-menu-item-hover-text-color: #04b9d7;
 
-    --linkbox-button-bg: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 0.01%, rgba(0, 0, 0, 0.12) 100%),
-        linear-gradient(0deg, #061a49, #061a49), #002342;
-    --linkbox-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.25);
+    --overlay-bg: #070021;
+    --overlay-shadow: 0px 0px 0px 1px #0d276b;
+    --overlay-item-bg: #061a49;
+    --overlay-item-shadow: 0px 0px 0px 1px #0a2a76, 0px 2px 4px rgba(0, 0, 0, 0.07), 0px 1px 1.5px rgba(0, 0, 0, 0.05);
+    --overlay-item-text-color: #ffffff;
 
     --primary-button-bg: #0078e3;
     --primary-button-shadow: 0px 0px 0px 1px #4dabff, 0px 2px 4px rgba(0, 0, 0, 0.07), 0px 1px 1.5px rgba(0, 0, 0, 0.05);

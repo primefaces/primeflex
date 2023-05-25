@@ -54,6 +54,35 @@
             ol {
                 border-right: var(--landing-border);
                 display: flex;
+
+                .menu-overlay {
+                    background-color: var(--overlay-bg);
+                    box-shadow: var(--overlay-shadow);
+                    border-radius: 7px;
+                    padding: 6px;
+
+                    ul {
+                        padding: 0;
+                        li {
+                            background-color: var(--overlay-item-bg);
+                            box-shadow: var(--overlay-item-shadow);
+                            color: var(--overlay-item-text-color);
+                            padding: 3.5px 7px;
+                            border-radius: 3px;
+                            width: 100%;
+                            margin-bottom: 6px;
+                            text-align: left;
+
+                            &:last-child {
+                                margin-bottom: 0;
+                            }
+                            a {
+                                display: block;
+                                white-space: nowrap;
+                            }
+                        }
+                    }
+                }
             }
             button {
                 color: var(--landing-menu-item-text-color);
