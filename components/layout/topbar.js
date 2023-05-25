@@ -1,5 +1,4 @@
 import { DocSearch } from '@docsearch/react';
-import { StyleClass } from 'primereact/styleclass';
 import { classNames } from 'primereact/utils';
 import { useEffect, useRef } from 'react';
 import pkg from '../../package.json';
@@ -90,7 +89,7 @@ export default function Topbar(props) {
                         </a>
                     </li>
 
-                    <li className="relative">
+                    {/* <li className="relative">
                         <StyleClass nodeRef={versionsRef} selector="@next" enterClassName="hidden" enterActiveClassName="scalein" leaveToClassName="hidden" leaveActiveClassName="fadeout" hideOnOutsideClick>
                             <button
                                 ref={versionsRef}
@@ -116,7 +115,7 @@ export default function Topbar(props) {
                                 })}
                             </ul>
                         </div>
-                    </li>
+                    </li> */}
                 </ul>
             </div>
         </div>
