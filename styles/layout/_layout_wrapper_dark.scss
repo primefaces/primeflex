@@ -1,0 +1,15 @@
+.layout-wrapper-dark {
+    --body-bg: rgb(8, 19, 37);
+    --body-bg-image: url("/images/headerfx.png");
+    --menu-bg: rgb(8, 19, 37);
+    --demo-bg-blue: var(--blue-900);
+    --demo-bg-yellow: var(--yellow-900);
+    --demo-bg-green: var(--green-900);
+    --demo-bg-purple: var(--purple-900);
+    --demo-bg-indigo: var(--indigo-900);
+    --demo-bg-orange: var(--orange-900);
+    --demo-bg-cyan: var(--cyan-900);
+    --menu-border-color: rgba(255, 255, 255, 0.1);
+    --topbar-bg: rgba(8, 19, 37, 0.4);
+    --menu-icon-hover-filter: invert(35%) sepia(100%) saturate(1296%) hue-rotate(80deg) brightness(215%) contrast(100%);
+}

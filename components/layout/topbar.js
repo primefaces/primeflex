@@ -60,7 +60,15 @@ export default function Topbar(props) {
                 <DocSearch appId="TLMMWZFW0F" apiKey="e6191f9edfded2e69492f3f3b315e237" indexName="primeflex" container="" debug={false} />
 
                 <ul className="flex list-none m-0 p-0 gap-2 align-items-center">
-                    <li></li>
+                    <li>
+                        <a
+                            className="flex link-button border-1 border-solid w-2rem h-2rem  border-round surface-card align-items-center justify-content-center transition-all transition-duration-300 hover:border-primary"
+                            onClick={changeColorScheme}
+                            style={{ borderColor: 'var(--menu-border-color)' }}
+                        >
+                            <i className={classNames('text-700', colorSchemeIcon)}></i>
+                        </a>
+                    </li>
                     <li>
                         <a
                             href="https://github.com/primefaces/primeflex"
@@ -77,15 +85,6 @@ export default function Topbar(props) {
                             style={{ borderColor: 'var(--menu-border-color)' }}
                         >
                             <i className="pi pi-discord text-700"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a
-                            className="flex link-button border-1 border-solid w-2rem h-2rem  border-round surface-card align-items-center justify-content-center transition-all transition-duration-300 hover:border-primary"
-                            onClick={changeColorScheme}
-                            style={{ borderColor: 'var(--menu-border-color)' }}
-                        >
-                            <i className={classNames('text-700', colorSchemeIcon)}></i>
                         </a>
                     </li>
 

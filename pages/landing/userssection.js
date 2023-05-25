@@ -19,6 +19,7 @@ const UsersSection = ({ dark }) => {
     );
     const getUsersImages = (usersData, colorScheme) =>
         usersData.map((user) => ({
+            name: user.name,
             image: `/images/landing/users/${colorScheme}/${user.name}.svg`,
             height: user.height
         }));

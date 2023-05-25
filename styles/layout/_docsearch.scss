@@ -81,6 +81,7 @@
 .DocSearch-Modal {
     border: 1px solid var(--surface-border);
     box-shadow: none;
+    background-color: var(--docsearch-modal-background);
 }
 
 .DocSearch-Footer {
@@ -123,22 +124,4 @@
 
 .DocSearch-Prefill {
     color: var(--primary-color);
-}
-
-:root {
-    --docsearch-searchbox-focus-background: var(--surface-card);
-    --docsearch-text-color: var(--text-color);
-    --docsearch-muted-color: var(--text-color);
-    --docsearch-searchbox-background: var(--surface-card);
-    --docsearch-text-color: var(--text-color);
-    --docsearch-modal-background: var(--surface-overlay);
-    --docsearch-key-gradient: var(--surface-ground);
-    --docsearch-key-shadow: none;
-    --docsearch-container-background: var(--maskbg);
-    --docsearch-hit-background: var(--surface-overlay);
-    --docsearch-hit-shadow: none;
-    --docsearch-spacing: 1rem;
-    --docsearch-hit-color: var(--text-color);
-    --docsearch-highlight-color: var(--primary-color);
-    --docsearch-hit-active-color: var(--primary-color-text);
 }

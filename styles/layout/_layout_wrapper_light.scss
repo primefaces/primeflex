@@ -1,0 +1,15 @@
+.layout-wrapper-light {
+    --body-bg: #f6f7f9;
+    --body-bg-image: url("/images/headerfxlight.png");
+    --menu-bg: #f6f7f9;
+    --demo-bg-blue: var(--blue-50);
+    --demo-bg-yellow: var(--yellow-50);
+    --demo-bg-green: var(--green-50);
+    --demo-bg-purple: var(--purple-50);
+    --demo-bg-indigo: var(--indigo-50);
+    --demo-bg-orange: var(--orange-50);
+    --demo-bg-cyan: var(--cyan-50);
+    --menu-border-color: #e6e6e6;
+    --menu-icon-hover-filter: invert(50%) sepia(31%) saturate(7070%) hue-rotate(179deg) brightness(105%) contrast(106%);
+    --topbar-bg: rgb(246, 247, 249 / 80%);
+}
