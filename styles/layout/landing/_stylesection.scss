@@ -290,4 +290,18 @@
 }
 
 @media screen and (max-width: 560px) {
+    .landing-style-section {
+        .landing-style-container {
+            .landing-style-cards-wrapper {
+                .landing-style-cards-container {
+                    .slider-wrapp {
+                        width: 100%;
+                        .slider-buttons {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

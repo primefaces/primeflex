@@ -84,7 +84,7 @@ const AnimationsSection = ({ dark }) => {
                 <div className="landing-animations-cards flex gap-5 md:flex-row flex-column justify-content-center mt-8 mx-auto" style={{ height: '318px', width: '512px' }}>
                     <div className="flex flex-row md:flex-column gap-5 w-full">
                         <div
-                            className={`animation-card flex justify-content-center align-items-center w-full  font-semibold text-xl p-6 cursor-normal ${animationClass('fadeindown', 4)}`}
+                            className={`animation-card flex justify-content-center align-items-center w-full  font-semibold md:text-xl p-6 cursor-normal ${animationClass('fadeindown', 4)}`}
                             onMouseEnter={() => handleMouseEnter(4)}
                             onMouseLeave={() => handleMouseLeave(4)}
                             onAnimationEnd={() => handleAnimationEnd(4)}
@@ -94,7 +94,7 @@ const AnimationsSection = ({ dark }) => {
                         </div>
 
                         <div
-                            className={`animation-card flex justify-content-center align-items-center h-full w-full  font-semibold text-xl p-6 cursor-normal ${animationClass('fadeinup', 3)}`}
+                            className={`animation-card flex justify-content-center align-items-center h-full w-full  font-semibold md:text-xl p-6 cursor-normal ${animationClass('fadeinup', 3)}`}
                             onMouseEnter={() => handleMouseEnter(3)}
                             onMouseLeave={() => handleMouseLeave(3)}
                             onAnimationEnd={() => handleAnimationEnd(3)}
@@ -105,7 +105,7 @@ const AnimationsSection = ({ dark }) => {
                     </div>
 
                     <div
-                        className={`animation-card h-full hidden md:flex justify-content-center align-items-center w-full font-semibold text-xl p-6 cursor-normal ${animationClass('flipright', 2)}`}
+                        className={`animation-card h-full hidden md:flex justify-content-center align-items-center w-full font-semibold md:text-xl p-6 cursor-normal ${animationClass('flipright', 2)}`}
                         onMouseEnter={() => handleMouseEnter(2)}
                         onMouseLeave={() => handleMouseLeave(2)}
                         onAnimationEnd={() => handleAnimationEnd(2)}
@@ -115,7 +115,7 @@ const AnimationsSection = ({ dark }) => {
                     </div>
                     <div className="flex  gap-5 w-full flex-row md:flex-column">
                         <div
-                            className={`animation-card flex justify-content-center align-items-center h-full w-full  font-semibold text-xl p-6 cursor-normal ${animationClass('scalein', 1)}`}
+                            className={`animation-card flex justify-content-center align-items-center h-full w-full  font-semibold md:text-xl p-6 cursor-normal ${animationClass('scalein', 1)}`}
                             onMouseEnter={() => handleMouseEnter(1)}
                             onMouseLeave={() => handleMouseLeave(1)}
                             onAnimationEnd={() => handleAnimationEnd(1)}
@@ -124,7 +124,7 @@ const AnimationsSection = ({ dark }) => {
                             scalein
                         </div>
                         <div
-                            className={`animation-card flex justify-content-center align-items-center h-full w-full  font-semibold text-xl p-6 cursor-normal ${animationClass('zoomindown', 0)}`}
+                            className={`animation-card flex justify-content-center align-items-center h-full w-full  font-semibold md:text-xl p-6 cursor-normal ${animationClass('zoomindown', 0)}`}
                             onMouseEnter={() => handleMouseEnter(0)}
                             onMouseLeave={() => handleMouseLeave(0)}
                             onAnimationEnd={() => handleAnimationEnd(0)}

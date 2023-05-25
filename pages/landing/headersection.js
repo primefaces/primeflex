@@ -71,21 +71,24 @@ const HeaderSection = (props) => {
                                 <StyleClass selector="#blocks-overlay" enterClassName="hidden" enterActiveClassName="scalein" leaveToClassName="hidden" leaveActiveClassName="fadeout" hideOnOutsideClick>
                                     <a className="cursor-pointer">Blocks</a>
                                 </StyleClass>
-                                <div id="blocks-overlay" className="menu-overlay hidden absolute right-0 top-auto  origin-top  mt-2">
+                                <div id="blocks-overlay" className="menu-overlay hidden md:absolute  top-auto  origin-top  ">
                                     <ul className="list-none ">
                                         <li>
                                             <a href="https://blocks.primeng.org/#/" target="_blank" selector="#blocks-overlay" enterClassName="hidden" enterActiveClassName="scalein" leaveToClassName="hidden" leaveActiveClassName="fadeout">
-                                                PrimeBlocks for Angular
+                                                <img src="/images/landing/angular-logo.svg"></img>
+                                                <span>Angular</span>
                                             </a>
                                         </li>
                                         <li>
                                             <a href="https://blocks.primevue.org/#/" target="_blank" selector="#blocks-overlay" enterClassName="hidden" enterActiveClassName="scalein" leaveToClassName="hidden" leaveActiveClassName="fadeout">
-                                                PrimeBlocks for Vue
+                                                <img src="/images/landing/vue-logo.svg"></img>
+                                                <span>Vue</span>
                                             </a>
                                         </li>
                                         <li>
                                             <a href="https://blocks.primereact.org/" target="_blank" selector="#blocks-overlay" enterClassName="hidden" enterActiveClassName="scalein" leaveToClassName="hidden" leaveActiveClassName="fadeout">
-                                                PrimeBlocks for React
+                                                <img src="/images/landing/react-logo.svg"></img>
+                                                <span>React</span>
                                             </a>
                                         </li>
                                         <li>
@@ -98,7 +101,8 @@ const HeaderSection = (props) => {
                                                 leaveToClassName="hidden"
                                                 leaveActiveClassName="fadeout"
                                             >
-                                                PrimeBlocks for JSF
+                                                <img src="/images/landing/jsf-logo.svg"></img>
+                                                <span>JSF</span>
                                             </a>
                                         </li>
                                     </ul>

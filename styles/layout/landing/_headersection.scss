@@ -56,29 +56,68 @@
                 display: flex;
 
                 .menu-overlay {
-                    background-color: var(--overlay-bg);
-                    box-shadow: var(--overlay-shadow);
+                    background-color: var(--blocks-selection-bg);
+                    box-shadow: var(--blocks-selection-shadow);
                     border-radius: 7px;
                     padding: 6px;
-
+                    position: relative;
+                    left: -150%;
+                    margin-top: 1rem;
+                    &:before {
+                        content: "";
+                        position: absolute;
+                        right: 42%;
+                        bottom: 100%;
+                        transform: translateX(-50%);
+                        width: 0;
+                        height: 0;
+                        border-left: 10px solid transparent;
+                        border-right: 10px solid transparent;
+                        border-bottom: 10px solid var(--blocks-overlay-triangle-bg);
+                    }
                     ul {
                         padding: 0;
+                        display: flex;
+                        gap: 6px;
                         li {
-                            background-color: var(--overlay-item-bg);
-                            box-shadow: var(--overlay-item-shadow);
-                            color: var(--overlay-item-text-color);
-                            padding: 3.5px 7px;
+                            color: var(--blocks-selection-item-text-color);
+                            padding: 8px;
                             border-radius: 3px;
                             width: 100%;
-                            margin-bottom: 6px;
-                            text-align: left;
-
-                            &:last-child {
-                                margin-bottom: 0;
-                            }
+                            text-align: center;
+                            transition: all 0.3s;
+                            width: 60px;
                             a {
                                 display: block;
                                 white-space: nowrap;
+                                text-align: center;
+                                img {
+                                    height: 1rem;
+                                }
+                                span {
+                                    display: block;
+                                    color: var(--blocks-selection-item-text-color);
+                                    font-weight: 400;
+                                    transition: all 0.3s;
+                                    font-size: 10.5px;
+                                    margin-top: 4px;
+                                }
+                            }
+                            &:hover {
+                                box-shadow: var(--blocks-selection-item-shadow);
+                                background-color: var(--blocks-selection-item-bg);
+                                a {
+                                    span {
+                                        background-image: linear-gradient(112.31deg, #00e08f 19.49%, #00a3ff 98.51%);
+                                        background-size: auto auto;
+                                        background-clip: border-box;
+                                        background-size: 100% auto;
+                                        background-clip: text;
+                                        text-fill-color: transparent;
+                                        -webkit-background-clip: text;
+                                        -webkit-text-fill-color: transparent;
+                                    }
+                                }
                             }
                         }
                     }
@@ -141,7 +180,7 @@
                 left: 100px;
                 top: 100px;
                 width: 100%;
-                padding: 4rem 2rem;
+                padding: 2rem 1rem;
                 top: 5rem;
                 left: 0;
             }
@@ -153,6 +192,7 @@
             }
         }
         .landing-header-container {
+            padding: 1rem;
             .DocSearch-Button {
                 width: auto !important;
                 background: transparent !important;
@@ -188,24 +228,54 @@
                     }
                 }
             }
-        }
+            .landing-header-right {
+                ol {
+                    .menu-overlay {
+                        position: relative;
+                        left: 0;
+                        margin: 0 1rem;
+                        margin-top: -10px;
+                        &:before {
+                            display: none;
+                        }
+                        ul {
+                            flex-wrap: wrap;
+                            justify-content: center;
+                            li {
+                                margin-bottom: 0;
+                                width: 100px;
+                                a {
+                                    text-align: center;
+                                    margin-bottom: 0;
+                                    padding: 6px;
+                                    img {
+                                        margin: 0 auto;
+                                        height: 2rem;
+                                    }
+                                    span {
+                                        font-size: 1rem;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    a {
+                        border: 1px solid var(--landing-border);
+                        background-color: var(--hero-box-bg);
+                        margin-bottom: 1rem;
+                        color: var(--landing-text-color);
+                        cursor: pointer;
+                        font-size: 1.5rem;
+                        text-align: left;
+                        display: flex;
+                        align-items: center;
+                        padding: 0.8rem;
 
-        ol {
-            a {
-                border: 1px solid var(--landing-border);
-                background-color: var(--hero-box-bg);
-                margin-bottom: 1rem;
-                color: var(--landing-text-color);
-                cursor: pointer;
-                font-size: 1.5rem;
-                text-align: left;
-                display: flex;
-                align-items: center;
-                padding: 1.5rem;
-
-                img {
-                    display: block;
-                    margin-right: 1.5rem;
+                        img {
+                            display: block;
+                            margin-right: 1.5rem;
+                        }
+                    }
                 }
             }
         }
