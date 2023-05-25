@@ -21,6 +21,19 @@
     --linkbox-button-bg: #ffffff;
     --linkbox-shadow: 0px 0px 0px 1px #e0e0e0, 0px 2px 4px rgba(0, 0, 0, 0.07), 0px 1px 1.5px rgba(0, 0, 0, 0.05);
 
+    --primary-button-bg: #0078e3;
+    --primary-button-shadow: 0px 0px 0px 1px #4dabff, 0px 2px 4px rgba(0, 0, 0, 0.07), 0px 1px 1.5px rgba(0, 0, 0, 0.05);
+    --primary-button-hover-bg: linear-gradient(112.31deg, #00e08f 19.49%, #00a3ff 98.51%);
+    --primary-button-text-color: #ffffff;
+    --primary-button-hover-text-color: #00031a;
+
+    --secondary-button-bg: #ffffff;
+    --secondaty-button-shadow: 0px 0px 0px 1px #e0e0e0, 0px 2px 4px rgba(0, 0, 0, 0.07),
+        0px 1px 1.5px rgba(0, 0, 0, 0.05);
+    --secondary-button-hover-bg: #ffffff;
+    --secondaty-button-text-color: #8a8a8a;
+    --secondary-button-hover-text-color: #00a3ff;
+
     //hero
     --hero-bg-light-1: linear-gradient(0deg, #ffffff 1.39%, #4feaff 100%);
     --hero-bg-light-2: linear-gradient(0deg, #ffffff 0%, #00ff94 100%);
@@ -80,6 +93,15 @@
     --style-cards-bg: linear-gradient(0deg, rgba(1, 4, 27, 0.4), rgba(1, 4, 27, 0.4)),
         radial-gradient(93.88% 63.6% at 50% 0%, rgba(2, 225, 255, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%);
 
+    --style-cards-section-bg: #ffffff;
+    --style-cards-header-text-color: #c9c9c9;
+    //code
+    --code-background: rgba(247, 247, 247, 0.9) !important;
+    --code-border: 1px solid rgba(0, 0, 0, 0.1) !important;
+    --code-divs-color: rgba(255, 102, 204, 1);
+    --code-text-color: rgba(0, 0, 0, 0.6);
+    --code-class-text-color: rgba(0, 111, 255, 1);
+
     //responsive
     --responsive-breaks-bg: gba(1, 4, 27, 0.3);
     --responsive-breaks-border: 1px solid rgba(0, 0, 0, 0.1);
@@ -101,13 +123,6 @@
         rgba(255, 255, 255, 0.5) 76.06%,
         #ffffff 100%
     );
-
-    //code
-    --code-background: rgba(247, 247, 247, 0.9) !important;
-    --code-border: 1px solid rgba(0, 0, 0, 0.1) !important;
-    --code-divs-color: rgba(255, 102, 204, 1);
-    --code-text-color: rgba(0, 0, 0, 0.6);
-    --code-class-text-color: rgba(0, 111, 255, 1);
 
     //theme
     --surface-a: #ffffff;

@@ -17,9 +17,24 @@
     --landing-background-mask: url("/images/landing/bg-hero-grid-dark.svg");
     --landing-menu-item-text-color: rgba(255, 255, 255, 0.4);
     --landing-menu-item-hover-text-color: #04b9d7;
+
     --linkbox-button-bg: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 0.01%, rgba(0, 0, 0, 0.12) 100%),
         linear-gradient(0deg, #061a49, #061a49), #002342;
     --linkbox-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.25);
+
+    --primary-button-bg: #0078e3;
+    --primary-button-shadow: 0px 0px 0px 1px #4dabff, 0px 2px 4px rgba(0, 0, 0, 0.07), 0px 1px 1.5px rgba(0, 0, 0, 0.05);
+    --primary-button-hover-bg: linear-gradient(112.31deg, #00e08f 19.49%, #00a3ff 98.51%);
+    --primary-button-text-color: #ffffff;
+    --primary-button-hover-text-color: #00031a;
+
+    --secondary-button-bg: #061a49;
+    --secondaty-button-shadow: 0px 0px 0px 1px #0a2a76, 0px 2px 4px rgba(0, 0, 0, 0.07),
+        0px 1px 1.5px rgba(0, 0, 0, 0.05);
+    --secondary-button-hover-bg: #0a2a76;
+    --secondaty-button-text-color: #ffffff;
+    --secondary-button-hover-text-color: #ffffff;
+
     //hero
     --hero-bg-light-1: linear-gradient(0deg, #000000 1.39%, #ffffff 100%);
     --hero-bg-light-2: linear-gradient(0deg, #ffffff 0%, #00ff94 100%);
@@ -97,6 +112,15 @@
         #01041b;
     --style-cards-bg: linear-gradient(0deg, rgba(1, 4, 27, 0.4), rgba(1, 4, 27, 0.4)),
         radial-gradient(93.88% 63.6% at 50% 0%, rgba(2, 225, 255, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%);
+    --style-cards-section-bg: rgba(255, 255, 255, 0.1);
+    --style-cards-header-text-color: rgba(255, 255, 255, 0.6);
+    --style-cards-header-hover-text-color: rgba(255, 255, 255, 1);
+    //code
+    --code-background: rgba(255, 255, 255, 0.1) !important;
+    --code-border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    --code-divs-color: #cc00ff;
+    --code-text-color: rgba(255, 255, 255, 0.6);
+    --code-class-text-color: rgba(0, 194, 255, 1);
 
     //responsive
     --responsive-breaks-bg: rgba(1, 4, 27, 0.3);
@@ -128,14 +152,6 @@
 
     //blocks
     --blocks-backdrop: radial-gradient(50% 50% at 50% 50%, #00031a 0%, rgba(0, 3, 26, 0.5) 50%, #00031a 100%);
-
-    //code
-    --code-background: radial-gradient(93.88% 63.6% at 50% 0%, rgba(2, 225, 255, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%),
-        rgba(1, 4, 27, 0.1) !important;
-    --code-border: 1px solid rgba(255, 255, 255, 0.1) !important;
-    --code-divs-color: #cc00ff;
-    --code-text-color: rgba(255, 255, 255, 0.6);
-    --code-class-text-color: rgba(0, 194, 255, 1);
 
     //theme
     --surface-a: #00031a;
