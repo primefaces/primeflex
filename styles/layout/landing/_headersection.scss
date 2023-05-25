@@ -18,15 +18,20 @@
             .DocSearch-Button {
                 width: 17rem !important;
                 background: var(--docsearch-bg) !important;
-                border: var(--docsearch-border) !important;
+                border: none !important;
                 box-shadow: var(--docsearch-shadow) !important;
                 color: var(--docsearch-color) !important;
                 border-radius: 3.5px !important;
                 .DocSearch-Button-Keys {
-                    background: var(--docsearch-button-bg) !important;
-                    box-shadow: var(--docsearch-button-shadow) !important;
-                    color: var(--docsearch-button-color) !important;
+                    background: var(--secondary-button-bg) !important;
+                    box-shadow: var(--secondaty-button-shadow) !important;
+                    color: var(--secondaty-button-text-color) !important;
                     height: 1.7rem !important;
+
+                    &:hover {
+                        background: var(--secondary-button-hover-bg) !important;
+                        color: var(--secondary-button-hover-text-color) !important;
+                    }
                 }
             }
         }

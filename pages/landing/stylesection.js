@@ -236,7 +236,6 @@ const StyleSection = () => {
 
             setCode(slideCodes[slideIndex]);
 
-            // center the active slide
             if (window.innerWidth <= 991) {
                 const wrapper = document.querySelector('.landing-style-cards-header');
                 const activeTab = document.querySelector(`.slide-${slideIndex + 1}`);

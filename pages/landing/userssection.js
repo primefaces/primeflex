@@ -2,11 +2,25 @@ import { memo, useMemo } from 'react';
 
 const UsersSection = ({ dark }) => {
     const colorScheme = !dark ? 'light' : 'dark';
-    const usersData = useMemo(() => ['LogoFrame-1', 'LogoFrame-2', 'LogoFrame-3', 'LogoFrame-4', 'LogoFrame-5', 'LogoFrame-6', 'LogoFrame-7', 'LogoFrame-8', 'LogoFrame-9'], []);
+
+    const usersData = useMemo(
+        () => [
+            { name: 'LogoFrame-1', height: '80' },
+            { name: 'LogoFrame-2', height: '90' },
+            { name: 'LogoFrame-3', height: '80' },
+            { name: 'LogoFrame-4', height: '110' },
+            { name: 'LogoFrame-5', height: '80' },
+            { name: 'LogoFrame-6', height: '80' },
+            { name: 'LogoFrame-7', height: '120' },
+            { name: 'LogoFrame-8', height: '100' },
+            { name: 'LogoFrame-9', height: '80' }
+        ],
+        []
+    );
     const getUsersImages = (usersData, colorScheme) =>
-        usersData.map((name) => ({
-            name,
-            image: `/images/landing/users/${colorScheme}/${name}.svg`
+        usersData.map((user) => ({
+            image: `/images/landing/users/${colorScheme}/${user.name}.svg`,
+            height: user.height
         }));
 
     const usersImages = useMemo(() => getUsersImages(usersData, colorScheme), [usersData, colorScheme]);
@@ -18,7 +32,7 @@ const UsersSection = ({ dark }) => {
                     <div key={index} className={`marquee`}>
                         {users.map((user) => (
                             <div className="" key={user.name}>
-                                <img src={user.image} alt={`${user.name}`} style={{ mixBlendMode: 'color-dodge' }} />
+                                <img src={user.image} height={user.height} />
                             </div>
                         ))}
                     </div>

@@ -60,9 +60,9 @@
                             left: 0;
                             right: 0;
                             height: 2px;
-                            width: 0%; /* start from 0% */
+                            width: 0%;
                             background: linear-gradient(112.31deg, #00e08f 19.49%, #00a3ff 98.51%);
-                            animation: load 10s linear forwards; /* Add this line */
+                            animation: load 10s linear forwards;
                         }
                         span {
                             background-image: linear-gradient(112.31deg, #00e08f 19.49%, #00a3ff 98.51%);

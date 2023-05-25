@@ -58,21 +58,14 @@
     --hero-box-pink-bg: rgba(227, 0, 204, 0.4);
 
     //docsearch
-    --docsearch-bg: rgba(255, 255, 255, 0.3);
-    --docsearch-border: 3px solid rgba(0, 0, 0, 0.07);
-    --docsearch-shadow: 0px 0px 7px rgba(0, 0, 0, 0.05);
+    --docsearch-bg: #ffffff;
+    --docsearch-shadow: 0px 0px 0px 1px #e0e0e0, 0px 2px 4px rgba(0, 0, 0, 0.07), 0px 1px 1.5px rgba(0, 0, 0, 0.05);
     --docsearch-color: #8f8f8f;
-    --docsearch-button-bg: #ffffff;
-    --docsearch-button-shadow: 0px 0.6875px 1.375px rgba(0, 0, 0, 0.06);
-    --docsearch-button-color: #8f8f8f;
 
     //download-box
-    --download-box-bg: #f7f7f7;
-    --download-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.06);
-    --download-box-border: 1px solid #c9c9c9;
-    --download-box-button-bg: #ffffff;
-    --download-box-button-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
-    --download-box-button-color: #8f8f8f;
+    --download-box-bg: #ffffff;
+    --download-box-shadow: 0px 0px 0px 1px #e0e0e0, 0px 2px 4px rgba(0, 0, 0, 0.07), 0px 1px 1.5px rgba(0, 0, 0, 0.05);
+    --download-box-border: none;
 
     //cards
     --cards-bg: #fff;

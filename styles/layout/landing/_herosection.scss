@@ -7,7 +7,8 @@
             flex-direction: row;
             justify-content: center;
             align-items: center;
-            padding: 10px 14px;
+            padding: 11px 14px;
+            height: 2.625rem;
             gap: 10px;
             background: var(--primary-button-bg);
             background-blend-mode: multiply, normal;
@@ -75,15 +76,16 @@
                 flex-direction: row;
                 justify-content: space-between;
                 align-items: center;
-                padding: 4px 3.5px 4px 10.5px;
+                padding: 7px 7px 7px 10.5px;
                 width: 196px;
                 background: var(--download-box-bg);
                 border: var(--download-box-border);
                 box-shadow: var(--download-box-shadow);
                 border-radius: 7px;
+                height: 2.625rem;
 
                 .npm-text {
-                    font-size: 16px;
+                    font-size: 0.875rem;
                     line-height: 100%;
                     text-align: center;
                     color: var(--landing-text-color);
@@ -96,13 +98,16 @@
                     padding: 0.5rem;
                     width: 28px;
                     height: 28px;
-                    background: var(--download-box-button-bg);
-                    background-blend-mode: multiply, normal;
-                    box-shadow: var(--download-box-button-shadow);
+                    background: var(--secondary-button-bg);
+                    box-shadow: var(--secondaty-button-shadow);
                     border-radius: 3.5px;
                     outline: none;
                     border: none;
-                    color: var(--download-box-button-color);
+                    color: var(--secondaty-button-text-color);
+                    &:hover {
+                        background: var(--secondary-button-hover-bg);
+                        color: var(--secondary-button-hover-text-color);
+                    }
                 }
             }
         }
