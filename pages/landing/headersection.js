@@ -8,6 +8,7 @@ const HeaderSection = (props) => {
     const [menuActive, setMenuActive] = useState(false);
     const colorSchemeIcon = classNames('pi', { 'pi-sun': props.dark, 'pi-moon': !props.dark });
     const containerElement = useRef(null);
+    const blockOverlayActionRef = useRef(null);
 
     const changeColorScheme = () => {
         props.onToggleColorScheme();
@@ -68,8 +69,10 @@ const HeaderSection = (props) => {
                                 <Link href="/installation">Docs</Link>
                             </li>
                             <li className="mr-1 relative">
-                                <StyleClass selector="#blocks-overlay" enterClassName="hidden" enterActiveClassName="scalein" leaveToClassName="hidden" leaveActiveClassName="fadeout" hideOnOutsideClick>
-                                    <a className="cursor-pointer">Blocks</a>
+                                <StyleClass nodeRef={blockOverlayActionRef} selector="@next" enterClassName="hidden" enterActiveClassName="scalein" leaveToClassName="hidden" leaveActiveClassName="fadeout" hideOnOutsideClick>
+                                    <a ref={blockOverlayActionRef} className="cursor-pointer">
+                                        Blocks
+                                    </a>
                                 </StyleClass>
                                 <div id="blocks-overlay" className="menu-overlay hidden md:absolute  top-auto  origin-top  ">
                                     <ul className="list-none ">
