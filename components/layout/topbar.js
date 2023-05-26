@@ -59,7 +59,7 @@ export default function Topbar(props) {
                 </button>
                 <DocSearch appId="TLMMWZFW0F" apiKey="e6191f9edfded2e69492f3f3b315e237" indexName="primeflex" container="" debug={false} />
 
-                <ul className="flex list-none m-0 p-0 gap-2 align-items-center">
+                <ul className="flex list-none m-0 p-0 gap-2 align-items-center ml-2">
                     <li>
                         <a
                             className="flex link-button border-1 border-solid w-2rem h-2rem  border-round surface-card align-items-center justify-content-center transition-all transition-duration-300 hover:border-primary"

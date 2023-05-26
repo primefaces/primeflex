@@ -10,6 +10,12 @@ const HeaderSection = (props) => {
     const containerElement = useRef(null);
     const blockOverlayActionRef = useRef(null);
 
+    const [isHidden, setIsHidden] = useState(false);
+
+    const toggleMenuItemClick = () => {
+        setIsHidden((prevState) => !prevState);
+    };
+
     const changeColorScheme = () => {
         props.onToggleColorScheme();
     };
@@ -74,28 +80,28 @@ const HeaderSection = (props) => {
                                         Blocks
                                     </a>
                                 </StyleClass>
-                                <div id="blocks-overlay" className="menu-overlay hidden md:absolute  top-auto  origin-top  ">
+                                <div id="blocks-overlay" className={classNames('menu-overlay hidden md:absolute  top-auto  origin-top ', { hidden: isHidden })}>
                                     <ul className="list-none ">
                                         <li>
-                                            <a href="https://blocks.primeng.org/#/" target="_blank">
+                                            <a href="https://blocks.primeng.org/#/" target="_blank" onClick={toggleMenuItemClick}>
                                                 <img src="/images/landing/angular-logo.svg"></img>
                                                 <span>Angular</span>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="https://blocks.primevue.org/#/" target="_blank">
+                                            <a href="https://blocks.primevue.org/#/" target="_blank" onClick={toggleMenuItemClick}>
                                                 <img src="/images/landing/vue-logo.svg"></img>
                                                 <span>Vue</span>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="https://blocks.primereact.org/" target="_blank">
+                                            <a href="https://blocks.primereact.org/" target="_blank" onClick={toggleMenuItemClick}>
                                                 <img src="/images/landing/react-logo.svg"></img>
                                                 <span>React</span>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="https://www.primefaces.org/primeblocks-jsf/" target="_blank">
+                                            <a href="https://www.primefaces.org/primeblocks-jsf/" target="_blank" onClick={toggleMenuItemClick}>
                                                 <img src="/images/landing/jsf-logo.svg"></img>
                                                 <span>JSF</span>
                                             </a>

@@ -65,7 +65,7 @@ const CardsSection = () => {
     }, []);
 
     const [weight, setWeight] = useState(80);
-    const [size, setSize] = useState(88);
+    const [size, setSize] = useState(72);
 
     function handleSliderWeightChange(event) {
         setWeight(event.value);

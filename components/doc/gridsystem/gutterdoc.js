@@ -4,13 +4,13 @@ import { DocSectionText } from '../common/docsectiontext';
 export function GutterDoc(props) {
     const code = `<div class="grid grid-nogutter">
     <div class="col">
-        <div class="text-center p-3 border-round-sm bg-primary font-bold text-white">1</div>
+        <div class="text-center p-3 border-round-sm bg-primary font-bold">1</div>
     </div>
     <div class="col">
-        <div class="text-center p-3 border-round-sm bg-primary font-bold text-white">1</div>
+        <div class="text-center p-3 border-round-sm bg-primary font-bold">1</div>
     </div>
     <div class="col">
-        <div class="text-center p-3 border-round-sm bg-primary font-bold text-white">1</div>
+        <div class="text-center p-3 border-round-sm bg-primary font-bold">1</div>
     </div>
 </div>
 `;
@@ -26,13 +26,13 @@ export function GutterDoc(props) {
             <div className="card">
                 <div className="grid grid-nogutter">
                     <div className="col">
-                        <div className="text-center p-3 border-round-sm bg-primary font-bold text-white">1</div>
+                        <div className="text-center p-3 border-round-sm bg-primary font-bold">1</div>
                     </div>
                     <div className="col">
-                        <div className="text-center p-3 border-round-sm bg-primary font-bold text-white">1</div>
+                        <div className="text-center p-3 border-round-sm bg-primary font-bold">1</div>
                     </div>
                     <div className="col">
-                        <div className="text-center p-3 border-round-sm bg-primary font-bold text-white">1</div>
+                        <div className="text-center p-3 border-round-sm bg-primary font-bold">1</div>
                     </div>
                 </div>
             </div>

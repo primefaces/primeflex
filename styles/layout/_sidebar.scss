@@ -61,6 +61,17 @@
                     }
                 }
 
+                &.active-menuitem {
+                    opacity: 1;
+                    background-color: var(--surface-hover);
+                    .menu-icon {
+                        img {
+                            opacity: 0.8;
+                            filter: var(--menu-icon-hover-filter);
+                        }
+                    }
+                }
+
                 &:focus {
                     outline: 0 none;
                     box-shadow: inset var(--focus-ring);

@@ -3,7 +3,7 @@ import { DocSectionText } from '../common/docsectiontext';
 
 export function RelativeDoc(props) {
     const code = `<div class="relative">
-    <div class="relative bg-primary-100 p-4 border-round font-bold" style="min-width: 300px; min-height: 160px;">Relative
+    <div class="relative bg-primary-100 p-4 border-round font-bold text-gray-800" style="min-width: 300px; min-height: 160px;">Relative
         <div class="absolute bottom-0 left-0 bg-primary p-4 font-bold border-round" style="min-width: 120px; min-height: 70px">
             Absolute
         </div>
@@ -18,7 +18,7 @@ export function RelativeDoc(props) {
             </DocSectionText>
             <div className="card">
                 <div className="relative">
-                    <div className="relative bg-primary-100 p-4 border-round font-bold" style={{ minWidth: '300px', minHeight: '160px' }}>
+                    <div className="relative bg-primary-100 p-4 border-round font-bold text-gray-800" style={{ minWidth: '300px', minHeight: '160px' }}>
                         Relative
                         <div className="absolute bottom-0 left-0 bg-primary p-4  font-bold border-round" style={{ minWidth: '120px', minHeight: '70px' }}>
                             Absolute

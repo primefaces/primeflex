@@ -3,7 +3,7 @@ import { DocSectionText } from '../common/docsectiontext';
 
 export function ResponsiveDoc(props) {
     const code = `<div class="relative md:p-5">
-    <div class="static bg-primary-100 font-bold border-round p-4" style="min-width: 300px; min-height: 200px;">
+    <div class="static bg-primary-100 font-bold border-round p-4 text-gray-800" style="min-width: 300px; min-height: 200px;">
         <p class="mt-0">Static</p>
         <div class="static md:absolute bottom-0 left-0 bg-primary border-round font-bold p-4" style="min-width: 120px; min-height: 70px">
             Absolute on medium screens / Static on small screens
@@ -49,7 +49,7 @@ export function ResponsiveDoc(props) {
             </DocSectionText>
             <div className="card">
                 <div className="relative md:p-5">
-                    <div className="static bg-primary-100 font-bold border-round p-4" style={{ minWidth: '300px', minHeight: '200px' }}>
+                    <div className="static bg-primary-100 font-bold border-round p-4 text-gray-800" style={{ minWidth: '300px', minHeight: '200px' }}>
                         <p className="mt-0">Static</p>
                         <div className="static md:absolute bottom-0 left-0 bg-primary border-round font-bold p-4" style={{ minWidth: '120px', minHeight: '70px' }}>
                             Absolute on medium screens / Static on small screens
