@@ -8,44 +8,17 @@ import MenuData from './menu.json';
 const Menu = memo((props) => {
     const router = useRouter();
     const [activeSubmenus, setActiveSubmenus] = useState([]);
+    const [activeMenuitemOnRouter, setActiveMenuitemOnRouter] = useState(null);
 
-    useEffect(() => {
-        (MenuData.data || []).forEach((rootItem) => {
-            const isExpanded = rootItem.children && rootItem.children.some((item) => item.to === router.pathname || (item.children && item.children.some((it) => it.to === router.pathname)));
+    const isActive = (item) => {
+        return activeSubmenus.length && activeSubmenus.includes(item);
+    };
 
-            isExpanded && setActiveSubmenus((prevActiveSubmenus) => [...prevActiveSubmenus, rootItem]);
-        });
-    }, [router]);
-
-    const renderLink = (item) => {
-        const { name, to, href } = item;
-        const content = (
-            <>
-                {item.icon && (
-                    <div className="menu-icon">
-                        <img src={item.image + (props.darkTheme ? '.svg' : '-light.svg')}></img>
-                    </div>
-                )}
-                {name}
-            </>
-        );
-
-        if (href) {
-            return (
-                <a href={href} target="_blank" rel="noopener noreferrer">
-                    <div className="menu-icon">
-                        <img src={item.image + (props.darkTheme ? '.svg' : '-light.svg')}></img>
-                    </div>
-                    <span>{content}</span>
-                    <i className="menu-toggle-icon pi pi-external-link"></i>
-                </a>
-            );
+    const onMenuItemButtonClick = (menuitem) => {
+        if (activeSubmenus.includes(menuitem)) {
+            setActiveSubmenus((prevActiveSubmenus) => prevActiveSubmenus.filter((submenuitem) => submenuitem !== menuitem));
         } else {
-            return (
-                <Link href={to} className={classNames({ 'router-link-active': to === router.pathname })}>
-                    {content}
-                </Link>
-            );
+            setActiveSubmenus((prevActiveSubmenus) => [...prevActiveSubmenus, menuitem]);
         }
     };
 
@@ -58,8 +31,49 @@ const Menu = memo((props) => {
     };
 
     useEffect(() => {
+        (MenuData.data || []).forEach((rootItem) => {
+            const isExpanded = rootItem.children && rootItem.children.some((item) => item.to === router.pathname || (item.children && item.children.some((it) => it.to === router.pathname)));
+
+            if (isExpanded) {
+                setActiveSubmenus((prevActiveSubmenus) => (prevActiveSubmenus.includes(rootItem) ? prevActiveSubmenus : [...prevActiveSubmenus, rootItem]));
+                setActiveMenuitemOnRouter(rootItem);
+            }
+        });
+
         scrollToActiveItem();
     }, []);
+
+    const renderLink = (item) => {
+        const { name, to, href } = item;
+        const content = (
+            <>
+                {item.icon && (
+                    <span className="menu-icon">
+                        <img src={item.image + (props.darkTheme ? '.svg' : '-light.svg')}></img>
+                    </span>
+                )}
+                {name}
+            </>
+        );
+
+        if (href) {
+            return (
+                <a href={href} target="_blank" rel="noopener noreferrer">
+                    <span className="menu-icon">
+                        <img src={item.image + (props.darkTheme ? '.svg' : '-light.svg')}></img>
+                    </span>
+                    <span>{content}</span>
+                    <i className="menu-toggle-icon pi pi-external-link"></i>
+                </a>
+            );
+        } else {
+            return (
+                <Link href={to} className={classNames({ 'router-link-active': to === router.pathname })}>
+                    {content}
+                </Link>
+            );
+        }
+    };
 
     const renderChild = (menuitem, key) => {
         if (menuitem.children) {
@@ -85,7 +99,7 @@ const Menu = memo((props) => {
     const renderRootMenuItemChildren = (menuitem, parentIndex) => {
         if (menuitem.children) {
             return (
-                <div className={classNames({ hidden: activeSubmenus.length && !activeSubmenus.includes(menuitem) }, 'overflow-y-hidden transition-all transition-duration-400 transition-ease-in-out')}>
+                <div className={classNames({ hidden: activeMenuitemOnRouter != menuitem }, 'overflow-y-hidden transition-all transition-duration-400 transition-ease-in-out')}>
                     <ol>{menuitem.children.map((item, index) => renderChild(item, parentIndex + '_' + index))}</ol>
                 </div>
             );
@@ -99,10 +113,10 @@ const Menu = memo((props) => {
 
         return (
             <StyleClass nodeRef={btnRef} selector="@next" enterClassName="hidden" enterActiveClassName="slidedown" leaveToClassName="hidden" leaveActiveClassName="slideup">
-                <button ref={btnRef} type="button" className="link-button">
-                    <div className="menu-icon">
+                <button ref={btnRef} type="button" className={classNames('link-button', { 'active-menuitem': isActive(menuitem) })} onClick={() => onMenuItemButtonClick(menuitem)}>
+                    <span className="menu-icon">
                         <img src={menuitem.image + (props.darkTheme ? '.svg' : '-light.svg')}></img>
-                    </div>
+                    </span>
                     <span>{menuitem.name}</span>
                     <i className="menu-toggle-icon pi pi-angle-down"></i>
                 </button>
