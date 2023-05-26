@@ -1,9 +1,8 @@
-
-
 .layout-content {
     margin-left: 250px;
     padding-top: 5rem;
-
+    z-index: 2;
+    position: relative;
     .layout-content-inner {
         padding: 2rem 4rem;
         display: flex;
@@ -11,7 +10,7 @@
         height: 100%;
         min-height: calc(100vh - 70px);
 
-        >div {
+        > div {
             &:first-child {
                 flex-grow: 1;
             }
@@ -20,7 +19,7 @@
 
     .card {
         @include card;
-        
+
         .card-container {
             background: var(--demo-bg-link);
             border: 1px dashed;
