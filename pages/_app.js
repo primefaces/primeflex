@@ -1,4 +1,5 @@
 import '@docsearch/css';
+import { DomHandler } from 'primereact/utils';
 import { useEffect, useRef, useState } from 'react';
 import Layout from '../components/layout/layout';
 import AnnouncementData from '../data/news.json';
@@ -53,6 +54,14 @@ export default function MyApp({ Component }) {
             }
         }
     }, []);
+
+    useEffect(() => {
+        DomHandler.addClass(document.body, dark ? 'layout-dark' : 'layout-light');
+
+        return () => {
+            DomHandler.removeMultipleClasses(document.body, 'layout-dark layout-light');
+        };
+    }, [dark]);
 
     if (Component.getLayout) {
         return Component.getLayout(<Component {...props} />);

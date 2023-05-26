@@ -13,8 +13,8 @@ export default function Layout(props) {
     const router = useRouter();
 
     const wrapperClassName = classNames('layout-wrapper', {
-        'layout-dark layout-wrapper-dark': props.dark,
-        'layout-light layout-wrapper-light': !props.dark,
+        'layout-wrapper-dark': props.dark,
+        'layout-wrapper-light': !props.dark,
         'layout-news-active': props.newsActive
     });
     const maskClassName = classNames('layout-mask', {
@@ -32,14 +32,6 @@ export default function Layout(props) {
     const onMaskClick = () => {
         setSidebarActive(false);
     };
-
-    useEffect(() => {
-        document.body.classList.add(...wrapperClassName.split(' '));
-
-        return () => {
-            document.body.classList.remove(...wrapperClassName.split(' '));
-        };
-    }, [wrapperClassName]);
 
     useEffect(() => {
         if (sidebarActive) document.body.classList.add('blocked-scroll');

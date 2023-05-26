@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import { classNames } from 'primereact/utils';
-import { useEffect } from 'react';
 import NewsSection from '../components/news/newssection';
 import AnimationsSection from './landing/animationssection';
 import BlocksSection from './landing/blockssection';
@@ -13,19 +12,11 @@ import StyleSection from './landing/stylesection';
 import UsersSection from './landing/userssection';
 
 export default function Home(props) {
-    const rootClassName = classNames('landing', { 'layout-light landing-light': !props.dark, 'layout-dark landing-dark': props.dark, 'landing-news-active': props.newsActive });
+    const rootClassName = classNames('landing', { 'landing-light': !props.dark, 'landing-dark': props.dark, 'landing-news-active': props.newsActive });
 
     const toggleColorScheme = () => {
         props.onThemeChange(!props.dark);
     };
-
-    useEffect(() => {
-        document.body.classList.add(...rootClassName.split(' '));
-
-        return () => {
-            document.body.classList.remove(...rootClassName.split(' '));
-        };
-    }, [rootClassName]);
 
     return (
         <div className={rootClassName}>

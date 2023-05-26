@@ -1,6 +1,7 @@
 import Link from 'next/link';
+import { useEventListener } from 'primereact/hooks';
 import { DomHandler } from 'primereact/utils';
-import { useEffect, useMemo, useRef, useState } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 
 const ResponsiveSection = ({ dark }) => {
     const [iframeWidth, setIframeWidth] = useState(576);
@@ -81,13 +82,27 @@ const ResponsiveSection = ({ dark }) => {
         setIframeWidth(width);
     };
 
-    useEffect(() => {
+    const changeIframeBodyClass = useCallback(() => {
         const iframeDocument = IframeRef.current.contentDocument || IframeRef.current.contentWindow.document;
         const frameBody = iframeDocument.documentElement;
 
         DomHandler.removeMultipleClasses(frameBody, 'dark light');
         DomHandler.addClass(frameBody, dark ? 'dark' : 'light');
     }, [dark]);
+
+    const [bindIframeLoadListener] = useEventListener({
+        target: IframeRef,
+        type: 'load',
+        listener: changeIframeBodyClass
+    });
+
+    useEffect(() => {
+        changeIframeBodyClass();
+    }, [dark, changeIframeBodyClass]);
+
+    useEffect(() => {
+        bindIframeLoadListener();
+    }, []);
 
     return (
         <section className="landing-responsive-section relative landing-section-border">
