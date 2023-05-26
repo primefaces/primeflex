@@ -12,41 +12,31 @@ const Typewriter = ({ data, setClassName }) => {
         const fullText = data[currentIndex];
 
         if (isDeleting) {
-            setText(fullText.substring(0, text.length - 1));
-            setTypingSpeed(30);
+            if (text === '') {
+                setIsDeleting(false);
+                setIndex((prevIndex) => prevIndex + 1);
+                setClassName('');
+                setTypingSpeed(250);
+            } else {
+                setText(fullText.substring(0, text.length - 1));
+                setTypingSpeed(50);
+            }
         } else {
-            setText(fullText.substring(0, text.length + 1));
-            setTypingSpeed(150);
-        }
-
-        if (!isDeleting && text === fullText) {
-            setTimeout(() => {
-                setIsDeleting(true);
-            }, 5000);
-        } else if (isDeleting && text === '') {
-            setIsDeleting(false);
-            setIndex((prevIndex) => prevIndex + 1);
-            setTimeout(() => {
+            if (text === fullText) {
+                setTimeout(() => setIsDeleting(true), 5000);
+            } else {
+                setText(fullText.substring(0, text.length + 1));
                 setClassName(data[currentIndex]);
-            }, 10000);
+                setTypingSpeed(250);
+            }
         }
     }, [index, data, isDeleting, text, setClassName]);
 
     useEffect(() => {
-        const timer = setTimeout(() => {
-            handleType();
-        }, typingSpeed);
+        const timer = setTimeout(handleType, typingSpeed);
 
         return () => clearTimeout(timer);
-    }, [text, isDeleting, index, handleType, typingSpeed]);
-
-    useEffect(() => {
-        if (isDeleting) {
-            setClassName('');
-        } else {
-            setClassName(data[index % data.length]);
-        }
-    }, [isDeleting, index, data, setClassName]);
+    }, [handleType, typingSpeed]);
 
     return <span>{text}</span>;
 };
