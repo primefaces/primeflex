@@ -75,7 +75,7 @@ export function DocSectionNav({ docs = [] }) {
         setActiveId(id);
         hasHash && scrollToLabelById(id);
         bindDocumentScrollListener();
-    }, [docs, bindDocumentScrollListener]);
+    }, [docs]);
 
     const createItem = ({ id, label, children }, level = 0) => {
         const { basePath, pathname } = router;
@@ -84,7 +84,7 @@ export function DocSectionNav({ docs = [] }) {
         return (
             <li key={id} className={classNames('navbar-item', { 'active-navbar-item': activeId === id })}>
                 <div className="navbar-item-content">
-                    <Link href={href}>
+                    <Link href={href} legacyBehavior>
                         <button className="link-button" onClick={() => onClick(id)} title={label}>
                             {label}
                         </button>
