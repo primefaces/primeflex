@@ -7,6 +7,7 @@ const StyleSection = () => {
     const wrapperRef = useRef(null);
     const [isHovering, setIsHovering] = useState(false);
     const [animationEnabled, setAnimationEnabled] = useState(true);
+    const [fadeIn, setFadeIn] = useState(false);
     const codes = {
         glass: `<div class="p-2 border-round-xl" style="background: var(--style-cards-bg); backgroundBlendMode: normal, color-dodge; width: 300px;">
     <div class="content p-2 h-full relative bg-cover bg-no-repeat bg-center border-round-xl shadow-1 flex flex-column justify-content-end" style="background: url(/images/landing/style-cards/glassmorphic-bg.jpeg); backgroundBlendMode: color-dodge, normal, normal; minHeight: 385px;">
@@ -231,6 +232,7 @@ const StyleSection = () => {
 
     const handleSlideClick = useCallback(
         (slideIndex) => {
+            setFadeIn(true);
             setActiveSlide(slideIndex);
             const slideCodes = [codes.glass, codes.fancy, codes.modern, codes.basic];
 
@@ -260,23 +262,21 @@ const StyleSection = () => {
                 if (props.slideIndex === activeSlide) {
                     slideRef.current.style.zIndex = 1;
                     slideRef.current.classList.remove('inactive');
+                    slideRef.current.classList.add('active');
 
-                    if (animationEnabled) {
+                    if (fadeIn) {
                         slideRef.current.classList.add('fadein');
+                        setTimeout(() => {
+                            setFadeIn(false);
+                        }, 1000); // replace 1000 with the duration of your animation
                     }
-
-                    setTimeout(() => {
-                        if (slideRef.current) {
-                            slideRef.current.classList.remove('fadein');
-                        }
-                    }, 1000);
                 } else {
                     slideRef.current.style.zIndex = 0;
+                    slideRef.current.classList.remove('active', 'fadein');
                     slideRef.current.classList.add('inactive');
-                    slideRef.current.classList.remove('fadein', 'fadeout');
                 }
             }
-        }, [activeSlide, props.slideIndex, animationEnabled]);
+        }, [activeSlide, props.slideIndex, fadeIn]);
 
         return (
             <div ref={slideRef} onClick={handleClick} className="slide animation-duration-1000 animation-iteration-1">
@@ -330,6 +330,7 @@ const StyleSection = () => {
             nextSlide = (activeSlide + 3) % 4;
         }
 
+        setFadeIn(true);
         handleSlideClick(nextSlide);
 
         const slides = wrapperRef.current.getElementsByClassName('slide');
@@ -398,7 +399,6 @@ const StyleSection = () => {
                         }}
                         onMouseLeave={() => {
                             setIsHovering(false);
-                            setTimeout(() => setAnimationEnabled(true), 1000);
                         }}
                     >
                         <div id="slider-wrapp" className="slider-wrapp">
