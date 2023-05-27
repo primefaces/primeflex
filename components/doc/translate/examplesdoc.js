@@ -21,13 +21,13 @@ export function ExamplesDoc(props) {
             <div className="card">
                 <div className="flex flex-wrap align-items-center justify-content-center md:justify-content-between">
                     <div className="h-6rem w-6rem bg-primary border-round-left">
-                        <img src="/images/product-placeholder-blue.svg" className="translate-x-100 h-6rem w-6rem" alt="primeflex"></img>
+                        <img src="https://www.primefaces.org/cdn/primeflex/images/product-placeholder-blue.svg" className="translate-x-100 h-6rem w-6rem" alt="primeflex"></img>
                     </div>
                     <div className="h-6rem w-6rem bg-primary">
-                        <img src="/images/product-placeholder-blue.svg" className="translate-x-0 h-6rem w-6rem" alt="primeflex"></img>
+                        <img src="https://www.primefaces.org/cdn/primeflex/images/product-placeholder-blue.svg" className="translate-x-0 h-6rem w-6rem" alt="primeflex"></img>
                     </div>
                     <div className="h-6rem w-6rem bg-primary border-round-right">
-                        <img src="/images/product-placeholder-blue.svg" className="-translate-x-100 h-6rem w-6rem" alt="primeflex"></img>
+                        <img src="https://www.primefaces.org/cdn/primeflex/images/product-placeholder-blue.svg" className="-translate-x-100 h-6rem w-6rem" alt="primeflex"></img>
                     </div>
                 </div>
             </div>

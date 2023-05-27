@@ -44,7 +44,7 @@ export function ResponsiveDoc(props) {
             </DocSectionText>
             <div className="card">
                 <div className="overflow-hidden">
-                    <div className="bg-cover md:bg-contain bg-center bg-no-repeat bg-primary border-round h-20rem w-full" style={{ backgroundImage: "url('/images/product-placeholder-purple.svg')" }}></div>
+                    <div className="bg-cover md:bg-contain bg-center bg-no-repeat bg-primary border-round h-20rem w-full" style={{ backgroundImage: "url('https://www.primefaces.org/cdn/primeflex/images/product-placeholder-purple.svg')" }}></div>
                 </div>
             </div>
             <DocSectionCode code={code} />

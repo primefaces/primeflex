@@ -72,7 +72,7 @@ const AnimationsSection = ({ dark }) => {
                             opacity: '0.5'
                         }}
                     >
-                        <source src="/images/landing/Eclipse_18.webm" type="video/webm" />
+                        <source src="https://www.primefaces.org/cdn/primeflex/images/landing/Eclipse_18.webm" type="video/webm" />
                     </video>
                 )}
                 {!dark && (

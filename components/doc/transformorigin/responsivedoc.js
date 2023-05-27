@@ -47,7 +47,7 @@ export function ResponsiveDoc(props) {
             <div className="card">
                 <div className="flex align-items-center justify-content-center" style={{ minHeight: '250px' }}>
                     <div className="h-6rem w-6rem bg-primary border-round">
-                        <img src="/images/product-placeholder-yellow.svg" className="origin-top-right md:origin-bottom-left rotate-45 h-6rem w-6rem" alt="primeflex"></img>
+                        <img src="https://www.primefaces.org/cdn/primeflex/images/product-placeholder-yellow.svg" className="origin-top-right md:origin-bottom-left rotate-45 h-6rem w-6rem" alt="primeflex"></img>
                     </div>
                 </div>
             </div>

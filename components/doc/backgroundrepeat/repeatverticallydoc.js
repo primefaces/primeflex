@@ -14,7 +14,7 @@ export function RepeatVerticallyDoc(props) {
             </DocSectionText>
             <div className="card">
                 <div className="flex justify-content-center overflow-hidden">
-                    <div className="bg-repeat-y bg-primary-100 bg-center h-20rem w-10rem border-primary-500 border-2 border-round" style={{ backgroundImage: "url('/images/product-placeholder-purple.svg')", backgroundSize: '10rem' }}></div>
+                    <div className="bg-repeat-y bg-primary-100 bg-center h-20rem w-10rem border-primary-500 border-2 border-round" style={{ backgroundImage: "url('https://www.primefaces.org/cdn/primeflex/images/product-placeholder-purple.svg')", backgroundSize: '10rem' }}></div>
                 </div>
             </div>
             <DocSectionCode code={code} />

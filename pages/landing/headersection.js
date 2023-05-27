@@ -62,7 +62,7 @@ const HeaderSection = (props) => {
                 <div className="landing-header-left">
                     {' '}
                     <Link href="/" className="header-logo" aria-label="PrimeReact logo">
-                        <img id="header-logo" src={`/images/PrimeFlexLogo.svg`} alt="prime"></img>
+                        <img id="header-logo" src="https://www.primefaces.org/cdn/primeflex/images/PrimeFlexLogo.svg" alt="prime"></img>
                     </Link>
                 </div>
                 <div className="landing-header-center">
@@ -84,25 +84,25 @@ const HeaderSection = (props) => {
                                     <ul className="list-none ">
                                         <li>
                                             <a href="https://blocks.primeng.org/#/" target="_blank" onClick={toggleMenuItemClick}>
-                                                <img src="/images/landing/angular-logo.svg"></img>
+                                                <img src="https://www.primefaces.org/cdn/primeflex/images/landing/angular-logo.svg" alt="Angular"></img>
                                                 <span>Angular</span>
                                             </a>
                                         </li>
                                         <li>
                                             <a href="https://blocks.primevue.org/#/" target="_blank" onClick={toggleMenuItemClick}>
-                                                <img src="/images/landing/vue-logo.svg"></img>
+                                                <img src="https://www.primefaces.org/cdn/primeflex/images/landing/vue-logo.svg" alt="Vue"></img>
                                                 <span>Vue</span>
                                             </a>
                                         </li>
                                         <li>
                                             <a href="https://blocks.primereact.org/" target="_blank" onClick={toggleMenuItemClick}>
-                                                <img src="/images/landing/react-logo.svg"></img>
+                                                <img src="https://www.primefaces.org/cdn/primeflex/images/landing/react-logo.svg" alt="React"></img>
                                                 <span>React</span>
                                             </a>
                                         </li>
                                         <li>
                                             <a href="https://www.primefaces.org/primeblocks-jsf/" target="_blank" onClick={toggleMenuItemClick}>
-                                                <img src="/images/landing/jsf-logo.svg"></img>
+                                                <img src="https://www.primefaces.org/cdn/primeflex/images/landing/jsf-logo.svg" alt="JSF"></img>
                                                 <span>JSF</span>
                                             </a>
                                         </li>

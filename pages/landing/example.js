@@ -53,7 +53,7 @@ const ResponsiveExample = () => {
                     </div>
                     <div className="flex w-full flex-grow-1 flex-column md:flex-row h-full p-5 align-items-center justify-content-center md:justify-content-between mt-6 gap-4">
                         <div className="flex align-items-center justify-content-center">
-                            <img alt="example" src="/images/landing/asset.png" className="w-15rem h-auto sm:w-25rem"></img>
+                            <img alt="example" src="https://www.primefaces.org/cdn/primeflex/images/landing/asset.png" className="w-15rem h-auto sm:w-25rem"></img>
                         </div>
                         <div className="flex flex-column justify-content-center md:justify-content-start align-items-center md:align-items-start gap-5">
                             <span className="text-2xl sm:text-4xl block md:text-left text-center">Est placerat in egestas erat imperdiet sed tincidunt nunc pulvinar sapien et ligula.</span>

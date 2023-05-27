@@ -14,7 +14,7 @@ export function CoverDoc(props) {
             </DocSectionText>
             <div className="card">
                 <div className="overflow-hidden">
-                    <div className="bg-cover bg-center border-primary-500 border-2 border-round h-20rem w-full" style={{ backgroundImage: "url('/images/product-placeholder-yellow.svg')" }}></div>
+                    <div className="bg-cover bg-center border-primary-500 border-2 border-round h-20rem w-full" style={{ backgroundImage: "url('https://www.primefaces.org/cdn/primeflex/images/product-placeholder-yellow.svg')" }}></div>
                 </div>
             </div>
             <DocSectionCode code={code} />

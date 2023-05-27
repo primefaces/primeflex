@@ -14,7 +14,7 @@ export function AutoDoc(props) {
             </DocSectionText>
             <div className="card">
                 <div className="overflow-hidden">
-                    <div className="bg-auto bg-no-repeat bg-center bg-primary border-round h-20rem w-full" style={{ backgroundImage: "url('/images/product-placeholder-blue.svg')" }}></div>
+                    <div className="bg-auto bg-no-repeat bg-center bg-primary border-round h-20rem w-full" style={{ backgroundImage: "url('https://www.primefaces.org/cdn/primeflex/images/product-placeholder-blue.svg')" }}></div>
                 </div>
             </div>
             <DocSectionCode code={code} />

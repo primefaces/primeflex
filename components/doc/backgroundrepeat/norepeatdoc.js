@@ -14,7 +14,7 @@ export function NoRepeatDoc(props) {
             </DocSectionText>
             <div className="card">
                 <div className="overflow-hidden flex align-items-center justify-content-center">
-                    <div className="bg-no-repeat bg-primary-100 bg-center w-19rem h-19rem bg-primary border-2 border-primary-500 border-round" style={{ backgroundImage: "url('/images/product-placeholder-yellow.svg')" }}></div>
+                    <div className="bg-no-repeat bg-primary-100 bg-center w-19rem h-19rem bg-primary border-2 border-primary-500 border-round" style={{ backgroundImage: "url('https://www.primefaces.org/cdn/primeflex/images/product-placeholder-yellow.svg')" }}></div>
                 </div>
             </div>
             <DocSectionCode code={code} />

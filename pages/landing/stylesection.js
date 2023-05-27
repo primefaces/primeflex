@@ -10,7 +10,7 @@ const StyleSection = () => {
     const [fadeIn, setFadeIn] = useState(false);
     const codes = {
         glass: `<div class="p-2 border-round-xl" style="background: var(--style-cards-bg); backgroundBlendMode: normal, color-dodge; width: 300px;">
-    <div class="content p-2 h-full relative bg-cover bg-no-repeat bg-center border-round-xl shadow-1 flex flex-column justify-content-end" style="background: url(/images/landing/style-cards/glassmorphic-bg.jpeg); backgroundBlendMode: color-dodge, normal, normal; minHeight: 385px;">
+    <div class="content p-2 h-full relative bg-cover bg-no-repeat bg-center border-round-xl shadow-1 flex flex-column justify-content-end" style="background: url("https://www.primefaces.org/cdn/primeflex/images/landing/style-cards/glassmorphic-bg.jpeg"); backgroundBlendMode: color-dodge, normal, normal; minHeight: 385px;">
         <div class="content-image absolute top-0 right-0">
             <div class="rating mt-2 border-round-sm mr-2 p-2 flex align-items-center gap-2 bg-white-alpha-20 w-8rem border-1" style="backdropFilter: blur(27px); borderColor: rgba(255, 255, 255, 0.2);">
                 <i class="pi pi-star-fill text-white"></i>
@@ -65,7 +65,7 @@ const StyleSection = () => {
 
         fancy: `<div class="p-2 border-round-xl" style="background: var(--style-cards-fancy-bg); border: 1px solid rgba(255, 255, 255, 0.1); backgroundBlendMode: normal, color-dodge; width: 300px;">
     <div class="content border-round-sm">
-        <div class="content-image bg-cover bg-no-repeat bg-center relative" style="height: 244px; background-image: url(/images/landing/style-cards/fancy.jpg);">
+        <div class="content-image bg-cover bg-no-repeat bg-center relative" style="height: 244px; background-image: url("https://www.primefaces.org/cdn/primeflex/images/landing/style-cards/fancy.jpg")">
             <div class="rating mt-2 border-round-sm absolute ml-2 p-2 flex align-items-center gap-2 bg-black-alpha-20 w-8rem border-1" style="backdropFilter: blur(27px);">
                 <i class="pi pi-star-fill text-white"></i>
                 <i class="pi pi-star-fill text-white"></i>
@@ -119,7 +119,7 @@ const StyleSection = () => {
 
         basic: `<div class="p-2 border-round-xl" style="background: var(--style-cards-bg); border: 1px solid rgba(255, 255, 255, 0.1); backgroundBlendMode: normal, color-dodge; width: 300px;">
     <div class="content bg-white p-2">
-        <div class="content-image bg-cover bg-no-repeat bg-center relative" style="height: 247px; background-image: url(/images/landing/style-cards/basic.jpg);">
+        <div class="content-image bg-cover bg-no-repeat bg-center relative" style="height: 247px; background-image: url("https://www.primefaces.org/cdn/primeflex/images/landing/style-cards/basic.jpg")">
             <div class="rating mt-2 absolute ml-2 p-2 bg-white flex align-items-center gap-2 opacity-90 w-8rem ">
                 <i class="pi pi-star-fill text-gray-900"></i>
                 <i class="pi pi-star-fill text-gray-900"></i>
@@ -178,7 +178,7 @@ const StyleSection = () => {
             <span class="font-medium text-gray-900">Prime Coffee Shop</span>
         </div>
         <div class="mt-3 content-image-wrapper relative text-center w-full flex align-items-center justify-content-center">
-            <div class="content-image bg-cover bg-no-repeat bg-center h-14rem w-7rem z-4" style="background-image: url(/images/landing/style-cards/modern.jpg); border-radius: 70px;"></div>
+            <div class="content-image bg-cover bg-no-repeat bg-center h-14rem w-7rem z-4" style="background-image: url("https://www.primefaces.org/cdn/primeflex/images/landing/style-cards/modern.jpg"); border-radius: 70px;"></div>
             <span class="block absolute w-11rem h-5rem bg-orange-300 z-3 origin-top-center -rotate-45"></span>
             <span class="block absolute w-11rem h-5rem bg-orange-300 z-2 origin-bottom-center rotate-45"></span>
         </div>
@@ -422,7 +422,7 @@ const StyleSection = () => {
                                     >
                                         <div
                                             className="content p-2 h-full relative bg-cover bg-no-repeat bg-center border-round-xl shadow-1 flex flex-column justify-content-end"
-                                            style={{ background: 'url(/images/landing/style-cards/glassmorphic-bg.jpeg)', backgroundBlendMode: 'color-dodge, normal, normal', minHeight: '420px' }}
+                                            style={{ background: 'url("https://www.primefaces.org/cdn/primeflex/images/landing/style-cards/glassmorphic-bg.jpeg")', backgroundBlendMode: 'color-dodge, normal, normal', minHeight: '420px' }}
                                         >
                                             <div className="content-image  absolute top-0  right-0">
                                                 <div className="rating mt-2 border-round-sm mr-2 p-2 flex align-items-center gap-2 bg-white-alpha-20 w-8rem border-1 " style={{ backdropFilter: 'blur(27px)', borderColor: 'rgba(255, 255, 255, 0.2)' }}>
@@ -491,7 +491,7 @@ transition-duration-200"
                                         }}
                                     >
                                         <div className="content border-round-sm">
-                                            <div className="content-image bg-cover bg-no-repeat bg-center relative" style={{ height: ' 244px', backgroundImage: 'url(/images/landing/style-cards/fancy.jpg)' }}>
+                                            <div className="content-image bg-cover bg-no-repeat bg-center relative" style={{ height: ' 244px', backgroundImage: 'url("https://www.primefaces.org/cdn/primeflex/images/landing/style-cards/fancy.jpg")' }}>
                                                 <div className="rating mt-2 border-round-sm absolute ml-2 p-2 flex align-items-center gap-2 bg-black-alpha-20 w-8rem border-1" style={{ backdropFilter: 'blur(27px)' }}>
                                                     <i className="pi pi-star-fill text-white"></i>
                                                     <i className="pi pi-star-fill text-white"></i>
@@ -563,7 +563,7 @@ transition-duration-200"
                                                 <span className="font-medium text-gray-900">Prime Coffee Shop</span>
                                             </div>
                                             <div className="mt-3 content-image-wrapper relative text-center w-full flex align-items-center justify-content-center">
-                                                <div className="content-image bg-cover bg-no-repeat bg-center h-12rem w-6rem z-4" style={{ backgroundImage: 'url(/images/landing/style-cards/modern.jpg)', borderRadius: '70px' }}></div>
+                                                <div className="content-image bg-cover bg-no-repeat bg-center h-12rem w-6rem z-4" style={{ backgroundImage: 'url("https://www.primefaces.org/cdn/primeflex/images/landing/style-cards/modern.jpg")', borderRadius: '70px' }}></div>
                                                 <span className="block absolute w-11rem h-5rem bg-orange-300 z-3 origin-top-center -rotate-45"></span>
                                                 <span className="block absolute w-11rem h-5rem bg-orange-300 z-2 origin-bottom-center rotate-45"></span>
                                             </div>
@@ -630,7 +630,7 @@ transition-duration-200"
                                         }}
                                     >
                                         <div className="content bg-white p-2">
-                                            <div className="content-image bg-cover bg-no-repeat bg-center relative" style={{ height: ' 247px', backgroundImage: 'url(/images/landing/style-cards/basic.jpg)' }}>
+                                            <div className="content-image bg-cover bg-no-repeat bg-center relative" style={{ height: ' 247px', backgroundImage: 'url("https://www.primefaces.org/cdn/primeflex/images/landing/style-cards/basic.jpg")' }}>
                                                 <div className="rating mt-2 absolute ml-2 p-2 bg-white flex align-items-center gap-2 opacity-90 w-8rem ">
                                                     <i className="pi pi-star-fill text-gray-900"></i>
                                                     <i className="pi pi-star-fill text-gray-900"></i>

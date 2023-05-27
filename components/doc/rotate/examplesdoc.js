@@ -24,16 +24,16 @@ export function ExamplesDoc(props) {
             <div className="card">
                 <div className="flex flex-wrap align-items-center justify-content-center md:justify-content-between">
                     <div className="h-6rem w-6rem m-5">
-                        <img src="/images/rotate-placeholder-blue.svg" className="rotate-90 h-6rem w-6rem" alt="primeflex"></img>
+                        <img src="https://www.primefaces.org/cdn/primeflex/images/rotate-placeholder-blue.svg" className="rotate-90 h-6rem w-6rem" alt="primeflex"></img>
                     </div>
                     <div className="h-6rem w-6rem m-5">
-                        <img src="/images/rotate-placeholder-blue.svg" className="-rotate-90 h-6rem w-6rem" alt="primeflex"></img>
+                        <img src="https://www.primefaces.org/cdn/primeflex/images/rotate-placeholder-blue.svg" className="-rotate-90 h-6rem w-6rem" alt="primeflex"></img>
                     </div>
                     <div className="h-6rem w-6rem m-5">
-                        <img src="/images/rotate-placeholder-blue.svg" className="rotate-180 h-6rem w-6rem" alt="primeflex"></img>
+                        <img src="https://www.primefaces.org/cdn/primeflex/images/rotate-placeholder-blue.svg" className="rotate-180 h-6rem w-6rem" alt="primeflex"></img>
                     </div>
                     <div className="h-6rem w-6rem m-5">
-                        <img src="/images/rotate-placeholder-blue.svg" className="-rotate-180 h-6rem w-6rem" alt="primeflex"></img>
+                        <img src="https://www.primefaces.org/cdn/primeflex/images/rotate-placeholder-blue.svg" className="-rotate-180 h-6rem w-6rem" alt="primeflex"></img>
                     </div>
                 </div>
             </div>

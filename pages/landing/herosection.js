@@ -71,7 +71,7 @@ const HeroSection = ({ dark }) => {
                         height: 'calc(100% + 118px)'
                     }}
                 >
-                    <source src="/images/landing/hero-primeflex-dark.webm" type="video/webm" />
+                    <source src="https://www.primefaces.org/cdn/primeflex/images/landing/hero-primeflex-dark.webm" type="video/webm" />
                 </video>
             )}
             {!dark && (
@@ -90,7 +90,7 @@ const HeroSection = ({ dark }) => {
                         height: 'calc(100% + 118px)'
                     }}
                 >
-                    <source src="/images/landing/hero-primeflex-light.webm" type="video/webm" />
+                    <source src="https://www.primefaces.org/cdn/primeflex/images/landing/hero-primeflex-light.webm" type="video/webm" />
                 </video>
             )}
             <div className="landing-hero-container pt-7 pb-8 px-5 relative z-5">
@@ -138,7 +138,7 @@ const HeroSection = ({ dark }) => {
                                         flex w-full gap-2 p-4 <Typewriter data={flexs} setClassName={setFlexClassName} />
                                     </span>
                                     <div className={'example-card-header gap-1 sm:gap-2 flex justify-content-between align-items-center w-full ' + flexClass}>
-                                        <img src="/images/landing/profile.png" alt="Landing Profile" width={100} height={100} className="w-3rem h-3rem sm:w-5rem sm:h-5rem md:w-7rem md:h-7rem"></img>
+                                        <img src="https://www.primefaces.org/cdn/primeflex/images/landing/profile.png" alt="Landing Profile" width={100} height={100} className="w-3rem h-3rem sm:w-5rem sm:h-5rem md:w-7rem md:h-7rem"></img>
                                         <div className="example-card-header-content flex align-items-center gap-3 sm:gap-5">
                                             <div className="content-info text-center md:text-right">
                                                 <h3 className="font-medium text-xl sm:text-2xl md:text-4xl m-0 mb-2">73</h3>

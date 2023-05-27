@@ -14,7 +14,7 @@ export function ContainDoc(props) {
             </DocSectionText>
             <div className="card">
                 <div className="overflow-hidden">
-                    <div className="bg-contain bg-center bg-no-repeat bg-primary border-round h-20rem w-full" style={{ backgroundImage: "url('/images/product-placeholder-green.svg')" }}></div>
+                    <div className="bg-contain bg-center bg-no-repeat bg-primary border-round h-20rem w-full" style={{ backgroundImage: "url('https://www.primefaces.org/cdn/primeflex/images/product-placeholder-green.svg')" }}></div>
                 </div>
             </div>
             <DocSectionCode code={code} />

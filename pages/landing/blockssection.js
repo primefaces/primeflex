@@ -12,30 +12,30 @@ const BlocksSection = ({ dark }) => {
     const getRow1 = () =>
         assetsRow1.map((name) => ({
             name,
-            image: `/images/landing/blocks/${dark ? 'dark' : 'light'}/${name}.jpg`
+            image: `https://www.primefaces.org/cdn/primeflex/images/landing/blocks/${dark ? 'dark' : 'light'}/${name}.jpg`
         }));
 
     const getRow2 = () =>
         assetsRow2.map((name) => ({
             name,
-            image: `/images/landing/blocks/${dark ? 'dark' : 'light'}/${name}.jpg`
+            image: `https://www.primefaces.org/cdn/primeflex/images/landing/blocks/${dark ? 'dark' : 'light'}/${name}.jpg`
         }));
 
     const getRow3 = () =>
         assetsRow3.map((name) => ({
             name,
-            image: `/images/landing/blocks/${dark ? 'dark' : 'light'}/${name}.jpg`
+            image: `https://www.primefaces.org/cdn/primeflex/images/landing/blocks/${dark ? 'dark' : 'light'}/${name}.jpg`
         }));
 
     const getRow4 = () =>
         assetsRow4.map((name) => ({
             name,
-            image: `/images/landing/blocks/${dark ? 'dark' : 'light'}/${name}.jpg`
+            image: `https://www.primefaces.org/cdn/primeflex/images/landing/blocks/${dark ? 'dark' : 'light'}/${name}.jpg`
         }));
     const getRow5 = () =>
         assetsRow5.map((name) => ({
             name,
-            image: `/images/landing/blocks/${dark ? 'dark' : 'light'}/${name}.jpg`
+            image: `https://www.primefaces.org/cdn/primeflex/images/landing/blocks/${dark ? 'dark' : 'light'}/${name}.jpg`
         }));
 
     const Marquee = ({ users, reverse }) => (
@@ -73,25 +73,25 @@ const BlocksSection = ({ dark }) => {
                         <ul className="list-none ">
                             <li>
                                 <a href="https://blocks.primeng.org/#/" target="_blank">
-                                    <img src="/images/landing/angular-logo.svg"></img>
+                                    <img src="https://www.primefaces.org/cdn/primeflex/images/landing/angular-logo.svg" alt="Angular"></img>
                                     <span>Angular</span>
                                 </a>
                             </li>
                             <li>
                                 <a href="https://blocks.primevue.org/#/" target="_blank">
-                                    <img src="/images/landing/vue-logo.svg"></img>
+                                    <img src="https://www.primefaces.org/cdn/primeflex/images/landing/vue-logo.svg" alt="Vue"></img>
                                     <span>Vue</span>
                                 </a>
                             </li>
                             <li>
                                 <a href="https://blocks.primereact.org/" target="_blank">
-                                    <img src="/images/landing/react-logo.svg"></img>
+                                    <img src="https://www.primefaces.org/cdn/primeflex/images/landing/react-logo.svg" alt="React"></img>
                                     <span>React</span>
                                 </a>
                             </li>
                             <li>
                                 <a href="https://www.primefaces.org/primeblocks-jsf/" target="_blank">
-                                    <img src="/images/landing/jsf-logo.svg"></img>
+                                    <img src="https://www.primefaces.org/cdn/primeflex/images/landing/jsf-logo.svg" alt="JSF"></img>
                                     <span>JSF</span>
                                 </a>
                             </li>

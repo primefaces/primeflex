@@ -14,7 +14,7 @@ export function RepeatRoundDoc(props) {
             </DocSectionText>
             <div className="card">
                 <div className="overflow-hidden">
-                    <div className="bg-repeat-round bg-indigo-100 border-primary-500 border-round border-2 h-20rem w-full" style={{ backgroundImage: "url('/images/product-placeholder-indigo.svg')", backgroundSize: '10rem' }}></div>
+                    <div className="bg-repeat-round bg-indigo-100 border-primary-500 border-round border-2 h-20rem w-full" style={{ backgroundImage: "url('https://www.primefaces.org/cdn/primeflex/images/product-placeholder-indigo.svg')", backgroundSize: '10rem' }}></div>
                 </div>
             </div>
             <DocSectionCode code={code} />

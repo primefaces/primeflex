@@ -47,7 +47,7 @@ export function ResponsiveDoc(props) {
             <div className="card">
                 <div className="flex align-items-center justify-content-center">
                     <div className="h-6rem w-6rem bg-primary border-round-left">
-                        <img src="/images/product-placeholder-yellow.svg" className="-translate-x-100 md:translate-x-100 w-6rem h-6rem" alt="primeflex"></img>
+                        <img src="https://www.primefaces.org/cdn/primeflex/images/product-placeholder-yellow.svg" className="-translate-x-100 md:translate-x-100 w-6rem h-6rem" alt="primeflex"></img>
                     </div>
                 </div>
             </div>
