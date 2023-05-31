@@ -7,7 +7,7 @@
         },
         {
             "name": "Theming",
-            "image": "https://www.primefaces.org/cdn/primeflex/images/menu-icons/icon-blocks",
+            "image": "https://www.primefaces.org/cdn/primeflex/images/menu-icons/icon-theming",
             "to": "/theming"
         },
         {
@@ -22,7 +22,7 @@
         },
         {
             "name": "Discover",
-            "image": "https://www.primefaces.org/cdn/primeflex/images/menu-icons/icon-blocks",
+            "image": "https://www.primefaces.org/cdn/primeflex/images/menu-icons/icon-discover",
             "children": [
                 {
                     "name": "About Us",
