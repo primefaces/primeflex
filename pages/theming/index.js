@@ -37,9 +37,8 @@ const PositionPage = () => {
                     <div className="doc-intro">
                         <h1>Theming</h1>
                         <p>
-                            PrimeFlex has exclusive integration with the Prime UI library theming being used including <a href="https://www.primefaces.org/showcase">PrimeFaces</a>, <a href="https://www.primefaces.org/primeng">PrimeNG</a>,
-                            <a href="https://www.primefaces.org/primereact">PrimeReact</a> and <a href="https://www.primefaces.org/primevue">PrimeVue</a> by using the colors exported by the theme of the corresponding library. These colors are mainly
-                            utilized in <i>background</i>, <i>text</i> and <i>border</i> classes.
+                            Theme file is only required when using as standalone without a Prime UI library since PrimeFlex has exclusive integration with <a href="https://www.primefaces.org/showcase">PrimeFaces</a>, <a href="https://www.primefaces.org/primeng">PrimeNG</a>,
+                            {' '}<a href="https://www.primefaces.org/primereact">PrimeReact</a> and <a href="https://www.primefaces.org/primevue">PrimeVue</a>.
                         </p>
                     </div>
                     <DocSections docs={docs} />

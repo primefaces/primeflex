@@ -72,7 +72,7 @@ const HeaderSection = (props) => {
                     <nav className="scalein origin-top">
                         <ol className="list-none m-0 p-0 flex md:flex-row flex-column lg:align-items-center font-semibold">
                             <li className="mr-1">
-                                <Link href="/installation">Docs</Link>
+                                <Link href="/installation">Get Started</Link>
                             </li>
                             <li className="mr-1 relative">
                                 <StyleClass nodeRef={blockOverlayActionRef} selector="@next" enterClassName="hidden" enterActiveClassName="scalein" leaveToClassName="hidden" leaveActiveClassName="fadeout" hideOnOutsideClick>

@@ -49,7 +49,7 @@ const Menu = memo((props) => {
             <>
                 {item.icon && (
                     <span className="menu-icon">
-                        <img src={item.image + (props.darkTheme ? '.svg' : '-light.svg')}></img>
+                        <img src={item.image + (props.darkTheme ? '.svg' : '-light.svg')} alt="icon"></img>
                     </span>
                 )}
                 {name}
@@ -59,16 +59,18 @@ const Menu = memo((props) => {
         if (href) {
             return (
                 <a href={href} target="_blank" rel="noopener noreferrer">
-                    <span className="menu-icon">
-                        <img src={item.image + (props.darkTheme ? '.svg' : '-light.svg')}></img>
-                    </span>
+                    {item.image && <span className="menu-icon">
+                        <img src={item.image + (props.darkTheme ? '.svg' : '-light.svg')} alt="icon"></img>
+                    </span>}
                     <span>{content}</span>
-                    <i className="menu-toggle-icon pi pi-external-link"></i>
                 </a>
             );
         } else {
             return (
                 <Link href={to} className={classNames({ 'router-link-active': to === router.pathname })}>
+                    {item.image && <span className="menu-icon">
+                        <img src={item.image + (props.darkTheme ? '.svg' : '-light.svg')} alt="icon"></img>
+                    </span>}
                     {content}
                 </Link>
             );

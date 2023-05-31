@@ -4,9 +4,9 @@ import { DocSectionNav } from '../../components/doc/common/docsectionnav';
 import { DocSections } from '../../components/doc/common/docsections';
 import { ClassesDoc } from '../../components/doc/toprightbottomleft/classesdoc';
 import { ResponsiveDoc } from '../../components/doc/toprightbottomleft/responsivedoc';
-import { ExamplesDoc, StickyDoc } from '../../components/doc/toprightbottomleft/examplesdoc';
+import { ExamplesDoc } from '../../components/doc/toprightbottomleft/examplesdoc';
 
-const PositionPage = () => {
+const PlacementPage = () => {
     const docs = [
         {
             id: 'classes',
@@ -45,4 +45,4 @@ const PositionPage = () => {
     );
 };
 
-export default PositionPage;
+export default PlacementPage;

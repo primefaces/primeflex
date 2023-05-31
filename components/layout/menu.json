@@ -1,19 +1,67 @@
 {
     "data": [
-       
         {
             "name": "Getting Started",
             "image": "https://www.primefaces.org/cdn/primeflex/images/menu-icons/icon-gettingstarted",
+            "to": "/installation"
+        },
+        {
+            "name": "Theming",
+            "image": "https://www.primefaces.org/cdn/primeflex/images/menu-icons/icon-blocks",
+            "to": "/theming"
+        },
+        {
+            "name": "PrimeBlocks",
+            "image": "https://www.primefaces.org/cdn/primeflex/images/menu-icons/icon-blocks",
             "children": [
-                {
-                    "name": "Installation",
-                    "to": "/installation"
-                },
-                { "name": "Theming", "to": "/theming" },
-                { "name": "Migration", "to": "/migration" }
+                { "name": "PrimeNG", "href": "https://blocks.primeng.org" },
+                { "name": "PrimeReact", "href": "https://blocks.primereact.org" },
+                { "name": "PrimeVue", "href": "https://blocks.primevue.org" },
+                { "name": "PrimeFaces", "href": "https://www.primefaces.org/primeblocks-jsf" }
             ]
         },
-        
+        {
+            "name": "Discover",
+            "image": "https://www.primefaces.org/cdn/primeflex/images/menu-icons/icon-blocks",
+            "children": [
+                {
+                    "name": "About Us",
+                    "to": "/team"
+                },
+                {
+                    "name": "Roadmap",
+                    "to": "/roadmap"
+                },
+                {
+                    "name": "PrimeTV",
+                    "href": "https://www.youtube.com/channel/UCTgmp69aBOlLnPEqlUyetWw"
+                },
+                {
+                    "name": "Source Code",
+                    "href": "https://github.com/primefaces/primeflex"
+                },
+                {
+                    "name": "Changelog",
+                    "href": "https://github.com/primefaces/primeflex/blob/master/CHANGELOG.md"
+                },
+                {
+                    "name": "Store",
+                    "href": "https://www.primefaces.org/store/"
+                },
+                {
+                    "name": "Twitter",
+                    "href": "https://twitter.com/primeflexcss?lang=en"
+                },
+                {
+                    "name": "Newsletter",
+                    "href": "https://www.primefaces.org/newsletter"
+                },
+                {
+                    "name": "PrimeGear",
+                    "href": "https://gear.primefaces.org"
+                }
+            ]
+        },
         {
             "name": "Layout",
             "image": "https://www.primefaces.org/cdn/primeflex/images/menu-icons/icon-layout",
@@ -22,8 +70,8 @@
                 { "name": "Overflow", "to": "/overflow" },
                 { "name": "Position", "to": "/position" },
                 {
-                    "name": "Top / Right / Bottom / Left",
-                    "to": "/toprightbottomleft"
+                    "name": "Placement",
+                    "to": "/placement"
                 },
                 { "name": "Z-Index", "to": "/zindex" }
             ]
@@ -163,11 +211,6 @@
                 { "name": "Pointer Events", "to": "/pointerevents" },
                 { "name": "User Select", "to": "/userselect" }
             ]
-        },
-        {
-            "name": "PrimeBlocks",
-            "image": "https://www.primefaces.org/cdn/primeflex/images/menu-icons/icon-blocks",
-            "href": "https://blocks.primereact.org"
         }
     ]
 }

@@ -1,8 +1,4 @@
-import { DocSectionCode } from '../common/docsectioncode';
-import { DocSectionText } from '../common/docsectiontext';
-
-export function ThemesDoc(props) {
-    const code = `:root {
+:root {
     --text-color:#495057;
     --text-color-secondary:#6c757d;
     --border-radius:6px;
@@ -156,17 +152,4 @@ export function ThemesDoc(props) {
     --gray-800: #424242;
     --gray-900: #212121;
     color-scheme: light;
-} 
-        `;
-
-    return (
-        <>
-            <DocSectionText {...props}>
-                <p>
-                    PrimeFlex theme is a set of CSS variables used by the utilities such as <i>background</i> or <i>text</i> classes. Following is the list of variables from the light theme.
-                </p>
-            </DocSectionText>
-            <DocSectionCode code={code} style={{ maxHeight: '500px' }} />
-        </>
-    );
 }
