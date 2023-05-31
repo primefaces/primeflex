@@ -2,9 +2,8 @@ import { DocSectionCode } from '../common/docsectioncode';
 import { DocSectionText } from '../common/docsectiontext';
 
 export function ThemesDoc(props) {
-    const code = `<link rel="stylesheet" href="https://unpkg.com/primeflex/themes/saga-blue.css">
-<link rel="stylesheet" href="https://unpkg.com/primeflex/themes/arya-blue.css">
-<link rel="stylesheet" href="https://unpkg.com/primeflex/themes/vela-blue.css">    
+    const code = `primeflex/themes/primeone-light.css   
+primeflex/themes/primeone-dark.css   
             `;
 
     return (

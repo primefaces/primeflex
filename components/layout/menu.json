@@ -63,6 +63,10 @@
             ]
         },
         {
+            "name": "Utilities",
+            "separator": true
+        },
+        {
             "name": "Layout",
             "image": "https://www.primefaces.org/cdn/primeflex/images/menu-icons/icon-layout",
             "children": [

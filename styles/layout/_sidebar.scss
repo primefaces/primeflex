@@ -48,7 +48,6 @@
                 border-radius: var(--border-radius);
                 font-size: 1rem;
                 opacity: 0.7;
-                font-size: 1rem;
 
                 &:hover {
                     opacity: 1;
@@ -96,6 +95,17 @@
                     margin-left: auto;
                     opacity: 0.5;
                 }
+            }
+
+            > .layout-separator {
+                padding: 0.5rem 1rem;
+                display: block;
+                width: 100%;
+                font-weight: 700;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                margin: 1.5rem 0 .5rem .125rem;
+                opacity: .6;
             }
 
             > div {

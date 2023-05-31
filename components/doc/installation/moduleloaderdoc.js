@@ -3,7 +3,7 @@ import { DocSectionText } from '../common/docsectiontext';
 
 export function ModuleLoaderDoc(props) {
     const code1 = `
-npm install primeflex --save
+npm install primeflex
                 `;
 
     const code2 = `

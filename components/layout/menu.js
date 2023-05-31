@@ -65,7 +65,7 @@ const Menu = memo((props) => {
                     <span>{content}</span>
                 </a>
             );
-        } else {
+        } else if (to) {
             return (
                 <Link href={to} className={classNames({ 'router-link-active': to === router.pathname })}>
                     {item.image && <span className="menu-icon">
@@ -74,6 +74,10 @@ const Menu = memo((props) => {
                     {content}
                 </Link>
             );
+        } else if (item.separator) {
+            return (
+                <span className="layout-separator">Utilities</span>
+            )
         }
     };
 
