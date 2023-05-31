@@ -1,5 +1,14 @@
 # Changelog
 
+## [3.3.1](https://github.com/primefaces/primeflex/tree/3.3.0) (2023-05-31)
+
+[Full Changelog](https://github.com/primefaces/primeflex/compare/3.3.0...3.3.1)
+
+**Implemented New Features and Enhancements:**
+
+- Rename themes [\#160](https://github.com/primefaces/primeflex/issues/160)
+- New Website and Docs  [\#161](https://github.com/primefaces/primeflex/issues/161)
+
 ## [3.3.0](https://github.com/primefaces/primeflex/tree/3.3.0) (2022-10-09)
 
 [Full Changelog](https://github.com/primefaces/primeflex/compare/3.2.1...3.3.0)
