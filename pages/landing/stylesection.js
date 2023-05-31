@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { classNames } from 'primereact/utils';
-import { useCallback, useEffect, useRef, useMemo, useState } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 
 const StyleSection = () => {
     const [activeSlide, setActiveSlide] = useState(0);
@@ -10,7 +10,6 @@ const StyleSection = () => {
     const [fadeIn, setFadeIn] = useState(false);
     const codes = useMemo(() => {
         return {
-
             glass: `<div class="p-2 border-round-xl" style="background: var(--style-cards-bg); backgroundBlendMode: normal, color-dodge; width: 300px;">
         <div class="content p-2 h-full relative bg-cover bg-no-repeat bg-center border-round-xl shadow-1 flex flex-column justify-content-end" style="background: url("https://www.primefaces.org/cdn/primeflex/images/landing/style-cards/glassmorphic-bg.jpeg"); backgroundBlendMode: color-dodge, normal, normal; minHeight: 385px;">
             <div class="content-image absolute top-0 right-0">
@@ -64,7 +63,7 @@ const StyleSection = () => {
             </div>
         </div>
     </div>`,
-    
+
             fancy: `<div class="p-2 border-round-xl" style="background: var(--style-cards-fancy-bg); border: 1px solid rgba(255, 255, 255, 0.1); backgroundBlendMode: normal, color-dodge; width: 300px;">
         <div class="content border-round-sm">
             <div class="content-image bg-cover bg-no-repeat bg-center relative" style="height: 244px; background-image: url("https://www.primefaces.org/cdn/primeflex/images/landing/style-cards/fancy.jpg")">
@@ -118,7 +117,7 @@ const StyleSection = () => {
             </div>
         </div>
     </div>`,
-    
+
             basic: `<div class="p-2 border-round-xl" style="background: var(--style-cards-bg); border: 1px solid rgba(255, 255, 255, 0.1); backgroundBlendMode: normal, color-dodge; width: 300px;">
         <div class="content bg-white p-2">
             <div class="content-image bg-cover bg-no-repeat bg-center relative" style="height: 247px; background-image: url("https://www.primefaces.org/cdn/primeflex/images/landing/style-cards/basic.jpg")">
@@ -172,7 +171,7 @@ const StyleSection = () => {
             </div>
         </div>
     </div>`,
-    
+
             modern: `<div class="p-2 border-round-xl" style="background: var(--style-cards-bg); border: 1px solid rgba(255, 255, 255, 0.1); backgroundBlendMode: normal, color-dodge; width: 300px;">
         <div class="content bg-white h-full p-2">
             <div class="flex align-items-center gap-2 py-2 px-3">
@@ -229,7 +228,7 @@ const StyleSection = () => {
             </div>
         </div>
     </div>`
-        }
+        };
     }, []);
     const [code, setCode] = useState(codes.glass);
 
@@ -279,7 +278,7 @@ const StyleSection = () => {
                     slideRef.current.classList.add('inactive');
                 }
             }
-        }, [activeSlide, props.slideIndex, fadeIn]);
+        }, [props.slideIndex]);
 
         return (
             <div ref={slideRef} onClick={handleClick} className="slide animation-duration-1000 animation-iteration-1">
@@ -566,7 +565,10 @@ transition-duration-200"
                                                 <span className="font-medium text-gray-900">Prime Coffee Shop</span>
                                             </div>
                                             <div className="mt-3 content-image-wrapper relative text-center w-full flex align-items-center justify-content-center">
-                                                <div className="content-image bg-cover bg-no-repeat bg-center h-12rem w-6rem z-4" style={{ backgroundImage: 'url("https://www.primefaces.org/cdn/primeflex/images/landing/style-cards/modern.jpg")', borderRadius: '70px' }}></div>
+                                                <div
+                                                    className="content-image bg-cover bg-no-repeat bg-center h-12rem w-6rem z-4"
+                                                    style={{ backgroundImage: 'url("https://www.primefaces.org/cdn/primeflex/images/landing/style-cards/modern.jpg")', borderRadius: '70px' }}
+                                                ></div>
                                                 <span className="block absolute w-11rem h-5rem bg-orange-300 z-3 origin-top-center -rotate-45"></span>
                                                 <span className="block absolute w-11rem h-5rem bg-orange-300 z-2 origin-bottom-center rotate-45"></span>
                                             </div>

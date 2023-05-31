@@ -32,8 +32,8 @@ const UsersSection = ({ dark }) => {
                 .map((users, index) => (
                     <div key={index} className={`marquee`}>
                         {users.map((user) => (
-                            <div className="" key={user.name}>
-                                <img src={user.image} height={user.height} />
+                            <div key={user.name}>
+                                <img src={user.image} height={user.height} alt="User" />
                             </div>
                         ))}
                     </div>

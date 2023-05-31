@@ -102,7 +102,7 @@ const ResponsiveSection = ({ dark }) => {
 
     useEffect(() => {
         bindIframeLoadListener();
-    }, []);
+    }, [bindIframeLoadListener]);
 
     return (
         <section className="landing-responsive-section relative landing-section-border">

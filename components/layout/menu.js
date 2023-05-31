@@ -41,7 +41,7 @@ const Menu = memo((props) => {
         });
 
         scrollToActiveItem();
-    }, []);
+    }, [router.pathname]);
 
     const renderLink = (item) => {
         const { name, to, href } = item;
@@ -59,25 +59,27 @@ const Menu = memo((props) => {
         if (href) {
             return (
                 <a href={href} target="_blank" rel="noopener noreferrer">
-                    {item.image && <span className="menu-icon">
-                        <img src={item.image + (props.darkTheme ? '.svg' : '-light.svg')} alt="icon"></img>
-                    </span>}
+                    {item.image && (
+                        <span className="menu-icon">
+                            <img src={item.image + (props.darkTheme ? '.svg' : '-light.svg')} alt="icon"></img>
+                        </span>
+                    )}
                     <span>{content}</span>
                 </a>
             );
         } else if (to) {
             return (
                 <Link href={to} className={classNames({ 'router-link-active': to === router.pathname })}>
-                    {item.image && <span className="menu-icon">
-                        <img src={item.image + (props.darkTheme ? '.svg' : '-light.svg')} alt="icon"></img>
-                    </span>}
+                    {item.image && (
+                        <span className="menu-icon">
+                            <img src={item.image + (props.darkTheme ? '.svg' : '-light.svg')} alt="icon"></img>
+                        </span>
+                    )}
                     {content}
                 </Link>
             );
         } else if (item.separator) {
-            return (
-                <span className="layout-separator">Utilities</span>
-            )
+            return <span className="layout-separator">Utilities</span>;
         }
     };
 
@@ -121,7 +123,7 @@ const Menu = memo((props) => {
             <StyleClass nodeRef={btnRef} selector="@next" enterClassName="hidden" enterActiveClassName="slidedown" leaveToClassName="hidden" leaveActiveClassName="slideup">
                 <button ref={btnRef} type="button" className={classNames('link-button', { 'active-menuitem': isActive(menuitem) })} onClick={() => onMenuItemButtonClick(menuitem)}>
                     <span className="menu-icon">
-                        <img src={menuitem.image + (props.darkTheme ? '.svg' : '-light.svg')}></img>
+                        <img src={menuitem.image + (props.darkTheme ? '.svg' : '-light.svg')} alt="Item Icon"></img>
                     </span>
                     <span>{menuitem.name}</span>
                     <i className="menu-toggle-icon pi pi-angle-down"></i>
