@@ -47,11 +47,16 @@
                 transition: all 0.2s;
                 border-radius: var(--border-radius);
                 font-size: 1rem;
-                opacity: 0.7;
+
+                > span {
+                    opacity: 0.7;
+                }
 
                 &:hover {
-                    opacity: 1;
                     background-color: var(--surface-hover);
+                    > span {
+                        opacity: 1;
+                    }
                     .menu-icon {
                         img {
                             opacity: 0.8;
@@ -61,8 +66,10 @@
                 }
 
                 &.active-menuitem {
-                    opacity: 1;
                     background-color: var(--surface-hover);
+                    > span {
+                        opacity: 1;
+                    }
                     .menu-icon {
                         img {
                             opacity: 0.8;
@@ -104,8 +111,8 @@
                 font-weight: 700;
                 letter-spacing: 1px;
                 text-transform: uppercase;
-                margin: 1.5rem 0 .5rem .125rem;
-                opacity: .6;
+                margin: 1.5rem 0 0.5rem 0.125rem;
+                opacity: 0.6;
             }
 
             > div {
