@@ -34,7 +34,7 @@ export default function Home(props) {
                 <meta property="og:title" content="PrimeFlex - Utility-First CSS Library"></meta>
                 <meta property="og:url" content="https://primeflex.org"></meta>
                 <meta property="og:description" content="PrimeFlex is a utility-first CSS library." />
-                <meta property="og:image" content="https://www.primefaces.org/static/social/primereact-preview.jpg"></meta>
+                <meta property="og:image" content="https://www.primefaces.org/static/social/primeflex-preview.jpg"></meta>
                 <meta property="og:ttl" content="604800"></meta>
                 <link rel="icon" href="https://www.primefaces.org/cdn/primeflex/images/favicon.ico" type="image/x-icon"></link>
             </Head>
