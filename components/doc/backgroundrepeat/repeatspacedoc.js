@@ -14,7 +14,10 @@ export function RepeatSpaceDoc(props) {
             </DocSectionText>
             <div className="card">
                 <div className="overflow-hidden">
-                    <div className="bg-repeat-space bg-primary-100 bg-center border-primary-500 border-2 border-round h-12rem w-full" style={{ backgroundImage: "url('https://www.primefaces.org/cdn/primeflex/images/product-placeholder-orange.svg')", backgroundSize: '10rem' }}></div>
+                    <div
+                        className="bg-repeat-space bg-primary-100 bg-center border-primary-500 border-2 border-round h-12rem w-full"
+                        style={{ backgroundImage: "url('https://www.primefaces.org/cdn/primeflex/images/product-placeholder-orange.svg')", backgroundSize: '10rem' }}
+                    ></div>
                 </div>
             </div>
             <DocSectionCode code={code} />

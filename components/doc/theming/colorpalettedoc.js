@@ -18,9 +18,7 @@ export function ColorPaletteDoc(props) {
                 </style>
             </Head>
             <DocSectionText {...props}>
-                <p>
-                    Colors palette consists of 13 main colors where each color provides tints/shades from 50 to 900.
-                </p>
+                <p>Colors palette consists of 13 main colors where each color provides tints/shades from 50 to 900.</p>
             </DocSectionText>
             <div className="card theming-colors">
                 <div className="flex flex-wrap">

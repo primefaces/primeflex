@@ -14,7 +14,10 @@ export function RepeatDoc(props) {
             </DocSectionText>
             <div className="card">
                 <div className="overflow-hidden">
-                    <div className="bg-repeat bg-primary-100 border-primary-500 border-2 border-round w-full" style={{ backgroundImage: "url('https://www.primefaces.org/cdn/primeflex/images/product-placeholder-blue.svg')", backgroundSize: '10rem', height: '30rem' }}></div>
+                    <div
+                        className="bg-repeat bg-primary-100 border-primary-500 border-2 border-round w-full"
+                        style={{ backgroundImage: "url('https://www.primefaces.org/cdn/primeflex/images/product-placeholder-blue.svg')", backgroundSize: '10rem', height: '30rem' }}
+                    ></div>
                 </div>
             </div>
             <DocSectionCode code={code} />
