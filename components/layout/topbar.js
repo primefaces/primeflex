@@ -32,29 +32,22 @@ export default function Topbar(props) {
         }
     }, []);
 
-    const bindScrollListener = () => {
+    useEffect(() => {
+        toggleSticky();
+
         scrollListener.current = () => {
             toggleSticky();
         };
 
         window.addEventListener('scroll', scrollListener.current);
-    };
-
-    const unbindScrollListener = () => {
-        if (scrollListener.current) {
-            window.removeEventListener('scroll', scrollListener.current);
-            scrollListener.current = null;
-        }
-    };
-
-    useEffect(() => {
-        toggleSticky();
-        bindScrollListener();
 
         return () => {
-            unbindScrollListener();
+            if (scrollListener.current) {
+                window.removeEventListener('scroll', scrollListener.current);
+                scrollListener.current = null;
+            }
         };
-    }, []);
+    }, [toggleSticky]);
 
     return (
         <div ref={containerElement} className="layout-topbar">
