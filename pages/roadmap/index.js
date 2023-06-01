@@ -5,7 +5,7 @@ const Roadmap = () => {
     return (
         <div>
             <Head>
-                <title>React Roadmap</title>
+                <title>PrimeFlex Roadmap</title>
                 <meta
                     name="description"
                     content="These are planned to be implemented in parallel to the regular
