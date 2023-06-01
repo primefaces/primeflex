@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { useEventListener } from 'primereact/hooks';
+import { useEventListener, useMountEffect } from 'primereact/hooks';
 import { DomHandler, ObjectUtils, classNames } from 'primereact/utils';
 import React, { useEffect, useRef, useState } from 'react';
 
@@ -12,7 +12,7 @@ export function DocSectionNav({ docs = [] }) {
     const isScrollBlocked = useRef(false);
     const scrollEndTimer = useRef(undefined);
 
-    const [bindDocumentScrollListener] = useEventListener({
+    const [bindDocumentScrollListener, unbindDocumentScrollListener] = useEventListener({
         target: 'window',
         type: 'scroll',
         listener: (event) => {
@@ -67,15 +67,22 @@ export function DocSectionNav({ docs = [] }) {
         return topbarHeight.current + DomHandler.getHeight(label) * 1.5;
     };
 
-    useEffect(() => {
+    useMountEffect(() => {
         const hash = window.location.hash.substring(1);
         const hasHash = ObjectUtils.isNotEmpty(hash);
         const id = hasHash ? hash : (docs[0] || {}).id;
 
         setActiveId(id);
         hasHash && scrollToLabelById(id);
+    });
+
+    useEffect(() => {
         bindDocumentScrollListener();
-    }, [bindDocumentScrollListener, docs]);
+
+        return () => {
+            unbindDocumentScrollListener();
+        };
+    }, [bindDocumentScrollListener, unbindDocumentScrollListener]);
 
     const createItem = ({ id, label, children }, level = 0) => {
         const { basePath, pathname } = router;

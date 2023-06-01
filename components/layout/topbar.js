@@ -1,6 +1,6 @@
 import { DocSearch } from '@docsearch/react';
 import { classNames } from 'primereact/utils';
-import { useEffect, useRef } from 'react';
+import { useCallback, useEffect, useRef } from 'react';
 import pkg from '../../package.json';
 
 export default function Topbar(props) {
@@ -25,12 +25,16 @@ export default function Topbar(props) {
     const containerElement = useRef(null);
     const scrollListener = useRef();
 
+    const toggleSticky = useCallback(() => {
+        if (containerElement.current) {
+            if (window.scrollY > 0) containerElement.current.classList.add('layout-topbar-sticky');
+            else containerElement.current.classList.remove('layout-topbar-sticky');
+        }
+    }, []);
+
     const bindScrollListener = () => {
         scrollListener.current = () => {
-            if (containerElement && containerElement.current) {
-                if (window.scrollY > 0) containerElement.current.classList.add('layout-topbar-sticky');
-                else containerElement.current.classList.remove('layout-topbar-sticky');
-            }
+            toggleSticky();
         };
 
         window.addEventListener('scroll', scrollListener.current);
@@ -44,9 +48,10 @@ export default function Topbar(props) {
     };
 
     useEffect(() => {
+        toggleSticky();
         bindScrollListener();
 
-        return function unbind() {
+        return () => {
             unbindScrollListener();
         };
     }, []);
