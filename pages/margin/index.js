@@ -2,12 +2,12 @@ import Head from 'next/head';
 import React from 'react';
 import { DocSectionNav } from '../../components/doc/common/docsectionnav';
 import { DocSections } from '../../components/doc/common/docsections';
-import { ClassesDoc } from '../../components/doc/padding/classesdoc';
+import { ClassesDoc } from '../../components/doc/margin/classesdoc';
+import { HorizontalMarginDoc } from '../../components/doc/margin/horizontalmargindoc';
+import { NegativeMarginDoc } from '../../components/doc/margin/negativemargindoc';
 import { ResponsiveDoc } from '../../components/doc/margin/responsivedoc';
 import { SingleSideMarginDoc } from '../../components/doc/margin/singlesidemargindoc';
-import { HorizontalMarginDoc } from '../../components/doc/margin/horizontalmargindoc';
 import { VerticalMarginDoc } from '../../components/doc/margin/verticalmargindoc';
-import { NegativeMarginDoc } from '../../components/doc/margin/negativemargindoc';
 
 const PositionPage = () => {
     const docs = [

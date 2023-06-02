@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
+import { useMountEffect } from 'primereact/hooks';
 import { StyleClass } from 'primereact/styleclass';
 import { classNames } from 'primereact/utils';
 import React, { memo, useEffect, useState } from 'react';
@@ -30,7 +31,7 @@ const Menu = memo((props) => {
         }
     };
 
-    useEffect(() => {
+    useMountEffect(() => {
         (MenuData.data || []).forEach((rootItem) => {
             const isExpanded = rootItem.children && rootItem.children.some((item) => item.to === router.pathname || (item.children && item.children.some((it) => it.to === router.pathname)));
 
@@ -39,9 +40,11 @@ const Menu = memo((props) => {
                 setActiveMenuitemOnRouter(rootItem);
             }
         });
+    });
 
+    useEffect(() => {
         scrollToActiveItem();
-    }, [router.pathname]);
+    }, [activeMenuitemOnRouter]);
 
     const renderLink = (item) => {
         const { name, to, href } = item;
