@@ -456,6 +456,7 @@
         padding-top: 3rem;
         text-align: left;
         text-transform: capitalize;
+        user-select: all;
     }
 
     tbody {
@@ -468,6 +469,7 @@
             border-bottom: 1px solid var(--table-border-color);
             white-space: pre-wrap;
             line-height: 1.5;
+            user-select: all;
 
             &.doc-option-type {
                 font-family:
