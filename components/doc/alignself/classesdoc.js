@@ -14,24 +14,28 @@ export function ClassesDoc(props) {
                     </thead>
                     <tbody>
                         <tr>
-                            <td>align-items-stretch</td>
-                            <td>align-items: stretch;</td>
+                            <td>align-self-auto</td>
+                            <td>align-self: auto;</td>
                         </tr>
                         <tr>
-                            <td>align-items-start</td>
-                            <td>align-items: flex-start;</td>
+                            <td>align-self-start</td>
+                            <td>align-self: flex-start;</td>
                         </tr>
                         <tr>
-                            <td>align-items-center</td>
-                            <td>align-items: center;</td>
+                            <td>align-self-center</td>
+                            <td>align-self: center;</td>
                         </tr>
                         <tr>
-                            <td>align-items-end</td>
-                            <td>align-items: flex-end;</td>
+                            <td>align-self-end</td>
+                            <td>align-self: flex-end;</td>
                         </tr>
                         <tr>
-                            <td>align-items-baseline</td>
-                            <td>align-items: baseline;</td>
+                            <td>align-self-stretch</td>
+                            <td>align-self: stretch;</td>
+                        </tr>
+                        <tr>
+                            <td>align-self-baseline</td>
+                            <td>align-self: baseline;</td>
                         </tr>
                     </tbody>
                 </table>
