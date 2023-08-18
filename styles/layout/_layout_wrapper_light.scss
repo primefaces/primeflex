@@ -12,4 +12,14 @@
     --menu-border-color: #e6e6e6;
     --menu-icon-hover-filter: invert(50%) sepia(31%) saturate(7070%) hue-rotate(179deg) brightness(105%) contrast(106%);
     --topbar-bg: rgb(246, 247, 249 / 80%);
+
+    --guides-item-hover-bg: #f7f7f7;
+    --guides-item-hover-shadow: 0px -9px 22px 3px #fff inset, 0px 3px 0px -1px rgba(255, 255, 255, 0.4) inset,
+        0px 2px 2px -1px rgba(0, 0, 0, 0.1), 0px 4px 2px -1px rgba(0, 0, 0, 0.05), 0px 0px 0px 3px rgba(0, 0, 0, 0.03);
+    --guides-item-logo-shadow: 0px 2px 0px 0px #fff inset, 0px 4px 2px -2px rgba(0, 0, 0, 0.06);
+
+    --demo-steps-background: #f7f7f7;
+    --demo-steps-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.14), 0px -10px 6px -2px rgba(255, 255, 255, 0.4) inset,
+        0px -2px 1px -1px #fff inset, 0px 0px 0px 1px rgba(0, 0, 0, 0.1);
+    --demo-steps-line-bg: #cccdd1;
 }

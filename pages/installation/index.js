@@ -2,50 +2,14 @@ import Head from 'next/head';
 import React from 'react';
 import { DocSectionNav } from '../../components/doc/common/docsectionnav';
 import { DocSections } from '../../components/doc/common/docsections';
-import { ModuleLoaderDoc } from '../../components/doc/installation/moduleloaderdoc';
-import { VariablesDoc } from '../../components/doc/installation/variablesdoc';
-import { LoadFromCDNDoc } from '../../components/doc/installation/loadfromcdndoc';
-import { ReuseClassesDoc } from '../../components/doc/installation/reuseclassesdoc';
-import { ThemesDoc } from '../../components/doc/installation/themesdoc';
-import { ProductionSizeDoc } from '../../components/doc/installation/productionsizedoc';
-import { VSCodeExtensionDoc } from '../../components/doc/installation/vscodeextensiondoc';
+import { FrameworkGuidesDoc } from '../../components/doc/installation/frameworkguides.doc';
 
 const InstallationPage = () => {
     const docs = [
         {
             id: 'moduleloader',
-            label: 'Module Loader',
-            component: ModuleLoaderDoc
-        },
-        {
-            id: 'loadfromcdn',
-            label: 'Load from CDN',
-            component: LoadFromCDNDoc
-        },
-        {
-            id: 'themes',
-            label: 'Themes',
-            component: ThemesDoc
-        },
-        {
-            id: 'variables',
-            label: 'Variables',
-            component: VariablesDoc
-        },
-        {
-            id: 'reuseclasses',
-            label: 'Reuse Classes',
-            component: ReuseClassesDoc
-        },
-        {
-            id: 'productionsize',
-            label: 'Production Size',
-            component: ProductionSizeDoc
-        },
-        {
-            id: 'vscodeextension',
-            label: 'VSCode Extension',
-            component: VSCodeExtensionDoc
+            label: 'Framework Guides',
+            component: FrameworkGuidesDoc
         }
     ];
 
@@ -58,8 +22,12 @@ const InstallationPage = () => {
             <div className="doc">
                 <div className="doc-main">
                     <div className="doc-intro">
-                        <h1>Installation</h1>
+                        <span>Installation</span>
+                        <h1>Getting Started with PrimeFlex</h1>
                         <p>PrimeFlex is a CSS utility library featuring various helpers such as a grid system, flexbox, spacing, elevation and more.</p>
+                        <p>
+                            PrimeFlex is available for download at <a href="https://www.npmjs.com/package/primeflex">NPM</a> for usage with a module bundler such as webpack.
+                        </p>
                     </div>
                     <DocSections docs={docs} />
                 </div>

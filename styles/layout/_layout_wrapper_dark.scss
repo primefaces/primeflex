@@ -12,4 +12,11 @@
     --menu-border-color: rgba(255, 255, 255, 0.1);
     --topbar-bg: rgba(8, 19, 37, 0.4);
     --menu-icon-hover-filter: invert(35%) sepia(100%) saturate(1296%) hue-rotate(80deg) brightness(215%) contrast(100%);
+
+    --guides-item-hover-bg: linear-gradient(180deg, rgba(26, 29, 51, 0) 0%, rgba(103, 112, 177, 0.2) 100%), #191c31;
+    --guides-item-hover-shadow: 0px 1px 1px 0px rgba(255, 255, 255, 0.1) inset, 0px 0px 0px 4px #191c31;
+    --guides-item-logo-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.08) inset;
+    --demo-steps-background: linear-gradient(180deg, rgba(26, 29, 51, 0) 0%, rgba(103, 112, 177, 0.2) 100%), #191c31;
+    --demo-steps-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.12) inset;
+    --demo-steps-line-bg: var(--surface-50);
 }

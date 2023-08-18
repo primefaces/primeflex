@@ -6,9 +6,14 @@
             "to": "/installation"
         },
         {
-            "name": "Theming",
-            "image": "https://www.primefaces.org/cdn/primeflex/images/menu-icons/icon-theming",
-            "to": "/theming"
+            "name": "Customization",
+            "image": "https://www.primefaces.org/cdn/primeflex/images/menu-icons/icon-discover",
+            "children": [
+                {
+                    "name": "Configuration",
+                    "to": "/configuration"
+                }
+            ]
         },
         {
             "name": "PrimeBlocks",

@@ -1,5 +1,5 @@
-import React, { useEffect, useRef } from 'react';
 import { classNames } from 'primereact/utils';
+import React, { useEffect, useRef } from 'react';
 
 export function CodeHighlight(props) {
     const codeElement = useRef();
@@ -11,7 +11,7 @@ export function CodeHighlight(props) {
 
     return (
         <pre style={props.style}>
-            <code ref={codeElement} className={classNames(languageClassName, { 'pt-5': !props.import })}>
+            <code ref={codeElement} className={classNames(languageClassName, { 'pt-6': !props.import })}>
                 {props.children}&nbsp;
             </code>
         </pre>

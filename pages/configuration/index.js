@@ -2,12 +2,11 @@ import Head from 'next/head';
 import React from 'react';
 import { DocSectionNav } from '../../components/doc/common/docsectionnav';
 import { DocSections } from '../../components/doc/common/docsections';
-import { ExamplesDoc } from '../../components/doc/userselect/examples';
-import { ThemesDoc } from '../../components/doc/theming/themesdoc';
-import { ColorPaletteDoc } from '../../components/doc/theming/colorpalettedoc';
-import { SurfaceColorPaletteDoc } from '../../components/doc/theming/surfacecolorsdoc';
+import { ColorPaletteDoc } from '../../components/doc/configuration/colorpalettedoc';
+import { SurfaceColorPaletteDoc } from '../../components/doc/configuration/surfacecolorsdoc';
+import { ThemesDoc } from '../../components/doc/configuration/themesdoc';
 
-const PositionPage = () => {
+const ConfigurationPage = () => {
     const docs = [
         {
             id: 'themes',
@@ -29,16 +28,17 @@ const PositionPage = () => {
     return (
         <div>
             <Head>
-                <title>Theming - PrimeFlex</title>
-                <meta name="description" content="PrimeFlex Theming" />
+                <title>Configuration - PrimeFlex</title>
+                <meta name="description" content="PrimeFlex is a lightweight responsive CSS utility library to accompany Prime UI libraries and static webpages as well." />
             </Head>
             <div className="doc">
                 <div className="doc-main">
                     <div className="doc-intro">
-                        <h1>Theming</h1>
+                        <span>Customization</span>
+                        <h1>Configuration</h1>
+                        <p>PrimeFlex is a CSS utility library featuring various helpers such as a grid system, flexbox, spacing, elevation and more.</p>
                         <p>
-                            Theme file is only required when using as standalone without a Prime UI library since PrimeFlex has exclusive integration with <a href="https://www.primefaces.org/showcase">PrimeFaces</a>,{' '}
-                            <a href="https://www.primefaces.org/primeng">PrimeNG</a>, <a href="https://www.primefaces.org/primereact">PrimeReact</a> and <a href="https://www.primefaces.org/primevue">PrimeVue</a>.
+                            PrimeFlex is available for download at <a href="https://www.npmjs.com/package/primeflex">NPM</a> for usage with a module bundler such as webpack.
                         </p>
                     </div>
                     <DocSections docs={docs} />
@@ -49,4 +49,4 @@ const PositionPage = () => {
     );
 };
 
-export default PositionPage;
+export default ConfigurationPage;

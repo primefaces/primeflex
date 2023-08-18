@@ -10,7 +10,14 @@ code[class*="language-"],
 pre[class*="language-"] {
     color: black;
     background: none;
-    font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, Liberation Mono, monospace;
+    font-family:
+        ui-monospace,
+        SFMono-Regular,
+        "SF Mono",
+        Menlo,
+        Consolas,
+        Liberation Mono,
+        monospace;
     font-size: 1em;
     text-align: left;
     white-space: pre;
@@ -41,7 +48,9 @@ pre[class*="language-"] > code {
     position: relative;
     z-index: 1;
     border-left: 10px solid #358ccb;
-    box-shadow: -1px 0px 0px 0px #358ccb, 0px 0px 0px 1px #dfdfdf;
+    box-shadow:
+        -1px 0px 0px 0px #358ccb,
+        0px 0px 0px 1px #dfdfdf;
     background-color: #fdfdfd;
     background-image: linear-gradient(transparent 50%, rgba(69, 142, 209, 0.04) 50%);
     background-size: 3em 3em;
@@ -297,7 +306,7 @@ div.code-toolbar > .toolbar > .toolbar-item > span:focus {
         code {
             border-left: 1rem solid transparent !important;
             box-shadow: none !important;
-            background: #0d1e3b !important;
+            background: var(--surface-50) !important;
             margin: 0;
             color: var(--surface-900);
             font-size: 16px;
@@ -447,29 +456,9 @@ div.code-toolbar > .toolbar > .toolbar-item > span:focus {
 }
 
 .code-toolbar {
-    div.toolbar {
-        position: absolute;
-        top: 1rem;
-        right: 1rem;
-
-        .toolbar-item {
-            > button.copy-to-clipboard-button {
-                appearance: none;
-                border: 0 none !important;
-                padding: 0.3rem 1rem;
-                background: var(--surface-50) !important;
-                border-radius: 6px;
-                color: var(--surface-500) !important;
-                font-weight: 600;
-                transition: all 0.15s;
-                cursor: pointer;
-                box-shadow: none !important;
-
-                &:hover {
-                    background-color: var(--surface-100) !important;
-                    color: var(--surface-600) !important;
-                }
-            }
+    .toolbar-item {
+        > button.copy-to-clipboard-button {
+            display: none;
         }
     }
 }
