@@ -20,7 +20,7 @@ export function FrameworkGuidesDoc(props) {
                                     <h5>{framework.name}</h5>
                                     <i className="pi pi-arrow-up-right"></i>
                                 </div>
-                                <span>Add the PrimeFlex CSS file to your project.</span>
+                                <span> {framework.guideDesc}</span>
                             </div>
                         </div>
                     </Link>

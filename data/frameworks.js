@@ -3,6 +3,7 @@ export const frameworks = [
         id: 'nextjs',
         name: 'Nextjs',
         logo: '/images/frameworks/nextjs.png',
+        guideDesc: 'Add the PrimeFlex CSS file to your project.',
         guide: [
             {
                 stepId: '1',
@@ -67,6 +68,7 @@ module.exports = {
         id: 'angular',
         name: 'Angular',
         logo: '/images/frameworks/nextjs.png',
+        guideDesc: 'Add the PrimeFlex CSS file to your project.',
         guide: [
             {
                 stepId: '1',
@@ -81,6 +83,7 @@ module.exports = {
         id: 'nuxt',
         name: 'Nuxt',
         logo: '/images/frameworks/nextjs.png',
+        guideDesc: 'Add the PrimeFlex CSS file to your project.',
         guide: [
             {
                 stepId: '1',
