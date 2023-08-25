@@ -1,0 +1,44 @@
+const { styleClass } = require("./utils");
+
+module.exports = (root, opts) => {
+    const transitionProperty = {
+        'transition-none': 'none',
+        'transition-all': 'all',
+        'transition-colors': 'background-color,border-color,color',
+        'transition-transform': 'transform'
+    };
+
+    const transitionDuration = {
+        'transition-duration-100': '100ms',
+        'transition-duration-150': '150ms',
+        'transition-duration-200': '200ms',
+        'transition-duration-300': '300ms',
+        'transition-duration-400': '400ms',
+        'transition-duration-500': '500ms',
+        'transition-duration-1000': '1000ms',
+        'transition-duration-2000': '2000ms',
+        'transition-duration-3000': '3000ms'
+    };
+
+    const transitionTiming = {
+        'transition-linear': 'linear',
+        'transition-ease-in': 'cubic-bezier(0.4, 0, 1, 1)',
+        'transition-ease-out': 'cubic-bezier(0, 0, 0.2, 1)',
+        'transition-ease-in-out': 'cubic-bezier(0.4, 0, 0.2, 1)'
+    };
+
+    const transitionDelay = {
+        'transition-delay-100': '100ms',
+        'transition-delay-150': '150ms',
+        'transition-delay-200': '200ms',
+        'transition-delay-300': '300ms',
+        'transition-delay-400': '400ms',
+        'transition-delay-500': '500ms',
+        'transition-delay-1000': '1000ms'
+    };
+
+    styleClass('transition-property', transitionProperty, root, opts);
+    styleClass('transition-duration', transitionDuration, root, opts);
+    styleClass('transition-timing-function', transitionTiming, root, opts);
+    styleClass('transition-delay', transitionDelay, root, opts);
+}
