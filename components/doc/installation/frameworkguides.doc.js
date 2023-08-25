@@ -13,7 +13,7 @@ export function FrameworkGuidesDoc(props) {
                     <Link key={index} href={`/guides/${framework.name.toLowerCase()}`}>
                         <div className="framework">
                             <div className="logo">
-                                <img src={framework.logo}></img>
+                                <img alt={`${framework.name}`} src={framework.logo}></img>
                             </div>
                             <div className="content">
                                 <div className="title">
