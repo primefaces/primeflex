@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from 'react';
 import Layout from '../components/layout/layout';
 import AnnouncementData from '../data/news.json';
 import '../styles/layout/layout.scss';
-import '../styles/lib/primeflex.scss';
+import '../styles/primeflex.css';
 import '../styles/prism.scss';
 
 export default function MyApp({ Component }) {
