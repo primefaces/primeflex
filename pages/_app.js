@@ -56,13 +56,9 @@ export default function MyApp({ Component }) {
         }
     }, []);
 
-    /*useEffect(() => {
-        DomHandler.addClass(document.body, dark ? 'layout-dark' : 'layout-light');
-
-        return () => {
-            DomHandler.removeMultipleClasses(document.body, 'layout-dark layout-light');
-        };
-    }, [dark]);*/
+    useEffect(() => {
+        document.documentElement.dataset.pfTheme = dark ? 'primeone-dark' : 'primeone-light';
+    }, [dark]);
 
     let content;
 
@@ -76,9 +72,5 @@ export default function MyApp({ Component }) {
         );
     }
 
-    return (
-        <div className={classNames('app', { 'app-news-active': props.newsActive })} data-pf-theme={theme}>
-            {content}
-        </div>
-    );
+    return <div className={classNames('app', { 'app-news-active': props.newsActive })}>{content}</div>;
 }
