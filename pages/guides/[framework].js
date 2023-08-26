@@ -8,6 +8,8 @@ const GuidePage = (props) => {
     const { framework } = router.query;
     const currentFramework = frameworks.find((frm) => frm.id === framework);
 
+    if (!currentFramework) return null;
+
     return (
         <div>
             <Head>
