@@ -293,7 +293,7 @@ div.code-toolbar > .toolbar > .toolbar-item > span:focus {
     text-decoration: none;
 }
 
-.layout-wrapper-dark {
+[data-pf-theme="primeone-dark"] {
     pre[class*="language-"] {
         position: relative;
         background: transparent !important;
@@ -373,7 +373,7 @@ div.code-toolbar > .toolbar > .toolbar-item > span:focus {
     }
 }
 
-.layout-wrapper-light {
+[data-pf-theme="primeone-light"] {
     pre[class*="language-"] {
         position: relative;
         background: transparent !important;

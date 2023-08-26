@@ -3,7 +3,6 @@ import { useRouter } from 'next/router';
 import { classNames } from 'primereact/utils';
 import { useEffect, useState } from 'react';
 import NewsSection from '../news/newssection';
-import AppContentContext from './appcontentcontext';
 import Footer from './footer';
 import Menu from './menu';
 import Topbar from './topbar';
@@ -12,11 +11,6 @@ export default function Layout(props) {
     const [sidebarActive, setSidebarActive] = useState(false);
     const router = useRouter();
 
-    const wrapperClassName = classNames('layout-wrapper', {
-        'layout-wrapper-dark': props.dark,
-        'layout-wrapper-light': !props.dark,
-        'layout-news-active': props.newsActive
-    });
     const maskClassName = classNames('layout-mask', {
         'layout-mask-active': sidebarActive
     });
@@ -51,9 +45,9 @@ export default function Layout(props) {
     }, [router]);
 
     return (
-        <div className={wrapperClassName}>
+        <div className="layout-wrapper">
             <Head>
-                <title>PrimeFlex - Utility-First CSS Library</title>
+                <title>PrimeFlex - Utility First CSS Library</title>
                 <meta charSet="UTF-8" />
                 <meta name="description" content="PrimeFlex is a utility-first CSS library." />
                 <meta name="robots" content="index, follow" />
@@ -63,7 +57,7 @@ export default function Layout(props) {
                 <meta name="twitter:title" content="PrimeFlex | Utility-First CSS Library" />
                 <meta name="twitter:description" content="PrimeFlex is a utility-first CSS library." />
                 <meta property="og:type" content="website"></meta>
-                <meta property="og:title" content="PrimeFlex - Utility-First CSS Library"></meta>
+                <meta property="og:title" content="PrimeFlex - Utility First CSS Library"></meta>
                 <meta property="og:url" content="https://primeflex.org"></meta>
                 <meta property="og:description" content="PrimeFlex is a utility-first CSS library." />
                 <meta property="og:image" content="https://www.primefaces.org/static/social/primeflex-preview.jpg"></meta>
@@ -73,20 +67,12 @@ export default function Layout(props) {
             {props.newsActive && <NewsSection announcement={props.announcement} onClose={props.onNewsClose} />}
             <Topbar dark={props.dark} onMenuButtonClick={onMenuButtonClick} onToggleColorScheme={toggleColorScheme} />
             <Menu active={sidebarActive} darkTheme={props.dark} />
-            <AppContentContext.Provider
-                value={{
-                    ripple: true,
-                    inputStyle: 'outlined',
-                    darkTheme: props.dark
-                }}
-            >
-                <div className="layout-content">
-                    <div className="layout-content-inner">
-                        {props.children}
-                        <Footer></Footer>
-                    </div>
+            <div className="layout-content">
+                <div className="layout-content-inner">
+                    {props.children}
+                    <Footer></Footer>
                 </div>
-            </AppContentContext.Provider>
+            </div>
             <div className={maskClassName} onClick={onMaskClick}></div>
         </div>
     );

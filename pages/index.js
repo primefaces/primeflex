@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import { classNames } from 'primereact/utils';
 import NewsSection from '../components/news/newssection';
 import AnimationsSection from './landing/animationssection';
 import BlocksSection from './landing/blockssection';
@@ -12,16 +11,14 @@ import StyleSection from './landing/stylesection';
 import UsersSection from './landing/userssection';
 
 export default function Home(props) {
-    const rootClassName = classNames('landing', { 'landing-light': !props.dark, 'landing-dark': props.dark, 'landing-news-active': props.newsActive });
-
     const toggleColorScheme = () => {
         props.onThemeChange(!props.dark);
     };
 
     return (
-        <div className={rootClassName}>
+        <div className="landing">
             <Head>
-                <title>PrimeFlex - Utility-First CSS Library</title>
+                <title>PrimeFlex - Utility First CSS Library</title>
                 <meta charSet="UTF-8" />
                 <meta name="description" content="PrimeFlex is a utility-first CSS library." />
                 <meta name="robots" content="index, follow" />
@@ -31,7 +28,7 @@ export default function Home(props) {
                 <meta name="twitter:title" content="PrimeFlex | Utility-First CSS Library" />
                 <meta name="twitter:description" content="PrimeFlex is a utility-first CSS library." />
                 <meta property="og:type" content="website"></meta>
-                <meta property="og:title" content="PrimeFlex - Utility-First CSS Library"></meta>
+                <meta property="og:title" content="PrimeFlex - Utility First CSS Library"></meta>
                 <meta property="og:url" content="https://primeflex.org"></meta>
                 <meta property="og:description" content="PrimeFlex is a utility-first CSS library." />
                 <meta property="og:image" content="https://www.primefaces.org/static/social/primeflex-preview.jpg"></meta>

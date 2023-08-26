@@ -1,5 +1,5 @@
 import '@docsearch/css';
-import { DomHandler } from 'primereact/utils';
+import { classNames } from 'primereact/utils';
 import { useEffect, useRef, useState } from 'react';
 import Layout from '../components/layout/layout';
 import AnnouncementData from '../data/news.json';
@@ -12,6 +12,7 @@ export default function MyApp({ Component }) {
     const [newsActive, setNewsActive] = useState(false);
     const announcement = useRef(AnnouncementData);
     const storageKey = 'primeflex-news';
+    const theme = dark ? 'primeone-dark' : 'primeone-light';
 
     const props = {
         dark: dark,
@@ -55,21 +56,29 @@ export default function MyApp({ Component }) {
         }
     }, []);
 
-    useEffect(() => {
+    /*useEffect(() => {
         DomHandler.addClass(document.body, dark ? 'layout-dark' : 'layout-light');
 
         return () => {
             DomHandler.removeMultipleClasses(document.body, 'layout-dark layout-light');
         };
-    }, [dark]);
+    }, [dark]);*/
+
+    let content;
 
     if (Component.getLayout) {
-        return Component.getLayout(<Component {...props} />);
+        content = Component.getLayout(<Component {...props} />);
     } else {
-        return (
+        content = (
             <Layout {...props}>
                 <Component {...props} />
             </Layout>
         );
     }
+
+    return (
+        <div className={classNames('app', { 'app-news-active': props.newsActive })} data-pf-theme={theme}>
+            {content}
+        </div>
+    );
 }

@@ -309,7 +309,8 @@
         }
     }
 }
-.layout-wrapper-light {
+
+[data-pf-theme="primeone-light"] {
     .doc-section-description {
         > p {
             i {
@@ -320,7 +321,7 @@
     }
 }
 
-.layout-wrapper-dark {
+[data-pf-theme="primeone-dark"] {
     .doc-section-description {
         > p {
             i {
