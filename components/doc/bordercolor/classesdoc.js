@@ -57,7 +57,7 @@ export function ClassesDoc(props) {
                             </td>
                         </tr>
                         <tr>
-                            <td>border-200</td>
+                            <td>border-100</td>
                             <td>border-color: var(--surface-100);</td>
                             <td>
                                 <div className="border-200 border-2 shadow-1" style={{ width: '50px', height: '20px' }}></div>
