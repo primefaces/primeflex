@@ -14,40 +14,36 @@ export function ClassesDoc(props) {
                     </thead>
                     <tbody>
                         <tr>
-                            <td>font-thin</td>
-                            <td>font-weight: 100;</td>
+                            <td>blur-none</td>
+                            <td>filter: blur(0);</td>
                         </tr>
                         <tr>
-                            <td>font-extralight</td>
-                            <td>font-weight: 200;</td>
+                            <td>blur-sm</td>
+                            <td>filter: blur(4px);</td>
                         </tr>
                         <tr>
-                            <td>font-light</td>
-                            <td>font-weight: 300;</td>
+                            <td>blur</td>
+                            <td>filter: blur(8px);</td>
                         </tr>
                         <tr>
-                            <td>font-normal</td>
-                            <td>font-weight: 400;</td>
+                            <td>blur-md</td>
+                            <td>filter: blur(12px);</td>
                         </tr>
                         <tr>
-                            <td>font-medium</td>
-                            <td>font-weight: 500;</td>
+                            <td>blur-lg</td>
+                            <td>filter: blur(16px);</td>
                         </tr>
                         <tr>
-                            <td>font-semibold</td>
-                            <td>font-weight: 600;</td>
+                            <td>blur-xl</td>
+                            <td>filter: blur(24px);</td>
                         </tr>
                         <tr>
-                            <td>font-bold</td>
-                            <td>font-weight: 700;</td>
+                            <td>blur-2xl</td>
+                            <td>filter: blur(40px);</td>
                         </tr>
                         <tr>
-                            <td>font-extrabold</td>
-                            <td>font-weight: 800;</td>
-                        </tr>
-                        <tr>
-                            <td>font-black</td>
-                            <td>font-weight: 900;</td>
+                            <td>blur-3xl</td>
+                            <td>filter: blur(64px);</td>
                         </tr>
                     </tbody>
                 </table>

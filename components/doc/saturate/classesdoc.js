@@ -14,28 +14,24 @@ export function ClassesDoc(props) {
                     </thead>
                     <tbody>
                         <tr>
-                            <td>text-center</td>
-                            <td>text-align: center;</td>
+                            <td>saturate-0</td>
+                            <td>filter: saturate(0);</td>
                         </tr>
                         <tr>
-                            <td>text-justify</td>
-                            <td>text-align: justify;</td>
+                            <td>saturate-50</td>
+                            <td>filter: saturate(0.5);</td>
                         </tr>
                         <tr>
-                            <td>text-left</td>
-                            <td>text-align: left;</td>
+                            <td>saturate-100</td>
+                            <td>filter: saturate(1);</td>
                         </tr>
                         <tr>
-                            <td>text-right</td>
-                            <td>text-align: right;</td>
+                            <td>saturate-150</td>
+                            <td>filter: saturate(1.5);</td>
                         </tr>
                         <tr>
-                            <td>text-start</td>
-                            <td>text-align: start;</td>
-                        </tr>
-                        <tr>
-                            <td>text-end</td>
-                            <td>text-align: end;</td>
+                            <td>saturate-200</td>
+                            <td>filter: saturate(2);</td>
                         </tr>
                     </tbody>
                 </table>

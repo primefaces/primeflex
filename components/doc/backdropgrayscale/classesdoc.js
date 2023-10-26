@@ -14,28 +14,24 @@ export function ClassesDoc(props) {
                     </thead>
                     <tbody>
                         <tr>
-                            <td>text-center</td>
-                            <td>text-align: center;</td>
+                            <td>backdrop-grayscale</td>
+                            <td>backdrop-filter: grayscale(1);</td>
                         </tr>
                         <tr>
-                            <td>text-justify</td>
-                            <td>text-align: justify;</td>
+                            <td>backdrop-grayscale-0</td>
+                            <td>backdrop-filter: grayscale(0);</td>
                         </tr>
                         <tr>
-                            <td>text-left</td>
-                            <td>text-align: left;</td>
+                            <td>backdrop-grayscale-50</td>
+                            <td>backdrop-filter: grayscale(0.5);</td>
                         </tr>
                         <tr>
-                            <td>text-right</td>
-                            <td>text-align: right;</td>
+                            <td>backdrop-grayscale-75</td>
+                            <td>backdrop-filter: grayscale(0.75);</td>
                         </tr>
                         <tr>
-                            <td>text-start</td>
-                            <td>text-align: start;</td>
-                        </tr>
-                        <tr>
-                            <td>text-end</td>
-                            <td>text-align: end;</td>
+                            <td>backdrop-grayscale-100</td>
+                            <td>backdrop-filter: grayscale(1);</td>
                         </tr>
                     </tbody>
                 </table>

@@ -14,28 +14,24 @@ export function ClassesDoc(props) {
                     </thead>
                     <tbody>
                         <tr>
-                            <td>text-center</td>
-                            <td>text-align: center;</td>
+                            <td>grayscale</td>
+                            <td>filter: grayscale(1);</td>
                         </tr>
                         <tr>
-                            <td>text-justify</td>
-                            <td>text-align: justify;</td>
+                            <td>grayscale-0</td>
+                            <td>filter: grayscale(0);</td>
                         </tr>
                         <tr>
-                            <td>text-left</td>
-                            <td>text-align: left;</td>
+                            <td>grayscale-50</td>
+                            <td>filter: grayscale(0.5);</td>
                         </tr>
                         <tr>
-                            <td>text-right</td>
-                            <td>text-align: right;</td>
+                            <td>grayscale-75</td>
+                            <td>filter: grayscale(0.75);</td>
                         </tr>
                         <tr>
-                            <td>text-start</td>
-                            <td>text-align: start;</td>
-                        </tr>
-                        <tr>
-                            <td>text-end</td>
-                            <td>text-align: end;</td>
+                            <td>grayscale-100</td>
+                            <td>filter: grayscale(1);</td>
                         </tr>
                     </tbody>
                 </table>

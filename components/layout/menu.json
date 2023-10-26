@@ -154,6 +154,7 @@
             "name": "Typography",
             "image": "https://www.primefaces.org/cdn/primeflex/images/menu-icons/icon-typography",
             "children": [
+                { "name": "Font Families", "to": "/fontfamilies" },
                 { "name": "Font Size", "to": "/fontsize" },
                 { "name": "Font Weight", "to": "/fontweight" },
                 { "name": "Font Style", "to": "/fontstyle" },
@@ -174,6 +175,26 @@
             "children": [
                 { "name": "Elevation", "to": "/elevation" },
                 { "name": "Opacity", "to": "/opacity" }
+            ]
+        },
+        {
+            "name": "Filters",
+            "image": "https://www.primefaces.org/cdn/primeflex/images/menu-icons/icon-sizing",
+            "children": [
+                { "name": "Blur", "to": "/blur" },
+                { "name": "Brightness", "to": "/brightness" },
+                { "name": "Grayscale", "to": "/grayscale" },
+                { "name": "Sepia", "to": "/sepia" },
+                { "name": "Hue-Rotate", "to": "/huerotate" },
+                { "name": "Saturate", "to": "/saturate" },
+                { "name": "Invert", "to": "/invert" },
+                { "name": "Backdrop Blur", "to": "/backdropblur" },
+                { "name": "Backdrop Brightness", "to": "/backdropbrightness" },
+                { "name": "Backdrop Grayscale", "to": "/backdropgrayscale" },
+                { "name": "Backdrop Sepia", "to": "/backdropsepia" },
+                { "name": "Backdrop Hue-Rotate", "to": "/backdrophuerotate" },
+                { "name": "Backdrop Saturate", "to": "/backdropsaturate" },
+                { "name": "Backdrop Invert", "to": "/backdropinvert" }
             ]
         },
         {
@@ -207,7 +228,8 @@
             "children": [
                 { "name": "Translate", "to": "/translate" },
                 { "name": "Transform Origin", "to": "/transformorigin" },
-                { "name": "Rotate", "to": "/rotate" }
+                { "name": "Rotate", "to": "/rotate" },
+                { "name": "Scale", "to": "/scale" }
             ]
         },
         {
