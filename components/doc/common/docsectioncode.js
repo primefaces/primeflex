@@ -3,8 +3,7 @@ import { CodeHighlight } from './codehighlight';
 
 export function DocSectionCode(props) {
     const copyCode = async () => {
-        setButtonTooltip('Copied!');
-        await navigator.clipboard.writeText(props.code[codeMode]);
+        await navigator.clipboard.writeText(props.code);
     };
 
     return (

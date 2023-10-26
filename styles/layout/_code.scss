@@ -2,7 +2,14 @@ code[class*="language-"],
 pre[class*="language-"] {
     color: black;
     background: none;
-    font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, Liberation Mono, monospace;
+    font-family:
+        ui-monospace,
+        SFMono-Regular,
+        "SF Mono",
+        Menlo,
+        Consolas,
+        Liberation Mono,
+        monospace;
     font-size: 1em;
     text-align: left;
     white-space: pre;
@@ -32,7 +39,9 @@ pre[class*="language-"] {
 pre[class*="language-"] > code {
     position: relative;
     border-left: 10px solid #358ccb;
-    box-shadow: -1px 0px 0px 0px #358ccb, 0px 0px 0px 1px #dfdfdf;
+    box-shadow:
+        -1px 0px 0px 0px #358ccb,
+        0px 0px 0px 1px #dfdfdf;
     background-color: #fdfdfd;
     background-image: linear-gradient(transparent 50%, rgba(69, 142, 209, 0.04) 50%);
     background-size: 3em 3em;
@@ -44,6 +53,7 @@ code[class*="language-"] {
     max-height: inherit;
     height: inherit;
     padding: 0 1em;
+    padding-top: 3rem;
     display: block;
     overflow: auto;
 }
