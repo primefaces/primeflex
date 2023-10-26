@@ -233,6 +233,15 @@
             ]
         },
         {
+            "name": "SVG",
+            "image": "https://www.primefaces.org/cdn/primeflex/images/menu-icons/icon-transforms",
+            "children": [
+                { "name": "Fill", "to": "/fill" },
+                { "name": "Stroke", "to": "/stroke" },
+                { "name": "Stroke Width", "to": "/strokewidth" }
+            ]
+        },
+        {
             "name": "Interactivity",
             "image": "https://www.primefaces.org/cdn/primeflex/images/menu-icons/icon-interactivity",
             "children": [
