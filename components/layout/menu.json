@@ -117,7 +117,8 @@
                 { "name": "Background Color", "to": "/backgroundcolor" },
                 { "name": "Background Repeat", "to": "/backgroundrepeat" },
                 { "name": "Background Size", "to": "/backgroundsize" },
-                { "name": "Background Position", "to": "/backgroundposition" }
+                { "name": "Background Position", "to": "/backgroundposition" },
+                { "name": "Background Image", "to": "/backgroundimage" }
             ]
         },
         {
@@ -127,7 +128,11 @@
                 { "name": "Border Radius", "to": "/borderradius" },
                 { "name": "Border Width", "to": "/borderwidth" },
                 { "name": "Border Style", "to": "/borderstyle" },
-                { "name": "Border Color", "to": "/bordercolor" }
+                { "name": "Border Color", "to": "/bordercolor" },
+                { "name": "Outline Width", "to": "/outlinewidth" },
+                { "name": "Outline Style", "to": "/outlinestyle" },
+                { "name": "Outline Color", "to": "/outlinecolor" },
+                { "name": "Outline Offset", "to": "/outlineoffset" }
             ]
         },
         {
@@ -247,7 +252,6 @@
             "children": [
                 { "name": "Appearance", "to": "/appearance" },
                 { "name": "Cursor", "to": "/cursor" },
-                { "name": "Outline", "to": "/outline" },
                 { "name": "Pointer Events", "to": "/pointerevents" },
                 { "name": "User Select", "to": "/userselect" }
             ]
