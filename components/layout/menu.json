@@ -7,7 +7,7 @@
         },
         {
             "name": "Customization",
-            "image": "https://www.primefaces.org/cdn/primeflex/images/menu-icons/icon-discover",
+            "image": "https://www.primefaces.org/cdn/primeflex/images/menu-icons/icon-customization",
             "children": [
                 {
                     "name": "Configuration",
@@ -184,7 +184,7 @@
         },
         {
             "name": "Filters",
-            "image": "https://www.primefaces.org/cdn/primeflex/images/menu-icons/icon-sizing",
+            "image": "https://www.primefaces.org/cdn/primeflex/images/menu-icons/icon-filters",
             "children": [
                 { "name": "Blur", "to": "/blur" },
                 { "name": "Brightness", "to": "/brightness" },
@@ -239,7 +239,7 @@
         },
         {
             "name": "SVG",
-            "image": "https://www.primefaces.org/cdn/primeflex/images/menu-icons/icon-transforms",
+            "image": "https://www.primefaces.org/cdn/primeflex/images/menu-icons/icon-svg",
             "children": [
                 { "name": "Fill", "to": "/fill" },
                 { "name": "Stroke", "to": "/stroke" },
