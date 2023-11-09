@@ -5,6 +5,7 @@ import { DocSections } from '../../components/doc/common/docsections';
 import { ClassesDoc } from '../../components/doc/textcolor/classesdoc';
 import { ExamplesDoc } from '../../components/doc/textcolor/examples';
 import { PseudoStatesDoc } from '../../components/doc/textcolor/pseudostatesdoc';
+import { RgbaDoc } from '../../components/doc/textcolor/rgbadoc';
 
 const PositionPage = () => {
     const docs = [
@@ -17,6 +18,11 @@ const PositionPage = () => {
             id: 'examples',
             label: 'Examples',
             component: ExamplesDoc
+        },
+        {
+            id: 'rgbadoc',
+            label: 'RGBA Text Colors',
+            component: RgbaDoc
         },
         {
             id: 'pseudostates',

@@ -1,10 +1,11 @@
 import Head from 'next/head';
 import React from 'react';
-import { DocSectionNav } from '../../components/doc/common/docsectionnav';
-import { DocSections } from '../../components/doc/common/docsections';
 import { ClassesDoc } from '../../components/doc/bordercolor/classesdoc';
 import { ExamplesDoc } from '../../components/doc/bordercolor/examples';
 import { PseudoStatesDoc } from '../../components/doc/bordercolor/pseudostatesdoc';
+import { RgbaDoc } from '../../components/doc/bordercolor/rgbadoc';
+import { DocSectionNav } from '../../components/doc/common/docsectionnav';
+import { DocSections } from '../../components/doc/common/docsections';
 
 const PositionPage = () => {
     const docs = [
@@ -17,6 +18,11 @@ const PositionPage = () => {
             id: 'examples',
             label: 'Examples',
             component: ExamplesDoc
+        },
+        {
+            id: 'rgbadoc',
+            label: 'RGBA Border Colors',
+            component: RgbaDoc
         },
         {
             id: 'pseudostates',

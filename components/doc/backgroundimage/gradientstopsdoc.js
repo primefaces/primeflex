@@ -12,7 +12,7 @@ export function gradientStopsDoc(props) {
     return (
         <>
             <DocSectionText {...props}>
-                <p>Background image is repeated vertically only.</p>
+                <p></p>
             </DocSectionText>
             <div className="card">
                 <div className="flex flex-column gap-5">
