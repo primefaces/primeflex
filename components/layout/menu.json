@@ -193,6 +193,7 @@
                 { "name": "Hue-Rotate", "to": "/huerotate" },
                 { "name": "Saturate", "to": "/saturate" },
                 { "name": "Invert", "to": "/invert" },
+                { "name": "Drop Shadow", "to": "/dropshadow" },
                 { "name": "Backdrop Blur", "to": "/backdropblur" },
                 { "name": "Backdrop Brightness", "to": "/backdropbrightness" },
                 { "name": "Backdrop Grayscale", "to": "/backdropgrayscale" },
