@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import React from 'react';
 import { ClassesDoc } from '../../components/doc/backgroundimage/classesdoc';
+import { ColorClassesDoc } from '../../components/doc/backgroundimage/colorclasses';
 import { gradientStopsDoc } from '../../components/doc/backgroundimage/gradientstopsdoc';
 import { LinearDoc } from '../../components/doc/backgroundimage/lineardoc';
 import { RadialDoc } from '../../components/doc/backgroundimage/radialdoc';
@@ -30,6 +31,11 @@ const BackgroundImagePage = () => {
             id: 'viadoc',
             label: 'Via',
             component: viaDoc
+        },
+        {
+            id: 'colorstopsdoc',
+            label: 'Color Stops',
+            component: ColorClassesDoc
         },
         {
             id: 'gradientstopsdoc',
