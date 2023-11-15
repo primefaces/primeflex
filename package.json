@@ -13,8 +13,9 @@
         "lint:fix": "next lint --fix --ignore-path .gitignore .",
         "build:lib": "NODE_ENV=production npm run build:package",
         "build:package": "npm run build:check && node scripts/build.js",
-        "build:sass": "sass --update styles/lib/primeflex.scss:dist-lib/primeflex.css --no-source-map && sass --update styles/lib/primeflex.scss:dist-lib/primeflex.min.css --no-source-map --style compressed && sass --update styles/lib/themes:dist-lib/themes --no-source-map",
-        "build:check": "npm run lint && npm run format:check"
+        "build:check": "npm run lint && npm run format:check",
+        "build:css": "postcss styles/primeflex.css -o styles/primeflex.output.css",
+        "build:css:watch": "node scripts/dev/postcss-watcher.js"
     },
     "dependencies": {
         "@docsearch/react": "^3.3.3",
@@ -37,6 +38,8 @@
         "prettier": "^2.8.4",
         "sass": "^1.58.3",
         "fs-extra": "^10.1.0",
-        "path": "^0.12.7"
+        "path": "^0.12.7",
+        "child_process": "^1.0.2",
+        "postcss-cli": "10.1.0"
     }
 }

@@ -20,6 +20,7 @@ tsconfig.tsbuildinfo
 /dist
 /dist-lib
 /build
+/styles/primeflex.output.css
 
 # misc
 .DS_Store

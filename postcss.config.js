@@ -1,13 +1,10 @@
 module.exports = {
     plugins: [
-        [
-            require.resolve('./lib'),
-            {
-                prefix: {
-                    className: '',
-                    cssVariable: ''
-                }
+        require('./lib')({
+            prefix: {
+                className: '',
+                cssVariable: ''
             }
-        ]
+        })
     ]
 };
