@@ -1,3 +1,4 @@
+/* eslint-disable */
 const { execSync } = require('child_process');
 const chokidar = require('chokidar');
 
@@ -20,3 +21,4 @@ watcher
     .on('error', function (error) {
         console.error('⛔Error happened', error);
     });
+/* eslint-enable */

@@ -14,7 +14,7 @@
         "build:lib": "NODE_ENV=production npm run build:package",
         "build:package": "npm run build:check && node scripts/build.js",
         "build:check": "npm run lint && npm run format:check",
-        "build:css": "postcss styles/primeflex.css -o styles/primeflex.output.css",
+        "build:css": "node scripts/dev/postcss.js",
         "build:css:watch": "node scripts/dev/postcss-watcher.js"
     },
     "dependencies": {
@@ -25,15 +25,17 @@
         "react-dom": "18.2.0"
     },
     "devDependencies": {
+        "@fullhuman/postcss-purgecss": "^5.0.0",
+        "child_process": "^1.0.2",
         "eslint": "8.35.0",
         "eslint-config-next": "13.2.1",
         "eslint-config-prettier": "^8.6.0",
         "eslint-plugin-jest-dom": "^4.0.3",
-        "prettier": "^2.8.4",
-        "sass": "^1.58.3",
         "fs-extra": "^10.1.0",
         "path": "^0.12.7",
-        "child_process": "^1.0.2",
-        "postcss-cli": "10.1.0"
+        "postcss-cli": "10.1.0",
+        "postcss-preset-env": "^9.3.0",
+        "prettier": "^2.8.4",
+        "sass": "^1.58.3"
     }
 }
