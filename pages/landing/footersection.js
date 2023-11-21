@@ -12,7 +12,7 @@ const FooterSection = (props) => {
                         </Link>
                     </div>
                     <div className="landing-footer-right flex flex-row gap-1 md:gap-3 align-items-center">
-                        <a href="https://forum.primefaces.org/" target="_blank" rel="noopener noreferrer" className="linkbox header-button flex align-items-center justify-content-center flex-shrink-0">
+                        <a href="https://github.com/orgs/primefaces/discussions/categories/primeflex" target="_blank" rel="noopener noreferrer" className="linkbox header-button flex align-items-center justify-content-center flex-shrink-0">
                             <i className="pi pi-comments"></i>
                         </a>
                         <a href="https://discord.gg/gzKFYnpmCY" target="_blank" rel="noopener noreferrer" className="linkbox header-button flex align-items-center justify-content-center flex-shrink-0">
