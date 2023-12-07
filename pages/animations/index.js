@@ -23,9 +23,9 @@ import { ZoominDoc } from '../../components/doc/animations/zoomindoc';
 import { ZoomindownDoc } from '../../components/doc/animations/zoomindowndoc';
 import { ZoominleftDoc } from '../../components/doc/animations/zoominleftdoc';
 import { ZoominupDoc } from '../../components/doc/animations/zoominupdoc';
-import { ZoomninrightDoc } from '../../components/doc/animations/zoomninrightdoc';
 import { DocSectionNav } from '../../components/doc/common/docsectionnav';
 import { DocSections } from '../../components/doc/common/docsections';
+import { ZoominrightDoc } from '../../components/doc/animations/zoominrightdoc';
 
 const PositionPage = () => {
     const docs = [
@@ -140,9 +140,9 @@ const PositionPage = () => {
             component: ZoominleftDoc
         },
         {
-            id: 'zoomninright',
-            label: 'zoomninright',
-            component: ZoomninrightDoc
+            id: 'zoominright',
+            label: 'zoominright',
+            component: ZoominrightDoc
         },
         {
             id: 'zoominup',

@@ -582,12 +582,12 @@ export function ClassesDoc(props) {
                             </td>
                         </tr>
                         <tr>
-                            <td>zoomninright</td>
+                            <td>zoominright</td>
                             <td>
-                                animation: zoomninright .15s linear;
+                                animation: zoominright .15s linear;
                                 <br />
                                 <br />
-                                @keyframes zoomninright {'{'}
+                                @keyframes zoominright {'{'}
                                 <br />
                                 &emsp;0% {'{'}
                                 <br />
