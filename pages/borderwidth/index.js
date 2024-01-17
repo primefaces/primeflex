@@ -41,7 +41,7 @@ const PositionPage = () => {
                 <div className="doc-main">
                     <div className="doc-intro">
                         <h1>Border Width</h1>
-                        <p>DSpecifies the border width of an element.</p>
+                        <p>Specifies the border width of an element.</p>
                     </div>
                     <DocSections docs={docs} />
                 </div>
