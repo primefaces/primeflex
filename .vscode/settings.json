@@ -1,7 +1,7 @@
 {
     "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": "explicit",
-        "source.organizeImports": "explicit"
+        "source.fixAll.eslint": true,
+        "source.organizeImports": true
     },
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "[javascript]": {
