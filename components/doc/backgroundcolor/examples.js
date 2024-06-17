@@ -9,7 +9,7 @@ export function ExamplesDoc(props) {
     <div class="bg-primary font-bold border-round m-2 flex align-items-center justify-content-center" style="min-width: 200px; min-height: 100px">
         bg-primary
     </div>
-    <div class="bg-primary font-bold border-round m-2 flex align-items-center justify-content-center" style="min-width: 200px; min-height: 100px">
+    <div class="bg-primary-reverse font-bold border-round m-2 flex align-items-center justify-content-center" style="min-width: 200px; min-height: 100px">
         bg-primary
     </div>
 </div>
@@ -26,8 +26,8 @@ export function ExamplesDoc(props) {
                     <div className="bg-primary font-bold border-round m-2 flex align-items-center justify-content-center" style={{ minWidth: '200px', minHeight: '100px' }}>
                         bg-primary
                     </div>
-                    <div className="bg-primary font-bold border-round m-2 flex align-items-center justify-content-center" style={{ minWidth: '200px', minHeight: '100px' }}>
-                        bg-primary
+                    <div className="bg-primary-reverse font-bold border-round m-2 flex align-items-center justify-content-center" style={{ minWidth: '200px', minHeight: '100px' }}>
+                        bg-primary-reverse
                     </div>
                 </div>
             </div>
