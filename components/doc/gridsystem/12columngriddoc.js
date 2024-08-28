@@ -49,7 +49,7 @@ export function TwelweColumnGridDoc(props) {
         <>
             <DocSectionText {...props}>
                 <p>
-                    FlexGrid includes a 12 column based layout utility where width of a column is defined with the <i>col-&#123;number&#125;</i> style class. Columns with prefined widths can be used with columns with auto width (col) as well.
+                    FlexGrid includes a 12 column based layout utility where width of a column is defined with the <i>col-&#123;number&#125;</i> style class. Columns with predefined widths can be used with columns with auto width (col) as well.
                 </p>
 
                 <p>In the first example below, first column covers the 4 units out of 12 and the rest of the columns share the remaining space whereas in the second example, all three columns have explicit units.</p>
