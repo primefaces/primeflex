@@ -1,8 +1,8 @@
 $text-align-props: (
     'text-center': center,
     'text-justify': justify,
-    'text-left': left,
-    'text-right': right
+    'text-left': start,
+    'text-right': end
 ) !default;
 
 $text-decoration-props: (

@@ -12,10 +12,10 @@ $border-radius-props: (
 ) !default;
 
 $border-radius-directions: (
-    'left': ('border-top-left-radius','border-bottom-left-radius'),
-    'top': ('border-top-left-radius','border-top-right-radius'),
-    'right': ('border-top-right-radius','border-bottom-right-radius'),
-    'bottom': ('border-bottom-left-radius','border-bottom-right-radius')
+    'left': ('border-start-start-radius','border-end-start-radius'),
+    'top': ('border-start-start-radius','border-start-end-radius'),
+    'right': ('border-start-end-radius','border-end-end-radius'),
+    'bottom': ('border-end-start-radius','border-end-end-radius')
 ) !default;
 
 @include style-class('border-radius', $border-radius-props, true);

@@ -3,10 +3,10 @@ $border-scales: 0px, 1px, 2px, 3px !default;
 $border-directions: (
     '': 'border',
     'top': 'border-top',
-    'right': 'border-right',
-    'left': 'border-left',
+    'right': 'border-inline-end',
+    'left': 'border-inline-start',
     'bottom': 'border-bottom',
-    'x': ('border-left','border-right'),
+    'x': ('border-inline-start','border-inline-end'),
     'y': ('border-top','border-bottom')
 ) !default;
 

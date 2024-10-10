@@ -294,18 +294,34 @@ $animationPerspective: 2000px !default;
 
 .#{$prefix}fadeinleft {
     animation: fadeinleft .15s linear;
+
+    @include rtl {
+        animation-name: fadeinright;
+    }
 }
 
 .#{$prefix}fadeoutleft {
     animation: fadeoutleft .15s linear;
+
+    @include rtl {
+        animation-name: fadeoutright;
+    }
 }
 
 .#{$prefix}fadeinright {
     animation: fadeinright .15s linear;
+
+    @include rtl {
+        animation-name: fadeinleft;
+    }
 }
 
 .#{$prefix}fadeoutright {
     animation: fadeoutright .15s linear;
+
+    @include rtl {
+        animation-name: fadeoutleft;
+    }
 }
 
 .#{$prefix}fadeinup {
@@ -341,11 +357,19 @@ $animationPerspective: 2000px !default;
 .#{$prefix}flipleft {
     backface-visibility: visible;
     animation: flipleft .15s linear;
+
+    @include rtl {
+        animation-name: flipright;
+    }
 }
 
 .#{$prefix}flipright {
     backface-visibility: visible;
     animation: flipright .15s linear;
+
+    @include rtl {
+        animation-name: flipleft;
+    }
 }
 
 .#{$prefix}zoomin {
@@ -358,10 +382,18 @@ $animationPerspective: 2000px !default;
 
 .#{$prefix}zoominleft {
     animation: zoominleft .15s linear;
+
+    @include rtl {
+        animation-name: zoominright;
+    }
 }
 
 .#{$prefix}zoominright {
     animation: zoominright .15s linear;
+
+    @include rtl {
+        animation-name: zoominleft;
+    }
 }
 
 .#{$prefix}zoominup {

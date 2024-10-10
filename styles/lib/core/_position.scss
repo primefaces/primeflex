@@ -36,6 +36,6 @@ $bottom-locations: (
 
 @include style-class('position', $position-props, true);
 @include style-class('top', $top-locations, true);
-@include style-class('left', $left-locations, true);
-@include style-class('right', $right-locations, true);
+@include style-class('inset-inline-start', $left-locations, true);
+@include style-class('inset-inline-end', $right-locations, true);
 @include style-class('bottom', $bottom-locations, true);

@@ -2,20 +2,20 @@ $space-scales: 0, 0.25, 0.5, 1, 1.5, 2, 3, 4, 5 !default;
 $padding-properties: (
     '': 'padding',
     't': 'padding-top',
-    'r': 'padding-right',
-    'l': 'padding-left',
+    'r': 'padding-inline-end',
+    'l': 'padding-inline-start',
     'b': 'padding-bottom',
-    'x': ('padding-left','padding-right'),
+    'x': ('padding-inline-start','padding-inline-end'),
     'y': ('padding-top','padding-bottom')
 ) !default;
 
 $margin-properties: (
     '': 'margin',
     't': 'margin-top',
-    'r': 'margin-right',
-    'l': 'margin-left',
+    'r': 'margin-inline-end',
+    'l': 'margin-inline-start',
     'b': 'margin-bottom',
-    'x': ('margin-left','margin-right'),
+    'x': ('margin-inline-start','margin-inline-end'),
     'y': ('margin-top','margin-bottom')
 ) !default;
 

@@ -62,13 +62,13 @@
 .#{$prefix}formgroup-inline .#{$prefix}field,
 .#{$prefix}formgroup-inline .#{$prefix}field-checkbox,
 .#{$prefix}formgroup-inline .#{$prefix}field-radiobutton {
-    margin-right: $fieldMargin;
+    margin-inline-end: $fieldMargin;
 }
 
 .#{$prefix}formgroup-inline .#{$prefix}field > label,
 .#{$prefix}formgroup-inline .#{$prefix}field-checkbox > label,
 .#{$prefix}formgroup-inline .#{$prefix}field-radiobutton > label {
-    margin-right: $fieldLabelMargin;
+    margin-inline-end: $fieldLabelMargin;
     margin-bottom: 0;
 }
 
@@ -81,6 +81,6 @@
 
 .#{$prefix}field-checkbox > label,
 .#{$prefix}field-radiobutton > label {
-    margin-left: $fieldLabelMargin;
+    margin-inline-start: $fieldLabelMargin;
     line-height: 1;
 }

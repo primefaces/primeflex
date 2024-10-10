@@ -413,3 +413,9 @@
         }
     }
 }
+
+@mixin rtl() {
+    :dir(rtl) {
+        @content;
+    }
+}

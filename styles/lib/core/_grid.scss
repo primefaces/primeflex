@@ -1,8 +1,8 @@
 .#{$prefix}grid {
     display: flex;
     flex-wrap: wrap;
-    margin-right: -1 * $gutter;
-    margin-left: -1 * $gutter;
+    margin-inline-end: -1 * $gutter;
+    margin-inline-start: -1 * $gutter;
     margin-top: -1 * $gutter;
 }
 
@@ -12,8 +12,8 @@
 }
 
 .#{$prefix}grid-nogutter {
-    margin-right: 0;
-    margin-left: 0;
+    margin-inline-end: 0;
+    margin-inline-start: 0;
     margin-top: 0;
 }
 
@@ -97,4 +97,4 @@ $grid-column-offsets: (
     }
 }
 
-@include style-class('margin-left', $grid-column-offsets, true);
+@include style-class('margin-inline-start', $grid-column-offsets, true);

@@ -25,6 +25,22 @@ $image-position-props: (
     'bg-top': 'top'
 ) !default;
 
+$image-position-props-rtl: (
+    'bg-bottom': 'bottom',
+    'bg-center': 'center',
+    'bg-left': 'right',
+    'bg-left-bottom': 'right bottom',
+    'bg-left-top': 'right top',
+    'bg-right': 'left',
+    'bg-right-bottom': 'left bottom',
+    'bg-right-top': 'left top',
+    'bg-top': 'top'
+) !default;
+
 @include style-class('background-repeat', $image-repeat-props, true);
 @include style-class('background-size', $image-size-props, true);
 @include style-class('background-position', $image-position-props, true);
+
+@include rtl {
+    @include style-class('background-position', $image-position-props-rtl, true);
+}
