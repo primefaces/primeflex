@@ -37,7 +37,7 @@ export function ClassesDoc(props) {
         32: 64
     };
 
-    const paddingTypes = ['p', 'pt', 'pb', 'pr', 'pl', 'px', 'py'];
+    const paddingTypes = ['p', 'pt', 'pb', 'pr', 'pl', 'ps', 'pe', 'px', 'py'];
 
     const generatePaddingRows = () => {
         let rows = [];
@@ -68,6 +68,10 @@ export function ClassesDoc(props) {
                 return `padding-right: ${value}rem;`;
             case 'pl':
                 return `padding-left: ${value}rem;`;
+            case 'ps':
+                return `padding-inline-start: ${value}rem;`;
+            case 'pe':
+                return `padding-inline-end: ${value}rem;`;
             case 'pt':
                 return `padding-top: ${value}rem;`;
             case 'pb':

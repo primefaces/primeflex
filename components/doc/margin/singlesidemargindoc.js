@@ -7,13 +7,13 @@ export function SingleSideMarginDoc(props) {
         <div class="mt-5 border-round-bottom bg-primary font-bold p-3 flex align-items-center justify-content-center">mt-5</div>
     </div>
     <div class="bg-primary-100 w-12rem m-3 border-round">
-        <div class="mr-8 border-round-left bg-primary font-bold p-3 flex align-items-center justify-content-center">mr-8</div>
+        <div class="me-8 border-round-start bg-primary font-bold p-3 flex align-items-center justify-content-center">me-8</div>
     </div>
     <div class="bg-primary-100 w-12rem m-3 border-round">
         <div class="mb-3 border-round-top bg-primary font-bold p-3 flex align-items-center justify-content-center">mb-3</div>
     </div>
     <div class="bg-primary-100 w-12rem m-3 border-round">
-        <div class="ml-6 border-round-right bg-primary font-bold p-3 flex align-items-center justify-content-center">ml-6</div>
+        <div class="ms-6 border-round-end bg-primary font-bold p-3 flex align-items-center justify-content-center">ms-6</div>
     </div>
 </div>
 `;
@@ -29,13 +29,13 @@ export function SingleSideMarginDoc(props) {
                         <div className="mt-5 border-round-bottom bg-primary font-bold p-3 flex align-items-center justify-content-center">mt-5</div>
                     </div>
                     <div className="bg-primary-100 w-12rem m-3 border-round">
-                        <div className="mr-8 border-round-left bg-primary font-bold p-3 flex align-items-center justify-content-center">mr-8</div>
+                        <div className="me-8 border-round-start bg-primary font-bold p-3 flex align-items-center justify-content-center">me-8</div>
                     </div>
                     <div className="bg-primary-100 w-12rem m-3 border-round">
                         <div className="mb-3 border-round-top bg-primary font-bold p-3 flex align-items-center justify-content-center">mb-3</div>
                     </div>
                     <div className="bg-primary-100 w-12rem m-3 border-round">
-                        <div className="ml-6 border-round-right bg-primary font-bold p-3 flex align-items-center justify-content-center">ml-6</div>
+                        <div className="ms-6 border-round-end bg-primary font-bold p-3 flex align-items-center justify-content-center">ms-6</div>
                     </div>
                 </div>
             </div>

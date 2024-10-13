@@ -86,6 +86,22 @@ export function ClassesDoc(props) {
                             </td>
                         </tr>
                         <tr>
+                            <td>border-noround-start</td>
+                            <td>
+                                border-start-start-radius: 0;
+                                <br />
+                                border-end-start-radius: 0;
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>border-noround-end</td>
+                            <td>
+                                border-start-end-radius: 0;
+                                <br />
+                                border-end-end-radius: 0;
+                            </td>
+                        </tr>
+                        <tr>
                             <td>border-round-left</td>
                             <td>
                                 border-top-left-radius: var(--border-radius);
@@ -102,6 +118,14 @@ export function ClassesDoc(props) {
                             </td>
                         </tr>
                         <tr>
+                            <td>border-round-right</td>
+                            <td>
+                                border-top-right-radius: var(--border-radius);
+                                <br />
+                                border-bottom-right-radius: var(--border-radius);
+                            </td>
+                        </tr>
+                        <tr>
                             <td>border-round-bottom</td>
                             <td>
                                 border-bottom-left-radius: var(--border-radius);
@@ -110,11 +134,19 @@ export function ClassesDoc(props) {
                             </td>
                         </tr>
                         <tr>
-                            <td>border-round-right</td>
+                            <td>border-round-start</td>
                             <td>
-                                border-top-right-radius: var(--border-radius);
+                                border-start-start-radius: var(--border-radius);
                                 <br />
-                                border-bottom-right-radius: var(--border-radius);
+                                border-end-start-radius: var(--border-radius);
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>border-round-end</td>
+                            <td>
+                                border-start-end-radius: var(--border-radius);
+                                <br />
+                                border-end-end-radius: var(--border-radius);
                             </td>
                         </tr>
                         <tr>
@@ -134,6 +166,14 @@ export function ClassesDoc(props) {
                             </td>
                         </tr>
                         <tr>
+                            <td>border-round-right-xs</td>
+                            <td>
+                                border-top-right-radius: 0.125rem;
+                                <br />
+                                border-bottom-right-radius: 0.125rem;
+                            </td>
+                        </tr>
+                        <tr>
                             <td>border-round-bottom-xs</td>
                             <td>
                                 border-bottom-left-radius: 0.125rem;
@@ -142,11 +182,19 @@ export function ClassesDoc(props) {
                             </td>
                         </tr>
                         <tr>
-                            <td>border-round-right-xs</td>
+                            <td>border-round-start-xs</td>
                             <td>
-                                border-top-right-radius: 0.125rem;
+                                border-start-start-radius: 0.125rem;
                                 <br />
-                                border-bottom-right-radius: 0.125rem;
+                                border-end-start-radius: 0.125rem;
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>border-round-end-xs</td>
+                            <td>
+                                border-start-end-radius: 0.125rem;
+                                <br />
+                                border-end-end-radius: 0.125rem;
                             </td>
                         </tr>
                         <tr>
@@ -166,6 +214,14 @@ export function ClassesDoc(props) {
                             </td>
                         </tr>
                         <tr>
+                            <td>border-round-right-sm</td>
+                            <td>
+                                border-top-right-radius: 0.25rem;
+                                <br />
+                                border-bottom-right-radius: 0.25rem;
+                            </td>
+                        </tr>
+                        <tr>
                             <td>border-round-bottom-sm</td>
                             <td>
                                 border-bottom-left-radius: 0.25rem;
@@ -174,11 +230,19 @@ export function ClassesDoc(props) {
                             </td>
                         </tr>
                         <tr>
-                            <td>border-round-right-sm</td>
+                            <td>border-round-start-sm</td>
                             <td>
-                                border-top-right-radius: 0.25rem;
+                                border-start-start-radius: 0.25rem;
                                 <br />
-                                border-bottom-right-radius: 0.25rem;
+                                border-end-start-radius: 0.25rem;
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>border-round-end-sm</td>
+                            <td>
+                                border-start-end-radius: 0.25rem;
+                                <br />
+                                border-end-end-radius: 0.25rem;
                             </td>
                         </tr>
                         <tr>
@@ -198,6 +262,14 @@ export function ClassesDoc(props) {
                             </td>
                         </tr>
                         <tr>
+                            <td>border-round-right-md</td>
+                            <td>
+                                border-top-right-radius: 0.375rem;
+                                <br />
+                                border-bottom-right-radius: 0.375rem;
+                            </td>
+                        </tr>
+                        <tr>
                             <td>border-round-bottom-md</td>
                             <td>
                                 border-bottom-left-radius: 0.375rem;
@@ -206,11 +278,19 @@ export function ClassesDoc(props) {
                             </td>
                         </tr>
                         <tr>
-                            <td>border-round-right-md</td>
+                            <td>border-round-start-md</td>
                             <td>
-                                border-top-right-radius: 0.375rem;
+                                border-start-start-radius: 0.375rem;
                                 <br />
-                                border-bottom-right-radius: 0.375rem;
+                                border-end-start-radius: 0.375rem;
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>border-round-end-md</td>
+                            <td>
+                                border-start-end-radius: 0.375rem;
+                                <br />
+                                border-end-end-radius: 0.375rem;
                             </td>
                         </tr>
                         <tr>
@@ -230,6 +310,14 @@ export function ClassesDoc(props) {
                             </td>
                         </tr>
                         <tr>
+                            <td>border-round-right-lg</td>
+                            <td>
+                                border-top-right-radius: 0.5rem;
+                                <br />
+                                border-bottom-right-radius: 0.5rem;
+                            </td>
+                        </tr>
+                        <tr>
                             <td>border-round-bottom-lg</td>
                             <td>
                                 border-bottom-left-radius: 0.5rem;
@@ -238,11 +326,19 @@ export function ClassesDoc(props) {
                             </td>
                         </tr>
                         <tr>
-                            <td>border-round-right-lg</td>
+                            <td>border-round-start-lg</td>
                             <td>
-                                border-top-right-radius: 0.5rem;
+                                border-start-start-radius: 0.5rem;
                                 <br />
-                                border-bottom-right-radius: 0.5rem;
+                                border-end-start-radius: 0.5rem;
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>border-round-end-lg</td>
+                            <td>
+                                border-start-end-radius: 0.5rem;
+                                <br />
+                                border-end-end-radius: 0.5rem;
                             </td>
                         </tr>
                         <tr>
@@ -262,6 +358,14 @@ export function ClassesDoc(props) {
                             </td>
                         </tr>
                         <tr>
+                            <td>border-round-right-xl</td>
+                            <td>
+                                border-top-right-radius: 0.75rem;
+                                <br />
+                                border-bottom-right-radius: 0.75rem;
+                            </td>
+                        </tr>
+                        <tr>
                             <td>border-round-bottom-xl</td>
                             <td>
                                 border-bottom-left-radius: 0.75rem;
@@ -270,11 +374,19 @@ export function ClassesDoc(props) {
                             </td>
                         </tr>
                         <tr>
-                            <td>border-round-right-xl</td>
+                            <td>border-round-start-xl</td>
                             <td>
-                                border-top-right-radius: 0.75rem;
+                                border-start-start-radius: 0.75rem;
                                 <br />
-                                border-bottom-right-radius: 0.75rem;
+                                border-end-start-radius: 0.75rem;
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>border-round-end-xl</td>
+                            <td>
+                                border-start-end-radius: 0.75rem;
+                                <br />
+                                border-end-end-radius: 0.75rem;
                             </td>
                         </tr>
                         <tr>
@@ -294,6 +406,14 @@ export function ClassesDoc(props) {
                             </td>
                         </tr>
                         <tr>
+                            <td>border-round-right-2xl</td>
+                            <td>
+                                border-top-right-radius: 1rem;
+                                <br />
+                                border-bottom-right-radius: 1rem;
+                            </td>
+                        </tr>
+                        <tr>
                             <td>border-round-bottom-2xl</td>
                             <td>
                                 border-bottom-left-radius: 1rem;
@@ -302,14 +422,21 @@ export function ClassesDoc(props) {
                             </td>
                         </tr>
                         <tr>
-                            <td>border-round-right-2xl</td>
+                            <td>border-round-start-2xl</td>
                             <td>
-                                border-top-right-radius: 1rem;
+                                border-start-start-radius: 1rem;
                                 <br />
-                                border-bottom-right-radius: 1rem;
+                                border-end-start-radius: 1rem;
                             </td>
                         </tr>
-
+                        <tr>
+                            <td>border-round-end-2xl</td>
+                            <td>
+                                border-start-end-radius: 1rem;
+                                <br />
+                                border-end-end-radius: 1rem;
+                            </td>
+                        </tr>
                         <tr>
                             <td>border-round-left-3xl</td>
                             <td>
@@ -327,6 +454,14 @@ export function ClassesDoc(props) {
                             </td>
                         </tr>
                         <tr>
+                            <td>border-round-right-3xl</td>
+                            <td>
+                                border-top-right-radius: 1.5rem;
+                                <br />
+                                border-bottom-right-radius: 1.5rem;
+                            </td>
+                        </tr>
+                        <tr>
                             <td>border-round-bottom-3xl</td>
                             <td>
                                 border-bottom-left-radius: 1.5rem;
@@ -335,11 +470,19 @@ export function ClassesDoc(props) {
                             </td>
                         </tr>
                         <tr>
-                            <td>border-round-right-3xl</td>
+                            <td>border-round-start-3xl</td>
                             <td>
-                                border-top-right-radius: 1.5rem;
+                                border-start-start-radius: 1.5rem;
                                 <br />
-                                border-bottom-right-radius: 1.5rem;
+                                border-end-start-radius: 1.5rem;
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>border-round-end-3xl</td>
+                            <td>
+                                border-start-end-radius: 1.5rem;
+                                <br />
+                                border-end-end-radius: 1.5rem;
                             </td>
                         </tr>
                         <tr>
@@ -359,6 +502,14 @@ export function ClassesDoc(props) {
                             </td>
                         </tr>
                         <tr>
+                            <td>border-circle-right</td>
+                            <td>
+                                border-top-right-radius: 50%;
+                                <br />
+                                border-bottom-right-radius: 50%;
+                            </td>
+                        </tr>
+                        <tr>
                             <td>border-circle-bottom</td>
                             <td>
                                 border-bottom-left-radius: 50%;
@@ -367,11 +518,19 @@ export function ClassesDoc(props) {
                             </td>
                         </tr>
                         <tr>
-                            <td>border-circle-right</td>
+                            <td>border-circle-start</td>
                             <td>
-                                border-top-right-radius: 50%;
+                                border-start-start-radius: 50%;
                                 <br />
-                                border-bottom-right-radius: 50%;
+                                border-end-start-radius: 50%;
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>border-circle-end</td>
+                            <td>
+                                border-start-end-radius: 50%;
+                                <br />
+                                border-end-end-radius: 50%;
                             </td>
                         </tr>
                     </tbody>
