@@ -37,7 +37,7 @@ export function ClassesDoc(props) {
         32: 64
     };
 
-    const marginTypes = ['m', 'mt', 'mb', 'mr', 'ml', 'mx', 'my'];
+    const marginTypes = ['m', 'mt', 'mb', 'mr', 'ml', 'ms', 'me', 'mx', 'my'];
 
     const generateMarginRows = () => {
         let rows = [];
@@ -91,6 +91,10 @@ export function ClassesDoc(props) {
                 return `margin-right: ${value}rem;`;
             case 'ml':
                 return `margin-left: ${value}rem;`;
+            case 'ms':
+                return `margin-inline-start: ${value}rem;`;
+            case 'me':
+                return `margin-inline-end: ${value}rem;`;
             case 'mt':
                 return `margin-top: ${value}rem;`;
             case 'mb':

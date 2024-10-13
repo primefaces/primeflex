@@ -4,12 +4,12 @@ import { DocSectionText } from '../common/docsectiontext';
 export function ExamplesDoc(props) {
     const code1 = `<div class="flex flex-wrap justify-content-center">
     <div class="border-round w-12rem h-6rem m-2 bg-primary font-bold flex align-items-center justify-content-center">border-round</div>
-    <div class="border-round-left w-12rem h-6rem m-2 bg-primary font-bold flex align-items-center justify-content-center">border-round-left</div>
+    <div class="border-round-start w-12rem h-6rem m-2 bg-primary font-bold flex align-items-center justify-content-center">border-round-start</div>
 </div>
 <div class="flex flex-wrap justify-content-center">
     <div class="border-round-top w-12rem h-6rem m-2 bg-primary font-bold flex align-items-center justify-content-center">border-round-top</div>
     <div class="border-round-bottom w-12rem h-6rem m-2 bg-primary font-bold flex align-items-center justify-content-center">border-round-bottom</div>
-    <div class="border-round-right w-12rem h-6rem m-2 bg-primary font-bold flex align-items-center justify-content-center">border-round-right</div>
+    <div class="border-round-end w-12rem h-6rem m-2 bg-primary font-bold flex align-items-center justify-content-center">border-round-end</div>
 </div>
 `;
     const code2 = `<div class="flex flex-wrap justify-content-center">
@@ -24,12 +24,12 @@ export function ExamplesDoc(props) {
             <div className="card">
                 <div className="flex flex-wrap justify-content-center">
                     <div className="border-round w-12rem h-6rem m-2 bg-primary font-bold flex align-items-center justify-content-center">border-round</div>
-                    <div className="border-round-left w-12rem h-6rem m-2 bg-primary font-bold flex align-items-center justify-content-center">border-round-left</div>
+                    <div className="border-round-start w-12rem h-6rem m-2 bg-primary font-bold flex align-items-center justify-content-center">border-round-start</div>
                 </div>
                 <div className="flex flex-wrap justify-content-center">
                     <div className="border-round-top w-12rem h-6rem m-2 bg-primary font-bold flex align-items-center justify-content-center">border-round-top</div>
                     <div className="border-round-bottom w-12rem h-6rem m-2 bg-primary font-bold flex align-items-center justify-content-center">border-round-bottom</div>
-                    <div className="border-round-right w-12rem h-6rem m-2 bg-primary font-bold flex align-items-center justify-content-center">border-round-right</div>
+                    <div className="border-round-end w-12rem h-6rem m-2 bg-primary font-bold flex align-items-center justify-content-center">border-round-end</div>
                 </div>
             </div>
             <DocSectionCode code={code1} />
