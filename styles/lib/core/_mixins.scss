@@ -71,7 +71,7 @@
         .#{$prefix}#{$name}#{$color} {
             @each $shade in $shades {
                 &-#{$shade} {
-                    #{$prop}: var(--#{$color}-#{$shade}) !important;
+                    #{$prop}: var(--p-#{$color}-#{$shade}) !important;
                 }
             }
         }
@@ -80,7 +80,7 @@
             &#{$prefix}#{$name}#{$color} {
                 @each $shade in $shades {
                     &-#{$shade}:focus {
-                        #{$prop}: var(--#{$color}-#{$shade}) !important;
+                        #{$prop}: var(--p-#{$color}-#{$shade}) !important;
                     }
                 }
             }
@@ -90,7 +90,7 @@
             &#{$prefix}#{$name}#{$color} {
                 @each $shade in $shades {
                     &-#{$shade}:hover {
-                        #{$prop}: var(--#{$color}-#{$shade}) !important;
+                        #{$prop}: var(--p-#{$color}-#{$shade}) !important;
                     }
                 }
             }
@@ -100,7 +100,7 @@
             &#{$prefix}#{$name}#{$color} {
                 @each $shade in $shades {
                     &-#{$shade}:active {
-                        #{$prop}: var(--#{$color}-#{$shade}) !important;
+                        #{$prop}: var(--p-#{$color}-#{$shade}) !important;
                     }
                 }
             }
@@ -110,27 +110,29 @@
 
 @mixin surface-class($name, $prop, $shades) {
     @each $shade in $shades {
+        $i: index($shades, $shade);
         .#{$prefix}#{$name}-#{$shade} {
-            #{$prop}: var(--surface-#{$shade}) !important;
+            #{$prop}: light-dark(var(--p-surface-#{$shade}), var(--p-surface-#{nth($shades, 12 - $i)})) !important;
         }
     }
 
     @each $shade in $shades {
+        $i: index($shades, $shade);
         .focus#{$separator} {
             &#{$prefix}#{$name}-#{$shade}:focus {
-                #{$prop}: var(--surface-#{$shade}) !important;
+                #{$prop}: light-dark(var(--p-surface-#{$shade}), var(--p-surface-#{nth($shades, 12 - $i)})) !important;
             }
         }
 
         .hover#{$separator} {
             &#{$prefix}#{$name}-#{$shade}:hover {
-                #{$prop}: var(--surface-#{$shade}) !important;
+                #{$prop}: light-dark(var(--p-surface-#{$shade}), var(--p-surface-#{nth($shades, 12 - $i)})) !important;
             }
         }
 
         .active#{$separator} {
             &#{$prefix}#{$name}-#{$shade}:active {
-                #{$prop}: var(--surface-#{$shade}) !important;
+                #{$prop}: light-dark(var(--p-surface-#{$shade}), var(--p-surface-#{nth($shades, 12 - $i)})) !important;
             }
         }
     }

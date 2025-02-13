@@ -16,21 +16,21 @@ $rgbaShades: 10, 20, 30, 40, 50, 60, 70, 80, 90 !default;
 @include rgba-color-class('text-', 'color', ('white': '255,255,255', 'black': '0,0,0'), $rgbaShades);
 
 $custom-properties: (
-    'text-primary': ('color': var(--primary-color)),
-    'bg-primary': ('color': var(--primary-color-text), 'background-color': var(--primary-color)),
-    'bg-primary-reverse': ('color': var(--primary-color), 'background-color': var(--primary-color-text)),
+    'text-primary': ('color': var(--p-primary-color)),
+    'bg-primary': ('color': var(--p-primary-contrast-color), 'background-color': var(--p-primary-color)),
+    'bg-primary-reverse': ('color': var(--p-primary-color), 'background-color': var(--p-primary-contrast-color)),
     'bg-white': ('background-color': #ffffff),
-    'border-primary': ('border-color': var(--primary-color)),
+    'border-primary': ('border-color': var(--p-primary-color)),
     'text-white': ('color': #ffffff),
     'border-white': ('border-color': #ffffff),
-    'text-color': ('color': var(--text-color)),
-    'text-color-secondary': ('color': var(--text-color-secondary)),
-    'surface-ground': ('background-color': var(--surface-ground)),
-    'surface-section': ('background-color': var(--surface-section)),
-    'surface-card': ('background-color': var(--surface-card)),
-    'surface-overlay': ('background-color': var(--surface-overlay)),
-    'surface-hover': ('background-color': var(--surface-hover)),
-    'surface-border': ('border-color': var(--surface-border))
+    'text-color': ('color': var(--p-text-color)),
+    'text-color-secondary': ('color': var(--p-text-muted-color)),
+    'surface-ground': ('background-color': light-dark(var(--p-surface-50), var(--p-surface-950))),
+    'surface-section': ('background-color': light-dark(var(--p-surface-0), var(--p-surface-950))),
+    'surface-card': ('background-color': light-dark(var(--p-surface-0), var(--p-surface-900))),
+    'surface-overlay': ('background-color': light-dark(var(--p-surface-0), var(--p-surface-900))),
+    'surface-hover': ('background-color': light-dark(var(--p-surface-800), var(--p-surface-100))),
+    'surface-border': ('border-color': light-dark(var(--p-surface-200), var(--p-surface-700)))
 ) !default;
 
 @include generate-class($custom-properties, true, true);
