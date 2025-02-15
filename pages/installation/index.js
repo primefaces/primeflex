@@ -9,9 +9,15 @@ import { ReuseClassesDoc } from '../../components/doc/installation/reuseclassesd
 import { ThemesDoc } from '../../components/doc/installation/themesdoc';
 import { ProductionSizeDoc } from '../../components/doc/installation/productionsizedoc';
 import { VSCodeExtensionDoc } from '../../components/doc/installation/vscodeextensiondoc';
+import { CompatibilityDoc } from '../../components/doc/installation/compatibilitydoc';
 
 const InstallationPage = () => {
     const docs = [
+        {
+            id: 'compatibility',
+            label: 'Compatibility',
+            component: CompatibilityDoc
+        },
         {
             id: 'moduleloader',
             label: 'Module Loader',

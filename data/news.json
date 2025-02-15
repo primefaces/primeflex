@@ -1,6 +1,6 @@
 {
-    "id": 1,
-    "content": "New PrimeFlex website is available now!",
+    "id": 2,
+    "content": "The PrimeFlex CSS library is being sunset and will no longer receive active development or maintenance.",
     "linkText": "",
     "linkHref": "",
     "backgroundStyle": "background:linear-gradient(45deg, #00E08F,#00A3FF);",
