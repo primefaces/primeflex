@@ -1,1 +1,1 @@
-Visit [https://primeflex.org](PrimeFlex) website for demos and documentation.
+Visit [PrimeFlex](https://primeflex.org) website for demos and documentation.
