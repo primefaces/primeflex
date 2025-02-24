@@ -12,11 +12,11 @@
         $rem-map: map.merge($rem-map, ('#{$prefix}-#{$i}rem': $i * 1rem));
     }
     $size-map: map.merge($size-map, $rem-map);
-    
+
     @return $size-map;
 }
 
-$width-properties: size-map((
+$width-properties: (
     'w-full': 100%,
     'w-screen': 100vw,
     'w-auto': auto,
@@ -32,13 +32,17 @@ $width-properties: size-map((
     'w-10': 83.3333%,
     'w-11': 91.6667%,
     'w-12': 100%
-), 'w') !default;
+) !default;
 
-$height-properties: size-map((
+$enhanced-width-properties: size-map($width-properties, 'w') !default;
+
+$height-properties: (
     'h-full': 100%,
     'h-screen': 100vh,
     'h-auto': auto,
-), 'h') !default;
+) !default;
+
+$enhanced-height-properties: size-map($height-properties, 'h') !default;
 
 $min-width-properties: (
     'min-w-0': 0px,
@@ -48,11 +52,12 @@ $min-width-properties: (
     'min-w-max': max-content
 ) !default;
 
-$max-width-properties: size-map((
+$max-width-properties: (
     'max-w-0': 0px,
     'max-w-full': 100%,
     'max-w-screen': 100vw
-), 'max-w') !default;
+) !default;
+$enhanced-max-width-properties: size-map($max-width-properties, 'max-w') !default;
 
 $min-height-properties: (
     'min-h-0': 0px,
@@ -60,15 +65,16 @@ $min-height-properties: (
     'min-h-screen': 100vh
 ) !default;
 
-$max-height-properties: size-map((
+$max-height-properties: (
     'max-h-0': 0px,
     'max-h-full': 100%,
     'max-h-screen': 100vh
-), 'max-h') !default;
+) !default;
+$enhanced-max-height-properties: size-map($max-height-properties, 'max-h') !default;
 
-@include style-class('width', $width-properties, true);
-@include style-class('height', $height-properties, true);
+@include style-class('width', $enhanced-width-properties, true);
+@include style-class('height', $enhanced-height-properties, true);
 @include style-class('min-width', $min-width-properties, true);
-@include style-class('max-width', $max-width-properties, true);
+@include style-class('max-width', $enhanced-max-width-properties, true);
 @include style-class('min-height', $min-height-properties, true);
-@include style-class('max-height', $max-height-properties, true);
+@include style-class('max-height', $enhanced-max-height-properties, true);
