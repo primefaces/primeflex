@@ -14,12 +14,12 @@ export function ClassesDoc(props) {
                     </thead>
                     <tbody>
                         <tr>
-                            <td>flex-grow-0</td>
-                            <td>flex-grow: 0;</td>
+                            <td>flex-shrink-0</td>
+                            <td>flex-shrink: 0;</td>
                         </tr>
                         <tr>
-                            <td>flex-grow-1</td>
-                            <td>flex-grow: 1;</td>
+                            <td>flex-shrink-1</td>
+                            <td>flex-shrink: 1;</td>
                         </tr>
                     </tbody>
                 </table>
